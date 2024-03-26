@@ -1,0 +1,16 @@
+<?xml version = '1.0' encoding = 'UTF-8'?>
+<FKIndexAssociation class="oracle.dbtools.crest.model.design.relational.FKIndexAssociation" directorySegmentName="seg_0" id="AD789B6F-104B-99F3-DE3A-8ED704EA023C" containerWithKeyObject="69BC1AAD-3A20-A155-468B-AB9A273CB587" localFKIndex="B8097602-F623-248A-4D4C-A1CB6F30E1A6" name="DEPTH_LEVEL_SOUND_VELOCITY_FK">
+<createdBy>darbo</createdBy>
+<createdTime>2024-02-14 16:20:18 UTC</createdTime>
+<ownerDesignName>MEDS_SERD</ownerDesignName>
+<referredTableLongName>SOUND_VELOCITY</referredTableLongName>
+<deleteRule>NO ACTION</deleteRule>
+<referredTableID>0DC2B30D-B0C8-7432-FF05-5B222CC2213B</referredTableID>
+<keyObject>3EBB6A67-56C8-029F-F6A4-AAFD3A70EC00</keyObject>
+<referredKeyID>3EBB6A67-56C8-029F-F6A4-AAFD3A70EC00</referredKeyID>
+<mandatory>true</mandatory>
+<refColNames>SOUND_VELOCITY_CD</refColNames>
+<transferable>true</transferable>
+<rely>false</rely>
+<columnDependencyConstraintGenerateInDDL>true</columnDependencyConstraintGenerateInDDL>
+</FKIndexAssociation>

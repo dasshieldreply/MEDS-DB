@@ -1,0 +1,741 @@
+
+Table "MEDSDATA"."ACCESS_CONTROL" created.
+
+
+Table "MEDSDATA"."ADCP_DATA" created.
+
+
+Table "MEDSDATA"."ADCP_OBSERVATION" created.
+
+
+Table "MEDSDATA"."ADCP_REPEAT" created.
+
+
+Table "MEDSDATA"."AQUA2081_LINE_DATA" created.
+
+
+Table "MEDSDATA"."AQUA2081_LINE_OBSERVATION" created.
+
+
+Table "MEDSDATA"."AQUAPACK_JOB" created.
+
+
+Table "MEDSDATA"."AQUAPACK_LINE_DATA" created.
+
+
+Table "MEDSDATA"."AQUAPACK_LINE_OBSERVATION" created.
+
+
+Table "MEDSDATA"."AQUAPACK_PROFILE_DATA" created.
+
+
+Table "MEDSDATA"."AQUAPACK_PROFILE_OBSERVATION" created.
+
+
+Table "MEDSDATA"."ASRAP_POINT_CADS_REPEAT" created.
+
+
+Table "MEDSDATA"."ASRAP_POINT_DATA" created.
+
+
+Table "MEDSDATA"."ASRAP_POINT_OBSERVATION" created.
+
+
+Table "MEDSDATA"."ASRAP_POINT_REPEAT" created.
+
+
+Table "MEDSDATA"."ASRAP_POLYGON_OBSERVATION" created.
+
+
+Table "MEDSDATA"."ASRAP_POLYGON_REPEAT" created.
+
+
+Table "MEDSDATA"."BEACH_DATA" created.
+
+
+Table "MEDSDATA"."BEACH_OBSERVATION" created.
+
+
+Table "MEDSDATA"."BIOLUMINESCENCE_DATA" created.
+
+
+Table "MEDSDATA"."BIOLUMINESCENCE_OBSERVATION" created.
+
+
+Table "MEDSDATA"."BIOMASS_DATA" created.
+
+
+Table "MEDSDATA"."BIOMASS_OBSERVATION" created.
+
+
+Table "MEDSDATA"."CHART_PANEL" created.
+
+
+Table "MEDSDATA"."CLASS_INFORMATION" created.
+
+
+Table "MEDSDATA"."CRUISE_LAYER" created.
+
+
+Table "MEDSDATA"."DATASET_LOOKUP" created.
+
+
+Table "MEDSDATA"."DATA_TYPES_TABLE" created.
+
+
+Table "MEDSDATA"."DBFIELD_LOOKUP" created.
+
+
+Table "MEDSDATA"."DEEP_SCATTERING_DATA" created.
+
+
+Table "MEDSDATA"."DEEP_SCATTERING_OBSERVATION" created.
+
+
+Table "MEDSDATA"."DIRECTORY_LOOKUP" created.
+
+
+Table "MEDSDATA"."DIR_AMBIENT_DATA" created.
+
+
+Table "MEDSDATA"."DIR_AMBIENT_OBSERVATION" created.
+
+
+Table "MEDSDATA"."DIR_AMBIENT_REPEAT" created.
+
+
+Table "MEDSDATA"."DIVE_SITE_DATA" created.
+
+
+Table "MEDSDATA"."DIVE_SITE_OBSERVATION" created.
+
+
+Table "MEDSDATA"."DUC_FORMAT" created.
+
+
+Table "MEDSDATA"."EDDY_DATA" created.
+
+
+Table "MEDSDATA"."EDDY_OBSERVATION" created.
+
+
+Table "MEDSDATA"."EDDY_REPEAT" created.
+
+
+Table "MEDSDATA"."EDDY_SATELLITE_DATA" created.
+
+
+Table "MEDSDATA"."EDDY_SATELLITE_OBSERVATION" created.
+
+
+Table "MEDSDATA"."EDDY_SATELLITE_REPEAT" created.
+
+
+Table "MEDSDATA"."EVENTLOG" created.
+
+
+Table "MEDSDATA"."EVENTTYPE" created.
+
+
+Table "MEDSDATA"."EXCHANGE_LIST" created.
+
+
+Table "MEDSDATA"."EXTRACTION_OPTION_LOOKUP" created.
+
+
+Table "MEDSDATA"."EXTRACTION_TYPES_LOOKUP" created.
+
+
+Table "MEDSDATA"."FIELD_LOOKUP" created.
+
+
+Table "MEDSDATA"."FIELD_LOOKUP_CHECK" created.
+
+
+Table "MEDSDATA"."FIELD_LOOKUP_DUP" created.
+
+
+Table "MEDSDATA"."FILE_LOOKUP" created.
+
+
+Table "MEDSDATA"."FILE_PATH_LOOKUP" created.
+
+
+Table "MEDSDATA"."FLAG_TYPES_LOOKUP" created.
+
+
+Table "MEDSDATA"."FRONT_DEPTH_PLAN_OBSERVATION" created.
+
+
+Table "MEDSDATA"."FRONT_DEPTH_PLAN_REPEAT" created.
+
+
+Table "MEDSDATA"."FRONT_FWOC_OBSERVATION" created.
+
+
+Table "MEDSDATA"."FRONT_FWOC_REPEAT" created.
+
+
+Table "MEDSDATA"."FRONT_GRID_DATA" created.
+
+
+Table "MEDSDATA"."FRONT_GRID_OBSERVATION" created.
+
+
+Table "MEDSDATA"."FRONT_GRID_REPEAT" created.
+
+
+Table "MEDSDATA"."FRONT_IMAGE_DATA" created.
+
+
+Table "MEDSDATA"."FRONT_IMAGE_REPEAT" created.
+
+
+Table "MEDSDATA"."FRONT_MEAN_DATA" created.
+
+
+Table "MEDSDATA"."FRONT_MEAN_OBSERVATION" created.
+
+
+Table "MEDSDATA"."FRONT_MEAN_REPEAT" created.
+
+
+Table "MEDSDATA"."FRONT_SATELLITE_OBSERVATION" created.
+
+
+Table "MEDSDATA"."FRONT_SURVEY_DATA" created.
+
+
+Table "MEDSDATA"."FRONT_SURVEY_OBSERVATION" created.
+
+
+Table "MEDSDATA"."FRONT_TRANSECT_OBSERVATION" created.
+
+
+Table "MEDSDATA"."FRONT_TRANSECT_REPEAT" created.
+
+
+Table "MEDSDATA"."GENERIC_EDIT" created.
+
+
+Table "MEDSDATA"."GEOLOGY_PARAM_DATA" created.
+
+
+Table "MEDSDATA"."GEOLOGY_PARAM_OBSERVATION" created.
+
+
+Table "MEDSDATA"."GEOLOGY_QUALITY_DATA" created.
+
+
+Table "MEDSDATA"."GEOLOGY_QUALITY_OBSERVATION" created.
+
+
+Table "MEDSDATA"."GLIDER_THREADED_DATA" created.
+
+
+Table "MEDSDATA"."GLIDER_THREADED_OBSERVATION" created.
+
+
+Table "MEDSDATA"."HELP" created.
+
+
+Table "MEDSDATA"."ICES_SHIP_DESC" created.
+
+
+Table "MEDSDATA"."INGRES_ROWS_PER_JOB" created.
+
+
+Table "MEDSDATA"."INSTRUMENT" created.
+
+
+Table "MEDSDATA"."INTERNAL_WAVE_DATA" created.
+
+
+Table "MEDSDATA"."INTERNAL_WAVE_OBSERVATION" created.
+
+
+Table "MEDSDATA"."INTERNAL_WAVE_REPEAT" created.
+
+
+Table "MEDSDATA"."IPR_LOOKUP" created.
+
+
+Table "MEDSDATA"."IPR_OWNER_CONTACT" created.
+
+
+Table "MEDSDATA"."IPR_OWNER_TYPE" created.
+
+
+Table "MEDSDATA"."IW_IMAGE_DATA" created.
+
+
+Table "MEDSDATA"."IW_IMAGE_OBSERVATION" created.
+
+
+Table "MEDSDATA"."IW_PACKETS" created.
+
+
+Table "MEDSDATA"."IW_POINTS" created.
+
+
+Table "MEDSDATA"."IW_WAVES" created.
+
+
+Table "MEDSDATA"."JOB" created.
+
+
+Table "MEDSDATA"."JOB_ERROR" created.
+
+
+Table "MEDSDATA"."JOB_LOOKUPS" created.
+
+
+Table "MEDSDATA"."JOB_STATS" created.
+
+
+Table "MEDSDATA"."JOB_STATS_SETTINGS" created.
+
+
+Table "MEDSDATA"."JOB_TRACKING" created.
+
+
+Table "MEDSDATA"."JOB_TYPE" created.
+
+
+Table "MEDSDATA"."LAYER_CRITERIA_LOOKUP" created.
+
+
+Table "MEDSDATA"."LAYER_CRITERIA_LOOKUP_COPY" created.
+
+
+Table "MEDSDATA"."LAYER_LOOKUP" created.
+
+
+Table "MEDSDATA"."LEVEL_TABLES_LOOKUP" created.
+
+
+Table "MEDSDATA"."MAPINFO_MAPCATALOG" created.
+
+
+Table "MEDSDATA"."MASTER_GRID_D1" created.
+
+
+Table "MEDSDATA"."MASTER_GRID_L1" created.
+
+
+Table "MEDSDATA"."MASTER_GRID_L2" created.
+
+
+Table "MEDSDATA"."MASTER_GRID_L4" created.
+
+
+Table "MEDSDATA"."MEDS_ERRORS" created.
+
+
+Table "MEDSDATA"."MEDS_FLAGS" created.
+
+
+Table "MEDSDATA"."MEDS_FLAGS_ORIG" created.
+
+
+Table "MEDSDATA"."MEDS_IPR" created.
+
+
+Table "MEDSDATA"."MEDS_JOB_ERROR" created.
+
+
+Table "MEDSDATA"."MEDS_JOB_TYPE" created.
+
+
+Table "MEDSDATA"."MEDS_PROCESSING_JOB" created.
+
+
+Table "MEDSDATA"."MEDS_ROWS_PER_JOB" created.
+
+
+Table "MEDSDATA"."MLO_BIRDS_DATA" created.
+
+
+Table "MEDSDATA"."MLO_BIRDS_OBSERVATION" created.
+
+
+Table "MEDSDATA"."MLO_CETACEANS_DATA" created.
+
+
+Table "MEDSDATA"."MLO_CETACEANS_ENVELOPE" created.
+
+
+Table "MEDSDATA"."MLO_CETACEANS_OBSERVATION" created.
+
+
+Table "MEDSDATA"."MLO_CETACEANS_TRACK" created.
+
+
+Table "MEDSDATA"."MLO_COLUMNS" created.
+
+
+Table "MEDSDATA"."MLO_DATA_TYPE" created.
+
+
+Table "MEDSDATA"."MLO_FISH_DATA" created.
+
+
+Table "MEDSDATA"."MLO_FISH_OBSERVATION" created.
+
+
+Table "MEDSDATA"."MLO_JELLYFISH_DATA" created.
+
+
+Table "MEDSDATA"."MLO_JELLYFISH_OBSERVATION" created.
+
+
+Table "MEDSDATA"."MLO_OTHERS_DATA" created.
+
+
+Table "MEDSDATA"."MLO_OTHERS_OBSERVATION" created.
+
+
+Table "MEDSDATA"."MLO_PINNIPEDS_DATA" created.
+
+
+Table "MEDSDATA"."MLO_PINNIPEDS_OBSERVATION" created.
+
+
+Table "MEDSDATA"."MLO_REPTILES_DATA" created.
+
+
+Table "MEDSDATA"."MLO_REPTILES_OBSERVATION" created.
+
+
+Table "MEDSDATA"."MLO_SEABED_CONTACT_DATA" created.
+
+
+Comment created.
+
+
+Comment created.
+
+
+Table "MEDSDATA"."MLO_SEABED_CONTACT_OBSERVATION" created.
+
+
+Table "MEDSDATA"."MLO_SHIP_DATA" created.
+
+
+Table "MEDSDATA"."MLO_SHIP_OBSERVATION" created.
+
+
+Table "MEDSDATA"."MLO_SOSUS_DATA" created.
+
+
+Table "MEDSDATA"."MLO_SOSUS_OBSERVATION" created.
+
+
+Table "MEDSDATA"."MONTH_LOOKUPS" created.
+
+
+Table "MEDSDATA"."OBSERVATION" created.
+
+
+Table "MEDSDATA"."OBSERVATIONS" created.
+
+
+Table "MEDSDATA"."OCEAN_IMAGE_DATA" created.
+
+
+Table "MEDSDATA"."OCEAN_IMAGE_OBSERVATION" created.
+
+
+Table "MEDSDATA"."OMNI_AMBIENT_DATA" created.
+
+
+Table "MEDSDATA"."OMNI_AMBIENT_OBSERVATION" created.
+
+
+Table "MEDSDATA"."ORIGINATOR_CODE" created.
+
+
+Table "MEDSDATA"."PRODUCTS_REGION_DATA" created.
+
+
+Table "MEDSDATA"."PRODUCTS_REGION_OBSERVATION" created.
+
+
+Table "MEDSDATA"."PROFILE_DATA_SV" created.
+
+
+Table "MEDSDATA"."PROFILE_DATA_TONLY" created.
+
+
+Table "MEDSDATA"."PROFILE_DATA_TS" created.
+
+
+Table "MEDSDATA"."PROFILE_HEADER_SV" created.
+
+
+Table "MEDSDATA"."PROFILE_HEADER_TONLY" created.
+
+
+Table "MEDSDATA"."PROFILE_HEADER_TS" created.
+
+
+Table "MEDSDATA"."PROFILE_INDEX_SV" created.
+
+
+Table "MEDSDATA"."PROFILE_INDEX_TONLY" created.
+
+
+Table "MEDSDATA"."PROFILE_INDEX_TS" created.
+
+
+Table "MEDSDATA"."PROFILE_WATER_COLOUR_LOOKUP" created.
+
+
+Table "MEDSDATA"."REPEAT_TABLES_LOOKUP" created.
+
+
+Table "MEDSDATA"."REPRES_AMBIENTNOISE_D1" created.
+
+
+Table "MEDSDATA"."REPRES_IGPADS_L1" created.
+
+
+Table "MEDSDATA"."REPRES_IGPADS_L2" created.
+
+
+Table "MEDSDATA"."REPRES_MIXEDLAYER_D1" created.
+
+
+Table "MEDSDATA"."REPRES_MIXEDLAYER_L1" created.
+
+
+Table "MEDSDATA"."REPRES_MIXEDLAYER_L2" created.
+
+
+Table "MEDSDATA"."REPRES_PROFILE_L1_APR" created.
+
+
+Table "MEDSDATA"."REPRES_PROFILE_L1_AUG" created.
+
+
+Table "MEDSDATA"."REPRES_PROFILE_L1_DEC" created.
+
+
+Table "MEDSDATA"."REPRES_PROFILE_L1_FEB" created.
+
+
+Table "MEDSDATA"."REPRES_PROFILE_L1_JAN" created.
+
+
+Table "MEDSDATA"."REPRES_PROFILE_L1_JUL" created.
+
+
+Table "MEDSDATA"."REPRES_PROFILE_L1_JUN" created.
+
+
+Table "MEDSDATA"."REPRES_PROFILE_L1_MAR" created.
+
+
+Table "MEDSDATA"."REPRES_PROFILE_L1_MAY" created.
+
+
+Table "MEDSDATA"."REPRES_PROFILE_L1_NOV" created.
+
+
+Table "MEDSDATA"."REPRES_PROFILE_L1_OCT" created.
+
+
+Table "MEDSDATA"."REPRES_PROFILE_L1_SEP" created.
+
+
+Table "MEDSDATA"."REPRES_PROFILE_L2_APR" created.
+
+
+Table "MEDSDATA"."REPRES_PROFILE_L2_AUG" created.
+
+
+Table "MEDSDATA"."REPRES_PROFILE_L2_DEC" created.
+
+
+Table "MEDSDATA"."REPRES_PROFILE_L2_FEB" created.
+
+
+Table "MEDSDATA"."REPRES_PROFILE_L2_JAN" created.
+
+
+Table "MEDSDATA"."REPRES_PROFILE_L2_JUL" created.
+
+
+Table "MEDSDATA"."REPRES_PROFILE_L2_JUN" created.
+
+
+Table "MEDSDATA"."REPRES_PROFILE_L2_MAR" created.
+
+
+Table "MEDSDATA"."REPRES_PROFILE_L2_MAY" created.
+
+
+Table "MEDSDATA"."REPRES_PROFILE_L2_NOV" created.
+
+
+Table "MEDSDATA"."REPRES_PROFILE_L2_OCT" created.
+
+
+Table "MEDSDATA"."REPRES_PROFILE_L2_SEP" created.
+
+
+Table "MEDSDATA"."REPRES_PROFILE_L4_APR" created.
+
+
+Table "MEDSDATA"."REPRES_PROFILE_L4_AUG" created.
+
+
+Table "MEDSDATA"."REPRES_PROFILE_L4_DEC" created.
+
+
+Table "MEDSDATA"."REPRES_PROFILE_L4_FEB" created.
+
+
+Table "MEDSDATA"."REPRES_PROFILE_L4_JAN" created.
+
+
+Table "MEDSDATA"."REPRES_PROFILE_L4_JUL" created.
+
+
+Table "MEDSDATA"."REPRES_PROFILE_L4_JUN" created.
+
+
+Table "MEDSDATA"."REPRES_PROFILE_L4_MAR" created.
+
+
+Table "MEDSDATA"."REPRES_PROFILE_L4_MAY" created.
+
+
+Table "MEDSDATA"."REPRES_PROFILE_L4_NOV" created.
+
+
+Table "MEDSDATA"."REPRES_PROFILE_L4_OCT" created.
+
+
+Table "MEDSDATA"."REPRES_PROFILE_L4_SEP" created.
+
+
+Table "MEDSDATA"."REPRES_SEASURFACE_L1" created.
+
+
+Table "MEDSDATA"."REPRES_SHIPHITS_D1" created.
+
+
+Table "MEDSDATA"."REPRES_SPECIES_L1" created.
+
+
+Table "MEDSDATA"."ROWS_PER_JOB" created.
+
+
+Table "MEDSDATA"."SEASOAR_PROFILE_DATA" created.
+
+
+Table "MEDSDATA"."SEASOAR_PROFILE_OBSERVATION" created.
+
+
+Table "MEDSDATA"."SEASOAR_TOW_DATA" created.
+
+
+Table "MEDSDATA"."SEASOAR_TOW_OBSERVATION" created.
+
+
+Table "MEDSDATA"."SECCHI_DISK_DATA" created.
+
+
+Comment created.
+
+
+Table "MEDSDATA"."SECCHI_DISK_DATA_PRE_CR71887" created.
+
+
+Table "MEDSDATA"."SECCHI_DISK_OBSERVATION" created.
+
+
+Table "MEDSDATA"."SECCHI_WATER_COLOUR_LOOKUP" created.
+
+
+Table "MEDSDATA"."SHIPPING_DATA" created.
+
+
+Table "MEDSDATA"."SHIPPING_OBSERVATION" created.
+
+
+Table "MEDSDATA"."SHIP_CODES_LOOKUP" created.
+
+
+Table "MEDSDATA"."SHIP_DETAILS" created.
+
+
+Table "MEDSDATA"."SPATIAL_DUFF" created.
+
+
+Table "MEDSDATA"."STANDARD_LOOKUP" created.
+
+
+Table "MEDSDATA"."STATS_PERIOD" created.
+
+
+Table "MEDSDATA"."SUMMARY_2019_US" created.
+
+
+Table "MEDSDATA"."SUMMARY_2021_US" created.
+
+
+Table "MEDSDATA"."SUPPORT_TABLES" created.
+
+
+Table "MEDSDATA"."TABLE_INDEX_LOOKUP" created.
+
+
+Table "MEDSDATA"."TAB_COLUMNS" created.
+
+
+Table "MEDSDATA"."TAB_COLUMNS_COPY" created.
+
+
+Table "MEDSDATA"."TEMP_JOBS" created.
+
+
+Table "MEDSDATA"."TIFF_CHARTS" created.
+
+
+Table "MEDSDATA"."TIFF_CHARTS_BACKUP" created.
+
+
+Table "MEDSDATA"."TMP_FIELD_CHECK" created.
+
+
+Table "MEDSDATA"."TSSV_COUNT" created.
+
+
+Table "MEDSDATA"."TSSV_INSTRUMENT" created.
+
+
+Table "MEDSDATA"."UNIFIED_SECCHI_DATA" created.
+
+
+Table "MEDSDATA"."UNIFIED_SECCHI_OBSERVATION" created.
+
+
+Table "MEDSDATA"."UNIFIED_WATER_COLOUR_LOOKUP" created.
+
+
+Table "MEDSDATA"."VAL_RESULTS" created.
+
+
+Table "MEDSDATA"."WATER_COLOUR" created.
+
+
+Table "MEDSDATA"."WVS_3M" created.
+
+
+Table "MEDSDATA"."WVS_3M_BATHY_LINE" created.
+
+
+Table "MEDSDATA"."WVS_D_3M_COUNTPOLY" created.
+

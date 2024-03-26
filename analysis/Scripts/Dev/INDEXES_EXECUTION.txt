@@ -1,0 +1,4962 @@
+
+INDEX "MEDSDATA"."CRUISE_LAYER_IDX" created.
+
+
+INDEX "MEDSDATA"."HELP_TOPIC_SEQ" created.
+
+
+INDEX "MEDSDATA"."PK_JOB_TRACKING" created.
+
+
+INDEX "MEDSDATA"."PROFILE_HEADER_SV_IDX" created.
+
+
+INDEX "MEDSDATA"."PROFILE_HEADER_TONLY_IDX" created.
+
+
+INDEX "MEDSDATA"."PROFILE_HEADER_TS_IDX" created.
+
+
+INDEX "MEDSDATA"."PROFILE_INDEX_SV_IDX" created.
+
+
+INDEX "MEDSDATA"."PROFILE_INDEX_TONLY_IDX" created.
+
+
+INDEX "MEDSDATA"."PROFILE_INDEX_TS_IDX" created.
+
+
+INDEX "MEDSDATA"."INSTRUMENT_IDX" created.
+
+
+INDEX "MEDSDATA"."JOB_LAYER_IDX" created.
+
+
+Index "MEDSDATA"."IDX_PROFILEL4JUN_LATLON" created.
+
+
+Index "MEDSDATA"."IDX_JOB_MLO_59" created.
+
+
+Index "MEDSDATA"."PROFILE_INDEX_TONLY_MONTH" created.
+
+
+Index "MEDSDATA"."IDX_REPSHIPHITSD1_GRIDIDX" created.
+
+
+Index "MEDSDATA"."IDX_DATE_AQUAPACK_2" created.
+
+
+Index "MEDSDATA"."IDX_JOB_FRONT_36" created.
+
+
+Index "MEDSDATA"."IDX_LATLONG_MIXEDLAYER_L1" created.
+
+
+Index "MEDSDATA"."IDX_PROFILEL1APR_LATLON" created.
+
+
+Index "MEDSDATA"."IDX_REPPROFILEL2_FEB" created.
+
+
+Index "MEDSDATA"."IDX_PROFILEL2JUN_LATLON" created.
+
+
+Error starting at line : 131 in command -
+  CREATE INDEX "MEDSDATA"."MDQT_39EC6$_B2" ON "MEDSDATA"."MDQT_39EC6$" ("SDO_ROWID")
+Error report -
+ORA-00942: table or view does not exist
+00942. 00000 -  "table or view does not exist"
+*Cause:    
+*Action:
+
+Index "MEDSDATA"."IDX_AQUAPROF_DATA_MEDS" created.
+
+
+Index "MEDSDATA"."IDX_POSN_MLO_27" created.
+
+
+Index "MEDSDATA"."IDX_JOB_DIVE_17" created.
+
+
+Index "MEDSDATA"."IDX_DATE_BIOLUMINESCENCE_9" created.
+
+
+Index "MEDSDATA"."IDX_REPPROFILEL2_MAR" created.
+
+
+Index "MEDSDATA"."IDX_REPPROFILEL1_AUG" created.
+
+
+Index "MEDSDATA"."IDX_DATE_INTERNAL_27" created.
+
+
+INDEX "MEDSDATA"."IDX_GRIDL2_GRIDINDEX" created.
+
+
+Index "MEDSDATA"."IDX_REPPROFILEL2_SEP" created.
+
+
+Index "MEDSDATA"."IDX_DATE_MLO_37" created.
+
+
+Index "MEDSDATA"."IDX_JOB_IW_50" created.
+
+
+Index "MEDSDATA"."IDX_DATE_BEACH_5" created.
+
+
+Index "MEDSDATA"."IDX_REPPROFILEL2_NOV" created.
+
+
+Index "MEDSDATA"."IDX_REPPROFILEL2_OCT" created.
+
+
+Index "MEDSDATA"."IDX_JOB_ASRAP_1" created.
+
+
+INDEX "MEDSDATA"."IDX_REPMIXEDLYRL2_GRIDIDXMTH" created.
+
+
+Index "MEDSDATA"."IDX_REPSECL1_LOC" created.
+
+
+Error starting at line : 239 in command -
+  CREATE INDEX "MEDSDATA"."SI_INTERNALWAVE" ON "MEDSDATA"."INTERNAL_WAVE_OBSERVATION" ("LOCATION") 
+   INDEXTYPE IS "MDSYS"."SPATIAL_INDEX"  PARAMETERS (' ')
+Error report -
+ORA-29855: error occurred in the execution of ODCIINDEXCREATE routine
+ORA-13203: failed to read USER_SDO_GEOM_METADATA view
+ORA-06512: at "MDSYS.SDO_INDEX_METHOD_10I", line 10
+29855. 00000 -  "error occurred in the execution of ODCIINDEXCREATE routine"
+*Cause:    Failed to successfully execute the ODCIIndexCreate routine.
+*Action:   Check to see if the routine has been coded correctly.
+
+Index "MEDSDATA"."IDX_JOB_SECCHI_74" created.
+
+
+Index "MEDSDATA"."IDX_LATLONG_MIXEDLAYER_D1" created.
+
+
+Index "MEDSDATA"."IDX_REPPROFILEL4_NOV" created.
+
+
+Index "MEDSDATA"."IDX_REPPROFILEL1_OCT" created.
+
+
+Error starting at line : 269 in command -
+  CREATE INDEX "MEDSDATA"."SI_GRID_L4" ON "MEDSDATA"."MASTER_GRID_L4" ("LOCATION") 
+   INDEXTYPE IS "MDSYS"."SPATIAL_INDEX"  PARAMETERS (' ')
+Error report -
+ORA-29855: error occurred in the execution of ODCIINDEXCREATE routine
+ORA-13203: failed to read USER_SDO_GEOM_METADATA view
+ORA-06512: at "MDSYS.SDO_INDEX_METHOD_10I", line 10
+29855. 00000 -  "error occurred in the execution of ODCIINDEXCREATE routine"
+*Cause:    Failed to successfully execute the ODCIIndexCreate routine.
+*Action:   Check to see if the routine has been coded correctly.
+
+Index "MEDSDATA"."IDX_POSN_ASRAP_1" created.
+
+
+Index "MEDSDATA"."PROCESSING_JOB_BOOKING_IDX" created.
+
+
+Index "MEDSDATA"."IDX_FLAGS_JOB_OBS_NUMBER" created.
+
+
+INDEX "MEDSDATA"."IDX_SPECL1_LATLONTYPNAM" created.
+
+
+Index "MEDSDATA"."PROFILE_INDEX_SV_YEAR" created.
+
+
+Error starting at line : 305 in command -
+  CREATE INDEX "MEDSDATA"."SI_MLOSHIP" ON "MEDSDATA"."MLO_SHIP_OBSERVATION" ("LOCATION") 
+   INDEXTYPE IS "MDSYS"."SPATIAL_INDEX"  PARAMETERS (' ')
+Error report -
+ORA-29855: error occurred in the execution of ODCIINDEXCREATE routine
+ORA-13203: failed to read USER_SDO_GEOM_METADATA view
+ORA-06512: at "MDSYS.SDO_INDEX_METHOD_10I", line 10
+29855. 00000 -  "error occurred in the execution of ODCIINDEXCREATE routine"
+*Cause:    Failed to successfully execute the ODCIIndexCreate routine.
+*Action:   Check to see if the routine has been coded correctly.
+
+Index "MEDSDATA"."PROFILE_INDEX_SV_INSTRUMENT" created.
+
+
+Index "MEDSDATA"."IDX_AQUA2081_DATA_MEDS" created.
+
+
+Error starting at line : 323 in command -
+  CREATE INDEX "MEDSDATA"."SI_GLIDER_THREADED_X" ON "MEDSDATA"."GLIDER_THREADED_OBSERVATION" ("LOCATION") 
+   INDEXTYPE IS "MDSYS"."SPATIAL_INDEX"  PARAMETERS ('TABLESPACE=INDX')
+Error report -
+ORA-29855: error occurred in the execution of ODCIINDEXCREATE routine
+ORA-13203: failed to read USER_SDO_GEOM_METADATA view
+ORA-06512: at "MDSYS.SDO_INDEX_METHOD_10I", line 10
+29855. 00000 -  "error occurred in the execution of ODCIINDEXCREATE routine"
+*Cause:    Failed to successfully execute the ODCIIndexCreate routine.
+*Action:   Check to see if the routine has been coded correctly.
+
+Index "MEDSDATA"."IDX_JOB_MLO_60" created.
+
+
+Index "MEDSDATA"."IDX_REPPROFILEL4_MAR" created.
+
+
+Index "MEDSDATA"."IDX_MLO_CETACEANS_TRACK_DATE" created.
+
+
+Index "MEDSDATA"."IDX_ADCP_JOB" created.
+
+
+Index "MEDSDATA"."IDX_LATLONG_SHIPHITS_D1" created.
+
+
+Error starting at line : 359 in command -
+  CREATE INDEX "MEDSDATA"."SI_FRONTDEPTH" ON "MEDSDATA"."FRONT_DEPTH_PLAN_OBSERVATION" ("LOCATION") 
+   INDEXTYPE IS "MDSYS"."SPATIAL_INDEX"  PARAMETERS (' ')
+Error report -
+ORA-29855: error occurred in the execution of ODCIINDEXCREATE routine
+ORA-13203: failed to read USER_SDO_GEOM_METADATA view
+ORA-06512: at "MDSYS.SDO_INDEX_METHOD_10I", line 10
+29855. 00000 -  "error occurred in the execution of ODCIINDEXCREATE routine"
+*Cause:    Failed to successfully execute the ODCIIndexCreate routine.
+*Action:   Check to see if the routine has been coded correctly.
+
+Index "MEDSDATA"."IDX_JOB_GEOLOGY_41" created.
+
+
+Error starting at line : 371 in command -
+  CREATE INDEX "MEDSDATA"."SI_SEASOAR_PROFILE" ON "MEDSDATA"."SEASOAR_PROFILE_OBSERVATION" ("LOCATION") 
+   INDEXTYPE IS "MDSYS"."SPATIAL_INDEX"  PARAMETERS (' ')
+Error report -
+ORA-29855: error occurred in the execution of ODCIINDEXCREATE routine
+ORA-13203: failed to read USER_SDO_GEOM_METADATA view
+ORA-06512: at "MDSYS.SDO_INDEX_METHOD_10I", line 10
+29855. 00000 -  "error occurred in the execution of ODCIINDEXCREATE routine"
+*Cause:    Failed to successfully execute the ODCIIndexCreate routine.
+*Action:   Check to see if the routine has been coded correctly.
+
+Error starting at line : 377 in command -
+  CREATE INDEX "MEDSDATA"."SI_DIVESITE" ON "MEDSDATA"."DIVE_SITE_OBSERVATION" ("LOCATION") 
+   INDEXTYPE IS "MDSYS"."SPATIAL_INDEX"  PARAMETERS (' ')
+Error report -
+ORA-29855: error occurred in the execution of ODCIINDEXCREATE routine
+ORA-13203: failed to read USER_SDO_GEOM_METADATA view
+ORA-06512: at "MDSYS.SDO_INDEX_METHOD_10I", line 10
+29855. 00000 -  "error occurred in the execution of ODCIINDEXCREATE routine"
+*Cause:    Failed to successfully execute the ODCIIndexCreate routine.
+*Action:   Check to see if the routine has been coded correctly.
+
+Index "MEDSDATA"."PROFILE_INDEX_SV_DATE" created.
+
+
+Index "MEDSDATA"."IDX_JOB_EDDY_21" created.
+
+
+Index "MEDSDATA"."IDX_JOB_MLO_61" created.
+
+
+Index "MEDSDATA"."IDX_JOB_DEEP_11" created.
+
+
+Index "MEDSDATA"."IDX_JOB_FRONT_25" created.
+
+
+Index "MEDSDATA"."IDX_JOB_FRONT_24" created.
+
+
+Error starting at line : 419 in command -
+  CREATE INDEX "MEDSDATA"."SI_DIRAMBIENT" ON "MEDSDATA"."DIR_AMBIENT_OBSERVATION" ("LOCATION") 
+   INDEXTYPE IS "MDSYS"."SPATIAL_INDEX"  PARAMETERS (' ')
+Error report -
+ORA-29855: error occurred in the execution of ODCIINDEXCREATE routine
+ORA-13203: failed to read USER_SDO_GEOM_METADATA view
+ORA-06512: at "MDSYS.SDO_INDEX_METHOD_10I", line 10
+29855. 00000 -  "error occurred in the execution of ODCIINDEXCREATE routine"
+*Cause:    Failed to successfully execute the ODCIIndexCreate routine.
+*Action:   Check to see if the routine has been coded correctly.
+
+Index "MEDSDATA"."IDX_JOB_MLO_55" created.
+
+
+Index "MEDSDATA"."IDX_MLO_SEABED_CONTACT_DATE" created.
+
+
+Index "MEDSDATA"."IDX_PROFILEL4AUG_LATLON" created.
+
+
+INDEX "MEDSDATA"."IDX_REPIGPADSL1_GRIDIDX" created.
+
+
+Index "MEDSDATA"."IDX_DATE_MLO_36" created.
+
+
+Index "MEDSDATA"."IDX_JOB_FRONT_38" created.
+
+
+Index "MEDSDATA"."IDX_PROFILEL1MAY_LATLON" created.
+
+
+Index "MEDSDATA"."PROFILE_INDEX_SV_MONTH" created.
+
+
+Index "MEDSDATA"."PROFILE_DATA_TONLYALL_IDX" created.
+
+
+Error starting at line : 479 in command -
+  CREATE INDEX "MEDSDATA"."SI_ADCP" ON "MEDSDATA"."ADCP_OBSERVATION" ("LOCATION") 
+   INDEXTYPE IS "MDSYS"."SPATIAL_INDEX"  PARAMETERS (' ')
+Error report -
+ORA-29855: error occurred in the execution of ODCIINDEXCREATE routine
+ORA-13203: failed to read USER_SDO_GEOM_METADATA view
+ORA-06512: at "MDSYS.SDO_INDEX_METHOD_10I", line 10
+29855. 00000 -  "error occurred in the execution of ODCIINDEXCREATE routine"
+*Cause:    Failed to successfully execute the ODCIIndexCreate routine.
+*Action:   Check to see if the routine has been coded correctly.
+
+Index "MEDSDATA"."IDX_JOB_BEACH_8" created.
+
+
+Index "MEDSDATA"."IDX_JOB_OMNI_69" created.
+
+
+Index "MEDSDATA"."IDX_REPPROFILEL4_JAN" created.
+
+
+Error starting at line : 503 in command -
+  CREATE INDEX "MEDSDATA"."SI_FRONTGRID" ON "MEDSDATA"."FRONT_GRID_OBSERVATION" ("LOCATION") 
+   INDEXTYPE IS "MDSYS"."SPATIAL_INDEX"  PARAMETERS (' ')
+Error report -
+ORA-29855: error occurred in the execution of ODCIINDEXCREATE routine
+ORA-13203: failed to read USER_SDO_GEOM_METADATA view
+ORA-06512: at "MDSYS.SDO_INDEX_METHOD_10I", line 10
+29855. 00000 -  "error occurred in the execution of ODCIINDEXCREATE routine"
+*Cause:    Failed to successfully execute the ODCIIndexCreate routine.
+*Action:   Check to see if the routine has been coded correctly.
+
+Index "MEDSDATA"."IDX_SEASOAR_DATE" created.
+
+
+Index "MEDSDATA"."IDX_JOB_FRONT_30" created.
+
+
+Index "MEDSDATA"."IDX_PROFILEL2MAY_LATLON" created.
+
+
+Index "MEDSDATA"."SHIP_DETAILS_SHIP_IDX" created.
+
+
+Index "MEDSDATA"."IDX_DATE_MLO_34" created.
+
+
+Index "MEDSDATA"."IDX_POSN_GEOLOGY_17" created.
+
+
+Index "MEDSDATA"."IDX_JOB_PRODUCTS_71" created.
+
+
+Error starting at line : 551 in command -
+  CREATE INDEX "MEDSDATA"."SI_ASRAPPOINT" ON "MEDSDATA"."ASRAP_POINT_OBSERVATION" ("LOCATION") 
+   INDEXTYPE IS "MDSYS"."SPATIAL_INDEX"  PARAMETERS (' ')
+Error report -
+ORA-29855: error occurred in the execution of ODCIINDEXCREATE routine
+ORA-13203: failed to read USER_SDO_GEOM_METADATA view
+ORA-06512: at "MDSYS.SDO_INDEX_METHOD_10I", line 10
+29855. 00000 -  "error occurred in the execution of ODCIINDEXCREATE routine"
+*Cause:    Failed to successfully execute the ODCIIndexCreate routine.
+*Action:   Check to see if the routine has been coded correctly.
+
+Index "MEDSDATA"."IDX_REPPROFILEL1_APR" created.
+
+
+Index "MEDSDATA"."IDX_REPSEASRFL1_GRIDIDX" created.
+
+
+Error starting at line : 569 in command -
+  CREATE INDEX "MEDSDATA"."SI_GEOLOGYPARAM" ON "MEDSDATA"."GEOLOGY_PARAM_OBSERVATION" ("LOCATION") 
+   INDEXTYPE IS "MDSYS"."SPATIAL_INDEX"  PARAMETERS (' ')
+Error report -
+ORA-29855: error occurred in the execution of ODCIINDEXCREATE routine
+ORA-13203: failed to read USER_SDO_GEOM_METADATA view
+ORA-06512: at "MDSYS.SDO_INDEX_METHOD_10I", line 10
+29855. 00000 -  "error occurred in the execution of ODCIINDEXCREATE routine"
+*Cause:    Failed to successfully execute the ODCIIndexCreate routine.
+*Action:   Check to see if the routine has been coded correctly.
+
+Index "MEDSDATA"."IDX_JOB_FRONT_26" created.
+
+
+Index "MEDSDATA"."IDX_JOB_BEACH_7" created.
+
+
+Error starting at line : 587 in command -
+  CREATE INDEX "MEDSDATA"."SI_IWIMAGE" ON "MEDSDATA"."IW_IMAGE_OBSERVATION" ("LOCATION") 
+   INDEXTYPE IS "MDSYS"."SPATIAL_INDEX"  PARAMETERS (' ')
+Error report -
+ORA-29855: error occurred in the execution of ODCIINDEXCREATE routine
+ORA-13203: failed to read USER_SDO_GEOM_METADATA view
+ORA-06512: at "MDSYS.SDO_INDEX_METHOD_10I", line 10
+29855. 00000 -  "error occurred in the execution of ODCIINDEXCREATE routine"
+*Cause:    Failed to successfully execute the ODCIIndexCreate routine.
+*Action:   Check to see if the routine has been coded correctly.
+
+Index "MEDSDATA"."IDX_FLAGS_CATEGORY" created.
+
+
+Index "MEDSDATA"."PROFILE_INDEX_SV_JOB" created.
+
+
+Index "MEDSDATA"."IDX_DATE_MLO_32" created.
+
+
+Index "MEDSDATA"."IDX_REPMIXEDLYRL1_GRIDIDX" created.
+
+
+Index "MEDSDATA"."IDX_POSN_FRONT_10" created.
+
+
+Index "MEDSDATA"."IDX_REPPROFILEL4_OCT" created.
+
+
+Index "MEDSDATA"."IDX_JOBLOOK_TYPE" created.
+
+
+Index "MEDSDATA"."IDX_JOB_MLO_54" created.
+
+
+Index "MEDSDATA"."IDX_REPPROFILEL4_JUN" created.
+
+
+Index "MEDSDATA"."PROFILE_INDEX_TONLY_SHIP" created.
+
+
+Index "MEDSDATA"."IDX_REPPROFILEL4_JUL" created.
+
+
+Index "MEDSDATA"."IDX_POSN_BIOMASS" created.
+
+
+Index "MEDSDATA"."IDX_DATE_FRONT_21" created.
+
+
+Index "MEDSDATA"."IDX_REPPROFILEL4_AUG" created.
+
+
+Error starting at line : 677 in command -
+  CREATE INDEX "MEDSDATA"."SI_MLO_SOSUS" ON "MEDSDATA"."MLO_SOSUS_OBSERVATION" ("LOCATION") 
+   INDEXTYPE IS "MDSYS"."SPATIAL_INDEX"  PARAMETERS (' ')
+Error report -
+ORA-29855: error occurred in the execution of ODCIINDEXCREATE routine
+ORA-13203: failed to read USER_SDO_GEOM_METADATA view
+ORA-06512: at "MDSYS.SDO_INDEX_METHOD_10I", line 10
+29855. 00000 -  "error occurred in the execution of ODCIINDEXCREATE routine"
+*Cause:    Failed to successfully execute the ODCIIndexCreate routine.
+*Action:   Check to see if the routine has been coded correctly.
+
+Error starting at line : 683 in command -
+  CREATE INDEX "MEDSDATA"."SI_UNIFIEDSECCHI" ON "MEDSDATA"."UNIFIED_SECCHI_OBSERVATION" ("LOCATION") 
+   INDEXTYPE IS "MDSYS"."SPATIAL_INDEX"  PARAMETERS ('SDO_LEVEL=2 SDO_NUMTILES=1 TABLESPACE = INDX ')
+Error report -
+ORA-29855: error occurred in the execution of ODCIINDEXCREATE routine
+ORA-13203: failed to read USER_SDO_GEOM_METADATA view
+ORA-06512: at "MDSYS.SDO_INDEX_METHOD_10I", line 10
+29855. 00000 -  "error occurred in the execution of ODCIINDEXCREATE routine"
+*Cause:    Failed to successfully execute the ODCIIndexCreate routine.
+*Action:   Check to see if the routine has been coded correctly.
+
+Index "MEDSDATA"."IDX_PROFILEL1DEC_LATLON" created.
+
+
+Index "MEDSDATA"."IDX_JOB_ASRAP_5" created.
+
+
+Index "MEDSDATA"."IDX_JOB_BIOMASS" created.
+
+
+Index "MEDSDATA"."IDX_POSN_INTERNAL_18" created.
+
+
+Index "MEDSDATA"."IDX_DATE_FRONT_20" created.
+
+
+Index "MEDSDATA"."IDX_AQUA2081_LATLON" created.
+
+
+Index "MEDSDATA"."IDX_ADCP_REPEAT_JOB" created.
+
+
+Index "MEDSDATA"."IDX_DATE_MLO_39" created.
+
+
+Index "MEDSDATA"."IDX_POSN_SECCHI_29" created.
+
+
+Index "MEDSDATA"."IDX_PROFILEL1AUG_LATLON" created.
+
+
+Index "MEDSDATA"."IDX_REPPROFILEL2_DEC" created.
+
+
+Index "MEDSDATA"."IDX_PROFILEL4APR_LATLON" created.
+
+
+Index "MEDSDATA"."IDX_PROFILEL1MAR_LATLON" created.
+
+
+Index "MEDSDATA"."IDX_PROFILEL4OCT_LATLON" created.
+
+
+Index "MEDSDATA"."IDX_JOB_MLO_53" created.
+
+
+Index "MEDSDATA"."IDX_SEASOAR_TOW_DATA_JOB" created.
+
+
+Index "MEDSDATA"."IDX_POSN_ASRAP_2" created.
+
+
+Index "MEDSDATA"."IDX_MLO_CETACEANS_TRACK_JOB" created.
+
+
+Index "MEDSDATA"."IDX_POSN_MLO_23" created.
+
+
+Index "MEDSDATA"."IDX_REPPROFILEL1_MAY" created.
+
+
+INDEX "MEDSDATA"."IDX_REPSEASRFL1_GRIDIDXMTH" created.
+
+
+Index "MEDSDATA"."IDX_DATE_BIOMASS" created.
+
+
+Index "MEDSDATA"."IDX_POSN_DIR_6" created.
+
+
+Error starting at line : 827 in command -
+  CREATE INDEX "MEDSDATA"."SI_AQUA2081LINE" ON "MEDSDATA"."AQUA2081_LINE_OBSERVATION" ("LOCATION") 
+   INDEXTYPE IS "MDSYS"."SPATIAL_INDEX"  PARAMETERS (' ')
+Error report -
+ORA-29855: error occurred in the execution of ODCIINDEXCREATE routine
+ORA-13203: failed to read USER_SDO_GEOM_METADATA view
+ORA-06512: at "MDSYS.SDO_INDEX_METHOD_10I", line 10
+29855. 00000 -  "error occurred in the execution of ODCIINDEXCREATE routine"
+*Cause:    Failed to successfully execute the ODCIIndexCreate routine.
+*Action:   Check to see if the routine has been coded correctly.
+
+Index "MEDSDATA"."PROFILE_INDEX_TS_INSTRUMENT" created.
+
+
+Error starting at line : 839 in command -
+  CREATE INDEX "MEDSDATA"."SI_MLOBIRDS" ON "MEDSDATA"."MLO_BIRDS_OBSERVATION" ("LOCATION") 
+   INDEXTYPE IS "MDSYS"."SPATIAL_INDEX"  PARAMETERS (' ')
+Error report -
+ORA-29855: error occurred in the execution of ODCIINDEXCREATE routine
+ORA-13203: failed to read USER_SDO_GEOM_METADATA view
+ORA-06512: at "MDSYS.SDO_INDEX_METHOD_10I", line 10
+29855. 00000 -  "error occurred in the execution of ODCIINDEXCREATE routine"
+*Cause:    Failed to successfully execute the ODCIIndexCreate routine.
+*Action:   Check to see if the routine has been coded correctly.
+
+Index "MEDSDATA"."IDX_DATE_FRONT_22" created.
+
+
+Index "MEDSDATA"."IDX_POSN_GEOLOGY_16" created.
+
+
+Index "MEDSDATA"."IDX_MLO_SEABED_CONTACT_JOB" created.
+
+
+Index "MEDSDATA"."PROFILE_INDEX_TS_LATLON" created.
+
+
+Index "MEDSDATA"."IDX_REPAMBNOISED1_TOY" created.
+
+
+Index "MEDSDATA"."IDX_JOB_ASRAP_4" created.
+
+
+INDEX "MEDSDATA"."IDX_GRIDD1_LATLON" created.
+
+
+Error starting at line : 887 in command -
+  CREATE INDEX "MEDSDATA"."SI_SHIPPING" ON "MEDSDATA"."SHIPPING_OBSERVATION" ("LOCATION") 
+   INDEXTYPE IS "MDSYS"."SPATIAL_INDEX"
+Error report -
+ORA-29855: error occurred in the execution of ODCIINDEXCREATE routine
+ORA-13203: failed to read USER_SDO_GEOM_METADATA view
+ORA-06512: at "MDSYS.SDO_INDEX_METHOD_10I", line 10
+29855. 00000 -  "error occurred in the execution of ODCIINDEXCREATE routine"
+*Cause:    Failed to successfully execute the ODCIIndexCreate routine.
+*Action:   Check to see if the routine has been coded correctly.
+
+Index "MEDSDATA"."IDX_JOB_FRONT_27" created.
+
+
+Index "MEDSDATA"."PROFILE_DATA_TS_IDX" created.
+
+
+Index "MEDSDATA"."IDX_JOB_PRODUCTS_72" created.
+
+
+Index "MEDSDATA"."IDX_MLO_SEABED_CONTACT_DATA" created.
+
+
+Index "MEDSDATA"."IDX_DATE_FRONT_24" created.
+
+
+Index "MEDSDATA"."IDX_FIELD_LOOKUP_DATATYPEINDEX" created.
+
+
+Index "MEDSDATA"."IDX_DATE_DIVE_12" created.
+
+
+Index "MEDSDATA"."IDX_MLO_CETACEANS_ENVELOPE_JOB" created.
+
+
+Index "MEDSDATA"."IDX_JOB_MLO_64" created.
+
+
+INDEX "MEDSDATA"."IDX_REPMIXEDLYRL1_GRIDIDXMTH" created.
+
+
+Error starting at line : 953 in command -
+  CREATE INDEX "MEDSDATA"."SI_MLOCETEACEANS" ON "MEDSDATA"."MLO_CETACEANS_OBSERVATION" ("LOCATION") 
+   INDEXTYPE IS "MDSYS"."SPATIAL_INDEX"
+Error report -
+ORA-29855: error occurred in the execution of ODCIINDEXCREATE routine
+ORA-13203: failed to read USER_SDO_GEOM_METADATA view
+ORA-06512: at "MDSYS.SDO_INDEX_METHOD_10I", line 10
+29855. 00000 -  "error occurred in the execution of ODCIINDEXCREATE routine"
+*Cause:    Failed to successfully execute the ODCIIndexCreate routine.
+*Action:   Check to see if the routine has been coded correctly.
+
+Index "MEDSDATA"."IDX_PROFILEL4MAR_LATLON" created.
+
+
+INDEX "MEDSDATA"."WVS_COUNTRY" created.
+
+
+Index "MEDSDATA"."IDX_JOB_OMNI_68" created.
+
+
+Index "MEDSDATA"."WVS_BATHY_3M" created.
+
+
+INDEX "MEDSDATA"."IDX_REPMIXEDLYRD1_GRIDIDXMTH" created.
+
+
+Error starting at line : 989 in command -
+  CREATE INDEX "MEDSDATA"."SI_DEEPSCATTERIN" ON "MEDSDATA"."DEEP_SCATTERING_OBSERVATION" ("LOCATION") 
+   INDEXTYPE IS "MDSYS"."SPATIAL_INDEX"  PARAMETERS (' ')
+Error report -
+ORA-29855: error occurred in the execution of ODCIINDEXCREATE routine
+ORA-13203: failed to read USER_SDO_GEOM_METADATA view
+ORA-06512: at "MDSYS.SDO_INDEX_METHOD_10I", line 10
+29855. 00000 -  "error occurred in the execution of ODCIINDEXCREATE routine"
+*Cause:    Failed to successfully execute the ODCIIndexCreate routine.
+*Action:   Check to see if the routine has been coded correctly.
+
+Index "MEDSDATA"."IDX_DATE_MLO_38" created.
+
+
+Index "MEDSDATA"."IDX_JOB_ASRAP_3" created.
+
+
+Index "MEDSDATA"."IDX_JOB_IW_47" created.
+
+
+Error starting at line : 1,013 in command -
+  CREATE INDEX "MEDSDATA"."SI_BIOMASS" ON "MEDSDATA"."BIOMASS_OBSERVATION" ("LOCATION") 
+   INDEXTYPE IS "MDSYS"."SPATIAL_INDEX"  PARAMETERS (' ')
+Error report -
+ORA-29855: error occurred in the execution of ODCIINDEXCREATE routine
+ORA-13203: failed to read USER_SDO_GEOM_METADATA view
+ORA-06512: at "MDSYS.SDO_INDEX_METHOD_10I", line 10
+29855. 00000 -  "error occurred in the execution of ODCIINDEXCREATE routine"
+*Cause:    Failed to successfully execute the ODCIIndexCreate routine.
+*Action:   Check to see if the routine has been coded correctly.
+
+INDEX "MEDSDATA"."IDX_GRIDL1_LATLON" created.
+
+
+Index "MEDSDATA"."IDX_AQUALINE_LATLON" created.
+
+
+Index "MEDSDATA"."IDX_REPPROFILEL2_AUG" created.
+
+
+INDEX "MEDSDATA"."IDX_GRIDL4_LATLON" created.
+
+
+Error starting at line : 1,043 in command -
+  CREATE INDEX "MEDSDATA"."MDQT_39EC6$_B1" ON "MEDSDATA"."MDQT_39EC6$" ("SDO_GROUPCODE", "SDO_CODE", "SDO_ROWID", "SDO_STATUS")
+Error report -
+ORA-00942: table or view does not exist
+00942. 00000 -  "table or view does not exist"
+*Cause:    
+*Action:
+
+Index "MEDSDATA"."IDX_DATE_AQUAPACK_1" created.
+
+
+Index "MEDSDATA"."IDX_REPPROFILEL4_DEC" created.
+
+
+Index "MEDSDATA"."IDX_DATE_MLO_SOSUS" created.
+
+
+Index "MEDSDATA"."IDX_POSN_BIOLUMINESCENCE_4" created.
+
+
+Index "MEDSDATA"."IDX_PROFILEL1SEP_LATLON" created.
+
+
+Error starting at line : 1,079 in command -
+  CREATE INDEX "MEDSDATA"."SI_CHART_PANEL" ON "MEDSDATA"."CHART_PANEL" ("LIMITS") 
+   INDEXTYPE IS "MDSYS"."SPATIAL_INDEX"  PARAMETERS (' ')
+Error report -
+ORA-29855: error occurred in the execution of ODCIINDEXCREATE routine
+ORA-13203: failed to read USER_SDO_GEOM_METADATA view
+ORA-06512: at "MDSYS.SDO_INDEX_METHOD_10I", line 10
+29855. 00000 -  "error occurred in the execution of ODCIINDEXCREATE routine"
+*Cause:    Failed to successfully execute the ODCIIndexCreate routine.
+*Action:   Check to see if the routine has been coded correctly.
+
+Index "MEDSDATA"."IDX_PROFILEL4NOV_LATLON" created.
+
+
+Index "MEDSDATA"."IDX_REPPROFILEL1_JUN" created.
+
+
+Index "MEDSDATA"."SHIP_DETAILS_CRUISE_IDX" created.
+
+
+Error starting at line : 1,103 in command -
+  CREATE INDEX "MEDSDATA"."SI_AQUAPACKLINE" ON "MEDSDATA"."AQUAPACK_LINE_OBSERVATION" ("LOCATION") 
+   INDEXTYPE IS "MDSYS"."SPATIAL_INDEX"  PARAMETERS (' ')
+Error report -
+ORA-29855: error occurred in the execution of ODCIINDEXCREATE routine
+ORA-13203: failed to read USER_SDO_GEOM_METADATA view
+ORA-06512: at "MDSYS.SDO_INDEX_METHOD_10I", line 10
+29855. 00000 -  "error occurred in the execution of ODCIINDEXCREATE routine"
+*Cause:    Failed to successfully execute the ODCIIndexCreate routine.
+*Action:   Check to see if the routine has been coded correctly.
+
+Index "MEDSDATA"."IDX_JOB_FRONT_39" created.
+
+
+Index "MEDSDATA"."IDX_PROFILEL4DEC_LATLON" created.
+
+
+Index "MEDSDATA"."IDX_DATE_IW_29" created.
+
+
+Error starting at line : 1,127 in command -
+  CREATE INDEX "MEDSDATA"."SI_MLOPINNIPEDS" ON "MEDSDATA"."MLO_PINNIPEDS_OBSERVATION" ("LOCATION") 
+   INDEXTYPE IS "MDSYS"."SPATIAL_INDEX"  PARAMETERS (' ')
+Error report -
+ORA-29855: error occurred in the execution of ODCIINDEXCREATE routine
+ORA-13203: failed to read USER_SDO_GEOM_METADATA view
+ORA-06512: at "MDSYS.SDO_INDEX_METHOD_10I", line 10
+29855. 00000 -  "error occurred in the execution of ODCIINDEXCREATE routine"
+*Cause:    Failed to successfully execute the ODCIIndexCreate routine.
+*Action:   Check to see if the routine has been coded correctly.
+
+Index "MEDSDATA"."IDX_REPPROFILEL1_JAN" created.
+
+
+Index "MEDSDATA"."OBSERVATION_IDX2" created.
+
+
+Index "MEDSDATA"."PROFILE_DATA_SV_IDX" created.
+
+
+Index "MEDSDATA"."IDX_REPPROFILEL4_APR" created.
+
+
+Error starting at line : 1,157 in command -
+  CREATE INDEX "MEDSDATA"."SI_FRONTSATELLITE" ON "MEDSDATA"."FRONT_SATELLITE_OBSERVATION" ("LOCATION") 
+   INDEXTYPE IS "MDSYS"."SPATIAL_INDEX"  PARAMETERS ('TABLESPACE=INDX')
+Error report -
+ORA-29855: error occurred in the execution of ODCIINDEXCREATE routine
+ORA-13203: failed to read USER_SDO_GEOM_METADATA view
+ORA-06512: at "MDSYS.SDO_INDEX_METHOD_10I", line 10
+29855. 00000 -  "error occurred in the execution of ODCIINDEXCREATE routine"
+*Cause:    Failed to successfully execute the ODCIIndexCreate routine.
+*Action:   Check to see if the routine has been coded correctly.
+
+Index "MEDSDATA"."PROFILE_INDEX_TS_MONTH" created.
+
+
+Index "MEDSDATA"."IDX_PROFILEL1NOV_LATLON" created.
+
+
+Error starting at line : 1,175 in command -
+  CREATE INDEX "MEDSDATA"."SI_ASRAPPOLY" ON "MEDSDATA"."ASRAP_POLYGON_OBSERVATION" ("LOCATION") 
+   INDEXTYPE IS "MDSYS"."SPATIAL_INDEX"  PARAMETERS (' ')
+Error report -
+ORA-29855: error occurred in the execution of ODCIINDEXCREATE routine
+ORA-13203: failed to read USER_SDO_GEOM_METADATA view
+ORA-06512: at "MDSYS.SDO_INDEX_METHOD_10I", line 10
+29855. 00000 -  "error occurred in the execution of ODCIINDEXCREATE routine"
+*Cause:    Failed to successfully execute the ODCIIndexCreate routine.
+*Action:   Check to see if the routine has been coded correctly.
+
+Error starting at line : 1,181 in command -
+  CREATE INDEX "MEDSDATA"."SI_TIFF_CHARTS" ON "MEDSDATA"."TIFF_CHARTS" ("LIMITS") 
+   INDEXTYPE IS "MDSYS"."SPATIAL_INDEX"  PARAMETERS (' ')
+Error report -
+ORA-29855: error occurred in the execution of ODCIINDEXCREATE routine
+ORA-13203: failed to read USER_SDO_GEOM_METADATA view
+ORA-06512: at "MDSYS.SDO_INDEX_METHOD_10I", line 10
+29855. 00000 -  "error occurred in the execution of ODCIINDEXCREATE routine"
+*Cause:    Failed to successfully execute the ODCIIndexCreate routine.
+*Action:   Check to see if the routine has been coded correctly.
+
+Index "MEDSDATA"."IDX_DATE_EDDY_13" created.
+
+
+Index "MEDSDATA"."IDX_JOB_IW_49" created.
+
+
+Index "MEDSDATA"."PROFILE_INDEX_TONLY_DATE" created.
+
+
+Index "MEDSDATA"."IDX_JOB_ASRAP_6" created.
+
+
+Index "MEDSDATA"."IDX_POSN_SHIPPING" created.
+
+
+Index "MEDSDATA"."IDX_SEASOAR_TOW_JOB" created.
+
+
+Index "MEDSDATA"."IDX_JOB_BIOLUMINESCENCE_10" created.
+
+
+Index "MEDSDATA"."IDX_JOB_EDDY_19" created.
+
+
+Index "MEDSDATA"."IDX_REPPROFILEL1_DEC" created.
+
+
+Index "MEDSDATA"."IDX_JOB_IW_51" created.
+
+
+Index "MEDSDATA"."SHIP_DETAILS_INSTCODE" created.
+
+
+Index "MEDSDATA"."IDX_POSN_MLO_20" created.
+
+
+Index "MEDSDATA"."IDX_PROFILEL1FEB_LATLON" created.
+
+
+Index "MEDSDATA"."IDX_AQUALINE_DATA_MEDS" created.
+
+
+Index "MEDSDATA"."IDX_PROFILEL2OCT_LATLON" created.
+
+
+Index "MEDSDATA"."IDX_JOB_INTERNAL_46" created.
+
+
+Index "MEDSDATA"."IDX_DATE_SHIPPING" created.
+
+
+Index "MEDSDATA"."IDX_LATLONG_MIXEDLAYER_L2" created.
+
+
+Error starting at line : 1,295 in command -
+  CREATE INDEX "MEDSDATA"."SI_MLO_CETACEANS_ENVELOPE" ON "MEDSDATA"."MLO_CETACEANS_ENVELOPE" ("ENVELOPE") 
+   INDEXTYPE IS "MDSYS"."SPATIAL_INDEX"  PARAMETERS ('TABLESPACE=INDX')
+Error report -
+ORA-29855: error occurred in the execution of ODCIINDEXCREATE routine
+ORA-13203: failed to read USER_SDO_GEOM_METADATA view
+ORA-06512: at "MDSYS.SDO_INDEX_METHOD_10I", line 10
+29855. 00000 -  "error occurred in the execution of ODCIINDEXCREATE routine"
+*Cause:    Failed to successfully execute the ODCIIndexCreate routine.
+*Action:   Check to see if the routine has been coded correctly.
+
+Index "MEDSDATA"."IDX_JOB_MLO_58" created.
+
+
+Index "MEDSDATA"."IDX_PROFILEL2AUG_LATLON" created.
+
+
+Index "MEDSDATA"."IDX_JOB_DEEP_12" created.
+
+
+INDEX "MEDSDATA"."IDX_INSTRUMENT_OCEAN" created.
+
+
+Error starting at line : 1,325 in command -
+  CREATE INDEX "MEDSDATA"."SI_AQUAPACKPROFI" ON "MEDSDATA"."AQUAPACK_PROFILE_OBSERVATION" ("LOCATION") 
+   INDEXTYPE IS "MDSYS"."SPATIAL_INDEX"  PARAMETERS (' ')
+Error report -
+ORA-29855: error occurred in the execution of ODCIINDEXCREATE routine
+ORA-13203: failed to read USER_SDO_GEOM_METADATA view
+ORA-06512: at "MDSYS.SDO_INDEX_METHOD_10I", line 10
+29855. 00000 -  "error occurred in the execution of ODCIINDEXCREATE routine"
+*Cause:    Failed to successfully execute the ODCIIndexCreate routine.
+*Action:   Check to see if the routine has been coded correctly.
+
+Index "MEDSDATA"."IDX_JOB_FRONT_32" created.
+
+
+Index "MEDSDATA"."IDX_DATE_MLO_35" created.
+
+
+Index "MEDSDATA"."IDX_JOB_FRONT_35" created.
+
+
+Index "MEDSDATA"."IDX_PROFILEL2MAR_LATLON" created.
+
+
+Index "MEDSDATA"."IDX_REPPROFILEL2_JUN" created.
+
+
+Index "MEDSDATA"."IDX_REPPROFILEL4_FEB" created.
+
+
+Index "MEDSDATA"."IDX_PROFILEL4FEB_LATLON" created.
+
+
+Index "MEDSDATA"."PROFILE_INDEX_TS_SHIP" created.
+
+
+INDEX "MEDSDATA"."IDX_GRIDL2_LATLON" created.
+
+
+Index "MEDSDATA"."IDX_REPPROFILEL1_MAR" created.
+
+
+Index "MEDSDATA"."IDX_PROFILEL4JUL_LATLON" created.
+
+
+Error starting at line : 1,397 in command -
+  CREATE INDEX "MEDSDATA"."SI_FRONTTRANSECT" ON "MEDSDATA"."FRONT_TRANSECT_OBSERVATION" ("LOCATION") 
+   INDEXTYPE IS "MDSYS"."SPATIAL_INDEX"  PARAMETERS (' ')
+Error report -
+ORA-29855: error occurred in the execution of ODCIINDEXCREATE routine
+ORA-13203: failed to read USER_SDO_GEOM_METADATA view
+ORA-06512: at "MDSYS.SDO_INDEX_METHOD_10I", line 10
+29855. 00000 -  "error occurred in the execution of ODCIINDEXCREATE routine"
+*Cause:    Failed to successfully execute the ODCIIndexCreate routine.
+*Action:   Check to see if the routine has been coded correctly.
+
+Index "MEDSDATA"."IDX_MLO_CETACEANS_TRACK" created.
+
+
+Index "MEDSDATA"."IDX_JOB_MLO_SOSUS" created.
+
+
+Error starting at line : 1,415 in command -
+  CREATE INDEX "MEDSDATA"."SI_FRONTSURVEY" ON "MEDSDATA"."FRONT_SURVEY_OBSERVATION" ("LOCATION") 
+   INDEXTYPE IS "MDSYS"."SPATIAL_INDEX"  PARAMETERS (' ')
+Error report -
+ORA-29855: error occurred in the execution of ODCIINDEXCREATE routine
+ORA-13203: failed to read USER_SDO_GEOM_METADATA view
+ORA-06512: at "MDSYS.SDO_INDEX_METHOD_10I", line 10
+29855. 00000 -  "error occurred in the execution of ODCIINDEXCREATE routine"
+*Cause:    Failed to successfully execute the ODCIIndexCreate routine.
+*Action:   Check to see if the routine has been coded correctly.
+
+Index "MEDSDATA"."IDX_JOB_FRONT_28" created.
+
+
+Index "MEDSDATA"."IDX_POSN_FRONT_12" created.
+
+
+Index "MEDSDATA"."IDX_DATE_OMNI_40" created.
+
+
+Index "MEDSDATA"."IDX_POSN_MLO_26" created.
+
+
+Error starting at line : 1,445 in command -
+  CREATE INDEX "MEDSDATA"."SI_EDDYOBSERVATI" ON "MEDSDATA"."EDDY_OBSERVATION" ("LOCATION") 
+   INDEXTYPE IS "MDSYS"."SPATIAL_INDEX"  PARAMETERS (' ')
+Error report -
+ORA-29855: error occurred in the execution of ODCIINDEXCREATE routine
+ORA-13203: failed to read USER_SDO_GEOM_METADATA view
+ORA-06512: at "MDSYS.SDO_INDEX_METHOD_10I", line 10
+29855. 00000 -  "error occurred in the execution of ODCIINDEXCREATE routine"
+*Cause:    Failed to successfully execute the ODCIIndexCreate routine.
+*Action:   Check to see if the routine has been coded correctly.
+
+Index "MEDSDATA"."IDX_POSN_DIVE_7" created.
+
+
+Index "MEDSDATA"."IDX_POSN_MLO_SOSUS" created.
+
+
+Index "MEDSDATA"."IDX_JOB_FRONT_37" created.
+
+
+Index "MEDSDATA"."IDX_REPSPECIESL1_GRIDIDX" created.
+
+
+Error starting at line : 1,475 in command -
+  CREATE INDEX "MEDSDATA"."SI_GRID_L1" ON "MEDSDATA"."MASTER_GRID_L1" ("LOCATION") 
+   INDEXTYPE IS "MDSYS"."SPATIAL_INDEX"  PARAMETERS (' ')
+Error report -
+ORA-29855: error occurred in the execution of ODCIINDEXCREATE routine
+ORA-13203: failed to read USER_SDO_GEOM_METADATA view
+ORA-06512: at "MDSYS.SDO_INDEX_METHOD_10I", line 10
+29855. 00000 -  "error occurred in the execution of ODCIINDEXCREATE routine"
+*Cause:    Failed to successfully execute the ODCIIndexCreate routine.
+*Action:   Check to see if the routine has been coded correctly.
+
+Index "MEDSDATA"."IDX_REPPROFILEL2_JAN" created.
+
+
+Error starting at line : 1,487 in command -
+  CREATE INDEX "MEDSDATA"."SI_SECCHIDISK" ON "MEDSDATA"."SECCHI_DISK_OBSERVATION" ("LOCATION") 
+   INDEXTYPE IS "MDSYS"."SPATIAL_INDEX"  PARAMETERS (' ')
+Error report -
+ORA-29855: error occurred in the execution of ODCIINDEXCREATE routine
+ORA-13203: failed to read USER_SDO_GEOM_METADATA view
+ORA-06512: at "MDSYS.SDO_INDEX_METHOD_10I", line 10
+29855. 00000 -  "error occurred in the execution of ODCIINDEXCREATE routine"
+*Cause:    Failed to successfully execute the ODCIIndexCreate routine.
+*Action:   Check to see if the routine has been coded correctly.
+
+Index "MEDSDATA"."IDX_DATE_EDDY_14" created.
+
+
+Index "MEDSDATA"."IDX_DATE_FRONT_18" created.
+
+
+Index "MEDSDATA"."IDX_POSN_DEEP_5" created.
+
+
+INDEX "MEDSDATA"."R421_SDE_ROWID_UK" created.
+
+
+Index "MEDSDATA"."IDX_PROFILEL2APR_LATLON" created.
+
+
+Index "MEDSDATA"."IDX_JOB_MLO_52" created.
+
+
+Index "MEDSDATA"."IDX_ADCP_DATA_JOB" created.
+
+
+Index "MEDSDATA"."IDX_REPPROFILEL1_JUL" created.
+
+
+Index "MEDSDATA"."PROFILE_DATA_SVALL_IDX" created.
+
+
+INDEX "MEDSDATA"."IDX_GRIDL4_GRIDINDEX" created.
+
+
+Index "MEDSDATA"."IDX_POSN_MLO_21" created.
+
+
+Index "MEDSDATA"."IDX_JOB_DIR_15" created.
+
+
+Index "MEDSDATA"."IDX_PROFILEL1OCT_LATLON" created.
+
+
+Index "MEDSDATA"."IDX_DATE_INTERNAL_26" created.
+
+
+Index "MEDSDATA"."IDX_SHIPPING" created.
+
+
+Index "MEDSDATA"."PROFILE_INDEX_SV_SHIP" created.
+
+
+Index "MEDSDATA"."PROFILE_INDEX_TONLY_YEAR" created.
+
+
+Error starting at line : 1,595 in command -
+  CREATE INDEX "MEDSDATA"."SI_GEOLOGYQUALIT" ON "MEDSDATA"."GEOLOGY_QUALITY_OBSERVATION" ("LOCATION") 
+   INDEXTYPE IS "MDSYS"."SPATIAL_INDEX"  PARAMETERS (' ')
+Error report -
+ORA-29855: error occurred in the execution of ODCIINDEXCREATE routine
+ORA-13203: failed to read USER_SDO_GEOM_METADATA view
+ORA-06512: at "MDSYS.SDO_INDEX_METHOD_10I", line 10
+29855. 00000 -  "error occurred in the execution of ODCIINDEXCREATE routine"
+*Cause:    Failed to successfully execute the ODCIIndexCreate routine.
+*Action:   Check to see if the routine has been coded correctly.
+
+Index "MEDSDATA"."PROFILE_DATA_TONLY_IDX" created.
+
+
+Error starting at line : 1,607 in command -
+  CREATE INDEX "MEDSDATA"."SI_MLOREPTILES" ON "MEDSDATA"."MLO_REPTILES_OBSERVATION" ("LOCATION") 
+   INDEXTYPE IS "MDSYS"."SPATIAL_INDEX"  PARAMETERS (' ')
+Error report -
+ORA-29855: error occurred in the execution of ODCIINDEXCREATE routine
+ORA-13203: failed to read USER_SDO_GEOM_METADATA view
+ORA-06512: at "MDSYS.SDO_INDEX_METHOD_10I", line 10
+29855. 00000 -  "error occurred in the execution of ODCIINDEXCREATE routine"
+*Cause:    Failed to successfully execute the ODCIIndexCreate routine.
+*Action:   Check to see if the routine has been coded correctly.
+
+Index "MEDSDATA"."IDX_JOB_SHIPPING" created.
+
+
+Index "MEDSDATA"."IDX_REPPROFILEL2_APR" created.
+
+
+Index "MEDSDATA"."IDX_JOB_DIVE_16" created.
+
+
+Error starting at line : 1,631 in command -
+  CREATE INDEX "MEDSDATA"."SI_GRID_D1" ON "MEDSDATA"."MASTER_GRID_D1" ("LOCATION") 
+   INDEXTYPE IS "MDSYS"."SPATIAL_INDEX"  PARAMETERS (' ')
+Error report -
+ORA-29855: error occurred in the execution of ODCIINDEXCREATE routine
+ORA-13203: failed to read USER_SDO_GEOM_METADATA view
+ORA-06512: at "MDSYS.SDO_INDEX_METHOD_10I", line 10
+29855. 00000 -  "error occurred in the execution of ODCIINDEXCREATE routine"
+*Cause:    Failed to successfully execute the ODCIIndexCreate routine.
+*Action:   Check to see if the routine has been coded correctly.
+
+Index "MEDSDATA"."IDX_POSN_MLO_25" created.
+
+
+Index "MEDSDATA"."IDX_POSN_OMNI_28" created.
+
+
+Index "MEDSDATA"."PROFILE_INDEX_SV_CRUISE" created.
+
+
+Index "MEDSDATA"."PROFILE_INDEX_TONLY_LATLON" created.
+
+
+Index "MEDSDATA"."IDX_PROFILEL2NOV_LATLON" created.
+
+
+Index "MEDSDATA"."IDX_LATLONG_IGPADS_L1" created.
+
+
+Index "MEDSDATA"."IDX_POSN_FRONT_15" created.
+
+
+Error starting at line : 1,679 in command -
+  CREATE INDEX "MEDSDATA"."SI_PRODUCTSREGION" ON "MEDSDATA"."PRODUCTS_REGION_OBSERVATION" ("LOCATION") 
+   INDEXTYPE IS "MDSYS"."SPATIAL_INDEX"  PARAMETERS (' ')
+Error report -
+ORA-29855: error occurred in the execution of ODCIINDEXCREATE routine
+ORA-13203: failed to read USER_SDO_GEOM_METADATA view
+ORA-06512: at "MDSYS.SDO_INDEX_METHOD_10I", line 10
+29855. 00000 -  "error occurred in the execution of ODCIINDEXCREATE routine"
+*Cause:    Failed to successfully execute the ODCIIndexCreate routine.
+*Action:   Check to see if the routine has been coded correctly.
+
+Index "MEDSDATA"."IDX_PROFILEL4SEP_LATLON" created.
+
+
+Index "MEDSDATA"."IDX_PROFILEL4MAY_LATLON" created.
+
+
+Error starting at line : 1,697 in command -
+  CREATE INDEX "MEDSDATA"."SI_MLOOTHERS" ON "MEDSDATA"."MLO_OTHERS_OBSERVATION" ("LOCATION") 
+   INDEXTYPE IS "MDSYS"."SPATIAL_INDEX"  PARAMETERS (' ')
+Error report -
+ORA-29855: error occurred in the execution of ODCIINDEXCREATE routine
+ORA-13203: failed to read USER_SDO_GEOM_METADATA view
+ORA-06512: at "MDSYS.SDO_INDEX_METHOD_10I", line 10
+29855. 00000 -  "error occurred in the execution of ODCIINDEXCREATE routine"
+*Cause:    Failed to successfully execute the ODCIIndexCreate routine.
+*Action:   Check to see if the routine has been coded correctly.
+
+Index "MEDSDATA"."IDX_JOB_INTERNAL_45" created.
+
+
+Index "MEDSDATA"."CRUISE_LAYER_BOOKING_IDX" created.
+
+
+Index "MEDSDATA"."IDX_UNIFIED_SECCHI_LATLON" created.
+
+
+Index "MEDSDATA"."IDX_REPPROFILEL1_NOV" created.
+
+
+Index "MEDSDATA"."PROFILE_DATA_TSALL_IDX" created.
+
+
+Index "MEDSDATA"."IDX_JOB_FRONT_23" created.
+
+
+Error starting at line : 1,739 in command -
+  CREATE INDEX "MEDSDATA"."SI_BIOLUMINESCEN" ON "MEDSDATA"."BIOLUMINESCENCE_OBSERVATION" ("LOCATION") 
+   INDEXTYPE IS "MDSYS"."SPATIAL_INDEX"  PARAMETERS (' ')
+Error report -
+ORA-29855: error occurred in the execution of ODCIINDEXCREATE routine
+ORA-13203: failed to read USER_SDO_GEOM_METADATA view
+ORA-06512: at "MDSYS.SDO_INDEX_METHOD_10I", line 10
+29855. 00000 -  "error occurred in the execution of ODCIINDEXCREATE routine"
+*Cause:    Failed to successfully execute the ODCIIndexCreate routine.
+*Action:   Check to see if the routine has been coded correctly.
+
+Index "MEDSDATA"."IDX_POSN_MLO_24" created.
+
+
+Index "MEDSDATA"."IDX_PROFILEL2FEB_LATLON" created.
+
+
+Index "MEDSDATA"."IDX_DATE_FRONT_15" created.
+
+
+Index "MEDSDATA"."IDX_REPPROFILEL4_SEP" created.
+
+
+INDEX "MEDSDATA"."IDX_REPSHIPHITSD1_GRIDIDXMTH" created.
+
+
+Index "MEDSDATA"."PROFILE_INDEX_TS_YEAR" created.
+
+
+Error starting at line : 1,781 in command -
+  CREATE INDEX "MEDSDATA"."A530_IX1" ON "MEDSDATA"."WVS_D_3M_COUNTPOLY" ("SHAPE") 
+   INDEXTYPE IS "MDSYS"."SPATIAL_INDEX"  PARAMETERS (' ')
+Error report -
+ORA-29855: error occurred in the execution of ODCIINDEXCREATE routine
+ORA-13203: failed to read USER_SDO_GEOM_METADATA view
+ORA-06512: at "MDSYS.SDO_INDEX_METHOD_10I", line 10
+29855. 00000 -  "error occurred in the execution of ODCIINDEXCREATE routine"
+*Cause:    Failed to successfully execute the ODCIIndexCreate routine.
+*Action:   Check to see if the routine has been coded correctly.
+
+Index "MEDSDATA"."IDX_REPPROFILEL2_JUL" created.
+
+
+Index "MEDSDATA"."IDX_PROFILEL2SEP_LATLON" created.
+
+
+Index "MEDSDATA"."PROFILE_INDEX_TONLY_CRUISE" created.
+
+
+Index "MEDSDATA"."IDX_JOB_FRONT_29" created.
+
+
+Index "MEDSDATA"."IDX_UNIFIED_SECCHI_DATA_OBS" created.
+
+
+Index "MEDSDATA"."BATHY_CVL" created.
+
+
+Index "MEDSDATA"."IDX_JOB_MLO_56" created.
+
+
+Index "MEDSDATA"."IDX_DATE_MLO_33" created.
+
+
+Index "MEDSDATA"."IDX_JOB_GEOLOGY_40" created.
+
+
+Error starting at line : 1,841 in command -
+  CREATE INDEX "MEDSDATA"."SI_GRID_L2" ON "MEDSDATA"."MASTER_GRID_L2" ("LOCATION") 
+   INDEXTYPE IS "MDSYS"."SPATIAL_INDEX"  PARAMETERS (' ')
+Error report -
+ORA-29855: error occurred in the execution of ODCIINDEXCREATE routine
+ORA-13203: failed to read USER_SDO_GEOM_METADATA view
+ORA-06512: at "MDSYS.SDO_INDEX_METHOD_10I", line 10
+29855. 00000 -  "error occurred in the execution of ODCIINDEXCREATE routine"
+*Cause:    Failed to successfully execute the ODCIIndexCreate routine.
+*Action:   Check to see if the routine has been coded correctly.
+
+Index "MEDSDATA"."IDX_DATE_SECCHI_42" created.
+
+
+Index "MEDSDATA"."IDX_REPPROFILEL1_SEP" created.
+
+
+Index "MEDSDATA"."IDX_REPPROFILEL4_MAY" created.
+
+
+Error starting at line : 1,865 in command -
+  CREATE INDEX "MEDSDATA"."SI_FRONTMEAN" ON "MEDSDATA"."FRONT_MEAN_OBSERVATION" ("LOCATION") 
+   INDEXTYPE IS "MDSYS"."SPATIAL_INDEX"  PARAMETERS (' ')
+Error report -
+ORA-29855: error occurred in the execution of ODCIINDEXCREATE routine
+ORA-13203: failed to read USER_SDO_GEOM_METADATA view
+ORA-06512: at "MDSYS.SDO_INDEX_METHOD_10I", line 10
+29855. 00000 -  "error occurred in the execution of ODCIINDEXCREATE routine"
+*Cause:    Failed to successfully execute the ODCIIndexCreate routine.
+*Action:   Check to see if the routine has been coded correctly.
+
+Index "MEDSDATA"."IDX_JOB_FRONT_33" created.
+
+
+Index "MEDSDATA"."IDX_SEASOAR_JOB" created.
+
+
+Index "MEDSDATA"."IDX_LEVELINDEX_TABLENAM" created.
+
+
+Index "MEDSDATA"."IDX_AQUA2081_JOB" created.
+
+
+Index "MEDSDATA"."OBSERVATION_IDX1" created.
+
+
+Index "MEDSDATA"."IDX_REPMIXEDLYRL2_GRIDIDX" created.
+
+
+Index "MEDSDATA"."CRUISE_LAYER_NAME_IDX" created.
+
+
+INDEX "MEDSDATA"."IDX_SUPTAB_NAM" created.
+
+
+Error starting at line : 1,919 in command -
+  CREATE INDEX "MEDSDATA"."SI_BEACHOBSERVAT" ON "MEDSDATA"."BEACH_OBSERVATION" ("LOCATION") 
+   INDEXTYPE IS "MDSYS"."SPATIAL_INDEX"  PARAMETERS (' ')
+Error report -
+ORA-29855: error occurred in the execution of ODCIINDEXCREATE routine
+ORA-13203: failed to read USER_SDO_GEOM_METADATA view
+ORA-06512: at "MDSYS.SDO_INDEX_METHOD_10I", line 10
+29855. 00000 -  "error occurred in the execution of ODCIINDEXCREATE routine"
+*Cause:    Failed to successfully execute the ODCIIndexCreate routine.
+*Action:   Check to see if the routine has been coded correctly.
+
+Index "MEDSDATA"."IDX_SEASOAR_DATA_JOB" created.
+
+
+Index "MEDSDATA"."IDX_DATE_FRONT_16" created.
+
+
+Index "MEDSDATA"."IDX_BIOMASS_JOB" created.
+
+
+Index "MEDSDATA"."IDX_DATE_PRODUCTS_41" created.
+
+
+Index "MEDSDATA"."IDX_PROFILEL2JAN_LATLON" created.
+
+
+Index "MEDSDATA"."IDX_MLO_SEABED_CONTACT_POSN" created.
+
+
+Index "MEDSDATA"."PROFILE_INDEX_TONLY_INSTRUMENT" created.
+
+
+Index "MEDSDATA"."IDX_JOB_GEOLOGY_42" created.
+
+
+Index "MEDSDATA"."IDX_PROFILEL1JUN_LATLON" created.
+
+
+Index "MEDSDATA"."IDX_DATE_FRONT_25" created.
+
+
+Error starting at line : 1,985 in command -
+  CREATE INDEX "MEDSDATA"."SI_EDDYSATELLITE" ON "MEDSDATA"."EDDY_SATELLITE_OBSERVATION" ("LOCATION") 
+   INDEXTYPE IS "MDSYS"."SPATIAL_INDEX"  PARAMETERS (' ')
+Error report -
+ORA-29855: error occurred in the execution of ODCIINDEXCREATE routine
+ORA-13203: failed to read USER_SDO_GEOM_METADATA view
+ORA-06512: at "MDSYS.SDO_INDEX_METHOD_10I", line 10
+29855. 00000 -  "error occurred in the execution of ODCIINDEXCREATE routine"
+*Cause:    Failed to successfully execute the ODCIIndexCreate routine.
+*Action:   Check to see if the routine has been coded correctly.
+
+Error starting at line : 1,991 in command -
+  CREATE INDEX "MEDSDATA"."SI_MLOJELLYFISH" ON "MEDSDATA"."MLO_JELLYFISH_OBSERVATION" ("LOCATION") 
+   INDEXTYPE IS "MDSYS"."SPATIAL_INDEX"  PARAMETERS (' ')
+Error report -
+ORA-29855: error occurred in the execution of ODCIINDEXCREATE routine
+ORA-13203: failed to read USER_SDO_GEOM_METADATA view
+ORA-06512: at "MDSYS.SDO_INDEX_METHOD_10I", line 10
+29855. 00000 -  "error occurred in the execution of ODCIINDEXCREATE routine"
+*Cause:    Failed to successfully execute the ODCIIndexCreate routine.
+*Action:   Check to see if the routine has been coded correctly.
+
+Error starting at line : 1,997 in command -
+  CREATE INDEX "MEDSDATA"."SI_MLO_CETACEANS_TRACK" ON "MEDSDATA"."MLO_CETACEANS_TRACK" ("LOCATION") 
+   INDEXTYPE IS "MDSYS"."SPATIAL_INDEX"  PARAMETERS ('TABLESPACE=INDX')
+Error report -
+ORA-29855: error occurred in the execution of ODCIINDEXCREATE routine
+ORA-13203: failed to read USER_SDO_GEOM_METADATA view
+ORA-06512: at "MDSYS.SDO_INDEX_METHOD_10I", line 10
+29855. 00000 -  "error occurred in the execution of ODCIINDEXCREATE routine"
+*Cause:    Failed to successfully execute the ODCIIndexCreate routine.
+*Action:   Check to see if the routine has been coded correctly.
+
+Index "MEDSDATA"."IDX_JOB_MLO_65" created.
+
+
+Index "MEDSDATA"."IDX_JOB_DIR_13" created.
+
+
+Index "MEDSDATA"."IDX_JOB_MLO_66" created.
+
+
+Index "MEDSDATA"."IDX_DATE_FRONT_17" created.
+
+
+Index "MEDSDATA"."IDX_LATLONG_AMBIENTNOISE_D1" created.
+
+
+Index "MEDSDATA"."IDX_JOB_GEOLOGY_43" created.
+
+
+INDEX "MEDSDATA"."IDX_REPIGPADSL2_GRIDIDX" created.
+
+
+Index "MEDSDATA"."IDX_JOB_SECCHI_73" created.
+
+
+Index "MEDSDATA"."IDX_POSN_FRONT_14" created.
+
+
+Index "MEDSDATA"."IDX_POSN_IW_19" created.
+
+
+Index "MEDSDATA"."IDX_LATLONG_SEASURFACE_L1" created.
+
+
+Index "MEDSDATA"."IDX_UNIFIED_SECCI_OBS" created.
+
+
+Index "MEDSDATA"."IDX_PROFILEL4JAN_LATLON" created.
+
+
+Index "MEDSDATA"."OBSERVATION_IDX3" created.
+
+
+Index "MEDSDATA"."IDX_JOB_MLO_63" created.
+
+
+Index "MEDSDATA"."IDX_JOB_FRONT_34" created.
+
+
+Index "MEDSDATA"."IDX_DATE_DEEP_10" created.
+
+
+Index "MEDSDATA"."IDX_JOB_EDDY_18" created.
+
+
+Index "MEDSDATA"."IDX_REPMIXEDLYRD1_GRIDIDX" created.
+
+
+Error starting at line : 2,117 in command -
+  CREATE INDEX "MEDSDATA"."A531_IX1" ON "MEDSDATA"."WVS_3M_BATHY_LINE" ("SHAPE") 
+   INDEXTYPE IS "MDSYS"."SPATIAL_INDEX"  PARAMETERS (' ')
+Error report -
+ORA-29855: error occurred in the execution of ODCIINDEXCREATE routine
+ORA-13203: failed to read USER_SDO_GEOM_METADATA view
+ORA-06512: at "MDSYS.SDO_INDEX_METHOD_10I", line 10
+29855. 00000 -  "error occurred in the execution of ODCIINDEXCREATE routine"
+*Cause:    Failed to successfully execute the ODCIIndexCreate routine.
+*Action:   Check to see if the routine has been coded correctly.
+
+Index "MEDSDATA"."PROFILE_INDEX_SV_LATLON" created.
+
+
+Index "MEDSDATA"."IDX_DATE_FRONT_19" created.
+
+
+Index "MEDSDATA"."IDX_JOB_BIOLUMINESCENCE_9" created.
+
+
+Error starting at line : 2,141 in command -
+  CREATE INDEX "MEDSDATA"."SI_MLOFISH" ON "MEDSDATA"."MLO_FISH_OBSERVATION" ("LOCATION") 
+   INDEXTYPE IS "MDSYS"."SPATIAL_INDEX"  PARAMETERS (' ')
+Error report -
+ORA-29855: error occurred in the execution of ODCIINDEXCREATE routine
+ORA-13203: failed to read USER_SDO_GEOM_METADATA view
+ORA-06512: at "MDSYS.SDO_INDEX_METHOD_10I", line 10
+29855. 00000 -  "error occurred in the execution of ODCIINDEXCREATE routine"
+*Cause:    Failed to successfully execute the ODCIIndexCreate routine.
+*Action:   Check to see if the routine has been coded correctly.
+
+Index "MEDSDATA"."IDX_PROFILEL2JUL_LATLON" created.
+
+
+Index "MEDSDATA"."IDX_JOB_MLO_57" created.
+
+
+Index "MEDSDATA"."IDX_DATE_DIR_11" created.
+
+
+INDEX "MEDSDATA"."IDX_GRIDL1_GRIDINDEX" created.
+
+
+Index "MEDSDATA"."IDX_JOB_INTERNAL_44" created.
+
+
+Index "MEDSDATA"."IDX_FLAGS_VALUE" created.
+
+
+INDEX "MEDSDATA"."R420_SDE_ROWID_UK" created.
+
+
+Index "MEDSDATA"."PROCESSING_JOB_SHIP_IDX" created.
+
+
+Index "MEDSDATA"."PROFILE_INDEX_TS_DATE" created.
+
+
+Index "MEDSDATA"."PROFILE_INDEX_TONLY_JOB" created.
+
+
+Index "MEDSDATA"."IDX_FLAGS_STATUS" created.
+
+
+Error starting at line : 2,213 in command -
+  CREATE INDEX "MEDSDATA"."SI_FRONTFWOC" ON "MEDSDATA"."FRONT_FWOC_OBSERVATION" ("LOCATION") 
+   INDEXTYPE IS "MDSYS"."SPATIAL_INDEX"  PARAMETERS (' ')
+Error report -
+ORA-29855: error occurred in the execution of ODCIINDEXCREATE routine
+ORA-13203: failed to read USER_SDO_GEOM_METADATA view
+ORA-06512: at "MDSYS.SDO_INDEX_METHOD_10I", line 10
+29855. 00000 -  "error occurred in the execution of ODCIINDEXCREATE routine"
+*Cause:    Failed to successfully execute the ODCIIndexCreate routine.
+*Action:   Check to see if the routine has been coded correctly.
+
+Index "MEDSDATA"."IDX_DBFIELD_FINDEX" created.
+
+
+Index "MEDSDATA"."IDX_PROFILEL1JUL_LATLON" created.
+
+
+Error starting at line : 2,231 in command -
+  CREATE INDEX "MEDSDATA"."SI_MLO_SEABED_CONTACT" ON "MEDSDATA"."MLO_SEABED_CONTACT_OBSERVATION" ("LOCATION") 
+   INDEXTYPE IS "MDSYS"."SPATIAL_INDEX"  PARAMETERS ('TABLESPACE=INDX')
+Error report -
+ORA-29855: error occurred in the execution of ODCIINDEXCREATE routine
+ORA-13203: failed to read USER_SDO_GEOM_METADATA view
+ORA-06512: at "MDSYS.SDO_INDEX_METHOD_10I", line 10
+29855. 00000 -  "error occurred in the execution of ODCIINDEXCREATE routine"
+*Cause:    Failed to successfully execute the ODCIIndexCreate routine.
+*Action:   Check to see if the routine has been coded correctly.
+
+INDEX "MEDSDATA"."IDX_GRIDD1_GRIDINDEX" created.
+
+
+Index "MEDSDATA"."IDX_POSN_MLO_22" created.
+
+
+Index "MEDSDATA"."IDX_LATLONG_IGPADS_L2" created.
+
+
+Index "MEDSDATA"."IDX_DATE_FRONT_23" created.
+
+
+Index "MEDSDATA"."IDX_JOB_EDDY_22" created.
+
+
+Index "MEDSDATA"."PROFILE_INDEX_TS_CRUISE" created.
+
+
+Index "MEDSDATA"."IDX_JOB_IW_48" created.
+
+
+Error starting at line : 2,279 in command -
+  CREATE INDEX "MEDSDATA"."SI_BATHY" ON "MEDSDATA"."WVS_3M" ("SHAPE") 
+   INDEXTYPE IS "MDSYS"."SPATIAL_INDEX"  PARAMETERS (' ')
+Error report -
+ORA-29855: error occurred in the execution of ODCIINDEXCREATE routine
+ORA-13203: failed to read USER_SDO_GEOM_METADATA view
+ORA-06512: at "MDSYS.SDO_INDEX_METHOD_10I", line 10
+29855. 00000 -  "error occurred in the execution of ODCIINDEXCREATE routine"
+*Cause:    Failed to successfully execute the ODCIIndexCreate routine.
+*Action:   Check to see if the routine has been coded correctly.
+
+Index "MEDSDATA"."IDX_JOB_MLO_62" created.
+
+
+Index "MEDSDATA"."IDX_REPPROFILEL2_MAY" created.
+
+
+Index "MEDSDATA"."PROFILE_INDEX_TS_JOB" created.
+
+
+Index "MEDSDATA"."IDX_REPAMBNOISED1_GRIDIDX" created.
+
+
+Index "MEDSDATA"."IDX_AQUALINE_JOB" created.
+
+
+Index "MEDSDATA"."IDX_JOB_ASRAP_2" created.
+
+
+Index "MEDSDATA"."IDX_REPPROFILEL1_FEB" created.
+
+
+Index "MEDSDATA"."IDX_GLIDER_THREADED_JOB" created.
+
+
+Index "MEDSDATA"."IDX_JOB_MLO_67" created.
+
+
+Index "MEDSDATA"."IDX_ADCP_DATE" created.
+
+
+Index "MEDSDATA"."ARCHIVE_DATE_IDX" created.
+
+
+Index "MEDSDATA"."IDX_MLO_SHIPD_JOB" created.
+
+
+Index "MEDSDATA"."IDX_GLIDER_THREADED_DATA_JOB" created.
+
+
+Index "MEDSDATA"."IDX_JOB_DIR_14" created.
+
+
+Index "MEDSDATA"."IDX_JOB_EDDY_20" created.
+
+
+Index "MEDSDATA"."IDX_DATE_IW_28" created.
+
+
+Error starting at line : 2,381 in command -
+  CREATE INDEX "MEDSDATA"."SI_SEASOAR_TOW" ON "MEDSDATA"."SEASOAR_TOW_OBSERVATION" ("LOCATION") 
+   INDEXTYPE IS "MDSYS"."SPATIAL_INDEX"  PARAMETERS (' ')
+Error report -
+ORA-29855: error occurred in the execution of ODCIINDEXCREATE routine
+ORA-13203: failed to read USER_SDO_GEOM_METADATA view
+ORA-06512: at "MDSYS.SDO_INDEX_METHOD_10I", line 10
+29855. 00000 -  "error occurred in the execution of ODCIINDEXCREATE routine"
+*Cause:    Failed to successfully execute the ODCIIndexCreate routine.
+*Action:   Check to see if the routine has been coded correctly.
+
+Index "MEDSDATA"."IDX_POSN_EDDY_8" created.
+
+
+Index "MEDSDATA"."IDX_DATE_BEACH_8" created.
+
+
+Index "MEDSDATA"."IDX_POSN_BEACH_3" created.
+
+
+Index "MEDSDATA"."IDX_FIELDLOKKUP_TABNAME" created.
+
+
+Index "MEDSDATA"."IDX_PROFILEL1JAN_LATLON" created.
+
+
+Index "MEDSDATA"."IDX_PROFILEL2DEC_LATLON" created.
+
+
+Index "MEDSDATA"."IDX_SEASOAR_TOW_DATE" created.
+
+
+Index "MEDSDATA"."IDX_POSN_FRONT_11" created.
+
+
+Error starting at line : 2,435 in command -
+  CREATE INDEX "MEDSDATA"."SI_OMNIAMBIENT" ON "MEDSDATA"."OMNI_AMBIENT_OBSERVATION" ("LOCATION") 
+   INDEXTYPE IS "MDSYS"."SPATIAL_INDEX"  PARAMETERS (' ')
+Error report -
+ORA-29855: error occurred in the execution of ODCIINDEXCREATE routine
+ORA-13203: failed to read USER_SDO_GEOM_METADATA view
+ORA-06512: at "MDSYS.SDO_INDEX_METHOD_10I", line 10
+29855. 00000 -  "error occurred in the execution of ODCIINDEXCREATE routine"
+*Cause:    Failed to successfully execute the ODCIIndexCreate routine.
+*Action:   Check to see if the routine has been coded correctly.
+
+Error starting at line : 5 in command -
+  CREATE UNIQUE INDEX "MEDSDATA"."CRUISE_LAYER_IDX" ON "MEDSDATA"."CRUISE_LAYER" ("MEDS_CRUISE_NUMBER")
+Error report -
+ORA-00955: name is already used by an existing object
+00955. 00000 -  "name is already used by an existing object"
+*Cause:    
+*Action:
+
+Error starting at line : 11 in command -
+  CREATE UNIQUE INDEX "MEDSDATA"."HELP_TOPIC_SEQ" ON "MEDSDATA"."HELP" ("TOPIC", "SEQ")
+Error report -
+ORA-00955: name is already used by an existing object
+00955. 00000 -  "name is already used by an existing object"
+*Cause:    
+*Action:
+
+Error starting at line : 17 in command -
+  CREATE UNIQUE INDEX "MEDSDATA"."PK_JOB_TRACKING" ON "MEDSDATA"."JOB_TRACKING" ("MEIC_NUMBER")
+Error report -
+ORA-00955: name is already used by an existing object
+00955. 00000 -  "name is already used by an existing object"
+*Cause:    
+*Action:
+
+Error starting at line : 23 in command -
+  CREATE UNIQUE INDEX "MEDSDATA"."PROFILE_HEADER_SV_IDX" ON "MEDSDATA"."PROFILE_HEADER_SV" ("MEDS_JOB_NUMBER", "MEDS_OBSERVATION_NUMBER")
+Error report -
+ORA-00955: name is already used by an existing object
+00955. 00000 -  "name is already used by an existing object"
+*Cause:    
+*Action:
+
+Error starting at line : 29 in command -
+  CREATE UNIQUE INDEX "MEDSDATA"."PROFILE_HEADER_TONLY_IDX" ON "MEDSDATA"."PROFILE_HEADER_TONLY" ("MEDS_JOB_NUMBER", "MEDS_OBSERVATION_NUMBER")
+Error report -
+ORA-00955: name is already used by an existing object
+00955. 00000 -  "name is already used by an existing object"
+*Cause:    
+*Action:
+
+Error starting at line : 35 in command -
+  CREATE UNIQUE INDEX "MEDSDATA"."PROFILE_HEADER_TS_IDX" ON "MEDSDATA"."PROFILE_HEADER_TS" ("MEDS_JOB_NUMBER", "MEDS_OBSERVATION_NUMBER")
+Error report -
+ORA-00955: name is already used by an existing object
+00955. 00000 -  "name is already used by an existing object"
+*Cause:    
+*Action:
+
+Error starting at line : 41 in command -
+  CREATE UNIQUE INDEX "MEDSDATA"."PROFILE_INDEX_SV_IDX" ON "MEDSDATA"."PROFILE_INDEX_SV" ("MEDS_JOB_NUMBER", "MEDS_OBSERVATION_NUMBER")
+Error report -
+ORA-00955: name is already used by an existing object
+00955. 00000 -  "name is already used by an existing object"
+*Cause:    
+*Action:
+
+Error starting at line : 47 in command -
+  CREATE UNIQUE INDEX "MEDSDATA"."PROFILE_INDEX_TONLY_IDX" ON "MEDSDATA"."PROFILE_INDEX_TONLY" ("MEDS_JOB_NUMBER", "MEDS_OBSERVATION_NUMBER")
+Error report -
+ORA-00955: name is already used by an existing object
+00955. 00000 -  "name is already used by an existing object"
+*Cause:    
+*Action:
+
+Error starting at line : 53 in command -
+  CREATE UNIQUE INDEX "MEDSDATA"."PROFILE_INDEX_TS_IDX" ON "MEDSDATA"."PROFILE_INDEX_TS" ("MEDS_JOB_NUMBER", "MEDS_OBSERVATION_NUMBER")
+Error report -
+ORA-00955: name is already used by an existing object
+00955. 00000 -  "name is already used by an existing object"
+*Cause:    
+*Action:
+
+Error starting at line : 59 in command -
+  CREATE UNIQUE INDEX "MEDSDATA"."INSTRUMENT_IDX" ON "MEDSDATA"."INSTRUMENT" ("SERD")
+Error report -
+ORA-00955: name is already used by an existing object
+00955. 00000 -  "name is already used by an existing object"
+*Cause:    
+*Action:
+
+Error starting at line : 65 in command -
+  CREATE UNIQUE INDEX "MEDSDATA"."JOB_LAYER_IDX" ON "MEDSDATA"."MEDS_PROCESSING_JOB" ("JOB_NUMBER")
+Error report -
+ORA-00955: name is already used by an existing object
+00955. 00000 -  "name is already used by an existing object"
+*Cause:    
+*Action:
+
+Error starting at line : 71 in command -
+  CREATE INDEX "MEDSDATA"."IDX_PROFILEL4JUN_LATLON" ON "MEDSDATA"."REPRES_PROFILE_L4_JUN" ("LATITUDE", "LONGITUDE")
+Error report -
+ORA-00955: name is already used by an existing object
+00955. 00000 -  "name is already used by an existing object"
+*Cause:    
+*Action:
+
+Error starting at line : 77 in command -
+  CREATE INDEX "MEDSDATA"."IDX_JOB_MLO_59" ON "MEDSDATA"."MLO_JELLYFISH_OBSERVATION" ("MEDS_JOB_NUMBER", "MEDS_OBSERVATION_NUMBER")
+Error report -
+ORA-00955: name is already used by an existing object
+00955. 00000 -  "name is already used by an existing object"
+*Cause:    
+*Action:
+
+Error starting at line : 83 in command -
+  CREATE INDEX "MEDSDATA"."PROFILE_INDEX_TONLY_MONTH" ON "MEDSDATA"."PROFILE_INDEX_TONLY" ("MONTH")
+Error report -
+ORA-00955: name is already used by an existing object
+00955. 00000 -  "name is already used by an existing object"
+*Cause:    
+*Action:
+
+Error starting at line : 89 in command -
+  CREATE INDEX "MEDSDATA"."IDX_REPSHIPHITSD1_GRIDIDX" ON "MEDSDATA"."REPRES_SHIPHITS_D1" ("GRID_INDEX")
+Error report -
+ORA-00955: name is already used by an existing object
+00955. 00000 -  "name is already used by an existing object"
+*Cause:    
+*Action:
+
+Error starting at line : 95 in command -
+  CREATE INDEX "MEDSDATA"."IDX_DATE_AQUAPACK_2" ON "MEDSDATA"."AQUAPACK_JOB" ("VALIDATED")
+Error report -
+ORA-00955: name is already used by an existing object
+00955. 00000 -  "name is already used by an existing object"
+*Cause:    
+*Action:
+
+Error starting at line : 101 in command -
+  CREATE INDEX "MEDSDATA"."IDX_JOB_FRONT_36" ON "MEDSDATA"."FRONT_SURVEY_DATA" ("MEDS_JOB_NUMBER", "MEDS_OBSERVATION_NUMBER")
+Error report -
+ORA-00955: name is already used by an existing object
+00955. 00000 -  "name is already used by an existing object"
+*Cause:    
+*Action:
+
+Error starting at line : 107 in command -
+  CREATE INDEX "MEDSDATA"."IDX_LATLONG_MIXEDLAYER_L1" ON "MEDSDATA"."REPRES_MIXEDLAYER_L1" ("LATITUDE", "LONGITUDE")
+Error report -
+ORA-00955: name is already used by an existing object
+00955. 00000 -  "name is already used by an existing object"
+*Cause:    
+*Action:
+
+Error starting at line : 113 in command -
+  CREATE INDEX "MEDSDATA"."IDX_PROFILEL1APR_LATLON" ON "MEDSDATA"."REPRES_PROFILE_L1_APR" ("LATITUDE", "LONGITUDE")
+Error report -
+ORA-00955: name is already used by an existing object
+00955. 00000 -  "name is already used by an existing object"
+*Cause:    
+*Action:
+
+Error starting at line : 119 in command -
+  CREATE INDEX "MEDSDATA"."IDX_REPPROFILEL2_FEB" ON "MEDSDATA"."REPRES_PROFILE_L2_FEB" ("GRID_INDEX")
+Error report -
+ORA-00955: name is already used by an existing object
+00955. 00000 -  "name is already used by an existing object"
+*Cause:    
+*Action:
+
+Error starting at line : 125 in command -
+  CREATE INDEX "MEDSDATA"."IDX_PROFILEL2JUN_LATLON" ON "MEDSDATA"."REPRES_PROFILE_L2_JUN" ("LATITUDE", "LONGITUDE")
+Error report -
+ORA-00955: name is already used by an existing object
+00955. 00000 -  "name is already used by an existing object"
+*Cause:    
+*Action:
+
+Error starting at line : 131 in command -
+  CREATE INDEX "MEDSDATA"."MDQT_39EC6$_B2" ON "MEDSDATA"."MDQT_39EC6$" ("SDO_ROWID")
+Error report -
+ORA-00942: table or view does not exist
+00942. 00000 -  "table or view does not exist"
+*Cause:    
+*Action:
+
+Error starting at line : 137 in command -
+  CREATE INDEX "MEDSDATA"."IDX_AQUAPROF_DATA_MEDS" ON "MEDSDATA"."AQUAPACK_PROFILE_DATA" ("MEDS_JOB_NUMBER", "MEDS_OBSERVATION_NUMBER")
+Error report -
+ORA-00955: name is already used by an existing object
+00955. 00000 -  "name is already used by an existing object"
+*Cause:    
+*Action:
+
+Error starting at line : 143 in command -
+  CREATE INDEX "MEDSDATA"."IDX_POSN_MLO_27" ON "MEDSDATA"."MLO_SHIP_OBSERVATION" ("LATITUDE", "LONGITUDE")
+Error report -
+ORA-00955: name is already used by an existing object
+00955. 00000 -  "name is already used by an existing object"
+*Cause:    
+*Action:
+
+Error starting at line : 149 in command -
+  CREATE INDEX "MEDSDATA"."IDX_JOB_DIVE_17" ON "MEDSDATA"."DIVE_SITE_OBSERVATION" ("MEDS_JOB_NUMBER", "MEDS_OBSERVATION_NUMBER")
+Error report -
+ORA-00955: name is already used by an existing object
+00955. 00000 -  "name is already used by an existing object"
+*Cause:    
+*Action:
+
+Error starting at line : 155 in command -
+  CREATE INDEX "MEDSDATA"."IDX_DATE_BIOLUMINESCENCE_9" ON "MEDSDATA"."BIOLUMINESCENCE_OBSERVATION" ("DATETIME")
+Error report -
+ORA-00955: name is already used by an existing object
+00955. 00000 -  "name is already used by an existing object"
+*Cause:    
+*Action:
+
+Error starting at line : 161 in command -
+  CREATE INDEX "MEDSDATA"."IDX_REPPROFILEL2_MAR" ON "MEDSDATA"."REPRES_PROFILE_L2_MAR" ("GRID_INDEX")
+Error report -
+ORA-00955: name is already used by an existing object
+00955. 00000 -  "name is already used by an existing object"
+*Cause:    
+*Action:
+
+Error starting at line : 167 in command -
+  CREATE INDEX "MEDSDATA"."IDX_REPPROFILEL1_AUG" ON "MEDSDATA"."REPRES_PROFILE_L1_AUG" ("GRID_INDEX")
+Error report -
+ORA-00955: name is already used by an existing object
+00955. 00000 -  "name is already used by an existing object"
+*Cause:    
+*Action:
+
+Error starting at line : 173 in command -
+  CREATE INDEX "MEDSDATA"."IDX_DATE_INTERNAL_27" ON "MEDSDATA"."INTERNAL_WAVE_DATA" ("PUBLICATION_DATE")
+Error report -
+ORA-00955: name is already used by an existing object
+00955. 00000 -  "name is already used by an existing object"
+*Cause:    
+*Action:
+
+Error starting at line : 179 in command -
+  CREATE UNIQUE INDEX "MEDSDATA"."IDX_GRIDL2_GRIDINDEX" ON "MEDSDATA"."MASTER_GRID_L2" ("GRID_INDEX", "DATATYPE")
+Error report -
+ORA-00955: name is already used by an existing object
+00955. 00000 -  "name is already used by an existing object"
+*Cause:    
+*Action:
+
+Error starting at line : 185 in command -
+  CREATE INDEX "MEDSDATA"."IDX_REPPROFILEL2_SEP" ON "MEDSDATA"."REPRES_PROFILE_L2_SEP" ("GRID_INDEX")
+Error report -
+ORA-00955: name is already used by an existing object
+00955. 00000 -  "name is already used by an existing object"
+*Cause:    
+*Action:
+
+Error starting at line : 191 in command -
+  CREATE INDEX "MEDSDATA"."IDX_DATE_MLO_37" ON "MEDSDATA"."MLO_PINNIPEDS_OBSERVATION" ("DATE_RECORDED")
+Error report -
+ORA-00955: name is already used by an existing object
+00955. 00000 -  "name is already used by an existing object"
+*Cause:    
+*Action:
+
+Error starting at line : 197 in command -
+  CREATE INDEX "MEDSDATA"."IDX_JOB_IW_50" ON "MEDSDATA"."IW_POINTS" ("MEDS_JOB_NUMBER", "MEDS_OBSERVATION_NUMBER")
+Error report -
+ORA-00955: name is already used by an existing object
+00955. 00000 -  "name is already used by an existing object"
+*Cause:    
+*Action:
+
+Error starting at line : 203 in command -
+  CREATE INDEX "MEDSDATA"."IDX_DATE_BEACH_5" ON "MEDSDATA"."BEACH_DATA" ("GRADIENT_SURVEY_DATE")
+Error report -
+ORA-00955: name is already used by an existing object
+00955. 00000 -  "name is already used by an existing object"
+*Cause:    
+*Action:
+
+Error starting at line : 209 in command -
+  CREATE INDEX "MEDSDATA"."IDX_REPPROFILEL2_NOV" ON "MEDSDATA"."REPRES_PROFILE_L2_NOV" ("GRID_INDEX")
+Error report -
+ORA-00955: name is already used by an existing object
+00955. 00000 -  "name is already used by an existing object"
+*Cause:    
+*Action:
+
+Error starting at line : 215 in command -
+  CREATE INDEX "MEDSDATA"."IDX_REPPROFILEL2_OCT" ON "MEDSDATA"."REPRES_PROFILE_L2_OCT" ("GRID_INDEX")
+Error report -
+ORA-00955: name is already used by an existing object
+00955. 00000 -  "name is already used by an existing object"
+*Cause:    
+*Action:
+
+Error starting at line : 221 in command -
+  CREATE INDEX "MEDSDATA"."IDX_JOB_ASRAP_1" ON "MEDSDATA"."ASRAP_POINT_CADS_REPEAT" ("MEDS_JOB_NUMBER", "MEDS_OBSERVATION_NUMBER")
+Error report -
+ORA-00955: name is already used by an existing object
+00955. 00000 -  "name is already used by an existing object"
+*Cause:    
+*Action:
+
+Error starting at line : 227 in command -
+  CREATE UNIQUE INDEX "MEDSDATA"."IDX_REPMIXEDLYRL2_GRIDIDXMTH" ON "MEDSDATA"."REPRES_MIXEDLAYER_L2" ("LATITUDE", "LONGITUDE", "MONTH_ID")
+Error report -
+ORA-00955: name is already used by an existing object
+00955. 00000 -  "name is already used by an existing object"
+*Cause:    
+*Action:
+
+Error starting at line : 233 in command -
+  CREATE INDEX "MEDSDATA"."IDX_REPSECL1_LOC" ON "MEDSDATA"."REPRES_SPECIES_L1" ("LATITUDE", "LONGITUDE")
+Error report -
+ORA-00955: name is already used by an existing object
+00955. 00000 -  "name is already used by an existing object"
+*Cause:    
+*Action:
+
+Error starting at line : 239 in command -
+  CREATE INDEX "MEDSDATA"."SI_INTERNALWAVE" ON "MEDSDATA"."INTERNAL_WAVE_OBSERVATION" ("LOCATION") 
+   INDEXTYPE IS "MDSYS"."SPATIAL_INDEX"  PARAMETERS (' ')
+Error report -
+ORA-00955: name is already used by an existing object
+00955. 00000 -  "name is already used by an existing object"
+*Cause:    
+*Action:
+
+Error starting at line : 245 in command -
+  CREATE INDEX "MEDSDATA"."IDX_JOB_SECCHI_74" ON "MEDSDATA"."SECCHI_DISK_OBSERVATION" ("MEDS_JOB_NUMBER", "MEDS_OBSERVATION_NUMBER")
+Error report -
+ORA-00955: name is already used by an existing object
+00955. 00000 -  "name is already used by an existing object"
+*Cause:    
+*Action:
+
+Error starting at line : 251 in command -
+  CREATE INDEX "MEDSDATA"."IDX_LATLONG_MIXEDLAYER_D1" ON "MEDSDATA"."REPRES_MIXEDLAYER_D1" ("LATITUDE", "LONGITUDE")
+Error report -
+ORA-00955: name is already used by an existing object
+00955. 00000 -  "name is already used by an existing object"
+*Cause:    
+*Action:
+
+Error starting at line : 257 in command -
+  CREATE INDEX "MEDSDATA"."IDX_REPPROFILEL4_NOV" ON "MEDSDATA"."REPRES_PROFILE_L4_NOV" ("GRID_INDEX")
+Error report -
+ORA-00955: name is already used by an existing object
+00955. 00000 -  "name is already used by an existing object"
+*Cause:    
+*Action:
+
+Error starting at line : 263 in command -
+  CREATE INDEX "MEDSDATA"."IDX_REPPROFILEL1_OCT" ON "MEDSDATA"."REPRES_PROFILE_L1_OCT" ("GRID_INDEX")
+Error report -
+ORA-00955: name is already used by an existing object
+00955. 00000 -  "name is already used by an existing object"
+*Cause:    
+*Action:
+
+Error starting at line : 269 in command -
+  CREATE INDEX "MEDSDATA"."SI_GRID_L4" ON "MEDSDATA"."MASTER_GRID_L4" ("LOCATION") 
+   INDEXTYPE IS "MDSYS"."SPATIAL_INDEX"  PARAMETERS (' ')
+Error report -
+ORA-00955: name is already used by an existing object
+00955. 00000 -  "name is already used by an existing object"
+*Cause:    
+*Action:
+
+Error starting at line : 275 in command -
+  CREATE INDEX "MEDSDATA"."IDX_POSN_ASRAP_1" ON "MEDSDATA"."ASRAP_POINT_OBSERVATION" ("LATITUDE", "LONGITUDE")
+Error report -
+ORA-00955: name is already used by an existing object
+00955. 00000 -  "name is already used by an existing object"
+*Cause:    
+*Action:
+
+Error starting at line : 281 in command -
+  CREATE INDEX "MEDSDATA"."PROCESSING_JOB_BOOKING_IDX" ON "MEDSDATA"."MEDS_PROCESSING_JOB" ("BOOKING_JOB")
+Error report -
+ORA-00955: name is already used by an existing object
+00955. 00000 -  "name is already used by an existing object"
+*Cause:    
+*Action:
+
+Error starting at line : 287 in command -
+  CREATE INDEX "MEDSDATA"."IDX_FLAGS_JOB_OBS_NUMBER" ON "MEDSDATA"."MEDS_FLAGS" ("MEDS_JOB_NUMBER", "MEDS_OBSERVATION_NUMBER")
+Error report -
+ORA-00955: name is already used by an existing object
+00955. 00000 -  "name is already used by an existing object"
+*Cause:    
+*Action:
+
+Error starting at line : 293 in command -
+  CREATE UNIQUE INDEX "MEDSDATA"."IDX_SPECL1_LATLONTYPNAM" ON "MEDSDATA"."REPRES_SPECIES_L1" ("LATITUDE", "LONGITUDE", "SPECIES_TYPE", "SPECIES_NAME")
+Error report -
+ORA-00955: name is already used by an existing object
+00955. 00000 -  "name is already used by an existing object"
+*Cause:    
+*Action:
+
+Error starting at line : 299 in command -
+  CREATE INDEX "MEDSDATA"."PROFILE_INDEX_SV_YEAR" ON "MEDSDATA"."PROFILE_INDEX_SV" ("YEAR")
+Error report -
+ORA-00955: name is already used by an existing object
+00955. 00000 -  "name is already used by an existing object"
+*Cause:    
+*Action:
+
+Error starting at line : 305 in command -
+  CREATE INDEX "MEDSDATA"."SI_MLOSHIP" ON "MEDSDATA"."MLO_SHIP_OBSERVATION" ("LOCATION") 
+   INDEXTYPE IS "MDSYS"."SPATIAL_INDEX"  PARAMETERS (' ')
+Error report -
+ORA-00955: name is already used by an existing object
+00955. 00000 -  "name is already used by an existing object"
+*Cause:    
+*Action:
+
+Error starting at line : 311 in command -
+  CREATE INDEX "MEDSDATA"."PROFILE_INDEX_SV_INSTRUMENT" ON "MEDSDATA"."PROFILE_INDEX_SV" ("INSTRUMENT_CODE")
+Error report -
+ORA-00955: name is already used by an existing object
+00955. 00000 -  "name is already used by an existing object"
+*Cause:    
+*Action:
+
+Error starting at line : 317 in command -
+  CREATE INDEX "MEDSDATA"."IDX_AQUA2081_DATA_MEDS" ON "MEDSDATA"."AQUA2081_LINE_DATA" ("MEDS_JOB_NUMBER", "MEDS_OBSERVATION_NUMBER")
+Error report -
+ORA-00955: name is already used by an existing object
+00955. 00000 -  "name is already used by an existing object"
+*Cause:    
+*Action:
+
+Error starting at line : 323 in command -
+  CREATE INDEX "MEDSDATA"."SI_GLIDER_THREADED_X" ON "MEDSDATA"."GLIDER_THREADED_OBSERVATION" ("LOCATION") 
+   INDEXTYPE IS "MDSYS"."SPATIAL_INDEX"  PARAMETERS ('TABLESPACE=INDX')
+Error report -
+ORA-00955: name is already used by an existing object
+00955. 00000 -  "name is already used by an existing object"
+*Cause:    
+*Action:
+
+Error starting at line : 329 in command -
+  CREATE INDEX "MEDSDATA"."IDX_JOB_MLO_60" ON "MEDSDATA"."MLO_OTHERS_DATA" ("MEDS_JOB_NUMBER", "MEDS_OBSERVATION_NUMBER")
+Error report -
+ORA-00955: name is already used by an existing object
+00955. 00000 -  "name is already used by an existing object"
+*Cause:    
+*Action:
+
+Error starting at line : 335 in command -
+  CREATE INDEX "MEDSDATA"."IDX_REPPROFILEL4_MAR" ON "MEDSDATA"."REPRES_PROFILE_L4_MAR" ("GRID_INDEX")
+Error report -
+ORA-00955: name is already used by an existing object
+00955. 00000 -  "name is already used by an existing object"
+*Cause:    
+*Action:
+
+Error starting at line : 341 in command -
+  CREATE INDEX "MEDSDATA"."IDX_MLO_CETACEANS_TRACK_DATE" ON "MEDSDATA"."MLO_CETACEANS_TRACK" ("DATE_RECORDED_START")
+Error report -
+ORA-00955: name is already used by an existing object
+00955. 00000 -  "name is already used by an existing object"
+*Cause:    
+*Action:
+
+Error starting at line : 347 in command -
+  CREATE INDEX "MEDSDATA"."IDX_ADCP_JOB" ON "MEDSDATA"."ADCP_OBSERVATION" ("MEDS_JOB_NUMBER", "MEDS_OBSERVATION_NUMBER")
+Error report -
+ORA-00955: name is already used by an existing object
+00955. 00000 -  "name is already used by an existing object"
+*Cause:    
+*Action:
+
+Error starting at line : 353 in command -
+  CREATE INDEX "MEDSDATA"."IDX_LATLONG_SHIPHITS_D1" ON "MEDSDATA"."REPRES_SHIPHITS_D1" ("LATITUDE", "LONGITUDE")
+Error report -
+ORA-00955: name is already used by an existing object
+00955. 00000 -  "name is already used by an existing object"
+*Cause:    
+*Action:
+
+Error starting at line : 359 in command -
+  CREATE INDEX "MEDSDATA"."SI_FRONTDEPTH" ON "MEDSDATA"."FRONT_DEPTH_PLAN_OBSERVATION" ("LOCATION") 
+   INDEXTYPE IS "MDSYS"."SPATIAL_INDEX"  PARAMETERS (' ')
+Error report -
+ORA-00955: name is already used by an existing object
+00955. 00000 -  "name is already used by an existing object"
+*Cause:    
+*Action:
+
+Error starting at line : 365 in command -
+  CREATE INDEX "MEDSDATA"."IDX_JOB_GEOLOGY_41" ON "MEDSDATA"."GEOLOGY_PARAM_OBSERVATION" ("MEDS_JOB_NUMBER", "MEDS_OBSERVATION_NUMBER")
+Error report -
+ORA-00955: name is already used by an existing object
+00955. 00000 -  "name is already used by an existing object"
+*Cause:    
+*Action:
+
+Error starting at line : 371 in command -
+  CREATE INDEX "MEDSDATA"."SI_SEASOAR_PROFILE" ON "MEDSDATA"."SEASOAR_PROFILE_OBSERVATION" ("LOCATION") 
+   INDEXTYPE IS "MDSYS"."SPATIAL_INDEX"  PARAMETERS (' ')
+Error report -
+ORA-00955: name is already used by an existing object
+00955. 00000 -  "name is already used by an existing object"
+*Cause:    
+*Action:
+
+Error starting at line : 377 in command -
+  CREATE INDEX "MEDSDATA"."SI_DIVESITE" ON "MEDSDATA"."DIVE_SITE_OBSERVATION" ("LOCATION") 
+   INDEXTYPE IS "MDSYS"."SPATIAL_INDEX"  PARAMETERS (' ')
+Error report -
+ORA-00955: name is already used by an existing object
+00955. 00000 -  "name is already used by an existing object"
+*Cause:    
+*Action:
+
+Error starting at line : 383 in command -
+  CREATE INDEX "MEDSDATA"."PROFILE_INDEX_SV_DATE" ON "MEDSDATA"."PROFILE_INDEX_SV" ("DATE_TIME")
+Error report -
+ORA-00955: name is already used by an existing object
+00955. 00000 -  "name is already used by an existing object"
+*Cause:    
+*Action:
+
+Error starting at line : 389 in command -
+  CREATE INDEX "MEDSDATA"."IDX_JOB_EDDY_21" ON "MEDSDATA"."EDDY_SATELLITE_DATA" ("MEDS_JOB_NUMBER", "MEDS_OBSERVATION_NUMBER")
+Error report -
+ORA-00955: name is already used by an existing object
+00955. 00000 -  "name is already used by an existing object"
+*Cause:    
+*Action:
+
+Error starting at line : 395 in command -
+  CREATE INDEX "MEDSDATA"."IDX_JOB_MLO_61" ON "MEDSDATA"."MLO_OTHERS_OBSERVATION" ("MEDS_JOB_NUMBER", "MEDS_OBSERVATION_NUMBER")
+Error report -
+ORA-00955: name is already used by an existing object
+00955. 00000 -  "name is already used by an existing object"
+*Cause:    
+*Action:
+
+Error starting at line : 401 in command -
+  CREATE INDEX "MEDSDATA"."IDX_JOB_DEEP_11" ON "MEDSDATA"."DEEP_SCATTERING_DATA" ("MEDS_JOB_NUMBER", "MEDS_OBSERVATION_NUMBER")
+Error report -
+ORA-00955: name is already used by an existing object
+00955. 00000 -  "name is already used by an existing object"
+*Cause:    
+*Action:
+
+Error starting at line : 407 in command -
+  CREATE INDEX "MEDSDATA"."IDX_JOB_FRONT_25" ON "MEDSDATA"."FRONT_FWOC_OBSERVATION" ("MEDS_JOB_NUMBER", "MEDS_OBSERVATION_NUMBER")
+Error report -
+ORA-00955: name is already used by an existing object
+00955. 00000 -  "name is already used by an existing object"
+*Cause:    
+*Action:
+
+Error starting at line : 413 in command -
+  CREATE INDEX "MEDSDATA"."IDX_JOB_FRONT_24" ON "MEDSDATA"."FRONT_DEPTH_PLAN_REPEAT" ("MEDS_JOB_NUMBER", "MEDS_OBSERVATION_NUMBER")
+Error report -
+ORA-00955: name is already used by an existing object
+00955. 00000 -  "name is already used by an existing object"
+*Cause:    
+*Action:
+
+Error starting at line : 419 in command -
+  CREATE INDEX "MEDSDATA"."SI_DIRAMBIENT" ON "MEDSDATA"."DIR_AMBIENT_OBSERVATION" ("LOCATION") 
+   INDEXTYPE IS "MDSYS"."SPATIAL_INDEX"  PARAMETERS (' ')
+Error report -
+ORA-00955: name is already used by an existing object
+00955. 00000 -  "name is already used by an existing object"
+*Cause:    
+*Action:
+
+Error starting at line : 425 in command -
+  CREATE INDEX "MEDSDATA"."IDX_JOB_MLO_55" ON "MEDSDATA"."MLO_CETACEANS_OBSERVATION" ("MEDS_JOB_NUMBER", "MEDS_OBSERVATION_NUMBER")
+Error report -
+ORA-00955: name is already used by an existing object
+00955. 00000 -  "name is already used by an existing object"
+*Cause:    
+*Action:
+
+Error starting at line : 431 in command -
+  CREATE INDEX "MEDSDATA"."IDX_MLO_SEABED_CONTACT_DATE" ON "MEDSDATA"."MLO_SEABED_CONTACT_OBSERVATION" ("DATE_RECORDED")
+Error report -
+ORA-00955: name is already used by an existing object
+00955. 00000 -  "name is already used by an existing object"
+*Cause:    
+*Action:
+
+Error starting at line : 437 in command -
+  CREATE INDEX "MEDSDATA"."IDX_PROFILEL4AUG_LATLON" ON "MEDSDATA"."REPRES_PROFILE_L4_AUG" ("LATITUDE", "LONGITUDE")
+Error report -
+ORA-00955: name is already used by an existing object
+00955. 00000 -  "name is already used by an existing object"
+*Cause:    
+*Action:
+
+Error starting at line : 443 in command -
+  CREATE UNIQUE INDEX "MEDSDATA"."IDX_REPIGPADSL1_GRIDIDX" ON "MEDSDATA"."REPRES_IGPADS_L1" ("GRID_INDEX")
+Error report -
+ORA-00955: name is already used by an existing object
+00955. 00000 -  "name is already used by an existing object"
+*Cause:    
+*Action:
+
+Error starting at line : 449 in command -
+  CREATE INDEX "MEDSDATA"."IDX_DATE_MLO_36" ON "MEDSDATA"."MLO_OTHERS_OBSERVATION" ("DATE_RECORDED")
+Error report -
+ORA-00955: name is already used by an existing object
+00955. 00000 -  "name is already used by an existing object"
+*Cause:    
+*Action:
+
+Error starting at line : 455 in command -
+  CREATE INDEX "MEDSDATA"."IDX_JOB_FRONT_38" ON "MEDSDATA"."FRONT_TRANSECT_OBSERVATION" ("MEDS_JOB_NUMBER", "MEDS_OBSERVATION_NUMBER")
+Error report -
+ORA-00955: name is already used by an existing object
+00955. 00000 -  "name is already used by an existing object"
+*Cause:    
+*Action:
+
+Error starting at line : 461 in command -
+  CREATE INDEX "MEDSDATA"."IDX_PROFILEL1MAY_LATLON" ON "MEDSDATA"."REPRES_PROFILE_L1_MAY" ("LATITUDE", "LONGITUDE")
+Error report -
+ORA-00955: name is already used by an existing object
+00955. 00000 -  "name is already used by an existing object"
+*Cause:    
+*Action:
+
+Error starting at line : 467 in command -
+  CREATE INDEX "MEDSDATA"."PROFILE_INDEX_SV_MONTH" ON "MEDSDATA"."PROFILE_INDEX_SV" ("MONTH")
+Error report -
+ORA-00955: name is already used by an existing object
+00955. 00000 -  "name is already used by an existing object"
+*Cause:    
+*Action:
+
+Error starting at line : 473 in command -
+  CREATE INDEX "MEDSDATA"."PROFILE_DATA_TONLYALL_IDX" ON "MEDSDATA"."PROFILE_DATA_TONLY" ("MEDS_JOB_NUMBER", "MEDS_OBSERVATION_NUMBER", "DEPTH")
+Error report -
+ORA-00955: name is already used by an existing object
+00955. 00000 -  "name is already used by an existing object"
+*Cause:    
+*Action:
+
+Error starting at line : 479 in command -
+  CREATE INDEX "MEDSDATA"."SI_ADCP" ON "MEDSDATA"."ADCP_OBSERVATION" ("LOCATION") 
+   INDEXTYPE IS "MDSYS"."SPATIAL_INDEX"  PARAMETERS (' ')
+Error report -
+ORA-00955: name is already used by an existing object
+00955. 00000 -  "name is already used by an existing object"
+*Cause:    
+*Action:
+
+Error starting at line : 485 in command -
+  CREATE INDEX "MEDSDATA"."IDX_JOB_BEACH_8" ON "MEDSDATA"."BEACH_OBSERVATION" ("MEDS_JOB_NUMBER", "MEDS_OBSERVATION_NUMBER")
+Error report -
+ORA-00955: name is already used by an existing object
+00955. 00000 -  "name is already used by an existing object"
+*Cause:    
+*Action:
+
+Error starting at line : 491 in command -
+  CREATE INDEX "MEDSDATA"."IDX_JOB_OMNI_69" ON "MEDSDATA"."OMNI_AMBIENT_OBSERVATION" ("MEDS_JOB_NUMBER", "MEDS_OBSERVATION_NUMBER")
+Error report -
+ORA-00955: name is already used by an existing object
+00955. 00000 -  "name is already used by an existing object"
+*Cause:    
+*Action:
+
+Error starting at line : 497 in command -
+  CREATE INDEX "MEDSDATA"."IDX_REPPROFILEL4_JAN" ON "MEDSDATA"."REPRES_PROFILE_L4_JAN" ("GRID_INDEX")
+Error report -
+ORA-00955: name is already used by an existing object
+00955. 00000 -  "name is already used by an existing object"
+*Cause:    
+*Action:
+
+Error starting at line : 503 in command -
+  CREATE INDEX "MEDSDATA"."SI_FRONTGRID" ON "MEDSDATA"."FRONT_GRID_OBSERVATION" ("LOCATION") 
+   INDEXTYPE IS "MDSYS"."SPATIAL_INDEX"  PARAMETERS (' ')
+Error report -
+ORA-00955: name is already used by an existing object
+00955. 00000 -  "name is already used by an existing object"
+*Cause:    
+*Action:
+
+Error starting at line : 509 in command -
+  CREATE INDEX "MEDSDATA"."IDX_SEASOAR_DATE" ON "MEDSDATA"."SEASOAR_PROFILE_OBSERVATION" ("DATE_RECORDED")
+Error report -
+ORA-00955: name is already used by an existing object
+00955. 00000 -  "name is already used by an existing object"
+*Cause:    
+*Action:
+
+Error starting at line : 515 in command -
+  CREATE INDEX "MEDSDATA"."IDX_JOB_FRONT_30" ON "MEDSDATA"."FRONT_IMAGE_DATA" ("MEDS_JOB_NUMBER", "MEDS_OBSERVATION_NUMBER")
+Error report -
+ORA-00955: name is already used by an existing object
+00955. 00000 -  "name is already used by an existing object"
+*Cause:    
+*Action:
+
+Error starting at line : 521 in command -
+  CREATE INDEX "MEDSDATA"."IDX_PROFILEL2MAY_LATLON" ON "MEDSDATA"."REPRES_PROFILE_L2_MAY" ("LATITUDE", "LONGITUDE")
+Error report -
+ORA-00955: name is already used by an existing object
+00955. 00000 -  "name is already used by an existing object"
+*Cause:    
+*Action:
+
+Error starting at line : 527 in command -
+  CREATE INDEX "MEDSDATA"."SHIP_DETAILS_SHIP_IDX" ON "MEDSDATA"."SHIP_DETAILS" ("MEDS_SHIP_NUMBER")
+Error report -
+ORA-00955: name is already used by an existing object
+00955. 00000 -  "name is already used by an existing object"
+*Cause:    
+*Action:
+
+Error starting at line : 533 in command -
+  CREATE INDEX "MEDSDATA"."IDX_DATE_MLO_34" ON "MEDSDATA"."MLO_FISH_OBSERVATION" ("DATE_RECORDED")
+Error report -
+ORA-00955: name is already used by an existing object
+00955. 00000 -  "name is already used by an existing object"
+*Cause:    
+*Action:
+
+Error starting at line : 539 in command -
+  CREATE INDEX "MEDSDATA"."IDX_POSN_GEOLOGY_17" ON "MEDSDATA"."GEOLOGY_QUALITY_OBSERVATION" ("LATITUDE", "LONGITUDE")
+Error report -
+ORA-00955: name is already used by an existing object
+00955. 00000 -  "name is already used by an existing object"
+*Cause:    
+*Action:
+
+Error starting at line : 545 in command -
+  CREATE INDEX "MEDSDATA"."IDX_JOB_PRODUCTS_71" ON "MEDSDATA"."PRODUCTS_REGION_DATA" ("MEDS_JOB_NUMBER", "MEDS_OBSERVATION_NUMBER")
+Error report -
+ORA-00955: name is already used by an existing object
+00955. 00000 -  "name is already used by an existing object"
+*Cause:    
+*Action:
+
+Error starting at line : 551 in command -
+  CREATE INDEX "MEDSDATA"."SI_ASRAPPOINT" ON "MEDSDATA"."ASRAP_POINT_OBSERVATION" ("LOCATION") 
+   INDEXTYPE IS "MDSYS"."SPATIAL_INDEX"  PARAMETERS (' ')
+Error report -
+ORA-00955: name is already used by an existing object
+00955. 00000 -  "name is already used by an existing object"
+*Cause:    
+*Action:
+
+Error starting at line : 557 in command -
+  CREATE INDEX "MEDSDATA"."IDX_REPPROFILEL1_APR" ON "MEDSDATA"."REPRES_PROFILE_L1_APR" ("GRID_INDEX")
+Error report -
+ORA-00955: name is already used by an existing object
+00955. 00000 -  "name is already used by an existing object"
+*Cause:    
+*Action:
+
+Error starting at line : 563 in command -
+  CREATE INDEX "MEDSDATA"."IDX_REPSEASRFL1_GRIDIDX" ON "MEDSDATA"."REPRES_SEASURFACE_L1" ("GRID_INDEX")
+Error report -
+ORA-00955: name is already used by an existing object
+00955. 00000 -  "name is already used by an existing object"
+*Cause:    
+*Action:
+
+Error starting at line : 569 in command -
+  CREATE INDEX "MEDSDATA"."SI_GEOLOGYPARAM" ON "MEDSDATA"."GEOLOGY_PARAM_OBSERVATION" ("LOCATION") 
+   INDEXTYPE IS "MDSYS"."SPATIAL_INDEX"  PARAMETERS (' ')
+Error report -
+ORA-00955: name is already used by an existing object
+00955. 00000 -  "name is already used by an existing object"
+*Cause:    
+*Action:
+
+Error starting at line : 575 in command -
+  CREATE INDEX "MEDSDATA"."IDX_JOB_FRONT_26" ON "MEDSDATA"."FRONT_FWOC_REPEAT" ("MEDS_JOB_NUMBER", "MEDS_OBSERVATION_NUMBER")
+Error report -
+ORA-00955: name is already used by an existing object
+00955. 00000 -  "name is already used by an existing object"
+*Cause:    
+*Action:
+
+Error starting at line : 581 in command -
+  CREATE INDEX "MEDSDATA"."IDX_JOB_BEACH_7" ON "MEDSDATA"."BEACH_DATA" ("MEDS_JOB_NUMBER", "MEDS_OBSERVATION_NUMBER")
+Error report -
+ORA-00955: name is already used by an existing object
+00955. 00000 -  "name is already used by an existing object"
+*Cause:    
+*Action:
+
+Error starting at line : 587 in command -
+  CREATE INDEX "MEDSDATA"."SI_IWIMAGE" ON "MEDSDATA"."IW_IMAGE_OBSERVATION" ("LOCATION") 
+   INDEXTYPE IS "MDSYS"."SPATIAL_INDEX"  PARAMETERS (' ')
+Error report -
+ORA-00955: name is already used by an existing object
+00955. 00000 -  "name is already used by an existing object"
+*Cause:    
+*Action:
+
+Error starting at line : 593 in command -
+  CREATE INDEX "MEDSDATA"."IDX_FLAGS_CATEGORY" ON "MEDSDATA"."MEDS_FLAGS" ("CATEGORY")
+Error report -
+ORA-00955: name is already used by an existing object
+00955. 00000 -  "name is already used by an existing object"
+*Cause:    
+*Action:
+
+Error starting at line : 599 in command -
+  CREATE INDEX "MEDSDATA"."PROFILE_INDEX_SV_JOB" ON "MEDSDATA"."PROFILE_INDEX_SV" ("MEDS_JOB_NUMBER")
+Error report -
+ORA-00955: name is already used by an existing object
+00955. 00000 -  "name is already used by an existing object"
+*Cause:    
+*Action:
+
+Error starting at line : 605 in command -
+  CREATE INDEX "MEDSDATA"."IDX_DATE_MLO_32" ON "MEDSDATA"."MLO_BIRDS_OBSERVATION" ("DATE_RECORDED")
+Error report -
+ORA-00955: name is already used by an existing object
+00955. 00000 -  "name is already used by an existing object"
+*Cause:    
+*Action:
+
+Error starting at line : 611 in command -
+  CREATE INDEX "MEDSDATA"."IDX_REPMIXEDLYRL1_GRIDIDX" ON "MEDSDATA"."REPRES_MIXEDLAYER_L1" ("GRID_INDEX")
+Error report -
+ORA-00955: name is already used by an existing object
+00955. 00000 -  "name is already used by an existing object"
+*Cause:    
+*Action:
+
+Error starting at line : 617 in command -
+  CREATE INDEX "MEDSDATA"."IDX_POSN_FRONT_10" ON "MEDSDATA"."FRONT_DEPTH_PLAN_REPEAT" ("LATITUDE", "LONGITUDE")
+Error report -
+ORA-00955: name is already used by an existing object
+00955. 00000 -  "name is already used by an existing object"
+*Cause:    
+*Action:
+
+Error starting at line : 623 in command -
+  CREATE INDEX "MEDSDATA"."IDX_REPPROFILEL4_OCT" ON "MEDSDATA"."REPRES_PROFILE_L4_OCT" ("GRID_INDEX")
+Error report -
+ORA-00955: name is already used by an existing object
+00955. 00000 -  "name is already used by an existing object"
+*Cause:    
+*Action:
+
+Error starting at line : 629 in command -
+  CREATE INDEX "MEDSDATA"."IDX_JOBLOOK_TYPE" ON "MEDSDATA"."JOB_LOOKUPS" ("TYPE")
+Error report -
+ORA-00955: name is already used by an existing object
+00955. 00000 -  "name is already used by an existing object"
+*Cause:    
+*Action:
+
+Error starting at line : 635 in command -
+  CREATE INDEX "MEDSDATA"."IDX_JOB_MLO_54" ON "MEDSDATA"."MLO_CETACEANS_DATA" ("MEDS_JOB_NUMBER", "MEDS_OBSERVATION_NUMBER")
+Error report -
+ORA-00955: name is already used by an existing object
+00955. 00000 -  "name is already used by an existing object"
+*Cause:    
+*Action:
+
+Error starting at line : 641 in command -
+  CREATE INDEX "MEDSDATA"."IDX_REPPROFILEL4_JUN" ON "MEDSDATA"."REPRES_PROFILE_L4_JUN" ("GRID_INDEX")
+Error report -
+ORA-00955: name is already used by an existing object
+00955. 00000 -  "name is already used by an existing object"
+*Cause:    
+*Action:
+
+Error starting at line : 647 in command -
+  CREATE INDEX "MEDSDATA"."PROFILE_INDEX_TONLY_SHIP" ON "MEDSDATA"."PROFILE_INDEX_TONLY" ("MEDS_SHIP_NUMBER")
+Error report -
+ORA-00955: name is already used by an existing object
+00955. 00000 -  "name is already used by an existing object"
+*Cause:    
+*Action:
+
+Error starting at line : 653 in command -
+  CREATE INDEX "MEDSDATA"."IDX_REPPROFILEL4_JUL" ON "MEDSDATA"."REPRES_PROFILE_L4_JUL" ("GRID_INDEX")
+Error report -
+ORA-00955: name is already used by an existing object
+00955. 00000 -  "name is already used by an existing object"
+*Cause:    
+*Action:
+
+Error starting at line : 659 in command -
+  CREATE INDEX "MEDSDATA"."IDX_POSN_BIOMASS" ON "MEDSDATA"."BIOMASS_OBSERVATION" ("LATITUDE", "LONGITUDE")
+Error report -
+ORA-00955: name is already used by an existing object
+00955. 00000 -  "name is already used by an existing object"
+*Cause:    
+*Action:
+
+Error starting at line : 665 in command -
+  CREATE INDEX "MEDSDATA"."IDX_DATE_FRONT_21" ON "MEDSDATA"."FRONT_SATELLITE_OBSERVATION" ("OBSERVERED_DATE")
+Error report -
+ORA-00955: name is already used by an existing object
+00955. 00000 -  "name is already used by an existing object"
+*Cause:    
+*Action:
+
+Error starting at line : 671 in command -
+  CREATE INDEX "MEDSDATA"."IDX_REPPROFILEL4_AUG" ON "MEDSDATA"."REPRES_PROFILE_L4_AUG" ("GRID_INDEX")
+Error report -
+ORA-00955: name is already used by an existing object
+00955. 00000 -  "name is already used by an existing object"
+*Cause:    
+*Action:
+
+Error starting at line : 677 in command -
+  CREATE INDEX "MEDSDATA"."SI_MLO_SOSUS" ON "MEDSDATA"."MLO_SOSUS_OBSERVATION" ("LOCATION") 
+   INDEXTYPE IS "MDSYS"."SPATIAL_INDEX"  PARAMETERS (' ')
+Error report -
+ORA-00955: name is already used by an existing object
+00955. 00000 -  "name is already used by an existing object"
+*Cause:    
+*Action:
+
+Error starting at line : 683 in command -
+  CREATE INDEX "MEDSDATA"."SI_UNIFIEDSECCHI" ON "MEDSDATA"."UNIFIED_SECCHI_OBSERVATION" ("LOCATION") 
+   INDEXTYPE IS "MDSYS"."SPATIAL_INDEX"  PARAMETERS ('SDO_LEVEL=2 SDO_NUMTILES=1 TABLESPACE = INDX ')
+Error report -
+ORA-00955: name is already used by an existing object
+00955. 00000 -  "name is already used by an existing object"
+*Cause:    
+*Action:
+
+Error starting at line : 689 in command -
+  CREATE INDEX "MEDSDATA"."IDX_PROFILEL1DEC_LATLON" ON "MEDSDATA"."REPRES_PROFILE_L1_DEC" ("LATITUDE", "LONGITUDE")
+Error report -
+ORA-00955: name is already used by an existing object
+00955. 00000 -  "name is already used by an existing object"
+*Cause:    
+*Action:
+
+Error starting at line : 695 in command -
+  CREATE INDEX "MEDSDATA"."IDX_JOB_ASRAP_5" ON "MEDSDATA"."ASRAP_POLYGON_OBSERVATION" ("MEDS_JOB_NUMBER", "MEDS_OBSERVATION_NUMBER")
+Error report -
+ORA-00955: name is already used by an existing object
+00955. 00000 -  "name is already used by an existing object"
+*Cause:    
+*Action:
+
+Error starting at line : 701 in command -
+  CREATE INDEX "MEDSDATA"."IDX_JOB_BIOMASS" ON "MEDSDATA"."BIOMASS_OBSERVATION" ("MEDS_JOB_NUMBER", "MEDS_OBSERVATION_NUMBER")
+Error report -
+ORA-00955: name is already used by an existing object
+00955. 00000 -  "name is already used by an existing object"
+*Cause:    
+*Action:
+
+Error starting at line : 707 in command -
+  CREATE INDEX "MEDSDATA"."IDX_POSN_INTERNAL_18" ON "MEDSDATA"."INTERNAL_WAVE_OBSERVATION" ("LATITUDE", "LONGITUDE")
+Error report -
+ORA-00955: name is already used by an existing object
+00955. 00000 -  "name is already used by an existing object"
+*Cause:    
+*Action:
+
+Error starting at line : 713 in command -
+  CREATE INDEX "MEDSDATA"."IDX_DATE_FRONT_20" ON "MEDSDATA"."FRONT_MEAN_DATA" ("DATES")
+Error report -
+ORA-00955: name is already used by an existing object
+00955. 00000 -  "name is already used by an existing object"
+*Cause:    
+*Action:
+
+Error starting at line : 719 in command -
+  CREATE INDEX "MEDSDATA"."IDX_AQUA2081_LATLON" ON "MEDSDATA"."AQUA2081_LINE_OBSERVATION" ("LATITUDE", "LONGITUDE")
+Error report -
+ORA-00955: name is already used by an existing object
+00955. 00000 -  "name is already used by an existing object"
+*Cause:    
+*Action:
+
+Error starting at line : 725 in command -
+  CREATE INDEX "MEDSDATA"."IDX_ADCP_REPEAT_JOB" ON "MEDSDATA"."ADCP_REPEAT" ("MEDS_JOB_NUMBER", "MEDS_OBSERVATION_NUMBER")
+Error report -
+ORA-00955: name is already used by an existing object
+00955. 00000 -  "name is already used by an existing object"
+*Cause:    
+*Action:
+
+Error starting at line : 731 in command -
+  CREATE INDEX "MEDSDATA"."IDX_DATE_MLO_39" ON "MEDSDATA"."MLO_SHIP_OBSERVATION" ("DATE_RECORDED")
+Error report -
+ORA-00955: name is already used by an existing object
+00955. 00000 -  "name is already used by an existing object"
+*Cause:    
+*Action:
+
+Error starting at line : 737 in command -
+  CREATE INDEX "MEDSDATA"."IDX_POSN_SECCHI_29" ON "MEDSDATA"."SECCHI_DISK_OBSERVATION" ("LATITUDE", "LONGITUDE")
+Error report -
+ORA-00955: name is already used by an existing object
+00955. 00000 -  "name is already used by an existing object"
+*Cause:    
+*Action:
+
+Error starting at line : 743 in command -
+  CREATE INDEX "MEDSDATA"."IDX_PROFILEL1AUG_LATLON" ON "MEDSDATA"."REPRES_PROFILE_L1_AUG" ("LATITUDE", "LONGITUDE")
+Error report -
+ORA-00955: name is already used by an existing object
+00955. 00000 -  "name is already used by an existing object"
+*Cause:    
+*Action:
+
+Error starting at line : 749 in command -
+  CREATE INDEX "MEDSDATA"."IDX_REPPROFILEL2_DEC" ON "MEDSDATA"."REPRES_PROFILE_L2_DEC" ("GRID_INDEX")
+Error report -
+ORA-00955: name is already used by an existing object
+00955. 00000 -  "name is already used by an existing object"
+*Cause:    
+*Action:
+
+Error starting at line : 755 in command -
+  CREATE INDEX "MEDSDATA"."IDX_PROFILEL4APR_LATLON" ON "MEDSDATA"."REPRES_PROFILE_L4_APR" ("LATITUDE", "LONGITUDE")
+Error report -
+ORA-00955: name is already used by an existing object
+00955. 00000 -  "name is already used by an existing object"
+*Cause:    
+*Action:
+
+Error starting at line : 761 in command -
+  CREATE INDEX "MEDSDATA"."IDX_PROFILEL1MAR_LATLON" ON "MEDSDATA"."REPRES_PROFILE_L1_MAR" ("LATITUDE", "LONGITUDE")
+Error report -
+ORA-00955: name is already used by an existing object
+00955. 00000 -  "name is already used by an existing object"
+*Cause:    
+*Action:
+
+Error starting at line : 767 in command -
+  CREATE INDEX "MEDSDATA"."IDX_PROFILEL4OCT_LATLON" ON "MEDSDATA"."REPRES_PROFILE_L4_OCT" ("LATITUDE", "LONGITUDE")
+Error report -
+ORA-00955: name is already used by an existing object
+00955. 00000 -  "name is already used by an existing object"
+*Cause:    
+*Action:
+
+Error starting at line : 773 in command -
+  CREATE INDEX "MEDSDATA"."IDX_JOB_MLO_53" ON "MEDSDATA"."MLO_BIRDS_OBSERVATION" ("MEDS_JOB_NUMBER", "MEDS_OBSERVATION_NUMBER")
+Error report -
+ORA-00955: name is already used by an existing object
+00955. 00000 -  "name is already used by an existing object"
+*Cause:    
+*Action:
+
+Error starting at line : 779 in command -
+  CREATE INDEX "MEDSDATA"."IDX_SEASOAR_TOW_DATA_JOB" ON "MEDSDATA"."SEASOAR_TOW_DATA" ("MEDS_JOB_NUMBER", "MEDS_OBSERVATION_NUMBER")
+Error report -
+ORA-00955: name is already used by an existing object
+00955. 00000 -  "name is already used by an existing object"
+*Cause:    
+*Action:
+
+Error starting at line : 785 in command -
+  CREATE INDEX "MEDSDATA"."IDX_POSN_ASRAP_2" ON "MEDSDATA"."ASRAP_POLYGON_REPEAT" ("LATITUDE", "LONGITUDE")
+Error report -
+ORA-00955: name is already used by an existing object
+00955. 00000 -  "name is already used by an existing object"
+*Cause:    
+*Action:
+
+Error starting at line : 791 in command -
+  CREATE INDEX "MEDSDATA"."IDX_MLO_CETACEANS_TRACK_JOB" ON "MEDSDATA"."MLO_CETACEANS_TRACK" ("MEDS_JOB_NUMBER", "MEDS_TRACK_NUMBER")
+Error report -
+ORA-00955: name is already used by an existing object
+00955. 00000 -  "name is already used by an existing object"
+*Cause:    
+*Action:
+
+Error starting at line : 797 in command -
+  CREATE INDEX "MEDSDATA"."IDX_POSN_MLO_23" ON "MEDSDATA"."MLO_JELLYFISH_OBSERVATION" ("LATITUDE", "LONGITUDE")
+Error report -
+ORA-00955: name is already used by an existing object
+00955. 00000 -  "name is already used by an existing object"
+*Cause:    
+*Action:
+
+Error starting at line : 803 in command -
+  CREATE INDEX "MEDSDATA"."IDX_REPPROFILEL1_MAY" ON "MEDSDATA"."REPRES_PROFILE_L1_MAY" ("GRID_INDEX")
+Error report -
+ORA-00955: name is already used by an existing object
+00955. 00000 -  "name is already used by an existing object"
+*Cause:    
+*Action:
+
+Error starting at line : 809 in command -
+  CREATE UNIQUE INDEX "MEDSDATA"."IDX_REPSEASRFL1_GRIDIDXMTH" ON "MEDSDATA"."REPRES_SEASURFACE_L1" ("LATITUDE", "LONGITUDE", "MONTH_ID")
+Error report -
+ORA-00955: name is already used by an existing object
+00955. 00000 -  "name is already used by an existing object"
+*Cause:    
+*Action:
+
+Error starting at line : 815 in command -
+  CREATE INDEX "MEDSDATA"."IDX_DATE_BIOMASS" ON "MEDSDATA"."BIOMASS_OBSERVATION" ("DATE_RECORDED")
+Error report -
+ORA-00955: name is already used by an existing object
+00955. 00000 -  "name is already used by an existing object"
+*Cause:    
+*Action:
+
+Error starting at line : 821 in command -
+  CREATE INDEX "MEDSDATA"."IDX_POSN_DIR_6" ON "MEDSDATA"."DIR_AMBIENT_OBSERVATION" ("LATITUDE", "LONGITUDE")
+Error report -
+ORA-00955: name is already used by an existing object
+00955. 00000 -  "name is already used by an existing object"
+*Cause:    
+*Action:
+
+Error starting at line : 827 in command -
+  CREATE INDEX "MEDSDATA"."SI_AQUA2081LINE" ON "MEDSDATA"."AQUA2081_LINE_OBSERVATION" ("LOCATION") 
+   INDEXTYPE IS "MDSYS"."SPATIAL_INDEX"  PARAMETERS (' ')
+Error report -
+ORA-00955: name is already used by an existing object
+00955. 00000 -  "name is already used by an existing object"
+*Cause:    
+*Action:
+
+Error starting at line : 833 in command -
+  CREATE INDEX "MEDSDATA"."PROFILE_INDEX_TS_INSTRUMENT" ON "MEDSDATA"."PROFILE_INDEX_TS" ("INSTRUMENT_CODE")
+Error report -
+ORA-00955: name is already used by an existing object
+00955. 00000 -  "name is already used by an existing object"
+*Cause:    
+*Action:
+
+Error starting at line : 839 in command -
+  CREATE INDEX "MEDSDATA"."SI_MLOBIRDS" ON "MEDSDATA"."MLO_BIRDS_OBSERVATION" ("LOCATION") 
+   INDEXTYPE IS "MDSYS"."SPATIAL_INDEX"  PARAMETERS (' ')
+Error report -
+ORA-00955: name is already used by an existing object
+00955. 00000 -  "name is already used by an existing object"
+*Cause:    
+*Action:
+
+Error starting at line : 845 in command -
+  CREATE INDEX "MEDSDATA"."IDX_DATE_FRONT_22" ON "MEDSDATA"."FRONT_SURVEY_OBSERVATION" ("END_DATE")
+Error report -
+ORA-00955: name is already used by an existing object
+00955. 00000 -  "name is already used by an existing object"
+*Cause:    
+*Action:
+
+Error starting at line : 851 in command -
+  CREATE INDEX "MEDSDATA"."IDX_POSN_GEOLOGY_16" ON "MEDSDATA"."GEOLOGY_PARAM_OBSERVATION" ("LATITUDE", "LONGITUDE")
+Error report -
+ORA-00955: name is already used by an existing object
+00955. 00000 -  "name is already used by an existing object"
+*Cause:    
+*Action:
+
+Error starting at line : 857 in command -
+  CREATE INDEX "MEDSDATA"."IDX_MLO_SEABED_CONTACT_JOB" ON "MEDSDATA"."MLO_SEABED_CONTACT_OBSERVATION" ("MEDS_JOB_NUMBER", "MEDS_OBSERVATION_NUMBER")
+Error report -
+ORA-00955: name is already used by an existing object
+00955. 00000 -  "name is already used by an existing object"
+*Cause:    
+*Action:
+
+Error starting at line : 863 in command -
+  CREATE INDEX "MEDSDATA"."PROFILE_INDEX_TS_LATLON" ON "MEDSDATA"."PROFILE_INDEX_TS" ("LATITUDE", "LONGITUDE")
+Error report -
+ORA-00955: name is already used by an existing object
+00955. 00000 -  "name is already used by an existing object"
+*Cause:    
+*Action:
+
+Error starting at line : 869 in command -
+  CREATE INDEX "MEDSDATA"."IDX_REPAMBNOISED1_TOY" ON "MEDSDATA"."REPRES_AMBIENTNOISE_D1" ("TIME_OF_YEAR")
+Error report -
+ORA-00955: name is already used by an existing object
+00955. 00000 -  "name is already used by an existing object"
+*Cause:    
+*Action:
+
+Error starting at line : 875 in command -
+  CREATE INDEX "MEDSDATA"."IDX_JOB_ASRAP_4" ON "MEDSDATA"."ASRAP_POINT_REPEAT" ("MEDS_JOB_NUMBER", "MEDS_OBSERVATION_NUMBER")
+Error report -
+ORA-00955: name is already used by an existing object
+00955. 00000 -  "name is already used by an existing object"
+*Cause:    
+*Action:
+
+Error starting at line : 881 in command -
+  CREATE UNIQUE INDEX "MEDSDATA"."IDX_GRIDD1_LATLON" ON "MEDSDATA"."MASTER_GRID_D1" ("LATITUDE", "LONGITUDE", "DATATYPE")
+Error report -
+ORA-00955: name is already used by an existing object
+00955. 00000 -  "name is already used by an existing object"
+*Cause:    
+*Action:
+
+Error starting at line : 887 in command -
+  CREATE INDEX "MEDSDATA"."SI_SHIPPING" ON "MEDSDATA"."SHIPPING_OBSERVATION" ("LOCATION") 
+   INDEXTYPE IS "MDSYS"."SPATIAL_INDEX"
+Error report -
+ORA-00955: name is already used by an existing object
+00955. 00000 -  "name is already used by an existing object"
+*Cause:    
+*Action:
+
+Error starting at line : 893 in command -
+  CREATE INDEX "MEDSDATA"."IDX_JOB_FRONT_27" ON "MEDSDATA"."FRONT_GRID_DATA" ("MEDS_JOB_NUMBER", "MEDS_OBSERVATION_NUMBER")
+Error report -
+ORA-00955: name is already used by an existing object
+00955. 00000 -  "name is already used by an existing object"
+*Cause:    
+*Action:
+
+Error starting at line : 899 in command -
+  CREATE INDEX "MEDSDATA"."PROFILE_DATA_TS_IDX" ON "MEDSDATA"."PROFILE_DATA_TS" ("MEDS_JOB_NUMBER", "MEDS_OBSERVATION_NUMBER")
+Error report -
+ORA-00955: name is already used by an existing object
+00955. 00000 -  "name is already used by an existing object"
+*Cause:    
+*Action:
+
+Error starting at line : 905 in command -
+  CREATE INDEX "MEDSDATA"."IDX_JOB_PRODUCTS_72" ON "MEDSDATA"."PRODUCTS_REGION_OBSERVATION" ("MEDS_JOB_NUMBER", "MEDS_OBSERVATION_NUMBER")
+Error report -
+ORA-00955: name is already used by an existing object
+00955. 00000 -  "name is already used by an existing object"
+*Cause:    
+*Action:
+
+Error starting at line : 911 in command -
+  CREATE INDEX "MEDSDATA"."IDX_MLO_SEABED_CONTACT_DATA" ON "MEDSDATA"."MLO_SEABED_CONTACT_DATA" ("MEDS_JOB_NUMBER", "MEDS_OBSERVATION_NUMBER")
+Error report -
+ORA-00955: name is already used by an existing object
+00955. 00000 -  "name is already used by an existing object"
+*Cause:    
+*Action:
+
+Error starting at line : 917 in command -
+  CREATE INDEX "MEDSDATA"."IDX_DATE_FRONT_24" ON "MEDSDATA"."FRONT_TRANSECT_OBSERVATION" ("START_DATE")
+Error report -
+ORA-00955: name is already used by an existing object
+00955. 00000 -  "name is already used by an existing object"
+*Cause:    
+*Action:
+
+Error starting at line : 923 in command -
+  CREATE INDEX "MEDSDATA"."IDX_FIELD_LOOKUP_DATATYPEINDEX" ON "MEDSDATA"."FIELD_LOOKUP" ("DATA_TYPE_INDEX")
+Error report -
+ORA-00955: name is already used by an existing object
+00955. 00000 -  "name is already used by an existing object"
+*Cause:    
+*Action:
+
+Error starting at line : 929 in command -
+  CREATE INDEX "MEDSDATA"."IDX_DATE_DIVE_12" ON "MEDSDATA"."DIVE_SITE_DATA" ("DATE_RECORDED")
+Error report -
+ORA-00955: name is already used by an existing object
+00955. 00000 -  "name is already used by an existing object"
+*Cause:    
+*Action:
+
+Error starting at line : 935 in command -
+  CREATE INDEX "MEDSDATA"."IDX_MLO_CETACEANS_ENVELOPE_JOB" ON "MEDSDATA"."MLO_CETACEANS_ENVELOPE" ("MEDS_JOB_NUMBER", "MEDS_TRACK_NUMBER")
+Error report -
+ORA-00955: name is already used by an existing object
+00955. 00000 -  "name is already used by an existing object"
+*Cause:    
+*Action:
+
+Error starting at line : 941 in command -
+  CREATE INDEX "MEDSDATA"."IDX_JOB_MLO_64" ON "MEDSDATA"."MLO_REPTILES_DATA" ("MEDS_JOB_NUMBER", "MEDS_OBSERVATION_NUMBER")
+Error report -
+ORA-00955: name is already used by an existing object
+00955. 00000 -  "name is already used by an existing object"
+*Cause:    
+*Action:
+
+Error starting at line : 947 in command -
+  CREATE UNIQUE INDEX "MEDSDATA"."IDX_REPMIXEDLYRL1_GRIDIDXMTH" ON "MEDSDATA"."REPRES_MIXEDLAYER_L1" ("LATITUDE", "LONGITUDE", "MONTH_ID")
+Error report -
+ORA-00955: name is already used by an existing object
+00955. 00000 -  "name is already used by an existing object"
+*Cause:    
+*Action:
+
+Error starting at line : 953 in command -
+  CREATE INDEX "MEDSDATA"."SI_MLOCETEACEANS" ON "MEDSDATA"."MLO_CETACEANS_OBSERVATION" ("LOCATION") 
+   INDEXTYPE IS "MDSYS"."SPATIAL_INDEX"
+Error report -
+ORA-00955: name is already used by an existing object
+00955. 00000 -  "name is already used by an existing object"
+*Cause:    
+*Action:
+
+Error starting at line : 959 in command -
+  CREATE INDEX "MEDSDATA"."IDX_PROFILEL4MAR_LATLON" ON "MEDSDATA"."REPRES_PROFILE_L4_MAR" ("LATITUDE", "LONGITUDE")
+Error report -
+ORA-00955: name is already used by an existing object
+00955. 00000 -  "name is already used by an existing object"
+*Cause:    
+*Action:
+
+Error starting at line : 965 in command -
+  CREATE UNIQUE INDEX "MEDSDATA"."WVS_COUNTRY" ON "MEDSDATA"."WVS_D_3M_COUNTPOLY" ("NAM_DESCRI")
+Error report -
+ORA-00955: name is already used by an existing object
+00955. 00000 -  "name is already used by an existing object"
+*Cause:    
+*Action:
+
+Error starting at line : 971 in command -
+  CREATE INDEX "MEDSDATA"."IDX_JOB_OMNI_68" ON "MEDSDATA"."OMNI_AMBIENT_DATA" ("MEDS_JOB_NUMBER", "MEDS_OBSERVATION_NUMBER")
+Error report -
+ORA-00955: name is already used by an existing object
+00955. 00000 -  "name is already used by an existing object"
+*Cause:    
+*Action:
+
+Error starting at line : 977 in command -
+  CREATE INDEX "MEDSDATA"."WVS_BATHY_3M" ON "MEDSDATA"."WVS_3M_BATHY_LINE" ("CRV")
+Error report -
+ORA-00955: name is already used by an existing object
+00955. 00000 -  "name is already used by an existing object"
+*Cause:    
+*Action:
+
+Error starting at line : 983 in command -
+  CREATE UNIQUE INDEX "MEDSDATA"."IDX_REPMIXEDLYRD1_GRIDIDXMTH" ON "MEDSDATA"."REPRES_MIXEDLAYER_D1" ("LATITUDE", "LONGITUDE", "MONTH_ID")
+Error report -
+ORA-00955: name is already used by an existing object
+00955. 00000 -  "name is already used by an existing object"
+*Cause:    
+*Action:
+
+Error starting at line : 989 in command -
+  CREATE INDEX "MEDSDATA"."SI_DEEPSCATTERIN" ON "MEDSDATA"."DEEP_SCATTERING_OBSERVATION" ("LOCATION") 
+   INDEXTYPE IS "MDSYS"."SPATIAL_INDEX"  PARAMETERS (' ')
+Error report -
+ORA-00955: name is already used by an existing object
+00955. 00000 -  "name is already used by an existing object"
+*Cause:    
+*Action:
+
+Error starting at line : 995 in command -
+  CREATE INDEX "MEDSDATA"."IDX_DATE_MLO_38" ON "MEDSDATA"."MLO_REPTILES_OBSERVATION" ("DATE_RECORDED")
+Error report -
+ORA-00955: name is already used by an existing object
+00955. 00000 -  "name is already used by an existing object"
+*Cause:    
+*Action:
+
+Error starting at line : 1,001 in command -
+  CREATE INDEX "MEDSDATA"."IDX_JOB_ASRAP_3" ON "MEDSDATA"."ASRAP_POINT_OBSERVATION" ("MEDS_JOB_NUMBER", "MEDS_OBSERVATION_NUMBER")
+Error report -
+ORA-00955: name is already used by an existing object
+00955. 00000 -  "name is already used by an existing object"
+*Cause:    
+*Action:
+
+Error starting at line : 1,007 in command -
+  CREATE INDEX "MEDSDATA"."IDX_JOB_IW_47" ON "MEDSDATA"."IW_IMAGE_DATA" ("MEDS_JOB_NUMBER", "MEDS_OBSERVATION_NUMBER")
+Error report -
+ORA-00955: name is already used by an existing object
+00955. 00000 -  "name is already used by an existing object"
+*Cause:    
+*Action:
+
+Error starting at line : 1,013 in command -
+  CREATE INDEX "MEDSDATA"."SI_BIOMASS" ON "MEDSDATA"."BIOMASS_OBSERVATION" ("LOCATION") 
+   INDEXTYPE IS "MDSYS"."SPATIAL_INDEX"  PARAMETERS (' ')
+Error report -
+ORA-00955: name is already used by an existing object
+00955. 00000 -  "name is already used by an existing object"
+*Cause:    
+*Action:
+
+Error starting at line : 1,019 in command -
+  CREATE UNIQUE INDEX "MEDSDATA"."IDX_GRIDL1_LATLON" ON "MEDSDATA"."MASTER_GRID_L1" ("LATITUDE", "LONGITUDE", "DATATYPE")
+Error report -
+ORA-00955: name is already used by an existing object
+00955. 00000 -  "name is already used by an existing object"
+*Cause:    
+*Action:
+
+Error starting at line : 1,025 in command -
+  CREATE INDEX "MEDSDATA"."IDX_AQUALINE_LATLON" ON "MEDSDATA"."AQUAPACK_LINE_OBSERVATION" ("LATITUDE", "LONGITUDE")
+Error report -
+ORA-00955: name is already used by an existing object
+00955. 00000 -  "name is already used by an existing object"
+*Cause:    
+*Action:
+
+Error starting at line : 1,031 in command -
+  CREATE INDEX "MEDSDATA"."IDX_REPPROFILEL2_AUG" ON "MEDSDATA"."REPRES_PROFILE_L2_AUG" ("GRID_INDEX")
+Error report -
+ORA-00955: name is already used by an existing object
+00955. 00000 -  "name is already used by an existing object"
+*Cause:    
+*Action:
+
+Error starting at line : 1,037 in command -
+  CREATE UNIQUE INDEX "MEDSDATA"."IDX_GRIDL4_LATLON" ON "MEDSDATA"."MASTER_GRID_L4" ("LATITUDE", "LONGITUDE", "DATATYPE")
+Error report -
+ORA-00955: name is already used by an existing object
+00955. 00000 -  "name is already used by an existing object"
+*Cause:    
+*Action:
+
+Error starting at line : 1,043 in command -
+  CREATE INDEX "MEDSDATA"."MDQT_39EC6$_B1" ON "MEDSDATA"."MDQT_39EC6$" ("SDO_GROUPCODE", "SDO_CODE", "SDO_ROWID", "SDO_STATUS")
+Error report -
+ORA-00942: table or view does not exist
+00942. 00000 -  "table or view does not exist"
+*Cause:    
+*Action:
+
+Error starting at line : 1,049 in command -
+  CREATE INDEX "MEDSDATA"."IDX_DATE_AQUAPACK_1" ON "MEDSDATA"."AQUAPACK_JOB" ("DATE_ARCHIVED")
+Error report -
+ORA-00955: name is already used by an existing object
+00955. 00000 -  "name is already used by an existing object"
+*Cause:    
+*Action:
+
+Error starting at line : 1,055 in command -
+  CREATE INDEX "MEDSDATA"."IDX_REPPROFILEL4_DEC" ON "MEDSDATA"."REPRES_PROFILE_L4_DEC" ("GRID_INDEX")
+Error report -
+ORA-00955: name is already used by an existing object
+00955. 00000 -  "name is already used by an existing object"
+*Cause:    
+*Action:
+
+Error starting at line : 1,061 in command -
+  CREATE INDEX "MEDSDATA"."IDX_DATE_MLO_SOSUS" ON "MEDSDATA"."MLO_SOSUS_OBSERVATION" ("DATE_RECORDED")
+Error report -
+ORA-00955: name is already used by an existing object
+00955. 00000 -  "name is already used by an existing object"
+*Cause:    
+*Action:
+
+Error starting at line : 1,067 in command -
+  CREATE INDEX "MEDSDATA"."IDX_POSN_BIOLUMINESCENCE_4" ON "MEDSDATA"."BIOLUMINESCENCE_OBSERVATION" ("LATITUDE", "LONGITUDE")
+Error report -
+ORA-00955: name is already used by an existing object
+00955. 00000 -  "name is already used by an existing object"
+*Cause:    
+*Action:
+
+Error starting at line : 1,073 in command -
+  CREATE INDEX "MEDSDATA"."IDX_PROFILEL1SEP_LATLON" ON "MEDSDATA"."REPRES_PROFILE_L1_SEP" ("LATITUDE", "LONGITUDE")
+Error report -
+ORA-00955: name is already used by an existing object
+00955. 00000 -  "name is already used by an existing object"
+*Cause:    
+*Action:
+
+Error starting at line : 1,079 in command -
+  CREATE INDEX "MEDSDATA"."SI_CHART_PANEL" ON "MEDSDATA"."CHART_PANEL" ("LIMITS") 
+   INDEXTYPE IS "MDSYS"."SPATIAL_INDEX"  PARAMETERS (' ')
+Error report -
+ORA-00955: name is already used by an existing object
+00955. 00000 -  "name is already used by an existing object"
+*Cause:    
+*Action:
+
+Error starting at line : 1,085 in command -
+  CREATE INDEX "MEDSDATA"."IDX_PROFILEL4NOV_LATLON" ON "MEDSDATA"."REPRES_PROFILE_L4_NOV" ("LATITUDE", "LONGITUDE")
+Error report -
+ORA-00955: name is already used by an existing object
+00955. 00000 -  "name is already used by an existing object"
+*Cause:    
+*Action:
+
+Error starting at line : 1,091 in command -
+  CREATE INDEX "MEDSDATA"."IDX_REPPROFILEL1_JUN" ON "MEDSDATA"."REPRES_PROFILE_L1_JUN" ("GRID_INDEX")
+Error report -
+ORA-00955: name is already used by an existing object
+00955. 00000 -  "name is already used by an existing object"
+*Cause:    
+*Action:
+
+Error starting at line : 1,097 in command -
+  CREATE INDEX "MEDSDATA"."SHIP_DETAILS_CRUISE_IDX" ON "MEDSDATA"."SHIP_DETAILS" ("MEDS_CRUISE_NUMBER")
+Error report -
+ORA-00955: name is already used by an existing object
+00955. 00000 -  "name is already used by an existing object"
+*Cause:    
+*Action:
+
+Error starting at line : 1,103 in command -
+  CREATE INDEX "MEDSDATA"."SI_AQUAPACKLINE" ON "MEDSDATA"."AQUAPACK_LINE_OBSERVATION" ("LOCATION") 
+   INDEXTYPE IS "MDSYS"."SPATIAL_INDEX"  PARAMETERS (' ')
+Error report -
+ORA-00955: name is already used by an existing object
+00955. 00000 -  "name is already used by an existing object"
+*Cause:    
+*Action:
+
+Error starting at line : 1,109 in command -
+  CREATE INDEX "MEDSDATA"."IDX_JOB_FRONT_39" ON "MEDSDATA"."FRONT_TRANSECT_REPEAT" ("MEDS_JOB_NUMBER", "MEDS_OBSERVATION_NUMBER")
+Error report -
+ORA-00955: name is already used by an existing object
+00955. 00000 -  "name is already used by an existing object"
+*Cause:    
+*Action:
+
+Error starting at line : 1,115 in command -
+  CREATE INDEX "MEDSDATA"."IDX_PROFILEL4DEC_LATLON" ON "MEDSDATA"."REPRES_PROFILE_L4_DEC" ("LATITUDE", "LONGITUDE")
+Error report -
+ORA-00955: name is already used by an existing object
+00955. 00000 -  "name is already used by an existing object"
+*Cause:    
+*Action:
+
+Error starting at line : 1,121 in command -
+  CREATE INDEX "MEDSDATA"."IDX_DATE_IW_29" ON "MEDSDATA"."IW_IMAGE_OBSERVATION" ("RECORDED_DATE")
+Error report -
+ORA-00955: name is already used by an existing object
+00955. 00000 -  "name is already used by an existing object"
+*Cause:    
+*Action:
+
+Error starting at line : 1,127 in command -
+  CREATE INDEX "MEDSDATA"."SI_MLOPINNIPEDS" ON "MEDSDATA"."MLO_PINNIPEDS_OBSERVATION" ("LOCATION") 
+   INDEXTYPE IS "MDSYS"."SPATIAL_INDEX"  PARAMETERS (' ')
+Error report -
+ORA-00955: name is already used by an existing object
+00955. 00000 -  "name is already used by an existing object"
+*Cause:    
+*Action:
+
+Error starting at line : 1,133 in command -
+  CREATE INDEX "MEDSDATA"."IDX_REPPROFILEL1_JAN" ON "MEDSDATA"."REPRES_PROFILE_L1_JAN" ("GRID_INDEX")
+Error report -
+ORA-00955: name is already used by an existing object
+00955. 00000 -  "name is already used by an existing object"
+*Cause:    
+*Action:
+
+Error starting at line : 1,139 in command -
+  CREATE INDEX "MEDSDATA"."OBSERVATION_IDX2" ON "MEDSDATA"."OBSERVATION" ("JOB_NUMBER")
+Error report -
+ORA-00955: name is already used by an existing object
+00955. 00000 -  "name is already used by an existing object"
+*Cause:    
+*Action:
+
+Error starting at line : 1,145 in command -
+  CREATE INDEX "MEDSDATA"."PROFILE_DATA_SV_IDX" ON "MEDSDATA"."PROFILE_DATA_SV" ("MEDS_JOB_NUMBER", "MEDS_OBSERVATION_NUMBER")
+Error report -
+ORA-00955: name is already used by an existing object
+00955. 00000 -  "name is already used by an existing object"
+*Cause:    
+*Action:
+
+Error starting at line : 1,151 in command -
+  CREATE INDEX "MEDSDATA"."IDX_REPPROFILEL4_APR" ON "MEDSDATA"."REPRES_PROFILE_L4_APR" ("GRID_INDEX")
+Error report -
+ORA-00955: name is already used by an existing object
+00955. 00000 -  "name is already used by an existing object"
+*Cause:    
+*Action:
+
+Error starting at line : 1,157 in command -
+  CREATE INDEX "MEDSDATA"."SI_FRONTSATELLITE" ON "MEDSDATA"."FRONT_SATELLITE_OBSERVATION" ("LOCATION") 
+   INDEXTYPE IS "MDSYS"."SPATIAL_INDEX"  PARAMETERS ('TABLESPACE=INDX')
+Error report -
+ORA-00955: name is already used by an existing object
+00955. 00000 -  "name is already used by an existing object"
+*Cause:    
+*Action:
+
+Error starting at line : 1,163 in command -
+  CREATE INDEX "MEDSDATA"."PROFILE_INDEX_TS_MONTH" ON "MEDSDATA"."PROFILE_INDEX_TS" ("MONTH")
+Error report -
+ORA-00955: name is already used by an existing object
+00955. 00000 -  "name is already used by an existing object"
+*Cause:    
+*Action:
+
+Error starting at line : 1,169 in command -
+  CREATE INDEX "MEDSDATA"."IDX_PROFILEL1NOV_LATLON" ON "MEDSDATA"."REPRES_PROFILE_L1_NOV" ("LATITUDE", "LONGITUDE")
+Error report -
+ORA-00955: name is already used by an existing object
+00955. 00000 -  "name is already used by an existing object"
+*Cause:    
+*Action:
+
+Error starting at line : 1,175 in command -
+  CREATE INDEX "MEDSDATA"."SI_ASRAPPOLY" ON "MEDSDATA"."ASRAP_POLYGON_OBSERVATION" ("LOCATION") 
+   INDEXTYPE IS "MDSYS"."SPATIAL_INDEX"  PARAMETERS (' ')
+Error report -
+ORA-00955: name is already used by an existing object
+00955. 00000 -  "name is already used by an existing object"
+*Cause:    
+*Action:
+
+Error starting at line : 1,181 in command -
+  CREATE INDEX "MEDSDATA"."SI_TIFF_CHARTS" ON "MEDSDATA"."TIFF_CHARTS" ("LIMITS") 
+   INDEXTYPE IS "MDSYS"."SPATIAL_INDEX"  PARAMETERS (' ')
+Error report -
+ORA-00955: name is already used by an existing object
+00955. 00000 -  "name is already used by an existing object"
+*Cause:    
+*Action:
+
+Error starting at line : 1,187 in command -
+  CREATE INDEX "MEDSDATA"."IDX_DATE_EDDY_13" ON "MEDSDATA"."EDDY_DATA" ("PUBLICATION_DATE")
+Error report -
+ORA-00955: name is already used by an existing object
+00955. 00000 -  "name is already used by an existing object"
+*Cause:    
+*Action:
+
+Error starting at line : 1,193 in command -
+  CREATE INDEX "MEDSDATA"."IDX_JOB_IW_49" ON "MEDSDATA"."IW_PACKETS" ("MEDS_JOB_NUMBER", "MEDS_OBSERVATION_NUMBER")
+Error report -
+ORA-00955: name is already used by an existing object
+00955. 00000 -  "name is already used by an existing object"
+*Cause:    
+*Action:
+
+Error starting at line : 1,199 in command -
+  CREATE INDEX "MEDSDATA"."PROFILE_INDEX_TONLY_DATE" ON "MEDSDATA"."PROFILE_INDEX_TONLY" ("DATE_TIME")
+Error report -
+ORA-00955: name is already used by an existing object
+00955. 00000 -  "name is already used by an existing object"
+*Cause:    
+*Action:
+
+Error starting at line : 1,205 in command -
+  CREATE INDEX "MEDSDATA"."IDX_JOB_ASRAP_6" ON "MEDSDATA"."ASRAP_POLYGON_REPEAT" ("MEDS_JOB_NUMBER", "MEDS_OBSERVATION_NUMBER")
+Error report -
+ORA-00955: name is already used by an existing object
+00955. 00000 -  "name is already used by an existing object"
+*Cause:    
+*Action:
+
+Error starting at line : 1,211 in command -
+  CREATE INDEX "MEDSDATA"."IDX_POSN_SHIPPING" ON "MEDSDATA"."SHIPPING_OBSERVATION" ("LATITUDE", "LONGITUDE")
+Error report -
+ORA-00955: name is already used by an existing object
+00955. 00000 -  "name is already used by an existing object"
+*Cause:    
+*Action:
+
+Error starting at line : 1,217 in command -
+  CREATE INDEX "MEDSDATA"."IDX_SEASOAR_TOW_JOB" ON "MEDSDATA"."SEASOAR_TOW_OBSERVATION" ("MEDS_JOB_NUMBER", "MEDS_OBSERVATION_NUMBER")
+Error report -
+ORA-00955: name is already used by an existing object
+00955. 00000 -  "name is already used by an existing object"
+*Cause:    
+*Action:
+
+Error starting at line : 1,223 in command -
+  CREATE INDEX "MEDSDATA"."IDX_JOB_BIOLUMINESCENCE_10" ON "MEDSDATA"."BIOLUMINESCENCE_OBSERVATION" ("MEDS_JOB_NUMBER", "MEDS_OBSERVATION_NUMBER")
+Error report -
+ORA-00955: name is already used by an existing object
+00955. 00000 -  "name is already used by an existing object"
+*Cause:    
+*Action:
+
+Error starting at line : 1,229 in command -
+  CREATE INDEX "MEDSDATA"."IDX_JOB_EDDY_19" ON "MEDSDATA"."EDDY_OBSERVATION" ("MEDS_JOB_NUMBER", "MEDS_OBSERVATION_NUMBER")
+Error report -
+ORA-00955: name is already used by an existing object
+00955. 00000 -  "name is already used by an existing object"
+*Cause:    
+*Action:
+
+Error starting at line : 1,235 in command -
+  CREATE INDEX "MEDSDATA"."IDX_REPPROFILEL1_DEC" ON "MEDSDATA"."REPRES_PROFILE_L1_DEC" ("GRID_INDEX")
+Error report -
+ORA-00955: name is already used by an existing object
+00955. 00000 -  "name is already used by an existing object"
+*Cause:    
+*Action:
+
+Error starting at line : 1,241 in command -
+  CREATE INDEX "MEDSDATA"."IDX_JOB_IW_51" ON "MEDSDATA"."IW_WAVES" ("MEDS_JOB_NUMBER", "MEDS_OBSERVATION_NUMBER")
+Error report -
+ORA-00955: name is already used by an existing object
+00955. 00000 -  "name is already used by an existing object"
+*Cause:    
+*Action:
+
+Error starting at line : 1,247 in command -
+  CREATE INDEX "MEDSDATA"."SHIP_DETAILS_INSTCODE" ON "MEDSDATA"."SHIP_DETAILS" ("MIAS_INSTITUTE_CODE")
+Error report -
+ORA-00955: name is already used by an existing object
+00955. 00000 -  "name is already used by an existing object"
+*Cause:    
+*Action:
+
+Error starting at line : 1,253 in command -
+  CREATE INDEX "MEDSDATA"."IDX_POSN_MLO_20" ON "MEDSDATA"."MLO_BIRDS_OBSERVATION" ("LATITUDE", "LONGITUDE")
+Error report -
+ORA-00955: name is already used by an existing object
+00955. 00000 -  "name is already used by an existing object"
+*Cause:    
+*Action:
+
+Error starting at line : 1,259 in command -
+  CREATE INDEX "MEDSDATA"."IDX_PROFILEL1FEB_LATLON" ON "MEDSDATA"."REPRES_PROFILE_L1_FEB" ("LATITUDE", "LONGITUDE")
+Error report -
+ORA-00955: name is already used by an existing object
+00955. 00000 -  "name is already used by an existing object"
+*Cause:    
+*Action:
+
+Error starting at line : 1,265 in command -
+  CREATE INDEX "MEDSDATA"."IDX_AQUALINE_DATA_MEDS" ON "MEDSDATA"."AQUAPACK_LINE_DATA" ("MEDS_JOB_NUMBER", "MEDS_OBSERVATION_NUMBER")
+Error report -
+ORA-00955: name is already used by an existing object
+00955. 00000 -  "name is already used by an existing object"
+*Cause:    
+*Action:
+
+Error starting at line : 1,271 in command -
+  CREATE INDEX "MEDSDATA"."IDX_PROFILEL2OCT_LATLON" ON "MEDSDATA"."REPRES_PROFILE_L2_OCT" ("LATITUDE", "LONGITUDE")
+Error report -
+ORA-00955: name is already used by an existing object
+00955. 00000 -  "name is already used by an existing object"
+*Cause:    
+*Action:
+
+Error starting at line : 1,277 in command -
+  CREATE INDEX "MEDSDATA"."IDX_JOB_INTERNAL_46" ON "MEDSDATA"."INTERNAL_WAVE_REPEAT" ("MEDS_JOB_NUMBER", "MEDS_OBSERVATION_NUMBER")
+Error report -
+ORA-00955: name is already used by an existing object
+00955. 00000 -  "name is already used by an existing object"
+*Cause:    
+*Action:
+
+Error starting at line : 1,283 in command -
+  CREATE INDEX "MEDSDATA"."IDX_DATE_SHIPPING" ON "MEDSDATA"."SHIPPING_OBSERVATION" ("DATE_RECORDED")
+Error report -
+ORA-00955: name is already used by an existing object
+00955. 00000 -  "name is already used by an existing object"
+*Cause:    
+*Action:
+
+Error starting at line : 1,289 in command -
+  CREATE INDEX "MEDSDATA"."IDX_LATLONG_MIXEDLAYER_L2" ON "MEDSDATA"."REPRES_MIXEDLAYER_L2" ("LATITUDE", "LONGITUDE")
+Error report -
+ORA-00955: name is already used by an existing object
+00955. 00000 -  "name is already used by an existing object"
+*Cause:    
+*Action:
+
+Error starting at line : 1,295 in command -
+  CREATE INDEX "MEDSDATA"."SI_MLO_CETACEANS_ENVELOPE" ON "MEDSDATA"."MLO_CETACEANS_ENVELOPE" ("ENVELOPE") 
+   INDEXTYPE IS "MDSYS"."SPATIAL_INDEX"  PARAMETERS ('TABLESPACE=INDX')
+Error report -
+ORA-00955: name is already used by an existing object
+00955. 00000 -  "name is already used by an existing object"
+*Cause:    
+*Action:
+
+Error starting at line : 1,301 in command -
+  CREATE INDEX "MEDSDATA"."IDX_JOB_MLO_58" ON "MEDSDATA"."MLO_JELLYFISH_DATA" ("MEDS_JOB_NUMBER", "MEDS_OBSERVATION_NUMBER")
+Error report -
+ORA-00955: name is already used by an existing object
+00955. 00000 -  "name is already used by an existing object"
+*Cause:    
+*Action:
+
+Error starting at line : 1,307 in command -
+  CREATE INDEX "MEDSDATA"."IDX_PROFILEL2AUG_LATLON" ON "MEDSDATA"."REPRES_PROFILE_L2_AUG" ("LATITUDE", "LONGITUDE")
+Error report -
+ORA-00955: name is already used by an existing object
+00955. 00000 -  "name is already used by an existing object"
+*Cause:    
+*Action:
+
+Error starting at line : 1,313 in command -
+  CREATE INDEX "MEDSDATA"."IDX_JOB_DEEP_12" ON "MEDSDATA"."DEEP_SCATTERING_OBSERVATION" ("MEDS_JOB_NUMBER", "MEDS_OBSERVATION_NUMBER")
+Error report -
+ORA-00955: name is already used by an existing object
+00955. 00000 -  "name is already used by an existing object"
+*Cause:    
+*Action:
+
+Error starting at line : 1,319 in command -
+  CREATE UNIQUE INDEX "MEDSDATA"."IDX_INSTRUMENT_OCEAN" ON "MEDSDATA"."INSTRUMENT" ("OCEAN")
+Error report -
+ORA-00955: name is already used by an existing object
+00955. 00000 -  "name is already used by an existing object"
+*Cause:    
+*Action:
+
+Error starting at line : 1,325 in command -
+  CREATE INDEX "MEDSDATA"."SI_AQUAPACKPROFI" ON "MEDSDATA"."AQUAPACK_PROFILE_OBSERVATION" ("LOCATION") 
+   INDEXTYPE IS "MDSYS"."SPATIAL_INDEX"  PARAMETERS (' ')
+Error report -
+ORA-00955: name is already used by an existing object
+00955. 00000 -  "name is already used by an existing object"
+*Cause:    
+*Action:
+
+Error starting at line : 1,331 in command -
+  CREATE INDEX "MEDSDATA"."IDX_JOB_FRONT_32" ON "MEDSDATA"."FRONT_MEAN_DATA" ("MEDS_JOB_NUMBER", "MEDS_OBSERVATION_NUMBER")
+Error report -
+ORA-00955: name is already used by an existing object
+00955. 00000 -  "name is already used by an existing object"
+*Cause:    
+*Action:
+
+Error starting at line : 1,337 in command -
+  CREATE INDEX "MEDSDATA"."IDX_DATE_MLO_35" ON "MEDSDATA"."MLO_JELLYFISH_OBSERVATION" ("DATE_RECORDED")
+Error report -
+ORA-00955: name is already used by an existing object
+00955. 00000 -  "name is already used by an existing object"
+*Cause:    
+*Action:
+
+Error starting at line : 1,343 in command -
+  CREATE INDEX "MEDSDATA"."IDX_JOB_FRONT_35" ON "MEDSDATA"."FRONT_SATELLITE_OBSERVATION" ("MEDS_JOB_NUMBER", "MEDS_OBSERVATION_NUMBER")
+Error report -
+ORA-00955: name is already used by an existing object
+00955. 00000 -  "name is already used by an existing object"
+*Cause:    
+*Action:
+
+Error starting at line : 1,349 in command -
+  CREATE INDEX "MEDSDATA"."IDX_PROFILEL2MAR_LATLON" ON "MEDSDATA"."REPRES_PROFILE_L2_MAR" ("LATITUDE", "LONGITUDE")
+Error report -
+ORA-00955: name is already used by an existing object
+00955. 00000 -  "name is already used by an existing object"
+*Cause:    
+*Action:
+
+Error starting at line : 1,355 in command -
+  CREATE INDEX "MEDSDATA"."IDX_REPPROFILEL2_JUN" ON "MEDSDATA"."REPRES_PROFILE_L2_JUN" ("GRID_INDEX")
+Error report -
+ORA-00955: name is already used by an existing object
+00955. 00000 -  "name is already used by an existing object"
+*Cause:    
+*Action:
+
+Error starting at line : 1,361 in command -
+  CREATE INDEX "MEDSDATA"."IDX_REPPROFILEL4_FEB" ON "MEDSDATA"."REPRES_PROFILE_L4_FEB" ("GRID_INDEX")
+Error report -
+ORA-00955: name is already used by an existing object
+00955. 00000 -  "name is already used by an existing object"
+*Cause:    
+*Action:
+
+Error starting at line : 1,367 in command -
+  CREATE INDEX "MEDSDATA"."IDX_PROFILEL4FEB_LATLON" ON "MEDSDATA"."REPRES_PROFILE_L4_FEB" ("LATITUDE", "LONGITUDE")
+Error report -
+ORA-00955: name is already used by an existing object
+00955. 00000 -  "name is already used by an existing object"
+*Cause:    
+*Action:
+
+Error starting at line : 1,373 in command -
+  CREATE INDEX "MEDSDATA"."PROFILE_INDEX_TS_SHIP" ON "MEDSDATA"."PROFILE_INDEX_TS" ("MEDS_SHIP_NUMBER")
+Error report -
+ORA-00955: name is already used by an existing object
+00955. 00000 -  "name is already used by an existing object"
+*Cause:    
+*Action:
+
+Error starting at line : 1,379 in command -
+  CREATE UNIQUE INDEX "MEDSDATA"."IDX_GRIDL2_LATLON" ON "MEDSDATA"."MASTER_GRID_L2" ("LATITUDE", "LONGITUDE", "DATATYPE")
+Error report -
+ORA-00955: name is already used by an existing object
+00955. 00000 -  "name is already used by an existing object"
+*Cause:    
+*Action:
+
+Error starting at line : 1,385 in command -
+  CREATE INDEX "MEDSDATA"."IDX_REPPROFILEL1_MAR" ON "MEDSDATA"."REPRES_PROFILE_L1_MAR" ("GRID_INDEX")
+Error report -
+ORA-00955: name is already used by an existing object
+00955. 00000 -  "name is already used by an existing object"
+*Cause:    
+*Action:
+
+Error starting at line : 1,391 in command -
+  CREATE INDEX "MEDSDATA"."IDX_PROFILEL4JUL_LATLON" ON "MEDSDATA"."REPRES_PROFILE_L4_JUL" ("LATITUDE", "LONGITUDE")
+Error report -
+ORA-00955: name is already used by an existing object
+00955. 00000 -  "name is already used by an existing object"
+*Cause:    
+*Action:
+
+Error starting at line : 1,397 in command -
+  CREATE INDEX "MEDSDATA"."SI_FRONTTRANSECT" ON "MEDSDATA"."FRONT_TRANSECT_OBSERVATION" ("LOCATION") 
+   INDEXTYPE IS "MDSYS"."SPATIAL_INDEX"  PARAMETERS (' ')
+Error report -
+ORA-00955: name is already used by an existing object
+00955. 00000 -  "name is already used by an existing object"
+*Cause:    
+*Action:
+
+Error starting at line : 1,403 in command -
+  CREATE INDEX "MEDSDATA"."IDX_MLO_CETACEANS_TRACK" ON "MEDSDATA"."MLO_CETACEANS_OBSERVATION" ("MEDS_JOB_NUMBER", "MEDS_TRACK_NUMBER")
+Error report -
+ORA-00955: name is already used by an existing object
+00955. 00000 -  "name is already used by an existing object"
+*Cause:    
+*Action:
+
+Error starting at line : 1,409 in command -
+  CREATE INDEX "MEDSDATA"."IDX_JOB_MLO_SOSUS" ON "MEDSDATA"."MLO_SOSUS_OBSERVATION" ("MEDS_JOB_NUMBER", "MEDS_OBSERVATION_NUMBER")
+Error report -
+ORA-00955: name is already used by an existing object
+00955. 00000 -  "name is already used by an existing object"
+*Cause:    
+*Action:
+
+Error starting at line : 1,415 in command -
+  CREATE INDEX "MEDSDATA"."SI_FRONTSURVEY" ON "MEDSDATA"."FRONT_SURVEY_OBSERVATION" ("LOCATION") 
+   INDEXTYPE IS "MDSYS"."SPATIAL_INDEX"  PARAMETERS (' ')
+Error report -
+ORA-00955: name is already used by an existing object
+00955. 00000 -  "name is already used by an existing object"
+*Cause:    
+*Action:
+
+Error starting at line : 1,421 in command -
+  CREATE INDEX "MEDSDATA"."IDX_JOB_FRONT_28" ON "MEDSDATA"."FRONT_GRID_OBSERVATION" ("MEDS_JOB_NUMBER", "MEDS_OBSERVATION_NUMBER")
+Error report -
+ORA-00955: name is already used by an existing object
+00955. 00000 -  "name is already used by an existing object"
+*Cause:    
+*Action:
+
+Error starting at line : 1,427 in command -
+  CREATE INDEX "MEDSDATA"."IDX_POSN_FRONT_12" ON "MEDSDATA"."FRONT_GRID_REPEAT" ("LATITUDE", "LONGITUDE")
+Error report -
+ORA-00955: name is already used by an existing object
+00955. 00000 -  "name is already used by an existing object"
+*Cause:    
+*Action:
+
+Error starting at line : 1,433 in command -
+  CREATE INDEX "MEDSDATA"."IDX_DATE_OMNI_40" ON "MEDSDATA"."OMNI_AMBIENT_OBSERVATION" ("DATE_RECORDED")
+Error report -
+ORA-00955: name is already used by an existing object
+00955. 00000 -  "name is already used by an existing object"
+*Cause:    
+*Action:
+
+Error starting at line : 1,439 in command -
+  CREATE INDEX "MEDSDATA"."IDX_POSN_MLO_26" ON "MEDSDATA"."MLO_REPTILES_OBSERVATION" ("LATITUDE", "LONGITUDE")
+Error report -
+ORA-00955: name is already used by an existing object
+00955. 00000 -  "name is already used by an existing object"
+*Cause:    
+*Action:
+
+Error starting at line : 1,445 in command -
+  CREATE INDEX "MEDSDATA"."SI_EDDYOBSERVATI" ON "MEDSDATA"."EDDY_OBSERVATION" ("LOCATION") 
+   INDEXTYPE IS "MDSYS"."SPATIAL_INDEX"  PARAMETERS (' ')
+Error report -
+ORA-00955: name is already used by an existing object
+00955. 00000 -  "name is already used by an existing object"
+*Cause:    
+*Action:
+
+Error starting at line : 1,451 in command -
+  CREATE INDEX "MEDSDATA"."IDX_POSN_DIVE_7" ON "MEDSDATA"."DIVE_SITE_OBSERVATION" ("LATITUDE", "LONGITUDE")
+Error report -
+ORA-00955: name is already used by an existing object
+00955. 00000 -  "name is already used by an existing object"
+*Cause:    
+*Action:
+
+Error starting at line : 1,457 in command -
+  CREATE INDEX "MEDSDATA"."IDX_POSN_MLO_SOSUS" ON "MEDSDATA"."MLO_SOSUS_OBSERVATION" ("LATITUDE", "LONGITUDE")
+Error report -
+ORA-00955: name is already used by an existing object
+00955. 00000 -  "name is already used by an existing object"
+*Cause:    
+*Action:
+
+Error starting at line : 1,463 in command -
+  CREATE INDEX "MEDSDATA"."IDX_JOB_FRONT_37" ON "MEDSDATA"."FRONT_SURVEY_OBSERVATION" ("MEDS_JOB_NUMBER", "MEDS_OBSERVATION_NUMBER")
+Error report -
+ORA-00955: name is already used by an existing object
+00955. 00000 -  "name is already used by an existing object"
+*Cause:    
+*Action:
+
+Error starting at line : 1,469 in command -
+  CREATE INDEX "MEDSDATA"."IDX_REPSPECIESL1_GRIDIDX" ON "MEDSDATA"."REPRES_SPECIES_L1" ("GRID_INDEX")
+Error report -
+ORA-00955: name is already used by an existing object
+00955. 00000 -  "name is already used by an existing object"
+*Cause:    
+*Action:
+
+Error starting at line : 1,475 in command -
+  CREATE INDEX "MEDSDATA"."SI_GRID_L1" ON "MEDSDATA"."MASTER_GRID_L1" ("LOCATION") 
+   INDEXTYPE IS "MDSYS"."SPATIAL_INDEX"  PARAMETERS (' ')
+Error report -
+ORA-00955: name is already used by an existing object
+00955. 00000 -  "name is already used by an existing object"
+*Cause:    
+*Action:
+
+Error starting at line : 1,481 in command -
+  CREATE INDEX "MEDSDATA"."IDX_REPPROFILEL2_JAN" ON "MEDSDATA"."REPRES_PROFILE_L2_JAN" ("GRID_INDEX")
+Error report -
+ORA-00955: name is already used by an existing object
+00955. 00000 -  "name is already used by an existing object"
+*Cause:    
+*Action:
+
+Error starting at line : 1,487 in command -
+  CREATE INDEX "MEDSDATA"."SI_SECCHIDISK" ON "MEDSDATA"."SECCHI_DISK_OBSERVATION" ("LOCATION") 
+   INDEXTYPE IS "MDSYS"."SPATIAL_INDEX"  PARAMETERS (' ')
+Error report -
+ORA-00955: name is already used by an existing object
+00955. 00000 -  "name is already used by an existing object"
+*Cause:    
+*Action:
+
+Error starting at line : 1,493 in command -
+  CREATE INDEX "MEDSDATA"."IDX_DATE_EDDY_14" ON "MEDSDATA"."EDDY_SATELLITE_OBSERVATION" ("EDDY_OBSERVED_DATE")
+Error report -
+ORA-00955: name is already used by an existing object
+00955. 00000 -  "name is already used by an existing object"
+*Cause:    
+*Action:
+
+Error starting at line : 1,499 in command -
+  CREATE INDEX "MEDSDATA"."IDX_DATE_FRONT_18" ON "MEDSDATA"."FRONT_FWOC_OBSERVATION" ("FRONT_DATE")
+Error report -
+ORA-00955: name is already used by an existing object
+00955. 00000 -  "name is already used by an existing object"
+*Cause:    
+*Action:
+
+Error starting at line : 1,505 in command -
+  CREATE INDEX "MEDSDATA"."IDX_POSN_DEEP_5" ON "MEDSDATA"."DEEP_SCATTERING_OBSERVATION" ("LATITUDE", "LONGITUDE")
+Error report -
+ORA-00955: name is already used by an existing object
+00955. 00000 -  "name is already used by an existing object"
+*Cause:    
+*Action:
+
+Error starting at line : 1,511 in command -
+  CREATE UNIQUE INDEX "MEDSDATA"."R421_SDE_ROWID_UK" ON "MEDSDATA"."WVS_3M_BATHY_LINE" ("OBJECTID")
+Error report -
+ORA-00955: name is already used by an existing object
+00955. 00000 -  "name is already used by an existing object"
+*Cause:    
+*Action:
+
+Error starting at line : 1,517 in command -
+  CREATE INDEX "MEDSDATA"."IDX_PROFILEL2APR_LATLON" ON "MEDSDATA"."REPRES_PROFILE_L2_APR" ("LATITUDE", "LONGITUDE")
+Error report -
+ORA-00955: name is already used by an existing object
+00955. 00000 -  "name is already used by an existing object"
+*Cause:    
+*Action:
+
+Error starting at line : 1,523 in command -
+  CREATE INDEX "MEDSDATA"."IDX_JOB_MLO_52" ON "MEDSDATA"."MLO_BIRDS_DATA" ("MEDS_JOB_NUMBER", "MEDS_OBSERVATION_NUMBER")
+Error report -
+ORA-00955: name is already used by an existing object
+00955. 00000 -  "name is already used by an existing object"
+*Cause:    
+*Action:
+
+Error starting at line : 1,529 in command -
+  CREATE INDEX "MEDSDATA"."IDX_ADCP_DATA_JOB" ON "MEDSDATA"."ADCP_DATA" ("MEDS_JOB_NUMBER", "MEDS_OBSERVATION_NUMBER")
+Error report -
+ORA-00955: name is already used by an existing object
+00955. 00000 -  "name is already used by an existing object"
+*Cause:    
+*Action:
+
+Error starting at line : 1,535 in command -
+  CREATE INDEX "MEDSDATA"."IDX_REPPROFILEL1_JUL" ON "MEDSDATA"."REPRES_PROFILE_L1_JUL" ("GRID_INDEX")
+Error report -
+ORA-00955: name is already used by an existing object
+00955. 00000 -  "name is already used by an existing object"
+*Cause:    
+*Action:
+
+Error starting at line : 1,541 in command -
+  CREATE INDEX "MEDSDATA"."PROFILE_DATA_SVALL_IDX" ON "MEDSDATA"."PROFILE_DATA_SV" ("MEDS_JOB_NUMBER", "MEDS_OBSERVATION_NUMBER", "DEPTH")
+Error report -
+ORA-00955: name is already used by an existing object
+00955. 00000 -  "name is already used by an existing object"
+*Cause:    
+*Action:
+
+Error starting at line : 1,547 in command -
+  CREATE UNIQUE INDEX "MEDSDATA"."IDX_GRIDL4_GRIDINDEX" ON "MEDSDATA"."MASTER_GRID_L4" ("GRID_INDEX", "DATATYPE")
+Error report -
+ORA-00955: name is already used by an existing object
+00955. 00000 -  "name is already used by an existing object"
+*Cause:    
+*Action:
+
+Error starting at line : 1,553 in command -
+  CREATE INDEX "MEDSDATA"."IDX_POSN_MLO_21" ON "MEDSDATA"."MLO_CETACEANS_OBSERVATION" ("LATITUDE", "LONGITUDE")
+Error report -
+ORA-00955: name is already used by an existing object
+00955. 00000 -  "name is already used by an existing object"
+*Cause:    
+*Action:
+
+Error starting at line : 1,559 in command -
+  CREATE INDEX "MEDSDATA"."IDX_JOB_DIR_15" ON "MEDSDATA"."DIR_AMBIENT_REPEAT" ("MEDS_JOB_NUMBER", "MEDS_OBSERVATION_NUMBER")
+Error report -
+ORA-00955: name is already used by an existing object
+00955. 00000 -  "name is already used by an existing object"
+*Cause:    
+*Action:
+
+Error starting at line : 1,565 in command -
+  CREATE INDEX "MEDSDATA"."IDX_PROFILEL1OCT_LATLON" ON "MEDSDATA"."REPRES_PROFILE_L1_OCT" ("LATITUDE", "LONGITUDE")
+Error report -
+ORA-00955: name is already used by an existing object
+00955. 00000 -  "name is already used by an existing object"
+*Cause:    
+*Action:
+
+Error starting at line : 1,571 in command -
+  CREATE INDEX "MEDSDATA"."IDX_DATE_INTERNAL_26" ON "MEDSDATA"."INTERNAL_WAVE_DATA" ("OBSERVED_DATE")
+Error report -
+ORA-00955: name is already used by an existing object
+00955. 00000 -  "name is already used by an existing object"
+*Cause:    
+*Action:
+
+Error starting at line : 1,577 in command -
+  CREATE INDEX "MEDSDATA"."IDX_SHIPPING" ON "MEDSDATA"."SHIPPING_DATA" ("MEDS_JOB_NUMBER", "MEDS_OBSERVATION_NUMBER")
+Error report -
+ORA-00955: name is already used by an existing object
+00955. 00000 -  "name is already used by an existing object"
+*Cause:    
+*Action:
+
+Error starting at line : 1,583 in command -
+  CREATE INDEX "MEDSDATA"."PROFILE_INDEX_SV_SHIP" ON "MEDSDATA"."PROFILE_INDEX_SV" ("MEDS_SHIP_NUMBER")
+Error report -
+ORA-00955: name is already used by an existing object
+00955. 00000 -  "name is already used by an existing object"
+*Cause:    
+*Action:
+
+Error starting at line : 1,589 in command -
+  CREATE INDEX "MEDSDATA"."PROFILE_INDEX_TONLY_YEAR" ON "MEDSDATA"."PROFILE_INDEX_TONLY" ("YEAR")
+Error report -
+ORA-00955: name is already used by an existing object
+00955. 00000 -  "name is already used by an existing object"
+*Cause:    
+*Action:
+
+Error starting at line : 1,595 in command -
+  CREATE INDEX "MEDSDATA"."SI_GEOLOGYQUALIT" ON "MEDSDATA"."GEOLOGY_QUALITY_OBSERVATION" ("LOCATION") 
+   INDEXTYPE IS "MDSYS"."SPATIAL_INDEX"  PARAMETERS (' ')
+Error report -
+ORA-00955: name is already used by an existing object
+00955. 00000 -  "name is already used by an existing object"
+*Cause:    
+*Action:
+
+Error starting at line : 1,601 in command -
+  CREATE INDEX "MEDSDATA"."PROFILE_DATA_TONLY_IDX" ON "MEDSDATA"."PROFILE_DATA_TONLY" ("MEDS_JOB_NUMBER", "MEDS_OBSERVATION_NUMBER")
+Error report -
+ORA-00955: name is already used by an existing object
+00955. 00000 -  "name is already used by an existing object"
+*Cause:    
+*Action:
+
+Error starting at line : 1,607 in command -
+  CREATE INDEX "MEDSDATA"."SI_MLOREPTILES" ON "MEDSDATA"."MLO_REPTILES_OBSERVATION" ("LOCATION") 
+   INDEXTYPE IS "MDSYS"."SPATIAL_INDEX"  PARAMETERS (' ')
+Error report -
+ORA-00955: name is already used by an existing object
+00955. 00000 -  "name is already used by an existing object"
+*Cause:    
+*Action:
+
+Error starting at line : 1,613 in command -
+  CREATE INDEX "MEDSDATA"."IDX_JOB_SHIPPING" ON "MEDSDATA"."SHIPPING_OBSERVATION" ("MEDS_JOB_NUMBER", "MEDS_OBSERVATION_NUMBER")
+Error report -
+ORA-00955: name is already used by an existing object
+00955. 00000 -  "name is already used by an existing object"
+*Cause:    
+*Action:
+
+Error starting at line : 1,619 in command -
+  CREATE INDEX "MEDSDATA"."IDX_REPPROFILEL2_APR" ON "MEDSDATA"."REPRES_PROFILE_L2_APR" ("GRID_INDEX")
+Error report -
+ORA-00955: name is already used by an existing object
+00955. 00000 -  "name is already used by an existing object"
+*Cause:    
+*Action:
+
+Error starting at line : 1,625 in command -
+  CREATE INDEX "MEDSDATA"."IDX_JOB_DIVE_16" ON "MEDSDATA"."DIVE_SITE_DATA" ("MEDS_JOB_NUMBER", "MEDS_OBSERVATION_NUMBER")
+Error report -
+ORA-00955: name is already used by an existing object
+00955. 00000 -  "name is already used by an existing object"
+*Cause:    
+*Action:
+
+Error starting at line : 1,631 in command -
+  CREATE INDEX "MEDSDATA"."SI_GRID_D1" ON "MEDSDATA"."MASTER_GRID_D1" ("LOCATION") 
+   INDEXTYPE IS "MDSYS"."SPATIAL_INDEX"  PARAMETERS (' ')
+Error report -
+ORA-00955: name is already used by an existing object
+00955. 00000 -  "name is already used by an existing object"
+*Cause:    
+*Action:
+
+Error starting at line : 1,637 in command -
+  CREATE INDEX "MEDSDATA"."IDX_POSN_MLO_25" ON "MEDSDATA"."MLO_PINNIPEDS_OBSERVATION" ("LATITUDE", "LONGITUDE")
+Error report -
+ORA-00955: name is already used by an existing object
+00955. 00000 -  "name is already used by an existing object"
+*Cause:    
+*Action:
+
+Error starting at line : 1,643 in command -
+  CREATE INDEX "MEDSDATA"."IDX_POSN_OMNI_28" ON "MEDSDATA"."OMNI_AMBIENT_OBSERVATION" ("LATITUDE", "LONGITUDE")
+Error report -
+ORA-00955: name is already used by an existing object
+00955. 00000 -  "name is already used by an existing object"
+*Cause:    
+*Action:
+
+Error starting at line : 1,649 in command -
+  CREATE INDEX "MEDSDATA"."PROFILE_INDEX_SV_CRUISE" ON "MEDSDATA"."PROFILE_INDEX_SV" ("MEDS_CRUISE_NUMBER")
+Error report -
+ORA-00955: name is already used by an existing object
+00955. 00000 -  "name is already used by an existing object"
+*Cause:    
+*Action:
+
+Error starting at line : 1,655 in command -
+  CREATE INDEX "MEDSDATA"."PROFILE_INDEX_TONLY_LATLON" ON "MEDSDATA"."PROFILE_INDEX_TONLY" ("LATITUDE", "LONGITUDE")
+Error report -
+ORA-00955: name is already used by an existing object
+00955. 00000 -  "name is already used by an existing object"
+*Cause:    
+*Action:
+
+Error starting at line : 1,661 in command -
+  CREATE INDEX "MEDSDATA"."IDX_PROFILEL2NOV_LATLON" ON "MEDSDATA"."REPRES_PROFILE_L2_NOV" ("LATITUDE", "LONGITUDE")
+Error report -
+ORA-00955: name is already used by an existing object
+00955. 00000 -  "name is already used by an existing object"
+*Cause:    
+*Action:
+
+Error starting at line : 1,667 in command -
+  CREATE INDEX "MEDSDATA"."IDX_LATLONG_IGPADS_L1" ON "MEDSDATA"."REPRES_IGPADS_L1" ("LATITUDE", "LONGITUDE")
+Error report -
+ORA-00955: name is already used by an existing object
+00955. 00000 -  "name is already used by an existing object"
+*Cause:    
+*Action:
+
+Error starting at line : 1,673 in command -
+  CREATE INDEX "MEDSDATA"."IDX_POSN_FRONT_15" ON "MEDSDATA"."FRONT_TRANSECT_REPEAT" ("LATITUDE", "LONGITUDE")
+Error report -
+ORA-00955: name is already used by an existing object
+00955. 00000 -  "name is already used by an existing object"
+*Cause:    
+*Action:
+
+Error starting at line : 1,679 in command -
+  CREATE INDEX "MEDSDATA"."SI_PRODUCTSREGION" ON "MEDSDATA"."PRODUCTS_REGION_OBSERVATION" ("LOCATION") 
+   INDEXTYPE IS "MDSYS"."SPATIAL_INDEX"  PARAMETERS (' ')
+Error report -
+ORA-00955: name is already used by an existing object
+00955. 00000 -  "name is already used by an existing object"
+*Cause:    
+*Action:
+
+Error starting at line : 1,685 in command -
+  CREATE INDEX "MEDSDATA"."IDX_PROFILEL4SEP_LATLON" ON "MEDSDATA"."REPRES_PROFILE_L4_SEP" ("LATITUDE", "LONGITUDE")
+Error report -
+ORA-00955: name is already used by an existing object
+00955. 00000 -  "name is already used by an existing object"
+*Cause:    
+*Action:
+
+Error starting at line : 1,691 in command -
+  CREATE INDEX "MEDSDATA"."IDX_PROFILEL4MAY_LATLON" ON "MEDSDATA"."REPRES_PROFILE_L4_MAY" ("LATITUDE", "LONGITUDE")
+Error report -
+ORA-00955: name is already used by an existing object
+00955. 00000 -  "name is already used by an existing object"
+*Cause:    
+*Action:
+
+Error starting at line : 1,697 in command -
+  CREATE INDEX "MEDSDATA"."SI_MLOOTHERS" ON "MEDSDATA"."MLO_OTHERS_OBSERVATION" ("LOCATION") 
+   INDEXTYPE IS "MDSYS"."SPATIAL_INDEX"  PARAMETERS (' ')
+Error report -
+ORA-00955: name is already used by an existing object
+00955. 00000 -  "name is already used by an existing object"
+*Cause:    
+*Action:
+
+Error starting at line : 1,703 in command -
+  CREATE INDEX "MEDSDATA"."IDX_JOB_INTERNAL_45" ON "MEDSDATA"."INTERNAL_WAVE_OBSERVATION" ("MEDS_JOB_NUMBER", "MEDS_OBSERVATION_NUMBER")
+Error report -
+ORA-00955: name is already used by an existing object
+00955. 00000 -  "name is already used by an existing object"
+*Cause:    
+*Action:
+
+Error starting at line : 1,709 in command -
+  CREATE INDEX "MEDSDATA"."CRUISE_LAYER_BOOKING_IDX" ON "MEDSDATA"."CRUISE_LAYER" ("BOOKING_NUMBER")
+Error report -
+ORA-00955: name is already used by an existing object
+00955. 00000 -  "name is already used by an existing object"
+*Cause:    
+*Action:
+
+Error starting at line : 1,715 in command -
+  CREATE INDEX "MEDSDATA"."IDX_UNIFIED_SECCHI_LATLON" ON "MEDSDATA"."UNIFIED_SECCHI_OBSERVATION" ("LATITUDE", "LONGITUDE")
+Error report -
+ORA-00955: name is already used by an existing object
+00955. 00000 -  "name is already used by an existing object"
+*Cause:    
+*Action:
+
+Error starting at line : 1,721 in command -
+  CREATE INDEX "MEDSDATA"."IDX_REPPROFILEL1_NOV" ON "MEDSDATA"."REPRES_PROFILE_L1_NOV" ("GRID_INDEX")
+Error report -
+ORA-00955: name is already used by an existing object
+00955. 00000 -  "name is already used by an existing object"
+*Cause:    
+*Action:
+
+Error starting at line : 1,727 in command -
+  CREATE INDEX "MEDSDATA"."PROFILE_DATA_TSALL_IDX" ON "MEDSDATA"."PROFILE_DATA_TS" ("MEDS_JOB_NUMBER", "MEDS_OBSERVATION_NUMBER", "DEPTH")
+Error report -
+ORA-00955: name is already used by an existing object
+00955. 00000 -  "name is already used by an existing object"
+*Cause:    
+*Action:
+
+Error starting at line : 1,733 in command -
+  CREATE INDEX "MEDSDATA"."IDX_JOB_FRONT_23" ON "MEDSDATA"."FRONT_DEPTH_PLAN_OBSERVATION" ("MEDS_JOB_NUMBER", "MEDS_OBSERVATION_NUMBER")
+Error report -
+ORA-00955: name is already used by an existing object
+00955. 00000 -  "name is already used by an existing object"
+*Cause:    
+*Action:
+
+Error starting at line : 1,739 in command -
+  CREATE INDEX "MEDSDATA"."SI_BIOLUMINESCEN" ON "MEDSDATA"."BIOLUMINESCENCE_OBSERVATION" ("LOCATION") 
+   INDEXTYPE IS "MDSYS"."SPATIAL_INDEX"  PARAMETERS (' ')
+Error report -
+ORA-00955: name is already used by an existing object
+00955. 00000 -  "name is already used by an existing object"
+*Cause:    
+*Action:
+
+Error starting at line : 1,745 in command -
+  CREATE INDEX "MEDSDATA"."IDX_POSN_MLO_24" ON "MEDSDATA"."MLO_OTHERS_OBSERVATION" ("LATITUDE", "LONGITUDE")
+Error report -
+ORA-00955: name is already used by an existing object
+00955. 00000 -  "name is already used by an existing object"
+*Cause:    
+*Action:
+
+Error starting at line : 1,751 in command -
+  CREATE INDEX "MEDSDATA"."IDX_PROFILEL2FEB_LATLON" ON "MEDSDATA"."REPRES_PROFILE_L2_FEB" ("LATITUDE", "LONGITUDE")
+Error report -
+ORA-00955: name is already used by an existing object
+00955. 00000 -  "name is already used by an existing object"
+*Cause:    
+*Action:
+
+Error starting at line : 1,757 in command -
+  CREATE INDEX "MEDSDATA"."IDX_DATE_FRONT_15" ON "MEDSDATA"."FRONT_DEPTH_PLAN_OBSERVATION" ("START_DATE")
+Error report -
+ORA-00955: name is already used by an existing object
+00955. 00000 -  "name is already used by an existing object"
+*Cause:    
+*Action:
+
+Error starting at line : 1,763 in command -
+  CREATE INDEX "MEDSDATA"."IDX_REPPROFILEL4_SEP" ON "MEDSDATA"."REPRES_PROFILE_L4_SEP" ("GRID_INDEX")
+Error report -
+ORA-00955: name is already used by an existing object
+00955. 00000 -  "name is already used by an existing object"
+*Cause:    
+*Action:
+
+Error starting at line : 1,769 in command -
+  CREATE UNIQUE INDEX "MEDSDATA"."IDX_REPSHIPHITSD1_GRIDIDXMTH" ON "MEDSDATA"."REPRES_SHIPHITS_D1" ("LATITUDE", "LONGITUDE", "MONTH_ID")
+Error report -
+ORA-00955: name is already used by an existing object
+00955. 00000 -  "name is already used by an existing object"
+*Cause:    
+*Action:
+
+Error starting at line : 1,775 in command -
+  CREATE INDEX "MEDSDATA"."PROFILE_INDEX_TS_YEAR" ON "MEDSDATA"."PROFILE_INDEX_TS" ("YEAR")
+Error report -
+ORA-00955: name is already used by an existing object
+00955. 00000 -  "name is already used by an existing object"
+*Cause:    
+*Action:
+
+Error starting at line : 1,781 in command -
+  CREATE INDEX "MEDSDATA"."A530_IX1" ON "MEDSDATA"."WVS_D_3M_COUNTPOLY" ("SHAPE") 
+   INDEXTYPE IS "MDSYS"."SPATIAL_INDEX"  PARAMETERS (' ')
+Error report -
+ORA-00955: name is already used by an existing object
+00955. 00000 -  "name is already used by an existing object"
+*Cause:    
+*Action:
+
+Error starting at line : 1,787 in command -
+  CREATE INDEX "MEDSDATA"."IDX_REPPROFILEL2_JUL" ON "MEDSDATA"."REPRES_PROFILE_L2_JUL" ("GRID_INDEX")
+Error report -
+ORA-00955: name is already used by an existing object
+00955. 00000 -  "name is already used by an existing object"
+*Cause:    
+*Action:
+
+Error starting at line : 1,793 in command -
+  CREATE INDEX "MEDSDATA"."IDX_PROFILEL2SEP_LATLON" ON "MEDSDATA"."REPRES_PROFILE_L2_SEP" ("LATITUDE", "LONGITUDE")
+Error report -
+ORA-00955: name is already used by an existing object
+00955. 00000 -  "name is already used by an existing object"
+*Cause:    
+*Action:
+
+Error starting at line : 1,799 in command -
+  CREATE INDEX "MEDSDATA"."PROFILE_INDEX_TONLY_CRUISE" ON "MEDSDATA"."PROFILE_INDEX_TONLY" ("MEDS_CRUISE_NUMBER")
+Error report -
+ORA-00955: name is already used by an existing object
+00955. 00000 -  "name is already used by an existing object"
+*Cause:    
+*Action:
+
+Error starting at line : 1,805 in command -
+  CREATE INDEX "MEDSDATA"."IDX_JOB_FRONT_29" ON "MEDSDATA"."FRONT_GRID_REPEAT" ("MEDS_JOB_NUMBER", "MEDS_OBSERVATION_NUMBER")
+Error report -
+ORA-00955: name is already used by an existing object
+00955. 00000 -  "name is already used by an existing object"
+*Cause:    
+*Action:
+
+Error starting at line : 1,811 in command -
+  CREATE INDEX "MEDSDATA"."IDX_UNIFIED_SECCHI_DATA_OBS" ON "MEDSDATA"."UNIFIED_SECCHI_DATA" ("MEDS_JOB_NUMBER", "MEDS_OBSERVATION_NUMBER")
+Error report -
+ORA-00955: name is already used by an existing object
+00955. 00000 -  "name is already used by an existing object"
+*Cause:    
+*Action:
+
+Error starting at line : 1,817 in command -
+  CREATE INDEX "MEDSDATA"."BATHY_CVL" ON "MEDSDATA"."WVS_3M" ("CVL")
+Error report -
+ORA-00955: name is already used by an existing object
+00955. 00000 -  "name is already used by an existing object"
+*Cause:    
+*Action:
+
+Error starting at line : 1,823 in command -
+  CREATE INDEX "MEDSDATA"."IDX_JOB_MLO_56" ON "MEDSDATA"."MLO_FISH_DATA" ("MEDS_JOB_NUMBER", "MEDS_OBSERVATION_NUMBER")
+Error report -
+ORA-00955: name is already used by an existing object
+00955. 00000 -  "name is already used by an existing object"
+*Cause:    
+*Action:
+
+Error starting at line : 1,829 in command -
+  CREATE INDEX "MEDSDATA"."IDX_DATE_MLO_33" ON "MEDSDATA"."MLO_CETACEANS_OBSERVATION" ("DATE_RECORDED")
+Error report -
+ORA-00955: name is already used by an existing object
+00955. 00000 -  "name is already used by an existing object"
+*Cause:    
+*Action:
+
+Error starting at line : 1,835 in command -
+  CREATE INDEX "MEDSDATA"."IDX_JOB_GEOLOGY_40" ON "MEDSDATA"."GEOLOGY_PARAM_DATA" ("MEDS_JOB_NUMBER", "MEDS_OBSERVATION_NUMBER")
+Error report -
+ORA-00955: name is already used by an existing object
+00955. 00000 -  "name is already used by an existing object"
+*Cause:    
+*Action:
+
+Error starting at line : 1,841 in command -
+  CREATE INDEX "MEDSDATA"."SI_GRID_L2" ON "MEDSDATA"."MASTER_GRID_L2" ("LOCATION") 
+   INDEXTYPE IS "MDSYS"."SPATIAL_INDEX"  PARAMETERS (' ')
+Error report -
+ORA-00955: name is already used by an existing object
+00955. 00000 -  "name is already used by an existing object"
+*Cause:    
+*Action:
+
+Error starting at line : 1,847 in command -
+  CREATE INDEX "MEDSDATA"."IDX_DATE_SECCHI_42" ON "MEDSDATA"."SECCHI_DISK_OBSERVATION" ("DATE_RECORDED")
+Error report -
+ORA-00955: name is already used by an existing object
+00955. 00000 -  "name is already used by an existing object"
+*Cause:    
+*Action:
+
+Error starting at line : 1,853 in command -
+  CREATE INDEX "MEDSDATA"."IDX_REPPROFILEL1_SEP" ON "MEDSDATA"."REPRES_PROFILE_L1_SEP" ("GRID_INDEX")
+Error report -
+ORA-00955: name is already used by an existing object
+00955. 00000 -  "name is already used by an existing object"
+*Cause:    
+*Action:
+
+Error starting at line : 1,859 in command -
+  CREATE INDEX "MEDSDATA"."IDX_REPPROFILEL4_MAY" ON "MEDSDATA"."REPRES_PROFILE_L4_MAY" ("GRID_INDEX")
+Error report -
+ORA-00955: name is already used by an existing object
+00955. 00000 -  "name is already used by an existing object"
+*Cause:    
+*Action:
+
+Error starting at line : 1,865 in command -
+  CREATE INDEX "MEDSDATA"."SI_FRONTMEAN" ON "MEDSDATA"."FRONT_MEAN_OBSERVATION" ("LOCATION") 
+   INDEXTYPE IS "MDSYS"."SPATIAL_INDEX"  PARAMETERS (' ')
+Error report -
+ORA-00955: name is already used by an existing object
+00955. 00000 -  "name is already used by an existing object"
+*Cause:    
+*Action:
+
+Error starting at line : 1,871 in command -
+  CREATE INDEX "MEDSDATA"."IDX_JOB_FRONT_33" ON "MEDSDATA"."FRONT_MEAN_OBSERVATION" ("MEDS_JOB_NUMBER", "MEDS_OBSERVATION_NUMBER")
+Error report -
+ORA-00955: name is already used by an existing object
+00955. 00000 -  "name is already used by an existing object"
+*Cause:    
+*Action:
+
+Error starting at line : 1,877 in command -
+  CREATE INDEX "MEDSDATA"."IDX_SEASOAR_JOB" ON "MEDSDATA"."SEASOAR_PROFILE_OBSERVATION" ("MEDS_JOB_NUMBER", "MEDS_OBSERVATION_NUMBER")
+Error report -
+ORA-00955: name is already used by an existing object
+00955. 00000 -  "name is already used by an existing object"
+*Cause:    
+*Action:
+
+Error starting at line : 1,883 in command -
+  CREATE INDEX "MEDSDATA"."IDX_LEVELINDEX_TABLENAM" ON "MEDSDATA"."TABLE_INDEX_LOOKUP" ("TABLE_NAME")
+Error report -
+ORA-00955: name is already used by an existing object
+00955. 00000 -  "name is already used by an existing object"
+*Cause:    
+*Action:
+
+Error starting at line : 1,889 in command -
+  CREATE INDEX "MEDSDATA"."IDX_AQUA2081_JOB" ON "MEDSDATA"."AQUA2081_LINE_OBSERVATION" ("MEDS_JOB_NUMBER", "MEDS_OBSERVATION_NUMBER")
+Error report -
+ORA-00955: name is already used by an existing object
+00955. 00000 -  "name is already used by an existing object"
+*Cause:    
+*Action:
+
+Error starting at line : 1,895 in command -
+  CREATE INDEX "MEDSDATA"."OBSERVATION_IDX1" ON "MEDSDATA"."OBSERVATION" ("USER_NAME")
+Error report -
+ORA-00955: name is already used by an existing object
+00955. 00000 -  "name is already used by an existing object"
+*Cause:    
+*Action:
+
+Error starting at line : 1,901 in command -
+  CREATE INDEX "MEDSDATA"."IDX_REPMIXEDLYRL2_GRIDIDX" ON "MEDSDATA"."REPRES_MIXEDLAYER_L2" ("GRID_INDEX")
+Error report -
+ORA-00955: name is already used by an existing object
+00955. 00000 -  "name is already used by an existing object"
+*Cause:    
+*Action:
+
+Error starting at line : 1,907 in command -
+  CREATE INDEX "MEDSDATA"."CRUISE_LAYER_NAME_IDX" ON "MEDSDATA"."CRUISE_LAYER" ("CRUISE_NAME")
+Error report -
+ORA-00955: name is already used by an existing object
+00955. 00000 -  "name is already used by an existing object"
+*Cause:    
+*Action:
+
+Error starting at line : 1,913 in command -
+  CREATE UNIQUE INDEX "MEDSDATA"."IDX_SUPTAB_NAM" ON "MEDSDATA"."SUPPORT_TABLES" ("NAME")
+Error report -
+ORA-00955: name is already used by an existing object
+00955. 00000 -  "name is already used by an existing object"
+*Cause:    
+*Action:
+
+Error starting at line : 1,919 in command -
+  CREATE INDEX "MEDSDATA"."SI_BEACHOBSERVAT" ON "MEDSDATA"."BEACH_OBSERVATION" ("LOCATION") 
+   INDEXTYPE IS "MDSYS"."SPATIAL_INDEX"  PARAMETERS (' ')
+Error report -
+ORA-00955: name is already used by an existing object
+00955. 00000 -  "name is already used by an existing object"
+*Cause:    
+*Action:
+
+Error starting at line : 1,925 in command -
+  CREATE INDEX "MEDSDATA"."IDX_SEASOAR_DATA_JOB" ON "MEDSDATA"."SEASOAR_PROFILE_DATA" ("MEDS_JOB_NUMBER", "MEDS_OBSERVATION_NUMBER")
+Error report -
+ORA-00955: name is already used by an existing object
+00955. 00000 -  "name is already used by an existing object"
+*Cause:    
+*Action:
+
+Error starting at line : 1,931 in command -
+  CREATE INDEX "MEDSDATA"."IDX_DATE_FRONT_16" ON "MEDSDATA"."FRONT_DEPTH_PLAN_OBSERVATION" ("SURVEY_DATES")
+Error report -
+ORA-00955: name is already used by an existing object
+00955. 00000 -  "name is already used by an existing object"
+*Cause:    
+*Action:
+
+Error starting at line : 1,937 in command -
+  CREATE INDEX "MEDSDATA"."IDX_BIOMASS_JOB" ON "MEDSDATA"."BIOMASS_DATA" ("MEDS_JOB_NUMBER", "MEDS_OBSERVATION_NUMBER")
+Error report -
+ORA-00955: name is already used by an existing object
+00955. 00000 -  "name is already used by an existing object"
+*Cause:    
+*Action:
+
+Error starting at line : 1,943 in command -
+  CREATE INDEX "MEDSDATA"."IDX_DATE_PRODUCTS_41" ON "MEDSDATA"."PRODUCTS_REGION_OBSERVATION" ("STATUS_DATE")
+Error report -
+ORA-00955: name is already used by an existing object
+00955. 00000 -  "name is already used by an existing object"
+*Cause:    
+*Action:
+
+Error starting at line : 1,949 in command -
+  CREATE INDEX "MEDSDATA"."IDX_PROFILEL2JAN_LATLON" ON "MEDSDATA"."REPRES_PROFILE_L2_JAN" ("LATITUDE", "LONGITUDE")
+Error report -
+ORA-00955: name is already used by an existing object
+00955. 00000 -  "name is already used by an existing object"
+*Cause:    
+*Action:
+
+Error starting at line : 1,955 in command -
+  CREATE INDEX "MEDSDATA"."IDX_MLO_SEABED_CONTACT_POSN" ON "MEDSDATA"."MLO_SEABED_CONTACT_OBSERVATION" ("LATITUDE", "LONGITUDE")
+Error report -
+ORA-00955: name is already used by an existing object
+00955. 00000 -  "name is already used by an existing object"
+*Cause:    
+*Action:
+
+Error starting at line : 1,961 in command -
+  CREATE INDEX "MEDSDATA"."PROFILE_INDEX_TONLY_INSTRUMENT" ON "MEDSDATA"."PROFILE_INDEX_TONLY" ("INSTRUMENT_CODE")
+Error report -
+ORA-00955: name is already used by an existing object
+00955. 00000 -  "name is already used by an existing object"
+*Cause:    
+*Action:
+
+Error starting at line : 1,967 in command -
+  CREATE INDEX "MEDSDATA"."IDX_JOB_GEOLOGY_42" ON "MEDSDATA"."GEOLOGY_QUALITY_DATA" ("MEDS_JOB_NUMBER", "MEDS_OBSERVATION_NUMBER")
+Error report -
+ORA-00955: name is already used by an existing object
+00955. 00000 -  "name is already used by an existing object"
+*Cause:    
+*Action:
+
+Error starting at line : 1,973 in command -
+  CREATE INDEX "MEDSDATA"."IDX_PROFILEL1JUN_LATLON" ON "MEDSDATA"."REPRES_PROFILE_L1_JUN" ("LATITUDE", "LONGITUDE")
+Error report -
+ORA-00955: name is already used by an existing object
+00955. 00000 -  "name is already used by an existing object"
+*Cause:    
+*Action:
+
+Error starting at line : 1,979 in command -
+  CREATE INDEX "MEDSDATA"."IDX_DATE_FRONT_25" ON "MEDSDATA"."FRONT_TRANSECT_OBSERVATION" ("TRANSECT_DATES")
+Error report -
+ORA-00955: name is already used by an existing object
+00955. 00000 -  "name is already used by an existing object"
+*Cause:    
+*Action:
+
+Error starting at line : 1,985 in command -
+  CREATE INDEX "MEDSDATA"."SI_EDDYSATELLITE" ON "MEDSDATA"."EDDY_SATELLITE_OBSERVATION" ("LOCATION") 
+   INDEXTYPE IS "MDSYS"."SPATIAL_INDEX"  PARAMETERS (' ')
+Error report -
+ORA-00955: name is already used by an existing object
+00955. 00000 -  "name is already used by an existing object"
+*Cause:    
+*Action:
+
+Error starting at line : 1,991 in command -
+  CREATE INDEX "MEDSDATA"."SI_MLOJELLYFISH" ON "MEDSDATA"."MLO_JELLYFISH_OBSERVATION" ("LOCATION") 
+   INDEXTYPE IS "MDSYS"."SPATIAL_INDEX"  PARAMETERS (' ')
+Error report -
+ORA-00955: name is already used by an existing object
+00955. 00000 -  "name is already used by an existing object"
+*Cause:    
+*Action:
+
+Error starting at line : 1,997 in command -
+  CREATE INDEX "MEDSDATA"."SI_MLO_CETACEANS_TRACK" ON "MEDSDATA"."MLO_CETACEANS_TRACK" ("LOCATION") 
+   INDEXTYPE IS "MDSYS"."SPATIAL_INDEX"  PARAMETERS ('TABLESPACE=INDX')
+Error report -
+ORA-00955: name is already used by an existing object
+00955. 00000 -  "name is already used by an existing object"
+*Cause:    
+*Action:
+
+Error starting at line : 2,003 in command -
+  CREATE INDEX "MEDSDATA"."IDX_JOB_MLO_65" ON "MEDSDATA"."MLO_REPTILES_OBSERVATION" ("MEDS_JOB_NUMBER", "MEDS_OBSERVATION_NUMBER")
+Error report -
+ORA-00955: name is already used by an existing object
+00955. 00000 -  "name is already used by an existing object"
+*Cause:    
+*Action:
+
+Error starting at line : 2,009 in command -
+  CREATE INDEX "MEDSDATA"."IDX_JOB_DIR_13" ON "MEDSDATA"."DIR_AMBIENT_DATA" ("MEDS_JOB_NUMBER", "MEDS_OBSERVATION_NUMBER")
+Error report -
+ORA-00955: name is already used by an existing object
+00955. 00000 -  "name is already used by an existing object"
+*Cause:    
+*Action:
+
+Error starting at line : 2,015 in command -
+  CREATE INDEX "MEDSDATA"."IDX_JOB_MLO_66" ON "MEDSDATA"."MLO_SHIP_DATA" ("MEDS_JOB_NUMBER", "MEDS_OBSERVATION_NUMBER")
+Error report -
+ORA-00955: name is already used by an existing object
+00955. 00000 -  "name is already used by an existing object"
+*Cause:    
+*Action:
+
+Error starting at line : 2,021 in command -
+  CREATE INDEX "MEDSDATA"."IDX_DATE_FRONT_17" ON "MEDSDATA"."FRONT_FWOC_OBSERVATION" ("ARCHIVE_DATE")
+Error report -
+ORA-00955: name is already used by an existing object
+00955. 00000 -  "name is already used by an existing object"
+*Cause:    
+*Action:
+
+Error starting at line : 2,027 in command -
+  CREATE INDEX "MEDSDATA"."IDX_LATLONG_AMBIENTNOISE_D1" ON "MEDSDATA"."REPRES_AMBIENTNOISE_D1" ("LATITUDE", "LONGITUDE")
+Error report -
+ORA-00955: name is already used by an existing object
+00955. 00000 -  "name is already used by an existing object"
+*Cause:    
+*Action:
+
+Error starting at line : 2,033 in command -
+  CREATE INDEX "MEDSDATA"."IDX_JOB_GEOLOGY_43" ON "MEDSDATA"."GEOLOGY_QUALITY_OBSERVATION" ("MEDS_JOB_NUMBER", "MEDS_OBSERVATION_NUMBER")
+Error report -
+ORA-00955: name is already used by an existing object
+00955. 00000 -  "name is already used by an existing object"
+*Cause:    
+*Action:
+
+Error starting at line : 2,039 in command -
+  CREATE UNIQUE INDEX "MEDSDATA"."IDX_REPIGPADSL2_GRIDIDX" ON "MEDSDATA"."REPRES_IGPADS_L2" ("GRID_INDEX")
+Error report -
+ORA-00955: name is already used by an existing object
+00955. 00000 -  "name is already used by an existing object"
+*Cause:    
+*Action:
+
+Error starting at line : 2,045 in command -
+  CREATE INDEX "MEDSDATA"."IDX_JOB_SECCHI_73" ON "MEDSDATA"."SECCHI_DISK_DATA" ("MEDS_JOB_NUMBER", "MEDS_OBSERVATION_NUMBER")
+Error report -
+ORA-00955: name is already used by an existing object
+00955. 00000 -  "name is already used by an existing object"
+*Cause:    
+*Action:
+
+Error starting at line : 2,051 in command -
+  CREATE INDEX "MEDSDATA"."IDX_POSN_FRONT_14" ON "MEDSDATA"."FRONT_MEAN_REPEAT" ("LATITUDE", "LONGITUDE")
+Error report -
+ORA-00955: name is already used by an existing object
+00955. 00000 -  "name is already used by an existing object"
+*Cause:    
+*Action:
+
+Error starting at line : 2,057 in command -
+  CREATE INDEX "MEDSDATA"."IDX_POSN_IW_19" ON "MEDSDATA"."IW_IMAGE_OBSERVATION" ("LATITUDE", "LONGITUDE")
+Error report -
+ORA-00955: name is already used by an existing object
+00955. 00000 -  "name is already used by an existing object"
+*Cause:    
+*Action:
+
+Error starting at line : 2,063 in command -
+  CREATE INDEX "MEDSDATA"."IDX_LATLONG_SEASURFACE_L1" ON "MEDSDATA"."REPRES_SEASURFACE_L1" ("LATITUDE", "LONGITUDE")
+Error report -
+ORA-00955: name is already used by an existing object
+00955. 00000 -  "name is already used by an existing object"
+*Cause:    
+*Action:
+
+Error starting at line : 2,069 in command -
+  CREATE INDEX "MEDSDATA"."IDX_UNIFIED_SECCI_OBS" ON "MEDSDATA"."UNIFIED_SECCHI_OBSERVATION" ("MEDS_JOB_NUMBER", "MEDS_OBSERVATION_NUMBER")
+Error report -
+ORA-00955: name is already used by an existing object
+00955. 00000 -  "name is already used by an existing object"
+*Cause:    
+*Action:
+
+Error starting at line : 2,075 in command -
+  CREATE INDEX "MEDSDATA"."IDX_PROFILEL4JAN_LATLON" ON "MEDSDATA"."REPRES_PROFILE_L4_JAN" ("LATITUDE", "LONGITUDE")
+Error report -
+ORA-00955: name is already used by an existing object
+00955. 00000 -  "name is already used by an existing object"
+*Cause:    
+*Action:
+
+Error starting at line : 2,081 in command -
+  CREATE INDEX "MEDSDATA"."OBSERVATION_IDX3" ON "MEDSDATA"."OBSERVATION" ("OBSERVATION_NUMBER")
+Error report -
+ORA-00955: name is already used by an existing object
+00955. 00000 -  "name is already used by an existing object"
+*Cause:    
+*Action:
+
+Error starting at line : 2,087 in command -
+  CREATE INDEX "MEDSDATA"."IDX_JOB_MLO_63" ON "MEDSDATA"."MLO_PINNIPEDS_OBSERVATION" ("MEDS_JOB_NUMBER", "MEDS_OBSERVATION_NUMBER")
+Error report -
+ORA-00955: name is already used by an existing object
+00955. 00000 -  "name is already used by an existing object"
+*Cause:    
+*Action:
+
+Error starting at line : 2,093 in command -
+  CREATE INDEX "MEDSDATA"."IDX_JOB_FRONT_34" ON "MEDSDATA"."FRONT_MEAN_REPEAT" ("MEDS_JOB_NUMBER", "MEDS_OBSERVATION_NUMBER")
+Error report -
+ORA-00955: name is already used by an existing object
+00955. 00000 -  "name is already used by an existing object"
+*Cause:    
+*Action:
+
+Error starting at line : 2,099 in command -
+  CREATE INDEX "MEDSDATA"."IDX_DATE_DEEP_10" ON "MEDSDATA"."DEEP_SCATTERING_OBSERVATION" ("DATE_RECORDED")
+Error report -
+ORA-00955: name is already used by an existing object
+00955. 00000 -  "name is already used by an existing object"
+*Cause:    
+*Action:
+
+Error starting at line : 2,105 in command -
+  CREATE INDEX "MEDSDATA"."IDX_JOB_EDDY_18" ON "MEDSDATA"."EDDY_DATA" ("MEDS_JOB_NUMBER", "MEDS_OBSERVATION_NUMBER")
+Error report -
+ORA-00955: name is already used by an existing object
+00955. 00000 -  "name is already used by an existing object"
+*Cause:    
+*Action:
+
+Error starting at line : 2,111 in command -
+  CREATE INDEX "MEDSDATA"."IDX_REPMIXEDLYRD1_GRIDIDX" ON "MEDSDATA"."REPRES_MIXEDLAYER_D1" ("GRID_INDEX")
+Error report -
+ORA-00955: name is already used by an existing object
+00955. 00000 -  "name is already used by an existing object"
+*Cause:    
+*Action:
+
+Error starting at line : 2,117 in command -
+  CREATE INDEX "MEDSDATA"."A531_IX1" ON "MEDSDATA"."WVS_3M_BATHY_LINE" ("SHAPE") 
+   INDEXTYPE IS "MDSYS"."SPATIAL_INDEX"  PARAMETERS (' ')
+Error report -
+ORA-00955: name is already used by an existing object
+00955. 00000 -  "name is already used by an existing object"
+*Cause:    
+*Action:
+
+Error starting at line : 2,123 in command -
+  CREATE INDEX "MEDSDATA"."PROFILE_INDEX_SV_LATLON" ON "MEDSDATA"."PROFILE_INDEX_SV" ("LATITUDE", "LONGITUDE")
+Error report -
+ORA-00955: name is already used by an existing object
+00955. 00000 -  "name is already used by an existing object"
+*Cause:    
+*Action:
+
+Error starting at line : 2,129 in command -
+  CREATE INDEX "MEDSDATA"."IDX_DATE_FRONT_19" ON "MEDSDATA"."FRONT_GRID_DATA" ("DATES")
+Error report -
+ORA-00955: name is already used by an existing object
+00955. 00000 -  "name is already used by an existing object"
+*Cause:    
+*Action:
+
+Error starting at line : 2,135 in command -
+  CREATE INDEX "MEDSDATA"."IDX_JOB_BIOLUMINESCENCE_9" ON "MEDSDATA"."BIOLUMINESCENCE_DATA" ("MEDS_JOB_NUMBER", "MEDS_OBSERVATION_NUMBER")
+Error report -
+ORA-00955: name is already used by an existing object
+00955. 00000 -  "name is already used by an existing object"
+*Cause:    
+*Action:
+
+Error starting at line : 2,141 in command -
+  CREATE INDEX "MEDSDATA"."SI_MLOFISH" ON "MEDSDATA"."MLO_FISH_OBSERVATION" ("LOCATION") 
+   INDEXTYPE IS "MDSYS"."SPATIAL_INDEX"  PARAMETERS (' ')
+Error report -
+ORA-00955: name is already used by an existing object
+00955. 00000 -  "name is already used by an existing object"
+*Cause:    
+*Action:
+
+Error starting at line : 2,147 in command -
+  CREATE INDEX "MEDSDATA"."IDX_PROFILEL2JUL_LATLON" ON "MEDSDATA"."REPRES_PROFILE_L2_JUL" ("LATITUDE", "LONGITUDE")
+Error report -
+ORA-00955: name is already used by an existing object
+00955. 00000 -  "name is already used by an existing object"
+*Cause:    
+*Action:
+
+Error starting at line : 2,153 in command -
+  CREATE INDEX "MEDSDATA"."IDX_JOB_MLO_57" ON "MEDSDATA"."MLO_FISH_OBSERVATION" ("MEDS_JOB_NUMBER", "MEDS_OBSERVATION_NUMBER")
+Error report -
+ORA-00955: name is already used by an existing object
+00955. 00000 -  "name is already used by an existing object"
+*Cause:    
+*Action:
+
+Error starting at line : 2,159 in command -
+  CREATE INDEX "MEDSDATA"."IDX_DATE_DIR_11" ON "MEDSDATA"."DIR_AMBIENT_OBSERVATION" ("DATE_RECORDED")
+Error report -
+ORA-00955: name is already used by an existing object
+00955. 00000 -  "name is already used by an existing object"
+*Cause:    
+*Action:
+
+Error starting at line : 2,165 in command -
+  CREATE UNIQUE INDEX "MEDSDATA"."IDX_GRIDL1_GRIDINDEX" ON "MEDSDATA"."MASTER_GRID_L1" ("GRID_INDEX", "DATATYPE")
+Error report -
+ORA-00955: name is already used by an existing object
+00955. 00000 -  "name is already used by an existing object"
+*Cause:    
+*Action:
+
+Error starting at line : 2,171 in command -
+  CREATE INDEX "MEDSDATA"."IDX_JOB_INTERNAL_44" ON "MEDSDATA"."INTERNAL_WAVE_DATA" ("MEDS_JOB_NUMBER", "MEDS_OBSERVATION_NUMBER")
+Error report -
+ORA-00955: name is already used by an existing object
+00955. 00000 -  "name is already used by an existing object"
+*Cause:    
+*Action:
+
+Error starting at line : 2,177 in command -
+  CREATE INDEX "MEDSDATA"."IDX_FLAGS_VALUE" ON "MEDSDATA"."MEDS_FLAGS" ("FLAG_VALUE")
+Error report -
+ORA-00955: name is already used by an existing object
+00955. 00000 -  "name is already used by an existing object"
+*Cause:    
+*Action:
+
+Error starting at line : 2,183 in command -
+  CREATE UNIQUE INDEX "MEDSDATA"."R420_SDE_ROWID_UK" ON "MEDSDATA"."WVS_D_3M_COUNTPOLY" ("OBJECTID")
+Error report -
+ORA-00955: name is already used by an existing object
+00955. 00000 -  "name is already used by an existing object"
+*Cause:    
+*Action:
+
+Error starting at line : 2,189 in command -
+  CREATE INDEX "MEDSDATA"."PROCESSING_JOB_SHIP_IDX" ON "MEDSDATA"."MEDS_PROCESSING_JOB" ("MEDS_SHIP_NUMBER")
+Error report -
+ORA-00955: name is already used by an existing object
+00955. 00000 -  "name is already used by an existing object"
+*Cause:    
+*Action:
+
+Error starting at line : 2,195 in command -
+  CREATE INDEX "MEDSDATA"."PROFILE_INDEX_TS_DATE" ON "MEDSDATA"."PROFILE_INDEX_TS" ("DATE_TIME")
+Error report -
+ORA-00955: name is already used by an existing object
+00955. 00000 -  "name is already used by an existing object"
+*Cause:    
+*Action:
+
+Error starting at line : 2,201 in command -
+  CREATE INDEX "MEDSDATA"."PROFILE_INDEX_TONLY_JOB" ON "MEDSDATA"."PROFILE_INDEX_TONLY" ("MEDS_JOB_NUMBER")
+Error report -
+ORA-00955: name is already used by an existing object
+00955. 00000 -  "name is already used by an existing object"
+*Cause:    
+*Action:
+
+Error starting at line : 2,207 in command -
+  CREATE INDEX "MEDSDATA"."IDX_FLAGS_STATUS" ON "MEDSDATA"."MEDS_FLAGS" ("FLAG_STATUS")
+Error report -
+ORA-00955: name is already used by an existing object
+00955. 00000 -  "name is already used by an existing object"
+*Cause:    
+*Action:
+
+Error starting at line : 2,213 in command -
+  CREATE INDEX "MEDSDATA"."SI_FRONTFWOC" ON "MEDSDATA"."FRONT_FWOC_OBSERVATION" ("LOCATION") 
+   INDEXTYPE IS "MDSYS"."SPATIAL_INDEX"  PARAMETERS (' ')
+Error report -
+ORA-00955: name is already used by an existing object
+00955. 00000 -  "name is already used by an existing object"
+*Cause:    
+*Action:
+
+Error starting at line : 2,219 in command -
+  CREATE INDEX "MEDSDATA"."IDX_DBFIELD_FINDEX" ON "MEDSDATA"."DBFIELD_LOOKUP" ("FIELD_INDEX")
+Error report -
+ORA-00955: name is already used by an existing object
+00955. 00000 -  "name is already used by an existing object"
+*Cause:    
+*Action:
+
+Error starting at line : 2,225 in command -
+  CREATE INDEX "MEDSDATA"."IDX_PROFILEL1JUL_LATLON" ON "MEDSDATA"."REPRES_PROFILE_L1_JUL" ("LATITUDE", "LONGITUDE")
+Error report -
+ORA-00955: name is already used by an existing object
+00955. 00000 -  "name is already used by an existing object"
+*Cause:    
+*Action:
+
+Error starting at line : 2,231 in command -
+  CREATE INDEX "MEDSDATA"."SI_MLO_SEABED_CONTACT" ON "MEDSDATA"."MLO_SEABED_CONTACT_OBSERVATION" ("LOCATION") 
+   INDEXTYPE IS "MDSYS"."SPATIAL_INDEX"  PARAMETERS ('TABLESPACE=INDX')
+Error report -
+ORA-00955: name is already used by an existing object
+00955. 00000 -  "name is already used by an existing object"
+*Cause:    
+*Action:
+
+Error starting at line : 2,237 in command -
+  CREATE UNIQUE INDEX "MEDSDATA"."IDX_GRIDD1_GRIDINDEX" ON "MEDSDATA"."MASTER_GRID_D1" ("GRID_INDEX", "DATATYPE")
+Error report -
+ORA-00955: name is already used by an existing object
+00955. 00000 -  "name is already used by an existing object"
+*Cause:    
+*Action:
+
+Error starting at line : 2,243 in command -
+  CREATE INDEX "MEDSDATA"."IDX_POSN_MLO_22" ON "MEDSDATA"."MLO_FISH_OBSERVATION" ("LATITUDE", "LONGITUDE")
+Error report -
+ORA-00955: name is already used by an existing object
+00955. 00000 -  "name is already used by an existing object"
+*Cause:    
+*Action:
+
+Error starting at line : 2,249 in command -
+  CREATE INDEX "MEDSDATA"."IDX_LATLONG_IGPADS_L2" ON "MEDSDATA"."REPRES_IGPADS_L2" ("LATITUDE", "LONGITUDE")
+Error report -
+ORA-00955: name is already used by an existing object
+00955. 00000 -  "name is already used by an existing object"
+*Cause:    
+*Action:
+
+Error starting at line : 2,255 in command -
+  CREATE INDEX "MEDSDATA"."IDX_DATE_FRONT_23" ON "MEDSDATA"."FRONT_SURVEY_OBSERVATION" ("START_DATE")
+Error report -
+ORA-00955: name is already used by an existing object
+00955. 00000 -  "name is already used by an existing object"
+*Cause:    
+*Action:
+
+Error starting at line : 2,261 in command -
+  CREATE INDEX "MEDSDATA"."IDX_JOB_EDDY_22" ON "MEDSDATA"."EDDY_SATELLITE_OBSERVATION" ("MEDS_JOB_NUMBER", "MEDS_OBSERVATION_NUMBER")
+Error report -
+ORA-00955: name is already used by an existing object
+00955. 00000 -  "name is already used by an existing object"
+*Cause:    
+*Action:
+
+Error starting at line : 2,267 in command -
+  CREATE INDEX "MEDSDATA"."PROFILE_INDEX_TS_CRUISE" ON "MEDSDATA"."PROFILE_INDEX_TS" ("MEDS_CRUISE_NUMBER")
+Error report -
+ORA-00955: name is already used by an existing object
+00955. 00000 -  "name is already used by an existing object"
+*Cause:    
+*Action:
+
+Error starting at line : 2,273 in command -
+  CREATE INDEX "MEDSDATA"."IDX_JOB_IW_48" ON "MEDSDATA"."IW_IMAGE_OBSERVATION" ("MEDS_JOB_NUMBER", "MEDS_OBSERVATION_NUMBER")
+Error report -
+ORA-00955: name is already used by an existing object
+00955. 00000 -  "name is already used by an existing object"
+*Cause:    
+*Action:
+
+Error starting at line : 2,279 in command -
+  CREATE INDEX "MEDSDATA"."SI_BATHY" ON "MEDSDATA"."WVS_3M" ("SHAPE") 
+   INDEXTYPE IS "MDSYS"."SPATIAL_INDEX"  PARAMETERS (' ')
+Error report -
+ORA-00955: name is already used by an existing object
+00955. 00000 -  "name is already used by an existing object"
+*Cause:    
+*Action:
+
+Error starting at line : 2,285 in command -
+  CREATE INDEX "MEDSDATA"."IDX_JOB_MLO_62" ON "MEDSDATA"."MLO_PINNIPEDS_DATA" ("MEDS_JOB_NUMBER", "MEDS_OBSERVATION_NUMBER")
+Error report -
+ORA-00955: name is already used by an existing object
+00955. 00000 -  "name is already used by an existing object"
+*Cause:    
+*Action:
+
+Error starting at line : 2,291 in command -
+  CREATE INDEX "MEDSDATA"."IDX_REPPROFILEL2_MAY" ON "MEDSDATA"."REPRES_PROFILE_L2_MAY" ("GRID_INDEX")
+Error report -
+ORA-00955: name is already used by an existing object
+00955. 00000 -  "name is already used by an existing object"
+*Cause:    
+*Action:
+
+Error starting at line : 2,297 in command -
+  CREATE INDEX "MEDSDATA"."PROFILE_INDEX_TS_JOB" ON "MEDSDATA"."PROFILE_INDEX_TS" ("MEDS_JOB_NUMBER")
+Error report -
+ORA-00955: name is already used by an existing object
+00955. 00000 -  "name is already used by an existing object"
+*Cause:    
+*Action:
+
+Error starting at line : 2,303 in command -
+  CREATE INDEX "MEDSDATA"."IDX_REPAMBNOISED1_GRIDIDX" ON "MEDSDATA"."REPRES_AMBIENTNOISE_D1" ("GRID_INDEX")
+Error report -
+ORA-00955: name is already used by an existing object
+00955. 00000 -  "name is already used by an existing object"
+*Cause:    
+*Action:
+
+Error starting at line : 2,309 in command -
+  CREATE INDEX "MEDSDATA"."IDX_AQUALINE_JOB" ON "MEDSDATA"."AQUAPACK_LINE_OBSERVATION" ("MEDS_JOB_NUMBER", "MEDS_OBSERVATION_NUMBER")
+Error report -
+ORA-00955: name is already used by an existing object
+00955. 00000 -  "name is already used by an existing object"
+*Cause:    
+*Action:
+
+Error starting at line : 2,315 in command -
+  CREATE INDEX "MEDSDATA"."IDX_JOB_ASRAP_2" ON "MEDSDATA"."ASRAP_POINT_DATA" ("MEDS_JOB_NUMBER", "MEDS_OBSERVATION_NUMBER")
+Error report -
+ORA-00955: name is already used by an existing object
+00955. 00000 -  "name is already used by an existing object"
+*Cause:    
+*Action:
+
+Error starting at line : 2,321 in command -
+  CREATE INDEX "MEDSDATA"."IDX_REPPROFILEL1_FEB" ON "MEDSDATA"."REPRES_PROFILE_L1_FEB" ("GRID_INDEX")
+Error report -
+ORA-00955: name is already used by an existing object
+00955. 00000 -  "name is already used by an existing object"
+*Cause:    
+*Action:
+
+Error starting at line : 2,327 in command -
+  CREATE INDEX "MEDSDATA"."IDX_GLIDER_THREADED_JOB" ON "MEDSDATA"."GLIDER_THREADED_OBSERVATION" ("MEDS_JOB_NUMBER", "MEDS_OBSERVATION_NUMBER")
+Error report -
+ORA-00955: name is already used by an existing object
+00955. 00000 -  "name is already used by an existing object"
+*Cause:    
+*Action:
+
+Error starting at line : 2,333 in command -
+  CREATE INDEX "MEDSDATA"."IDX_JOB_MLO_67" ON "MEDSDATA"."MLO_SHIP_OBSERVATION" ("MEDS_JOB_NUMBER", "MEDS_OBSERVATION_NUMBER")
+Error report -
+ORA-00955: name is already used by an existing object
+00955. 00000 -  "name is already used by an existing object"
+*Cause:    
+*Action:
+
+Error starting at line : 2,339 in command -
+  CREATE INDEX "MEDSDATA"."IDX_ADCP_DATE" ON "MEDSDATA"."ADCP_OBSERVATION" ("DATE_RECORDED")
+Error report -
+ORA-00955: name is already used by an existing object
+00955. 00000 -  "name is already used by an existing object"
+*Cause:    
+*Action:
+
+Error starting at line : 2,345 in command -
+  CREATE INDEX "MEDSDATA"."ARCHIVE_DATE_IDX" ON "MEDSDATA"."MEDS_PROCESSING_JOB" ("ARCHIVE_DATE")
+Error report -
+ORA-00955: name is already used by an existing object
+00955. 00000 -  "name is already used by an existing object"
+*Cause:    
+*Action:
+
+Error starting at line : 2,351 in command -
+  CREATE INDEX "MEDSDATA"."IDX_MLO_SHIPD_JOB" ON "MEDSDATA"."MLO_SOSUS_DATA" ("MEDS_JOB_NUMBER", "MEDS_OBSERVATION_NUMBER")
+Error report -
+ORA-00955: name is already used by an existing object
+00955. 00000 -  "name is already used by an existing object"
+*Cause:    
+*Action:
+
+Error starting at line : 2,357 in command -
+  CREATE INDEX "MEDSDATA"."IDX_GLIDER_THREADED_DATA_JOB" ON "MEDSDATA"."GLIDER_THREADED_DATA" ("MEDS_JOB_NUMBER", "MEDS_OBSERVATION_NUMBER")
+Error report -
+ORA-00955: name is already used by an existing object
+00955. 00000 -  "name is already used by an existing object"
+*Cause:    
+*Action:
+
+Error starting at line : 2,363 in command -
+  CREATE INDEX "MEDSDATA"."IDX_JOB_DIR_14" ON "MEDSDATA"."DIR_AMBIENT_OBSERVATION" ("MEDS_JOB_NUMBER", "MEDS_OBSERVATION_NUMBER")
+Error report -
+ORA-00955: name is already used by an existing object
+00955. 00000 -  "name is already used by an existing object"
+*Cause:    
+*Action:
+
+Error starting at line : 2,369 in command -
+  CREATE INDEX "MEDSDATA"."IDX_JOB_EDDY_20" ON "MEDSDATA"."EDDY_REPEAT" ("MEDS_JOB_NUMBER", "MEDS_OBSERVATION_NUMBER")
+Error report -
+ORA-00955: name is already used by an existing object
+00955. 00000 -  "name is already used by an existing object"
+*Cause:    
+*Action:
+
+Error starting at line : 2,375 in command -
+  CREATE INDEX "MEDSDATA"."IDX_DATE_IW_28" ON "MEDSDATA"."IW_IMAGE_DATA" ("ARCHIVE_DATE")
+Error report -
+ORA-00955: name is already used by an existing object
+00955. 00000 -  "name is already used by an existing object"
+*Cause:    
+*Action:
+
+Error starting at line : 2,381 in command -
+  CREATE INDEX "MEDSDATA"."SI_SEASOAR_TOW" ON "MEDSDATA"."SEASOAR_TOW_OBSERVATION" ("LOCATION") 
+   INDEXTYPE IS "MDSYS"."SPATIAL_INDEX"  PARAMETERS (' ')
+Error report -
+ORA-00955: name is already used by an existing object
+00955. 00000 -  "name is already used by an existing object"
+*Cause:    
+*Action:
+
+Error starting at line : 2,387 in command -
+  CREATE INDEX "MEDSDATA"."IDX_POSN_EDDY_8" ON "MEDSDATA"."EDDY_OBSERVATION" ("LATITUDE", "LONGITUDE")
+Error report -
+ORA-00955: name is already used by an existing object
+00955. 00000 -  "name is already used by an existing object"
+*Cause:    
+*Action:
+
+Error starting at line : 2,393 in command -
+  CREATE INDEX "MEDSDATA"."IDX_DATE_BEACH_8" ON "MEDSDATA"."BEACH_OBSERVATION" ("DATE_OF_SURVEY")
+Error report -
+ORA-00955: name is already used by an existing object
+00955. 00000 -  "name is already used by an existing object"
+*Cause:    
+*Action:
+
+Error starting at line : 2,399 in command -
+  CREATE INDEX "MEDSDATA"."IDX_POSN_BEACH_3" ON "MEDSDATA"."BEACH_OBSERVATION" ("LATITUDE", "LONGITUDE")
+Error report -
+ORA-00955: name is already used by an existing object
+00955. 00000 -  "name is already used by an existing object"
+*Cause:    
+*Action:
+
+Error starting at line : 2,405 in command -
+  CREATE INDEX "MEDSDATA"."IDX_FIELDLOKKUP_TABNAME" ON "MEDSDATA"."FIELD_LOOKUP" ("TABLE_NAME")
+Error report -
+ORA-00955: name is already used by an existing object
+00955. 00000 -  "name is already used by an existing object"
+*Cause:    
+*Action:
+
+Error starting at line : 2,411 in command -
+  CREATE INDEX "MEDSDATA"."IDX_PROFILEL1JAN_LATLON" ON "MEDSDATA"."REPRES_PROFILE_L1_JAN" ("LATITUDE", "LONGITUDE")
+Error report -
+ORA-00955: name is already used by an existing object
+00955. 00000 -  "name is already used by an existing object"
+*Cause:    
+*Action:
+
+Error starting at line : 2,417 in command -
+  CREATE INDEX "MEDSDATA"."IDX_PROFILEL2DEC_LATLON" ON "MEDSDATA"."REPRES_PROFILE_L2_DEC" ("LATITUDE", "LONGITUDE")
+Error report -
+ORA-00955: name is already used by an existing object
+00955. 00000 -  "name is already used by an existing object"
+*Cause:    
+*Action:
+
+Error starting at line : 2,423 in command -
+  CREATE INDEX "MEDSDATA"."IDX_SEASOAR_TOW_DATE" ON "MEDSDATA"."SEASOAR_TOW_OBSERVATION" ("DATE_RECORDED")
+Error report -
+ORA-00955: name is already used by an existing object
+00955. 00000 -  "name is already used by an existing object"
+*Cause:    
+*Action:
+
+Error starting at line : 2,429 in command -
+  CREATE INDEX "MEDSDATA"."IDX_POSN_FRONT_11" ON "MEDSDATA"."FRONT_FWOC_REPEAT" ("LATITUDE", "LONGITUDE")
+Error report -
+ORA-00955: name is already used by an existing object
+00955. 00000 -  "name is already used by an existing object"
+*Cause:    
+*Action:
+
+Error starting at line : 2,435 in command -
+  CREATE INDEX "MEDSDATA"."SI_OMNIAMBIENT" ON "MEDSDATA"."OMNI_AMBIENT_OBSERVATION" ("LOCATION") 
+   INDEXTYPE IS "MDSYS"."SPATIAL_INDEX"  PARAMETERS (' ')
+Error report -
+ORA-00955: name is already used by an existing object
+00955. 00000 -  "name is already used by an existing object"
+*Cause:    
+*Action:

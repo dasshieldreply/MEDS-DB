@@ -1,0 +1,105 @@
+<?xml version = '1.0' encoding = 'UTF-8'?>
+<Table class="oracle.dbtools.crest.model.design.relational.Table" directorySegmentName="seg_1" id="3735BF22-8D2C-0B84-2B8A-8DA316FE7995" schemaObject="FD77D69E-489C-FEFD-81EE-34209F1C13AA" name="MLO_CETACEANS_ENVELOPE">
+<sourceConnName>MEDS ADMIN</sourceConnName>
+<sourceObjSchema>MEDSADMIN</sourceObjSchema>
+<sourceObjName>MLO_CETACEANS_ENVELOPE</sourceObjName>
+<createdBy>d.arboittedossantos</createdBy>
+<createdTime>2024-03-14 14:47:24 UTC</createdTime>
+<ownerDesignName>MEDS_DATA</ownerDesignName>
+<allowColumnReorder>false</allowColumnReorder>
+<existDependencyGenerateInDDl>true</existDependencyGenerateInDDl>
+<parsed>true</parsed>
+<columns itemClass="oracle.dbtools.crest.model.design.relational.Column">
+<Column name="ENVELOPE" id="A5978254-3AC0-3ED2-CF2A-392BB96CB6C2">
+<sourceConnName>MEDS ADMIN</sourceConnName>
+<sourceObjSchema>MLO_CETACEANS_ENVELOPE</sourceObjSchema>
+<sourceObjName>ENVELOPE</sourceObjName>
+<createdBy>d.arboittedossantos</createdBy>
+<createdTime>2024-03-14 14:47:25 UTC</createdTime>
+<ownerDesignName>MEDS_DATA</ownerDesignName>
+<nullsAllowed>true</nullsAllowed>
+<useDomainConstraints>false</useDomainConstraints>
+<allowSubtypeSubstitution>false</allowSubtypeSubstitution>
+<use>3</use>
+<structuredType>47E390DE-0671-C4B1-8428-0F45CBEE18F8</structuredType>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
+<autoIncrementCycle>false</autoIncrementCycle>
+</Column>
+<Column name="MEDS_JOB_NUMBER" id="39B8AC5F-85FD-A4FC-992A-76D7326BBBDF">
+<sourceConnName>MEDS ADMIN</sourceConnName>
+<sourceObjSchema>MLO_CETACEANS_ENVELOPE</sourceObjSchema>
+<sourceObjName>MEDS_JOB_NUMBER</sourceObjName>
+<createdBy>d.arboittedossantos</createdBy>
+<createdTime>2024-03-14 14:47:25 UTC</createdTime>
+<ownerDesignName>MEDS_DATA</ownerDesignName>
+<nullsAllowed>true</nullsAllowed>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT019</logicalDatatype>
+<dataTypePrecision>10</dataTypePrecision>
+<dataTypeScale>0</dataTypeScale>
+<ownDataTypeParameters>,10,0</ownDataTypeParameters>
+<autoIncrementCycle>false</autoIncrementCycle>
+</Column>
+<Column name="MEDS_TRACK_NUMBER" id="5B6ABAEF-A4BC-CFC9-6AA6-CAC161DA952D">
+<sourceConnName>MEDS ADMIN</sourceConnName>
+<sourceObjSchema>MLO_CETACEANS_ENVELOPE</sourceObjSchema>
+<sourceObjName>MEDS_TRACK_NUMBER</sourceObjName>
+<createdBy>d.arboittedossantos</createdBy>
+<createdTime>2024-03-14 14:47:25 UTC</createdTime>
+<ownerDesignName>MEDS_DATA</ownerDesignName>
+<nullsAllowed>true</nullsAllowed>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT019</logicalDatatype>
+<dataTypePrecision>10</dataTypePrecision>
+<dataTypeScale>0</dataTypeScale>
+<ownDataTypeParameters>,10,0</ownDataTypeParameters>
+<autoIncrementCycle>false</autoIncrementCycle>
+</Column>
+<Column name="NUM_OBS" id="99E28D47-D162-7E4D-29B4-A689F33047F9">
+<sourceConnName>MEDS ADMIN</sourceConnName>
+<sourceObjSchema>MLO_CETACEANS_ENVELOPE</sourceObjSchema>
+<sourceObjName>NUM_OBS</sourceObjName>
+<createdBy>d.arboittedossantos</createdBy>
+<createdTime>2024-03-14 14:47:25 UTC</createdTime>
+<ownerDesignName>MEDS_DATA</ownerDesignName>
+<nullsAllowed>true</nullsAllowed>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT019</logicalDatatype>
+<dataTypePrecision>10</dataTypePrecision>
+<dataTypeScale>0</dataTypeScale>
+<defaultValue>0</defaultValue>
+<ownDataTypeParameters>,10,0</ownDataTypeParameters>
+<autoIncrementCycle>false</autoIncrementCycle>
+</Column>
+</columns>
+<indexes itemClass="oracle.dbtools.crest.model.design.relational.Index">
+<ind_PK_UK id="D269192E-C667-8702-65F5-2981AC705722" schemaObject="FD77D69E-489C-FEFD-81EE-34209F1C13AA" name="IDX_MLO_CETACEANS_ENVELOPE_JOB">
+<sourceConnName>MEDS ADMIN</sourceConnName>
+<sourceObjSchema>MEDSADMIN</sourceObjSchema>
+<sourceObjName>IDX_MLO_CETACEANS_ENVELOPE_JOB</sourceObjName>
+<createdBy>d.arboittedossantos</createdBy>
+<createdTime>2024-03-14 14:47:29 UTC</createdTime>
+<ownerDesignName>MEDS_DATA</ownerDesignName>
+<isSurrogateKey>false</isSurrogateKey>
+<indexColumnUsage>
+<colUsage columnID="39B8AC5F-85FD-A4FC-992A-76D7326BBBDF"/>
+<colUsage columnID="5B6ABAEF-A4BC-CFC9-6AA6-CAC161DA952D"/>
+</indexColumnUsage>
+</ind_PK_UK>
+<ind_PK_UK id="D0B546F7-D844-5AC5-36FE-4F2FD12470FA" schemaObject="FD77D69E-489C-FEFD-81EE-34209F1C13AA" name="SI_MLO_CETACEANS_ENVELOPE">
+<sourceConnName>MEDS ADMIN</sourceConnName>
+<sourceObjSchema>MEDSADMIN</sourceObjSchema>
+<sourceObjName>SI_MLO_CETACEANS_ENVELOPE</sourceObjName>
+<createdBy>d.arboittedossantos</createdBy>
+<createdTime>2024-03-14 14:47:29 UTC</createdTime>
+<ownerDesignName>MEDS_DATA</ownerDesignName>
+<isSurrogateKey>false</isSurrogateKey>
+<indexColumnUsage>
+<colUsage columnID="A5978254-3AC0-3ED2-CF2A-392BB96CB6C2"/>
+</indexColumnUsage>
+</ind_PK_UK>
+</indexes>
+</Table>

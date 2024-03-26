@@ -1,0 +1,882 @@
+
+Table "MEDSDATA"."STATS_PERIOD" altered.
+
+
+Table "MEDSDATA"."STATS_PERIOD" altered.
+
+
+Table "MEDSDATA"."TAB_COLUMNS_COPY" altered.
+
+
+Table "MEDSDATA"."TAB_COLUMNS_COPY" altered.
+
+
+Table "MEDSDATA"."TAB_COLUMNS_COPY" altered.
+
+
+Table "MEDSDATA"."WVS_3M_BATHY_LINE" altered.
+
+
+Table "MEDSDATA"."MEDS_JOB_ERROR" altered.
+
+
+Table "MEDSDATA"."MEDS_JOB_ERROR" altered.
+
+
+Table "MEDSDATA"."MEDS_JOB_ERROR" altered.
+
+
+Table "MEDSDATA"."GENERIC_EDIT" altered.
+
+
+Table "MEDSDATA"."GENERIC_EDIT" altered.
+
+
+Table "MEDSDATA"."GENERIC_EDIT" altered.
+
+
+Table "MEDSDATA"."HELP" altered.
+
+
+Table "MEDSDATA"."HELP" altered.
+
+
+Error starting at line : 40 in command -
+  ALTER TABLE "MEDSDATA"."HELP" ADD CONSTRAINT "HELP_TOPIC_SEQ" PRIMARY KEY ("TOPIC", "SEQ")
+  USING INDEX "MEDSDATA"."HELP_TOPIC_SEQ"  ENABLE
+Error report -
+ORA-01418: specified index does not exist
+01418. 00000 -  "specified index does not exist"
+*Cause:    
+*Action:
+
+Table "MEDSDATA"."MEDS_ERRORS" altered.
+
+
+Table "MEDSDATA"."MEDS_ERRORS" altered.
+
+
+Table "MEDSDATA"."WVS_D_3M_COUNTPOLY" altered.
+
+
+Table "MEDSDATA"."WVS_3M" altered.
+
+
+Table "MEDSDATA"."JOB_STATS_SETTINGS" altered.
+
+
+Table "MEDSDATA"."JOB_STATS_SETTINGS" altered.
+
+
+Table "MEDSDATA"."JOB_STATS_SETTINGS" altered.
+
+
+Table "MEDSDATA"."JOB_STATS_SETTINGS" altered.
+
+
+Table "MEDSDATA"."JOB_STATS_SETTINGS" altered.
+
+
+Table "MEDSDATA"."JOB_STATS_SETTINGS" altered.
+
+
+Table "MEDSDATA"."JOB_STATS_SETTINGS" altered.
+
+
+Table "MEDSDATA"."MEDS_PROCESSING_JOB" altered.
+
+
+Error starting at line : 74 in command -
+  ALTER TABLE "MEDSDATA"."MEDS_PROCESSING_JOB" ADD CONSTRAINT "JOB_LAYER_IDX" PRIMARY KEY ("JOB_NUMBER")
+  USING INDEX "MEDSDATA"."JOB_LAYER_IDX"  ENABLE
+Error report -
+ORA-01418: specified index does not exist
+01418. 00000 -  "specified index does not exist"
+*Cause:    
+*Action:
+
+Table "MEDSDATA"."LAYER_LOOKUP" altered.
+
+
+Table "MEDSDATA"."EVENTTYPE" altered.
+
+
+Table "MEDSDATA"."TAB_COLUMNS" altered.
+
+
+Table "MEDSDATA"."TAB_COLUMNS" altered.
+
+
+Table "MEDSDATA"."TAB_COLUMNS" altered.
+
+
+Table "MEDSDATA"."DIRECTORY_LOOKUP" altered.
+
+
+Table "MEDSDATA"."DIRECTORY_LOOKUP" altered.
+
+
+Table "MEDSDATA"."DIRECTORY_LOOKUP" altered.
+
+
+Table "MEDSDATA"."MLO_COLUMNS" altered.
+
+
+Table "MEDSDATA"."MLO_COLUMNS" altered.
+
+
+Table "MEDSDATA"."OBSERVATIONS" altered.
+
+
+Table "MEDSDATA"."OBSERVATIONS" altered.
+
+
+Table "MEDSDATA"."PROFILE_HEADER_TONLY" altered.
+
+
+Table "MEDSDATA"."PROFILE_HEADER_TONLY" altered.
+
+
+Error starting at line : 118 in command -
+  ALTER TABLE "MEDSDATA"."PROFILE_HEADER_TONLY" ADD CONSTRAINT "PROFILE_HEADER_TONLY_IDX" PRIMARY KEY ("MEDS_JOB_NUMBER", "MEDS_OBSERVATION_NUMBER")
+  USING INDEX "MEDSDATA"."PROFILE_HEADER_TONLY_IDX"  ENABLE
+Error report -
+ORA-01418: specified index does not exist
+01418. 00000 -  "specified index does not exist"
+*Cause:    
+*Action:
+
+Table "MEDSDATA"."JOB_STATS" altered.
+
+
+Table "MEDSDATA"."JOB_STATS" altered.
+
+
+Table "MEDSDATA"."JOB_STATS" altered.
+
+
+Table "MEDSDATA"."OBSERVATION" altered.
+
+
+Table "MEDSDATA"."OBSERVATION" altered.
+
+
+Table "MEDSDATA"."OBSERVATION" altered.
+
+
+Error starting at line : 138 in command -
+  ALTER TABLE "MEDSDATA"."CRUISE_LAYER" ADD CONSTRAINT "CRUISE_LAYER_IDX" PRIMARY KEY ("MEDS_CRUISE_NUMBER")
+  USING INDEX "MEDSDATA"."CRUISE_LAYER_IDX"  ENABLE
+Error report -
+ORA-01418: specified index does not exist
+01418. 00000 -  "specified index does not exist"
+*Cause:    
+*Action:
+
+Table "MEDSDATA"."INSTRUMENT" altered.
+
+
+Error starting at line : 145 in command -
+  ALTER TABLE "MEDSDATA"."INSTRUMENT" ADD CONSTRAINT "INSTRUMENT_IDX" PRIMARY KEY ("SERD")
+  USING INDEX "MEDSDATA"."INSTRUMENT_IDX"  ENABLE
+Error report -
+ORA-01418: specified index does not exist
+01418. 00000 -  "specified index does not exist"
+*Cause:    
+*Action:
+
+Table "MEDSDATA"."JOB_TRACKING" altered.
+
+
+Table "MEDSDATA"."JOB_TRACKING" altered.
+
+
+Table "MEDSDATA"."JOB_TRACKING" altered.
+
+
+Table "MEDSDATA"."JOB_TRACKING" altered.
+
+
+Table "MEDSDATA"."JOB_TRACKING" altered.
+
+
+Table "MEDSDATA"."JOB_TRACKING" altered.
+
+
+Table "MEDSDATA"."JOB_TRACKING" altered.
+
+
+Table "MEDSDATA"."JOB_TRACKING" altered.
+
+
+Table "MEDSDATA"."JOB_TRACKING" altered.
+
+
+Error starting at line : 160 in command -
+  ALTER TABLE "MEDSDATA"."JOB_TRACKING" ADD CONSTRAINT "PK_JOB_TRACKING" PRIMARY KEY ("MEIC_NUMBER")
+  USING INDEX "MEDSDATA"."PK_JOB_TRACKING"  ENABLE
+Error report -
+ORA-01418: specified index does not exist
+01418. 00000 -  "specified index does not exist"
+*Cause:    
+*Action:
+
+Table "MEDSDATA"."FIELD_LOOKUP_DUP" altered.
+
+
+Error starting at line : 171 in command -
+  ALTER TABLE "MEDSDATA"."PROFILE_INDEX_SV" ADD CONSTRAINT "PROFILE_INDEX_SV_IDX" PRIMARY KEY ("MEDS_JOB_NUMBER", "MEDS_OBSERVATION_NUMBER")
+  USING INDEX "MEDSDATA"."PROFILE_INDEX_SV_IDX"  ENABLE
+Error report -
+ORA-01418: specified index does not exist
+01418. 00000 -  "specified index does not exist"
+*Cause:    
+*Action:
+
+Table "MEDSDATA"."EVENTLOG" altered.
+
+
+Table "MEDSDATA"."MEDS_JOB_TYPE" altered.
+
+
+Table "MEDSDATA"."FIELD_LOOKUP" altered.
+
+
+Table "MEDSDATA"."PROFILE_HEADER_TS" altered.
+
+
+Table "MEDSDATA"."PROFILE_HEADER_TS" altered.
+
+
+Error starting at line : 195 in command -
+  ALTER TABLE "MEDSDATA"."PROFILE_HEADER_TS" ADD CONSTRAINT "PROFILE_HEADER_TS_IDX" PRIMARY KEY ("MEDS_JOB_NUMBER", "MEDS_OBSERVATION_NUMBER")
+  USING INDEX "MEDSDATA"."PROFILE_HEADER_TS_IDX"  ENABLE
+Error report -
+ORA-01418: specified index does not exist
+01418. 00000 -  "specified index does not exist"
+*Cause:    
+*Action:
+
+Error starting at line : 201 in command -
+  ALTER TABLE "MEDSDATA"."PROFILE_INDEX_TONLY" ADD CONSTRAINT "PROFILE_INDEX_TONLY_IDX" PRIMARY KEY ("MEDS_JOB_NUMBER", "MEDS_OBSERVATION_NUMBER")
+  USING INDEX "MEDSDATA"."PROFILE_INDEX_TONLY_IDX"  ENABLE
+Error report -
+ORA-01418: specified index does not exist
+01418. 00000 -  "specified index does not exist"
+*Cause:    
+*Action:
+
+Table "MEDSDATA"."FILE_LOOKUP" altered.
+
+
+Table "MEDSDATA"."FILE_LOOKUP" altered.
+
+
+Table "MEDSDATA"."ACCESS_CONTROL" altered.
+
+
+Table "MEDSDATA"."ACCESS_CONTROL" altered.
+
+
+Error starting at line : 219 in command -
+  ALTER TABLE "MEDSDATA"."PROFILE_INDEX_TS" ADD CONSTRAINT "PROFILE_INDEX_TS_IDX" PRIMARY KEY ("MEDS_JOB_NUMBER", "MEDS_OBSERVATION_NUMBER")
+  USING INDEX "MEDSDATA"."PROFILE_INDEX_TS_IDX"  ENABLE
+Error report -
+ORA-01418: specified index does not exist
+01418. 00000 -  "specified index does not exist"
+*Cause:    
+*Action:
+
+Table "MEDSDATA"."PROFILE_HEADER_SV" altered.
+
+
+Table "MEDSDATA"."PROFILE_HEADER_SV" altered.
+
+
+Error starting at line : 227 in command -
+  ALTER TABLE "MEDSDATA"."PROFILE_HEADER_SV" ADD CONSTRAINT "PROFILE_HEADER_SV_IDX" PRIMARY KEY ("MEDS_JOB_NUMBER", "MEDS_OBSERVATION_NUMBER")
+  USING INDEX "MEDSDATA"."PROFILE_HEADER_SV_IDX"  ENABLE
+Error report -
+ORA-01418: specified index does not exist
+01418. 00000 -  "specified index does not exist"
+*Cause:    
+*Action:
+
+Error starting at line : 5 in command -
+  ALTER TABLE "MEDSDATA"."STATS_PERIOD" MODIFY ("PERIOD_START" NOT NULL ENABLE)
+Error report -
+ORA-01442: column to be modified to NOT NULL is already NOT NULL
+01442. 00000 -  "column to be modified to NOT NULL is already NOT NULL"
+*Cause:    
+*Action:
+
+Error starting at line : 6 in command -
+  ALTER TABLE "MEDSDATA"."STATS_PERIOD" MODIFY ("PERIOD_END" NOT NULL ENABLE)
+Error report -
+ORA-01442: column to be modified to NOT NULL is already NOT NULL
+01442. 00000 -  "column to be modified to NOT NULL is already NOT NULL"
+*Cause:    
+*Action:
+
+Error starting at line : 11 in command -
+  ALTER TABLE "MEDSDATA"."TAB_COLUMNS_COPY" MODIFY ("TABLE_NAME" NOT NULL ENABLE)
+Error report -
+ORA-01442: column to be modified to NOT NULL is already NOT NULL
+01442. 00000 -  "column to be modified to NOT NULL is already NOT NULL"
+*Cause:    
+*Action:
+
+Error starting at line : 12 in command -
+  ALTER TABLE "MEDSDATA"."TAB_COLUMNS_COPY" MODIFY ("COLUMN_NAME" NOT NULL ENABLE)
+Error report -
+ORA-01442: column to be modified to NOT NULL is already NOT NULL
+01442. 00000 -  "column to be modified to NOT NULL is already NOT NULL"
+*Cause:    
+*Action:
+
+Error starting at line : 13 in command -
+  ALTER TABLE "MEDSDATA"."TAB_COLUMNS_COPY" MODIFY ("TAB_NUMBER" NOT NULL ENABLE)
+Error report -
+ORA-01442: column to be modified to NOT NULL is already NOT NULL
+01442. 00000 -  "column to be modified to NOT NULL is already NOT NULL"
+*Cause:    
+*Action:
+
+Error starting at line : 18 in command -
+  ALTER TABLE "MEDSDATA"."WVS_3M_BATHY_LINE" MODIFY ("OBJECTID" NOT NULL ENABLE)
+Error report -
+ORA-01442: column to be modified to NOT NULL is already NOT NULL
+01442. 00000 -  "column to be modified to NOT NULL is already NOT NULL"
+*Cause:    
+*Action:
+
+Error starting at line : 23 in command -
+  ALTER TABLE "MEDSDATA"."MEDS_JOB_ERROR" MODIFY ("MEIC_NUMBER" NOT NULL ENABLE)
+Error report -
+ORA-01442: column to be modified to NOT NULL is already NOT NULL
+01442. 00000 -  "column to be modified to NOT NULL is already NOT NULL"
+*Cause:    
+*Action:
+
+Error starting at line : 24 in command -
+  ALTER TABLE "MEDSDATA"."MEDS_JOB_ERROR" MODIFY ("MEDS_ERROR_TYPE" NOT NULL ENABLE)
+Error report -
+ORA-01442: column to be modified to NOT NULL is already NOT NULL
+01442. 00000 -  "column to be modified to NOT NULL is already NOT NULL"
+*Cause:    
+*Action:
+
+Error starting at line : 25 in command -
+  ALTER TABLE "MEDSDATA"."MEDS_JOB_ERROR" MODIFY ("NUM_ERRORS" NOT NULL ENABLE)
+Error report -
+ORA-01442: column to be modified to NOT NULL is already NOT NULL
+01442. 00000 -  "column to be modified to NOT NULL is already NOT NULL"
+*Cause:    
+*Action:
+
+Error starting at line : 30 in command -
+  ALTER TABLE "MEDSDATA"."GENERIC_EDIT" MODIFY ("ROW_TYPE" NOT NULL ENABLE)
+Error report -
+ORA-01442: column to be modified to NOT NULL is already NOT NULL
+01442. 00000 -  "column to be modified to NOT NULL is already NOT NULL"
+*Cause:    
+*Action:
+
+Error starting at line : 31 in command -
+  ALTER TABLE "MEDSDATA"."GENERIC_EDIT" MODIFY ("TABLE_NAME" NOT NULL ENABLE)
+Error report -
+ORA-01442: column to be modified to NOT NULL is already NOT NULL
+01442. 00000 -  "column to be modified to NOT NULL is already NOT NULL"
+*Cause:    
+*Action:
+
+Error starting at line : 32 in command -
+  ALTER TABLE "MEDSDATA"."GENERIC_EDIT" ADD UNIQUE ("DATA_TYPE_ALIAS")
+  USING INDEX  ENABLE
+Error report -
+ORA-02261: such unique or primary key already exists in the table
+02261. 00000 -  "such unique or primary key already exists in the table"
+*Cause:    Self-evident.
+*Action:   Remove the extra key.
+
+Error starting at line : 38 in command -
+  ALTER TABLE "MEDSDATA"."HELP" MODIFY ("TOPIC" NOT NULL ENABLE)
+Error report -
+ORA-01442: column to be modified to NOT NULL is already NOT NULL
+01442. 00000 -  "column to be modified to NOT NULL is already NOT NULL"
+*Cause:    
+*Action:
+
+Error starting at line : 39 in command -
+  ALTER TABLE "MEDSDATA"."HELP" MODIFY ("SEQ" NOT NULL ENABLE)
+Error report -
+ORA-01442: column to be modified to NOT NULL is already NOT NULL
+01442. 00000 -  "column to be modified to NOT NULL is already NOT NULL"
+*Cause:    
+*Action:
+
+Table "MEDSDATA"."HELP" altered.
+
+
+Error starting at line : 46 in command -
+  ALTER TABLE "MEDSDATA"."MEDS_ERRORS" MODIFY ("MEDS_ERROR_TYPE" NOT NULL ENABLE)
+Error report -
+ORA-01442: column to be modified to NOT NULL is already NOT NULL
+01442. 00000 -  "column to be modified to NOT NULL is already NOT NULL"
+*Cause:    
+*Action:
+
+Error starting at line : 47 in command -
+  ALTER TABLE "MEDSDATA"."MEDS_ERRORS" MODIFY ("ERROR_DESCRIPTION" NOT NULL ENABLE)
+Error report -
+ORA-01442: column to be modified to NOT NULL is already NOT NULL
+01442. 00000 -  "column to be modified to NOT NULL is already NOT NULL"
+*Cause:    
+*Action:
+
+Error starting at line : 52 in command -
+  ALTER TABLE "MEDSDATA"."WVS_D_3M_COUNTPOLY" MODIFY ("OBJECTID" NOT NULL ENABLE)
+Error report -
+ORA-01442: column to be modified to NOT NULL is already NOT NULL
+01442. 00000 -  "column to be modified to NOT NULL is already NOT NULL"
+*Cause:    
+*Action:
+
+Error starting at line : 57 in command -
+  ALTER TABLE "MEDSDATA"."WVS_3M" MODIFY ("OBJECTID" NOT NULL ENABLE)
+Error report -
+ORA-01442: column to be modified to NOT NULL is already NOT NULL
+01442. 00000 -  "column to be modified to NOT NULL is already NOT NULL"
+*Cause:    
+*Action:
+
+Error starting at line : 62 in command -
+  ALTER TABLE "MEDSDATA"."JOB_STATS_SETTINGS" MODIFY ("VALUE" NOT NULL ENABLE)
+Error report -
+ORA-01442: column to be modified to NOT NULL is already NOT NULL
+01442. 00000 -  "column to be modified to NOT NULL is already NOT NULL"
+*Cause:    
+*Action:
+
+Error starting at line : 63 in command -
+  ALTER TABLE "MEDSDATA"."JOB_STATS_SETTINGS" MODIFY ("DAY" NOT NULL ENABLE)
+Error report -
+ORA-01442: column to be modified to NOT NULL is already NOT NULL
+01442. 00000 -  "column to be modified to NOT NULL is already NOT NULL"
+*Cause:    
+*Action:
+
+Error starting at line : 64 in command -
+  ALTER TABLE "MEDSDATA"."JOB_STATS_SETTINGS" MODIFY ("MONTH" NOT NULL ENABLE)
+Error report -
+ORA-01442: column to be modified to NOT NULL is already NOT NULL
+01442. 00000 -  "column to be modified to NOT NULL is already NOT NULL"
+*Cause:    
+*Action:
+
+Error starting at line : 65 in command -
+  ALTER TABLE "MEDSDATA"."JOB_STATS_SETTINGS" MODIFY ("YEAR" NOT NULL ENABLE)
+Error report -
+ORA-01442: column to be modified to NOT NULL is already NOT NULL
+01442. 00000 -  "column to be modified to NOT NULL is already NOT NULL"
+*Cause:    
+*Action:
+
+Error starting at line : 66 in command -
+  ALTER TABLE "MEDSDATA"."JOB_STATS_SETTINGS" MODIFY ("INTERVAL" NOT NULL ENABLE)
+Error report -
+ORA-01442: column to be modified to NOT NULL is already NOT NULL
+01442. 00000 -  "column to be modified to NOT NULL is already NOT NULL"
+*Cause:    
+*Action:
+
+Error starting at line : 67 in command -
+  ALTER TABLE "MEDSDATA"."JOB_STATS_SETTINGS" MODIFY ("NUM_INTERVALS" NOT NULL ENABLE)
+Error report -
+ORA-01442: column to be modified to NOT NULL is already NOT NULL
+01442. 00000 -  "column to be modified to NOT NULL is already NOT NULL"
+*Cause:    
+*Action:
+
+Error starting at line : 68 in command -
+  ALTER TABLE "MEDSDATA"."JOB_STATS_SETTINGS" MODIFY ("TOTAL" NOT NULL ENABLE)
+Error report -
+ORA-01442: column to be modified to NOT NULL is already NOT NULL
+01442. 00000 -  "column to be modified to NOT NULL is already NOT NULL"
+*Cause:    
+*Action:
+
+Error starting at line : 73 in command -
+  ALTER TABLE "MEDSDATA"."MEDS_PROCESSING_JOB" MODIFY ("JOB_NUMBER" NOT NULL ENABLE)
+Error report -
+ORA-01442: column to be modified to NOT NULL is already NOT NULL
+01442. 00000 -  "column to be modified to NOT NULL is already NOT NULL"
+*Cause:    
+*Action:
+
+Table "MEDSDATA"."MEDS_PROCESSING_JOB" altered.
+
+
+Error starting at line : 80 in command -
+  ALTER TABLE "MEDSDATA"."LAYER_LOOKUP" MODIFY ("DATA_TABLE" NOT NULL ENABLE)
+Error report -
+ORA-01442: column to be modified to NOT NULL is already NOT NULL
+01442. 00000 -  "column to be modified to NOT NULL is already NOT NULL"
+*Cause:    
+*Action:
+
+Error starting at line : 85 in command -
+  ALTER TABLE "MEDSDATA"."EVENTTYPE" MODIFY ("ID" NOT NULL ENABLE)
+Error report -
+ORA-01442: column to be modified to NOT NULL is already NOT NULL
+01442. 00000 -  "column to be modified to NOT NULL is already NOT NULL"
+*Cause:    
+*Action:
+
+Error starting at line : 90 in command -
+  ALTER TABLE "MEDSDATA"."TAB_COLUMNS" MODIFY ("TABLE_NAME" NOT NULL ENABLE)
+Error report -
+ORA-01442: column to be modified to NOT NULL is already NOT NULL
+01442. 00000 -  "column to be modified to NOT NULL is already NOT NULL"
+*Cause:    
+*Action:
+
+Error starting at line : 91 in command -
+  ALTER TABLE "MEDSDATA"."TAB_COLUMNS" MODIFY ("COLUMN_NAME" NOT NULL ENABLE)
+Error report -
+ORA-01442: column to be modified to NOT NULL is already NOT NULL
+01442. 00000 -  "column to be modified to NOT NULL is already NOT NULL"
+*Cause:    
+*Action:
+
+Error starting at line : 92 in command -
+  ALTER TABLE "MEDSDATA"."TAB_COLUMNS" MODIFY ("TAB_NUMBER" NOT NULL ENABLE)
+Error report -
+ORA-01442: column to be modified to NOT NULL is already NOT NULL
+01442. 00000 -  "column to be modified to NOT NULL is already NOT NULL"
+*Cause:    
+*Action:
+
+Error starting at line : 97 in command -
+  ALTER TABLE "MEDSDATA"."DIRECTORY_LOOKUP" MODIFY ("USER_NAME" NOT NULL ENABLE)
+Error report -
+ORA-01442: column to be modified to NOT NULL is already NOT NULL
+01442. 00000 -  "column to be modified to NOT NULL is already NOT NULL"
+*Cause:    
+*Action:
+
+Error starting at line : 98 in command -
+  ALTER TABLE "MEDSDATA"."DIRECTORY_LOOKUP" MODIFY ("LOOKUP_TYPE" NOT NULL ENABLE)
+Error report -
+ORA-01442: column to be modified to NOT NULL is already NOT NULL
+01442. 00000 -  "column to be modified to NOT NULL is already NOT NULL"
+*Cause:    
+*Action:
+
+Error starting at line : 99 in command -
+  ALTER TABLE "MEDSDATA"."DIRECTORY_LOOKUP" MODIFY ("FILE_PATH" NOT NULL ENABLE)
+Error report -
+ORA-01442: column to be modified to NOT NULL is already NOT NULL
+01442. 00000 -  "column to be modified to NOT NULL is already NOT NULL"
+*Cause:    
+*Action:
+
+Error starting at line : 104 in command -
+  ALTER TABLE "MEDSDATA"."MLO_COLUMNS" MODIFY ("TABLE_NAME" NOT NULL ENABLE)
+Error report -
+ORA-01442: column to be modified to NOT NULL is already NOT NULL
+01442. 00000 -  "column to be modified to NOT NULL is already NOT NULL"
+*Cause:    
+*Action:
+
+Error starting at line : 105 in command -
+  ALTER TABLE "MEDSDATA"."MLO_COLUMNS" MODIFY ("COLUMN_NAME" NOT NULL ENABLE)
+Error report -
+ORA-01442: column to be modified to NOT NULL is already NOT NULL
+01442. 00000 -  "column to be modified to NOT NULL is already NOT NULL"
+*Cause:    
+*Action:
+
+Error starting at line : 110 in command -
+  ALTER TABLE "MEDSDATA"."OBSERVATIONS" MODIFY ("MEDS_JOB_NUMBER" NOT NULL ENABLE)
+Error report -
+ORA-01442: column to be modified to NOT NULL is already NOT NULL
+01442. 00000 -  "column to be modified to NOT NULL is already NOT NULL"
+*Cause:    
+*Action:
+
+Error starting at line : 111 in command -
+  ALTER TABLE "MEDSDATA"."OBSERVATIONS" MODIFY ("MEDS_OBSERVATION_NUMBER" NOT NULL ENABLE)
+Error report -
+ORA-01442: column to be modified to NOT NULL is already NOT NULL
+01442. 00000 -  "column to be modified to NOT NULL is already NOT NULL"
+*Cause:    
+*Action:
+
+Error starting at line : 116 in command -
+  ALTER TABLE "MEDSDATA"."PROFILE_HEADER_TONLY" MODIFY ("MEDS_OBSERVATION_NUMBER" NOT NULL ENABLE)
+Error report -
+ORA-01442: column to be modified to NOT NULL is already NOT NULL
+01442. 00000 -  "column to be modified to NOT NULL is already NOT NULL"
+*Cause:    
+*Action:
+
+Error starting at line : 117 in command -
+  ALTER TABLE "MEDSDATA"."PROFILE_HEADER_TONLY" MODIFY ("MEDS_JOB_NUMBER" NOT NULL ENABLE)
+Error report -
+ORA-01442: column to be modified to NOT NULL is already NOT NULL
+01442. 00000 -  "column to be modified to NOT NULL is already NOT NULL"
+*Cause:    
+*Action:
+
+Table "MEDSDATA"."PROFILE_HEADER_TONLY" altered.
+
+
+Error starting at line : 124 in command -
+  ALTER TABLE "MEDSDATA"."JOB_STATS" MODIFY ("DESCRIPTION" NOT NULL ENABLE)
+Error report -
+ORA-01442: column to be modified to NOT NULL is already NOT NULL
+01442. 00000 -  "column to be modified to NOT NULL is already NOT NULL"
+*Cause:    
+*Action:
+
+Error starting at line : 125 in command -
+  ALTER TABLE "MEDSDATA"."JOB_STATS" MODIFY ("PERIOD_START" NOT NULL ENABLE)
+Error report -
+ORA-01442: column to be modified to NOT NULL is already NOT NULL
+01442. 00000 -  "column to be modified to NOT NULL is already NOT NULL"
+*Cause:    
+*Action:
+
+Error starting at line : 126 in command -
+  ALTER TABLE "MEDSDATA"."JOB_STATS" MODIFY ("PERIOD_END" NOT NULL ENABLE)
+Error report -
+ORA-01442: column to be modified to NOT NULL is already NOT NULL
+01442. 00000 -  "column to be modified to NOT NULL is already NOT NULL"
+*Cause:    
+*Action:
+
+Error starting at line : 131 in command -
+  ALTER TABLE "MEDSDATA"."OBSERVATION" MODIFY ("USER_NAME" NOT NULL ENABLE)
+Error report -
+ORA-01442: column to be modified to NOT NULL is already NOT NULL
+01442. 00000 -  "column to be modified to NOT NULL is already NOT NULL"
+*Cause:    
+*Action:
+
+Error starting at line : 132 in command -
+  ALTER TABLE "MEDSDATA"."OBSERVATION" MODIFY ("JOB_NUMBER" NOT NULL ENABLE)
+Error report -
+ORA-01442: column to be modified to NOT NULL is already NOT NULL
+01442. 00000 -  "column to be modified to NOT NULL is already NOT NULL"
+*Cause:    
+*Action:
+
+Error starting at line : 133 in command -
+  ALTER TABLE "MEDSDATA"."OBSERVATION" MODIFY ("OBSERVATION_NUMBER" NOT NULL ENABLE)
+Error report -
+ORA-01442: column to be modified to NOT NULL is already NOT NULL
+01442. 00000 -  "column to be modified to NOT NULL is already NOT NULL"
+*Cause:    
+*Action:
+
+Table "MEDSDATA"."CRUISE_LAYER" altered.
+
+
+Error starting at line : 144 in command -
+  ALTER TABLE "MEDSDATA"."INSTRUMENT" MODIFY ("SERD" NOT NULL ENABLE)
+Error report -
+ORA-01442: column to be modified to NOT NULL is already NOT NULL
+01442. 00000 -  "column to be modified to NOT NULL is already NOT NULL"
+*Cause:    
+*Action:
+
+Table "MEDSDATA"."INSTRUMENT" altered.
+
+
+Error starting at line : 151 in command -
+  ALTER TABLE "MEDSDATA"."JOB_TRACKING" MODIFY ("STATUS" NOT NULL ENABLE)
+Error report -
+ORA-01442: column to be modified to NOT NULL is already NOT NULL
+01442. 00000 -  "column to be modified to NOT NULL is already NOT NULL"
+*Cause:    
+*Action:
+
+Error starting at line : 152 in command -
+  ALTER TABLE "MEDSDATA"."JOB_TRACKING" MODIFY ("JOB_TYPE_NUMBER" NOT NULL ENABLE)
+Error report -
+ORA-01442: column to be modified to NOT NULL is already NOT NULL
+01442. 00000 -  "column to be modified to NOT NULL is already NOT NULL"
+*Cause:    
+*Action:
+
+Error starting at line : 153 in command -
+  ALTER TABLE "MEDSDATA"."JOB_TRACKING" MODIFY ("ACKNOWLEDGE" NOT NULL ENABLE)
+Error report -
+ORA-01442: column to be modified to NOT NULL is already NOT NULL
+01442. 00000 -  "column to be modified to NOT NULL is already NOT NULL"
+*Cause:    
+*Action:
+
+Error starting at line : 154 in command -
+  ALTER TABLE "MEDSDATA"."JOB_TRACKING" MODIFY ("PRIORITY_REGION1" NOT NULL ENABLE)
+Error report -
+ORA-01442: column to be modified to NOT NULL is already NOT NULL
+01442. 00000 -  "column to be modified to NOT NULL is already NOT NULL"
+*Cause:    
+*Action:
+
+Error starting at line : 155 in command -
+  ALTER TABLE "MEDSDATA"."JOB_TRACKING" MODIFY ("PRIORITY_REGION2" NOT NULL ENABLE)
+Error report -
+ORA-01442: column to be modified to NOT NULL is already NOT NULL
+01442. 00000 -  "column to be modified to NOT NULL is already NOT NULL"
+*Cause:    
+*Action:
+
+Error starting at line : 156 in command -
+  ALTER TABLE "MEDSDATA"."JOB_TRACKING" MODIFY ("PRIORITY_REGION3" NOT NULL ENABLE)
+Error report -
+ORA-01442: column to be modified to NOT NULL is already NOT NULL
+01442. 00000 -  "column to be modified to NOT NULL is already NOT NULL"
+*Cause:    
+*Action:
+
+Error starting at line : 157 in command -
+  ALTER TABLE "MEDSDATA"."JOB_TRACKING" MODIFY ("PRIORITY_REGION4" NOT NULL ENABLE)
+Error report -
+ORA-01442: column to be modified to NOT NULL is already NOT NULL
+01442. 00000 -  "column to be modified to NOT NULL is already NOT NULL"
+*Cause:    
+*Action:
+
+Error starting at line : 158 in command -
+  ALTER TABLE "MEDSDATA"."JOB_TRACKING" MODIFY ("PRIORITY_REGION5" NOT NULL ENABLE)
+Error report -
+ORA-01442: column to be modified to NOT NULL is already NOT NULL
+01442. 00000 -  "column to be modified to NOT NULL is already NOT NULL"
+*Cause:    
+*Action:
+
+Error starting at line : 159 in command -
+  ALTER TABLE "MEDSDATA"."JOB_TRACKING" MODIFY ("PRIORITY_REGION6" NOT NULL ENABLE)
+Error report -
+ORA-01442: column to be modified to NOT NULL is already NOT NULL
+01442. 00000 -  "column to be modified to NOT NULL is already NOT NULL"
+*Cause:    
+*Action:
+
+Table "MEDSDATA"."JOB_TRACKING" altered.
+
+
+Error starting at line : 166 in command -
+  ALTER TABLE "MEDSDATA"."FIELD_LOOKUP_DUP" MODIFY ("FIELD_NAME" NOT NULL ENABLE)
+Error report -
+ORA-01442: column to be modified to NOT NULL is already NOT NULL
+01442. 00000 -  "column to be modified to NOT NULL is already NOT NULL"
+*Cause:    
+*Action:
+
+Table "MEDSDATA"."PROFILE_INDEX_SV" altered.
+
+
+Error starting at line : 177 in command -
+  ALTER TABLE "MEDSDATA"."EVENTLOG" MODIFY ("ID" NOT NULL ENABLE)
+Error report -
+ORA-01442: column to be modified to NOT NULL is already NOT NULL
+01442. 00000 -  "column to be modified to NOT NULL is already NOT NULL"
+*Cause:    
+*Action:
+
+Error starting at line : 182 in command -
+  ALTER TABLE "MEDSDATA"."MEDS_JOB_TYPE" ADD PRIMARY KEY ("JOB_TYPE_NUMBER")
+  USING INDEX  ENABLE
+Error report -
+ORA-02260: table can have only one primary key
+02260. 00000 -  "table can have only one primary key"
+*Cause:    Self-evident.
+*Action:   Remove the extra primary key.
+
+Error starting at line : 188 in command -
+  ALTER TABLE "MEDSDATA"."FIELD_LOOKUP" MODIFY ("FIELD_NAME" NOT NULL ENABLE)
+Error report -
+ORA-01442: column to be modified to NOT NULL is already NOT NULL
+01442. 00000 -  "column to be modified to NOT NULL is already NOT NULL"
+*Cause:    
+*Action:
+
+Error starting at line : 193 in command -
+  ALTER TABLE "MEDSDATA"."PROFILE_HEADER_TS" MODIFY ("MEDS_OBSERVATION_NUMBER" NOT NULL ENABLE)
+Error report -
+ORA-01442: column to be modified to NOT NULL is already NOT NULL
+01442. 00000 -  "column to be modified to NOT NULL is already NOT NULL"
+*Cause:    
+*Action:
+
+Error starting at line : 194 in command -
+  ALTER TABLE "MEDSDATA"."PROFILE_HEADER_TS" MODIFY ("MEDS_JOB_NUMBER" NOT NULL ENABLE)
+Error report -
+ORA-01442: column to be modified to NOT NULL is already NOT NULL
+01442. 00000 -  "column to be modified to NOT NULL is already NOT NULL"
+*Cause:    
+*Action:
+
+Table "MEDSDATA"."PROFILE_HEADER_TS" altered.
+
+
+Table "MEDSDATA"."PROFILE_INDEX_TONLY" altered.
+
+
+Error starting at line : 207 in command -
+  ALTER TABLE "MEDSDATA"."FILE_LOOKUP" MODIFY ("FILE_NAME" NOT NULL ENABLE)
+Error report -
+ORA-01442: column to be modified to NOT NULL is already NOT NULL
+01442. 00000 -  "column to be modified to NOT NULL is already NOT NULL"
+*Cause:    
+*Action:
+
+Error starting at line : 208 in command -
+  ALTER TABLE "MEDSDATA"."FILE_LOOKUP" MODIFY ("PATH_NAME" NOT NULL ENABLE)
+Error report -
+ORA-01442: column to be modified to NOT NULL is already NOT NULL
+01442. 00000 -  "column to be modified to NOT NULL is already NOT NULL"
+*Cause:    
+*Action:
+
+Error starting at line : 213 in command -
+  ALTER TABLE "MEDSDATA"."ACCESS_CONTROL" MODIFY ("TABLE_NAME" NOT NULL ENABLE)
+Error report -
+ORA-01442: column to be modified to NOT NULL is already NOT NULL
+01442. 00000 -  "column to be modified to NOT NULL is already NOT NULL"
+*Cause:    
+*Action:
+
+Error starting at line : 214 in command -
+  ALTER TABLE "MEDSDATA"."ACCESS_CONTROL" MODIFY ("USER_NAME" NOT NULL ENABLE)
+Error report -
+ORA-01442: column to be modified to NOT NULL is already NOT NULL
+01442. 00000 -  "column to be modified to NOT NULL is already NOT NULL"
+*Cause:    
+*Action:
+
+Table "MEDSDATA"."PROFILE_INDEX_TS" altered.
+
+
+Error starting at line : 225 in command -
+  ALTER TABLE "MEDSDATA"."PROFILE_HEADER_SV" MODIFY ("MEDS_OBSERVATION_NUMBER" NOT NULL ENABLE)
+Error report -
+ORA-01442: column to be modified to NOT NULL is already NOT NULL
+01442. 00000 -  "column to be modified to NOT NULL is already NOT NULL"
+*Cause:    
+*Action:
+
+Error starting at line : 226 in command -
+  ALTER TABLE "MEDSDATA"."PROFILE_HEADER_SV" MODIFY ("MEDS_JOB_NUMBER" NOT NULL ENABLE)
+Error report -
+ORA-01442: column to be modified to NOT NULL is already NOT NULL
+01442. 00000 -  "column to be modified to NOT NULL is already NOT NULL"
+*Cause:    
+*Action:
+
+Table "MEDSDATA"."PROFILE_HEADER_SV" altered.
+

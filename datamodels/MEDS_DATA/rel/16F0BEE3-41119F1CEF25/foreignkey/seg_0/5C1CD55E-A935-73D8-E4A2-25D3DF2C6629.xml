@@ -1,0 +1,16 @@
+<?xml version = '1.0' encoding = 'UTF-8'?>
+<FKIndexAssociation class="oracle.dbtools.crest.model.design.relational.FKIndexAssociation" directorySegmentName="seg_0" id="5C1CD55E-A935-73D8-E4A2-25D3DF2C6629" containerWithKeyObject="963D1708-7395-5603-BFD5-DF8C56139A2E" localFKIndex="E44217A0-A6F2-E3D1-2A46-1FF3D3C5C34B" name="MEDS_PROCESSING_JOB_SHIP_DETAILS_FK">
+<createdBy>d.arboittedossantos</createdBy>
+<createdTime>2024-03-22 10:00:25 UTC</createdTime>
+<ownerDesignName>MEDS_DATA</ownerDesignName>
+<referredTableLongName>MEDSADMIN.SHIP_DETAILS</referredTableLongName>
+<deleteRule>NO ACTION</deleteRule>
+<referredTableID>8A5AB2D5-8476-E4C8-2C05-110554241BF9</referredTableID>
+<keyObject>3C93BD5F-B0B6-33DA-17AF-37A923C272AD</keyObject>
+<referredKeyID>3C93BD5F-B0B6-33DA-17AF-37A923C272AD</referredKeyID>
+<mandatory>true</mandatory>
+<refColNames>MEDS_CRUISE_NUMBER,MEDS_SHIP_NUMBER</refColNames>
+<transferable>true</transferable>
+<rely>false</rely>
+<columnDependencyConstraintGenerateInDDL>true</columnDependencyConstraintGenerateInDDL>
+</FKIndexAssociation>

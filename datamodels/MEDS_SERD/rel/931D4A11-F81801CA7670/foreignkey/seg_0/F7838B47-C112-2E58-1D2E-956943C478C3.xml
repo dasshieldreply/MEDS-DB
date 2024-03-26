@@ -1,0 +1,16 @@
+<?xml version = '1.0' encoding = 'UTF-8'?>
+<FKIndexAssociation class="oracle.dbtools.crest.model.design.relational.FKIndexAssociation" directorySegmentName="seg_0" id="F7838B47-C112-2E58-1D2E-956943C478C3" containerWithKeyObject="85E06FE8-87CC-24E5-6567-CF157E06B47C" localFKIndex="06E3FF53-C1C8-93DE-1F65-A7234289F504" name="SERD_HEADER_POSITION_ACCURACY_FK">
+<createdBy>darbo</createdBy>
+<createdTime>2024-02-14 13:50:56 UTC</createdTime>
+<ownerDesignName>MEDS_SERD</ownerDesignName>
+<referredTableLongName>POSITION_ACCURACY</referredTableLongName>
+<deleteRule>NO ACTION</deleteRule>
+<referredTableID>2E833562-ED73-D9A4-AB15-C014C81AF534</referredTableID>
+<keyObject>A53C8D8A-DEF9-DB9A-80AB-7DD79D936212</keyObject>
+<referredKeyID>A53C8D8A-DEF9-DB9A-80AB-7DD79D936212</referredKeyID>
+<mandatory>true</mandatory>
+<refColNames>POSITION_ACCURACY_CD</refColNames>
+<transferable>true</transferable>
+<rely>false</rely>
+<columnDependencyConstraintGenerateInDDL>true</columnDependencyConstraintGenerateInDDL>
+</FKIndexAssociation>

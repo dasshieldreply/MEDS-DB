@@ -1,0 +1,250 @@
+<?xml version = '1.0' encoding = 'UTF-8'?>
+<Table class="oracle.dbtools.crest.model.design.relational.Table" directorySegmentName="seg_0" id="69BC1AAD-3A20-A155-468B-AB9A273CB587" name="DEPTH_LEVEL">
+<createdBy>darbo</createdBy>
+<createdTime>2024-02-14 15:10:42 UTC</createdTime>
+<ownerDesignName>MEDS_SERD</ownerDesignName>
+<ordsAlias>table_16</ordsAlias>
+<allowColumnReorder>false</allowColumnReorder>
+<existDependencyGenerateInDDl>true</existDependencyGenerateInDDl>
+<parsed>true</parsed>
+<columns itemClass="oracle.dbtools.crest.model.design.relational.Column">
+<Column name="RECORD_ID" id="8A9E8BEB-3D05-49D0-AAC2-01590348C01C">
+<createdBy>darbo</createdBy>
+<createdTime>2024-02-14 15:11:26 UTC</createdTime>
+<ownerDesignName>MEDS_SERD</ownerDesignName>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT019</logicalDatatype>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
+<previousColumn>false</previousColumn>
+<autoIncrementCycle>false</autoIncrementCycle>
+<associations>
+<colAssociation fkAssociation="1F0E8BC2-E8F6-9429-FE27-A841547B2CF4" referredColumn="8E66D519-C267-38A8-F140-BE27089CC7F6"/>
+</associations>
+</Column>
+<Column name="DEPTH_LEVEL_SEQ" id="6E4D5F29-3BF7-2915-81F1-9BD9E6036D81">
+<createdBy>darbo</createdBy>
+<createdTime>2024-02-14 15:21:05 UTC</createdTime>
+<commentInRDBMS><![CDATA[Depth level sequence number.]]></commentInRDBMS>
+<ownerDesignName>MEDS_SERD</ownerDesignName>
+<nullsAllowed>true</nullsAllowed>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT019</logicalDatatype>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
+<autoIncrementCycle>false</autoIncrementCycle>
+</Column>
+<Column name="DEPTH_IND" id="24CA102D-E803-F2AE-32BE-673C5DC28074">
+<createdBy>darbo</createdBy>
+<createdTime>2024-02-14 15:22:14 UTC</createdTime>
+<commentInRDBMS><![CDATA[Depth indicator (this field applies to Nansen data only).]]></commentInRDBMS>
+<notes><![CDATA[Start positions 849]]></notes>
+<ownerDesignName>MEDS_SERD</ownerDesignName>
+<nullsAllowed>true</nullsAllowed>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT025</logicalDatatype>
+<dataTypeSize>1</dataTypeSize>
+<listOfValues>
+<valueDef value="0" description="Unspecified depth indicator"/>
+<valueDef value="1" description="Difference between accepted depth and thermometric depth is 1% or less"/>
+</listOfValues>
+<ownDataTypeParameters>1,,</ownDataTypeParameters>
+<autoIncrementCycle>false</autoIncrementCycle>
+</Column>
+<Column name="DEPTH_LEVEL_VL" id="E373F2E1-D7CB-163E-2D77-3BB9BF091FDB">
+<createdBy>darbo</createdBy>
+<createdTime>2024-02-14 15:23:57 UTC</createdTime>
+<commentInRDBMS><![CDATA[Depth level, in metres.]]></commentInRDBMS>
+<notes><![CDATA[Start positions 849]]></notes>
+<ownerDesignName>MEDS_SERD</ownerDesignName>
+<nullsAllowed>true</nullsAllowed>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT019</logicalDatatype>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
+<autoIncrementCycle>false</autoIncrementCycle>
+</Column>
+<Column name="DEPTH_QUALITY_CD" id="7630F446-8815-AA0B-346F-6FDD51383B35">
+<createdBy>darbo</createdBy>
+<createdTime>2024-02-14 15:26:15 UTC</createdTime>
+<commentInRDBMS><![CDATA[Depth quality code.]]></commentInRDBMS>
+<notes><![CDATA[Start positions 853]]></notes>
+<ownerDesignName>MEDS_SERD</ownerDesignName>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT019</logicalDatatype>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
+<previousColumn>false</previousColumn>
+<autoIncrementCycle>false</autoIncrementCycle>
+<associations>
+<colAssociation fkAssociation="45FAC2C7-9D3A-A099-4DD3-B63985B6588B" referredColumn="89415254-94A4-B850-897D-D89C3757349C"/>
+</associations>
+</Column>
+<Column name="TEMPERATURE_VL" id="CB8E47A0-245A-1F82-DCBA-D849168085C9">
+<createdBy>darbo</createdBy>
+<createdTime>2024-02-14 15:29:15 UTC</createdTime>
+<commentInRDBMS><![CDATA[Temperature, in degrees celsius to hundredths.]]></commentInRDBMS>
+<notes><![CDATA[Start positions 854]]></notes>
+<ownerDesignName>MEDS_SERD</ownerDesignName>
+<nullsAllowed>true</nullsAllowed>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT019</logicalDatatype>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
+<autoIncrementCycle>false</autoIncrementCycle>
+</Column>
+<Column name="TEMPERATURE_QUALITY_CD" id="BD71578C-4670-9F89-4EA8-19D5C19417AD">
+<createdBy>darbo</createdBy>
+<createdTime>2024-02-14 15:29:21 UTC</createdTime>
+<commentInRDBMS><![CDATA[Temperature quality code.]]></commentInRDBMS>
+<notes><![CDATA[Start positions 858]]></notes>
+<ownerDesignName>MEDS_SERD</ownerDesignName>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT019</logicalDatatype>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
+<previousColumn>false</previousColumn>
+<autoIncrementCycle>false</autoIncrementCycle>
+<associations>
+<colAssociation fkAssociation="2785FEEB-150E-FF31-E6EA-7FF8DD642CA0" referredColumn="D8305E07-08E4-37AB-AF4C-1FAB3662BD47"/>
+</associations>
+</Column>
+<Column name="SALINITY_VL" id="7D1CD5B6-4D64-BBF5-144D-1A269887FEB7">
+<createdBy>darbo</createdBy>
+<createdTime>2024-02-14 15:31:37 UTC</createdTime>
+<commentInRDBMS><![CDATA[Salinity, parts per thousand to thousandths.]]></commentInRDBMS>
+<notes><![CDATA[Start positions 859]]></notes>
+<ownerDesignName>MEDS_SERD</ownerDesignName>
+<nullsAllowed>true</nullsAllowed>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT019</logicalDatatype>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
+<autoIncrementCycle>false</autoIncrementCycle>
+</Column>
+<Column name="SALINITY_QUALITY_CD" id="5ED8ECD7-5F60-7CC3-9765-956E2C6D76E3">
+<createdBy>darbo</createdBy>
+<createdTime>2024-02-14 16:10:11 UTC</createdTime>
+<commentInRDBMS><![CDATA[Salinity quality code.]]></commentInRDBMS>
+<notes><![CDATA[Start position 864]]></notes>
+<ownerDesignName>MEDS_SERD</ownerDesignName>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT019</logicalDatatype>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
+<previousColumn>false</previousColumn>
+<autoIncrementCycle>false</autoIncrementCycle>
+<associations>
+<colAssociation fkAssociation="873C5E35-3C34-0B66-E564-298E13749F62" referredColumn="63ECADA3-B8DD-E498-9977-B1B9435F143E"/>
+</associations>
+</Column>
+<Column name="SOUND_VELOCITY_VL" id="86051F12-5ED5-8EA3-3312-3760FE0D7ECB">
+<createdBy>darbo</createdBy>
+<createdTime>2024-02-14 16:14:25 UTC</createdTime>
+<commentInRDBMS><![CDATA[Sound velocity, metres per second to tenths.]]></commentInRDBMS>
+<notes><![CDATA[Start position 865]]></notes>
+<ownerDesignName>MEDS_SERD</ownerDesignName>
+<nullsAllowed>true</nullsAllowed>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT019</logicalDatatype>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
+<autoIncrementCycle>false</autoIncrementCycle>
+</Column>
+<Column name="SOUND_VELOCITY_QUALITY_CD" id="E1D26BC7-5CDD-45C6-26FA-0FB478C5B777">
+<createdBy>darbo</createdBy>
+<createdTime>2024-02-14 16:16:31 UTC</createdTime>
+<commentInRDBMS><![CDATA[Sound velocity quality code.]]></commentInRDBMS>
+<notes><![CDATA[Start position 870]]></notes>
+<ownerDesignName>MEDS_SERD</ownerDesignName>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT019</logicalDatatype>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
+<previousColumn>false</previousColumn>
+<autoIncrementCycle>false</autoIncrementCycle>
+<associations>
+<colAssociation fkAssociation="0CA350CF-FF7F-04F2-8A84-5EAFBFACF4D7" referredColumn="FBE97307-370A-35F5-8719-46548E89DC97"/>
+</associations>
+</Column>
+<Column name="SOUND_VELOCITY_CD" id="72DD6EF3-2153-B3F0-C2BA-F189039496BF">
+<createdBy>darbo</createdBy>
+<createdTime>2024-02-14 16:20:18 UTC</createdTime>
+<commentInRDBMS><![CDATA[Sound velocity code.]]></commentInRDBMS>
+<notes><![CDATA[Start position 871]]></notes>
+<ownerDesignName>MEDS_SERD</ownerDesignName>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT019</logicalDatatype>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
+<previousColumn>false</previousColumn>
+<autoIncrementCycle>false</autoIncrementCycle>
+<associations>
+<colAssociation fkAssociation="AD789B6F-104B-99F3-DE3A-8ED704EA023C" referredColumn="FD5154B4-501B-30CA-DE94-45ED73AB4007"/>
+</associations>
+</Column>
+</columns>
+<indexes itemClass="oracle.dbtools.crest.model.design.relational.Index">
+<ind_PK_UK id="E44AE462-34CC-9193-664C-E5E37FE77D06" name="SERD_DETAIL_SERD_HEADER_FK">
+<createdBy>darbo</createdBy>
+<createdTime>2024-02-14 15:11:26 UTC</createdTime>
+<ownerDesignName>MEDS_SERD</ownerDesignName>
+<indexState>Foreign Key</indexState>
+<isSurrogateKey>false</isSurrogateKey>
+<indexColumnUsage>
+<colUsage columnID="8A9E8BEB-3D05-49D0-AAC2-01590348C01C"/>
+</indexColumnUsage>
+</ind_PK_UK>
+<ind_PK_UK id="86FE6776-013D-14A5-33DF-869F7239F38F" name="DEPTH_LEVEL_DEPTH_QUALITY_FK">
+<createdBy>darbo</createdBy>
+<createdTime>2024-02-14 15:26:15 UTC</createdTime>
+<ownerDesignName>MEDS_SERD</ownerDesignName>
+<indexState>Foreign Key</indexState>
+<isSurrogateKey>false</isSurrogateKey>
+<indexColumnUsage>
+<colUsage columnID="7630F446-8815-AA0B-346F-6FDD51383B35"/>
+</indexColumnUsage>
+</ind_PK_UK>
+<ind_PK_UK id="32F59B28-4902-1717-4441-C0D7A757ABBF" name="DEPTH_LEVEL_TEMPERATURE_QUALITY_FK">
+<createdBy>darbo</createdBy>
+<createdTime>2024-02-14 15:29:21 UTC</createdTime>
+<ownerDesignName>MEDS_SERD</ownerDesignName>
+<indexState>Foreign Key</indexState>
+<isSurrogateKey>false</isSurrogateKey>
+<indexColumnUsage>
+<colUsage columnID="BD71578C-4670-9F89-4EA8-19D5C19417AD"/>
+</indexColumnUsage>
+</ind_PK_UK>
+<ind_PK_UK id="E9F733A3-896B-6E06-B499-3936DDE4079B" name="DEPTH_LEVEL_SALINITY_QUALITY_FK">
+<createdBy>darbo</createdBy>
+<createdTime>2024-02-14 16:10:11 UTC</createdTime>
+<ownerDesignName>MEDS_SERD</ownerDesignName>
+<indexState>Foreign Key</indexState>
+<isSurrogateKey>false</isSurrogateKey>
+<indexColumnUsage>
+<colUsage columnID="5ED8ECD7-5F60-7CC3-9765-956E2C6D76E3"/>
+</indexColumnUsage>
+</ind_PK_UK>
+<ind_PK_UK id="C1C21353-011A-080D-40F0-1D887EC26B3F" name="DEPTH_LEVEL_SOUND_VELOCITY_QUALITY_FK">
+<createdBy>darbo</createdBy>
+<createdTime>2024-02-14 16:16:31 UTC</createdTime>
+<ownerDesignName>MEDS_SERD</ownerDesignName>
+<indexState>Foreign Key</indexState>
+<isSurrogateKey>false</isSurrogateKey>
+<indexColumnUsage>
+<colUsage columnID="E1D26BC7-5CDD-45C6-26FA-0FB478C5B777"/>
+</indexColumnUsage>
+</ind_PK_UK>
+<ind_PK_UK id="B8097602-F623-248A-4D4C-A1CB6F30E1A6" name="DEPTH_LEVEL_SOUND_VELOCITY_FK">
+<createdBy>darbo</createdBy>
+<createdTime>2024-02-14 16:20:18 UTC</createdTime>
+<ownerDesignName>MEDS_SERD</ownerDesignName>
+<indexState>Foreign Key</indexState>
+<isSurrogateKey>false</isSurrogateKey>
+<indexColumnUsage>
+<colUsage columnID="72DD6EF3-2153-B3F0-C2BA-F189039496BF"/>
+</indexColumnUsage>
+</ind_PK_UK>
+</indexes>
+</Table>

@@ -1,0 +1,48 @@
+<?xml version = '1.0' encoding = 'UTF-8'?>
+<Table class="oracle.dbtools.crest.model.design.relational.Table" directorySegmentName="seg_0" id="180B3D10-CD09-0AD6-C621-330D275CE960" name="TEMPERATURE_QUALITY">
+<createdBy>darbo</createdBy>
+<createdTime>2024-02-14 15:26:59 UTC</createdTime>
+<ownerDesignName>MEDS_SERD</ownerDesignName>
+<ordsAlias>table_3</ordsAlias>
+<allowColumnReorder>false</allowColumnReorder>
+<existDependencyGenerateInDDl>true</existDependencyGenerateInDDl>
+<parsed>true</parsed>
+<columns itemClass="oracle.dbtools.crest.model.design.relational.Column">
+<Column name="TEMPERATURE_QUALITY_CD" id="D8305E07-08E4-37AB-AF4C-1FAB3662BD47">
+<createdBy>darbo</createdBy>
+<createdTime>2024-02-14 15:26:59 UTC</createdTime>
+<commentInRDBMS><![CDATA[Temperature quality code.]]></commentInRDBMS>
+<ownerDesignName>MEDS_SERD</ownerDesignName>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT019</logicalDatatype>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
+<autoIncrementCycle>false</autoIncrementCycle>
+</Column>
+<Column name="TEMPERATURE_QUALITY_DESC" id="896A28F7-0913-287F-9644-FBB8AAA7FCDA">
+<createdBy>darbo</createdBy>
+<createdTime>2024-02-14 15:26:59 UTC</createdTime>
+<commentInRDBMS><![CDATA[Temperature quality description.]]></commentInRDBMS>
+<ownerDesignName>MEDS_SERD</ownerDesignName>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT024</logicalDatatype>
+<dataTypeSize>100</dataTypeSize>
+<ownDataTypeParameters>100,,</ownDataTypeParameters>
+<autoIncrementCycle>false</autoIncrementCycle>
+</Column>
+</columns>
+<indexes itemClass="oracle.dbtools.crest.model.design.relational.Index">
+<ind_PK_UK id="CFAA899E-2BDC-57E9-2A24-39254B8D2AE2" name="TEMPERATURE_QUALITY_PK">
+<createdBy>darbo</createdBy>
+<createdTime>2024-02-14 15:26:59 UTC</createdTime>
+<ownerDesignName>MEDS_SERD</ownerDesignName>
+<pk>true</pk>
+<indexState>Primary Constraint</indexState>
+<isSurrogateKey>false</isSurrogateKey>
+<indexColumnUsage>
+<colUsage columnID="D8305E07-08E4-37AB-AF4C-1FAB3662BD47"/>
+</indexColumnUsage>
+</ind_PK_UK>
+</indexes>
+</Table>

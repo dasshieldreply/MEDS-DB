@@ -1,0 +1,16 @@
+BEGIN
+    FOR T_OBJ IN (SELECT * 
+                FROM ALL_VIEWS 
+                WHERE OWNER='MEDSDATA')
+    LOOP
+        EXECUTE IMMEDIATE 'DROP VIEW ' || T_OBJ.VIEW_NAME || ' CASCADE CONSTRAINTS ';
+    END LOOP;
+    
+    FOR T_OBJ IN (SELECT * 
+                FROM ALL_TABLES 
+                WHERE OWNER='MEDSDATA')
+    LOOP
+        EXECUTE IMMEDIATE 'DROP TABLE ' || T_OBJ.TABLE_NAME || ' CASCADE CONSTRAINTS PURGE';
+    END LOOP;
+END;
+        

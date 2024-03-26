@@ -1,0 +1,16 @@
+<?xml version = '1.0' encoding = 'UTF-8'?>
+<FKIndexAssociation class="oracle.dbtools.crest.model.design.relational.FKIndexAssociation" directorySegmentName="seg_0" id="45FAC2C7-9D3A-A099-4DD3-B63985B6588B" containerWithKeyObject="69BC1AAD-3A20-A155-468B-AB9A273CB587" localFKIndex="86FE6776-013D-14A5-33DF-869F7239F38F" name="DEPTH_LEVEL_DEPTH_QUALITY_FK">
+<createdBy>darbo</createdBy>
+<createdTime>2024-02-14 15:26:15 UTC</createdTime>
+<ownerDesignName>MEDS_SERD</ownerDesignName>
+<referredTableLongName>DEPTH_QUALITY</referredTableLongName>
+<deleteRule>NO ACTION</deleteRule>
+<referredTableID>D7EA6BED-6B6E-DC68-7D6D-50C006602E07</referredTableID>
+<keyObject>067C247D-BBCF-F738-8918-C137BCF00B93</keyObject>
+<referredKeyID>067C247D-BBCF-F738-8918-C137BCF00B93</referredKeyID>
+<mandatory>true</mandatory>
+<refColNames>DEPTH_QUALITY_CD</refColNames>
+<transferable>true</transferable>
+<rely>false</rely>
+<columnDependencyConstraintGenerateInDDL>true</columnDependencyConstraintGenerateInDDL>
+</FKIndexAssociation>

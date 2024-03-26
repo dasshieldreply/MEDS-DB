@@ -1,0 +1,48 @@
+<?xml version = '1.0' encoding = 'UTF-8'?>
+<Table class="oracle.dbtools.crest.model.design.relational.Table" directorySegmentName="seg_0" id="E2732295-1AB8-8F9D-A223-7C5CEC0D66D6" name="WEATHER">
+<createdBy>darbo</createdBy>
+<createdTime>2024-02-14 14:04:04 UTC</createdTime>
+<ownerDesignName>MEDS_SERD</ownerDesignName>
+<ordsAlias>table_3</ordsAlias>
+<allowColumnReorder>false</allowColumnReorder>
+<existDependencyGenerateInDDl>true</existDependencyGenerateInDDl>
+<parsed>true</parsed>
+<columns itemClass="oracle.dbtools.crest.model.design.relational.Column">
+<Column name="WEATHER_CD" id="59848FC8-6807-F96F-FFE4-9059D897334B">
+<createdBy>darbo</createdBy>
+<createdTime>2024-02-14 14:04:04 UTC</createdTime>
+<commentInRDBMS><![CDATA[Weather code.]]></commentInRDBMS>
+<ownerDesignName>MEDS_SERD</ownerDesignName>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT019</logicalDatatype>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
+<autoIncrementCycle>false</autoIncrementCycle>
+</Column>
+<Column name="WEATHER_DESC" id="A7CEF8DF-5C8E-A536-0516-3FF3B2A9EBF7">
+<createdBy>darbo</createdBy>
+<createdTime>2024-02-14 14:04:04 UTC</createdTime>
+<commentInRDBMS><![CDATA[Weather description.]]></commentInRDBMS>
+<ownerDesignName>MEDS_SERD</ownerDesignName>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT024</logicalDatatype>
+<dataTypeSize>100</dataTypeSize>
+<ownDataTypeParameters>100,,</ownDataTypeParameters>
+<autoIncrementCycle>false</autoIncrementCycle>
+</Column>
+</columns>
+<indexes itemClass="oracle.dbtools.crest.model.design.relational.Index">
+<ind_PK_UK id="86DFB5C5-3678-D773-F631-8EAF2A73BA71" name="WEATHER_PK">
+<createdBy>darbo</createdBy>
+<createdTime>2024-02-14 14:04:04 UTC</createdTime>
+<ownerDesignName>MEDS_SERD</ownerDesignName>
+<pk>true</pk>
+<indexState>Primary Constraint</indexState>
+<isSurrogateKey>false</isSurrogateKey>
+<indexColumnUsage>
+<colUsage columnID="59848FC8-6807-F96F-FFE4-9059D897334B"/>
+</indexColumnUsage>
+</ind_PK_UK>
+</indexes>
+</Table>

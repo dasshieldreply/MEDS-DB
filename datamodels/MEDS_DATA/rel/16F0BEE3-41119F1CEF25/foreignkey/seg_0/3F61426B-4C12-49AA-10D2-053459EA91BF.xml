@@ -1,0 +1,16 @@
+<?xml version = '1.0' encoding = 'UTF-8'?>
+<FKIndexAssociation class="oracle.dbtools.crest.model.design.relational.FKIndexAssociation" directorySegmentName="seg_0" id="3F61426B-4C12-49AA-10D2-053459EA91BF" containerWithKeyObject="09B33EDD-9A68-F0BF-F260-CD9F354156CF" localFKIndex="BAC305EE-D453-86F7-E5DC-77467159042A" name="PROFILE_HEADER_TS_OBSERVATION_FK">
+<createdBy>d.arboittedossantos</createdBy>
+<createdTime>2024-03-22 11:12:35 UTC</createdTime>
+<ownerDesignName>MEDS_DATA</ownerDesignName>
+<referredTableLongName>MEDSADMIN.OBSERVATION</referredTableLongName>
+<deleteRule>NO ACTION</deleteRule>
+<referredTableID>12C475AD-93AD-865E-673B-A3959EDC61E3</referredTableID>
+<keyObject>8D93ACBF-BA0C-EF8E-C531-6147E06320CA</keyObject>
+<referredKeyID>8D93ACBF-BA0C-EF8E-C531-6147E06320CA</referredKeyID>
+<mandatory>true</mandatory>
+<refColNames>JOB_NUMBER,OBSERVATION_NUMBER</refColNames>
+<transferable>true</transferable>
+<rely>false</rely>
+<columnDependencyConstraintGenerateInDDL>true</columnDependencyConstraintGenerateInDDL>
+</FKIndexAssociation>

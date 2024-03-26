@@ -1,0 +1,48 @@
+<?xml version = '1.0' encoding = 'UTF-8'?>
+<Table class="oracle.dbtools.crest.model.design.relational.Table" directorySegmentName="seg_0" id="C8D9D867-84ED-A408-D21A-F14B616AA12C" name="DATA_TYPE">
+<createdBy>darbo</createdBy>
+<createdTime>2024-02-14 13:55:43 UTC</createdTime>
+<ownerDesignName>MEDS_SERD</ownerDesignName>
+<ordsAlias>table_3</ordsAlias>
+<allowColumnReorder>false</allowColumnReorder>
+<existDependencyGenerateInDDl>true</existDependencyGenerateInDDl>
+<parsed>true</parsed>
+<columns itemClass="oracle.dbtools.crest.model.design.relational.Column">
+<Column name="DATA_TYPE_CD" id="2D7B301B-0DFE-0869-7A46-45F57A0308D0">
+<createdBy>darbo</createdBy>
+<createdTime>2024-02-14 13:55:43 UTC</createdTime>
+<commentInRDBMS><![CDATA[Data type, MIAS code.]]></commentInRDBMS>
+<ownerDesignName>MEDS_SERD</ownerDesignName>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT019</logicalDatatype>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
+<autoIncrementCycle>false</autoIncrementCycle>
+</Column>
+<Column name="DATA_TYPE_DESC" id="6C9E6825-0998-BE09-9DA4-6E582FC5DC35">
+<createdBy>darbo</createdBy>
+<createdTime>2024-02-14 13:55:43 UTC</createdTime>
+<commentInRDBMS><![CDATA[Data type description.]]></commentInRDBMS>
+<ownerDesignName>MEDS_SERD</ownerDesignName>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT024</logicalDatatype>
+<dataTypeSize>100</dataTypeSize>
+<ownDataTypeParameters>100,,</ownDataTypeParameters>
+<autoIncrementCycle>false</autoIncrementCycle>
+</Column>
+</columns>
+<indexes itemClass="oracle.dbtools.crest.model.design.relational.Index">
+<ind_PK_UK id="EE41513A-3D71-1967-E49D-B433F0F2F62B" name="DATA_TYPE_PK">
+<createdBy>darbo</createdBy>
+<createdTime>2024-02-14 13:55:43 UTC</createdTime>
+<ownerDesignName>MEDS_SERD</ownerDesignName>
+<pk>true</pk>
+<indexState>Primary Constraint</indexState>
+<isSurrogateKey>false</isSurrogateKey>
+<indexColumnUsage>
+<colUsage columnID="2D7B301B-0DFE-0869-7A46-45F57A0308D0"/>
+</indexColumnUsage>
+</ind_PK_UK>
+</indexes>
+</Table>

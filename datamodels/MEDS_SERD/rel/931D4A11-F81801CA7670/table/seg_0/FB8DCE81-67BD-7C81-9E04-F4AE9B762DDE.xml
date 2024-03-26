@@ -1,0 +1,48 @@
+<?xml version = '1.0' encoding = 'UTF-8'?>
+<Table class="oracle.dbtools.crest.model.design.relational.Table" directorySegmentName="seg_0" id="FB8DCE81-67BD-7C81-9E04-F4AE9B762DDE" name="SALINITY_QUALITY">
+<createdBy>darbo</createdBy>
+<createdTime>2024-02-14 15:32:07 UTC</createdTime>
+<ownerDesignName>MEDS_SERD</ownerDesignName>
+<ordsAlias>table_3</ordsAlias>
+<allowColumnReorder>false</allowColumnReorder>
+<existDependencyGenerateInDDl>true</existDependencyGenerateInDDl>
+<parsed>true</parsed>
+<columns itemClass="oracle.dbtools.crest.model.design.relational.Column">
+<Column name="SALINITY_QUALITY_CD" id="63ECADA3-B8DD-E498-9977-B1B9435F143E">
+<createdBy>darbo</createdBy>
+<createdTime>2024-02-14 15:32:07 UTC</createdTime>
+<commentInRDBMS><![CDATA[Salinity quality code.]]></commentInRDBMS>
+<ownerDesignName>MEDS_SERD</ownerDesignName>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT019</logicalDatatype>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
+<autoIncrementCycle>false</autoIncrementCycle>
+</Column>
+<Column name="SALINITY_QUALITY_DESC" id="1F4F0A12-B71A-335E-BD42-51FFA6B8E38C">
+<createdBy>darbo</createdBy>
+<createdTime>2024-02-14 15:32:07 UTC</createdTime>
+<commentInRDBMS><![CDATA[Salinity quality description.]]></commentInRDBMS>
+<ownerDesignName>MEDS_SERD</ownerDesignName>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT024</logicalDatatype>
+<dataTypeSize>100</dataTypeSize>
+<ownDataTypeParameters>100,,</ownDataTypeParameters>
+<autoIncrementCycle>false</autoIncrementCycle>
+</Column>
+</columns>
+<indexes itemClass="oracle.dbtools.crest.model.design.relational.Index">
+<ind_PK_UK id="F68C7A2D-6030-476E-D51C-EC5E6C174A0C" name="SALINITY_QUALITY_PK">
+<createdBy>darbo</createdBy>
+<createdTime>2024-02-14 15:32:07 UTC</createdTime>
+<ownerDesignName>MEDS_SERD</ownerDesignName>
+<pk>true</pk>
+<indexState>Primary Constraint</indexState>
+<isSurrogateKey>false</isSurrogateKey>
+<indexColumnUsage>
+<colUsage columnID="63ECADA3-B8DD-E498-9977-B1B9435F143E"/>
+</indexColumnUsage>
+</ind_PK_UK>
+</indexes>
+</Table>

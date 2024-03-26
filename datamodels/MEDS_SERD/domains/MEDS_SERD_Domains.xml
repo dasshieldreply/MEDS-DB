@@ -1,0 +1,906 @@
+<?xml version = '1.0' encoding = 'UTF-8'?>
+<DomainFile class="oracle.dbtools.crest.model.design.DomainFileWrapper" fileName="MEDS_SERD_Domains">
+<domains>
+<Domain class="oracle.dbtools.crest.model.design.Domain" name="NUMERIC_1_0_0" id="0022961D-78FC-5DD2-6E9F-D93ADAFC4B21">
+<createdBy>darbo</createdBy>
+<createdTime>2024-02-13 15:19:36 UTC</createdTime>
+<ownerDesignName>MEDS_SERD</ownerDesignName>
+<avTSortOrder>0</avTSortOrder>
+<dataTypePrecision>1</dataTypePrecision>
+<dataTypeScale>0</dataTypeScale>
+<dataTypeSize>0</dataTypeSize>
+<fileName>MEDS_SERD_Domains</fileName>
+<logicalDatatype>LOGDT019</logicalDatatype>
+</Domain>
+<Domain class="oracle.dbtools.crest.model.design.Domain" name="VARCHAR_0_0_12" id="010A2513-4D4D-A378-2DB0-358947296AFB">
+<createdBy>darbo</createdBy>
+<createdTime>2024-02-13 15:19:36 UTC</createdTime>
+<ownerDesignName>MEDS_SERD</ownerDesignName>
+<avTSortOrder>0</avTSortOrder>
+<dataTypePrecision>0</dataTypePrecision>
+<dataTypeScale>0</dataTypeScale>
+<dataTypeSize>12</dataTypeSize>
+<fileName>MEDS_SERD_Domains</fileName>
+<logicalDatatype>LOGDT024</logicalDatatype>
+</Domain>
+<Domain class="oracle.dbtools.crest.model.design.Domain" name="NUMERIC_12_3_0" id="08B7D195-3D37-5068-FFC3-442D5F5DBB11">
+<createdBy>darbo</createdBy>
+<createdTime>2024-02-13 15:19:36 UTC</createdTime>
+<ownerDesignName>MEDS_SERD</ownerDesignName>
+<avTSortOrder>0</avTSortOrder>
+<dataTypePrecision>12</dataTypePrecision>
+<dataTypeScale>3</dataTypeScale>
+<dataTypeSize>0</dataTypeSize>
+<fileName>MEDS_SERD_Domains</fileName>
+<logicalDatatype>LOGDT019</logicalDatatype>
+</Domain>
+<Domain class="oracle.dbtools.crest.model.design.Domain" name="Date_0_0_0" id="0A93398F-0751-A887-9B7B-B80998D0190F">
+<createdBy>darbo</createdBy>
+<createdTime>2024-02-13 15:19:36 UTC</createdTime>
+<ownerDesignName>MEDS_SERD</ownerDesignName>
+<avTSortOrder>0</avTSortOrder>
+<fileName>MEDS_SERD_Domains</fileName>
+<logicalDatatype>LOGDT007</logicalDatatype>
+</Domain>
+<Domain class="oracle.dbtools.crest.model.design.Domain" name="NUMERIC_38_0_0" id="0B9FCB46-AB98-5451-D190-86D21D694C10">
+<createdBy>darbo</createdBy>
+<createdTime>2024-02-13 15:19:36 UTC</createdTime>
+<ownerDesignName>MEDS_SERD</ownerDesignName>
+<avTSortOrder>0</avTSortOrder>
+<dataTypePrecision>38</dataTypePrecision>
+<dataTypeScale>0</dataTypeScale>
+<dataTypeSize>0</dataTypeSize>
+<fileName>MEDS_SERD_Domains</fileName>
+<logicalDatatype>LOGDT019</logicalDatatype>
+</Domain>
+<Domain class="oracle.dbtools.crest.model.design.Domain" name="VARCHAR_0_0_600" id="0BFEBBB7-1E8D-E2D5-5B88-25B0AE903917">
+<createdBy>darbo</createdBy>
+<createdTime>2024-02-13 15:19:36 UTC</createdTime>
+<ownerDesignName>MEDS_SERD</ownerDesignName>
+<avTSortOrder>0</avTSortOrder>
+<dataTypePrecision>0</dataTypePrecision>
+<dataTypeScale>0</dataTypeScale>
+<dataTypeSize>600</dataTypeSize>
+<fileName>MEDS_SERD_Domains</fileName>
+<logicalDatatype>LOGDT024</logicalDatatype>
+</Domain>
+<Domain class="oracle.dbtools.crest.model.design.Domain" name="VARCHAR_0_0_150" id="0D083DC6-F717-6518-ABA1-51A1583DAC28">
+<createdBy>darbo</createdBy>
+<createdTime>2024-02-13 15:19:36 UTC</createdTime>
+<ownerDesignName>MEDS_SERD</ownerDesignName>
+<avTSortOrder>0</avTSortOrder>
+<dataTypePrecision>0</dataTypePrecision>
+<dataTypeScale>0</dataTypeScale>
+<dataTypeSize>150</dataTypeSize>
+<fileName>MEDS_SERD_Domains</fileName>
+<logicalDatatype>LOGDT024</logicalDatatype>
+</Domain>
+<Domain class="oracle.dbtools.crest.model.design.Domain" name="VARCHAR_0_0_254" id="0E4498EF-4D93-7FFC-BA8C-30E28678590C">
+<createdBy>darbo</createdBy>
+<createdTime>2024-02-13 15:19:36 UTC</createdTime>
+<ownerDesignName>MEDS_SERD</ownerDesignName>
+<avTSortOrder>0</avTSortOrder>
+<dataTypePrecision>0</dataTypePrecision>
+<dataTypeScale>0</dataTypeScale>
+<dataTypeSize>254</dataTypeSize>
+<fileName>MEDS_SERD_Domains</fileName>
+<logicalDatatype>LOGDT024</logicalDatatype>
+</Domain>
+<Domain class="oracle.dbtools.crest.model.design.Domain" name="NUMERIC_2_0_0" id="1231BC1A-83AB-1807-2102-22AC092ACD6E">
+<createdBy>darbo</createdBy>
+<createdTime>2024-02-13 15:19:36 UTC</createdTime>
+<ownerDesignName>MEDS_SERD</ownerDesignName>
+<avTSortOrder>0</avTSortOrder>
+<dataTypePrecision>2</dataTypePrecision>
+<dataTypeScale>0</dataTypeScale>
+<dataTypeSize>0</dataTypeSize>
+<fileName>MEDS_SERD_Domains</fileName>
+<logicalDatatype>LOGDT019</logicalDatatype>
+</Domain>
+<Domain class="oracle.dbtools.crest.model.design.Domain" name="VARCHAR_0_0_4" id="1889B1A9-CA2F-608C-4E2C-A2F683CFA0F1">
+<createdBy>darbo</createdBy>
+<createdTime>2024-02-13 15:19:36 UTC</createdTime>
+<ownerDesignName>MEDS_SERD</ownerDesignName>
+<avTSortOrder>0</avTSortOrder>
+<dataTypePrecision>0</dataTypePrecision>
+<dataTypeScale>0</dataTypeScale>
+<dataTypeSize>4</dataTypeSize>
+<fileName>MEDS_SERD_Domains</fileName>
+<logicalDatatype>LOGDT024</logicalDatatype>
+</Domain>
+<Domain class="oracle.dbtools.crest.model.design.Domain" name="ROWID_0_0_0" id="1C1890AC-B501-9F32-5FE5-01F5B97E994B">
+<createdBy>darbo</createdBy>
+<createdTime>2024-02-13 15:19:36 UTC</createdTime>
+<ownerDesignName>MEDS_SERD</ownerDesignName>
+<avTSortOrder>0</avTSortOrder>
+<fileName>MEDS_SERD_Domains</fileName>
+<logicalDatatype>LOGDT032</logicalDatatype>
+</Domain>
+<Domain class="oracle.dbtools.crest.model.design.Domain" name="NUMERIC_*_0_0" id="1E8CA2FA-5292-FA59-4EE6-32329CEBF1D5">
+<createdBy>darbo</createdBy>
+<createdTime>2024-02-13 15:19:36 UTC</createdTime>
+<ownerDesignName>MEDS_SERD</ownerDesignName>
+<avTSortOrder>0</avTSortOrder>
+<dataTypePrecision>*</dataTypePrecision>
+<dataTypeScale>0</dataTypeScale>
+<dataTypeSize>0</dataTypeSize>
+<fileName>MEDS_SERD_Domains</fileName>
+<logicalDatatype>LOGDT019</logicalDatatype>
+</Domain>
+<Domain class="oracle.dbtools.crest.model.design.Domain" name="VARCHAR_0_0_16" id="2067C84A-6E06-6DA2-5E65-5AC0DB536595">
+<createdBy>darbo</createdBy>
+<createdTime>2024-02-13 15:19:36 UTC</createdTime>
+<ownerDesignName>MEDS_SERD</ownerDesignName>
+<avTSortOrder>0</avTSortOrder>
+<dataTypePrecision>0</dataTypePrecision>
+<dataTypeScale>0</dataTypeScale>
+<dataTypeSize>16</dataTypeSize>
+<fileName>MEDS_SERD_Domains</fileName>
+<logicalDatatype>LOGDT024</logicalDatatype>
+</Domain>
+<Domain class="oracle.dbtools.crest.model.design.Domain" name="NUMERIC_11_0_0" id="232A70B0-03CB-AF8F-A727-8F4A2E0B8768">
+<createdBy>darbo</createdBy>
+<createdTime>2024-02-13 15:19:36 UTC</createdTime>
+<ownerDesignName>MEDS_SERD</ownerDesignName>
+<avTSortOrder>0</avTSortOrder>
+<dataTypePrecision>11</dataTypePrecision>
+<dataTypeScale>0</dataTypeScale>
+<dataTypeSize>0</dataTypeSize>
+<fileName>MEDS_SERD_Domains</fileName>
+<logicalDatatype>LOGDT019</logicalDatatype>
+</Domain>
+<Domain class="oracle.dbtools.crest.model.design.Domain" name="VARCHAR_0_0_70" id="2337CABF-7AB8-5FCE-9B86-5172D893E2E0">
+<createdBy>darbo</createdBy>
+<createdTime>2024-02-13 15:19:36 UTC</createdTime>
+<ownerDesignName>MEDS_SERD</ownerDesignName>
+<avTSortOrder>0</avTSortOrder>
+<dataTypePrecision>0</dataTypePrecision>
+<dataTypeScale>0</dataTypeScale>
+<dataTypeSize>70</dataTypeSize>
+<fileName>MEDS_SERD_Domains</fileName>
+<logicalDatatype>LOGDT024</logicalDatatype>
+</Domain>
+<Domain class="oracle.dbtools.crest.model.design.Domain" name="VARCHAR_0_0_32" id="267C1553-DAF2-7119-0DA7-9F2C3CB44D32">
+<createdBy>darbo</createdBy>
+<createdTime>2024-02-13 15:19:36 UTC</createdTime>
+<ownerDesignName>MEDS_SERD</ownerDesignName>
+<avTSortOrder>0</avTSortOrder>
+<dataTypePrecision>0</dataTypePrecision>
+<dataTypeScale>0</dataTypeScale>
+<dataTypeSize>32</dataTypeSize>
+<fileName>MEDS_SERD_Domains</fileName>
+<logicalDatatype>LOGDT024</logicalDatatype>
+</Domain>
+<Domain class="oracle.dbtools.crest.model.design.Domain" name="NUMERIC_12_5_0" id="281B5A3B-C6DE-C2CB-DDA0-55A5C7BDFE1F">
+<createdBy>darbo</createdBy>
+<createdTime>2024-02-13 15:19:36 UTC</createdTime>
+<ownerDesignName>MEDS_SERD</ownerDesignName>
+<avTSortOrder>0</avTSortOrder>
+<dataTypePrecision>12</dataTypePrecision>
+<dataTypeScale>5</dataTypeScale>
+<dataTypeSize>0</dataTypeSize>
+<fileName>MEDS_SERD_Domains</fileName>
+<logicalDatatype>LOGDT019</logicalDatatype>
+</Domain>
+<Domain class="oracle.dbtools.crest.model.design.Domain" name="VARCHAR_0_0_75" id="2AE68A1C-2699-07FB-0A89-451E1B4524F7">
+<createdBy>darbo</createdBy>
+<createdTime>2024-02-13 15:19:36 UTC</createdTime>
+<ownerDesignName>MEDS_SERD</ownerDesignName>
+<avTSortOrder>0</avTSortOrder>
+<dataTypePrecision>0</dataTypePrecision>
+<dataTypeScale>0</dataTypeScale>
+<dataTypeSize>75</dataTypeSize>
+<fileName>MEDS_SERD_Domains</fileName>
+<logicalDatatype>LOGDT024</logicalDatatype>
+</Domain>
+<Domain class="oracle.dbtools.crest.model.design.Domain" name="CHAR_0_0_50" id="2BDA7022-C5AE-D4FF-6F55-4F3C032E6EA3">
+<createdBy>darbo</createdBy>
+<createdTime>2024-02-13 15:19:36 UTC</createdTime>
+<ownerDesignName>MEDS_SERD</ownerDesignName>
+<avTSortOrder>0</avTSortOrder>
+<dataTypePrecision>0</dataTypePrecision>
+<dataTypeScale>0</dataTypeScale>
+<dataTypeSize>50</dataTypeSize>
+<fileName>MEDS_SERD_Domains</fileName>
+<logicalDatatype>LOGDT025</logicalDatatype>
+</Domain>
+<Domain class="oracle.dbtools.crest.model.design.Domain" name="NUMERIC_3_0_0" id="2C472980-670E-FCFA-ACBD-1FF883579DBB">
+<createdBy>darbo</createdBy>
+<createdTime>2024-02-13 15:19:36 UTC</createdTime>
+<ownerDesignName>MEDS_SERD</ownerDesignName>
+<avTSortOrder>0</avTSortOrder>
+<dataTypePrecision>3</dataTypePrecision>
+<dataTypeScale>0</dataTypeScale>
+<dataTypeSize>0</dataTypeSize>
+<fileName>MEDS_SERD_Domains</fileName>
+<logicalDatatype>LOGDT019</logicalDatatype>
+</Domain>
+<Domain class="oracle.dbtools.crest.model.design.Domain" name="VARCHAR_0_0_80" id="2E6E59AF-09F9-79D8-290D-5A757D997D42">
+<createdBy>darbo</createdBy>
+<createdTime>2024-02-13 15:19:36 UTC</createdTime>
+<ownerDesignName>MEDS_SERD</ownerDesignName>
+<avTSortOrder>0</avTSortOrder>
+<dataTypePrecision>0</dataTypePrecision>
+<dataTypeScale>0</dataTypeScale>
+<dataTypeSize>80</dataTypeSize>
+<fileName>MEDS_SERD_Domains</fileName>
+<logicalDatatype>LOGDT024</logicalDatatype>
+</Domain>
+<Domain class="oracle.dbtools.crest.model.design.Domain" name="VARCHAR_0_0_8" id="306D1A98-84F1-96F3-52EC-C517022268BA">
+<createdBy>darbo</createdBy>
+<createdTime>2024-02-13 15:19:36 UTC</createdTime>
+<ownerDesignName>MEDS_SERD</ownerDesignName>
+<avTSortOrder>0</avTSortOrder>
+<dataTypePrecision>0</dataTypePrecision>
+<dataTypeScale>0</dataTypeScale>
+<dataTypeSize>8</dataTypeSize>
+<fileName>MEDS_SERD_Domains</fileName>
+<logicalDatatype>LOGDT024</logicalDatatype>
+</Domain>
+<Domain class="oracle.dbtools.crest.model.design.Domain" name="VARCHAR_0_0_4000" id="35554292-E610-4140-81D7-3C3BB2C1E673">
+<createdBy>darbo</createdBy>
+<createdTime>2024-02-13 15:19:36 UTC</createdTime>
+<ownerDesignName>MEDS_SERD</ownerDesignName>
+<avTSortOrder>0</avTSortOrder>
+<dataTypePrecision>0</dataTypePrecision>
+<dataTypeScale>0</dataTypeScale>
+<dataTypeSize>4000</dataTypeSize>
+<fileName>MEDS_SERD_Domains</fileName>
+<logicalDatatype>LOGDT024</logicalDatatype>
+</Domain>
+<Domain class="oracle.dbtools.crest.model.design.Domain" name="VARCHAR_0_0_10" id="37CE10D0-B549-724B-1F79-23D09F1F138E">
+<createdBy>darbo</createdBy>
+<createdTime>2024-02-13 15:19:36 UTC</createdTime>
+<ownerDesignName>MEDS_SERD</ownerDesignName>
+<avTSortOrder>0</avTSortOrder>
+<dataTypePrecision>0</dataTypePrecision>
+<dataTypeScale>0</dataTypeScale>
+<dataTypeSize>10</dataTypeSize>
+<fileName>MEDS_SERD_Domains</fileName>
+<logicalDatatype>LOGDT024</logicalDatatype>
+</Domain>
+<Domain class="oracle.dbtools.crest.model.design.Domain" name="NUMERIC_0_0_0" id="384BE5BE-3846-5979-36E5-A4EE2AC98F1B">
+<createdBy>darbo</createdBy>
+<createdTime>2024-02-13 15:19:36 UTC</createdTime>
+<ownerDesignName>MEDS_SERD</ownerDesignName>
+<avTSortOrder>0</avTSortOrder>
+<fileName>MEDS_SERD_Domains</fileName>
+<logicalDatatype>LOGDT019</logicalDatatype>
+</Domain>
+<Domain class="oracle.dbtools.crest.model.design.Domain" name="FLOAT_126_0_0" id="3CF1D76D-62E0-1799-EED4-9826A11DFD33">
+<createdBy>darbo</createdBy>
+<createdTime>2024-02-13 15:19:36 UTC</createdTime>
+<ownerDesignName>MEDS_SERD</ownerDesignName>
+<avTSortOrder>0</avTSortOrder>
+<dataTypePrecision>126</dataTypePrecision>
+<dataTypeScale>0</dataTypeScale>
+<dataTypeSize>0</dataTypeSize>
+<fileName>MEDS_SERD_Domains</fileName>
+<logicalDatatype>LOGDT021</logicalDatatype>
+</Domain>
+<Domain class="oracle.dbtools.crest.model.design.Domain" name="VARCHAR_0_0_1" id="3FA9CFEC-830F-E25C-8102-B9192CA1BBBA">
+<createdBy>darbo</createdBy>
+<createdTime>2024-02-13 15:19:36 UTC</createdTime>
+<ownerDesignName>MEDS_SERD</ownerDesignName>
+<avTSortOrder>0</avTSortOrder>
+<dataTypePrecision>0</dataTypePrecision>
+<dataTypeScale>0</dataTypeScale>
+<dataTypeSize>1</dataTypeSize>
+<fileName>MEDS_SERD_Domains</fileName>
+<logicalDatatype>LOGDT024</logicalDatatype>
+</Domain>
+<Domain class="oracle.dbtools.crest.model.design.Domain" name="VARCHAR_0_0_50" id="3FC71A9D-68F2-BFFE-FC4C-5CE724594DC9">
+<createdBy>darbo</createdBy>
+<createdTime>2024-02-13 15:19:36 UTC</createdTime>
+<ownerDesignName>MEDS_SERD</ownerDesignName>
+<avTSortOrder>0</avTSortOrder>
+<dataTypePrecision>0</dataTypePrecision>
+<dataTypeScale>0</dataTypeScale>
+<dataTypeSize>50</dataTypeSize>
+<fileName>MEDS_SERD_Domains</fileName>
+<logicalDatatype>LOGDT024</logicalDatatype>
+</Domain>
+<Domain class="oracle.dbtools.crest.model.design.Domain" name="NUMERIC_10_2_0" id="40E7C581-1178-CC78-A2E1-DEDDC4D90929">
+<createdBy>darbo</createdBy>
+<createdTime>2024-02-13 15:19:36 UTC</createdTime>
+<ownerDesignName>MEDS_SERD</ownerDesignName>
+<avTSortOrder>0</avTSortOrder>
+<dataTypePrecision>10</dataTypePrecision>
+<dataTypeScale>2</dataTypeScale>
+<dataTypeSize>0</dataTypeSize>
+<fileName>MEDS_SERD_Domains</fileName>
+<logicalDatatype>LOGDT019</logicalDatatype>
+</Domain>
+<Domain class="oracle.dbtools.crest.model.design.Domain" name="VARCHAR_0_0_30" id="410B2768-241F-D938-9BAD-3B6912E031CD">
+<createdBy>darbo</createdBy>
+<createdTime>2024-02-13 15:19:36 UTC</createdTime>
+<ownerDesignName>MEDS_SERD</ownerDesignName>
+<avTSortOrder>0</avTSortOrder>
+<dataTypePrecision>0</dataTypePrecision>
+<dataTypeScale>0</dataTypeScale>
+<dataTypeSize>30</dataTypeSize>
+<fileName>MEDS_SERD_Domains</fileName>
+<logicalDatatype>LOGDT024</logicalDatatype>
+</Domain>
+<Domain class="oracle.dbtools.crest.model.design.Domain" name="VARCHAR_0_0_3" id="438508D1-5E23-F940-412B-E0723DAC1EF5">
+<createdBy>darbo</createdBy>
+<createdTime>2024-02-13 15:19:36 UTC</createdTime>
+<ownerDesignName>MEDS_SERD</ownerDesignName>
+<avTSortOrder>0</avTSortOrder>
+<dataTypePrecision>0</dataTypePrecision>
+<dataTypeScale>0</dataTypeScale>
+<dataTypeSize>3</dataTypeSize>
+<fileName>MEDS_SERD_Domains</fileName>
+<logicalDatatype>LOGDT024</logicalDatatype>
+</Domain>
+<Domain class="oracle.dbtools.crest.model.design.Domain" name="VARCHAR_0_0_1000" id="47691A52-5709-9608-402F-97DA29CD3085">
+<createdBy>darbo</createdBy>
+<createdTime>2024-02-13 15:19:36 UTC</createdTime>
+<ownerDesignName>MEDS_SERD</ownerDesignName>
+<avTSortOrder>0</avTSortOrder>
+<dataTypePrecision>0</dataTypePrecision>
+<dataTypeScale>0</dataTypeScale>
+<dataTypeSize>1000</dataTypeSize>
+<fileName>MEDS_SERD_Domains</fileName>
+<logicalDatatype>LOGDT024</logicalDatatype>
+</Domain>
+<Domain class="oracle.dbtools.crest.model.design.Domain" name="NUMERIC_12_6_0" id="515D7233-1973-1BEF-AF30-FEFD587BA4F6">
+<createdBy>darbo</createdBy>
+<createdTime>2024-02-13 15:19:36 UTC</createdTime>
+<ownerDesignName>MEDS_SERD</ownerDesignName>
+<avTSortOrder>0</avTSortOrder>
+<dataTypePrecision>12</dataTypePrecision>
+<dataTypeScale>6</dataTypeScale>
+<dataTypeSize>0</dataTypeSize>
+<fileName>MEDS_SERD_Domains</fileName>
+<logicalDatatype>LOGDT019</logicalDatatype>
+</Domain>
+<Domain class="oracle.dbtools.crest.model.design.Domain" name="NUMERIC_8_0_0" id="51FF7813-5990-B008-11FA-9437CC0EA3EB">
+<createdBy>darbo</createdBy>
+<createdTime>2024-02-13 15:19:36 UTC</createdTime>
+<ownerDesignName>MEDS_SERD</ownerDesignName>
+<avTSortOrder>0</avTSortOrder>
+<dataTypePrecision>8</dataTypePrecision>
+<dataTypeScale>0</dataTypeScale>
+<dataTypeSize>0</dataTypeSize>
+<fileName>MEDS_SERD_Domains</fileName>
+<logicalDatatype>LOGDT019</logicalDatatype>
+</Domain>
+<Domain class="oracle.dbtools.crest.model.design.Domain" name="NUMERIC_8_2_0" id="52381A84-13D0-72A2-72DB-44EE3F0567C5">
+<createdBy>darbo</createdBy>
+<createdTime>2024-02-13 15:19:36 UTC</createdTime>
+<ownerDesignName>MEDS_SERD</ownerDesignName>
+<avTSortOrder>0</avTSortOrder>
+<dataTypePrecision>8</dataTypePrecision>
+<dataTypeScale>2</dataTypeScale>
+<dataTypeSize>0</dataTypeSize>
+<fileName>MEDS_SERD_Domains</fileName>
+<logicalDatatype>LOGDT019</logicalDatatype>
+</Domain>
+<Domain class="oracle.dbtools.crest.model.design.Domain" name="VARCHAR_0_0_512" id="548C1145-D993-39A1-74E8-32E581BA11BE">
+<createdBy>darbo</createdBy>
+<createdTime>2024-02-13 15:19:36 UTC</createdTime>
+<ownerDesignName>MEDS_SERD</ownerDesignName>
+<avTSortOrder>0</avTSortOrder>
+<dataTypePrecision>0</dataTypePrecision>
+<dataTypeScale>0</dataTypeScale>
+<dataTypeSize>512</dataTypeSize>
+<fileName>MEDS_SERD_Domains</fileName>
+<logicalDatatype>LOGDT024</logicalDatatype>
+</Domain>
+<Domain class="oracle.dbtools.crest.model.design.Domain" name="VARCHAR_0_0_500" id="55FA3E3C-A10A-64D1-214F-C1F0488B2C6F">
+<createdBy>darbo</createdBy>
+<createdTime>2024-02-13 15:19:36 UTC</createdTime>
+<ownerDesignName>MEDS_SERD</ownerDesignName>
+<avTSortOrder>0</avTSortOrder>
+<dataTypePrecision>0</dataTypePrecision>
+<dataTypeScale>0</dataTypeScale>
+<dataTypeSize>500</dataTypeSize>
+<fileName>MEDS_SERD_Domains</fileName>
+<logicalDatatype>LOGDT024</logicalDatatype>
+</Domain>
+<Domain class="oracle.dbtools.crest.model.design.Domain" name="CHAR_0_0_256" id="56C8790C-89FC-7A90-7A67-29C2350605B3">
+<createdBy>darbo</createdBy>
+<createdTime>2024-02-13 15:19:36 UTC</createdTime>
+<ownerDesignName>MEDS_SERD</ownerDesignName>
+<avTSortOrder>0</avTSortOrder>
+<dataTypePrecision>0</dataTypePrecision>
+<dataTypeScale>0</dataTypeScale>
+<dataTypeSize>256</dataTypeSize>
+<fileName>MEDS_SERD_Domains</fileName>
+<logicalDatatype>LOGDT025</logicalDatatype>
+</Domain>
+<Domain class="oracle.dbtools.crest.model.design.Domain" name="NUMERIC_9_3_0" id="56D0E226-BD56-CBF3-F831-5D51399600B8">
+<createdBy>darbo</createdBy>
+<createdTime>2024-02-13 15:19:36 UTC</createdTime>
+<ownerDesignName>MEDS_SERD</ownerDesignName>
+<avTSortOrder>0</avTSortOrder>
+<dataTypePrecision>9</dataTypePrecision>
+<dataTypeScale>3</dataTypeScale>
+<dataTypeSize>0</dataTypeSize>
+<fileName>MEDS_SERD_Domains</fileName>
+<logicalDatatype>LOGDT019</logicalDatatype>
+</Domain>
+<Domain class="oracle.dbtools.crest.model.design.Domain" name="VARCHAR_0_0_17" id="574FF57E-8048-8550-F017-5DDCDC91895A">
+<createdBy>darbo</createdBy>
+<createdTime>2024-02-13 15:19:36 UTC</createdTime>
+<ownerDesignName>MEDS_SERD</ownerDesignName>
+<avTSortOrder>0</avTSortOrder>
+<dataTypePrecision>0</dataTypePrecision>
+<dataTypeScale>0</dataTypeScale>
+<dataTypeSize>17</dataTypeSize>
+<fileName>MEDS_SERD_Domains</fileName>
+<logicalDatatype>LOGDT024</logicalDatatype>
+</Domain>
+<Domain class="oracle.dbtools.crest.model.design.Domain" name="VARCHAR_0_0_7" id="5B1F876A-8577-A78D-9E43-FC602EA86606">
+<createdBy>darbo</createdBy>
+<createdTime>2024-02-13 15:19:36 UTC</createdTime>
+<ownerDesignName>MEDS_SERD</ownerDesignName>
+<avTSortOrder>0</avTSortOrder>
+<dataTypePrecision>0</dataTypePrecision>
+<dataTypeScale>0</dataTypeScale>
+<dataTypeSize>7</dataTypeSize>
+<fileName>MEDS_SERD_Domains</fileName>
+<logicalDatatype>LOGDT024</logicalDatatype>
+</Domain>
+<Domain class="oracle.dbtools.crest.model.design.Domain" name="VARCHAR_0_0_128" id="5C243F39-0A0C-99B3-7211-6681227E94FF">
+<createdBy>darbo</createdBy>
+<createdTime>2024-02-13 15:19:36 UTC</createdTime>
+<ownerDesignName>MEDS_SERD</ownerDesignName>
+<avTSortOrder>0</avTSortOrder>
+<dataTypePrecision>0</dataTypePrecision>
+<dataTypeScale>0</dataTypeScale>
+<dataTypeSize>128</dataTypeSize>
+<fileName>MEDS_SERD_Domains</fileName>
+<logicalDatatype>LOGDT024</logicalDatatype>
+</Domain>
+<Domain class="oracle.dbtools.crest.model.design.Domain" name="VARCHAR_0_0_700" id="640C14D3-9CA2-9E1D-89E7-251CDA146EF8">
+<createdBy>darbo</createdBy>
+<createdTime>2024-02-13 15:19:36 UTC</createdTime>
+<ownerDesignName>MEDS_SERD</ownerDesignName>
+<avTSortOrder>0</avTSortOrder>
+<dataTypePrecision>0</dataTypePrecision>
+<dataTypeScale>0</dataTypeScale>
+<dataTypeSize>700</dataTypeSize>
+<fileName>MEDS_SERD_Domains</fileName>
+<logicalDatatype>LOGDT024</logicalDatatype>
+</Domain>
+<Domain class="oracle.dbtools.crest.model.design.Domain" name="CHAR_0_0_5" id="67A8AD95-DD50-EB2B-AFA1-5DBF6FCC6FA3">
+<createdBy>darbo</createdBy>
+<createdTime>2024-02-13 15:19:36 UTC</createdTime>
+<ownerDesignName>MEDS_SERD</ownerDesignName>
+<avTSortOrder>0</avTSortOrder>
+<dataTypePrecision>0</dataTypePrecision>
+<dataTypeScale>0</dataTypeScale>
+<dataTypeSize>5</dataTypeSize>
+<fileName>MEDS_SERD_Domains</fileName>
+<logicalDatatype>LOGDT025</logicalDatatype>
+</Domain>
+<Domain class="oracle.dbtools.crest.model.design.Domain" name="BLOB_0_0_0" id="6829EA68-2E09-55FA-90CF-440DACFB8455">
+<createdBy>darbo</createdBy>
+<createdTime>2024-02-13 15:19:36 UTC</createdTime>
+<ownerDesignName>MEDS_SERD</ownerDesignName>
+<avTSortOrder>0</avTSortOrder>
+<fileName>MEDS_SERD_Domains</fileName>
+<logicalDatatype>LOGDT029</logicalDatatype>
+</Domain>
+<Domain class="oracle.dbtools.crest.model.design.Domain" name="VARCHAR_0_0_25" id="68920B04-40D2-F3C9-EA05-6EC954C7F39E">
+<createdBy>darbo</createdBy>
+<createdTime>2024-02-13 15:19:36 UTC</createdTime>
+<ownerDesignName>MEDS_SERD</ownerDesignName>
+<avTSortOrder>0</avTSortOrder>
+<dataTypePrecision>0</dataTypePrecision>
+<dataTypeScale>0</dataTypeScale>
+<dataTypeSize>25</dataTypeSize>
+<fileName>MEDS_SERD_Domains</fileName>
+<logicalDatatype>LOGDT024</logicalDatatype>
+</Domain>
+<Domain class="oracle.dbtools.crest.model.design.Domain" name="NUMERIC_4_0_0" id="6A3BBB77-E8ED-A2D1-B696-160E03D8D8D0">
+<createdBy>darbo</createdBy>
+<createdTime>2024-02-13 15:19:36 UTC</createdTime>
+<ownerDesignName>MEDS_SERD</ownerDesignName>
+<avTSortOrder>0</avTSortOrder>
+<dataTypePrecision>4</dataTypePrecision>
+<dataTypeScale>0</dataTypeScale>
+<dataTypeSize>0</dataTypeSize>
+<fileName>MEDS_SERD_Domains</fileName>
+<logicalDatatype>LOGDT019</logicalDatatype>
+</Domain>
+<Domain class="oracle.dbtools.crest.model.design.Domain" name="NUMERIC_10_4_0" id="6BD1905E-3FB2-74B8-D44D-FFA21D79893C">
+<createdBy>darbo</createdBy>
+<createdTime>2024-02-13 15:19:36 UTC</createdTime>
+<ownerDesignName>MEDS_SERD</ownerDesignName>
+<avTSortOrder>0</avTSortOrder>
+<dataTypePrecision>10</dataTypePrecision>
+<dataTypeScale>4</dataTypeScale>
+<dataTypeSize>0</dataTypeSize>
+<fileName>MEDS_SERD_Domains</fileName>
+<logicalDatatype>LOGDT019</logicalDatatype>
+</Domain>
+<Domain class="oracle.dbtools.crest.model.design.Domain" name="NUMERIC_10_0_0" id="7E6EE20B-DD19-81D5-27CE-3940D36FC146">
+<createdBy>darbo</createdBy>
+<createdTime>2024-02-13 15:19:36 UTC</createdTime>
+<ownerDesignName>MEDS_SERD</ownerDesignName>
+<avTSortOrder>0</avTSortOrder>
+<dataTypePrecision>10</dataTypePrecision>
+<dataTypeScale>0</dataTypeScale>
+<dataTypeSize>0</dataTypeSize>
+<fileName>MEDS_SERD_Domains</fileName>
+<logicalDatatype>LOGDT019</logicalDatatype>
+</Domain>
+<Domain class="oracle.dbtools.crest.model.design.Domain" name="VARCHAR_0_0_256" id="8119DD97-2EE1-00FB-B778-3BE8E70E2D07">
+<createdBy>darbo</createdBy>
+<createdTime>2024-02-13 15:19:36 UTC</createdTime>
+<ownerDesignName>MEDS_SERD</ownerDesignName>
+<avTSortOrder>0</avTSortOrder>
+<dataTypePrecision>0</dataTypePrecision>
+<dataTypeScale>0</dataTypeScale>
+<dataTypeSize>256</dataTypeSize>
+<fileName>MEDS_SERD_Domains</fileName>
+<logicalDatatype>LOGDT024</logicalDatatype>
+</Domain>
+<Domain class="oracle.dbtools.crest.model.design.Domain" name="VARCHAR_0_0_650" id="818815AD-65A1-A006-9171-8C77D915B5AC">
+<createdBy>darbo</createdBy>
+<createdTime>2024-02-13 15:19:36 UTC</createdTime>
+<ownerDesignName>MEDS_SERD</ownerDesignName>
+<avTSortOrder>0</avTSortOrder>
+<dataTypePrecision>0</dataTypePrecision>
+<dataTypeScale>0</dataTypeScale>
+<dataTypeSize>650</dataTypeSize>
+<fileName>MEDS_SERD_Domains</fileName>
+<logicalDatatype>LOGDT024</logicalDatatype>
+</Domain>
+<Domain class="oracle.dbtools.crest.model.design.Domain" name="NUMERIC_20_17_0" id="84E088C9-548B-8CF7-DF53-E8D1304F2BC1">
+<createdBy>darbo</createdBy>
+<createdTime>2024-02-13 15:19:36 UTC</createdTime>
+<ownerDesignName>MEDS_SERD</ownerDesignName>
+<avTSortOrder>0</avTSortOrder>
+<dataTypePrecision>20</dataTypePrecision>
+<dataTypeScale>17</dataTypeScale>
+<dataTypeSize>0</dataTypeSize>
+<fileName>MEDS_SERD_Domains</fileName>
+<logicalDatatype>LOGDT019</logicalDatatype>
+</Domain>
+<Domain class="oracle.dbtools.crest.model.design.Domain" name="NUMERIC_20_10_0" id="872588E1-2AA6-0225-A889-1553E968270C">
+<createdBy>darbo</createdBy>
+<createdTime>2024-02-13 15:19:36 UTC</createdTime>
+<ownerDesignName>MEDS_SERD</ownerDesignName>
+<avTSortOrder>0</avTSortOrder>
+<dataTypePrecision>20</dataTypePrecision>
+<dataTypeScale>10</dataTypeScale>
+<dataTypeSize>0</dataTypeSize>
+<fileName>MEDS_SERD_Domains</fileName>
+<logicalDatatype>LOGDT019</logicalDatatype>
+</Domain>
+<Domain class="oracle.dbtools.crest.model.design.Domain" name="NUMERIC_13_4_0" id="87AE53F5-6D57-A417-D753-4421E3B5B5D9">
+<createdBy>darbo</createdBy>
+<createdTime>2024-02-13 15:19:36 UTC</createdTime>
+<ownerDesignName>MEDS_SERD</ownerDesignName>
+<avTSortOrder>0</avTSortOrder>
+<dataTypePrecision>13</dataTypePrecision>
+<dataTypeScale>4</dataTypeScale>
+<dataTypeSize>0</dataTypeSize>
+<fileName>MEDS_SERD_Domains</fileName>
+<logicalDatatype>LOGDT019</logicalDatatype>
+</Domain>
+<Domain class="oracle.dbtools.crest.model.design.Domain" name="VARCHAR_0_0_6" id="8992D75C-EDBD-3F29-BDEA-4E433D558C59">
+<createdBy>darbo</createdBy>
+<createdTime>2024-02-13 15:19:36 UTC</createdTime>
+<ownerDesignName>MEDS_SERD</ownerDesignName>
+<avTSortOrder>0</avTSortOrder>
+<dataTypePrecision>0</dataTypePrecision>
+<dataTypeScale>0</dataTypeScale>
+<dataTypeSize>6</dataTypeSize>
+<fileName>MEDS_SERD_Domains</fileName>
+<logicalDatatype>LOGDT024</logicalDatatype>
+</Domain>
+<Domain class="oracle.dbtools.crest.model.design.Domain" name="NUMERIC_20_4_0" id="8A728960-CF50-9BA5-CD66-63453D20FB7B">
+<createdBy>darbo</createdBy>
+<createdTime>2024-02-13 15:19:36 UTC</createdTime>
+<ownerDesignName>MEDS_SERD</ownerDesignName>
+<avTSortOrder>0</avTSortOrder>
+<dataTypePrecision>20</dataTypePrecision>
+<dataTypeScale>4</dataTypeScale>
+<dataTypeSize>0</dataTypeSize>
+<fileName>MEDS_SERD_Domains</fileName>
+<logicalDatatype>LOGDT019</logicalDatatype>
+</Domain>
+<Domain class="oracle.dbtools.crest.model.design.Domain" name="NUMERIC_6_0_0" id="8C8B1E0C-12F9-2620-6C2D-C9AC217FAD99">
+<createdBy>darbo</createdBy>
+<createdTime>2024-02-13 15:19:36 UTC</createdTime>
+<ownerDesignName>MEDS_SERD</ownerDesignName>
+<avTSortOrder>0</avTSortOrder>
+<dataTypePrecision>6</dataTypePrecision>
+<dataTypeScale>0</dataTypeScale>
+<dataTypeSize>0</dataTypeSize>
+<fileName>MEDS_SERD_Domains</fileName>
+<logicalDatatype>LOGDT019</logicalDatatype>
+</Domain>
+<Domain class="oracle.dbtools.crest.model.design.Domain" name="NUMERIC_5_1_0" id="8D7A5C99-936E-8EBF-CFEB-BDB81CD93503">
+<createdBy>darbo</createdBy>
+<createdTime>2024-02-13 15:19:36 UTC</createdTime>
+<ownerDesignName>MEDS_SERD</ownerDesignName>
+<avTSortOrder>0</avTSortOrder>
+<dataTypePrecision>5</dataTypePrecision>
+<dataTypeScale>1</dataTypeScale>
+<dataTypeSize>0</dataTypeSize>
+<fileName>MEDS_SERD_Domains</fileName>
+<logicalDatatype>LOGDT019</logicalDatatype>
+</Domain>
+<Domain class="oracle.dbtools.crest.model.design.Domain" name="VARCHAR_0_0_2" id="8FE0B0A3-F841-C1A6-0CB5-1AB3D7244259">
+<createdBy>darbo</createdBy>
+<createdTime>2024-02-13 15:19:36 UTC</createdTime>
+<ownerDesignName>MEDS_SERD</ownerDesignName>
+<avTSortOrder>0</avTSortOrder>
+<dataTypePrecision>0</dataTypePrecision>
+<dataTypeScale>0</dataTypeScale>
+<dataTypeSize>2</dataTypeSize>
+<fileName>MEDS_SERD_Domains</fileName>
+<logicalDatatype>LOGDT024</logicalDatatype>
+</Domain>
+<Domain class="oracle.dbtools.crest.model.design.Domain" name="VARCHAR_0_0_20" id="9BA68AE0-9425-2D0E-3651-7F8C945F1233">
+<createdBy>darbo</createdBy>
+<createdTime>2024-02-13 15:19:36 UTC</createdTime>
+<ownerDesignName>MEDS_SERD</ownerDesignName>
+<avTSortOrder>0</avTSortOrder>
+<dataTypePrecision>0</dataTypePrecision>
+<dataTypeScale>0</dataTypeScale>
+<dataTypeSize>20</dataTypeSize>
+<fileName>MEDS_SERD_Domains</fileName>
+<logicalDatatype>LOGDT024</logicalDatatype>
+</Domain>
+<Domain class="oracle.dbtools.crest.model.design.Domain" name="NUMERIC_20_0_0" id="9F1048DC-161F-2C86-42E1-F25E22EC4F43">
+<createdBy>darbo</createdBy>
+<createdTime>2024-02-13 15:19:36 UTC</createdTime>
+<ownerDesignName>MEDS_SERD</ownerDesignName>
+<avTSortOrder>0</avTSortOrder>
+<dataTypePrecision>20</dataTypePrecision>
+<dataTypeScale>0</dataTypeScale>
+<dataTypeSize>0</dataTypeSize>
+<fileName>MEDS_SERD_Domains</fileName>
+<logicalDatatype>LOGDT019</logicalDatatype>
+</Domain>
+<Domain class="oracle.dbtools.crest.model.design.Domain" name="VARCHAR_0_0_5" id="9F2E370C-01E1-F1AC-3CEE-81BC06E69D8C">
+<createdBy>darbo</createdBy>
+<createdTime>2024-02-13 15:19:36 UTC</createdTime>
+<ownerDesignName>MEDS_SERD</ownerDesignName>
+<avTSortOrder>0</avTSortOrder>
+<dataTypePrecision>0</dataTypePrecision>
+<dataTypeScale>0</dataTypeScale>
+<dataTypeSize>5</dataTypeSize>
+<fileName>MEDS_SERD_Domains</fileName>
+<logicalDatatype>LOGDT024</logicalDatatype>
+</Domain>
+<Domain class="oracle.dbtools.crest.model.design.Domain" name="NUMERIC_5_0_0" id="ABF5C401-A316-AB12-86A0-055AA1612CCF">
+<createdBy>darbo</createdBy>
+<createdTime>2024-02-13 15:19:36 UTC</createdTime>
+<ownerDesignName>MEDS_SERD</ownerDesignName>
+<avTSortOrder>0</avTSortOrder>
+<dataTypePrecision>5</dataTypePrecision>
+<dataTypeScale>0</dataTypeScale>
+<dataTypeSize>0</dataTypeSize>
+<fileName>MEDS_SERD_Domains</fileName>
+<logicalDatatype>LOGDT019</logicalDatatype>
+</Domain>
+<Domain class="oracle.dbtools.crest.model.design.Domain" name="NUMERIC_12_8_0" id="AE37E046-AF99-D5EE-B518-65B2BCC59E8B">
+<createdBy>darbo</createdBy>
+<createdTime>2024-02-13 15:19:36 UTC</createdTime>
+<ownerDesignName>MEDS_SERD</ownerDesignName>
+<avTSortOrder>0</avTSortOrder>
+<dataTypePrecision>12</dataTypePrecision>
+<dataTypeScale>8</dataTypeScale>
+<dataTypeSize>0</dataTypeSize>
+<fileName>MEDS_SERD_Domains</fileName>
+<logicalDatatype>LOGDT019</logicalDatatype>
+</Domain>
+<Domain class="oracle.dbtools.crest.model.design.Domain" name="NUMERIC_10_3_0" id="AE6C0773-0A17-7F01-8137-4B654116B959">
+<createdBy>darbo</createdBy>
+<createdTime>2024-02-13 15:19:36 UTC</createdTime>
+<ownerDesignName>MEDS_SERD</ownerDesignName>
+<avTSortOrder>0</avTSortOrder>
+<dataTypePrecision>10</dataTypePrecision>
+<dataTypeScale>3</dataTypeScale>
+<dataTypeSize>0</dataTypeSize>
+<fileName>MEDS_SERD_Domains</fileName>
+<logicalDatatype>LOGDT019</logicalDatatype>
+</Domain>
+<Domain class="oracle.dbtools.crest.model.design.Domain" name="VARCHAR_0_0_250" id="B38DD457-713B-268D-4C4F-31E32CBE4686">
+<createdBy>darbo</createdBy>
+<createdTime>2024-02-13 15:19:36 UTC</createdTime>
+<ownerDesignName>MEDS_SERD</ownerDesignName>
+<avTSortOrder>0</avTSortOrder>
+<dataTypePrecision>0</dataTypePrecision>
+<dataTypeScale>0</dataTypeScale>
+<dataTypeSize>250</dataTypeSize>
+<fileName>MEDS_SERD_Domains</fileName>
+<logicalDatatype>LOGDT024</logicalDatatype>
+</Domain>
+<Domain class="oracle.dbtools.crest.model.design.Domain" name="CHAR_0_0_3" id="B5DFE411-E0B0-9475-C227-BC15178CD236">
+<createdBy>darbo</createdBy>
+<createdTime>2024-02-13 15:19:36 UTC</createdTime>
+<ownerDesignName>MEDS_SERD</ownerDesignName>
+<avTSortOrder>0</avTSortOrder>
+<dataTypePrecision>0</dataTypePrecision>
+<dataTypeScale>0</dataTypeScale>
+<dataTypeSize>3</dataTypeSize>
+<fileName>MEDS_SERD_Domains</fileName>
+<logicalDatatype>LOGDT025</logicalDatatype>
+</Domain>
+<Domain class="oracle.dbtools.crest.model.design.Domain" name="VARCHAR_0_0_800" id="BC402E7F-30A9-C72B-6B58-5F63F7F135D2">
+<createdBy>darbo</createdBy>
+<createdTime>2024-02-13 15:19:36 UTC</createdTime>
+<ownerDesignName>MEDS_SERD</ownerDesignName>
+<avTSortOrder>0</avTSortOrder>
+<dataTypePrecision>0</dataTypePrecision>
+<dataTypeScale>0</dataTypeScale>
+<dataTypeSize>800</dataTypeSize>
+<fileName>MEDS_SERD_Domains</fileName>
+<logicalDatatype>LOGDT024</logicalDatatype>
+</Domain>
+<Domain class="oracle.dbtools.crest.model.design.Domain" name="VARCHAR_0_0_64" id="BEC1496C-4565-DA81-DC51-D6459761F88F">
+<createdBy>darbo</createdBy>
+<createdTime>2024-02-13 15:19:36 UTC</createdTime>
+<ownerDesignName>MEDS_SERD</ownerDesignName>
+<avTSortOrder>0</avTSortOrder>
+<dataTypePrecision>0</dataTypePrecision>
+<dataTypeScale>0</dataTypeScale>
+<dataTypeSize>64</dataTypeSize>
+<fileName>MEDS_SERD_Domains</fileName>
+<logicalDatatype>LOGDT024</logicalDatatype>
+</Domain>
+<Domain class="oracle.dbtools.crest.model.design.Domain" name="CHAR_0_0_1" id="C9492B0F-BDC6-F0D2-F694-8279B35F4D1A">
+<createdBy>darbo</createdBy>
+<createdTime>2024-02-13 15:19:36 UTC</createdTime>
+<ownerDesignName>MEDS_SERD</ownerDesignName>
+<avTSortOrder>0</avTSortOrder>
+<dataTypePrecision>0</dataTypePrecision>
+<dataTypeScale>0</dataTypeScale>
+<dataTypeSize>1</dataTypeSize>
+<fileName>MEDS_SERD_Domains</fileName>
+<logicalDatatype>LOGDT025</logicalDatatype>
+</Domain>
+<Domain class="oracle.dbtools.crest.model.design.Domain" name="VARCHAR_0_0_300" id="D2650063-6488-D704-1AE1-FA485B9C5672">
+<createdBy>darbo</createdBy>
+<createdTime>2024-02-13 15:19:36 UTC</createdTime>
+<ownerDesignName>MEDS_SERD</ownerDesignName>
+<avTSortOrder>0</avTSortOrder>
+<dataTypePrecision>0</dataTypePrecision>
+<dataTypeScale>0</dataTypeScale>
+<dataTypeSize>300</dataTypeSize>
+<fileName>MEDS_SERD_Domains</fileName>
+<logicalDatatype>LOGDT024</logicalDatatype>
+</Domain>
+<Domain class="oracle.dbtools.crest.model.design.Domain" name="VARCHAR_0_0_15" id="D61254F4-4EFB-B655-7301-7FA788B22F17">
+<createdBy>darbo</createdBy>
+<createdTime>2024-02-13 15:19:36 UTC</createdTime>
+<ownerDesignName>MEDS_SERD</ownerDesignName>
+<avTSortOrder>0</avTSortOrder>
+<dataTypePrecision>0</dataTypePrecision>
+<dataTypeScale>0</dataTypeScale>
+<dataTypeSize>15</dataTypeSize>
+<fileName>MEDS_SERD_Domains</fileName>
+<logicalDatatype>LOGDT024</logicalDatatype>
+</Domain>
+<Domain class="oracle.dbtools.crest.model.design.Domain" name="VARCHAR_0_0_40" id="DCD206E0-DA58-62FC-F099-5EA5ADF725EA">
+<createdBy>darbo</createdBy>
+<createdTime>2024-02-13 15:19:36 UTC</createdTime>
+<ownerDesignName>MEDS_SERD</ownerDesignName>
+<avTSortOrder>0</avTSortOrder>
+<dataTypePrecision>0</dataTypePrecision>
+<dataTypeScale>0</dataTypeScale>
+<dataTypeSize>40</dataTypeSize>
+<fileName>MEDS_SERD_Domains</fileName>
+<logicalDatatype>LOGDT024</logicalDatatype>
+</Domain>
+<Domain class="oracle.dbtools.crest.model.design.Domain" name="CHAR_0_0_16" id="DD7EB0FC-AC94-EADB-D2ED-ED18B182B0B7">
+<createdBy>darbo</createdBy>
+<createdTime>2024-02-13 15:19:36 UTC</createdTime>
+<ownerDesignName>MEDS_SERD</ownerDesignName>
+<avTSortOrder>0</avTSortOrder>
+<dataTypePrecision>0</dataTypePrecision>
+<dataTypeScale>0</dataTypeScale>
+<dataTypeSize>16</dataTypeSize>
+<fileName>MEDS_SERD_Domains</fileName>
+<logicalDatatype>LOGDT025</logicalDatatype>
+</Domain>
+<Domain class="oracle.dbtools.crest.model.design.Domain" name="NUMERIC_12_4_0" id="DE89B36E-A7E7-0FFA-3D17-B3AD0B399F54">
+<createdBy>darbo</createdBy>
+<createdTime>2024-02-13 15:19:36 UTC</createdTime>
+<ownerDesignName>MEDS_SERD</ownerDesignName>
+<avTSortOrder>0</avTSortOrder>
+<dataTypePrecision>12</dataTypePrecision>
+<dataTypeScale>4</dataTypeScale>
+<dataTypeSize>0</dataTypeSize>
+<fileName>MEDS_SERD_Domains</fileName>
+<logicalDatatype>LOGDT019</logicalDatatype>
+</Domain>
+<Domain class="oracle.dbtools.crest.model.design.Domain" name="VARCHAR_0_0_100" id="E0928031-E6FD-BBE6-1F80-BB9856E085B9">
+<createdBy>darbo</createdBy>
+<createdTime>2024-02-13 15:19:36 UTC</createdTime>
+<ownerDesignName>MEDS_SERD</ownerDesignName>
+<avTSortOrder>0</avTSortOrder>
+<dataTypePrecision>0</dataTypePrecision>
+<dataTypeScale>0</dataTypeScale>
+<dataTypeSize>100</dataTypeSize>
+<fileName>MEDS_SERD_Domains</fileName>
+<logicalDatatype>LOGDT024</logicalDatatype>
+</Domain>
+<Domain class="oracle.dbtools.crest.model.design.Domain" name="VARCHAR_0_0_400" id="E3E861BD-8BE3-CB18-8B5A-33DFF46D7281">
+<createdBy>darbo</createdBy>
+<createdTime>2024-02-13 15:19:36 UTC</createdTime>
+<ownerDesignName>MEDS_SERD</ownerDesignName>
+<avTSortOrder>0</avTSortOrder>
+<dataTypePrecision>0</dataTypePrecision>
+<dataTypeScale>0</dataTypeScale>
+<dataTypeSize>400</dataTypeSize>
+<fileName>MEDS_SERD_Domains</fileName>
+<logicalDatatype>LOGDT024</logicalDatatype>
+</Domain>
+<Domain class="oracle.dbtools.crest.model.design.Domain" name="CHAR_0_0_64" id="EBEF9D2C-F098-FAE4-FFFC-0C8539AEB989">
+<createdBy>darbo</createdBy>
+<createdTime>2024-02-13 15:19:36 UTC</createdTime>
+<ownerDesignName>MEDS_SERD</ownerDesignName>
+<avTSortOrder>0</avTSortOrder>
+<dataTypePrecision>0</dataTypePrecision>
+<dataTypeScale>0</dataTypeScale>
+<dataTypeSize>64</dataTypeSize>
+<fileName>MEDS_SERD_Domains</fileName>
+<logicalDatatype>LOGDT025</logicalDatatype>
+</Domain>
+<Domain class="oracle.dbtools.crest.model.design.Domain" name="NUMERIC_12_0_0" id="EDF10057-459E-86C9-041C-A739CF9681EF">
+<createdBy>darbo</createdBy>
+<createdTime>2024-02-13 15:19:36 UTC</createdTime>
+<ownerDesignName>MEDS_SERD</ownerDesignName>
+<avTSortOrder>0</avTSortOrder>
+<dataTypePrecision>12</dataTypePrecision>
+<dataTypeScale>0</dataTypeScale>
+<dataTypeSize>0</dataTypeSize>
+<fileName>MEDS_SERD_Domains</fileName>
+<logicalDatatype>LOGDT019</logicalDatatype>
+</Domain>
+<Domain class="oracle.dbtools.crest.model.design.Domain" name="VARCHAR_0_0_200" id="F624080C-5175-5127-994F-B58E79B7E520">
+<createdBy>darbo</createdBy>
+<createdTime>2024-02-13 15:19:36 UTC</createdTime>
+<ownerDesignName>MEDS_SERD</ownerDesignName>
+<avTSortOrder>0</avTSortOrder>
+<dataTypePrecision>0</dataTypePrecision>
+<dataTypeScale>0</dataTypeScale>
+<dataTypeSize>200</dataTypeSize>
+<fileName>MEDS_SERD_Domains</fileName>
+<logicalDatatype>LOGDT024</logicalDatatype>
+</Domain>
+<Domain class="oracle.dbtools.crest.model.design.Domain" name="NUMERIC_8_3_0" id="F98ABE76-8BE6-CDB5-F2CC-6A028A58FBA2">
+<createdBy>darbo</createdBy>
+<createdTime>2024-02-13 15:19:36 UTC</createdTime>
+<ownerDesignName>MEDS_SERD</ownerDesignName>
+<avTSortOrder>0</avTSortOrder>
+<dataTypePrecision>8</dataTypePrecision>
+<dataTypeScale>3</dataTypeScale>
+<dataTypeSize>0</dataTypeSize>
+<fileName>MEDS_SERD_Domains</fileName>
+<logicalDatatype>LOGDT019</logicalDatatype>
+</Domain>
+<Domain class="oracle.dbtools.crest.model.design.Domain" name="NUMERIC_15_6_0" id="FA3268B7-EDC9-0A05-7981-8448ECD1DD50">
+<createdBy>darbo</createdBy>
+<createdTime>2024-02-13 15:19:36 UTC</createdTime>
+<ownerDesignName>MEDS_SERD</ownerDesignName>
+<avTSortOrder>0</avTSortOrder>
+<dataTypePrecision>15</dataTypePrecision>
+<dataTypeScale>6</dataTypeScale>
+<dataTypeSize>0</dataTypeSize>
+<fileName>MEDS_SERD_Domains</fileName>
+<logicalDatatype>LOGDT019</logicalDatatype>
+</Domain>
+<Domain class="oracle.dbtools.crest.model.design.Domain" name="VARCHAR_0_0_640" id="FAEACF91-18BB-0F6E-F9B7-6B522281E1C6">
+<createdBy>darbo</createdBy>
+<createdTime>2024-02-13 15:19:36 UTC</createdTime>
+<ownerDesignName>MEDS_SERD</ownerDesignName>
+<avTSortOrder>0</avTSortOrder>
+<dataTypePrecision>0</dataTypePrecision>
+<dataTypeScale>0</dataTypeScale>
+<dataTypeSize>640</dataTypeSize>
+<fileName>MEDS_SERD_Domains</fileName>
+<logicalDatatype>LOGDT024</logicalDatatype>
+</Domain>
+</domains>
+</DomainFile>

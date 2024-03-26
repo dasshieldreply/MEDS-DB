@@ -1,0 +1,16 @@
+<?xml version = '1.0' encoding = 'UTF-8'?>
+<FKIndexAssociation class="oracle.dbtools.crest.model.design.relational.FKIndexAssociation" directorySegmentName="seg_0" id="873C5E35-3C34-0B66-E564-298E13749F62" containerWithKeyObject="69BC1AAD-3A20-A155-468B-AB9A273CB587" localFKIndex="E9F733A3-896B-6E06-B499-3936DDE4079B" name="DEPTH_LEVEL_SALINITY_QUALITY_FK">
+<createdBy>darbo</createdBy>
+<createdTime>2024-02-14 16:10:11 UTC</createdTime>
+<ownerDesignName>MEDS_SERD</ownerDesignName>
+<referredTableLongName>SALINITY_QUALITY</referredTableLongName>
+<deleteRule>NO ACTION</deleteRule>
+<referredTableID>FB8DCE81-67BD-7C81-9E04-F4AE9B762DDE</referredTableID>
+<keyObject>F68C7A2D-6030-476E-D51C-EC5E6C174A0C</keyObject>
+<referredKeyID>F68C7A2D-6030-476E-D51C-EC5E6C174A0C</referredKeyID>
+<mandatory>true</mandatory>
+<refColNames>SALINITY_QUALITY_CD</refColNames>
+<transferable>true</transferable>
+<rely>false</rely>
+<columnDependencyConstraintGenerateInDDL>true</columnDependencyConstraintGenerateInDDL>
+</FKIndexAssociation>

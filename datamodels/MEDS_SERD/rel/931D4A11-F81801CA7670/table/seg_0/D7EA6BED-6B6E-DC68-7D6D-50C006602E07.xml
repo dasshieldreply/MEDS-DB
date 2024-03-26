@@ -1,0 +1,48 @@
+<?xml version = '1.0' encoding = 'UTF-8'?>
+<Table class="oracle.dbtools.crest.model.design.relational.Table" directorySegmentName="seg_0" id="D7EA6BED-6B6E-DC68-7D6D-50C006602E07" name="DEPTH_QUALITY">
+<createdBy>darbo</createdBy>
+<createdTime>2024-02-14 15:24:21 UTC</createdTime>
+<ownerDesignName>MEDS_SERD</ownerDesignName>
+<ordsAlias>table_3</ordsAlias>
+<allowColumnReorder>false</allowColumnReorder>
+<existDependencyGenerateInDDl>true</existDependencyGenerateInDDl>
+<parsed>true</parsed>
+<columns itemClass="oracle.dbtools.crest.model.design.relational.Column">
+<Column name="DEPTH_QUALITY_CD" id="89415254-94A4-B850-897D-D89C3757349C">
+<createdBy>darbo</createdBy>
+<createdTime>2024-02-14 15:24:21 UTC</createdTime>
+<commentInRDBMS><![CDATA[Depth quality code.]]></commentInRDBMS>
+<ownerDesignName>MEDS_SERD</ownerDesignName>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT019</logicalDatatype>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
+<autoIncrementCycle>false</autoIncrementCycle>
+</Column>
+<Column name="DEPTH_QUALITY_DESC" id="65ED4F5A-3D67-6064-44B2-BA644D135913">
+<createdBy>darbo</createdBy>
+<createdTime>2024-02-14 15:24:21 UTC</createdTime>
+<commentInRDBMS><![CDATA[Depth quality description.]]></commentInRDBMS>
+<ownerDesignName>MEDS_SERD</ownerDesignName>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT024</logicalDatatype>
+<dataTypeSize>100</dataTypeSize>
+<ownDataTypeParameters>100,,</ownDataTypeParameters>
+<autoIncrementCycle>false</autoIncrementCycle>
+</Column>
+</columns>
+<indexes itemClass="oracle.dbtools.crest.model.design.relational.Index">
+<ind_PK_UK id="067C247D-BBCF-F738-8918-C137BCF00B93" name="DEPTH_QUALITY_PK">
+<createdBy>darbo</createdBy>
+<createdTime>2024-02-14 15:24:21 UTC</createdTime>
+<ownerDesignName>MEDS_SERD</ownerDesignName>
+<pk>true</pk>
+<indexState>Primary Constraint</indexState>
+<isSurrogateKey>false</isSurrogateKey>
+<indexColumnUsage>
+<colUsage columnID="89415254-94A4-B850-897D-D89C3757349C"/>
+</indexColumnUsage>
+</ind_PK_UK>
+</indexes>
+</Table>

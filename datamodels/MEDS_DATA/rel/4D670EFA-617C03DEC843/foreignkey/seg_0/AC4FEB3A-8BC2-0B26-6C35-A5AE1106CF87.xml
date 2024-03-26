@@ -1,0 +1,16 @@
+<?xml version = '1.0' encoding = 'UTF-8'?>
+<FKIndexAssociation class="oracle.dbtools.crest.model.design.relational.FKIndexAssociation" directorySegmentName="seg_0" id="AC4FEB3A-8BC2-0B26-6C35-A5AE1106CF87" containerWithKeyObject="75DF31F6-2102-1B94-B0E4-FB10DDDA7B34" localFKIndex="09597207-A2AE-8720-A7AE-0ACF6AEC5733" name="BIOLUMINESCENCE_DATA_MEDS_PROCESSING_JOB_FK">
+<createdBy>d.arboittedossantos</createdBy>
+<createdTime>2024-03-14 16:48:37 UTC</createdTime>
+<ownerDesignName>MEDS_DATA</ownerDesignName>
+<referredTableLongName>MEDSDATA.MEDS_PROCESSING_JOB</referredTableLongName>
+<deleteRule>NO ACTION</deleteRule>
+<referredTableID>ACE54DE6-EC3D-5E15-C6F5-FC246AEF129C</referredTableID>
+<keyObject>DA122C4D-BE53-5BF5-E5A0-7484199325C6</keyObject>
+<referredKeyID>DA122C4D-BE53-5BF5-E5A0-7484199325C6</referredKeyID>
+<mandatory>true</mandatory>
+<refColNames>JOB_NUMBER</refColNames>
+<transferable>true</transferable>
+<rely>false</rely>
+<columnDependencyConstraintGenerateInDDL>true</columnDependencyConstraintGenerateInDDL>
+</FKIndexAssociation>

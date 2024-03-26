@@ -1,0 +1,48 @@
+<?xml version = '1.0' encoding = 'UTF-8'?>
+<Table class="oracle.dbtools.crest.model.design.relational.Table" directorySegmentName="seg_0" id="1611D5CF-654F-AE2D-5DB0-F5EC08CC073B" name="DATA_MODE">
+<createdBy>darbo</createdBy>
+<createdTime>2024-02-14 13:57:46 UTC</createdTime>
+<ownerDesignName>MEDS_SERD</ownerDesignName>
+<ordsAlias>table_3</ordsAlias>
+<allowColumnReorder>false</allowColumnReorder>
+<existDependencyGenerateInDDl>true</existDependencyGenerateInDDl>
+<parsed>true</parsed>
+<columns itemClass="oracle.dbtools.crest.model.design.relational.Column">
+<Column name="DATA_MODE_CD" id="8B562246-9C43-68B7-25FC-CA2AC51915F3">
+<createdBy>darbo</createdBy>
+<createdTime>2024-02-14 13:57:46 UTC</createdTime>
+<commentInRDBMS><![CDATA[Data mode.]]></commentInRDBMS>
+<ownerDesignName>MEDS_SERD</ownerDesignName>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT019</logicalDatatype>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
+<autoIncrementCycle>false</autoIncrementCycle>
+</Column>
+<Column name="DATA_MODE_DESC" id="01605707-E192-2A86-CE86-EC3FFED118FC">
+<createdBy>darbo</createdBy>
+<createdTime>2024-02-14 13:57:46 UTC</createdTime>
+<commentInRDBMS><![CDATA[Data mode description.]]></commentInRDBMS>
+<ownerDesignName>MEDS_SERD</ownerDesignName>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT024</logicalDatatype>
+<dataTypeSize>100</dataTypeSize>
+<ownDataTypeParameters>100,,</ownDataTypeParameters>
+<autoIncrementCycle>false</autoIncrementCycle>
+</Column>
+</columns>
+<indexes itemClass="oracle.dbtools.crest.model.design.relational.Index">
+<ind_PK_UK id="079F8387-7718-CA1F-4490-4DFC1B16570D" name="DATA_MODE_PK">
+<createdBy>darbo</createdBy>
+<createdTime>2024-02-14 13:57:46 UTC</createdTime>
+<ownerDesignName>MEDS_SERD</ownerDesignName>
+<pk>true</pk>
+<indexState>Primary Constraint</indexState>
+<isSurrogateKey>false</isSurrogateKey>
+<indexColumnUsage>
+<colUsage columnID="8B562246-9C43-68B7-25FC-CA2AC51915F3"/>
+</indexColumnUsage>
+</ind_PK_UK>
+</indexes>
+</Table>

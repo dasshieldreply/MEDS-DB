@@ -1,0 +1,49 @@
+<?xml version = '1.0' encoding = 'UTF-8'?>
+<Table class="oracle.dbtools.crest.model.design.relational.Table" directorySegmentName="seg_0" id="750324BD-8026-DC19-98A6-FB7E2D3B9370" name="OBSERVATION_UNIT">
+<createdBy>darbo</createdBy>
+<createdTime>2024-02-14 13:52:02 UTC</createdTime>
+<ownerDesignName>MEDS_SERD</ownerDesignName>
+<ordsAlias>table_2</ordsAlias>
+<allowColumnReorder>false</allowColumnReorder>
+<existDependencyGenerateInDDl>true</existDependencyGenerateInDDl>
+<parsed>true</parsed>
+<columns itemClass="oracle.dbtools.crest.model.design.relational.Column">
+<Column name="OBSERVATION_UNIT_CD" id="17A73DEC-4C28-7279-CA6F-1865699E3784">
+<createdBy>darbo</createdBy>
+<createdTime>2024-02-14 13:52:02 UTC</createdTime>
+<commentInRDBMS><![CDATA[Refers to the units used in the original data.
+If Units code = 1 the corrections are given in imperial units, however all other data have been converted to metric units.]]></commentInRDBMS>
+<ownerDesignName>MEDS_SERD</ownerDesignName>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT019</logicalDatatype>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
+<autoIncrementCycle>false</autoIncrementCycle>
+</Column>
+<Column name="OBSERVATION_UNIT_DESC" id="1D8D8AF2-A966-6CA9-C532-76F5E24DD66B">
+<createdBy>darbo</createdBy>
+<createdTime>2024-02-14 13:52:02 UTC</createdTime>
+<commentInRDBMS><![CDATA[Observation unit description.]]></commentInRDBMS>
+<ownerDesignName>MEDS_SERD</ownerDesignName>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT024</logicalDatatype>
+<dataTypeSize>100</dataTypeSize>
+<ownDataTypeParameters>100,,</ownDataTypeParameters>
+<autoIncrementCycle>false</autoIncrementCycle>
+</Column>
+</columns>
+<indexes itemClass="oracle.dbtools.crest.model.design.relational.Index">
+<ind_PK_UK id="6F58F869-7354-8310-25BB-D34C76136896" name="OBSERVATION_UNIT_PK">
+<createdBy>darbo</createdBy>
+<createdTime>2024-02-14 13:52:02 UTC</createdTime>
+<ownerDesignName>MEDS_SERD</ownerDesignName>
+<pk>true</pk>
+<indexState>Primary Constraint</indexState>
+<isSurrogateKey>false</isSurrogateKey>
+<indexColumnUsage>
+<colUsage columnID="17A73DEC-4C28-7279-CA6F-1865699E3784"/>
+</indexColumnUsage>
+</ind_PK_UK>
+</indexes>
+</Table>

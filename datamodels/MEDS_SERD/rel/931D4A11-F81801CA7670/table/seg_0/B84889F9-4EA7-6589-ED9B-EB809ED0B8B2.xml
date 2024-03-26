@@ -1,0 +1,48 @@
+<?xml version = '1.0' encoding = 'UTF-8'?>
+<Table class="oracle.dbtools.crest.model.design.relational.Table" directorySegmentName="seg_0" id="B84889F9-4EA7-6589-ED9B-EB809ED0B8B2" name="CLOUD_COVERAGE">
+<createdBy>darbo</createdBy>
+<createdTime>2024-02-14 14:06:02 UTC</createdTime>
+<ownerDesignName>MEDS_SERD</ownerDesignName>
+<ordsAlias>table_3</ordsAlias>
+<allowColumnReorder>false</allowColumnReorder>
+<existDependencyGenerateInDDl>true</existDependencyGenerateInDDl>
+<parsed>true</parsed>
+<columns itemClass="oracle.dbtools.crest.model.design.relational.Column">
+<Column name="CLOUD_COVERAGE_CD" id="A0E4FA86-C2B5-8CC4-386D-8EA76539DA0E">
+<createdBy>darbo</createdBy>
+<createdTime>2024-02-14 14:06:02 UTC</createdTime>
+<commentInRDBMS><![CDATA[Cloud coverage, WMO code 2700.]]></commentInRDBMS>
+<ownerDesignName>MEDS_SERD</ownerDesignName>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT019</logicalDatatype>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
+<autoIncrementCycle>false</autoIncrementCycle>
+</Column>
+<Column name="CLOUD_COVERAGE_DESC" id="3678F907-213E-7D04-F893-47E6ADE874E1">
+<createdBy>darbo</createdBy>
+<createdTime>2024-02-14 14:06:02 UTC</createdTime>
+<commentInRDBMS><![CDATA[Cloud coverage  description.]]></commentInRDBMS>
+<ownerDesignName>MEDS_SERD</ownerDesignName>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT024</logicalDatatype>
+<dataTypeSize>100</dataTypeSize>
+<ownDataTypeParameters>100,,</ownDataTypeParameters>
+<autoIncrementCycle>false</autoIncrementCycle>
+</Column>
+</columns>
+<indexes itemClass="oracle.dbtools.crest.model.design.relational.Index">
+<ind_PK_UK id="AF6326CB-1F3A-78B6-C197-D8FA50AA1CA8" name="CLOUD_COVERAGE_PK">
+<createdBy>darbo</createdBy>
+<createdTime>2024-02-14 14:06:02 UTC</createdTime>
+<ownerDesignName>MEDS_SERD</ownerDesignName>
+<pk>true</pk>
+<indexState>Primary Constraint</indexState>
+<isSurrogateKey>false</isSurrogateKey>
+<indexColumnUsage>
+<colUsage columnID="A0E4FA86-C2B5-8CC4-386D-8EA76539DA0E"/>
+</indexColumnUsage>
+</ind_PK_UK>
+</indexes>
+</Table>

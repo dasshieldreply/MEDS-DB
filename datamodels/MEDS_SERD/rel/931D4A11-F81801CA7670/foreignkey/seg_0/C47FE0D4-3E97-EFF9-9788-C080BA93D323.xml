@@ -1,0 +1,16 @@
+<?xml version = '1.0' encoding = 'UTF-8'?>
+<FKIndexAssociation class="oracle.dbtools.crest.model.design.relational.FKIndexAssociation" directorySegmentName="seg_0" id="C47FE0D4-3E97-EFF9-9788-C080BA93D323" containerWithKeyObject="85E06FE8-87CC-24E5-6567-CF157E06B47C" localFKIndex="895C1C0D-569A-579A-A777-6E8248AEAC20" name="SERD_HEADER_WEATHER_FK">
+<createdBy>darbo</createdBy>
+<createdTime>2024-02-14 14:05:16 UTC</createdTime>
+<ownerDesignName>MEDS_SERD</ownerDesignName>
+<referredTableLongName>WEATHER</referredTableLongName>
+<deleteRule>NO ACTION</deleteRule>
+<referredTableID>E2732295-1AB8-8F9D-A223-7C5CEC0D66D6</referredTableID>
+<keyObject>86DFB5C5-3678-D773-F631-8EAF2A73BA71</keyObject>
+<referredKeyID>86DFB5C5-3678-D773-F631-8EAF2A73BA71</referredKeyID>
+<mandatory>true</mandatory>
+<refColNames>WEATHER_CD</refColNames>
+<transferable>true</transferable>
+<rely>false</rely>
+<columnDependencyConstraintGenerateInDDL>true</columnDependencyConstraintGenerateInDDL>
+</FKIndexAssociation>

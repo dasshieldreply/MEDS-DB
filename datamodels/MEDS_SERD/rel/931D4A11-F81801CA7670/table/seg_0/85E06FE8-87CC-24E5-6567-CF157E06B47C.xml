@@ -1,0 +1,925 @@
+<?xml version = '1.0' encoding = 'UTF-8'?>
+<Table class="oracle.dbtools.crest.model.design.relational.Table" directorySegmentName="seg_0" id="85E06FE8-87CC-24E5-6567-CF157E06B47C" name="SERD_HEADER">
+<createdBy>darbo</createdBy>
+<createdTime>2024-02-13 13:04:46 UTC</createdTime>
+<ownerDesignName>MEDS_SERD</ownerDesignName>
+<ordsAlias>table_1</ordsAlias>
+<allowColumnReorder>false</allowColumnReorder>
+<existDependencyGenerateInDDl>true</existDependencyGenerateInDDl>
+<parsed>true</parsed>
+<columns itemClass="oracle.dbtools.crest.model.design.relational.Column">
+<Column name="RECORD_ID" id="8E66D519-C267-38A8-F140-BE27089CC7F6">
+<createdBy>darbo</createdBy>
+<createdTime>2024-02-13 13:06:00 UTC</createdTime>
+<commentInRDBMS><![CDATA[Record identifier.]]></commentInRDBMS>
+<notes><![CDATA[Start position 1]]></notes>
+<ownerDesignName>MEDS_SERD</ownerDesignName>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT019</logicalDatatype>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
+<autoIncrementColumn>true</autoIncrementColumn>
+<identityColumn>true</identityColumn>
+<autoIncrementCycle>false</autoIncrementCycle>
+</Column>
+<Column name="RECORD_TP" id="4BF7475D-0D1C-F10B-815C-76A9C4BA7258">
+<createdBy>darbo</createdBy>
+<createdTime>2024-02-13 13:09:23 UTC</createdTime>
+<commentInRDBMS><![CDATA[Record type, Main = 2, Continuation = 3.]]></commentInRDBMS>
+<notes><![CDATA[Start position 5]]></notes>
+<ownerDesignName>MEDS_SERD</ownerDesignName>
+<nullsAllowed>true</nullsAllowed>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT019</logicalDatatype>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
+<autoIncrementCycle>false</autoIncrementCycle>
+</Column>
+<Column name="SEQUENCE_NO" id="4E18E3FB-77AC-7EFB-45DD-4091B667C068">
+<createdBy>darbo</createdBy>
+<createdTime>2024-02-13 13:10:40 UTC</createdTime>
+<commentInRDBMS><![CDATA[Sequential record number, 01-99.]]></commentInRDBMS>
+<notes><![CDATA[Start position 6]]></notes>
+<ownerDesignName>MEDS_SERD</ownerDesignName>
+<nullsAllowed>true</nullsAllowed>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT019</logicalDatatype>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
+<autoIncrementCycle>false</autoIncrementCycle>
+</Column>
+<Column name="DATA_ID" id="7994CD80-BBD9-E6D2-5F8F-591C441ECFC4">
+<createdBy>darbo</createdBy>
+<createdTime>2024-02-13 13:12:14 UTC</createdTime>
+<commentInRDBMS><![CDATA[Data Identifier, used for data management by the HO, usually a space.]]></commentInRDBMS>
+<notes><![CDATA[Start position 8]]></notes>
+<ownerDesignName>MEDS_SERD</ownerDesignName>
+<nullsAllowed>true</nullsAllowed>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT025</logicalDatatype>
+<dataTypeSize>1</dataTypeSize>
+<ownDataTypeParameters>1,,</ownDataTypeParameters>
+<autoIncrementCycle>false</autoIncrementCycle>
+</Column>
+<Column name="DATA_USE_CD" id="FD804B09-80BA-3B71-D611-AF2AFFBC0242">
+<createdBy>darbo</createdBy>
+<createdTime>2024-02-13 13:13:14 UTC</createdTime>
+<commentInRDBMS><![CDATA[Data Use code (DUC), used for data management by the HO.]]></commentInRDBMS>
+<notes><![CDATA[Start position 9]]></notes>
+<ownerDesignName>MEDS_SERD</ownerDesignName>
+<nullsAllowed>true</nullsAllowed>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT025</logicalDatatype>
+<dataTypeSize>1</dataTypeSize>
+<ownDataTypeParameters>1,,</ownDataTypeParameters>
+<autoIncrementCycle>false</autoIncrementCycle>
+</Column>
+<Column name="FILE_CD" id="44DC46F3-B70E-A92A-0E34-643C0AE400FC">
+<createdBy>darbo</createdBy>
+<createdTime>2024-02-13 13:14:08 UTC</createdTime>
+<commentInRDBMS><![CDATA[File code, used for data management by the HO.]]></commentInRDBMS>
+<notes><![CDATA[Start position 10]]></notes>
+<ownerDesignName>MEDS_SERD</ownerDesignName>
+<nullsAllowed>true</nullsAllowed>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT025</logicalDatatype>
+<dataTypeSize>2</dataTypeSize>
+<ownDataTypeParameters>2,,</ownDataTypeParameters>
+<autoIncrementCycle>false</autoIncrementCycle>
+</Column>
+<Column name="MARSDEN_SQUARE_VL" id="96AA1474-AA0A-CE46-68DE-5B649AB744DE">
+<createdBy>darbo</createdBy>
+<createdTime>2024-02-13 13:16:22 UTC</createdTime>
+<commentInRDBMS><![CDATA[Marsden square, generated from the geographicals.]]></commentInRDBMS>
+<notes><![CDATA[Start position 12]]></notes>
+<ownerDesignName>MEDS_SERD</ownerDesignName>
+<nullsAllowed>true</nullsAllowed>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT019</logicalDatatype>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
+<autoIncrementCycle>false</autoIncrementCycle>
+</Column>
+<Column name="DEGREE_SQUARE_VL" id="0A71A774-82A5-8C02-7E27-2EF2BC70A6F7">
+<createdBy>darbo</createdBy>
+<createdTime>2024-02-13 13:16:57 UTC</createdTime>
+<commentInRDBMS><![CDATA[Degree square, generated from the latitude and longitude degrees.]]></commentInRDBMS>
+<notes><![CDATA[Start position 15]]></notes>
+<ownerDesignName>MEDS_SERD</ownerDesignName>
+<nullsAllowed>true</nullsAllowed>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT019</logicalDatatype>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
+<autoIncrementCycle>false</autoIncrementCycle>
+</Column>
+<Column name="GEO_POSITION_DESC" id="CFC13F87-5657-6591-91DF-966909C62766">
+<createdBy>darbo</createdBy>
+<createdTime>2024-02-13 13:18:41 UTC</createdTime>
+<commentInRDBMS><![CDATA[GEOPOSITIONDESC in degrees and minutes (to tenths), South and West shown as negative values.
+]]></commentInRDBMS>
+<notes><![CDATA[Start position 17]]></notes>
+<ownerDesignName>MEDS_SERD</ownerDesignName>
+<nullsAllowed>true</nullsAllowed>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT024</logicalDatatype>
+<dataTypeSize>15</dataTypeSize>
+<ownDataTypeParameters>15,,</ownDataTypeParameters>
+<autoIncrementCycle>false</autoIncrementCycle>
+</Column>
+<Column name="QUADRANT_CD" id="732BF464-E30C-0C1B-0F03-7643118A1CD0">
+<createdBy>darbo</createdBy>
+<createdTime>2024-02-13 13:19:38 UTC</createdTime>
+<commentInRDBMS><![CDATA[Quadrant, ICES code (NE = 0, SE = 2, SW = 3 & NW = 1).]]></commentInRDBMS>
+<notes><![CDATA[Start position 32]]></notes>
+<ownerDesignName>MEDS_SERD</ownerDesignName>
+<nullsAllowed>true</nullsAllowed>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT025</logicalDatatype>
+<dataTypeSize>1</dataTypeSize>
+<ownDataTypeParameters>1,,</ownDataTypeParameters>
+<autoIncrementCycle>false</autoIncrementCycle>
+</Column>
+<Column name="POSITION_DETERMINATION_CD" id="D61682F2-FFB5-FC5B-32D7-C7684C4180FA">
+<createdBy>darbo</createdBy>
+<createdTime>2024-02-13 13:22:26 UTC</createdTime>
+<commentInRDBMS><![CDATA[Position Determination, MIAS code for the fixing device used as the prime navigational aid in determining the position of the station.]]></commentInRDBMS>
+<notes><![CDATA[Start position 33]]></notes>
+<ownerDesignName>MEDS_SERD</ownerDesignName>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT019</logicalDatatype>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
+<autoIncrementCycle>false</autoIncrementCycle>
+<associations>
+<colAssociation fkAssociation="D08F698B-5A45-1151-7AB2-8FA6116479C9" referredColumn="55488733-15B3-05E2-12E7-49D22B9E956D"/>
+</associations>
+</Column>
+<Column name="POSITION_ACCURACY_CD" id="92CBFE0E-7B4C-5D7C-E008-257A349C2FB3">
+<createdBy>darbo</createdBy>
+<createdTime>2024-02-13 13:29:49 UTC</createdTime>
+<commentInRDBMS><![CDATA[Position Accuracy code. The estimated drift in station position or the estimated accuracy in the determination of the position of the station, whichever is the greater.]]></commentInRDBMS>
+<notes><![CDATA[Start position 34]]></notes>
+<ownerDesignName>MEDS_SERD</ownerDesignName>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT019</logicalDatatype>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
+<autoIncrementCycle>false</autoIncrementCycle>
+<associations>
+<colAssociation fkAssociation="F7838B47-C112-2E58-1D2E-956943C478C3" referredColumn="51E3CF96-61A6-E83F-0521-9D23EB32442C"/>
+</associations>
+</Column>
+<Column name="POSITION_ADDITIONAL_REF" id="06FCE60A-D05B-8023-11FF-C40991973097">
+<createdBy>darbo</createdBy>
+<createdTime>2024-02-13 13:30:39 UTC</createdTime>
+<commentInRDBMS><![CDATA[Additional positional reference.]]></commentInRDBMS>
+<notes><![CDATA[Start position 35]]></notes>
+<ownerDesignName>MEDS_SERD</ownerDesignName>
+<nullsAllowed>true</nullsAllowed>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT024</logicalDatatype>
+<dataTypeSize>12</dataTypeSize>
+<ownDataTypeParameters>12,,</ownDataTypeParameters>
+<autoIncrementCycle>false</autoIncrementCycle>
+</Column>
+<Column name="ARCHIVE_YEAR" id="B5277DB6-67A4-D752-555B-56CBE1B04499">
+<createdBy>darbo</createdBy>
+<createdTime>2024-02-13 13:31:24 UTC</createdTime>
+<commentInRDBMS><![CDATA[Archive Year. Field used for data management by HO.]]></commentInRDBMS>
+<notes><![CDATA[Start position 47]]></notes>
+<ownerDesignName>MEDS_SERD</ownerDesignName>
+<nullsAllowed>true</nullsAllowed>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT019</logicalDatatype>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
+<autoIncrementCycle>false</autoIncrementCycle>
+</Column>
+<Column name="OBSERVATION_DT" id="FFC3A734-B713-0D5D-0B81-061449E40B2F">
+<createdBy>darbo</createdBy>
+<createdTime>2024-02-13 13:35:34 UTC</createdTime>
+<commentInRDBMS><![CDATA[Date observation collected.]]></commentInRDBMS>
+<notes><![CDATA[Start position 49]]></notes>
+<ownerDesignName>MEDS_SERD</ownerDesignName>
+<nullsAllowed>true</nullsAllowed>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT007</logicalDatatype>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
+<autoIncrementCycle>false</autoIncrementCycle>
+</Column>
+<Column name="OBSERVATION_TM" id="704746D3-1211-5028-0194-3336F80F9ABF">
+<createdBy>darbo</createdBy>
+<createdTime>2024-02-13 13:36:52 UTC</createdTime>
+<commentInRDBMS><![CDATA[Time observation collected (Greenwich Mean Time).]]></commentInRDBMS>
+<notes><![CDATA[Start position 57]]></notes>
+<ownerDesignName>MEDS_SERD</ownerDesignName>
+<nullsAllowed>true</nullsAllowed>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT014</logicalDatatype>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
+<autoIncrementCycle>false</autoIncrementCycle>
+</Column>
+<Column name="COUNTRY_CD" id="045D46FA-405D-A146-3F5A-19920F4DD6A2">
+<createdBy>darbo</createdBy>
+<createdTime>2024-02-13 13:38:22 UTC</createdTime>
+<commentInRDBMS><![CDATA[Country code (ICES).]]></commentInRDBMS>
+<notes><![CDATA[Start position 61]]></notes>
+<ownerDesignName>MEDS_SERD</ownerDesignName>
+<nullsAllowed>true</nullsAllowed>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT025</logicalDatatype>
+<dataTypeSize>2</dataTypeSize>
+<ownDataTypeParameters>2,,</ownDataTypeParameters>
+<autoIncrementCycle>false</autoIncrementCycle>
+</Column>
+<Column name="SHIP_NO" id="EC666C18-3182-E3E1-C3B3-29D654EC0295">
+<createdBy>darbo</createdBy>
+<createdTime>2024-02-13 13:43:50 UTC</createdTime>
+<commentInRDBMS><![CDATA[Ship number, ICES code is used, where possible, for data processed
+at Taunton.
+
+]]></commentInRDBMS>
+<notes><![CDATA[Start position 63]]></notes>
+<ownerDesignName>MEDS_SERD</ownerDesignName>
+<nullsAllowed>true</nullsAllowed>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT025</logicalDatatype>
+<dataTypeSize>2</dataTypeSize>
+<ownDataTypeParameters>2,,</ownDataTypeParameters>
+<autoIncrementCycle>false</autoIncrementCycle>
+</Column>
+<Column name="SHIP_NO_CD" id="5C0B88E0-CA74-30A1-3D86-210D0F8F3E8F">
+<createdBy>darbo</createdBy>
+<createdTime>2024-02-13 13:44:54 UTC</createdTime>
+<commentInRDBMS><![CDATA[Ship number code, if 1 inserted then the Ship number is ICES code.]]></commentInRDBMS>
+<notes><![CDATA[Start position 65]]></notes>
+<ownerDesignName>MEDS_SERD</ownerDesignName>
+<nullsAllowed>true</nullsAllowed>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT019</logicalDatatype>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
+<autoIncrementCycle>false</autoIncrementCycle>
+</Column>
+<Column name="ORIGINATOR_CRUISE_NO" id="B1E3DC83-7C71-36B2-E89E-A636E7E6EB99">
+<createdBy>darbo</createdBy>
+<createdTime>2024-02-13 13:45:38 UTC</createdTime>
+<commentInRDBMS><![CDATA[Originator's Cruise number.]]></commentInRDBMS>
+<notes><![CDATA[Start position 66]]></notes>
+<ownerDesignName>MEDS_SERD</ownerDesignName>
+<nullsAllowed>true</nullsAllowed>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT024</logicalDatatype>
+<dataTypeSize>8</dataTypeSize>
+<ownDataTypeParameters>8,,</ownDataTypeParameters>
+<autoIncrementCycle>false</autoIncrementCycle>
+</Column>
+<Column name="INSTITUTE_DESCR" id="1F7C08D2-1166-E7C2-699C-1048ECF3DBF5">
+<createdBy>darbo</createdBy>
+<createdTime>2024-02-14 14:55:56 UTC</createdTime>
+<commentInRDBMS><![CDATA[Institute description.]]></commentInRDBMS>
+<notes><![CDATA[Start position 74]]></notes>
+<ownerDesignName>MEDS_SERD</ownerDesignName>
+<nullsAllowed>true</nullsAllowed>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT024</logicalDatatype>
+<dataTypeSize>6</dataTypeSize>
+<ownDataTypeParameters>6,,</ownDataTypeParameters>
+<autoIncrementCycle>false</autoIncrementCycle>
+</Column>
+<Column name="INSTITUTE_NO" id="5D1426EE-5BAF-A465-5D91-40FD20712DF3">
+<createdBy>darbo</createdBy>
+<createdTime>2024-02-13 13:48:27 UTC</createdTime>
+<commentInRDBMS><![CDATA[Institute number, MIAS code normally used:
+001 199 	Government or Government aided Organisation/Laboratories.
+200 399 	University/Polytechnic Departments.
+400 499 	Commercial Organisations.
+599		Unspecified British Institute.
+999		Unspecified Foreign Institute.
+(016 is the Hydrographic Office, Taunton)]]></commentInRDBMS>
+<notes><![CDATA[Start position 80]]></notes>
+<ownerDesignName>MEDS_SERD</ownerDesignName>
+<nullsAllowed>true</nullsAllowed>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT019</logicalDatatype>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
+<autoIncrementCycle>false</autoIncrementCycle>
+</Column>
+<Column name="INSTITUTE_NO_CD" id="36563322-9FA1-27D5-4FBA-B051F7B81E33">
+<createdBy>darbo</createdBy>
+<createdTime>2024-02-13 13:49:17 UTC</createdTime>
+<commentInRDBMS><![CDATA[Institute number code, if it contains 1 it indicates the MIAS code has been used.]]></commentInRDBMS>
+<notes><![CDATA[Start position 81]]></notes>
+<ownerDesignName>MEDS_SERD</ownerDesignName>
+<nullsAllowed>true</nullsAllowed>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT019</logicalDatatype>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
+<autoIncrementCycle>false</autoIncrementCycle>
+</Column>
+<Column name="LAND_CHECK_IND" id="1CBD52EA-9CA1-8345-F7BB-B85BFFA3E921">
+<createdBy>darbo</createdBy>
+<createdTime>2024-02-13 13:57:39 UTC</createdTime>
+<commentInRDBMS><![CDATA[Land check indicator. Field used for data management by H0.]]></commentInRDBMS>
+<notes><![CDATA[Start position 94]]></notes>
+<ownerDesignName>MEDS_SERD</ownerDesignName>
+<nullsAllowed>true</nullsAllowed>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT025</logicalDatatype>
+<dataTypeSize>1</dataTypeSize>
+<ownDataTypeParameters>1,,</ownDataTypeParameters>
+<autoIncrementCycle>false</autoIncrementCycle>
+</Column>
+<Column name="DEPTH_LEVEL_NO" id="206B237F-DA46-C447-6290-A164DCE444F4">
+<createdBy>darbo</createdBy>
+<createdTime>2024-02-13 14:10:45 UTC</createdTime>
+<commentInRDBMS><![CDATA[Number of depth levels. Indicates how many depth levels are held on the record.]]></commentInRDBMS>
+<notes><![CDATA[Start position 86]]></notes>
+<ownerDesignName>MEDS_SERD</ownerDesignName>
+<nullsAllowed>true</nullsAllowed>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT019</logicalDatatype>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
+<autoIncrementCycle>false</autoIncrementCycle>
+</Column>
+<Column name="SEABED_DEPTH_VL" id="70057B31-0299-8226-F0A2-7247AB190CB3">
+<createdBy>darbo</createdBy>
+<createdTime>2024-02-14 15:06:43 UTC</createdTime>
+<commentInRDBMS><![CDATA[Depth to Seabed.]]></commentInRDBMS>
+<notes><![CDATA[Start position 88]]></notes>
+<ownerDesignName>MEDS_SERD</ownerDesignName>
+<nullsAllowed>true</nullsAllowed>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT019</logicalDatatype>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
+<autoIncrementCycle>false</autoIncrementCycle>
+</Column>
+<Column name="MIN_OBSERVATION_DEPTH_VL" id="0CA47C47-8202-785A-720A-ADD30F8B008E">
+<createdBy>darbo</createdBy>
+<createdTime>2024-02-13 14:17:58 UTC</createdTime>
+<commentInRDBMS><![CDATA[Minimum depth of observation.]]></commentInRDBMS>
+<notes><![CDATA[Start position 93]]></notes>
+<ownerDesignName>MEDS_SERD</ownerDesignName>
+<nullsAllowed>true</nullsAllowed>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT019</logicalDatatype>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
+<autoIncrementCycle>false</autoIncrementCycle>
+</Column>
+<Column name="MAX_OBSERVATION_DEPTH_VL" id="5265C185-70BC-1BFB-D212-98F42787AED3">
+<createdBy>darbo</createdBy>
+<createdTime>2024-02-13 14:17:58 UTC</createdTime>
+<commentInRDBMS><![CDATA[Maximum depth of observation.]]></commentInRDBMS>
+<notes><![CDATA[Start position 97]]></notes>
+<ownerDesignName>MEDS_SERD</ownerDesignName>
+<nullsAllowed>true</nullsAllowed>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT019</logicalDatatype>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
+<autoIncrementCycle>false</autoIncrementCycle>
+</Column>
+<Column name="DEPTH_CORRECTION_VL" id="7E524667-B3FE-7A83-7FF7-B529390830ED">
+<createdBy>darbo</createdBy>
+<createdTime>2024-02-13 14:18:53 UTC</createdTime>
+<commentInRDBMS><![CDATA[Depth correction which have been applied to the observed values [±nn ;  sign, tens, units (of metres)].]]></commentInRDBMS>
+<notes><![CDATA[Start position 101]]></notes>
+<ownerDesignName>MEDS_SERD</ownerDesignName>
+<nullsAllowed>true</nullsAllowed>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT019</logicalDatatype>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
+<autoIncrementCycle>false</autoIncrementCycle>
+</Column>
+<Column name="TEMPERATURE_CORRECTION_VL" id="8FF2A038-2B2E-7171-4542-74E3F540C711">
+<createdBy>darbo</createdBy>
+<createdTime>2024-02-14 10:46:43 UTC</createdTime>
+<commentInRDBMS><![CDATA[Temperature correction which have been applied to the observed values [±.nn ;  sign, tenths, hundredths (of degree)].
+If the instrument code is 31(MBT) the format of the field is: n.n; integer, tenths(of degree).]]></commentInRDBMS>
+<notes><![CDATA[105]]></notes>
+<ownerDesignName>MEDS_SERD</ownerDesignName>
+<nullsAllowed>true</nullsAllowed>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT019</logicalDatatype>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
+<autoIncrementCycle>false</autoIncrementCycle>
+</Column>
+<Column name="SALINITY_CORRECTION_VL" id="86A54351-1846-20E3-41FD-222A805C8440">
+<createdBy>darbo</createdBy>
+<createdTime>2024-02-14 10:47:24 UTC</createdTime>
+<commentInRDBMS><![CDATA[Salinity correction which have been applied to the observed values [±.nnn ;  sign, tenths, hundredths, thousandths (of psu)].]]></commentInRDBMS>
+<notes><![CDATA[Start position 108]]></notes>
+<ownerDesignName>MEDS_SERD</ownerDesignName>
+<nullsAllowed>true</nullsAllowed>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT019</logicalDatatype>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
+<autoIncrementCycle>false</autoIncrementCycle>
+</Column>
+<Column name="SOUND_VELOCITY_CORRECTION_VL" id="D8B1CD91-4E17-14AC-9FA6-9C5874F646BA">
+<createdBy>darbo</createdBy>
+<createdTime>2024-02-14 10:49:32 UTC</createdTime>
+<commentInRDBMS><![CDATA[Sound velocity correction which have been applied to the observed values [±n.n ;  sign, units, tenths (of m/s)].
+]]></commentInRDBMS>
+<notes><![CDATA[Start position 112]]></notes>
+<ownerDesignName>MEDS_SERD</ownerDesignName>
+<nullsAllowed>true</nullsAllowed>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT019</logicalDatatype>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
+<autoIncrementCycle>false</autoIncrementCycle>
+</Column>
+<Column name="OBSERVATION_UNIT_CD" id="2E8AB5E0-CA1F-EE53-F1CC-C2332F032F1D">
+<createdBy>darbo</createdBy>
+<createdTime>2024-02-14 10:52:43 UTC</createdTime>
+<commentInRDBMS><![CDATA[Refers to the units used in the original data.
+If Units code = 1 the corrections are given in imperial units, however all other data have been converted to metric units.]]></commentInRDBMS>
+<notes><![CDATA[Start position 115]]></notes>
+<ownerDesignName>MEDS_SERD</ownerDesignName>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT019</logicalDatatype>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
+<autoIncrementCycle>false</autoIncrementCycle>
+<associations>
+<colAssociation fkAssociation="992F4439-0144-A699-2E72-4627B2AE00EC" referredColumn="17A73DEC-4C28-7279-CA6F-1865699E3784"/>
+</associations>
+</Column>
+<Column name="INSTRUMENT_CD" id="EAD3605F-9DC8-38F2-09FB-250F71038C07">
+<createdBy>darbo</createdBy>
+<createdTime>2024-02-14 10:54:54 UTC</createdTime>
+<notes><![CDATA[Start position 116]]></notes>
+<ownerDesignName>MEDS_SERD</ownerDesignName>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT019</logicalDatatype>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
+<previousColumn>false</previousColumn>
+<autoIncrementCycle>false</autoIncrementCycle>
+<associations>
+<colAssociation fkAssociation="687ADDB8-9830-09DF-C60D-88FDF8C1470E" referredColumn="717AF847-7ABD-7390-1F85-4F512D4C22D3"/>
+</associations>
+</Column>
+<Column name="DATA_TYPE_CD" id="A9F008BC-688E-8AE3-E145-00D58F30E49B">
+<createdBy>darbo</createdBy>
+<createdTime>2024-02-14 11:02:18 UTC</createdTime>
+<commentInRDBMS><![CDATA[Data type, MIAS code.]]></commentInRDBMS>
+<notes><![CDATA[Start position 118]]></notes>
+<ownerDesignName>MEDS_SERD</ownerDesignName>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT019</logicalDatatype>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
+<autoIncrementCycle>false</autoIncrementCycle>
+<associations>
+<colAssociation fkAssociation="0E1BB298-6760-8CE7-0D5F-2162B037CD02" referredColumn="2D7B301B-0DFE-0869-7A46-45F57A0308D0"/>
+</associations>
+</Column>
+<Column name="DATA_MODE_CD" id="B36C085A-E0AE-3554-11D0-7110E55A4562">
+<createdBy>darbo</createdBy>
+<createdTime>2024-02-14 11:02:18 UTC</createdTime>
+<commentInRDBMS><![CDATA[Data mode.]]></commentInRDBMS>
+<notes><![CDATA[Start position 119]]></notes>
+<ownerDesignName>MEDS_SERD</ownerDesignName>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT019</logicalDatatype>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
+<autoIncrementCycle>false</autoIncrementCycle>
+<associations>
+<colAssociation fkAssociation="2CA4398F-8860-BCD1-B796-A24180C7986C" referredColumn="8B562246-9C43-68B7-25FC-CA2AC51915F3"/>
+</associations>
+</Column>
+<Column name="DATA_METHOD_CD" id="EA625CDF-2A24-6B42-D4EC-59D9C2753C25">
+<createdBy>darbo</createdBy>
+<createdTime>2024-02-14 11:02:18 UTC</createdTime>
+<commentInRDBMS><![CDATA[Data capture method code.]]></commentInRDBMS>
+<notes><![CDATA[Start position 120]]></notes>
+<ownerDesignName>MEDS_SERD</ownerDesignName>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT019</logicalDatatype>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
+<autoIncrementCycle>false</autoIncrementCycle>
+<associations>
+<colAssociation fkAssociation="FE431F06-C1CE-8A04-E582-C1EF89AB9C09" referredColumn="45185ADC-F2F2-E406-F5C3-BF3201DF8235"/>
+</associations>
+</Column>
+<Column name="WIND_DIRECTION_CD" id="B73F8E15-BE8C-5723-DCD1-B32DCC0F5AF7">
+<createdBy>darbo</createdBy>
+<createdTime>2024-02-14 13:33:27 UTC</createdTime>
+<commentInRDBMS><![CDATA[Wind direction, WMO code 0877, true direction, in tenths of degrees from which the wind is blowing]]></commentInRDBMS>
+<notes><![CDATA[Start position 121]]></notes>
+<ownerDesignName>MEDS_SERD</ownerDesignName>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT019</logicalDatatype>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
+<previousColumn>false</previousColumn>
+<autoIncrementCycle>false</autoIncrementCycle>
+<associations>
+<colAssociation fkAssociation="49F05D65-2461-D1D7-775F-4BEC82CC07A2" referredColumn="2BE0D5E1-804B-C97C-A052-2065315A8222"/>
+</associations>
+</Column>
+<Column name="WIND_SPEED_VL" id="173272EF-D050-0686-D79E-20257D75313A">
+<createdBy>darbo</createdBy>
+<createdTime>2024-02-14 13:36:17 UTC</createdTime>
+<commentInRDBMS><![CDATA[Wind speed in knots.]]></commentInRDBMS>
+<notes><![CDATA[Start position 123]]></notes>
+<ownerDesignName>MEDS_SERD</ownerDesignName>
+<nullsAllowed>true</nullsAllowed>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT019</logicalDatatype>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
+<autoIncrementCycle>false</autoIncrementCycle>
+</Column>
+<Column name="DRY_AIR_TEMPERATURE_VL" id="26EA6201-D911-BB10-A26F-BAF5AD4C1095">
+<createdBy>darbo</createdBy>
+<createdTime>2024-02-14 13:36:17 UTC</createdTime>
+<commentInRDBMS><![CDATA[Dry air temperature.]]></commentInRDBMS>
+<notes><![CDATA[Start position 125]]></notes>
+<ownerDesignName>MEDS_SERD</ownerDesignName>
+<nullsAllowed>true</nullsAllowed>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT019</logicalDatatype>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
+<autoIncrementCycle>false</autoIncrementCycle>
+</Column>
+<Column name="WET_AIR_TEMPERATURE_VL" id="F240965A-01C1-4C73-DFBF-2D160A393462">
+<createdBy>darbo</createdBy>
+<createdTime>2024-02-14 13:36:47 UTC</createdTime>
+<commentInRDBMS><![CDATA[Wet  air temperature.]]></commentInRDBMS>
+<notes><![CDATA[Start position 129]]></notes>
+<ownerDesignName>MEDS_SERD</ownerDesignName>
+<nullsAllowed>true</nullsAllowed>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT019</logicalDatatype>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
+<autoIncrementCycle>false</autoIncrementCycle>
+</Column>
+<Column name="WEATHER_CD" id="ABB0F2C7-65D9-BDE6-C405-8B25DFAA5646">
+<createdBy>darbo</createdBy>
+<createdTime>2024-02-14 13:37:14 UTC</createdTime>
+<commentInRDBMS><![CDATA[Weather code.]]></commentInRDBMS>
+<notes><![CDATA[Start position 133]]></notes>
+<ownerDesignName>MEDS_SERD</ownerDesignName>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT019</logicalDatatype>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
+<autoIncrementCycle>false</autoIncrementCycle>
+<associations>
+<colAssociation fkAssociation="C47FE0D4-3E97-EFF9-9788-C080BA93D323" referredColumn="59848FC8-6807-F96F-FFE4-9059D897334B"/>
+</associations>
+</Column>
+<Column name="CLOUD_COVERAGE_CD" id="2D085FC3-DD02-E25C-D13D-9DFDA0BE3656">
+<createdBy>darbo</createdBy>
+<createdTime>2024-02-14 13:39:59 UTC</createdTime>
+<commentInRDBMS><![CDATA[Cloud coverage, WMO code 2700.]]></commentInRDBMS>
+<notes><![CDATA[Start position 134]]></notes>
+<ownerDesignName>MEDS_SERD</ownerDesignName>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT019</logicalDatatype>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
+<autoIncrementCycle>false</autoIncrementCycle>
+<associations>
+<colAssociation fkAssociation="643009CA-09B0-FEFA-745D-296C469A0D60" referredColumn="A0E4FA86-C2B5-8CC4-386D-8EA76539DA0E"/>
+</associations>
+</Column>
+<Column name="SEA_STATE_CD" id="450DCDB8-77A1-6D52-5734-D2B8246E020E">
+<createdBy>darbo</createdBy>
+<createdTime>2024-02-14 13:43:30 UTC</createdTime>
+<notes><![CDATA[Start position 135]]></notes>
+<ownerDesignName>MEDS_SERD</ownerDesignName>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT019</logicalDatatype>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
+<previousColumn>false</previousColumn>
+<autoIncrementCycle>false</autoIncrementCycle>
+<associations>
+<colAssociation fkAssociation="9FCB7423-78CC-02D8-9FCF-105F7A5E7100" referredColumn="3F84290C-0EDA-651A-6D05-698C5F92736A"/>
+</associations>
+</Column>
+<Column name="WAVE_PERIOD_TM" id="BD6394AA-F09A-A402-8299-788EFA4FEF47">
+<createdBy>darbo</createdBy>
+<createdTime>2024-02-14 14:20:52 UTC</createdTime>
+<commentInRDBMS><![CDATA[Wave period, in seconds.]]></commentInRDBMS>
+<notes><![CDATA[Start position 136]]></notes>
+<ownerDesignName>MEDS_SERD</ownerDesignName>
+<nullsAllowed>true</nullsAllowed>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT019</logicalDatatype>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
+<autoIncrementCycle>false</autoIncrementCycle>
+</Column>
+<Column name="WAVE_HEIGHT_VL" id="9EFB7373-A136-173A-4D23-A9B6888C4455">
+<createdBy>darbo</createdBy>
+<createdTime>2024-02-14 14:20:52 UTC</createdTime>
+<commentInRDBMS><![CDATA[Wave height, in half metres.]]></commentInRDBMS>
+<notes><![CDATA[Start position 138]]></notes>
+<ownerDesignName>MEDS_SERD</ownerDesignName>
+<nullsAllowed>true</nullsAllowed>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT019</logicalDatatype>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
+<autoIncrementCycle>false</autoIncrementCycle>
+</Column>
+<Column name="ATMOSPHERIC_PRESSURE_VL" id="AFFE3FD5-B34B-88AF-75F4-8EDEC73C48B2">
+<createdBy>darbo</createdBy>
+<createdTime>2024-02-14 14:20:52 UTC</createdTime>
+<commentInRDBMS><![CDATA[Atmospheric pressure in millibars and tenths.]]></commentInRDBMS>
+<notes><![CDATA[Start position 140]]></notes>
+<ownerDesignName>MEDS_SERD</ownerDesignName>
+<nullsAllowed>true</nullsAllowed>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT019</logicalDatatype>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
+<autoIncrementCycle>false</autoIncrementCycle>
+</Column>
+<Column name="WATER_COLOUR_CD" id="866C7808-1D37-4990-3E1E-2F7493BB6433">
+<createdBy>darbo</createdBy>
+<createdTime>2024-02-14 14:23:26 UTC</createdTime>
+<notes><![CDATA[Start position 145]]></notes>
+<ownerDesignName>MEDS_SERD</ownerDesignName>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT019</logicalDatatype>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
+<previousColumn>false</previousColumn>
+<autoIncrementCycle>false</autoIncrementCycle>
+<associations>
+<colAssociation fkAssociation="19A210F8-AFCE-3A2D-3FAB-B1E8DBB137FB" referredColumn="1CE82E96-7C15-DA71-25D7-19DC6AA26B1A"/>
+</associations>
+</Column>
+<Column name="WATER TRANSPARENCY" id="718500FB-69E7-2374-E15F-6A7FE20535E5">
+<createdBy>darbo</createdBy>
+<createdTime>2024-02-14 14:27:43 UTC</createdTime>
+<commentInRDBMS><![CDATA[Water transparency.]]></commentInRDBMS>
+<notes><![CDATA[Start position 147]]></notes>
+<ownerDesignName>MEDS_SERD</ownerDesignName>
+<nullsAllowed>true</nullsAllowed>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT025</logicalDatatype>
+<dataTypeSize>2</dataTypeSize>
+<ownDataTypeParameters>2,,</ownDataTypeParameters>
+<autoIncrementCycle>false</autoIncrementCycle>
+</Column>
+<Column name="SALINITY_SCALE_CD" id="C6928C11-43F1-20EF-CB68-F7B93CBA3ED0">
+<createdBy>darbo</createdBy>
+<createdTime>2024-02-14 14:27:43 UTC</createdTime>
+<commentInRDBMS><![CDATA[Salinity scale code.]]></commentInRDBMS>
+<notes><![CDATA[Start position 149]]></notes>
+<ownerDesignName>MEDS_SERD</ownerDesignName>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT019</logicalDatatype>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
+<autoIncrementCycle>false</autoIncrementCycle>
+<associations>
+<colAssociation fkAssociation="F3B0B8E1-6501-7D00-0FC8-611A2D368435" referredColumn="FC268CCE-3FB8-EE0C-AF47-8256314FC3A5"/>
+</associations>
+</Column>
+<Column name="BT_SEA_SURFACE_INSTRUMENT_CD" id="CB02B850-199C-F266-AE07-992DFECDACED">
+<createdBy>darbo</createdBy>
+<createdTime>2024-02-14 14:33:19 UTC</createdTime>
+<notes><![CDATA[Start position 150]]></notes>
+<ownerDesignName>MEDS_SERD</ownerDesignName>
+<nullsAllowed>true</nullsAllowed>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT025</logicalDatatype>
+<dataTypeSize>1</dataTypeSize>
+<ownDataTypeParameters>1,,</ownDataTypeParameters>
+<autoIncrementCycle>false</autoIncrementCycle>
+</Column>
+<Column name="BT_SEA_SURFACE_REFERENCE_TEMPERATURE_VL" id="2BC3682B-77A2-93C4-C5C0-18C198B4088A">
+<createdBy>darbo</createdBy>
+<createdTime>2024-02-14 14:36:44 UTC</createdTime>
+<commentInRDBMS><![CDATA[BT Sea Surface Reference Temperature.]]></commentInRDBMS>
+<notes><![CDATA[Start position 151]]></notes>
+<ownerDesignName>MEDS_SERD</ownerDesignName>
+<nullsAllowed>true</nullsAllowed>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT019</logicalDatatype>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
+<autoIncrementCycle>false</autoIncrementCycle>
+</Column>
+<Column name="MBT_SEA_SURFACE_TEMPERATURE_CORRECTION_VL" id="08905933-8BE7-2716-A6A3-AF3B7502E8F7">
+<createdBy>darbo</createdBy>
+<createdTime>2024-02-14 14:36:44 UTC</createdTime>
+<commentInRDBMS><![CDATA[MBT Temperature Correction at the Surface.]]></commentInRDBMS>
+<notes><![CDATA[Start position 155]]></notes>
+<ownerDesignName>MEDS_SERD</ownerDesignName>
+<nullsAllowed>true</nullsAllowed>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT019</logicalDatatype>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
+<autoIncrementCycle>false</autoIncrementCycle>
+</Column>
+<Column name="MBT_TYPE_QUALITTY_CD" id="D09D8B27-1419-7C25-D87A-D3A39EE1C870">
+<createdBy>darbo</createdBy>
+<createdTime>2024-02-14 14:42:30 UTC</createdTime>
+<commentInRDBMS><![CDATA[MBT Type/XBT Quality code.]]></commentInRDBMS>
+<notes><![CDATA[Start position 158]]></notes>
+<ownerDesignName>MEDS_SERD</ownerDesignName>
+<nullsAllowed>true</nullsAllowed>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT025</logicalDatatype>
+<dataTypeSize>1</dataTypeSize>
+<ownDataTypeParameters>1,,</ownDataTypeParameters>
+<autoIncrementCycle>false</autoIncrementCycle>
+</Column>
+<Column name="MBT_GRADE_QUALITTY_CD" id="8B9469AC-AE47-D78B-607E-FE980A9BB4CC">
+<createdBy>darbo</createdBy>
+<createdTime>2024-02-14 14:42:30 UTC</createdTime>
+<commentInRDBMS><![CDATA[MBT Grade/XBT Quality code.]]></commentInRDBMS>
+<notes><![CDATA[Start position 159]]></notes>
+<ownerDesignName>MEDS_SERD</ownerDesignName>
+<nullsAllowed>true</nullsAllowed>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT025</logicalDatatype>
+<dataTypeSize>1</dataTypeSize>
+<ownDataTypeParameters>1,,</ownDataTypeParameters>
+<autoIncrementCycle>false</autoIncrementCycle>
+</Column>
+</columns>
+<indexes itemClass="oracle.dbtools.crest.model.design.relational.Index">
+<ind_PK_UK id="3A2A1068-1CF0-559D-AF44-7A87A4F118F7" name="SERD_HEADER_PK">
+<createdBy>darbo</createdBy>
+<createdTime>2024-02-13 13:07:15 UTC</createdTime>
+<ownerDesignName>MEDS_SERD</ownerDesignName>
+<pk>true</pk>
+<indexState>Primary Constraint</indexState>
+<isSurrogateKey>false</isSurrogateKey>
+<indexColumnUsage>
+<colUsage columnID="8E66D519-C267-38A8-F140-BE27089CC7F6"/>
+</indexColumnUsage>
+</ind_PK_UK>
+<ind_PK_UK id="D7AF55DF-C7D7-C364-93C6-7B0193E32E8C" name="SERD_HEADER_INSTRUMENT_FK">
+<createdBy>darbo</createdBy>
+<createdTime>2024-02-14 10:54:54 UTC</createdTime>
+<ownerDesignName>MEDS_SERD</ownerDesignName>
+<indexState>Foreign Key</indexState>
+<isSurrogateKey>false</isSurrogateKey>
+<indexColumnUsage>
+<colUsage columnID="EAD3605F-9DC8-38F2-09FB-250F71038C07"/>
+</indexColumnUsage>
+</ind_PK_UK>
+<ind_PK_UK id="9374FC70-BB97-8249-7EC9-0312220CFACA" name="SERD_HEADER_WIND_DIRECTION_FK">
+<createdBy>darbo</createdBy>
+<createdTime>2024-02-14 13:33:27 UTC</createdTime>
+<ownerDesignName>MEDS_SERD</ownerDesignName>
+<indexState>Foreign Key</indexState>
+<isSurrogateKey>false</isSurrogateKey>
+<indexColumnUsage>
+<colUsage columnID="B73F8E15-BE8C-5723-DCD1-B32DCC0F5AF7"/>
+</indexColumnUsage>
+</ind_PK_UK>
+<ind_PK_UK id="0063560C-A0D1-B744-EB86-DBC2FAF09F39" name="SERD_HEADER_SEA_STATE_FK">
+<createdBy>darbo</createdBy>
+<createdTime>2024-02-14 13:43:30 UTC</createdTime>
+<ownerDesignName>MEDS_SERD</ownerDesignName>
+<indexState>Foreign Key</indexState>
+<isSurrogateKey>false</isSurrogateKey>
+<indexColumnUsage>
+<colUsage columnID="450DCDB8-77A1-6D52-5734-D2B8246E020E"/>
+</indexColumnUsage>
+</ind_PK_UK>
+<ind_PK_UK id="9B3EE85B-6B0E-62F5-9C21-0CF650477DF9" name="SERD_HEADER_POSITION_DETERMINATION_FK">
+<createdBy>darbo</createdBy>
+<createdTime>2024-02-14 13:48:19 UTC</createdTime>
+<ownerDesignName>MEDS_SERD</ownerDesignName>
+<indexState>Foreign Key</indexState>
+<isSurrogateKey>false</isSurrogateKey>
+<indexColumnUsage>
+<colUsage columnID="D61682F2-FFB5-FC5B-32D7-C7684C4180FA"/>
+</indexColumnUsage>
+</ind_PK_UK>
+<ind_PK_UK id="06E3FF53-C1C8-93DE-1F65-A7234289F504" name="SERD_HEADER_POSITION_ACCURACY_FK">
+<createdBy>darbo</createdBy>
+<createdTime>2024-02-14 13:50:56 UTC</createdTime>
+<ownerDesignName>MEDS_SERD</ownerDesignName>
+<indexState>Foreign Key</indexState>
+<isSurrogateKey>false</isSurrogateKey>
+<indexColumnUsage>
+<colUsage columnID="92CBFE0E-7B4C-5D7C-E008-257A349C2FB3"/>
+</indexColumnUsage>
+</ind_PK_UK>
+<ind_PK_UK id="C4E4AB90-6836-8A61-DE7D-6C0AD5164B0E" name="SERD_HEADER_OBSERVATION_UNIT_FK">
+<createdBy>darbo</createdBy>
+<createdTime>2024-02-14 13:54:41 UTC</createdTime>
+<ownerDesignName>MEDS_SERD</ownerDesignName>
+<indexState>Foreign Key</indexState>
+<isSurrogateKey>false</isSurrogateKey>
+<indexColumnUsage>
+<colUsage columnID="2E8AB5E0-CA1F-EE53-F1CC-C2332F032F1D"/>
+</indexColumnUsage>
+</ind_PK_UK>
+<ind_PK_UK id="2D709DC6-A62E-AC07-4BE4-1DC90BE089A3" name="SERD_HEADER_DATA_TYPE_FK">
+<createdBy>darbo</createdBy>
+<createdTime>2024-02-14 13:57:13 UTC</createdTime>
+<ownerDesignName>MEDS_SERD</ownerDesignName>
+<indexState>Foreign Key</indexState>
+<isSurrogateKey>false</isSurrogateKey>
+<indexColumnUsage>
+<colUsage columnID="A9F008BC-688E-8AE3-E145-00D58F30E49B"/>
+</indexColumnUsage>
+</ind_PK_UK>
+<ind_PK_UK id="03D68E92-B822-0A3B-FF45-C469C6A3CF23" name="SERD_HEADER_DATA_MODE_FK">
+<createdBy>darbo</createdBy>
+<createdTime>2024-02-14 13:58:58 UTC</createdTime>
+<ownerDesignName>MEDS_SERD</ownerDesignName>
+<indexState>Foreign Key</indexState>
+<isSurrogateKey>false</isSurrogateKey>
+<indexColumnUsage>
+<colUsage columnID="B36C085A-E0AE-3554-11D0-7110E55A4562"/>
+</indexColumnUsage>
+</ind_PK_UK>
+<ind_PK_UK id="5383D32D-6939-B11E-8FB8-4AF078108CC2" name="SERD_HEADER_DATA_METHOD_FK">
+<createdBy>darbo</createdBy>
+<createdTime>2024-02-14 14:01:49 UTC</createdTime>
+<ownerDesignName>MEDS_SERD</ownerDesignName>
+<indexState>Foreign Key</indexState>
+<isSurrogateKey>false</isSurrogateKey>
+<indexColumnUsage>
+<colUsage columnID="EA625CDF-2A24-6B42-D4EC-59D9C2753C25"/>
+</indexColumnUsage>
+</ind_PK_UK>
+<ind_PK_UK id="895C1C0D-569A-579A-A777-6E8248AEAC20" name="SERD_HEADER_WEATHER_FK">
+<createdBy>darbo</createdBy>
+<createdTime>2024-02-14 14:05:16 UTC</createdTime>
+<ownerDesignName>MEDS_SERD</ownerDesignName>
+<indexState>Foreign Key</indexState>
+<isSurrogateKey>false</isSurrogateKey>
+<indexColumnUsage>
+<colUsage columnID="ABB0F2C7-65D9-BDE6-C405-8B25DFAA5646"/>
+</indexColumnUsage>
+</ind_PK_UK>
+<ind_PK_UK id="9428B707-1DC6-6211-BE06-77D73D2FD3E4" name="SERD_HEADER_CLOUD_COVERAGE_FK">
+<createdBy>darbo</createdBy>
+<createdTime>2024-02-14 14:06:53 UTC</createdTime>
+<ownerDesignName>MEDS_SERD</ownerDesignName>
+<indexState>Foreign Key</indexState>
+<isSurrogateKey>false</isSurrogateKey>
+<indexColumnUsage>
+<colUsage columnID="2D085FC3-DD02-E25C-D13D-9DFDA0BE3656"/>
+</indexColumnUsage>
+</ind_PK_UK>
+<ind_PK_UK id="22DFC1B3-A954-8918-3DF4-C1A1BEFDA586" name="SERD_HEADER_WATER_COLOUR_FK">
+<createdBy>darbo</createdBy>
+<createdTime>2024-02-14 14:23:26 UTC</createdTime>
+<ownerDesignName>MEDS_SERD</ownerDesignName>
+<indexState>Foreign Key</indexState>
+<isSurrogateKey>false</isSurrogateKey>
+<indexColumnUsage>
+<colUsage columnID="866C7808-1D37-4990-3E1E-2F7493BB6433"/>
+</indexColumnUsage>
+</ind_PK_UK>
+<ind_PK_UK id="7849EE62-1244-7425-9D1C-400AC543AB5B" name="SERD_HEADER_SALINITY_SCALE_FK">
+<createdBy>darbo</createdBy>
+<createdTime>2024-02-14 14:29:31 UTC</createdTime>
+<ownerDesignName>MEDS_SERD</ownerDesignName>
+<indexState>Foreign Key</indexState>
+<isSurrogateKey>false</isSurrogateKey>
+<indexColumnUsage>
+<colUsage columnID="C6928C11-43F1-20EF-CB68-F7B93CBA3ED0"/>
+</indexColumnUsage>
+</ind_PK_UK>
+</indexes>
+</Table>

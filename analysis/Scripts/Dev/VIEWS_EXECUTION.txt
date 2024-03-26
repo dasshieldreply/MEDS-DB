@@ -1,0 +1,117 @@
+
+View "MEDSDATA"."ADCP_H102_12_16" created.
+
+
+Error starting at line : 31 in command -
+  CREATE OR REPLACE VIEW "MEDSDATA"."BEACH_ARCGIS" ("ID", "COUNTRY", "SECTOR", "BEACH_NAME", "BEACH_NO", "LONGITUDE", "LATITUDE", "MAP", "SHEET", "GRID", "CARD_1", "CARD_2", "BEACH_CAT", "BEACH_DIM", "ANCHORAGE1", "ANCHORAGE2", "SURF_COND", "SURF_HT", "SURF_SEA1", "SURF_SEA2", "DATE_SURV", "Q_OF_REECE", "AP_SEAW1", "AP_SEAW2", "AP_SEAW3", "GRA_NSHORE", "ASGRA_FSHORE", "GRA_BSHORE", "BEACH_COMP", "TRAFFIC", "HINTLAND_1", "HINTLAND_2", "HINTLAND_3", "J_RPS_HD_1", "J_RPS_HD_2", "AR_LG_STS1", "AR_LG_STS2", "WTR_ENG_1", "WTR_ENG_2", "EXIT_CONDITIONS", "EXIT_DES_1", "EXIT_DES_2", "EXIT_DES_3", "PUB_STATUS", "TYPE_IMAGY", "BEACH_CHGS", "BEACH_C_NO", "CD_ROM_REF", "CLASS", "TBEACHESID", "ORIGINATOR", "CURRENT_SP", "CURRENT_OR", "GRAD_OVRLL", "GD_SY_DATE", "GRAD_BEARG", "OBSTRUCTS", "DRP_ZE_DPT", "DRP_ZE_LOC", "LK_GRD_PHO", "LK_BCH_DIA", "LK_GRD_DIA", "MEDS_JOB_NUMBER", "MEDS_OBSERVATION_NUMBER") AS 
+  SELECT id, B.COUNTRY,
+       B.SECTOR,
+       B.BEACH_NAME,
+       B.BEACH_NUMBER as BEACH_NO,
+       B.LONGITUDE,
+       B.LATITUDE,
+       B.MAP,
+       B.SHEET,
+       B.GRID,
+       B.CARD_1,
+       B.CARD_2,
+       B.BEACH_CATEGORY as BEACH_CAT,
+       B.BEACH_DIMENSIONS as BEACH_DIM,
+       replace(ANCHORAGE_1 ,'""' ,'"') as ANCHORAGE1,
+       replace(ANCHORAGE_2 ,'""' ,'"') as ANCHORAGE2,
+       B.SURF_CONDITIONS as SURF_COND,
+       B.SURF_HEIGHT as SURF_HT,
+       replace( SURF_SEA_SWELL_1,'""' ,'"') as  SURF_SEA1,
+       replace( SURF_SEA_SWELL_2,'""' ,'"') as  SURF_SEA2,
+       B.DATE_OF_SURVEY as DATE_SURV,
+       B.QUALITY_OF_REECE as Q_OF_REECE,
+       replace( APPROACH_SEAWARD_1,'""' ,'"') as  AP_SEAW1,
+       replace( APPROACH_SEAWARD_2,'""' ,'"') as  AP_SEAW2,
+       replace( APPROACH_SEAWARD_3,'""' ,'"') as  AP_SEAW3,
+       B.GRADIENT_NEARSHORE as gra_nshore,
+       B.GRADIENT_FORESHORE asgra_fshore ,
+       B.GRADIENT_BACKSHORE as gra_bshore,
+       B.BEACH_COMPOSITION as BEACH_COMP,
+       B.TRAFFICABILITY as TRAFFIC,
+       replace( HINTERLAND_1,'""' ,'"') as  HINTLAND_1,
+       replace( HINTERLAND_2,'""' ,'"') as  HINTLAND_2,
+       replace( HINTERLAND_3,'""' ,'"') as  HINTLAND_3,
+       replace( JETTIES_RAMPS_HARDS_1,'""' ,'"') as  J_RPS_HD_1,
+       replace( JETTIES_RAMPS_HARDS_2,'""' ,'"') as  J_RPS_HD_2,
+       replace( AIR_LANDING_SITES_1,'""' ,'"') as  AR_LG_STS1,
+       replace( AIR_LANDING_SITES_2,'""' ,'"') as   AR_LG_STS2,
+       replace( WATER_AND_ENGINEERING_1,'""' ,'"') as  WTR_ENG_1,
+       replace( WATER_AND_ENGINEERING_2,'""' ,'"') as   WTR_ENG_2,
+       B.EXIT_CONDITIONS,
+       replace( EXIT_DESCRIPTION_1,'""' ,'"') as  EXIT_DES_1,
+       replace( EXIT_DESCRIPTION_2,'""' ,'"') as  EXIT_DES_2,
+       Case when b.EXIT_DESCRIPTION_3 = '""' THEN null When b.EXIT_DESCRIPTION_3 = '"' then null when b.EXIT_DESCRIPTION_3 = '" "' then null ELSE B.EXIT_DESCRIPTION_3 END as EXIT_DES_3,
+       B.PUBLICATION_STATUS as PUB_STATUS,
+       B.TYPE_OF_IMAGERY as TYPE_IMAGY,
+       B.BEACH_CHANGES as BEACH_CHGS,
+       B.BEACH_CHANGES_NO as BEACH_C_NO,
+       B.CD_ROM_REFERENCE as CD_ROM_REF,
+       B.CLASSIFICATION as CLASS,
+       B.TBLBEACHESID as TBEACHESID,
+       B.ORIGINATOR,
+       B.CURRENT_SPEED as CURRENT_SP,
+       B.CURRENT_ORIENTATION as CURRENT_OR,
+       B.GRADIENT_OVERALL as GRAD_OVRLL,
+       B.GRADIENT_SURVEY_DATE as GD_SY_DATE,
+       B.GRADIENT_BEARING as GRAD_BEARG,
+       B.OBSTRUCTIONS as OBSTRUCTS,
+       B.DROP_ZONE_DESCRIPTION as DRP_ZE_DPT,
+       B.DROP_ZONE_LOCATION as DRP_ZE_LOC,
+       B.LINK_TO_GROUND_PHOTO as LK_GRD_PHO,
+       B.LINK_TO_BEACH_DIAGRAM as LK_BCH_DIA,
+       B.LINK_TO_GRADIENT_DIAGRAM as LK_GRD_DIA,
+       B.MEDS_JOB_NUMBER,
+       B.MEDS_OBSERVATION_NUMBER
+  FROM BEACH_TEMP1 b
+Error report -
+ORA-00942: table or view does not exist
+00942. 00000 -  "table or view does not exist"
+*Cause:    
+*Action:
+
+View "MEDSDATA"."BEACH_DATA_POS" created.
+
+
+View "MEDSDATA"."BEACH_TEMP" created.
+
+
+View "MEDSDATA"."BEACH_TEMP1" created.
+
+
+View "MEDSDATA"."BEACH_TEMP_OS" created.
+
+
+View "MEDSDATA"."JOB_TRACKING_VIEW" created.
+
+
+View "MEDSDATA"."JONO_DATA" created.
+
+
+View "MEDSDATA"."JO_IMAGE_DATA" created.
+
+
+View "MEDSDATA"."JO_IW_OBS" created.
+
+
+View "MEDSDATA"."JUNE_FRONTS" created.
+
+
+View "MEDSDATA"."MARINE_LIFE_CETACEANS" created.
+
+
+View "MEDSDATA"."NORTH_SEA" created.
+
+
+View "MEDSDATA"."QGIS_CET" created.
+
+
+View "MEDSDATA"."SUMMARY_2013" created.
+
+
+View "MEDSDATA"."SUMMARY_2015" created.
+

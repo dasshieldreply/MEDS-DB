@@ -1,0 +1,48 @@
+<?xml version = '1.0' encoding = 'UTF-8'?>
+<Table class="oracle.dbtools.crest.model.design.relational.Table" directorySegmentName="seg_0" id="D3CE513B-79BD-B9A5-2586-51A21CDBD4D4" name="SALINITY_SCALE">
+<createdBy>darbo</createdBy>
+<createdTime>2024-02-14 14:27:59 UTC</createdTime>
+<ownerDesignName>MEDS_SERD</ownerDesignName>
+<ordsAlias>table_3</ordsAlias>
+<allowColumnReorder>false</allowColumnReorder>
+<existDependencyGenerateInDDl>true</existDependencyGenerateInDDl>
+<parsed>true</parsed>
+<columns itemClass="oracle.dbtools.crest.model.design.relational.Column">
+<Column name="SALINITY_SCALE_CD" id="FC268CCE-3FB8-EE0C-AF47-8256314FC3A5">
+<createdBy>darbo</createdBy>
+<createdTime>2024-02-14 14:27:59 UTC</createdTime>
+<commentInRDBMS><![CDATA[Salinity scale code.]]></commentInRDBMS>
+<ownerDesignName>MEDS_SERD</ownerDesignName>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT019</logicalDatatype>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
+<autoIncrementCycle>false</autoIncrementCycle>
+</Column>
+<Column name="SALINITY_SCALE_DESC" id="1A3B02B2-06B8-DA0D-01B4-D3048A5CC245">
+<createdBy>darbo</createdBy>
+<createdTime>2024-02-14 14:27:59 UTC</createdTime>
+<commentInRDBMS><![CDATA[Salinity scale description.]]></commentInRDBMS>
+<ownerDesignName>MEDS_SERD</ownerDesignName>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT024</logicalDatatype>
+<dataTypeSize>100</dataTypeSize>
+<ownDataTypeParameters>100,,</ownDataTypeParameters>
+<autoIncrementCycle>false</autoIncrementCycle>
+</Column>
+</columns>
+<indexes itemClass="oracle.dbtools.crest.model.design.relational.Index">
+<ind_PK_UK id="FD5D0263-6954-398A-C338-508AA72DAFAE" name="SALINITY_SCALE_PK">
+<createdBy>darbo</createdBy>
+<createdTime>2024-02-14 14:27:59 UTC</createdTime>
+<ownerDesignName>MEDS_SERD</ownerDesignName>
+<pk>true</pk>
+<indexState>Primary Constraint</indexState>
+<isSurrogateKey>false</isSurrogateKey>
+<indexColumnUsage>
+<colUsage columnID="FC268CCE-3FB8-EE0C-AF47-8256314FC3A5"/>
+</indexColumnUsage>
+</ind_PK_UK>
+</indexes>
+</Table>

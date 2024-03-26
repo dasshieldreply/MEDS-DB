@@ -1,0 +1,16 @@
+<?xml version = '1.0' encoding = 'UTF-8'?>
+<FKIndexAssociation class="oracle.dbtools.crest.model.design.relational.FKIndexAssociation" directorySegmentName="seg_0" id="19A210F8-AFCE-3A2D-3FAB-B1E8DBB137FB" containerWithKeyObject="85E06FE8-87CC-24E5-6567-CF157E06B47C" localFKIndex="22DFC1B3-A954-8918-3DF4-C1A1BEFDA586" name="SERD_HEADER_WATER_COLOUR_FK">
+<createdBy>darbo</createdBy>
+<createdTime>2024-02-14 14:23:26 UTC</createdTime>
+<ownerDesignName>MEDS_SERD</ownerDesignName>
+<referredTableLongName>WATER_COLOUR</referredTableLongName>
+<deleteRule>NO ACTION</deleteRule>
+<referredTableID>05B9E19A-9BB9-9357-E2E1-EC790A141D10</referredTableID>
+<keyObject>CF647A5E-EFF6-2805-2629-D185F8D4B667</keyObject>
+<referredKeyID>CF647A5E-EFF6-2805-2629-D185F8D4B667</referredKeyID>
+<mandatory>true</mandatory>
+<refColNames>WATER_COLOUR_CD</refColNames>
+<transferable>true</transferable>
+<rely>false</rely>
+<columnDependencyConstraintGenerateInDDL>true</columnDependencyConstraintGenerateInDDL>
+</FKIndexAssociation>
