@@ -1,0 +1,280 @@
+<?xml version = '1.0' encoding = 'UTF-8'?>
+<Table class="oracle.dbtools.crest.model.design.relational.Table" directorySegmentName="seg_1" id="F8046ADD-5CAB-1DCC-5A41-6FA2F3925AC3" schemaObject="FD77D69E-489C-FEFD-81EE-34209F1C13AA" name="JOB_STATS">
+<sourceConnName>MEDS ADMIN</sourceConnName>
+<sourceObjSchema>MEDSADMIN</sourceObjSchema>
+<sourceObjName>JOB_STATS</sourceObjName>
+<createdBy>d.arboittedossantos</createdBy>
+<createdTime>2024-03-14 14:47:25 UTC</createdTime>
+<ownerDesignName>MEDS</ownerDesignName>
+<allowColumnReorder>false</allowColumnReorder>
+<existDependencyGenerateInDDl>true</existDependencyGenerateInDDl>
+<parsed>true</parsed>
+<columns itemClass="oracle.dbtools.crest.model.design.relational.Column">
+<Column name="DESCRIPTION" id="8E754C1E-00BC-4FB9-4841-213D075191BD">
+<sourceConnName>MEDS ADMIN</sourceConnName>
+<sourceObjSchema>JOB_STATS</sourceObjSchema>
+<sourceObjName>DESCRIPTION</sourceObjName>
+<createdBy>d.arboittedossantos</createdBy>
+<createdTime>2024-03-14 14:47:25 UTC</createdTime>
+<ownerDesignName>MEDS</ownerDesignName>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT024</logicalDatatype>
+<dataTypeSize>30 BYTE</dataTypeSize>
+<ownDataTypeParameters>30 BYTE,,</ownDataTypeParameters>
+<autoIncrementCycle>false</autoIncrementCycle>
+</Column>
+<Column name="PERIOD_START" id="5C6A7E37-C4E8-FD7A-F6C4-BA444D823043">
+<sourceConnName>MEDS ADMIN</sourceConnName>
+<sourceObjSchema>JOB_STATS</sourceObjSchema>
+<sourceObjName>PERIOD_START</sourceObjName>
+<createdBy>d.arboittedossantos</createdBy>
+<createdTime>2024-03-14 14:47:25 UTC</createdTime>
+<ownerDesignName>MEDS</ownerDesignName>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT007</logicalDatatype>
+<dataTypeSize>7</dataTypeSize>
+<ownDataTypeParameters>7,,</ownDataTypeParameters>
+<autoIncrementCycle>false</autoIncrementCycle>
+</Column>
+<Column name="PERIOD_END" id="90E5091B-EBDC-8716-7D97-294CC81E032C">
+<sourceConnName>MEDS ADMIN</sourceConnName>
+<sourceObjSchema>JOB_STATS</sourceObjSchema>
+<sourceObjName>PERIOD_END</sourceObjName>
+<createdBy>d.arboittedossantos</createdBy>
+<createdTime>2024-03-14 14:47:25 UTC</createdTime>
+<ownerDesignName>MEDS</ownerDesignName>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT007</logicalDatatype>
+<dataTypeSize>7</dataTypeSize>
+<ownDataTypeParameters>7,,</ownDataTypeParameters>
+<autoIncrementCycle>false</autoIncrementCycle>
+</Column>
+<Column name="RECEIVED" id="5D6CECC8-A086-5917-E9D3-AA81DE3698A0">
+<sourceConnName>MEDS ADMIN</sourceConnName>
+<sourceObjSchema>JOB_STATS</sourceObjSchema>
+<sourceObjName>RECEIVED</sourceObjName>
+<createdBy>d.arboittedossantos</createdBy>
+<createdTime>2024-03-14 14:47:25 UTC</createdTime>
+<ownerDesignName>MEDS</ownerDesignName>
+<nullsAllowed>true</nullsAllowed>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT019</logicalDatatype>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
+<autoIncrementCycle>false</autoIncrementCycle>
+</Column>
+<Column name="ACCEPTED" id="6E1D6A60-DBF5-3830-7B66-84B168C7431C">
+<sourceConnName>MEDS ADMIN</sourceConnName>
+<sourceObjSchema>JOB_STATS</sourceObjSchema>
+<sourceObjName>ACCEPTED</sourceObjName>
+<createdBy>d.arboittedossantos</createdBy>
+<createdTime>2024-03-14 14:47:25 UTC</createdTime>
+<ownerDesignName>MEDS</ownerDesignName>
+<nullsAllowed>true</nullsAllowed>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT019</logicalDatatype>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
+<autoIncrementCycle>false</autoIncrementCycle>
+</Column>
+<Column name="REJECTED" id="011E00FD-FD05-41F9-9673-A2BFBE6BB56E">
+<sourceConnName>MEDS ADMIN</sourceConnName>
+<sourceObjSchema>JOB_STATS</sourceObjSchema>
+<sourceObjName>REJECTED</sourceObjName>
+<createdBy>d.arboittedossantos</createdBy>
+<createdTime>2024-03-14 14:47:25 UTC</createdTime>
+<ownerDesignName>MEDS</ownerDesignName>
+<nullsAllowed>true</nullsAllowed>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT019</logicalDatatype>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
+<autoIncrementCycle>false</autoIncrementCycle>
+</Column>
+<Column name="ON_TIME" id="CFBBF2B2-1C6C-6225-3EFB-785CBC4DF2BE">
+<sourceConnName>MEDS ADMIN</sourceConnName>
+<sourceObjSchema>JOB_STATS</sourceObjSchema>
+<sourceObjName>ON_TIME</sourceObjName>
+<createdBy>d.arboittedossantos</createdBy>
+<createdTime>2024-03-14 14:47:25 UTC</createdTime>
+<ownerDesignName>MEDS</ownerDesignName>
+<nullsAllowed>true</nullsAllowed>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT019</logicalDatatype>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
+<autoIncrementCycle>false</autoIncrementCycle>
+</Column>
+<Column name="LATE" id="2CE60BB3-4D3C-7152-D2D5-97AC148B2B98">
+<sourceConnName>MEDS ADMIN</sourceConnName>
+<sourceObjSchema>JOB_STATS</sourceObjSchema>
+<sourceObjName>LATE</sourceObjName>
+<createdBy>d.arboittedossantos</createdBy>
+<createdTime>2024-03-14 14:47:25 UTC</createdTime>
+<ownerDesignName>MEDS</ownerDesignName>
+<nullsAllowed>true</nullsAllowed>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT019</logicalDatatype>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
+<autoIncrementCycle>false</autoIncrementCycle>
+</Column>
+<Column name="MONTH_LATE_1" id="8EA3AE1C-019F-F66B-7696-D904F3B8C05D">
+<sourceConnName>MEDS ADMIN</sourceConnName>
+<sourceObjSchema>JOB_STATS</sourceObjSchema>
+<sourceObjName>MONTH_LATE_1</sourceObjName>
+<createdBy>d.arboittedossantos</createdBy>
+<createdTime>2024-03-14 14:47:25 UTC</createdTime>
+<ownerDesignName>MEDS</ownerDesignName>
+<nullsAllowed>true</nullsAllowed>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT019</logicalDatatype>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
+<autoIncrementCycle>false</autoIncrementCycle>
+</Column>
+<Column name="MONTH_LATE_1_3" id="151C1AE4-2861-E6AF-27FD-806B86A0D808">
+<sourceConnName>MEDS ADMIN</sourceConnName>
+<sourceObjSchema>JOB_STATS</sourceObjSchema>
+<sourceObjName>MONTH_LATE_1_3</sourceObjName>
+<createdBy>d.arboittedossantos</createdBy>
+<createdTime>2024-03-14 14:47:25 UTC</createdTime>
+<ownerDesignName>MEDS</ownerDesignName>
+<nullsAllowed>true</nullsAllowed>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT019</logicalDatatype>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
+<autoIncrementCycle>false</autoIncrementCycle>
+</Column>
+<Column name="MONTH_LATE_3_6" id="F76C2A16-8A8F-05CF-AB21-64936DF225CE">
+<sourceConnName>MEDS ADMIN</sourceConnName>
+<sourceObjSchema>JOB_STATS</sourceObjSchema>
+<sourceObjName>MONTH_LATE_3_6</sourceObjName>
+<createdBy>d.arboittedossantos</createdBy>
+<createdTime>2024-03-14 14:47:25 UTC</createdTime>
+<ownerDesignName>MEDS</ownerDesignName>
+<nullsAllowed>true</nullsAllowed>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT019</logicalDatatype>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
+<autoIncrementCycle>false</autoIncrementCycle>
+</Column>
+<Column name="LATE_GREATER_6" id="58688A14-DA40-C724-CFBE-920E4F571399">
+<sourceConnName>MEDS ADMIN</sourceConnName>
+<sourceObjSchema>JOB_STATS</sourceObjSchema>
+<sourceObjName>LATE_GREATER_6</sourceObjName>
+<createdBy>d.arboittedossantos</createdBy>
+<createdTime>2024-03-14 14:47:25 UTC</createdTime>
+<ownerDesignName>MEDS</ownerDesignName>
+<nullsAllowed>true</nullsAllowed>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT019</logicalDatatype>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
+<autoIncrementCycle>false</autoIncrementCycle>
+</Column>
+<Column name="WAITING" id="B14DA4EF-C12B-1F50-91EC-EFA41B5548C0">
+<sourceConnName>MEDS ADMIN</sourceConnName>
+<sourceObjSchema>JOB_STATS</sourceObjSchema>
+<sourceObjName>WAITING</sourceObjName>
+<createdBy>d.arboittedossantos</createdBy>
+<createdTime>2024-03-14 14:47:25 UTC</createdTime>
+<ownerDesignName>MEDS</ownerDesignName>
+<nullsAllowed>true</nullsAllowed>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT019</logicalDatatype>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
+<autoIncrementCycle>false</autoIncrementCycle>
+</Column>
+<Column name="WAITING_ON_TIME" id="4434C376-2F5D-E2BB-2C6F-7203BD2854DA">
+<sourceConnName>MEDS ADMIN</sourceConnName>
+<sourceObjSchema>JOB_STATS</sourceObjSchema>
+<sourceObjName>WAITING_ON_TIME</sourceObjName>
+<createdBy>d.arboittedossantos</createdBy>
+<createdTime>2024-03-14 14:47:25 UTC</createdTime>
+<ownerDesignName>MEDS</ownerDesignName>
+<nullsAllowed>true</nullsAllowed>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT019</logicalDatatype>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
+<autoIncrementCycle>false</autoIncrementCycle>
+</Column>
+<Column name="WAITING_LATE" id="35145A1A-E481-4F9C-55B7-54C2647569E0">
+<sourceConnName>MEDS ADMIN</sourceConnName>
+<sourceObjSchema>JOB_STATS</sourceObjSchema>
+<sourceObjName>WAITING_LATE</sourceObjName>
+<createdBy>d.arboittedossantos</createdBy>
+<createdTime>2024-03-14 14:47:25 UTC</createdTime>
+<ownerDesignName>MEDS</ownerDesignName>
+<nullsAllowed>true</nullsAllowed>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT019</logicalDatatype>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
+<autoIncrementCycle>false</autoIncrementCycle>
+</Column>
+<Column name="WAITING_LATE_1" id="57DBE275-851E-4AFB-797D-29049B47D201">
+<sourceConnName>MEDS ADMIN</sourceConnName>
+<sourceObjSchema>JOB_STATS</sourceObjSchema>
+<sourceObjName>WAITING_LATE_1</sourceObjName>
+<createdBy>d.arboittedossantos</createdBy>
+<createdTime>2024-03-14 14:47:25 UTC</createdTime>
+<ownerDesignName>MEDS</ownerDesignName>
+<nullsAllowed>true</nullsAllowed>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT019</logicalDatatype>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
+<autoIncrementCycle>false</autoIncrementCycle>
+</Column>
+<Column name="WAITING_LATE_1_3" id="E396D30F-C16C-8E96-F806-1D11EF98793F">
+<sourceConnName>MEDS ADMIN</sourceConnName>
+<sourceObjSchema>JOB_STATS</sourceObjSchema>
+<sourceObjName>WAITING_LATE_1_3</sourceObjName>
+<createdBy>d.arboittedossantos</createdBy>
+<createdTime>2024-03-14 14:47:25 UTC</createdTime>
+<ownerDesignName>MEDS</ownerDesignName>
+<nullsAllowed>true</nullsAllowed>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT019</logicalDatatype>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
+<autoIncrementCycle>false</autoIncrementCycle>
+</Column>
+<Column name="WAITING_LATE_3_6" id="A5AE1987-EECC-A655-7383-84888EE570F8">
+<sourceConnName>MEDS ADMIN</sourceConnName>
+<sourceObjSchema>JOB_STATS</sourceObjSchema>
+<sourceObjName>WAITING_LATE_3_6</sourceObjName>
+<createdBy>d.arboittedossantos</createdBy>
+<createdTime>2024-03-14 14:47:25 UTC</createdTime>
+<ownerDesignName>MEDS</ownerDesignName>
+<nullsAllowed>true</nullsAllowed>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT019</logicalDatatype>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
+<autoIncrementCycle>false</autoIncrementCycle>
+</Column>
+<Column name="WAITING_GREATER_6" id="44D13C2C-AD76-24C0-4867-6A42B6CECF9D">
+<sourceConnName>MEDS ADMIN</sourceConnName>
+<sourceObjSchema>JOB_STATS</sourceObjSchema>
+<sourceObjName>WAITING_GREATER_6</sourceObjName>
+<createdBy>d.arboittedossantos</createdBy>
+<createdTime>2024-03-14 14:47:25 UTC</createdTime>
+<ownerDesignName>MEDS</ownerDesignName>
+<nullsAllowed>true</nullsAllowed>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT019</logicalDatatype>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
+<autoIncrementCycle>false</autoIncrementCycle>
+</Column>
+</columns>
+</Table>

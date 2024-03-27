@@ -1,0 +1,194 @@
+<?xml version = '1.0' encoding = 'UTF-8'?>
+<Table class="oracle.dbtools.crest.model.design.relational.Table" directorySegmentName="seg_1" id="A426B26E-9732-CAA2-C749-D6CDA802CAEB" schemaObject="FD77D69E-489C-FEFD-81EE-34209F1C13AA" name="MAPINFO_MAPCATALOG">
+<sourceConnName>MEDS ADMIN</sourceConnName>
+<sourceObjSchema>MEDSADMIN</sourceObjSchema>
+<sourceObjName>MAPINFO_MAPCATALOG</sourceObjName>
+<createdBy>d.arboittedossantos</createdBy>
+<createdTime>2024-03-14 14:47:25 UTC</createdTime>
+<ownerDesignName>MEDS</ownerDesignName>
+<allowColumnReorder>false</allowColumnReorder>
+<existDependencyGenerateInDDl>true</existDependencyGenerateInDDl>
+<parsed>true</parsed>
+<columns itemClass="oracle.dbtools.crest.model.design.relational.Column">
+<Column name="SPATIALTYPE" id="0AE861DD-6353-1595-BF63-6739CBF24EB3">
+<sourceConnName>MEDS ADMIN</sourceConnName>
+<sourceObjSchema>MAPINFO_MAPCATALOG</sourceObjSchema>
+<sourceObjName>SPATIALTYPE</sourceObjName>
+<createdBy>d.arboittedossantos</createdBy>
+<createdTime>2024-03-14 14:47:25 UTC</createdTime>
+<ownerDesignName>MEDS</ownerDesignName>
+<nullsAllowed>true</nullsAllowed>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT021</logicalDatatype>
+<dataTypePrecision>126</dataTypePrecision>
+<ownDataTypeParameters>,126,</ownDataTypeParameters>
+<autoIncrementCycle>false</autoIncrementCycle>
+</Column>
+<Column name="TABLENAME" id="36048E0C-489B-1906-B003-50F4711DF67E">
+<sourceConnName>MEDS ADMIN</sourceConnName>
+<sourceObjSchema>MAPINFO_MAPCATALOG</sourceObjSchema>
+<sourceObjName>TABLENAME</sourceObjName>
+<createdBy>d.arboittedossantos</createdBy>
+<createdTime>2024-03-14 14:47:25 UTC</createdTime>
+<ownerDesignName>MEDS</ownerDesignName>
+<nullsAllowed>true</nullsAllowed>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT024</logicalDatatype>
+<dataTypeSize>32 BYTE</dataTypeSize>
+<ownDataTypeParameters>32 BYTE,,</ownDataTypeParameters>
+<autoIncrementCycle>false</autoIncrementCycle>
+</Column>
+<Column name="OWNERNAME" id="49A94CD7-74C7-A0E7-3240-08B9592A0DB3">
+<sourceConnName>MEDS ADMIN</sourceConnName>
+<sourceObjSchema>MAPINFO_MAPCATALOG</sourceObjSchema>
+<sourceObjName>OWNERNAME</sourceObjName>
+<createdBy>d.arboittedossantos</createdBy>
+<createdTime>2024-03-14 14:47:25 UTC</createdTime>
+<ownerDesignName>MEDS</ownerDesignName>
+<nullsAllowed>true</nullsAllowed>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT024</logicalDatatype>
+<dataTypeSize>32 BYTE</dataTypeSize>
+<ownDataTypeParameters>32 BYTE,,</ownDataTypeParameters>
+<autoIncrementCycle>false</autoIncrementCycle>
+</Column>
+<Column name="SPATIALCOLUMN" id="86ED9DD4-4626-4E79-D0C3-54E30D7E8F79">
+<sourceConnName>MEDS ADMIN</sourceConnName>
+<sourceObjSchema>MAPINFO_MAPCATALOG</sourceObjSchema>
+<sourceObjName>SPATIALCOLUMN</sourceObjName>
+<createdBy>d.arboittedossantos</createdBy>
+<createdTime>2024-03-14 14:47:25 UTC</createdTime>
+<ownerDesignName>MEDS</ownerDesignName>
+<nullsAllowed>true</nullsAllowed>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT024</logicalDatatype>
+<dataTypeSize>32 BYTE</dataTypeSize>
+<ownDataTypeParameters>32 BYTE,,</ownDataTypeParameters>
+<autoIncrementCycle>false</autoIncrementCycle>
+</Column>
+<Column name="DB_X_LL" id="642DFC33-BFD5-9252-3CFD-E1BB1AB91C31">
+<sourceConnName>MEDS ADMIN</sourceConnName>
+<sourceObjSchema>MAPINFO_MAPCATALOG</sourceObjSchema>
+<sourceObjName>DB_X_LL</sourceObjName>
+<createdBy>d.arboittedossantos</createdBy>
+<createdTime>2024-03-14 14:47:25 UTC</createdTime>
+<ownerDesignName>MEDS</ownerDesignName>
+<nullsAllowed>true</nullsAllowed>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT021</logicalDatatype>
+<dataTypePrecision>126</dataTypePrecision>
+<ownDataTypeParameters>,126,</ownDataTypeParameters>
+<autoIncrementCycle>false</autoIncrementCycle>
+</Column>
+<Column name="DB_Y_LL" id="8396C390-EEB4-9CC8-7542-EFEA3B59D46F">
+<sourceConnName>MEDS ADMIN</sourceConnName>
+<sourceObjSchema>MAPINFO_MAPCATALOG</sourceObjSchema>
+<sourceObjName>DB_Y_LL</sourceObjName>
+<createdBy>d.arboittedossantos</createdBy>
+<createdTime>2024-03-14 14:47:25 UTC</createdTime>
+<ownerDesignName>MEDS</ownerDesignName>
+<nullsAllowed>true</nullsAllowed>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT021</logicalDatatype>
+<dataTypePrecision>126</dataTypePrecision>
+<ownDataTypeParameters>,126,</ownDataTypeParameters>
+<autoIncrementCycle>false</autoIncrementCycle>
+</Column>
+<Column name="DB_X_UR" id="F0C6337E-7478-5E22-B99C-46DEFDC3778A">
+<sourceConnName>MEDS ADMIN</sourceConnName>
+<sourceObjSchema>MAPINFO_MAPCATALOG</sourceObjSchema>
+<sourceObjName>DB_X_UR</sourceObjName>
+<createdBy>d.arboittedossantos</createdBy>
+<createdTime>2024-03-14 14:47:25 UTC</createdTime>
+<ownerDesignName>MEDS</ownerDesignName>
+<nullsAllowed>true</nullsAllowed>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT021</logicalDatatype>
+<dataTypePrecision>126</dataTypePrecision>
+<ownDataTypeParameters>,126,</ownDataTypeParameters>
+<autoIncrementCycle>false</autoIncrementCycle>
+</Column>
+<Column name="DB_Y_UR" id="E09A5C99-14BC-9080-F522-C9B7776BCC0C">
+<sourceConnName>MEDS ADMIN</sourceConnName>
+<sourceObjSchema>MAPINFO_MAPCATALOG</sourceObjSchema>
+<sourceObjName>DB_Y_UR</sourceObjName>
+<createdBy>d.arboittedossantos</createdBy>
+<createdTime>2024-03-14 14:47:25 UTC</createdTime>
+<ownerDesignName>MEDS</ownerDesignName>
+<nullsAllowed>true</nullsAllowed>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT021</logicalDatatype>
+<dataTypePrecision>126</dataTypePrecision>
+<ownDataTypeParameters>,126,</ownDataTypeParameters>
+<autoIncrementCycle>false</autoIncrementCycle>
+</Column>
+<Column name="COORDINATESYSTEM" id="A9E30C79-629E-6166-F232-98DEDB914986">
+<sourceConnName>MEDS ADMIN</sourceConnName>
+<sourceObjSchema>MAPINFO_MAPCATALOG</sourceObjSchema>
+<sourceObjName>COORDINATESYSTEM</sourceObjName>
+<createdBy>d.arboittedossantos</createdBy>
+<createdTime>2024-03-14 14:47:25 UTC</createdTime>
+<ownerDesignName>MEDS</ownerDesignName>
+<nullsAllowed>true</nullsAllowed>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT024</logicalDatatype>
+<dataTypeSize>254 BYTE</dataTypeSize>
+<ownDataTypeParameters>254 BYTE,,</ownDataTypeParameters>
+<autoIncrementCycle>false</autoIncrementCycle>
+</Column>
+<Column name="SYMBOL" id="B156276A-9194-E530-E5F0-E88F78CD0DE4">
+<sourceConnName>MEDS ADMIN</sourceConnName>
+<sourceObjSchema>MAPINFO_MAPCATALOG</sourceObjSchema>
+<sourceObjName>SYMBOL</sourceObjName>
+<createdBy>d.arboittedossantos</createdBy>
+<createdTime>2024-03-14 14:47:25 UTC</createdTime>
+<ownerDesignName>MEDS</ownerDesignName>
+<nullsAllowed>true</nullsAllowed>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT024</logicalDatatype>
+<dataTypeSize>254 BYTE</dataTypeSize>
+<ownDataTypeParameters>254 BYTE,,</ownDataTypeParameters>
+<autoIncrementCycle>false</autoIncrementCycle>
+</Column>
+<Column name="XCOLUMNNAME" id="67914307-46D0-A9CE-2E4B-C5C8D8B275BC">
+<sourceConnName>MEDS ADMIN</sourceConnName>
+<sourceObjSchema>MAPINFO_MAPCATALOG</sourceObjSchema>
+<sourceObjName>XCOLUMNNAME</sourceObjName>
+<createdBy>d.arboittedossantos</createdBy>
+<createdTime>2024-03-14 14:47:25 UTC</createdTime>
+<ownerDesignName>MEDS</ownerDesignName>
+<nullsAllowed>true</nullsAllowed>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT024</logicalDatatype>
+<dataTypeSize>32 BYTE</dataTypeSize>
+<ownDataTypeParameters>32 BYTE,,</ownDataTypeParameters>
+<autoIncrementCycle>false</autoIncrementCycle>
+</Column>
+<Column name="YCOLUMNNAME" id="26556F34-9800-F896-3139-C11B60F223AA">
+<sourceConnName>MEDS ADMIN</sourceConnName>
+<sourceObjSchema>MAPINFO_MAPCATALOG</sourceObjSchema>
+<sourceObjName>YCOLUMNNAME</sourceObjName>
+<createdBy>d.arboittedossantos</createdBy>
+<createdTime>2024-03-14 14:47:25 UTC</createdTime>
+<ownerDesignName>MEDS</ownerDesignName>
+<nullsAllowed>true</nullsAllowed>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT024</logicalDatatype>
+<dataTypeSize>32 BYTE</dataTypeSize>
+<ownDataTypeParameters>32 BYTE,,</ownDataTypeParameters>
+<autoIncrementCycle>false</autoIncrementCycle>
+</Column>
+</columns>
+</Table>

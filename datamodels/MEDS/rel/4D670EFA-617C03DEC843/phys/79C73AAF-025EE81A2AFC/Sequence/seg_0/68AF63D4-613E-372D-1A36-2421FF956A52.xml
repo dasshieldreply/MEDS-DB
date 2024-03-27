@@ -1,0 +1,15 @@
+<?xml version = '1.0' encoding = 'UTF-8'?>
+<SequenceOraclev10g class="oracle.dbtools.crest.model.design.storage.oracle.v10g.SequenceOraclev10g" name="CONNECTION_ID_GENERATOR" directorySegmentName="seg_0" id="68AF63D4-613E-372D-1A36-2421FF956A52">
+<sourceConnName>MEDS</sourceConnName>
+<sourceObjSchema>MEDSDATA</sourceObjSchema>
+<sourceObjName>CONNECTION_ID_GENERATOR</sourceObjName>
+<createdBy>darbo</createdBy>
+<createdTime>2024-02-13 17:12:06 UTC</createdTime>
+<ownerDesignName>MEDS</ownerDesignName>
+<cycle>YES</cycle>
+<incrementBy>1</incrementBy>
+<maxValue>2147483647</maxValue>
+<minValue>1</minValue>
+<noCache>YES</noCache>
+<user>EC810D67-49CA-B5C0-3EC6-B779C0C6D3EC</user>
+</SequenceOraclev10g>

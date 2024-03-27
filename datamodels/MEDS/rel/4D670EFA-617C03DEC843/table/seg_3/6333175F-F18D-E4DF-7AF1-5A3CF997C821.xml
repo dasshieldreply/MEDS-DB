@@ -1,0 +1,199 @@
+<?xml version = '1.0' encoding = 'UTF-8'?>
+<Table class="oracle.dbtools.crest.model.design.relational.Table" directorySegmentName="seg_3" id="6333175F-F18D-E4DF-7AF1-5A3CF997C821" schemaObject="198B7359-7E07-FB02-B07C-A0A91EE44FE7" name="WVS_3M_BATHY_LINE">
+<sourceConnName>MEDS</sourceConnName>
+<sourceObjSchema>MEDSDATA</sourceObjSchema>
+<sourceObjName>WVS_3M_BATHY_LINE</sourceObjName>
+<createdBy>darbo</createdBy>
+<createdTime>2024-02-13 17:12:16 UTC</createdTime>
+<ownerDesignName>MEDS</ownerDesignName>
+<allowColumnReorder>false</allowColumnReorder>
+<existDependencyGenerateInDDl>true</existDependencyGenerateInDDl>
+<parsed>true</parsed>
+<columns itemClass="oracle.dbtools.crest.model.design.relational.Column">
+<Column name="OBJECTID" id="1E700CAB-B15C-517D-66C1-1513A8408A90">
+<sourceConnName>MEDS</sourceConnName>
+<sourceObjSchema>WVS_3M_BATHY_LINE</sourceObjSchema>
+<sourceObjName>OBJECTID</sourceObjName>
+<createdBy>darbo</createdBy>
+<createdTime>2024-02-13 17:12:19 UTC</createdTime>
+<ownerDesignName>MEDS</ownerDesignName>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT019</logicalDatatype>
+<dataTypePrecision>*</dataTypePrecision>
+<dataTypeScale>0</dataTypeScale>
+<ownDataTypeParameters>,*,0</ownDataTypeParameters>
+<autoIncrementCycle>false</autoIncrementCycle>
+</Column>
+<Column name="ID" id="00F3EA07-C79C-0199-BBE4-9706A3952654">
+<sourceConnName>MEDS</sourceConnName>
+<sourceObjSchema>WVS_3M_BATHY_LINE</sourceObjSchema>
+<sourceObjName>ID</sourceObjName>
+<createdBy>darbo</createdBy>
+<createdTime>2024-02-13 17:12:19 UTC</createdTime>
+<ownerDesignName>MEDS</ownerDesignName>
+<nullsAllowed>true</nullsAllowed>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT019</logicalDatatype>
+<dataTypePrecision>11</dataTypePrecision>
+<dataTypeScale>0</dataTypeScale>
+<ownDataTypeParameters>,11,0</ownDataTypeParameters>
+<autoIncrementCycle>false</autoIncrementCycle>
+</Column>
+<Column name="EDG_ID" id="35E30AAC-1D5A-8F51-505E-1C21553F25E6">
+<sourceConnName>MEDS</sourceConnName>
+<sourceObjSchema>WVS_3M_BATHY_LINE</sourceObjSchema>
+<sourceObjName>EDG_ID</sourceObjName>
+<createdBy>darbo</createdBy>
+<createdTime>2024-02-13 17:12:19 UTC</createdTime>
+<ownerDesignName>MEDS</ownerDesignName>
+<nullsAllowed>true</nullsAllowed>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT019</logicalDatatype>
+<dataTypePrecision>11</dataTypePrecision>
+<dataTypeScale>0</dataTypeScale>
+<ownDataTypeParameters>,11,0</ownDataTypeParameters>
+<autoIncrementCycle>false</autoIncrementCycle>
+</Column>
+<Column name="FACC" id="BE5A5202-66A2-410C-F755-B007186C7B47">
+<sourceConnName>MEDS</sourceConnName>
+<sourceObjSchema>WVS_3M_BATHY_LINE</sourceObjSchema>
+<sourceObjName>FACC</sourceObjName>
+<createdBy>darbo</createdBy>
+<createdTime>2024-02-13 17:12:19 UTC</createdTime>
+<ownerDesignName>MEDS</ownerDesignName>
+<nullsAllowed>true</nullsAllowed>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT024</logicalDatatype>
+<dataTypeSize>5 BYTE</dataTypeSize>
+<ownDataTypeParameters>5 BYTE,,</ownDataTypeParameters>
+<autoIncrementCycle>false</autoIncrementCycle>
+</Column>
+<Column name="FACC_DESCR" id="7473C580-3F1B-1BF4-6F79-6218DA230C7D">
+<sourceConnName>MEDS</sourceConnName>
+<sourceObjSchema>WVS_3M_BATHY_LINE</sourceObjSchema>
+<sourceObjName>FACC_DESCR</sourceObjName>
+<createdBy>darbo</createdBy>
+<createdTime>2024-02-13 17:12:19 UTC</createdTime>
+<ownerDesignName>MEDS</ownerDesignName>
+<nullsAllowed>true</nullsAllowed>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT024</logicalDatatype>
+<dataTypeSize>254 BYTE</dataTypeSize>
+<ownDataTypeParameters>254 BYTE,,</ownDataTypeParameters>
+<autoIncrementCycle>false</autoIncrementCycle>
+</Column>
+<Column name="CRV" id="525E2790-252D-8FC1-A6FD-54C082EEA430">
+<sourceConnName>MEDS</sourceConnName>
+<sourceObjSchema>WVS_3M_BATHY_LINE</sourceObjSchema>
+<sourceObjName>CRV</sourceObjName>
+<createdBy>darbo</createdBy>
+<createdTime>2024-02-13 17:12:19 UTC</createdTime>
+<ownerDesignName>MEDS</ownerDesignName>
+<nullsAllowed>true</nullsAllowed>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT019</logicalDatatype>
+<dataTypePrecision>6</dataTypePrecision>
+<dataTypeScale>0</dataTypeScale>
+<ownDataTypeParameters>,6,0</ownDataTypeParameters>
+<autoIncrementCycle>false</autoIncrementCycle>
+</Column>
+<Column name="TILE_ID" id="1886D26D-AF7F-CB33-CC8C-48E64A77B531">
+<sourceConnName>MEDS</sourceConnName>
+<sourceObjSchema>WVS_3M_BATHY_LINE</sourceObjSchema>
+<sourceObjName>TILE_ID</sourceObjName>
+<createdBy>darbo</createdBy>
+<createdTime>2024-02-13 17:12:19 UTC</createdTime>
+<ownerDesignName>MEDS</ownerDesignName>
+<nullsAllowed>true</nullsAllowed>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT019</logicalDatatype>
+<dataTypePrecision>6</dataTypePrecision>
+<dataTypeScale>0</dataTypeScale>
+<ownDataTypeParameters>,6,0</ownDataTypeParameters>
+<autoIncrementCycle>false</autoIncrementCycle>
+</Column>
+<Column name="SHAPE" id="0FA50E83-6B0E-D988-BC69-C25E9C47881B">
+<sourceConnName>MEDS</sourceConnName>
+<sourceObjSchema>WVS_3M_BATHY_LINE</sourceObjSchema>
+<sourceObjName>SHAPE</sourceObjName>
+<createdBy>darbo</createdBy>
+<createdTime>2024-02-13 17:12:19 UTC</createdTime>
+<ownerDesignName>MEDS</ownerDesignName>
+<nullsAllowed>true</nullsAllowed>
+<useDomainConstraints>false</useDomainConstraints>
+<allowSubtypeSubstitution>false</allowSubtypeSubstitution>
+<use>3</use>
+<structuredType>47E390DE-0671-C4B1-8428-0F45CBEE18F8</structuredType>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
+<autoIncrementCycle>false</autoIncrementCycle>
+</Column>
+<Column name="SE_ANNO_CAD_DATA" id="B6CDC6B4-2D33-272E-3D2D-B25F511FB416">
+<sourceConnName>MEDS</sourceConnName>
+<sourceObjSchema>WVS_3M_BATHY_LINE</sourceObjSchema>
+<sourceObjName>SE_ANNO_CAD_DATA</sourceObjName>
+<createdBy>darbo</createdBy>
+<createdTime>2024-02-13 17:12:19 UTC</createdTime>
+<ownerDesignName>MEDS</ownerDesignName>
+<nullsAllowed>true</nullsAllowed>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT029</logicalDatatype>
+<dataTypeSize>4000</dataTypeSize>
+<ownDataTypeParameters>4000,,</ownDataTypeParameters>
+<autoIncrementCycle>false</autoIncrementCycle>
+</Column>
+</columns>
+<indexes itemClass="oracle.dbtools.crest.model.design.relational.Index">
+<ind_PK_UK id="F228BB5F-8B1A-69D7-3506-7646F4E725C5" schemaObject="198B7359-7E07-FB02-B07C-A0A91EE44FE7" name="A531_IX1">
+<sourceConnName>MEDS</sourceConnName>
+<sourceObjSchema>MEDSDATA</sourceObjSchema>
+<sourceObjName>A531_IX1</sourceObjName>
+<createdBy>darbo</createdBy>
+<createdTime>2024-02-13 17:12:28 UTC</createdTime>
+<ownerDesignName>MEDS</ownerDesignName>
+<spatialIndex>true</spatialIndex>
+<isSurrogateKey>false</isSurrogateKey>
+<indexColumnUsage>
+<colUsage columnID="0FA50E83-6B0E-D988-BC69-C25E9C47881B"/>
+</indexColumnUsage>
+</ind_PK_UK>
+<ind_PK_UK id="2023880B-22C4-B0D7-1E3E-34EF31CEA9D2" schemaObject="198B7359-7E07-FB02-B07C-A0A91EE44FE7" name="R421_SDE_ROWID_UK">
+<sourceConnName>MEDS</sourceConnName>
+<sourceObjSchema>MEDSDATA</sourceObjSchema>
+<sourceObjName>R421_SDE_ROWID_UK</sourceObjName>
+<createdBy>darbo</createdBy>
+<createdTime>2024-02-13 17:12:28 UTC</createdTime>
+<ownerDesignName>MEDS</ownerDesignName>
+<indexState>Unique Plain Index</indexState>
+<isSurrogateKey>false</isSurrogateKey>
+<indexColumnUsage>
+<colUsage columnID="1E700CAB-B15C-517D-66C1-1513A8408A90"/>
+</indexColumnUsage>
+</ind_PK_UK>
+<ind_PK_UK id="785E1188-1797-A8FE-8A17-DBE6F875DB4D" schemaObject="198B7359-7E07-FB02-B07C-A0A91EE44FE7" name="WVS_BATHY_3M">
+<sourceConnName>MEDS</sourceConnName>
+<sourceObjSchema>MEDSDATA</sourceObjSchema>
+<sourceObjName>WVS_BATHY_3M</sourceObjName>
+<createdBy>darbo</createdBy>
+<createdTime>2024-02-13 17:12:28 UTC</createdTime>
+<ownerDesignName>MEDS</ownerDesignName>
+<isSurrogateKey>false</isSurrogateKey>
+<indexColumnUsage>
+<colUsage columnID="525E2790-252D-8FC1-A6FD-54C082EEA430"/>
+</indexColumnUsage>
+</ind_PK_UK>
+</indexes>
+<spatialDefinitions>
+<spatialColumnDefinition class="oracle.dbtools.crest.model.design.relational.SpatialColumnDefObject" name="ColumnDefinition_1" objectID="C10C2CFD-6CE2-B83B-DBBF-969E38CA0286">
+<function>false</function>
+<spatialIndex>F228BB5F-8B1A-69D7-3506-7646F4E725C5</spatialIndex>
+</spatialColumnDefinition>
+</spatialDefinitions>
+</Table>

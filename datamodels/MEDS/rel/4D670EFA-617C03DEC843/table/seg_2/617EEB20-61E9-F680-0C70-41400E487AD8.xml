@@ -1,0 +1,96 @@
+<?xml version = '1.0' encoding = 'UTF-8'?>
+<Table class="oracle.dbtools.crest.model.design.relational.Table" directorySegmentName="seg_2" id="617EEB20-61E9-F680-0C70-41400E487AD8" schemaObject="198B7359-7E07-FB02-B07C-A0A91EE44FE7" name="OBSERVATION">
+<sourceConnName>MEDS</sourceConnName>
+<sourceObjSchema>MEDSDATA</sourceObjSchema>
+<sourceObjName>OBSERVATION</sourceObjName>
+<createdBy>darbo</createdBy>
+<createdTime>2024-02-13 17:12:14 UTC</createdTime>
+<ownerDesignName>MEDS</ownerDesignName>
+<allowColumnReorder>false</allowColumnReorder>
+<existDependencyGenerateInDDl>true</existDependencyGenerateInDDl>
+<parsed>true</parsed>
+<columns itemClass="oracle.dbtools.crest.model.design.relational.Column">
+<Column name="USER_NAME" id="84ED6B23-88EF-D806-6189-FA9DF9860C79">
+<sourceConnName>MEDS</sourceConnName>
+<sourceObjSchema>OBSERVATION</sourceObjSchema>
+<sourceObjName>USER_NAME</sourceObjName>
+<createdBy>darbo</createdBy>
+<createdTime>2024-02-13 17:12:19 UTC</createdTime>
+<ownerDesignName>MEDS</ownerDesignName>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT025</logicalDatatype>
+<dataTypeSize>64 BYTE</dataTypeSize>
+<ownDataTypeParameters>64 BYTE,,</ownDataTypeParameters>
+<autoIncrementCycle>false</autoIncrementCycle>
+</Column>
+<Column name="JOB_NUMBER" id="95631357-4C16-0717-6B1D-E94D02152112">
+<sourceConnName>MEDS</sourceConnName>
+<sourceObjSchema>OBSERVATION</sourceObjSchema>
+<sourceObjName>JOB_NUMBER</sourceObjName>
+<createdBy>darbo</createdBy>
+<createdTime>2024-02-13 17:12:19 UTC</createdTime>
+<ownerDesignName>MEDS</ownerDesignName>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT019</logicalDatatype>
+<dataTypePrecision>*</dataTypePrecision>
+<dataTypeScale>0</dataTypeScale>
+<ownDataTypeParameters>,*,0</ownDataTypeParameters>
+<autoIncrementCycle>false</autoIncrementCycle>
+</Column>
+<Column name="OBSERVATION_NUMBER" id="677E048C-58B5-EDC8-71A4-7A1B55152F74">
+<sourceConnName>MEDS</sourceConnName>
+<sourceObjSchema>OBSERVATION</sourceObjSchema>
+<sourceObjName>OBSERVATION_NUMBER</sourceObjName>
+<createdBy>darbo</createdBy>
+<createdTime>2024-02-13 17:12:19 UTC</createdTime>
+<ownerDesignName>MEDS</ownerDesignName>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT019</logicalDatatype>
+<dataTypePrecision>*</dataTypePrecision>
+<dataTypeScale>0</dataTypeScale>
+<ownDataTypeParameters>,*,0</ownDataTypeParameters>
+<autoIncrementCycle>false</autoIncrementCycle>
+</Column>
+</columns>
+<indexes itemClass="oracle.dbtools.crest.model.design.relational.Index">
+<ind_PK_UK id="28EA69CA-B3B7-4C08-FCEB-2F00241654BA" schemaObject="198B7359-7E07-FB02-B07C-A0A91EE44FE7" name="OBSERVATION_IDX1">
+<sourceConnName>MEDS</sourceConnName>
+<sourceObjSchema>MEDSDATA</sourceObjSchema>
+<sourceObjName>OBSERVATION_IDX1</sourceObjName>
+<createdBy>darbo</createdBy>
+<createdTime>2024-02-13 17:12:26 UTC</createdTime>
+<ownerDesignName>MEDS</ownerDesignName>
+<isSurrogateKey>false</isSurrogateKey>
+<indexColumnUsage>
+<colUsage columnID="84ED6B23-88EF-D806-6189-FA9DF9860C79"/>
+</indexColumnUsage>
+</ind_PK_UK>
+<ind_PK_UK id="EB0F4D86-59DF-0BE3-608F-51C315DE9124" schemaObject="198B7359-7E07-FB02-B07C-A0A91EE44FE7" name="OBSERVATION_IDX2">
+<sourceConnName>MEDS</sourceConnName>
+<sourceObjSchema>MEDSDATA</sourceObjSchema>
+<sourceObjName>OBSERVATION_IDX2</sourceObjName>
+<createdBy>darbo</createdBy>
+<createdTime>2024-02-13 17:12:26 UTC</createdTime>
+<ownerDesignName>MEDS</ownerDesignName>
+<isSurrogateKey>false</isSurrogateKey>
+<indexColumnUsage>
+<colUsage columnID="95631357-4C16-0717-6B1D-E94D02152112"/>
+</indexColumnUsage>
+</ind_PK_UK>
+<ind_PK_UK id="F309FF56-6477-9AC8-8331-28BC72ED871E" schemaObject="198B7359-7E07-FB02-B07C-A0A91EE44FE7" name="OBSERVATION_IDX3">
+<sourceConnName>MEDS</sourceConnName>
+<sourceObjSchema>MEDSDATA</sourceObjSchema>
+<sourceObjName>OBSERVATION_IDX3</sourceObjName>
+<createdBy>darbo</createdBy>
+<createdTime>2024-02-13 17:12:26 UTC</createdTime>
+<ownerDesignName>MEDS</ownerDesignName>
+<isSurrogateKey>false</isSurrogateKey>
+<indexColumnUsage>
+<colUsage columnID="677E048C-58B5-EDC8-71A4-7A1B55152F74"/>
+</indexColumnUsage>
+</ind_PK_UK>
+</indexes>
+</Table>

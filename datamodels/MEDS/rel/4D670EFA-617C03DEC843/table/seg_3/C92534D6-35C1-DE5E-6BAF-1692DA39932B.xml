@@ -1,0 +1,137 @@
+<?xml version = '1.0' encoding = 'UTF-8'?>
+<Table class="oracle.dbtools.crest.model.design.relational.Table" directorySegmentName="seg_3" id="C92534D6-35C1-DE5E-6BAF-1692DA39932B" schemaObject="198B7359-7E07-FB02-B07C-A0A91EE44FE7" name="WVS_D_3M_COUNTPOLY">
+<sourceConnName>MEDS</sourceConnName>
+<sourceObjSchema>MEDSDATA</sourceObjSchema>
+<sourceObjName>WVS_D_3M_COUNTPOLY</sourceObjName>
+<createdBy>darbo</createdBy>
+<createdTime>2024-02-13 17:12:14 UTC</createdTime>
+<ownerDesignName>MEDS</ownerDesignName>
+<allowColumnReorder>false</allowColumnReorder>
+<existDependencyGenerateInDDl>true</existDependencyGenerateInDDl>
+<parsed>true</parsed>
+<columns itemClass="oracle.dbtools.crest.model.design.relational.Column">
+<Column name="OBJECTID" id="10875949-B16D-B5BC-ACA0-CF7E6751EE57">
+<sourceConnName>MEDS</sourceConnName>
+<sourceObjSchema>WVS_D_3M_COUNTPOLY</sourceObjSchema>
+<sourceObjName>OBJECTID</sourceObjName>
+<createdBy>darbo</createdBy>
+<createdTime>2024-02-13 17:12:19 UTC</createdTime>
+<ownerDesignName>MEDS</ownerDesignName>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT019</logicalDatatype>
+<dataTypePrecision>*</dataTypePrecision>
+<dataTypeScale>0</dataTypeScale>
+<ownDataTypeParameters>,*,0</ownDataTypeParameters>
+<autoIncrementCycle>false</autoIncrementCycle>
+</Column>
+<Column name="NAM_DESCRI" id="E5A5192D-6C0F-042C-0191-9C55CA5BEE02">
+<sourceConnName>MEDS</sourceConnName>
+<sourceObjSchema>WVS_D_3M_COUNTPOLY</sourceObjSchema>
+<sourceObjName>NAM_DESCRI</sourceObjName>
+<createdBy>darbo</createdBy>
+<createdTime>2024-02-13 17:12:19 UTC</createdTime>
+<ownerDesignName>MEDS</ownerDesignName>
+<nullsAllowed>true</nullsAllowed>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT024</logicalDatatype>
+<dataTypeSize>254 BYTE</dataTypeSize>
+<ownDataTypeParameters>254 BYTE,,</ownDataTypeParameters>
+<autoIncrementCycle>false</autoIncrementCycle>
+</Column>
+<Column name="COUNT" id="AB4848E6-A376-5C7F-56B9-B720219DCC02">
+<sourceConnName>MEDS</sourceConnName>
+<sourceObjSchema>WVS_D_3M_COUNTPOLY</sourceObjSchema>
+<sourceObjName>COUNT</sourceObjName>
+<createdBy>darbo</createdBy>
+<createdTime>2024-02-13 17:12:19 UTC</createdTime>
+<ownerDesignName>MEDS</ownerDesignName>
+<nullsAllowed>true</nullsAllowed>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT019</logicalDatatype>
+<dataTypePrecision>11</dataTypePrecision>
+<dataTypeScale>0</dataTypeScale>
+<ownDataTypeParameters>,11,0</ownDataTypeParameters>
+<autoIncrementCycle>false</autoIncrementCycle>
+</Column>
+<Column name="SHAPE" id="053A55D2-A5DF-2AEE-D565-5FA48EFB3965">
+<sourceConnName>MEDS</sourceConnName>
+<sourceObjSchema>WVS_D_3M_COUNTPOLY</sourceObjSchema>
+<sourceObjName>SHAPE</sourceObjName>
+<createdBy>darbo</createdBy>
+<createdTime>2024-02-13 17:12:19 UTC</createdTime>
+<ownerDesignName>MEDS</ownerDesignName>
+<nullsAllowed>true</nullsAllowed>
+<useDomainConstraints>false</useDomainConstraints>
+<allowSubtypeSubstitution>false</allowSubtypeSubstitution>
+<use>3</use>
+<structuredType>47E390DE-0671-C4B1-8428-0F45CBEE18F8</structuredType>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
+<autoIncrementCycle>false</autoIncrementCycle>
+</Column>
+<Column name="SE_ANNO_CAD_DATA" id="5007964E-720E-5A13-8591-F6598F0D9ACE">
+<sourceConnName>MEDS</sourceConnName>
+<sourceObjSchema>WVS_D_3M_COUNTPOLY</sourceObjSchema>
+<sourceObjName>SE_ANNO_CAD_DATA</sourceObjName>
+<createdBy>darbo</createdBy>
+<createdTime>2024-02-13 17:12:19 UTC</createdTime>
+<ownerDesignName>MEDS</ownerDesignName>
+<nullsAllowed>true</nullsAllowed>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT029</logicalDatatype>
+<dataTypeSize>4000</dataTypeSize>
+<ownDataTypeParameters>4000,,</ownDataTypeParameters>
+<autoIncrementCycle>false</autoIncrementCycle>
+</Column>
+</columns>
+<indexes itemClass="oracle.dbtools.crest.model.design.relational.Index">
+<ind_PK_UK id="A0B8FCCB-4CFB-E991-C4FC-3307D1D38AD2" schemaObject="198B7359-7E07-FB02-B07C-A0A91EE44FE7" name="A530_IX1">
+<sourceConnName>MEDS</sourceConnName>
+<sourceObjSchema>MEDSDATA</sourceObjSchema>
+<sourceObjName>A530_IX1</sourceObjName>
+<createdBy>darbo</createdBy>
+<createdTime>2024-02-13 17:12:28 UTC</createdTime>
+<ownerDesignName>MEDS</ownerDesignName>
+<spatialIndex>true</spatialIndex>
+<isSurrogateKey>false</isSurrogateKey>
+<indexColumnUsage>
+<colUsage columnID="053A55D2-A5DF-2AEE-D565-5FA48EFB3965"/>
+</indexColumnUsage>
+</ind_PK_UK>
+<ind_PK_UK id="5D7E336C-730A-7FF5-3540-5A1335220310" schemaObject="198B7359-7E07-FB02-B07C-A0A91EE44FE7" name="R420_SDE_ROWID_UK">
+<sourceConnName>MEDS</sourceConnName>
+<sourceObjSchema>MEDSDATA</sourceObjSchema>
+<sourceObjName>R420_SDE_ROWID_UK</sourceObjName>
+<createdBy>darbo</createdBy>
+<createdTime>2024-02-13 17:12:28 UTC</createdTime>
+<ownerDesignName>MEDS</ownerDesignName>
+<indexState>Unique Plain Index</indexState>
+<isSurrogateKey>false</isSurrogateKey>
+<indexColumnUsage>
+<colUsage columnID="10875949-B16D-B5BC-ACA0-CF7E6751EE57"/>
+</indexColumnUsage>
+</ind_PK_UK>
+<ind_PK_UK id="D34DCA3F-C9B7-C81E-7ABE-C0D877A4E8C7" schemaObject="198B7359-7E07-FB02-B07C-A0A91EE44FE7" name="WVS_COUNTRY">
+<sourceConnName>MEDS</sourceConnName>
+<sourceObjSchema>MEDSDATA</sourceObjSchema>
+<sourceObjName>WVS_COUNTRY</sourceObjName>
+<createdBy>darbo</createdBy>
+<createdTime>2024-02-13 17:12:28 UTC</createdTime>
+<ownerDesignName>MEDS</ownerDesignName>
+<indexState>Unique Plain Index</indexState>
+<isSurrogateKey>false</isSurrogateKey>
+<indexColumnUsage>
+<colUsage columnID="E5A5192D-6C0F-042C-0191-9C55CA5BEE02"/>
+</indexColumnUsage>
+</ind_PK_UK>
+</indexes>
+<spatialDefinitions>
+<spatialColumnDefinition class="oracle.dbtools.crest.model.design.relational.SpatialColumnDefObject" name="ColumnDefinition_1" objectID="2E2F0E8C-F0E3-70DB-0249-C1FA13EFAAEF">
+<function>false</function>
+<spatialIndex>A0B8FCCB-4CFB-E991-C4FC-3307D1D38AD2</spatialIndex>
+</spatialColumnDefinition>
+</spatialDefinitions>
+</Table>

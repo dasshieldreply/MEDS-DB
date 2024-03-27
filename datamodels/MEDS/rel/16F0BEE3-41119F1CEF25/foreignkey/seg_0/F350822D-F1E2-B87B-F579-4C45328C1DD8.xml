@@ -1,0 +1,16 @@
+<?xml version = '1.0' encoding = 'UTF-8'?>
+<FKIndexAssociation class="oracle.dbtools.crest.model.design.relational.FKIndexAssociation" directorySegmentName="seg_0" id="F350822D-F1E2-B87B-F579-4C45328C1DD8" containerWithKeyObject="963D1708-7395-5603-BFD5-DF8C56139A2E" localFKIndex="6D9BFC09-27E6-696F-4CE3-CFE0042C2EFE" name="MEDS_PROCESSING_JOB_CRUISE_LAYER_FK">
+<createdBy>d.arboittedossantos</createdBy>
+<createdTime>2024-03-22 09:58:51 UTC</createdTime>
+<ownerDesignName>MEDS</ownerDesignName>
+<referredTableLongName>MEDSADMIN.CRUISE_LAYER</referredTableLongName>
+<deleteRule>NO ACTION</deleteRule>
+<referredTableID>E06F72CD-74DF-5FA7-0225-295A398CFFA4</referredTableID>
+<keyObject>5E2012C0-487C-8215-FA82-E61BE33B9280</keyObject>
+<referredKeyID>5E2012C0-487C-8215-FA82-E61BE33B9280</referredKeyID>
+<mandatory>true</mandatory>
+<refColNames>MEDS_CRUISE_NUMBER</refColNames>
+<transferable>true</transferable>
+<rely>false</rely>
+<columnDependencyConstraintGenerateInDDL>true</columnDependencyConstraintGenerateInDDL>
+</FKIndexAssociation>
