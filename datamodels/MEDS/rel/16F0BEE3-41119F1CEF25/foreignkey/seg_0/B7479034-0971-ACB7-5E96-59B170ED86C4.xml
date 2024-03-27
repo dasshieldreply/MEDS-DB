@@ -1,0 +1,16 @@
+<?xml version = '1.0' encoding = 'UTF-8'?>
+<FKIndexAssociation class="oracle.dbtools.crest.model.design.relational.FKIndexAssociation" directorySegmentName="seg_0" id="B7479034-0971-ACB7-5E96-59B170ED86C4" containerWithKeyObject="0DFB4023-957B-4119-A683-324BDE01B2C1" localFKIndex="E33F45C0-20D5-ABD2-B1EC-BBD9D8D4A915" name="GENERIC_EDIT_TABLE_LOOKUP_F">
+<createdBy>d.arboittedossantos</createdBy>
+<createdTime>2024-03-27 11:58:10 UTC</createdTime>
+<ownerDesignName>MEDS</ownerDesignName>
+<referredTableLongName>MEDSADMIN.TABLE_LOOKUP</referredTableLongName>
+<deleteRule>NO ACTION</deleteRule>
+<referredTableID>3BA317C1-F141-BDE4-896E-7D6B9FB3F80E</referredTableID>
+<keyObject>3B3C9963-18C2-C51C-B184-00D7314D970A</keyObject>
+<referredKeyID>3B3C9963-18C2-C51C-B184-00D7314D970A</referredKeyID>
+<mandatory>true</mandatory>
+<refColNames>TABLE_NAME</refColNames>
+<transferable>true</transferable>
+<rely>false</rely>
+<columnDependencyConstraintGenerateInDDL>true</columnDependencyConstraintGenerateInDDL>
+</FKIndexAssociation>

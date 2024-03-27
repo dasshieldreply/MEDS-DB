@@ -1,0 +1,16 @@
+<?xml version = '1.0' encoding = 'UTF-8'?>
+<FKIndexAssociation class="oracle.dbtools.crest.model.design.relational.FKIndexAssociation" directorySegmentName="seg_0" id="3C4F97D2-F87D-AB6F-D06F-5295AF8C5F03" containerWithKeyObject="BA755967-3E0F-F9C1-F9E9-84FEFDD416C3" localFKIndex="915DC12F-5AFC-4392-E0DE-B86891740994" name="ACCESS_CONTROL_USER_LOOKUP_F">
+<createdBy>d.arboittedossantos</createdBy>
+<createdTime>2024-03-27 09:58:00 UTC</createdTime>
+<ownerDesignName>MEDS</ownerDesignName>
+<referredTableLongName>MEDSADMIN.USER_LOOKUP</referredTableLongName>
+<deleteRule>NO ACTION</deleteRule>
+<referredTableID>0B118DA0-735A-B26F-6E6A-F519334007C8</referredTableID>
+<keyObject>16A7EE44-001A-ECB0-AC05-CC299F91CF9E</keyObject>
+<referredKeyID>16A7EE44-001A-ECB0-AC05-CC299F91CF9E</referredKeyID>
+<mandatory>true</mandatory>
+<refColNames>USER_NAME</refColNames>
+<transferable>true</transferable>
+<rely>false</rely>
+<columnDependencyConstraintGenerateInDDL>true</columnDependencyConstraintGenerateInDDL>
+</FKIndexAssociation>

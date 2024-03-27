@@ -17,7 +17,6 @@
 <createdBy>d.arboittedossantos</createdBy>
 <createdTime>2024-03-15 10:19:42 UTC</createdTime>
 <ownerDesignName>MEDS</ownerDesignName>
-<nullsAllowed>true</nullsAllowed>
 <useDomainConstraints>false</useDomainConstraints>
 <use>1</use>
 <logicalDatatype>LOGDT024</logicalDatatype>
@@ -47,7 +46,6 @@
 <createdBy>d.arboittedossantos</createdBy>
 <createdTime>2024-03-15 10:19:42 UTC</createdTime>
 <ownerDesignName>MEDS</ownerDesignName>
-<nullsAllowed>true</nullsAllowed>
 <useDomainConstraints>false</useDomainConstraints>
 <use>1</use>
 <logicalDatatype>LOGDT024</logicalDatatype>
@@ -62,13 +60,11 @@
 <createdBy>d.arboittedossantos</createdBy>
 <createdTime>2024-03-15 10:19:42 UTC</createdTime>
 <ownerDesignName>MEDS</ownerDesignName>
-<nullsAllowed>true</nullsAllowed>
 <useDomainConstraints>false</useDomainConstraints>
 <use>1</use>
 <logicalDatatype>LOGDT019</logicalDatatype>
 <dataTypePrecision>8</dataTypePrecision>
-<dataTypeScale>0</dataTypeScale>
-<ownDataTypeParameters>,8,0</ownDataTypeParameters>
+<ownDataTypeParameters>,8,</ownDataTypeParameters>
 <autoIncrementCycle>false</autoIncrementCycle>
 </Column>
 <Column name="GENERIC" id="EA11023D-2041-6136-C5EA-A0F534FDCFA4">

@@ -22,8 +22,7 @@
 <use>1</use>
 <logicalDatatype>LOGDT019</logicalDatatype>
 <dataTypePrecision>8</dataTypePrecision>
-<dataTypeScale>0</dataTypeScale>
-<ownDataTypeParameters>,8,0</ownDataTypeParameters>
+<ownDataTypeParameters>,8,</ownDataTypeParameters>
 <autoIncrementCycle>false</autoIncrementCycle>
 </Column>
 <Column name="FIELD_NAME" id="25F2E93A-2D15-7610-379A-03E7C7536F77">
@@ -165,13 +164,15 @@
 <createdBy>d.arboittedossantos</createdBy>
 <createdTime>2024-03-15 10:19:42 UTC</createdTime>
 <ownerDesignName>MEDS</ownerDesignName>
-<nullsAllowed>true</nullsAllowed>
 <useDomainConstraints>false</useDomainConstraints>
 <use>1</use>
 <logicalDatatype>LOGDT024</logicalDatatype>
 <dataTypeSize>50 BYTE</dataTypeSize>
 <ownDataTypeParameters>50 BYTE,,</ownDataTypeParameters>
 <autoIncrementCycle>false</autoIncrementCycle>
+<associations>
+<colAssociation fkAssociation="5C052A9D-93BC-3680-181F-A1A6F78DB63E" referredColumn="780233F4-05FA-322B-B59D-AC627198B959"/>
+</associations>
 </Column>
 <Column name="UPDATE_METHOD" id="3A82528F-B0E4-CD8F-4720-B6403FF3F812">
 <sourceConnName>MEDS ADMIN</sourceConnName>
@@ -408,6 +409,16 @@
 <isSurrogateKey>false</isSurrogateKey>
 <indexColumnUsage>
 <colUsage columnID="64C88D79-08FE-5702-28E6-4477369E528A"/>
+</indexColumnUsage>
+</ind_PK_UK>
+<ind_PK_UK id="461080D9-7B99-B3EB-A1AA-30BF72D412F4" name="FIELD_LOOKUP_TABLE_LOOKUP_F">
+<createdBy>d.arboittedossantos</createdBy>
+<createdTime>2024-03-27 11:55:14 UTC</createdTime>
+<ownerDesignName>MEDS</ownerDesignName>
+<indexState>Foreign Key</indexState>
+<isSurrogateKey>false</isSurrogateKey>
+<indexColumnUsage>
+<colUsage columnID="045C8462-EE2D-C92A-B6D6-2B6A5816D1AE"/>
 </indexColumnUsage>
 </ind_PK_UK>
 </indexes>

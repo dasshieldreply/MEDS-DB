@@ -49,13 +49,15 @@
 <createdBy>d.arboittedossantos</createdBy>
 <createdTime>2024-03-15 10:19:42 UTC</createdTime>
 <ownerDesignName>MEDS</ownerDesignName>
-<nullsAllowed>true</nullsAllowed>
 <useDomainConstraints>false</useDomainConstraints>
 <use>1</use>
 <logicalDatatype>LOGDT024</logicalDatatype>
 <dataTypeSize>50 BYTE</dataTypeSize>
 <ownDataTypeParameters>50 BYTE,,</ownDataTypeParameters>
 <autoIncrementCycle>false</autoIncrementCycle>
+<associations>
+<colAssociation fkAssociation="C719C9B1-0F6C-8F70-1B00-170C17AD884B" referredColumn="780233F4-05FA-322B-B59D-AC627198B959"/>
+</associations>
 </Column>
 <Column name="FIELD_NAME_ONE" id="EBD52FFB-994C-4E0C-9602-067F9ABAEF7C">
 <sourceConnName>MEDS ADMIN</sourceConnName>
@@ -118,4 +120,16 @@
 <autoIncrementCycle>false</autoIncrementCycle>
 </Column>
 </columns>
+<indexes itemClass="oracle.dbtools.crest.model.design.relational.Index">
+<ind_PK_UK id="9E2BEDA7-E750-4529-E0AB-67BAEA7A627D" name="EXTRACTION_OPTION_LOOKUP_TABLE_LOOKUP_F">
+<createdBy>d.arboittedossantos</createdBy>
+<createdTime>2024-03-27 11:54:07 UTC</createdTime>
+<ownerDesignName>MEDS</ownerDesignName>
+<indexState>Foreign Key</indexState>
+<isSurrogateKey>false</isSurrogateKey>
+<indexColumnUsage>
+<colUsage columnID="CD5AED5A-B967-7543-D38F-2FCBB613DB0D"/>
+</indexColumnUsage>
+</ind_PK_UK>
+</indexes>
 </Table>

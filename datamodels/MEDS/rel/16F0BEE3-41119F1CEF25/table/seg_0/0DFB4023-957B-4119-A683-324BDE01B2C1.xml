@@ -37,6 +37,9 @@
 <dataTypeSize>30 BYTE</dataTypeSize>
 <ownDataTypeParameters>30 BYTE,,</ownDataTypeParameters>
 <autoIncrementCycle>false</autoIncrementCycle>
+<associations>
+<colAssociation fkAssociation="B7479034-0971-ACB7-5E96-59B170ED86C4" referredColumn="780233F4-05FA-322B-B59D-AC627198B959"/>
+</associations>
 </Column>
 <Column name="COLUMN_NAME" id="0346FD79-0024-ABE9-23D6-6BADE419F524">
 <sourceConnName>MEDS ADMIN</sourceConnName>
@@ -250,6 +253,16 @@
 <isSurrogateKey>false</isSurrogateKey>
 <indexColumnUsage>
 <colUsage columnID="7C879D0F-C788-B336-E6F2-D1C0C50EE5D1"/>
+</indexColumnUsage>
+</ind_PK_UK>
+<ind_PK_UK id="E33F45C0-20D5-ABD2-B1EC-BBD9D8D4A915" name="GENERIC_EDIT_TABLE_LOOKUP_F">
+<createdBy>d.arboittedossantos</createdBy>
+<createdTime>2024-03-27 11:58:10 UTC</createdTime>
+<ownerDesignName>MEDS</ownerDesignName>
+<indexState>Foreign Key</indexState>
+<isSurrogateKey>false</isSurrogateKey>
+<indexColumnUsage>
+<colUsage columnID="ACB1DA73-E630-7309-E343-B07C38015890"/>
 </indexColumnUsage>
 </ind_PK_UK>
 </indexes>

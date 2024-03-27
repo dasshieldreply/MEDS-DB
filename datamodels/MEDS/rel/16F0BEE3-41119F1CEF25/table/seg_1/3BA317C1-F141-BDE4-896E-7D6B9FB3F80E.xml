@@ -1,0 +1,36 @@
+<?xml version = '1.0' encoding = 'UTF-8'?>
+<Table class="oracle.dbtools.crest.model.design.relational.Table" directorySegmentName="seg_1" id="3BA317C1-F141-BDE4-896E-7D6B9FB3F80E" schemaObject="1FA4795A-F971-A0A7-EC72-1452C492DEA9" name="TABLE_LOOKUP">
+<createdBy>d.arboittedossantos</createdBy>
+<createdTime>2024-03-27 09:54:46 UTC</createdTime>
+<ownerDesignName>MEDS</ownerDesignName>
+<ordsAlias>table_154</ordsAlias>
+<allowColumnReorder>false</allowColumnReorder>
+<existDependencyGenerateInDDl>true</existDependencyGenerateInDDl>
+<parsed>true</parsed>
+<columns itemClass="oracle.dbtools.crest.model.design.relational.Column">
+<Column name="TABLE_NAME" id="780233F4-05FA-322B-B59D-AC627198B959">
+<createdBy>d.arboittedossantos</createdBy>
+<createdTime>2024-03-27 09:55:51 UTC</createdTime>
+<ownerDesignName>MEDS</ownerDesignName>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT024</logicalDatatype>
+<dataTypeSize>32 BYTE</dataTypeSize>
+<ownDataTypeParameters>32 BYTE,,</ownDataTypeParameters>
+<autoIncrementCycle>false</autoIncrementCycle>
+</Column>
+</columns>
+<indexes itemClass="oracle.dbtools.crest.model.design.relational.Index">
+<ind_PK_UK id="3B3C9963-18C2-C51C-B184-00D7314D970A" name="TABLE_LOOKUP_P">
+<createdBy>d.arboittedossantos</createdBy>
+<createdTime>2024-03-27 09:55:51 UTC</createdTime>
+<ownerDesignName>MEDS</ownerDesignName>
+<pk>true</pk>
+<indexState>Primary Constraint</indexState>
+<isSurrogateKey>false</isSurrogateKey>
+<indexColumnUsage>
+<colUsage columnID="780233F4-05FA-322B-B59D-AC627198B959"/>
+</indexColumnUsage>
+</ind_PK_UK>
+</indexes>
+</Table>

@@ -21,8 +21,11 @@
 <use>1</use>
 <logicalDatatype>LOGDT024</logicalDatatype>
 <dataTypeSize>32 BYTE</dataTypeSize>
-<ownDataTypeParameters>32 BYTE,,</ownDataTypeParameters>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
 <autoIncrementCycle>false</autoIncrementCycle>
+<associations>
+<colAssociation fkAssociation="BDD95375-446F-B407-9EEA-A35AE19A738F" referredColumn="780233F4-05FA-322B-B59D-AC627198B959"/>
+</associations>
 </Column>
 <Column name="USER_NAME" id="70EBE91C-BF71-408B-D35B-DEA209EA6F41">
 <sourceConnName>MEDS ADMIN</sourceConnName>
@@ -37,6 +40,9 @@
 <dataTypeSize>32 BYTE</dataTypeSize>
 <ownDataTypeParameters>32 BYTE,,</ownDataTypeParameters>
 <autoIncrementCycle>false</autoIncrementCycle>
+<associations>
+<colAssociation fkAssociation="3C4F97D2-F87D-AB6F-D06F-5295AF8C5F03" referredColumn="12572E7E-29E2-A040-4980-538973BCBD36"/>
+</associations>
 </Column>
 <Column name="MULTI_SELECT" id="20FC28AE-E9A6-0E51-B29B-596C34AA7728">
 <sourceConnName>MEDS ADMIN</sourceConnName>
@@ -55,4 +61,26 @@
 <autoIncrementCycle>false</autoIncrementCycle>
 </Column>
 </columns>
+<indexes itemClass="oracle.dbtools.crest.model.design.relational.Index">
+<ind_PK_UK id="30DEE70E-570A-6DBF-1CE9-2FF4D823A75E" name="ACCESS_CONTROL_TABLE_LOOKUP_F">
+<createdBy>d.arboittedossantos</createdBy>
+<createdTime>2024-03-27 09:55:57 UTC</createdTime>
+<ownerDesignName>MEDS</ownerDesignName>
+<indexState>Foreign Key</indexState>
+<isSurrogateKey>false</isSurrogateKey>
+<indexColumnUsage>
+<colUsage columnID="084A6164-47A2-5506-F436-BC3C31F79CD7"/>
+</indexColumnUsage>
+</ind_PK_UK>
+<ind_PK_UK id="915DC12F-5AFC-4392-E0DE-B86891740994" name="ACCESS_CONTROL_USER_LOOKUP_F">
+<createdBy>d.arboittedossantos</createdBy>
+<createdTime>2024-03-27 09:58:00 UTC</createdTime>
+<ownerDesignName>MEDS</ownerDesignName>
+<indexState>Foreign Key</indexState>
+<isSurrogateKey>false</isSurrogateKey>
+<indexColumnUsage>
+<colUsage columnID="70EBE91C-BF71-408B-D35B-DEA209EA6F41"/>
+</indexColumnUsage>
+</ind_PK_UK>
+</indexes>
 </Table>

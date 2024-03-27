@@ -32,13 +32,15 @@
 <createdBy>d.arboittedossantos</createdBy>
 <createdTime>2024-03-15 10:19:42 UTC</createdTime>
 <ownerDesignName>MEDS</ownerDesignName>
-<nullsAllowed>true</nullsAllowed>
 <useDomainConstraints>false</useDomainConstraints>
 <use>1</use>
 <logicalDatatype>LOGDT024</logicalDatatype>
 <dataTypeSize>75 BYTE</dataTypeSize>
 <ownDataTypeParameters>75 BYTE,,</ownDataTypeParameters>
 <autoIncrementCycle>false</autoIncrementCycle>
+<associations>
+<colAssociation fkAssociation="7AD2319C-C1BB-8AFF-C579-A31DD4FA285A" referredColumn="12572E7E-29E2-A040-4980-538973BCBD36"/>
+</associations>
 </Column>
 <Column name="LAYER_NAME" id="CF48094E-63D2-C830-5BE5-F6B4A664FE86">
 <sourceConnName>MEDS ADMIN</sourceConnName>
@@ -102,4 +104,16 @@
 <autoIncrementCycle>false</autoIncrementCycle>
 </Column>
 </columns>
+<indexes itemClass="oracle.dbtools.crest.model.design.relational.Index">
+<ind_PK_UK id="C365FF41-E053-8FB2-55CC-32068C314A1F" name="LAYER_LOOKUP_USER_LOOKUP_F">
+<createdBy>d.arboittedossantos</createdBy>
+<createdTime>2024-03-27 11:59:33 UTC</createdTime>
+<ownerDesignName>MEDS</ownerDesignName>
+<indexState>Foreign Key</indexState>
+<isSurrogateKey>false</isSurrogateKey>
+<indexColumnUsage>
+<colUsage columnID="8C1811D0-388C-B62C-0960-164440F7F41F"/>
+</indexColumnUsage>
+</ind_PK_UK>
+</indexes>
 </Table>
