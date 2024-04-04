@@ -1,0 +1,22 @@
+<?xml version = '1.0' encoding = 'UTF-8'?>
+<TableProxyOraclev12c class="oracle.dbtools.crest.model.design.storage.oracle.v12c.TableProxyOraclev12c" name="FLAG_TYPES_LOOKUP" directorySegmentName="seg_1" id="8EE3B8A1-2085-72B8-611C-29470D6E0304">
+<createdBy>darbo</createdBy>
+<createdTime>2024-02-13 17:12:16 UTC</createdTime>
+<ownerDesignName>MEDS_DATA</ownerDesignName>
+<schemaObject>198B7359-7E07-FB02-B07C-A0A91EE44FE7</schemaObject>
+<logging>YES</logging>
+<partitionedRowMovement>DISABLE</partitionedRowMovement>
+<segment>D7B54673-F74D-BFE1-8C5D-FBA86950D400</segment>
+<tableSpace>01F2BAC7-B949-43A6-09CC-CECB09A3E209</tableSpace>
+<temporaryChanged>false</temporaryChanged>
+<accessDriverType>oracle_loader</accessDriverType>
+<rejectLimit></rejectLimit>
+<inMemory>NO</inMemory>
+<columnProxies itemClass="oracle.dbtools.crest.model.design.storage.oracle.v12c.ColumnProxyOraclev12c">
+<ColumnProxy name="FLAG_TYPE_NAME" id="30FD02FE-1EBA-C529-3D20-B4628D1C88BA">
+<createdBy>darbo</createdBy>
+<createdTime>2024-02-13 17:12:18 UTC</createdTime>
+<ownerDesignName>MEDS_DATA</ownerDesignName>
+</ColumnProxy>
+</columnProxies>
+</TableProxyOraclev12c>

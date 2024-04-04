@@ -1,0 +1,317 @@
+<?xml version = '1.0' encoding = 'UTF-8'?>
+<Table class="oracle.dbtools.crest.model.design.relational.Table" directorySegmentName="seg_1" id="A07B5B6A-91BC-0FEB-BAAD-935DDC7D1663" schemaObject="198B7359-7E07-FB02-B07C-A0A91EE44FE7" name="MLO_JELLYFISH_DATA">
+<sourceConnName>MEDS</sourceConnName>
+<sourceObjSchema>MEDSDATA</sourceObjSchema>
+<sourceObjName>MLO_JELLYFISH_DATA</sourceObjName>
+<createdBy>darbo</createdBy>
+<createdTime>2024-02-13 17:12:14 UTC</createdTime>
+<ownerDesignName>MEDS</ownerDesignName>
+<allowColumnReorder>false</allowColumnReorder>
+<existDependencyGenerateInDDl>true</existDependencyGenerateInDDl>
+<parsed>true</parsed>
+<columns itemClass="oracle.dbtools.crest.model.design.relational.Column">
+<Column name="RECORD_NUMBER" id="5183B654-44D8-24F9-5A86-A6EC0AF1A6F8">
+<sourceConnName>MEDS</sourceConnName>
+<sourceObjSchema>MLO_JELLYFISH_DATA</sourceObjSchema>
+<sourceObjName>RECORD_NUMBER</sourceObjName>
+<createdBy>darbo</createdBy>
+<createdTime>2024-02-13 17:12:19 UTC</createdTime>
+<ownerDesignName>MEDS</ownerDesignName>
+<nullsAllowed>true</nullsAllowed>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT019</logicalDatatype>
+<dataTypePrecision>6</dataTypePrecision>
+<dataTypeScale>0</dataTypeScale>
+<ownDataTypeParameters>,6,0</ownDataTypeParameters>
+<autoIncrementCycle>false</autoIncrementCycle>
+</Column>
+<Column name="COUNT" id="091C1C0E-7A20-47F8-472E-681919910C34">
+<sourceConnName>MEDS</sourceConnName>
+<sourceObjSchema>MLO_JELLYFISH_DATA</sourceObjSchema>
+<sourceObjName>COUNT</sourceObjName>
+<createdBy>darbo</createdBy>
+<createdTime>2024-02-13 17:12:19 UTC</createdTime>
+<ownerDesignName>MEDS</ownerDesignName>
+<nullsAllowed>true</nullsAllowed>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT024</logicalDatatype>
+<dataTypeSize>20 BYTE</dataTypeSize>
+<ownDataTypeParameters>20 BYTE,,</ownDataTypeParameters>
+<autoIncrementCycle>false</autoIncrementCycle>
+</Column>
+<Column name="SPECIES" id="89097767-1E47-B119-1BF7-F5CA23910FA9">
+<sourceConnName>MEDS</sourceConnName>
+<sourceObjSchema>MLO_JELLYFISH_DATA</sourceObjSchema>
+<sourceObjName>SPECIES</sourceObjName>
+<createdBy>darbo</createdBy>
+<createdTime>2024-02-13 17:12:19 UTC</createdTime>
+<ownerDesignName>MEDS</ownerDesignName>
+<nullsAllowed>true</nullsAllowed>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT024</logicalDatatype>
+<dataTypeSize>50 BYTE</dataTypeSize>
+<ownDataTypeParameters>50 BYTE,,</ownDataTypeParameters>
+<autoIncrementCycle>false</autoIncrementCycle>
+</Column>
+<Column name="HEADING" id="C96727CC-D991-668C-0E49-982C465E3344">
+<sourceConnName>MEDS</sourceConnName>
+<sourceObjSchema>MLO_JELLYFISH_DATA</sourceObjSchema>
+<sourceObjName>HEADING</sourceObjName>
+<createdBy>darbo</createdBy>
+<createdTime>2024-02-13 17:12:19 UTC</createdTime>
+<ownerDesignName>MEDS</ownerDesignName>
+<nullsAllowed>true</nullsAllowed>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT024</logicalDatatype>
+<dataTypeSize>50 BYTE</dataTypeSize>
+<ownDataTypeParameters>50 BYTE,,</ownDataTypeParameters>
+<autoIncrementCycle>false</autoIncrementCycle>
+</Column>
+<Column name="COMMENTS" id="9E180BB5-DD1D-8583-911A-3B792F914A2A">
+<sourceConnName>MEDS</sourceConnName>
+<sourceObjSchema>MLO_JELLYFISH_DATA</sourceObjSchema>
+<sourceObjName>COMMENTS</sourceObjName>
+<createdBy>darbo</createdBy>
+<createdTime>2024-02-13 17:12:19 UTC</createdTime>
+<ownerDesignName>MEDS</ownerDesignName>
+<nullsAllowed>true</nullsAllowed>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT024</logicalDatatype>
+<dataTypeSize>200 BYTE</dataTypeSize>
+<ownDataTypeParameters>200 BYTE,,</ownDataTypeParameters>
+<autoIncrementCycle>false</autoIncrementCycle>
+</Column>
+<Column name="MEDS_OBSERVATION_NUMBER" id="25A1A6D9-2D4C-EE45-EFD2-1CCFB837B7F5">
+<sourceConnName>MEDS</sourceConnName>
+<sourceObjSchema>MLO_JELLYFISH_DATA</sourceObjSchema>
+<sourceObjName>MEDS_OBSERVATION_NUMBER</sourceObjName>
+<createdBy>darbo</createdBy>
+<createdTime>2024-02-13 17:12:19 UTC</createdTime>
+<ownerDesignName>MEDS</ownerDesignName>
+<nullsAllowed>true</nullsAllowed>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT019</logicalDatatype>
+<dataTypePrecision>10</dataTypePrecision>
+<dataTypeScale>0</dataTypeScale>
+<ownDataTypeParameters>,10,0</ownDataTypeParameters>
+<autoIncrementCycle>false</autoIncrementCycle>
+</Column>
+<Column name="MEDS_JOB_NUMBER" id="7A281284-48B8-1882-41DB-88BAFF48722B">
+<sourceConnName>MEDS</sourceConnName>
+<sourceObjSchema>MLO_JELLYFISH_DATA</sourceObjSchema>
+<sourceObjName>MEDS_JOB_NUMBER</sourceObjName>
+<createdBy>darbo</createdBy>
+<createdTime>2024-02-13 17:12:19 UTC</createdTime>
+<ownerDesignName>MEDS</ownerDesignName>
+<nullsAllowed>true</nullsAllowed>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT019</logicalDatatype>
+<dataTypePrecision>10</dataTypePrecision>
+<dataTypeScale>0</dataTypeScale>
+<ownDataTypeParameters>,10,0</ownDataTypeParameters>
+<autoIncrementCycle>false</autoIncrementCycle>
+</Column>
+<Column name="REFERENCE" id="EF206FC9-91BB-5FE6-EA58-F052E9864C8A">
+<sourceConnName>MEDS</sourceConnName>
+<sourceObjSchema>MLO_JELLYFISH_DATA</sourceObjSchema>
+<sourceObjName>REFERENCE</sourceObjName>
+<createdBy>darbo</createdBy>
+<createdTime>2024-02-13 17:12:19 UTC</createdTime>
+<ownerDesignName>MEDS</ownerDesignName>
+<nullsAllowed>true</nullsAllowed>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT024</logicalDatatype>
+<dataTypeSize>100 BYTE</dataTypeSize>
+<ownDataTypeParameters>100 BYTE,,</ownDataTypeParameters>
+<autoIncrementCycle>false</autoIncrementCycle>
+</Column>
+<Column name="SHIP" id="4EBD3AFC-DCD0-9405-63EB-2B1026D5EF6B">
+<sourceConnName>MEDS</sourceConnName>
+<sourceObjSchema>MLO_JELLYFISH_DATA</sourceObjSchema>
+<sourceObjName>SHIP</sourceObjName>
+<createdBy>darbo</createdBy>
+<createdTime>2024-02-13 17:12:19 UTC</createdTime>
+<ownerDesignName>MEDS</ownerDesignName>
+<nullsAllowed>true</nullsAllowed>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT024</logicalDatatype>
+<dataTypeSize>50 BYTE</dataTypeSize>
+<ownDataTypeParameters>50 BYTE,,</ownDataTypeParameters>
+<autoIncrementCycle>false</autoIncrementCycle>
+</Column>
+<Column name="ARCHIVED" id="B5B9A33D-C5C3-D691-5C35-F26CF6AAB9EC">
+<sourceConnName>MEDS</sourceConnName>
+<sourceObjSchema>MLO_JELLYFISH_DATA</sourceObjSchema>
+<sourceObjName>ARCHIVED</sourceObjName>
+<createdBy>darbo</createdBy>
+<createdTime>2024-02-13 17:12:19 UTC</createdTime>
+<ownerDesignName>MEDS</ownerDesignName>
+<nullsAllowed>true</nullsAllowed>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT024</logicalDatatype>
+<dataTypeSize>25 BYTE</dataTypeSize>
+<ownDataTypeParameters>25 BYTE,,</ownDataTypeParameters>
+<autoIncrementCycle>false</autoIncrementCycle>
+</Column>
+<Column name="COUNT_QUALITY" id="2E94FF2D-7107-48BD-4478-5481DE0F75D3">
+<sourceConnName>MEDS</sourceConnName>
+<sourceObjSchema>MLO_JELLYFISH_DATA</sourceObjSchema>
+<sourceObjName>COUNT_QUALITY</sourceObjName>
+<createdBy>darbo</createdBy>
+<createdTime>2024-02-13 17:12:19 UTC</createdTime>
+<ownerDesignName>MEDS</ownerDesignName>
+<nullsAllowed>true</nullsAllowed>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT024</logicalDatatype>
+<dataTypeSize>20 BYTE</dataTypeSize>
+<ownDataTypeParameters>20 BYTE,,</ownDataTypeParameters>
+<autoIncrementCycle>false</autoIncrementCycle>
+</Column>
+<Column name="SPEED" id="4C70C169-04FB-5238-C41C-2B3D2A13721F">
+<sourceConnName>MEDS</sourceConnName>
+<sourceObjSchema>MLO_JELLYFISH_DATA</sourceObjSchema>
+<sourceObjName>SPEED</sourceObjName>
+<createdBy>darbo</createdBy>
+<createdTime>2024-02-13 17:12:19 UTC</createdTime>
+<ownerDesignName>MEDS</ownerDesignName>
+<nullsAllowed>true</nullsAllowed>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT024</logicalDatatype>
+<dataTypeSize>20 BYTE</dataTypeSize>
+<ownDataTypeParameters>20 BYTE,,</ownDataTypeParameters>
+<autoIncrementCycle>false</autoIncrementCycle>
+</Column>
+<Column name="ID_QUALITY" id="9238C01B-5B40-1445-4C6D-F341E94F8395">
+<sourceConnName>MEDS</sourceConnName>
+<sourceObjSchema>MLO_JELLYFISH_DATA</sourceObjSchema>
+<sourceObjName>ID_QUALITY</sourceObjName>
+<createdBy>darbo</createdBy>
+<createdTime>2024-02-13 17:12:19 UTC</createdTime>
+<ownerDesignName>MEDS</ownerDesignName>
+<nullsAllowed>true</nullsAllowed>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT024</logicalDatatype>
+<dataTypeSize>20 BYTE</dataTypeSize>
+<ownDataTypeParameters>20 BYTE,,</ownDataTypeParameters>
+<autoIncrementCycle>false</autoIncrementCycle>
+</Column>
+<Column name="SST" id="67C0528A-8E5C-7A6B-E2F5-F6CD5A387972">
+<sourceConnName>MEDS</sourceConnName>
+<sourceObjSchema>MLO_JELLYFISH_DATA</sourceObjSchema>
+<sourceObjName>SST</sourceObjName>
+<createdBy>darbo</createdBy>
+<createdTime>2024-02-13 17:12:19 UTC</createdTime>
+<ownerDesignName>MEDS</ownerDesignName>
+<nullsAllowed>true</nullsAllowed>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT024</logicalDatatype>
+<dataTypeSize>20 BYTE</dataTypeSize>
+<ownDataTypeParameters>20 BYTE,,</ownDataTypeParameters>
+<autoIncrementCycle>false</autoIncrementCycle>
+</Column>
+<Column name="MONTH" id="280626AD-5A62-51F4-5096-846CDF1A138C">
+<sourceConnName>MEDS</sourceConnName>
+<sourceObjSchema>MLO_JELLYFISH_DATA</sourceObjSchema>
+<sourceObjName>MONTH</sourceObjName>
+<createdBy>darbo</createdBy>
+<createdTime>2024-02-13 17:12:19 UTC</createdTime>
+<ownerDesignName>MEDS</ownerDesignName>
+<nullsAllowed>true</nullsAllowed>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT024</logicalDatatype>
+<dataTypeSize>10 BYTE</dataTypeSize>
+<ownDataTypeParameters>10 BYTE,,</ownDataTypeParameters>
+<autoIncrementCycle>false</autoIncrementCycle>
+</Column>
+<Column name="SIZE_" id="BE1D5607-879F-FDE1-687A-18A708670324">
+<sourceConnName>MEDS</sourceConnName>
+<sourceObjSchema>MLO_JELLYFISH_DATA</sourceObjSchema>
+<sourceObjName>SIZE_</sourceObjName>
+<createdBy>darbo</createdBy>
+<createdTime>2024-02-13 17:12:19 UTC</createdTime>
+<ownerDesignName>MEDS</ownerDesignName>
+<nullsAllowed>true</nullsAllowed>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT024</logicalDatatype>
+<dataTypeSize>20 BYTE</dataTypeSize>
+<ownDataTypeParameters>20 BYTE,,</ownDataTypeParameters>
+<autoIncrementCycle>false</autoIncrementCycle>
+</Column>
+<Column name="BEARING" id="483D5A3D-6EB4-CD0A-1626-F1D0917AA6A0">
+<sourceConnName>MEDS</sourceConnName>
+<sourceObjSchema>MLO_JELLYFISH_DATA</sourceObjSchema>
+<sourceObjName>BEARING</sourceObjName>
+<createdBy>darbo</createdBy>
+<createdTime>2024-02-13 17:12:19 UTC</createdTime>
+<ownerDesignName>MEDS</ownerDesignName>
+<nullsAllowed>true</nullsAllowed>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT024</logicalDatatype>
+<dataTypeSize>20 BYTE</dataTypeSize>
+<ownDataTypeParameters>20 BYTE,,</ownDataTypeParameters>
+<autoIncrementCycle>false</autoIncrementCycle>
+</Column>
+<Column name="RANGE" id="53D868AD-4DA0-2283-FE0F-FE91A694A9D1">
+<sourceConnName>MEDS</sourceConnName>
+<sourceObjSchema>MLO_JELLYFISH_DATA</sourceObjSchema>
+<sourceObjName>RANGE</sourceObjName>
+<createdBy>darbo</createdBy>
+<createdTime>2024-02-13 17:12:19 UTC</createdTime>
+<ownerDesignName>MEDS</ownerDesignName>
+<nullsAllowed>true</nullsAllowed>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT024</logicalDatatype>
+<dataTypeSize>20 BYTE</dataTypeSize>
+<ownDataTypeParameters>20 BYTE,,</ownDataTypeParameters>
+<autoIncrementCycle>false</autoIncrementCycle>
+</Column>
+<Column name="PERSON_NAME" id="1536C775-EAE1-33D8-A91F-723522C1C370">
+<sourceConnName>MEDS</sourceConnName>
+<sourceObjSchema>MLO_JELLYFISH_DATA</sourceObjSchema>
+<sourceObjName>PERSON_NAME</sourceObjName>
+<createdBy>darbo</createdBy>
+<createdTime>2024-02-13 17:12:19 UTC</createdTime>
+<ownerDesignName>MEDS</ownerDesignName>
+<nullsAllowed>true</nullsAllowed>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT024</logicalDatatype>
+<dataTypeSize>100 BYTE</dataTypeSize>
+<ownDataTypeParameters>100 BYTE,,</ownDataTypeParameters>
+<autoIncrementCycle>false</autoIncrementCycle>
+</Column>
+</columns>
+<indexes itemClass="oracle.dbtools.crest.model.design.relational.Index">
+<ind_PK_UK id="96674ED8-68B0-C57E-1657-12E2A97A60FE" schemaObject="198B7359-7E07-FB02-B07C-A0A91EE44FE7" name="IDX_JOB_MLO_58">
+<sourceConnName>MEDS</sourceConnName>
+<sourceObjSchema>MEDSDATA</sourceObjSchema>
+<sourceObjName>IDX_JOB_MLO_58</sourceObjName>
+<createdBy>darbo</createdBy>
+<createdTime>2024-02-13 17:12:26 UTC</createdTime>
+<ownerDesignName>MEDS</ownerDesignName>
+<isSurrogateKey>false</isSurrogateKey>
+<indexColumnUsage>
+<colUsage columnID="7A281284-48B8-1882-41DB-88BAFF48722B"/>
+<colUsage columnID="25A1A6D9-2D4C-EE45-EFD2-1CCFB837B7F5"/>
+</indexColumnUsage>
+</ind_PK_UK>
+</indexes>
+</Table>

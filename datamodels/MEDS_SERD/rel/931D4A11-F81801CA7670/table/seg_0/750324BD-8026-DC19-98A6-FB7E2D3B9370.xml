@@ -1,5 +1,5 @@
 <?xml version = '1.0' encoding = 'UTF-8'?>
-<Table class="oracle.dbtools.crest.model.design.relational.Table" directorySegmentName="seg_0" id="750324BD-8026-DC19-98A6-FB7E2D3B9370" name="OBSERVATION_UNIT">
+<Table class="oracle.dbtools.crest.model.design.relational.Table" directorySegmentName="seg_0" id="750324BD-8026-DC19-98A6-FB7E2D3B9370" schemaObject="20651223-0797-3CAA-7021-8449492EE83B" name="SERD_LOV_OBSERVATION_UNIT">
 <createdBy>darbo</createdBy>
 <createdTime>2024-02-14 13:52:02 UTC</createdTime>
 <ownerDesignName>MEDS_SERD</ownerDesignName>
@@ -8,6 +8,16 @@
 <existDependencyGenerateInDDl>true</existDependencyGenerateInDDl>
 <parsed>true</parsed>
 <columns itemClass="oracle.dbtools.crest.model.design.relational.Column">
+<Column name="SERD_LOV_OBSERVATION_UNIT" id="5008FEF1-8C39-5ED5-0D02-619203546B67">
+<createdBy>d.arboittedossantos</createdBy>
+<createdTime>2024-04-04 15:23:24 UTC</createdTime>
+<ownerDesignName>MEDS_SERD</ownerDesignName>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT019</logicalDatatype>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
+<autoIncrementCycle>false</autoIncrementCycle>
+</Column>
 <Column name="OBSERVATION_UNIT_CD" id="17A73DEC-4C28-7279-CA6F-1865699E3784">
 <createdBy>darbo</createdBy>
 <createdTime>2024-02-14 13:52:02 UTC</createdTime>
@@ -34,12 +44,22 @@ If Units code = 1 the corrections are given in imperial units, however all other
 </Column>
 </columns>
 <indexes itemClass="oracle.dbtools.crest.model.design.relational.Index">
-<ind_PK_UK id="6F58F869-7354-8310-25BB-D34C76136896" name="OBSERVATION_UNIT_PK">
-<createdBy>darbo</createdBy>
-<createdTime>2024-02-14 13:52:02 UTC</createdTime>
+<ind_PK_UK id="2F5A3EDD-3215-BF38-F896-E29A55F3E87E" name="SERD_LOV_OBSERVATION_UNIT_P">
+<createdBy>d.arboittedossantos</createdBy>
+<createdTime>2024-04-04 15:23:25 UTC</createdTime>
 <ownerDesignName>MEDS_SERD</ownerDesignName>
 <pk>true</pk>
 <indexState>Primary Constraint</indexState>
+<isSurrogateKey>false</isSurrogateKey>
+<indexColumnUsage>
+<colUsage columnID="5008FEF1-8C39-5ED5-0D02-619203546B67"/>
+</indexColumnUsage>
+</ind_PK_UK>
+<ind_PK_UK id="3620B803-C45E-2E75-BA72-FC9092833027" name="SERD_LOV_OBSERVATION_UNIT_CD_U">
+<createdBy>d.arboittedossantos</createdBy>
+<createdTime>2024-04-04 15:23:25 UTC</createdTime>
+<ownerDesignName>MEDS_SERD</ownerDesignName>
+<indexState>Unique Constraint</indexState>
 <isSurrogateKey>false</isSurrogateKey>
 <indexColumnUsage>
 <colUsage columnID="17A73DEC-4C28-7279-CA6F-1865699E3784"/>

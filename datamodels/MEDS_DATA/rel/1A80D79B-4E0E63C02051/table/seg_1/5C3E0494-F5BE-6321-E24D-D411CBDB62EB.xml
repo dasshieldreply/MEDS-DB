@@ -1,0 +1,121 @@
+<?xml version = '1.0' encoding = 'UTF-8'?>
+<Table class="oracle.dbtools.crest.model.design.relational.Table" directorySegmentName="seg_1" id="5C3E0494-F5BE-6321-E24D-D411CBDB62EB" schemaObject="FD77D69E-489C-FEFD-81EE-34209F1C13AA" name="IW_POINTS">
+<sourceConnName>MEDS ADMIN</sourceConnName>
+<sourceObjSchema>MEDSADMIN</sourceObjSchema>
+<sourceObjName>IW_POINTS</sourceObjName>
+<createdBy>d.arboittedossantos</createdBy>
+<createdTime>2024-03-14 14:47:23 UTC</createdTime>
+<ownerDesignName>MEDS_DATA</ownerDesignName>
+<allowColumnReorder>false</allowColumnReorder>
+<existDependencyGenerateInDDl>true</existDependencyGenerateInDDl>
+<parsed>true</parsed>
+<columns itemClass="oracle.dbtools.crest.model.design.relational.Column">
+<Column name="MEDS_JOB_NUMBER" id="13448821-F4E4-9013-E369-37B53C3EC0F1">
+<sourceConnName>MEDS ADMIN</sourceConnName>
+<sourceObjSchema>IW_POINTS</sourceObjSchema>
+<sourceObjName>MEDS_JOB_NUMBER</sourceObjName>
+<createdBy>d.arboittedossantos</createdBy>
+<createdTime>2024-03-14 14:47:25 UTC</createdTime>
+<ownerDesignName>MEDS_DATA</ownerDesignName>
+<nullsAllowed>true</nullsAllowed>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT019</logicalDatatype>
+<dataTypePrecision>10</dataTypePrecision>
+<dataTypeScale>0</dataTypeScale>
+<ownDataTypeParameters>,10,0</ownDataTypeParameters>
+<autoIncrementCycle>false</autoIncrementCycle>
+</Column>
+<Column name="MEDS_OBSERVATION_NUMBER" id="9942FDB2-6E26-985B-82B5-201360CC9CCC">
+<sourceConnName>MEDS ADMIN</sourceConnName>
+<sourceObjSchema>IW_POINTS</sourceObjSchema>
+<sourceObjName>MEDS_OBSERVATION_NUMBER</sourceObjName>
+<createdBy>d.arboittedossantos</createdBy>
+<createdTime>2024-03-14 14:47:25 UTC</createdTime>
+<ownerDesignName>MEDS_DATA</ownerDesignName>
+<nullsAllowed>true</nullsAllowed>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT019</logicalDatatype>
+<dataTypePrecision>10</dataTypePrecision>
+<dataTypeScale>0</dataTypeScale>
+<ownDataTypeParameters>,10,0</ownDataTypeParameters>
+<autoIncrementCycle>false</autoIncrementCycle>
+</Column>
+<Column name="BREAK_POINT_ID" id="737E49D2-DF99-A891-895B-C2A2A409ECAC">
+<sourceConnName>MEDS ADMIN</sourceConnName>
+<sourceObjSchema>IW_POINTS</sourceObjSchema>
+<sourceObjName>BREAK_POINT_ID</sourceObjName>
+<createdBy>d.arboittedossantos</createdBy>
+<createdTime>2024-03-14 14:47:25 UTC</createdTime>
+<ownerDesignName>MEDS_DATA</ownerDesignName>
+<nullsAllowed>true</nullsAllowed>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT024</logicalDatatype>
+<dataTypeSize>20 BYTE</dataTypeSize>
+<ownDataTypeParameters>20 BYTE,,</ownDataTypeParameters>
+<autoIncrementCycle>false</autoIncrementCycle>
+</Column>
+<Column name="POINT_LATITUDE" id="88940E0B-22C7-C51B-C255-3D00ED2AA538">
+<sourceConnName>MEDS ADMIN</sourceConnName>
+<sourceObjSchema>IW_POINTS</sourceObjSchema>
+<sourceObjName>POINT_LATITUDE</sourceObjName>
+<createdBy>d.arboittedossantos</createdBy>
+<createdTime>2024-03-14 14:47:25 UTC</createdTime>
+<ownerDesignName>MEDS_DATA</ownerDesignName>
+<nullsAllowed>true</nullsAllowed>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT024</logicalDatatype>
+<dataTypeSize>20 BYTE</dataTypeSize>
+<ownDataTypeParameters>20 BYTE,,</ownDataTypeParameters>
+<autoIncrementCycle>false</autoIncrementCycle>
+</Column>
+<Column name="POINT_LONGITUDE" id="9A401BD5-92A1-8B77-B385-AA1C5FEC46B2">
+<sourceConnName>MEDS ADMIN</sourceConnName>
+<sourceObjSchema>IW_POINTS</sourceObjSchema>
+<sourceObjName>POINT_LONGITUDE</sourceObjName>
+<createdBy>d.arboittedossantos</createdBy>
+<createdTime>2024-03-14 14:47:25 UTC</createdTime>
+<ownerDesignName>MEDS_DATA</ownerDesignName>
+<nullsAllowed>true</nullsAllowed>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT024</logicalDatatype>
+<dataTypeSize>20 BYTE</dataTypeSize>
+<ownDataTypeParameters>20 BYTE,,</ownDataTypeParameters>
+<autoIncrementCycle>false</autoIncrementCycle>
+</Column>
+<Column name="PROPOGATION_DIRECTION" id="B63F22EF-7FDA-14EA-F484-01B8D6D5A68D">
+<sourceConnName>MEDS ADMIN</sourceConnName>
+<sourceObjSchema>IW_POINTS</sourceObjSchema>
+<sourceObjName>PROPOGATION_DIRECTION</sourceObjName>
+<createdBy>d.arboittedossantos</createdBy>
+<createdTime>2024-03-14 14:47:25 UTC</createdTime>
+<ownerDesignName>MEDS_DATA</ownerDesignName>
+<nullsAllowed>true</nullsAllowed>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT024</logicalDatatype>
+<dataTypeSize>20 BYTE</dataTypeSize>
+<ownDataTypeParameters>20 BYTE,,</ownDataTypeParameters>
+<autoIncrementCycle>false</autoIncrementCycle>
+</Column>
+</columns>
+<indexes itemClass="oracle.dbtools.crest.model.design.relational.Index">
+<ind_PK_UK id="04DDDFFA-BE77-E9A9-4C6F-F75EC2F1667F" schemaObject="FD77D69E-489C-FEFD-81EE-34209F1C13AA" name="IDX_JOB_IW_50">
+<sourceConnName>MEDS ADMIN</sourceConnName>
+<sourceObjSchema>MEDSADMIN</sourceObjSchema>
+<sourceObjName>IDX_JOB_IW_50</sourceObjName>
+<createdBy>d.arboittedossantos</createdBy>
+<createdTime>2024-03-14 14:47:28 UTC</createdTime>
+<ownerDesignName>MEDS_DATA</ownerDesignName>
+<isSurrogateKey>false</isSurrogateKey>
+<indexColumnUsage>
+<colUsage columnID="13448821-F4E4-9013-E369-37B53C3EC0F1"/>
+<colUsage columnID="9942FDB2-6E26-985B-82B5-201360CC9CCC"/>
+</indexColumnUsage>
+</ind_PK_UK>
+</indexes>
+</Table>

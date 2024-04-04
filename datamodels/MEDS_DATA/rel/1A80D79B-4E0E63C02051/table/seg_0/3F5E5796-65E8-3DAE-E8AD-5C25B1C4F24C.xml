@@ -1,0 +1,93 @@
+<?xml version = '1.0' encoding = 'UTF-8'?>
+<Table class="oracle.dbtools.crest.model.design.relational.Table" directorySegmentName="seg_0" id="3F5E5796-65E8-3DAE-E8AD-5C25B1C4F24C" schemaObject="FD77D69E-489C-FEFD-81EE-34209F1C13AA" name="DIR_AMBIENT_REPEAT">
+<sourceConnName>MEDS ADMIN</sourceConnName>
+<sourceObjSchema>MEDSADMIN</sourceObjSchema>
+<sourceObjName>DIR_AMBIENT_REPEAT</sourceObjName>
+<createdBy>d.arboittedossantos</createdBy>
+<createdTime>2024-03-14 14:47:24 UTC</createdTime>
+<ownerDesignName>MEDS_DATA</ownerDesignName>
+<allowColumnReorder>false</allowColumnReorder>
+<existDependencyGenerateInDDl>true</existDependencyGenerateInDDl>
+<parsed>true</parsed>
+<columns itemClass="oracle.dbtools.crest.model.design.relational.Column">
+<Column name="SPECTRAL_LEVEL" id="F2D5F93A-B77D-60F1-3C76-D94B7A0BA8D8">
+<sourceConnName>MEDS ADMIN</sourceConnName>
+<sourceObjSchema>DIR_AMBIENT_REPEAT</sourceObjSchema>
+<sourceObjName>SPECTRAL_LEVEL</sourceObjName>
+<createdBy>d.arboittedossantos</createdBy>
+<createdTime>2024-03-14 14:47:25 UTC</createdTime>
+<ownerDesignName>MEDS_DATA</ownerDesignName>
+<nullsAllowed>true</nullsAllowed>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT019</logicalDatatype>
+<dataTypePrecision>5</dataTypePrecision>
+<dataTypeScale>0</dataTypeScale>
+<ownDataTypeParameters>,5,0</ownDataTypeParameters>
+<autoIncrementCycle>false</autoIncrementCycle>
+</Column>
+<Column name="DECIBELS" id="D8221C45-576F-4903-8184-3894246E9C61">
+<sourceConnName>MEDS ADMIN</sourceConnName>
+<sourceObjSchema>DIR_AMBIENT_REPEAT</sourceObjSchema>
+<sourceObjName>DECIBELS</sourceObjName>
+<createdBy>d.arboittedossantos</createdBy>
+<createdTime>2024-03-14 14:47:25 UTC</createdTime>
+<ownerDesignName>MEDS_DATA</ownerDesignName>
+<nullsAllowed>true</nullsAllowed>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT019</logicalDatatype>
+<dataTypePrecision>12</dataTypePrecision>
+<dataTypeScale>3</dataTypeScale>
+<ownDataTypeParameters>,12,3</ownDataTypeParameters>
+<autoIncrementCycle>false</autoIncrementCycle>
+</Column>
+<Column name="MEDS_OBSERVATION_NUMBER" id="627270EA-0238-C95C-CF3C-F546353162FA">
+<sourceConnName>MEDS ADMIN</sourceConnName>
+<sourceObjSchema>DIR_AMBIENT_REPEAT</sourceObjSchema>
+<sourceObjName>MEDS_OBSERVATION_NUMBER</sourceObjName>
+<createdBy>d.arboittedossantos</createdBy>
+<createdTime>2024-03-14 14:47:25 UTC</createdTime>
+<ownerDesignName>MEDS_DATA</ownerDesignName>
+<nullsAllowed>true</nullsAllowed>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT019</logicalDatatype>
+<dataTypePrecision>10</dataTypePrecision>
+<dataTypeScale>0</dataTypeScale>
+<ownDataTypeParameters>,10,0</ownDataTypeParameters>
+<autoIncrementCycle>false</autoIncrementCycle>
+</Column>
+<Column name="MEDS_JOB_NUMBER" id="629DFE57-DFBE-EE78-9049-C212D9631865">
+<sourceConnName>MEDS ADMIN</sourceConnName>
+<sourceObjSchema>DIR_AMBIENT_REPEAT</sourceObjSchema>
+<sourceObjName>MEDS_JOB_NUMBER</sourceObjName>
+<createdBy>d.arboittedossantos</createdBy>
+<createdTime>2024-03-14 14:47:25 UTC</createdTime>
+<ownerDesignName>MEDS_DATA</ownerDesignName>
+<nullsAllowed>true</nullsAllowed>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT019</logicalDatatype>
+<dataTypePrecision>10</dataTypePrecision>
+<dataTypeScale>0</dataTypeScale>
+<ownDataTypeParameters>,10,0</ownDataTypeParameters>
+<autoIncrementCycle>false</autoIncrementCycle>
+</Column>
+</columns>
+<indexes itemClass="oracle.dbtools.crest.model.design.relational.Index">
+<ind_PK_UK id="3B30A6C6-7A7E-BFE5-A0AB-DD5092865F23" schemaObject="FD77D69E-489C-FEFD-81EE-34209F1C13AA" name="IDX_JOB_DIR_15">
+<sourceConnName>MEDS ADMIN</sourceConnName>
+<sourceObjSchema>MEDSADMIN</sourceObjSchema>
+<sourceObjName>IDX_JOB_DIR_15</sourceObjName>
+<createdBy>d.arboittedossantos</createdBy>
+<createdTime>2024-03-14 14:47:28 UTC</createdTime>
+<ownerDesignName>MEDS_DATA</ownerDesignName>
+<isSurrogateKey>false</isSurrogateKey>
+<indexColumnUsage>
+<colUsage columnID="629DFE57-DFBE-EE78-9049-C212D9631865"/>
+<colUsage columnID="627270EA-0238-C95C-CF3C-F546353162FA"/>
+</indexColumnUsage>
+</ind_PK_UK>
+</indexes>
+</Table>

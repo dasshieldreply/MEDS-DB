@@ -1,0 +1,234 @@
+<?xml version = '1.0' encoding = 'UTF-8'?>
+<TableProxyOraclev12c class="oracle.dbtools.crest.model.design.storage.oracle.v12c.TableProxyOraclev12c" name="BIOLUMINESCENCE_DATA" directorySegmentName="seg_1" id="75DF31F6-2102-1B94-B0E4-FB10DDDA7B34">
+<createdBy>darbo</createdBy>
+<createdTime>2024-02-13 17:12:16 UTC</createdTime>
+<ownerDesignName>MEDS</ownerDesignName>
+<schemaObject>198B7359-7E07-FB02-B07C-A0A91EE44FE7</schemaObject>
+<logging>YES</logging>
+<partitionedRowMovement>DISABLE</partitionedRowMovement>
+<segment>D7B54673-F74D-BFE1-8C5D-FBA86950D400</segment>
+<tableSpace>01F2BAC7-B949-43A6-09CC-CECB09A3E209</tableSpace>
+<temporaryChanged>false</temporaryChanged>
+<accessDriverType>oracle_loader</accessDriverType>
+<rejectLimit></rejectLimit>
+<inMemory>NO</inMemory>
+<columnProxies itemClass="oracle.dbtools.crest.model.design.storage.oracle.v12c.ColumnProxyOraclev12c">
+<ColumnProxy name="MP_NO" id="064EB0D6-09C6-6F27-52DA-FA0DD195A75A">
+<createdBy>darbo</createdBy>
+<createdTime>2024-02-13 17:12:18 UTC</createdTime>
+<ownerDesignName>MEDS</ownerDesignName>
+</ColumnProxy>
+<ColumnProxy name="SS" id="22CCA2DE-7D4C-2A4C-6A86-F0F912EB19F6">
+<createdBy>darbo</createdBy>
+<createdTime>2024-02-13 17:12:18 UTC</createdTime>
+<ownerDesignName>MEDS</ownerDesignName>
+</ColumnProxy>
+<ColumnProxy name="COLOUR" id="287BE085-F894-DF74-E01F-ECEFBDC59989">
+<createdBy>darbo</createdBy>
+<createdTime>2024-02-13 17:12:18 UTC</createdTime>
+<ownerDesignName>MEDS</ownerDesignName>
+</ColumnProxy>
+<ColumnProxy name="AIRTW" id="31B8F5AD-67CC-0158-1939-E992D987A320">
+<createdBy>darbo</createdBy>
+<createdTime>2024-02-13 17:12:18 UTC</createdTime>
+<ownerDesignName>MEDS</ownerDesignName>
+</ColumnProxy>
+<ColumnProxy name="SURFACE" id="3274EB12-5960-1D72-05DF-34AE6DC2FCC2">
+<createdBy>darbo</createdBy>
+<createdTime>2024-02-13 17:12:18 UTC</createdTime>
+<ownerDesignName>MEDS</ownerDesignName>
+</ColumnProxy>
+<ColumnProxy name="MP_SPD" id="3299F857-497A-AA72-ADFC-A44A43915E19">
+<createdBy>darbo</createdBy>
+<createdTime>2024-02-13 17:12:18 UTC</createdTime>
+<ownerDesignName>MEDS</ownerDesignName>
+</ColumnProxy>
+<ColumnProxy name="CLASS" id="34D76BEA-597D-2A86-7388-AC43EE88F5EA">
+<createdBy>darbo</createdBy>
+<createdTime>2024-02-13 17:12:18 UTC</createdTime>
+<ownerDesignName>MEDS</ownerDesignName>
+</ColumnProxy>
+<ColumnProxy name="REFERENCE" id="3CD2E909-B4F7-285F-2412-B12FF8C8DBFD">
+<createdBy>darbo</createdBy>
+<createdTime>2024-02-13 17:12:18 UTC</createdTime>
+<ownerDesignName>MEDS</ownerDesignName>
+</ColumnProxy>
+<ColumnProxy name="MP_ROTATE" id="5425FDFA-91CD-E32F-0E05-421217A0270C">
+<createdBy>darbo</createdBy>
+<createdTime>2024-02-13 17:12:18 UTC</createdTime>
+<ownerDesignName>MEDS</ownerDesignName>
+</ColumnProxy>
+<ColumnProxy name="MP_DIRECTION" id="66CAC0BA-9FB7-4A8D-EE13-F8FE561FE132">
+<createdBy>darbo</createdBy>
+<createdTime>2024-02-13 17:12:18 UTC</createdTime>
+<ownerDesignName>MEDS</ownerDesignName>
+</ColumnProxy>
+<ColumnProxy name="PATCH" id="683B771D-2154-7C36-6076-B0AD43370554">
+<createdBy>darbo</createdBy>
+<createdTime>2024-02-13 17:12:18 UTC</createdTime>
+<ownerDesignName>MEDS</ownerDesignName>
+</ColumnProxy>
+<ColumnProxy name="MP_DUR" id="721E0DB9-BCAD-1F32-F9A1-6BB42D8A8EF2">
+<createdBy>darbo</createdBy>
+<createdTime>2024-02-13 17:12:18 UTC</createdTime>
+<ownerDesignName>MEDS</ownerDesignName>
+</ColumnProxy>
+<ColumnProxy name="WD_DIR" id="74BFC15B-E3F4-B59D-211C-CD4AA65B43E1">
+<createdBy>darbo</createdBy>
+<createdTime>2024-02-13 17:12:18 UTC</createdTime>
+<ownerDesignName>MEDS</ownerDesignName>
+</ColumnProxy>
+<ColumnProxy name="MP_BAND" id="79A3BFD2-75E4-059C-36C8-BC9002AAAA9D">
+<createdBy>darbo</createdBy>
+<createdTime>2024-02-13 17:12:18 UTC</createdTime>
+<ownerDesignName>MEDS</ownerDesignName>
+</ColumnProxy>
+<ColumnProxy name="SAMP" id="7B5DEF21-8907-0C18-98D6-17E7A644BE86">
+<createdBy>darbo</createdBy>
+<createdTime>2024-02-13 17:12:18 UTC</createdTime>
+<ownerDesignName>MEDS</ownerDesignName>
+</ColumnProxy>
+<ColumnProxy name="PT" id="7F6BA91F-D02C-964E-9C88-AF2DB1F9D4ED">
+<createdBy>darbo</createdBy>
+<createdTime>2024-02-13 17:12:18 UTC</createdTime>
+<ownerDesignName>MEDS</ownerDesignName>
+</ColumnProxy>
+<ColumnProxy name="RANGE" id="7FC56C12-381D-5D2E-CF0B-D6B044AE88ED">
+<createdBy>darbo</createdBy>
+<createdTime>2024-02-13 17:12:18 UTC</createdTime>
+<ownerDesignName>MEDS</ownerDesignName>
+</ColumnProxy>
+<ColumnProxy name="VESSEL" id="8AB34496-8451-D01F-3E3E-CF439B5E307A">
+<createdBy>darbo</createdBy>
+<createdTime>2024-02-13 17:12:18 UTC</createdTime>
+<ownerDesignName>MEDS</ownerDesignName>
+</ColumnProxy>
+<ColumnProxy name="VKTS" id="8FF64A33-9C46-2934-0780-C23341604DC7">
+<createdBy>darbo</createdBy>
+<createdTime>2024-02-13 17:12:18 UTC</createdTime>
+<ownerDesignName>MEDS</ownerDesignName>
+</ColumnProxy>
+<ColumnProxy name="AIRTD" id="91D2CE29-9CA7-0722-71B0-40019D6F4DC3">
+<createdBy>darbo</createdBy>
+<createdTime>2024-02-13 17:12:18 UTC</createdTime>
+<ownerDesignName>MEDS</ownerDesignName>
+</ColumnProxy>
+<ColumnProxy name="WD_SPD" id="967E3274-7930-57A7-1D58-51C4EEB36CED">
+<createdBy>darbo</createdBy>
+<createdTime>2024-02-13 17:12:18 UTC</createdTime>
+<ownerDesignName>MEDS</ownerDesignName>
+</ColumnProxy>
+<ColumnProxy name="AREA" id="979E0B30-1D9A-07FC-440A-74E343CB6348">
+<createdBy>darbo</createdBy>
+<createdTime>2024-02-13 17:12:18 UTC</createdTime>
+<ownerDesignName>MEDS</ownerDesignName>
+</ColumnProxy>
+<ColumnProxy name="COMMENT_1" id="97E445A8-F6AA-DED8-4CE9-2F80F02A256F">
+<createdBy>darbo</createdBy>
+<createdTime>2024-02-13 17:12:18 UTC</createdTime>
+<ownerDesignName>MEDS</ownerDesignName>
+</ColumnProxy>
+<ColumnProxy name="WVCRSTS" id="98D19A10-9C8E-A841-6558-B991DD87B15D">
+<createdBy>darbo</createdBy>
+<createdTime>2024-02-13 17:12:18 UTC</createdTime>
+<ownerDesignName>MEDS</ownerDesignName>
+</ColumnProxy>
+<ColumnProxy name="IDENT" id="9CC3435B-691B-6F37-3026-694A569EB004">
+<createdBy>darbo</createdBy>
+<createdTime>2024-02-13 17:12:18 UTC</createdTime>
+<ownerDesignName>MEDS</ownerDesignName>
+</ColumnProxy>
+<ColumnProxy name="ARCHIVED" id="9D98B612-4594-D942-7ED4-20B2304E4E9D">
+<createdBy>darbo</createdBy>
+<createdTime>2024-02-13 17:12:18 UTC</createdTime>
+<ownerDesignName>MEDS</ownerDesignName>
+</ColumnProxy>
+<ColumnProxy name="BARO" id="A098E2CF-644D-B5C2-82B9-AE904B0FFF3A">
+<createdBy>darbo</createdBy>
+<createdTime>2024-02-13 17:12:18 UTC</createdTime>
+<ownerDesignName>MEDS</ownerDesignName>
+</ColumnProxy>
+<ColumnProxy name="MP_SEPERATE" id="A442C353-D301-FCA2-1C33-72C6A8826CBE">
+<createdBy>darbo</createdBy>
+<createdTime>2024-02-13 17:12:18 UTC</createdTime>
+<ownerDesignName>MEDS</ownerDesignName>
+</ColumnProxy>
+<ColumnProxy name="VHEAD" id="AA6FE9B0-B8EB-3549-34B4-2D5560335D5C">
+<createdBy>darbo</createdBy>
+<createdTime>2024-02-13 17:12:18 UTC</createdTime>
+<ownerDesignName>MEDS</ownerDesignName>
+</ColumnProxy>
+<ColumnProxy name="MP_FREQ" id="ABD8A464-56AD-F864-0F7A-2E685FFD6C0B">
+<createdBy>darbo</createdBy>
+<createdTime>2024-02-13 17:12:18 UTC</createdTime>
+<ownerDesignName>MEDS</ownerDesignName>
+</ColumnProxy>
+<ColumnProxy name="MEDS_JOB_NUMBER" id="ADE09B1E-2D26-8C4D-82DA-84FEB755C9AA">
+<createdBy>darbo</createdBy>
+<createdTime>2024-02-13 17:12:18 UTC</createdTime>
+<ownerDesignName>MEDS</ownerDesignName>
+</ColumnProxy>
+<ColumnProxy name="DIFFUSE" id="AFEBE55E-6CCA-4B60-978D-B7A8A731E86A">
+<createdBy>darbo</createdBy>
+<createdTime>2024-02-13 17:12:18 UTC</createdTime>
+<ownerDesignName>MEDS</ownerDesignName>
+</ColumnProxy>
+<ColumnProxy name="STIMULUS" id="AFFC1945-AA04-2115-0001-76ADEB95ABB9">
+<createdBy>darbo</createdBy>
+<createdTime>2024-02-13 17:12:18 UTC</createdTime>
+<ownerDesignName>MEDS</ownerDesignName>
+</ColumnProxy>
+<ColumnProxy name="WAKE" id="B478BD1A-0658-325B-961E-A16DD58CA933">
+<createdBy>darbo</createdBy>
+<createdTime>2024-02-13 17:12:18 UTC</createdTime>
+<ownerDesignName>MEDS</ownerDesignName>
+</ColumnProxy>
+<ColumnProxy name="SST" id="C03101E9-C4D3-2984-0061-4040A521DDAF">
+<createdBy>darbo</createdBy>
+<createdTime>2024-02-13 17:12:18 UTC</createdTime>
+<ownerDesignName>MEDS</ownerDesignName>
+</ColumnProxy>
+<ColumnProxy name="WDEP" id="E936AE8A-A60F-3BEF-6E25-B8BE1CD413B0">
+<createdBy>darbo</createdBy>
+<createdTime>2024-02-13 17:12:18 UTC</createdTime>
+<ownerDesignName>MEDS</ownerDesignName>
+</ColumnProxy>
+<ColumnProxy name="MEDS_OBSERVATION_NUMBER" id="EF4ACFBC-6C50-18B1-89B7-54BCF1BF7D35">
+<createdBy>darbo</createdBy>
+<createdTime>2024-02-13 17:12:18 UTC</createdTime>
+<ownerDesignName>MEDS</ownerDesignName>
+</ColumnProxy>
+<ColumnProxy name="RECORD_NUMBER" id="F74F7756-5EEB-0FA9-60BE-F3EA6155D864">
+<createdBy>darbo</createdBy>
+<createdTime>2024-02-13 17:12:18 UTC</createdTime>
+<ownerDesignName>MEDS</ownerDesignName>
+</ColumnProxy>
+<ColumnProxy name="MP_LENGTH" id="FCB91205-B98A-AA8A-1F04-908D6F031688">
+<createdBy>darbo</createdBy>
+<createdTime>2024-02-13 17:12:18 UTC</createdTime>
+<ownerDesignName>MEDS</ownerDesignName>
+</ColumnProxy>
+<ColumnProxy name="BOWWV" id="FDD2F34D-40D8-B4DB-DC8E-A389E4C478E4">
+<createdBy>darbo</createdBy>
+<createdTime>2024-02-13 17:12:18 UTC</createdTime>
+<ownerDesignName>MEDS</ownerDesignName>
+</ColumnProxy>
+</columnProxies>
+<indexProxies>
+<IndexProxy class="oracle.dbtools.crest.model.design.storage.oracle.v10g.IndexProxyOraclev10g" name="IDX_JOB_BIOLUMINESCENCE_9" id="56AC8D48-5EF1-148B-77F1-ED32B7D91932">
+<createdBy>darbo</createdBy>
+<createdTime>2024-02-13 17:12:24 UTC</createdTime>
+<ownerDesignName>MEDS</ownerDesignName>
+<schemaObject>198B7359-7E07-FB02-B07C-A0A91EE44FE7</schemaObject>
+<segment>04DA2C71-86F8-F75A-7467-947016074CAA</segment>
+<tableSpace>01F2BAC7-B949-43A6-09CC-CECB09A3E209</tableSpace>
+</IndexProxy>
+</indexProxies>
+<foreignKeys>
+<ForeignKey class="oracle.dbtools.crest.model.design.storage.oracle.v10g.FKProxyOraclev10g" name="BIOLUMINESCENCE_DATA_MEDS_PROCESSING_JOB_FK" id="09597207-A2AE-8720-A7AE-0ACF6AEC5733">
+<createdBy>d.arboittedossantos</createdBy>
+<createdTime>2024-03-27 09:31:38 UTC</createdTime>
+<ownerDesignName>MEDS</ownerDesignName>
+</ForeignKey>
+</foreignKeys>
+</TableProxyOraclev12c>

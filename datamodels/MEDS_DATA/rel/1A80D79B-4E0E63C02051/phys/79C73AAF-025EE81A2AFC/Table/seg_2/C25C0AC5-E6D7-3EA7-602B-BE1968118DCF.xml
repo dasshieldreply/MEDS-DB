@@ -1,0 +1,131 @@
+<?xml version = '1.0' encoding = 'UTF-8'?>
+<TableProxyOraclev12c class="oracle.dbtools.crest.model.design.storage.oracle.v12c.TableProxyOraclev12c" name="REPRES_PROFILE_L1_JUN" directorySegmentName="seg_2" id="C25C0AC5-E6D7-3EA7-602B-BE1968118DCF">
+<createdBy>d.arboittedossantos</createdBy>
+<createdTime>2024-03-14 14:47:25 UTC</createdTime>
+<ownerDesignName>MEDS_DATA</ownerDesignName>
+<schemaObject>FD77D69E-489C-FEFD-81EE-34209F1C13AA</schemaObject>
+<logging>YES</logging>
+<partitionedRowMovement>DISABLE</partitionedRowMovement>
+<segment>2A11820E-EDCF-FF28-336C-C7811EDF39B9</segment>
+<tableSpace>EC0DC591-CC8E-BC50-EEE8-5A0B46384BB0</tableSpace>
+<temporaryChanged>false</temporaryChanged>
+<accessDriverType>oracle_loader</accessDriverType>
+<rejectLimit></rejectLimit>
+<inMemory>NO</inMemory>
+<columnProxies itemClass="oracle.dbtools.crest.model.design.storage.oracle.v12c.ColumnProxyOraclev12c">
+<ColumnProxy name="LATITUDE" id="0A870B7E-6AB4-52BC-06E7-209F9F08CEFE">
+<createdBy>d.arboittedossantos</createdBy>
+<createdTime>2024-03-14 14:47:26 UTC</createdTime>
+<ownerDesignName>MEDS_DATA</ownerDesignName>
+</ColumnProxy>
+<ColumnProxy name="LH_SIGMA_T" id="10F00317-0DBC-0202-B8D9-AEB0C4E8FE2E">
+<createdBy>d.arboittedossantos</createdBy>
+<createdTime>2024-03-14 14:47:26 UTC</createdTime>
+<ownerDesignName>MEDS_DATA</ownerDesignName>
+</ColumnProxy>
+<ColumnProxy name="DEPTH" id="1CB42971-F7E7-23DD-E5B4-01F9470747FE">
+<createdBy>d.arboittedossantos</createdBy>
+<createdTime>2024-03-14 14:47:26 UTC</createdTime>
+<ownerDesignName>MEDS_DATA</ownerDesignName>
+</ColumnProxy>
+<ColumnProxy name="RH_TEMPERATURE" id="2F0DCDA6-D873-4186-E4CB-648307923D64">
+<createdBy>d.arboittedossantos</createdBy>
+<createdTime>2024-03-14 14:47:26 UTC</createdTime>
+<ownerDesignName>MEDS_DATA</ownerDesignName>
+</ColumnProxy>
+<ColumnProxy name="DATATYPE" id="34A41AE3-0668-4285-D1CB-79E709E69011">
+<createdBy>d.arboittedossantos</createdBy>
+<createdTime>2024-03-14 14:47:26 UTC</createdTime>
+<ownerDesignName>MEDS_DATA</ownerDesignName>
+<defaultValue>&apos;GENERIC&apos;</defaultValue>
+</ColumnProxy>
+<ColumnProxy name="TEMPERATURE" id="375EC8CE-6BBA-921D-4330-3E4AEDF6C892">
+<createdBy>d.arboittedossantos</createdBy>
+<createdTime>2024-03-14 14:47:26 UTC</createdTime>
+<ownerDesignName>MEDS_DATA</ownerDesignName>
+</ColumnProxy>
+<ColumnProxy name="RH_SALINITY" id="5EBF6D17-CE17-AF06-99CB-825AE682A47A">
+<createdBy>d.arboittedossantos</createdBy>
+<createdTime>2024-03-14 14:47:26 UTC</createdTime>
+<ownerDesignName>MEDS_DATA</ownerDesignName>
+</ColumnProxy>
+<ColumnProxy name="LH_TEMPERATURE" id="66CF13C7-43F4-C4DE-0795-4B3E1EB950A2">
+<createdBy>d.arboittedossantos</createdBy>
+<createdTime>2024-03-14 14:47:26 UTC</createdTime>
+<ownerDesignName>MEDS_DATA</ownerDesignName>
+</ColumnProxy>
+<ColumnProxy name="LH_SALINITY" id="6AE1AB31-8458-2BDD-692E-F4893C14BBB4">
+<createdBy>d.arboittedossantos</createdBy>
+<createdTime>2024-03-14 14:47:26 UTC</createdTime>
+<ownerDesignName>MEDS_DATA</ownerDesignName>
+</ColumnProxy>
+<ColumnProxy name="SALINITY_STDEV" id="76C0D721-D69E-0387-A37C-8FB0467DE130">
+<createdBy>d.arboittedossantos</createdBy>
+<createdTime>2024-03-14 14:47:26 UTC</createdTime>
+<ownerDesignName>MEDS_DATA</ownerDesignName>
+</ColumnProxy>
+<ColumnProxy name="RH_SIGMA_T" id="7C023EA0-69C1-5CDB-0157-8BF69F72A2A0">
+<createdBy>d.arboittedossantos</createdBy>
+<createdTime>2024-03-14 14:47:26 UTC</createdTime>
+<ownerDesignName>MEDS_DATA</ownerDesignName>
+</ColumnProxy>
+<ColumnProxy name="GRID_INDEX" id="7DF3721D-A027-397B-F796-43C6B5344ABE">
+<createdBy>d.arboittedossantos</createdBy>
+<createdTime>2024-03-14 14:47:26 UTC</createdTime>
+<ownerDesignName>MEDS_DATA</ownerDesignName>
+</ColumnProxy>
+<ColumnProxy name="LONGITUDE" id="7F0D876D-3755-EA2B-B259-216236D9242F">
+<createdBy>d.arboittedossantos</createdBy>
+<createdTime>2024-03-14 14:47:26 UTC</createdTime>
+<ownerDesignName>MEDS_DATA</ownerDesignName>
+</ColumnProxy>
+<ColumnProxy name="RH_SOUND_SPEED" id="88C495D5-7C54-B841-53E5-1868D771D87B">
+<createdBy>d.arboittedossantos</createdBy>
+<createdTime>2024-03-14 14:47:26 UTC</createdTime>
+<ownerDesignName>MEDS_DATA</ownerDesignName>
+</ColumnProxy>
+<ColumnProxy name="SOUND_SPEED" id="B05435ED-3F51-FFBE-BA10-EF867AB75286">
+<createdBy>d.arboittedossantos</createdBy>
+<createdTime>2024-03-14 14:47:26 UTC</createdTime>
+<ownerDesignName>MEDS_DATA</ownerDesignName>
+</ColumnProxy>
+<ColumnProxy name="SIGMA_T" id="B09D2C8E-DDFD-EA60-215B-0347108E7BFF">
+<createdBy>d.arboittedossantos</createdBy>
+<createdTime>2024-03-14 14:47:26 UTC</createdTime>
+<ownerDesignName>MEDS_DATA</ownerDesignName>
+</ColumnProxy>
+<ColumnProxy name="TEMP_STDEV" id="E8ADCD08-9A4D-7EAE-4676-24C0C841BD4F">
+<createdBy>d.arboittedossantos</createdBy>
+<createdTime>2024-03-14 14:47:26 UTC</createdTime>
+<ownerDesignName>MEDS_DATA</ownerDesignName>
+</ColumnProxy>
+<ColumnProxy name="LH_SOUND_SPEED" id="E8B15AAE-D8C9-1012-F178-99DD435EDCC4">
+<createdBy>d.arboittedossantos</createdBy>
+<createdTime>2024-03-14 14:47:26 UTC</createdTime>
+<ownerDesignName>MEDS_DATA</ownerDesignName>
+</ColumnProxy>
+<ColumnProxy name="SALINITY" id="EE6F1CF7-4B6C-8389-5F2F-0433B01746BA">
+<createdBy>d.arboittedossantos</createdBy>
+<createdTime>2024-03-14 14:47:26 UTC</createdTime>
+<ownerDesignName>MEDS_DATA</ownerDesignName>
+</ColumnProxy>
+</columnProxies>
+<indexProxies>
+<IndexProxy class="oracle.dbtools.crest.model.design.storage.oracle.v10g.IndexProxyOraclev10g" name="IDX_PROFILEL1JUN_LATLON" id="777F2BD5-C4DC-46C6-5927-B3E202E7C890">
+<createdBy>d.arboittedossantos</createdBy>
+<createdTime>2024-03-14 14:47:29 UTC</createdTime>
+<ownerDesignName>MEDS_DATA</ownerDesignName>
+<schemaObject>FD77D69E-489C-FEFD-81EE-34209F1C13AA</schemaObject>
+<segment>85844A5E-DFDB-ACA5-F5A8-D7DFDBE60022</segment>
+<tableSpace>EC0DC591-CC8E-BC50-EEE8-5A0B46384BB0</tableSpace>
+</IndexProxy>
+<IndexProxy class="oracle.dbtools.crest.model.design.storage.oracle.v10g.IndexProxyOraclev10g" name="IDX_REPPROFILEL1_JUN" id="B3A6B9B8-40C1-52F8-3C10-B45933EE834B">
+<createdBy>d.arboittedossantos</createdBy>
+<createdTime>2024-03-14 14:47:29 UTC</createdTime>
+<ownerDesignName>MEDS_DATA</ownerDesignName>
+<schemaObject>FD77D69E-489C-FEFD-81EE-34209F1C13AA</schemaObject>
+<segment>85844A5E-DFDB-ACA5-F5A8-D7DFDBE60022</segment>
+<tableSpace>EC0DC591-CC8E-BC50-EEE8-5A0B46384BB0</tableSpace>
+</IndexProxy>
+</indexProxies>
+</TableProxyOraclev12c>

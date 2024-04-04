@@ -1,0 +1,75 @@
+<?xml version = '1.0' encoding = 'UTF-8'?>
+<TableProxyOraclev12c class="oracle.dbtools.crest.model.design.storage.oracle.v12c.TableProxyOraclev12c" name="AQUA2081_LINE_OBSERVATION" directorySegmentName="seg_1" id="948413F5-8C1F-F067-D66C-0B2EC8468D3A">
+<createdBy>d.arboittedossantos</createdBy>
+<createdTime>2024-03-14 14:47:24 UTC</createdTime>
+<ownerDesignName>MEDS_DATA</ownerDesignName>
+<schemaObject>FD77D69E-489C-FEFD-81EE-34209F1C13AA</schemaObject>
+<logging>YES</logging>
+<partitionedRowMovement>DISABLE</partitionedRowMovement>
+<segment>2A11820E-EDCF-FF28-336C-C7811EDF39B9</segment>
+<tableSpace>EC0DC591-CC8E-BC50-EEE8-5A0B46384BB0</tableSpace>
+<temporaryChanged>false</temporaryChanged>
+<accessDriverType>oracle_loader</accessDriverType>
+<rejectLimit></rejectLimit>
+<inMemory>NO</inMemory>
+<columnProxies itemClass="oracle.dbtools.crest.model.design.storage.oracle.v12c.ColumnProxyOraclev12c">
+<ColumnProxy name="DATE_RECORDED" id="0A84531C-3FF4-B6E9-1135-5E5A23466637">
+<createdBy>d.arboittedossantos</createdBy>
+<createdTime>2024-03-14 14:47:25 UTC</createdTime>
+<ownerDesignName>MEDS_DATA</ownerDesignName>
+</ColumnProxy>
+<ColumnProxy name="LONGITUDE" id="207659A1-F19E-5A15-4293-86C38B4EEB2A">
+<createdBy>d.arboittedossantos</createdBy>
+<createdTime>2024-03-14 14:47:25 UTC</createdTime>
+<ownerDesignName>MEDS_DATA</ownerDesignName>
+</ColumnProxy>
+<ColumnProxy name="LOCATION" id="45268DE6-012D-EB54-FD6D-49D4E62528CB">
+<createdBy>d.arboittedossantos</createdBy>
+<createdTime>2024-03-14 14:47:25 UTC</createdTime>
+<ownerDesignName>MEDS_DATA</ownerDesignName>
+</ColumnProxy>
+<ColumnProxy name="LATITUDE" id="6356CB6B-A9E3-73CE-5147-BEB4988B1844">
+<createdBy>d.arboittedossantos</createdBy>
+<createdTime>2024-03-14 14:47:25 UTC</createdTime>
+<ownerDesignName>MEDS_DATA</ownerDesignName>
+</ColumnProxy>
+<ColumnProxy name="MEDS_JOB_NUMBER" id="C8B881CA-7FD5-4A71-6BD5-D03CC28CBAFA">
+<createdBy>d.arboittedossantos</createdBy>
+<createdTime>2024-03-14 14:47:25 UTC</createdTime>
+<ownerDesignName>MEDS_DATA</ownerDesignName>
+</ColumnProxy>
+<ColumnProxy name="MEDS_OBSERVATION_NUMBER" id="DCC172AE-16E9-B62E-66B9-496C28A340E5">
+<createdBy>d.arboittedossantos</createdBy>
+<createdTime>2024-03-14 14:47:25 UTC</createdTime>
+<ownerDesignName>MEDS_DATA</ownerDesignName>
+</ColumnProxy>
+</columnProxies>
+<indexProxies>
+<IndexProxy class="oracle.dbtools.crest.model.design.storage.oracle.v10g.IndexProxyOraclev10g" name="SI_AQUA2081LINE" id="040003AF-F1BA-867B-7789-499AFFC4AE23">
+<createdBy>d.arboittedossantos</createdBy>
+<createdTime>2024-03-14 14:47:28 UTC</createdTime>
+<ownerDesignName>MEDS_DATA</ownerDesignName>
+<schemaObject>FD77D69E-489C-FEFD-81EE-34209F1C13AA</schemaObject>
+<indexDomainParameters> </indexDomainParameters>
+<indexType>MDSYS.SPATIAL_INDEX_V2</indexType>
+<segment>88419D06-90CC-D9E4-BCD3-BE3E615FF383</segment>
+<tableSpace>EC0DC591-CC8E-BC50-EEE8-5A0B46384BB0</tableSpace>
+</IndexProxy>
+<IndexProxy class="oracle.dbtools.crest.model.design.storage.oracle.v10g.IndexProxyOraclev10g" name="IDX_AQUA2081_JOB" id="A55A24DE-FC59-3C79-ABD7-5AFD5BFD68F5">
+<createdBy>d.arboittedossantos</createdBy>
+<createdTime>2024-03-14 14:47:28 UTC</createdTime>
+<ownerDesignName>MEDS_DATA</ownerDesignName>
+<schemaObject>FD77D69E-489C-FEFD-81EE-34209F1C13AA</schemaObject>
+<segment>85844A5E-DFDB-ACA5-F5A8-D7DFDBE60022</segment>
+<tableSpace>EC0DC591-CC8E-BC50-EEE8-5A0B46384BB0</tableSpace>
+</IndexProxy>
+<IndexProxy class="oracle.dbtools.crest.model.design.storage.oracle.v10g.IndexProxyOraclev10g" name="IDX_AQUA2081_LATLON" id="BB2E3FA7-674E-00E8-4CE0-7CB848ABFA3B">
+<createdBy>d.arboittedossantos</createdBy>
+<createdTime>2024-03-14 14:47:28 UTC</createdTime>
+<ownerDesignName>MEDS_DATA</ownerDesignName>
+<schemaObject>FD77D69E-489C-FEFD-81EE-34209F1C13AA</schemaObject>
+<segment>85844A5E-DFDB-ACA5-F5A8-D7DFDBE60022</segment>
+<tableSpace>EC0DC591-CC8E-BC50-EEE8-5A0B46384BB0</tableSpace>
+</IndexProxy>
+</indexProxies>
+</TableProxyOraclev12c>

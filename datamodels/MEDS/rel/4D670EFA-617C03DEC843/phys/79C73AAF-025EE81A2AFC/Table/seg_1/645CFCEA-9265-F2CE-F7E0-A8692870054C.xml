@@ -1,0 +1,47 @@
+<?xml version = '1.0' encoding = 'UTF-8'?>
+<TableProxyOraclev12c class="oracle.dbtools.crest.model.design.storage.oracle.v12c.TableProxyOraclev12c" name="LAYER_LOOKUP" directorySegmentName="seg_1" id="645CFCEA-9265-F2CE-F7E0-A8692870054C">
+<createdBy>darbo</createdBy>
+<createdTime>2024-02-13 17:12:16 UTC</createdTime>
+<ownerDesignName>MEDS</ownerDesignName>
+<schemaObject>198B7359-7E07-FB02-B07C-A0A91EE44FE7</schemaObject>
+<logging>YES</logging>
+<partitionedRowMovement>DISABLE</partitionedRowMovement>
+<segment>D7B54673-F74D-BFE1-8C5D-FBA86950D400</segment>
+<tableSpace>01F2BAC7-B949-43A6-09CC-CECB09A3E209</tableSpace>
+<temporaryChanged>false</temporaryChanged>
+<accessDriverType>oracle_loader</accessDriverType>
+<rejectLimit></rejectLimit>
+<inMemory>NO</inMemory>
+<columnProxies itemClass="oracle.dbtools.crest.model.design.storage.oracle.v12c.ColumnProxyOraclev12c">
+<ColumnProxy name="USER_NAME" id="11AC9ED5-7CB5-102E-62F4-46C532E02042">
+<createdBy>darbo</createdBy>
+<createdTime>2024-02-13 17:12:18 UTC</createdTime>
+<ownerDesignName>MEDS</ownerDesignName>
+</ColumnProxy>
+<ColumnProxy name="LAYER_INDEX" id="44834D9C-9C7E-D50D-71E5-17EBCB75EE3F">
+<createdBy>darbo</createdBy>
+<createdTime>2024-02-13 17:12:18 UTC</createdTime>
+<ownerDesignName>MEDS</ownerDesignName>
+</ColumnProxy>
+<ColumnProxy name="LAYER_SQL" id="7A64BEBE-D5A9-F3F8-ED7D-D3EF2FD7EC42">
+<createdBy>darbo</createdBy>
+<createdTime>2024-02-13 17:12:18 UTC</createdTime>
+<ownerDesignName>MEDS</ownerDesignName>
+</ColumnProxy>
+<ColumnProxy name="DATA_TYPE_INDEX" id="CE77B48F-89C3-E711-8869-4025A54078B5">
+<createdBy>darbo</createdBy>
+<createdTime>2024-02-13 17:12:18 UTC</createdTime>
+<ownerDesignName>MEDS</ownerDesignName>
+</ColumnProxy>
+<ColumnProxy name="DATA_TABLE" id="D63CD42B-A5C5-EECC-559A-88F089FE27C8">
+<createdBy>darbo</createdBy>
+<createdTime>2024-02-13 17:12:18 UTC</createdTime>
+<ownerDesignName>MEDS</ownerDesignName>
+</ColumnProxy>
+<ColumnProxy name="LAYER_NAME" id="F59D72AE-C520-5ACD-51AC-6EC08CF80093">
+<createdBy>darbo</createdBy>
+<createdTime>2024-02-13 17:12:18 UTC</createdTime>
+<ownerDesignName>MEDS</ownerDesignName>
+</ColumnProxy>
+</columnProxies>
+</TableProxyOraclev12c>

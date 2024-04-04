@@ -1,0 +1,46 @@
+<?xml version = '1.0' encoding = 'UTF-8'?>
+<TableProxyOraclev20c class="oracle.dbtools.crest.model.design.storage.oracle.v20c.TableProxyOraclev20c" name="SERD_LOV_TEMPERATURE_QUALITY" directorySegmentName="seg_0" id="180B3D10-CD09-0AD6-C621-330D275CE960">
+<createdBy>d.arboittedossantos</createdBy>
+<createdTime>2024-04-04 16:11:57 UTC</createdTime>
+<ownerDesignName>MEDS_SERD</ownerDesignName>
+<schemaObject>20651223-0797-3CAA-7021-8449492EE83B</schemaObject>
+<logging>YES</logging>
+<partitionedRowMovement>DISABLE</partitionedRowMovement>
+<temporaryChanged>false</temporaryChanged>
+<user>28DF8DA2-9C77-E269-F136-0994A498F661</user>
+<accessDriverType>oracle_loader</accessDriverType>
+<rejectLimit></rejectLimit>
+<columnProxies itemClass="oracle.dbtools.crest.model.design.storage.oracle.v12c.ColumnProxyOraclev12c">
+<ColumnProxy name="TEMPERATURE_QUALITY_DESC" id="896A28F7-0913-287F-9644-FBB8AAA7FCDA">
+<createdBy>d.arboittedossantos</createdBy>
+<createdTime>2024-04-04 16:11:57 UTC</createdTime>
+<ownerDesignName>MEDS_SERD</ownerDesignName>
+</ColumnProxy>
+<ColumnProxy name="TEMPERATURE_QUALITY_CD" id="D8305E07-08E4-37AB-AF4C-1FAB3662BD47">
+<createdBy>d.arboittedossantos</createdBy>
+<createdTime>2024-04-04 16:11:57 UTC</createdTime>
+<ownerDesignName>MEDS_SERD</ownerDesignName>
+</ColumnProxy>
+<ColumnProxy name="SERD_LOV_TEMPERATURE_QUALITY" id="D90E692D-C327-2FF4-47C1-59045D54B2F4">
+<createdBy>d.arboittedossantos</createdBy>
+<createdTime>2024-04-04 16:11:57 UTC</createdTime>
+<ownerDesignName>MEDS_SERD</ownerDesignName>
+</ColumnProxy>
+</columnProxies>
+<primaryKeys>
+<PrimaryKey class="oracle.dbtools.crest.model.design.storage.oracle.v10g.PKProxyOraclev10g" name="SERD_LOV_TEMPERATURE_QUALITY_P" id="903C58F4-198C-B8F9-F38D-BCC15FF0478B">
+<createdBy>d.arboittedossantos</createdBy>
+<createdTime>2024-04-04 16:11:57 UTC</createdTime>
+<ownerDesignName>MEDS_SERD</ownerDesignName>
+<indexSort>SORTED</indexSort>
+</PrimaryKey>
+</primaryKeys>
+<uniqueKeys>
+<UniqueKey class="oracle.dbtools.crest.model.design.storage.oracle.v10g.UniqueOraclev10g" name="SERD_LOV_TEMPERATURE_QUALITY_CD_U" id="9DAC5A27-57B2-BD8D-DC82-5AEADE5A807D">
+<createdBy>d.arboittedossantos</createdBy>
+<createdTime>2024-04-04 16:11:57 UTC</createdTime>
+<ownerDesignName>MEDS_SERD</ownerDesignName>
+<indexSort>SORTED</indexSort>
+</UniqueKey>
+</uniqueKeys>
+</TableProxyOraclev20c>

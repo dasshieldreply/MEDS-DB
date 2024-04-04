@@ -1,5 +1,5 @@
 <?xml version = '1.0' encoding = 'UTF-8'?>
-<Table class="oracle.dbtools.crest.model.design.relational.Table" directorySegmentName="seg_0" id="9B899E90-7644-AA37-553A-5FB3EA93E1F8" name="COMMENTS">
+<Table class="oracle.dbtools.crest.model.design.relational.Table" directorySegmentName="seg_0" id="9B899E90-7644-AA37-553A-5FB3EA93E1F8" schemaObject="20651223-0797-3CAA-7021-8449492EE83B" name="SERD_STG_COMMENT">
 <createdBy>darbo</createdBy>
 <createdTime>2024-02-14 14:45:59 UTC</createdTime>
 <ownerDesignName>MEDS_SERD</ownerDesignName>
@@ -8,9 +8,9 @@
 <existDependencyGenerateInDDl>true</existDependencyGenerateInDDl>
 <parsed>true</parsed>
 <columns itemClass="oracle.dbtools.crest.model.design.relational.Column">
-<Column name="RECORD_ID" id="6D427C7D-0BC5-B860-CFE2-14D458BFE4BC">
-<createdBy>darbo</createdBy>
-<createdTime>2024-02-14 14:47:13 UTC</createdTime>
+<Column name="SERD_STG_HEADER" id="634C5438-72A2-F797-B830-87FF6FD75DED">
+<createdBy>d.arboittedossantos</createdBy>
+<createdTime>2024-04-04 16:48:46 UTC</createdTime>
 <ownerDesignName>MEDS_SERD</ownerDesignName>
 <useDomainConstraints>false</useDomainConstraints>
 <use>1</use>
@@ -19,8 +19,18 @@
 <previousColumn>false</previousColumn>
 <autoIncrementCycle>false</autoIncrementCycle>
 <associations>
-<colAssociation fkAssociation="90CE909F-302C-A8D5-4604-0308D4C26062" referredColumn="8E66D519-C267-38A8-F140-BE27089CC7F6"/>
+<colAssociation fkAssociation="98DC0589-29FA-594D-C4A1-EDD3C486CE8A" referredColumn="1B124D92-6055-F62E-4706-08413235267D"/>
 </associations>
+</Column>
+<Column name="SERD_STG_COMMENT" id="6EE5E42D-B450-EA66-93DD-A35D95F97574">
+<createdBy>d.arboittedossantos</createdBy>
+<createdTime>2024-04-04 15:40:42 UTC</createdTime>
+<ownerDesignName>MEDS_SERD</ownerDesignName>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT019</logicalDatatype>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
+<autoIncrementCycle>false</autoIncrementCycle>
 </Column>
 <Column name="COMMENT_NO" id="57364E9E-FBE8-6E8B-24BC-6395322558E8">
 <createdBy>darbo</createdBy>
@@ -46,26 +56,25 @@
 </Column>
 </columns>
 <indexes itemClass="oracle.dbtools.crest.model.design.relational.Index">
-<ind_PK_UK id="3897F6D4-6124-D6D6-986C-1C61FC71030E" name="COMMENTS_PK">
-<createdBy>darbo</createdBy>
-<createdTime>2024-02-14 14:47:44 UTC</createdTime>
+<ind_PK_UK id="C771C559-8DDA-0799-25DC-A235CA5822C9" name="SERD_STG_COMMENT_P">
+<createdBy>d.arboittedossantos</createdBy>
+<createdTime>2024-04-04 15:40:42 UTC</createdTime>
 <ownerDesignName>MEDS_SERD</ownerDesignName>
 <pk>true</pk>
 <indexState>Primary Constraint</indexState>
 <isSurrogateKey>false</isSurrogateKey>
 <indexColumnUsage>
-<colUsage columnID="6D427C7D-0BC5-B860-CFE2-14D458BFE4BC"/>
-<colUsage columnID="57364E9E-FBE8-6E8B-24BC-6395322558E8"/>
+<colUsage columnID="6EE5E42D-B450-EA66-93DD-A35D95F97574"/>
 </indexColumnUsage>
 </ind_PK_UK>
-<ind_PK_UK id="9F3E8D26-C7A3-ABF6-248E-1ED7090DF834" name="COMMENTS_SERD_HEADER_FK">
-<createdBy>darbo</createdBy>
-<createdTime>2024-02-14 14:47:13 UTC</createdTime>
+<ind_PK_UK id="BBB9F8BA-4E40-FBD3-7E3A-15BAC01772F8" name="SERD_STG_COMMENT_SERD_STG_HEADER_F">
+<createdBy>d.arboittedossantos</createdBy>
+<createdTime>2024-04-04 16:48:46 UTC</createdTime>
 <ownerDesignName>MEDS_SERD</ownerDesignName>
 <indexState>Foreign Key</indexState>
 <isSurrogateKey>false</isSurrogateKey>
 <indexColumnUsage>
-<colUsage columnID="6D427C7D-0BC5-B860-CFE2-14D458BFE4BC"/>
+<colUsage columnID="634C5438-72A2-F797-B830-87FF6FD75DED"/>
 </indexColumnUsage>
 </ind_PK_UK>
 </indexes>

@@ -1,17 +1,15 @@
 <?xml version = '1.0' encoding = 'UTF-8'?>
 <osdmAllTables:Tables xmlns:osdmAllTables="http://oracle.com/datamodeler/reports/tables">
    <osdmAllTables:ReportCaption>All Tables Details</osdmAllTables:ReportCaption>
-   <osdmAllTables:CompanyName>Shield Reply</osdmAllTables:CompanyName>
+   <osdmAllTables:CompanyName/>
    <osdmAllTables:UsePageBreaks>true</osdmAllTables:UsePageBreaks>
    <osdmAllTables:DesignName>MEDS_SERD</osdmAllTables:DesignName>
-   <osdmAllTables:VersionDate>14.02.2024 03:41:41</osdmAllTables:VersionDate>
+   <osdmAllTables:VersionDate>04.04.2024 01:30:28</osdmAllTables:VersionDate>
    <osdmAllTables:ModelName>SERD</osdmAllTables:ModelName>
-   <osdmAllTables:SubViewsCollection/>
    <osdmAllTables:TablesCollection>
       <osdmAllTables:TableDetails>
          <osdmAllTables:TableName>CLOUD_COVERAGE</osdmAllTables:TableName>
          <osdmAllTables:EncodedTableName>B84889F9-EB809ED0B8B2</osdmAllTables:EncodedTableName>
-         <osdmAllTables:DiagramSuffix>__dg_rm_1</osdmAllTables:DiagramSuffix>
          <osdmAllTables:FunctionalName/>
          <osdmAllTables:Abbreviation/>
          <osdmAllTables:ClassificationTypeName/>
@@ -26,13 +24,6 @@
             <osdmAllTables:ExpectedGrowth>0</osdmAllTables:ExpectedGrowth>
             <osdmAllTables:GrowthInterval>Year</osdmAllTables:GrowthInterval>
          </osdmAllTables:QuantitativeInfoCollection>
-         <osdmAllTables:DiagramsCollection>
-            <osdmAllTables:Diagram>
-               <osdmAllTables:Name>/SERD</osdmAllTables:Name>
-               <osdmAllTables:Link>SERD</osdmAllTables:Link>
-               <osdmAllTables:Suffix>__dg_rm_1</osdmAllTables:Suffix>
-            </osdmAllTables:Diagram>
-         </osdmAllTables:DiagramsCollection>
          <osdmAllTables:ColumnsCollection>
             <osdmAllTables:ColumnDetails>
                <osdmAllTables:Sequence>1</osdmAllTables:Sequence>
@@ -66,13 +57,11 @@
                <osdmAllTables:ColumnCommentsSequence>1</osdmAllTables:ColumnCommentsSequence>
                <osdmAllTables:ColumnCommentsName>CLOUD_COVERAGE_CD</osdmAllTables:ColumnCommentsName>
                <osdmAllTables:ColumnDescription>Cloud coverage, WMO code 2700.</osdmAllTables:ColumnDescription>
-               <osdmAllTables:ColumnNotes/>
             </osdmAllTables:ColumnCommentsDetails>
             <osdmAllTables:ColumnCommentsDetails>
                <osdmAllTables:ColumnCommentsSequence>2</osdmAllTables:ColumnCommentsSequence>
                <osdmAllTables:ColumnCommentsName>CLOUD_COVERAGE_DESC</osdmAllTables:ColumnCommentsName>
                <osdmAllTables:ColumnDescription>Cloud coverage  description.</osdmAllTables:ColumnDescription>
-               <osdmAllTables:ColumnNotes/>
             </osdmAllTables:ColumnCommentsDetails>
          </osdmAllTables:ColumnsCommentsCollection>
          <osdmAllTables:IndexesCollection>
@@ -102,7 +91,6 @@
       <osdmAllTables:TableDetails>
          <osdmAllTables:TableName>COMMENTS</osdmAllTables:TableName>
          <osdmAllTables:EncodedTableName>9B899E90-5FB3EA93E1F8</osdmAllTables:EncodedTableName>
-         <osdmAllTables:DiagramSuffix>__dg_rm_1</osdmAllTables:DiagramSuffix>
          <osdmAllTables:FunctionalName/>
          <osdmAllTables:Abbreviation/>
          <osdmAllTables:ClassificationTypeName/>
@@ -117,13 +105,6 @@
             <osdmAllTables:ExpectedGrowth>0</osdmAllTables:ExpectedGrowth>
             <osdmAllTables:GrowthInterval>Year</osdmAllTables:GrowthInterval>
          </osdmAllTables:QuantitativeInfoCollection>
-         <osdmAllTables:DiagramsCollection>
-            <osdmAllTables:Diagram>
-               <osdmAllTables:Name>/SERD</osdmAllTables:Name>
-               <osdmAllTables:Link>SERD</osdmAllTables:Link>
-               <osdmAllTables:Suffix>__dg_rm_1</osdmAllTables:Suffix>
-            </osdmAllTables:Diagram>
-         </osdmAllTables:DiagramsCollection>
          <osdmAllTables:ColumnsCollection>
             <osdmAllTables:ColumnDetails>
                <osdmAllTables:Sequence>1</osdmAllTables:Sequence>
@@ -201,7 +182,6 @@
       <osdmAllTables:TableDetails>
          <osdmAllTables:TableName>DATA_METHOD</osdmAllTables:TableName>
          <osdmAllTables:EncodedTableName>9B96B10F-2209F4945EF5</osdmAllTables:EncodedTableName>
-         <osdmAllTables:DiagramSuffix>__dg_rm_1</osdmAllTables:DiagramSuffix>
          <osdmAllTables:FunctionalName/>
          <osdmAllTables:Abbreviation/>
          <osdmAllTables:ClassificationTypeName/>
@@ -216,13 +196,6 @@
             <osdmAllTables:ExpectedGrowth>0</osdmAllTables:ExpectedGrowth>
             <osdmAllTables:GrowthInterval>Year</osdmAllTables:GrowthInterval>
          </osdmAllTables:QuantitativeInfoCollection>
-         <osdmAllTables:DiagramsCollection>
-            <osdmAllTables:Diagram>
-               <osdmAllTables:Name>/SERD</osdmAllTables:Name>
-               <osdmAllTables:Link>SERD</osdmAllTables:Link>
-               <osdmAllTables:Suffix>__dg_rm_1</osdmAllTables:Suffix>
-            </osdmAllTables:Diagram>
-         </osdmAllTables:DiagramsCollection>
          <osdmAllTables:ColumnsCollection>
             <osdmAllTables:ColumnDetails>
                <osdmAllTables:Sequence>1</osdmAllTables:Sequence>
@@ -256,13 +229,11 @@
                <osdmAllTables:ColumnCommentsSequence>1</osdmAllTables:ColumnCommentsSequence>
                <osdmAllTables:ColumnCommentsName>DATA_METHOD_CD</osdmAllTables:ColumnCommentsName>
                <osdmAllTables:ColumnDescription>Data capture method.</osdmAllTables:ColumnDescription>
-               <osdmAllTables:ColumnNotes/>
             </osdmAllTables:ColumnCommentsDetails>
             <osdmAllTables:ColumnCommentsDetails>
                <osdmAllTables:ColumnCommentsSequence>2</osdmAllTables:ColumnCommentsSequence>
                <osdmAllTables:ColumnCommentsName>DATA_MODE_DESC</osdmAllTables:ColumnCommentsName>
                <osdmAllTables:ColumnDescription>Data capture method description.</osdmAllTables:ColumnDescription>
-               <osdmAllTables:ColumnNotes/>
             </osdmAllTables:ColumnCommentsDetails>
          </osdmAllTables:ColumnsCommentsCollection>
          <osdmAllTables:IndexesCollection>
@@ -292,7 +263,6 @@
       <osdmAllTables:TableDetails>
          <osdmAllTables:TableName>DATA_MODE</osdmAllTables:TableName>
          <osdmAllTables:EncodedTableName>1611D5CF-F5EC08CC073B</osdmAllTables:EncodedTableName>
-         <osdmAllTables:DiagramSuffix>__dg_rm_1</osdmAllTables:DiagramSuffix>
          <osdmAllTables:FunctionalName/>
          <osdmAllTables:Abbreviation/>
          <osdmAllTables:ClassificationTypeName/>
@@ -307,13 +277,6 @@
             <osdmAllTables:ExpectedGrowth>0</osdmAllTables:ExpectedGrowth>
             <osdmAllTables:GrowthInterval>Year</osdmAllTables:GrowthInterval>
          </osdmAllTables:QuantitativeInfoCollection>
-         <osdmAllTables:DiagramsCollection>
-            <osdmAllTables:Diagram>
-               <osdmAllTables:Name>/SERD</osdmAllTables:Name>
-               <osdmAllTables:Link>SERD</osdmAllTables:Link>
-               <osdmAllTables:Suffix>__dg_rm_1</osdmAllTables:Suffix>
-            </osdmAllTables:Diagram>
-         </osdmAllTables:DiagramsCollection>
          <osdmAllTables:ColumnsCollection>
             <osdmAllTables:ColumnDetails>
                <osdmAllTables:Sequence>1</osdmAllTables:Sequence>
@@ -347,13 +310,11 @@
                <osdmAllTables:ColumnCommentsSequence>1</osdmAllTables:ColumnCommentsSequence>
                <osdmAllTables:ColumnCommentsName>DATA_MODE_CD</osdmAllTables:ColumnCommentsName>
                <osdmAllTables:ColumnDescription>Data mode.</osdmAllTables:ColumnDescription>
-               <osdmAllTables:ColumnNotes/>
             </osdmAllTables:ColumnCommentsDetails>
             <osdmAllTables:ColumnCommentsDetails>
                <osdmAllTables:ColumnCommentsSequence>2</osdmAllTables:ColumnCommentsSequence>
                <osdmAllTables:ColumnCommentsName>DATA_MODE_DESC</osdmAllTables:ColumnCommentsName>
                <osdmAllTables:ColumnDescription>Data mode description.</osdmAllTables:ColumnDescription>
-               <osdmAllTables:ColumnNotes/>
             </osdmAllTables:ColumnCommentsDetails>
          </osdmAllTables:ColumnsCommentsCollection>
          <osdmAllTables:IndexesCollection>
@@ -383,7 +344,6 @@
       <osdmAllTables:TableDetails>
          <osdmAllTables:TableName>DATA_TYPE</osdmAllTables:TableName>
          <osdmAllTables:EncodedTableName>C8D9D867-F14B616AA12C</osdmAllTables:EncodedTableName>
-         <osdmAllTables:DiagramSuffix>__dg_rm_1</osdmAllTables:DiagramSuffix>
          <osdmAllTables:FunctionalName/>
          <osdmAllTables:Abbreviation/>
          <osdmAllTables:ClassificationTypeName/>
@@ -398,13 +358,6 @@
             <osdmAllTables:ExpectedGrowth>0</osdmAllTables:ExpectedGrowth>
             <osdmAllTables:GrowthInterval>Year</osdmAllTables:GrowthInterval>
          </osdmAllTables:QuantitativeInfoCollection>
-         <osdmAllTables:DiagramsCollection>
-            <osdmAllTables:Diagram>
-               <osdmAllTables:Name>/SERD</osdmAllTables:Name>
-               <osdmAllTables:Link>SERD</osdmAllTables:Link>
-               <osdmAllTables:Suffix>__dg_rm_1</osdmAllTables:Suffix>
-            </osdmAllTables:Diagram>
-         </osdmAllTables:DiagramsCollection>
          <osdmAllTables:ColumnsCollection>
             <osdmAllTables:ColumnDetails>
                <osdmAllTables:Sequence>1</osdmAllTables:Sequence>
@@ -438,13 +391,11 @@
                <osdmAllTables:ColumnCommentsSequence>1</osdmAllTables:ColumnCommentsSequence>
                <osdmAllTables:ColumnCommentsName>DATA_TYPE_CD</osdmAllTables:ColumnCommentsName>
                <osdmAllTables:ColumnDescription>Data type, MIAS code.</osdmAllTables:ColumnDescription>
-               <osdmAllTables:ColumnNotes/>
             </osdmAllTables:ColumnCommentsDetails>
             <osdmAllTables:ColumnCommentsDetails>
                <osdmAllTables:ColumnCommentsSequence>2</osdmAllTables:ColumnCommentsSequence>
                <osdmAllTables:ColumnCommentsName>DATA_TYPE_DESC</osdmAllTables:ColumnCommentsName>
                <osdmAllTables:ColumnDescription>Data type description.</osdmAllTables:ColumnDescription>
-               <osdmAllTables:ColumnNotes/>
             </osdmAllTables:ColumnCommentsDetails>
          </osdmAllTables:ColumnsCommentsCollection>
          <osdmAllTables:IndexesCollection>
@@ -474,7 +425,6 @@
       <osdmAllTables:TableDetails>
          <osdmAllTables:TableName>DEPTH_LEVEL</osdmAllTables:TableName>
          <osdmAllTables:EncodedTableName>69BC1AAD-AB9A273CB587</osdmAllTables:EncodedTableName>
-         <osdmAllTables:DiagramSuffix>__dg_rm_1</osdmAllTables:DiagramSuffix>
          <osdmAllTables:FunctionalName/>
          <osdmAllTables:Abbreviation/>
          <osdmAllTables:ClassificationTypeName/>
@@ -482,20 +432,13 @@
          <osdmAllTables:MVPrebuilt/>
          <osdmAllTables:MVQuery/>
          <osdmAllTables:QuantitativeInfoCollection>
-            <osdmAllTables:NumberOfColumns>8</osdmAllTables:NumberOfColumns>
+            <osdmAllTables:NumberOfColumns>12</osdmAllTables:NumberOfColumns>
             <osdmAllTables:NumberOfRowsMin>0</osdmAllTables:NumberOfRowsMin>
             <osdmAllTables:NumberOfRowsMax>9999999</osdmAllTables:NumberOfRowsMax>
             <osdmAllTables:ExpectedNumberOfRows>0</osdmAllTables:ExpectedNumberOfRows>
             <osdmAllTables:ExpectedGrowth>0</osdmAllTables:ExpectedGrowth>
             <osdmAllTables:GrowthInterval>Year</osdmAllTables:GrowthInterval>
          </osdmAllTables:QuantitativeInfoCollection>
-         <osdmAllTables:DiagramsCollection>
-            <osdmAllTables:Diagram>
-               <osdmAllTables:Name>/SERD</osdmAllTables:Name>
-               <osdmAllTables:Link>SERD</osdmAllTables:Link>
-               <osdmAllTables:Suffix>__dg_rm_1</osdmAllTables:Suffix>
-            </osdmAllTables:Diagram>
-         </osdmAllTables:DiagramsCollection>
          <osdmAllTables:ColumnsCollection>
             <osdmAllTables:ColumnDetails>
                <osdmAllTables:Sequence>1</osdmAllTables:Sequence>
@@ -601,49 +544,124 @@
                <osdmAllTables:Security/>
                <osdmAllTables:PreferredAbbreviation/>
             </osdmAllTables:ColumnDetails>
+            <osdmAllTables:ColumnDetails>
+               <osdmAllTables:Sequence>9</osdmAllTables:Sequence>
+               <osdmAllTables:ColumnName>SALINITY_QUALITY_CD</osdmAllTables:ColumnName>
+               <osdmAllTables:PK/>
+               <osdmAllTables:FK>F</osdmAllTables:FK>
+               <osdmAllTables:M>Y</osdmAllTables:M>
+               <osdmAllTables:DataType>NUMERIC</osdmAllTables:DataType>
+               <osdmAllTables:DataTypeKind>LT</osdmAllTables:DataTypeKind>
+               <osdmAllTables:DomainName/>
+               <osdmAllTables:Formula/>
+               <osdmAllTables:Security/>
+               <osdmAllTables:PreferredAbbreviation/>
+            </osdmAllTables:ColumnDetails>
+            <osdmAllTables:ColumnDetails>
+               <osdmAllTables:Sequence>10</osdmAllTables:Sequence>
+               <osdmAllTables:ColumnName>SOUND_VELOCITY_VL</osdmAllTables:ColumnName>
+               <osdmAllTables:PK/>
+               <osdmAllTables:FK/>
+               <osdmAllTables:M/>
+               <osdmAllTables:DataType>NUMERIC</osdmAllTables:DataType>
+               <osdmAllTables:DataTypeKind>LT</osdmAllTables:DataTypeKind>
+               <osdmAllTables:DomainName/>
+               <osdmAllTables:Formula/>
+               <osdmAllTables:Security/>
+               <osdmAllTables:PreferredAbbreviation/>
+            </osdmAllTables:ColumnDetails>
+            <osdmAllTables:ColumnDetails>
+               <osdmAllTables:Sequence>11</osdmAllTables:Sequence>
+               <osdmAllTables:ColumnName>SOUND_VELOCITY_QUALITY_CD</osdmAllTables:ColumnName>
+               <osdmAllTables:PK/>
+               <osdmAllTables:FK>F</osdmAllTables:FK>
+               <osdmAllTables:M>Y</osdmAllTables:M>
+               <osdmAllTables:DataType>NUMERIC</osdmAllTables:DataType>
+               <osdmAllTables:DataTypeKind>LT</osdmAllTables:DataTypeKind>
+               <osdmAllTables:DomainName/>
+               <osdmAllTables:Formula/>
+               <osdmAllTables:Security/>
+               <osdmAllTables:PreferredAbbreviation/>
+            </osdmAllTables:ColumnDetails>
+            <osdmAllTables:ColumnDetails>
+               <osdmAllTables:Sequence>12</osdmAllTables:Sequence>
+               <osdmAllTables:ColumnName>SOUND_VELOCITY_CD</osdmAllTables:ColumnName>
+               <osdmAllTables:PK/>
+               <osdmAllTables:FK>F</osdmAllTables:FK>
+               <osdmAllTables:M>Y</osdmAllTables:M>
+               <osdmAllTables:DataType>NUMERIC</osdmAllTables:DataType>
+               <osdmAllTables:DataTypeKind>LT</osdmAllTables:DataTypeKind>
+               <osdmAllTables:DomainName/>
+               <osdmAllTables:Formula/>
+               <osdmAllTables:Security/>
+               <osdmAllTables:PreferredAbbreviation/>
+            </osdmAllTables:ColumnDetails>
          </osdmAllTables:ColumnsCollection>
          <osdmAllTables:ColumnsCommentsCollection>
             <osdmAllTables:ColumnCommentsDetails>
                <osdmAllTables:ColumnCommentsSequence>2</osdmAllTables:ColumnCommentsSequence>
                <osdmAllTables:ColumnCommentsName>DEPTH_LEVEL_SEQ</osdmAllTables:ColumnCommentsName>
                <osdmAllTables:ColumnDescription>Depth level sequence number.</osdmAllTables:ColumnDescription>
-               <osdmAllTables:ColumnNotes>Start position 86</osdmAllTables:ColumnNotes>
             </osdmAllTables:ColumnCommentsDetails>
             <osdmAllTables:ColumnCommentsDetails>
                <osdmAllTables:ColumnCommentsSequence>3</osdmAllTables:ColumnCommentsSequence>
                <osdmAllTables:ColumnCommentsName>DEPTH_IND</osdmAllTables:ColumnCommentsName>
                <osdmAllTables:ColumnDescription>Depth indicator (this field applies to Nansen data only).</osdmAllTables:ColumnDescription>
-               <osdmAllTables:ColumnNotes>Start positions 849/889</osdmAllTables:ColumnNotes>
+               <osdmAllTables:ColumnNotes>Start positions 849</osdmAllTables:ColumnNotes>
             </osdmAllTables:ColumnCommentsDetails>
             <osdmAllTables:ColumnCommentsDetails>
                <osdmAllTables:ColumnCommentsSequence>4</osdmAllTables:ColumnCommentsSequence>
                <osdmAllTables:ColumnCommentsName>DEPTH_LEVEL_VL</osdmAllTables:ColumnCommentsName>
                <osdmAllTables:ColumnDescription>Depth level, in metres.</osdmAllTables:ColumnDescription>
-               <osdmAllTables:ColumnNotes>Start positions 849/889</osdmAllTables:ColumnNotes>
+               <osdmAllTables:ColumnNotes>Start positions 849</osdmAllTables:ColumnNotes>
             </osdmAllTables:ColumnCommentsDetails>
             <osdmAllTables:ColumnCommentsDetails>
                <osdmAllTables:ColumnCommentsSequence>5</osdmAllTables:ColumnCommentsSequence>
                <osdmAllTables:ColumnCommentsName>DEPTH_QUALITY_CD</osdmAllTables:ColumnCommentsName>
                <osdmAllTables:ColumnDescription>Depth quality code.</osdmAllTables:ColumnDescription>
-               <osdmAllTables:ColumnNotes>Start positions 853/893</osdmAllTables:ColumnNotes>
+               <osdmAllTables:ColumnNotes>Start positions 853</osdmAllTables:ColumnNotes>
             </osdmAllTables:ColumnCommentsDetails>
             <osdmAllTables:ColumnCommentsDetails>
                <osdmAllTables:ColumnCommentsSequence>6</osdmAllTables:ColumnCommentsSequence>
                <osdmAllTables:ColumnCommentsName>TEMPERATURE_VL</osdmAllTables:ColumnCommentsName>
                <osdmAllTables:ColumnDescription>Temperature, in degrees celsius to hundredths.</osdmAllTables:ColumnDescription>
-               <osdmAllTables:ColumnNotes>Start positions 854/894</osdmAllTables:ColumnNotes>
+               <osdmAllTables:ColumnNotes>Start positions 854</osdmAllTables:ColumnNotes>
             </osdmAllTables:ColumnCommentsDetails>
             <osdmAllTables:ColumnCommentsDetails>
                <osdmAllTables:ColumnCommentsSequence>7</osdmAllTables:ColumnCommentsSequence>
                <osdmAllTables:ColumnCommentsName>TEMPERATURE_QUALITY_CD</osdmAllTables:ColumnCommentsName>
                <osdmAllTables:ColumnDescription>Temperature quality code.</osdmAllTables:ColumnDescription>
-               <osdmAllTables:ColumnNotes>Start positions 858/898</osdmAllTables:ColumnNotes>
+               <osdmAllTables:ColumnNotes>Start positions 858</osdmAllTables:ColumnNotes>
             </osdmAllTables:ColumnCommentsDetails>
             <osdmAllTables:ColumnCommentsDetails>
                <osdmAllTables:ColumnCommentsSequence>8</osdmAllTables:ColumnCommentsSequence>
                <osdmAllTables:ColumnCommentsName>SALINITY_VL</osdmAllTables:ColumnCommentsName>
                <osdmAllTables:ColumnDescription>Salinity, parts per thousand to thousandths.</osdmAllTables:ColumnDescription>
-               <osdmAllTables:ColumnNotes>Start positions 859/899</osdmAllTables:ColumnNotes>
+               <osdmAllTables:ColumnNotes>Start positions 859</osdmAllTables:ColumnNotes>
+            </osdmAllTables:ColumnCommentsDetails>
+            <osdmAllTables:ColumnCommentsDetails>
+               <osdmAllTables:ColumnCommentsSequence>9</osdmAllTables:ColumnCommentsSequence>
+               <osdmAllTables:ColumnCommentsName>SALINITY_QUALITY_CD</osdmAllTables:ColumnCommentsName>
+               <osdmAllTables:ColumnDescription>Salinity quality code.</osdmAllTables:ColumnDescription>
+               <osdmAllTables:ColumnNotes>Start position 864</osdmAllTables:ColumnNotes>
+            </osdmAllTables:ColumnCommentsDetails>
+            <osdmAllTables:ColumnCommentsDetails>
+               <osdmAllTables:ColumnCommentsSequence>10</osdmAllTables:ColumnCommentsSequence>
+               <osdmAllTables:ColumnCommentsName>SOUND_VELOCITY_VL</osdmAllTables:ColumnCommentsName>
+               <osdmAllTables:ColumnDescription>Sound velocity, metres per second to tenths.</osdmAllTables:ColumnDescription>
+               <osdmAllTables:ColumnNotes>Start position 865</osdmAllTables:ColumnNotes>
+            </osdmAllTables:ColumnCommentsDetails>
+            <osdmAllTables:ColumnCommentsDetails>
+               <osdmAllTables:ColumnCommentsSequence>11</osdmAllTables:ColumnCommentsSequence>
+               <osdmAllTables:ColumnCommentsName>SOUND_VELOCITY_QUALITY_CD</osdmAllTables:ColumnCommentsName>
+               <osdmAllTables:ColumnDescription>Sound velocity quality code.</osdmAllTables:ColumnDescription>
+               <osdmAllTables:ColumnNotes>Start position 870</osdmAllTables:ColumnNotes>
+            </osdmAllTables:ColumnCommentsDetails>
+            <osdmAllTables:ColumnCommentsDetails>
+               <osdmAllTables:ColumnCommentsSequence>12</osdmAllTables:ColumnCommentsSequence>
+               <osdmAllTables:ColumnCommentsName>SOUND_VELOCITY_CD</osdmAllTables:ColumnCommentsName>
+               <osdmAllTables:ColumnDescription>Sound velocity code.</osdmAllTables:ColumnDescription>
+               <osdmAllTables:ColumnNotes>Start position 871</osdmAllTables:ColumnNotes>
             </osdmAllTables:ColumnCommentsDetails>
          </osdmAllTables:ColumnsCommentsCollection>
          <osdmAllTables:ConstraintsCollection>
@@ -666,6 +684,16 @@
          </osdmAllTables:ConstraintsCollection>
          <osdmAllTables:FKRTCollection>
             <osdmAllTables:FKRTDetails>
+               <osdmAllTables:FKName>DEPTH_LEVEL_SOUND_VELOCITY_QUALITY_FK</osdmAllTables:FKName>
+               <osdmAllTables:FKReferringTo>SOUND_VELOCITY_QUALITY</osdmAllTables:FKReferringTo>
+               <osdmAllTables:FKMandatory>Y</osdmAllTables:FKMandatory>
+               <osdmAllTables:FKTransferable>Y</osdmAllTables:FKTransferable>
+               <osdmAllTables:FKInArc/>
+               <osdmAllTables:FKReferringColumnName>SOUND_VELOCITY_QUALITY_CD</osdmAllTables:FKReferringColumnName>
+               <osdmAllTables:FKReferredColumnName>SOUND_VELOCITY_QUALITY_CD</osdmAllTables:FKReferredColumnName>
+               <osdmAllTables:FKDeleteRule/>
+            </osdmAllTables:FKRTDetails>
+            <osdmAllTables:FKRTDetails>
                <osdmAllTables:FKName>SERD_DETAIL_SERD_HEADER_FK</osdmAllTables:FKName>
                <osdmAllTables:FKReferringTo>SERD_HEADER</osdmAllTables:FKReferringTo>
                <osdmAllTables:FKMandatory>Y</osdmAllTables:FKMandatory>
@@ -673,6 +701,16 @@
                <osdmAllTables:FKInArc/>
                <osdmAllTables:FKReferringColumnName>RECORD_ID</osdmAllTables:FKReferringColumnName>
                <osdmAllTables:FKReferredColumnName>RECORD_ID</osdmAllTables:FKReferredColumnName>
+               <osdmAllTables:FKDeleteRule/>
+            </osdmAllTables:FKRTDetails>
+            <osdmAllTables:FKRTDetails>
+               <osdmAllTables:FKName>DEPTH_LEVEL_TEMPERATURE_QUALITY_FK</osdmAllTables:FKName>
+               <osdmAllTables:FKReferringTo>TEMPERATURE_QUALITY</osdmAllTables:FKReferringTo>
+               <osdmAllTables:FKMandatory>Y</osdmAllTables:FKMandatory>
+               <osdmAllTables:FKTransferable>Y</osdmAllTables:FKTransferable>
+               <osdmAllTables:FKInArc/>
+               <osdmAllTables:FKReferringColumnName>TEMPERATURE_QUALITY_CD</osdmAllTables:FKReferringColumnName>
+               <osdmAllTables:FKReferredColumnName>TEMPERATURE_QUALITY_CD</osdmAllTables:FKReferredColumnName>
                <osdmAllTables:FKDeleteRule/>
             </osdmAllTables:FKRTDetails>
             <osdmAllTables:FKRTDetails>
@@ -686,13 +724,23 @@
                <osdmAllTables:FKDeleteRule/>
             </osdmAllTables:FKRTDetails>
             <osdmAllTables:FKRTDetails>
-               <osdmAllTables:FKName>DEPTH_LEVEL_TEMPERATURE_QUALITY_FK</osdmAllTables:FKName>
-               <osdmAllTables:FKReferringTo>TEMPERATURE_QUALITY</osdmAllTables:FKReferringTo>
+               <osdmAllTables:FKName>DEPTH_LEVEL_SALINITY_QUALITY_FK</osdmAllTables:FKName>
+               <osdmAllTables:FKReferringTo>SALINITY_QUALITY</osdmAllTables:FKReferringTo>
                <osdmAllTables:FKMandatory>Y</osdmAllTables:FKMandatory>
                <osdmAllTables:FKTransferable>Y</osdmAllTables:FKTransferable>
                <osdmAllTables:FKInArc/>
-               <osdmAllTables:FKReferringColumnName>TEMPERATURE_QUALITY_CD</osdmAllTables:FKReferringColumnName>
-               <osdmAllTables:FKReferredColumnName>TEMPERATURE_QUALITY_CD</osdmAllTables:FKReferredColumnName>
+               <osdmAllTables:FKReferringColumnName>SALINITY_QUALITY_CD</osdmAllTables:FKReferringColumnName>
+               <osdmAllTables:FKReferredColumnName>SALINITY_QUALITY_CD</osdmAllTables:FKReferredColumnName>
+               <osdmAllTables:FKDeleteRule/>
+            </osdmAllTables:FKRTDetails>
+            <osdmAllTables:FKRTDetails>
+               <osdmAllTables:FKName>DEPTH_LEVEL_SOUND_VELOCITY_FK</osdmAllTables:FKName>
+               <osdmAllTables:FKReferringTo>SOUND_VELOCITY</osdmAllTables:FKReferringTo>
+               <osdmAllTables:FKMandatory>Y</osdmAllTables:FKMandatory>
+               <osdmAllTables:FKTransferable>Y</osdmAllTables:FKTransferable>
+               <osdmAllTables:FKInArc/>
+               <osdmAllTables:FKReferringColumnName>SOUND_VELOCITY_CD</osdmAllTables:FKReferringColumnName>
+               <osdmAllTables:FKReferredColumnName>SOUND_VELOCITY_CD</osdmAllTables:FKReferredColumnName>
                <osdmAllTables:FKDeleteRule/>
             </osdmAllTables:FKRTDetails>
          </osdmAllTables:FKRTCollection>
@@ -700,7 +748,6 @@
       <osdmAllTables:TableDetails>
          <osdmAllTables:TableName>DEPTH_QUALITY</osdmAllTables:TableName>
          <osdmAllTables:EncodedTableName>D7EA6BED-50C006602E07</osdmAllTables:EncodedTableName>
-         <osdmAllTables:DiagramSuffix>__dg_rm_1</osdmAllTables:DiagramSuffix>
          <osdmAllTables:FunctionalName/>
          <osdmAllTables:Abbreviation/>
          <osdmAllTables:ClassificationTypeName/>
@@ -715,13 +762,6 @@
             <osdmAllTables:ExpectedGrowth>0</osdmAllTables:ExpectedGrowth>
             <osdmAllTables:GrowthInterval>Year</osdmAllTables:GrowthInterval>
          </osdmAllTables:QuantitativeInfoCollection>
-         <osdmAllTables:DiagramsCollection>
-            <osdmAllTables:Diagram>
-               <osdmAllTables:Name>/SERD</osdmAllTables:Name>
-               <osdmAllTables:Link>SERD</osdmAllTables:Link>
-               <osdmAllTables:Suffix>__dg_rm_1</osdmAllTables:Suffix>
-            </osdmAllTables:Diagram>
-         </osdmAllTables:DiagramsCollection>
          <osdmAllTables:ColumnsCollection>
             <osdmAllTables:ColumnDetails>
                <osdmAllTables:Sequence>1</osdmAllTables:Sequence>
@@ -755,13 +795,11 @@
                <osdmAllTables:ColumnCommentsSequence>1</osdmAllTables:ColumnCommentsSequence>
                <osdmAllTables:ColumnCommentsName>DEPTH_QUALITY_CD</osdmAllTables:ColumnCommentsName>
                <osdmAllTables:ColumnDescription>Depth quality code.</osdmAllTables:ColumnDescription>
-               <osdmAllTables:ColumnNotes/>
             </osdmAllTables:ColumnCommentsDetails>
             <osdmAllTables:ColumnCommentsDetails>
                <osdmAllTables:ColumnCommentsSequence>2</osdmAllTables:ColumnCommentsSequence>
                <osdmAllTables:ColumnCommentsName>DEPTH_QUALITY_DESC</osdmAllTables:ColumnCommentsName>
                <osdmAllTables:ColumnDescription>Depth quality description.</osdmAllTables:ColumnDescription>
-               <osdmAllTables:ColumnNotes/>
             </osdmAllTables:ColumnCommentsDetails>
          </osdmAllTables:ColumnsCommentsCollection>
          <osdmAllTables:IndexesCollection>
@@ -791,7 +829,6 @@
       <osdmAllTables:TableDetails>
          <osdmAllTables:TableName>INSTRUMENT</osdmAllTables:TableName>
          <osdmAllTables:EncodedTableName>FB3FDFA7-7EB10BA0DD86</osdmAllTables:EncodedTableName>
-         <osdmAllTables:DiagramSuffix>__dg_rm_1</osdmAllTables:DiagramSuffix>
          <osdmAllTables:FunctionalName/>
          <osdmAllTables:Abbreviation/>
          <osdmAllTables:ClassificationTypeName/>
@@ -806,13 +843,6 @@
             <osdmAllTables:ExpectedGrowth>0</osdmAllTables:ExpectedGrowth>
             <osdmAllTables:GrowthInterval>Year</osdmAllTables:GrowthInterval>
          </osdmAllTables:QuantitativeInfoCollection>
-         <osdmAllTables:DiagramsCollection>
-            <osdmAllTables:Diagram>
-               <osdmAllTables:Name>/SERD</osdmAllTables:Name>
-               <osdmAllTables:Link>SERD</osdmAllTables:Link>
-               <osdmAllTables:Suffix>__dg_rm_1</osdmAllTables:Suffix>
-            </osdmAllTables:Diagram>
-         </osdmAllTables:DiagramsCollection>
          <osdmAllTables:ColumnsCollection>
             <osdmAllTables:ColumnDetails>
                <osdmAllTables:Sequence>1</osdmAllTables:Sequence>
@@ -846,13 +876,11 @@
                <osdmAllTables:ColumnCommentsSequence>1</osdmAllTables:ColumnCommentsSequence>
                <osdmAllTables:ColumnCommentsName>INSTRUMENT_CD</osdmAllTables:ColumnCommentsName>
                <osdmAllTables:ColumnDescription>Instrument code.</osdmAllTables:ColumnDescription>
-               <osdmAllTables:ColumnNotes/>
             </osdmAllTables:ColumnCommentsDetails>
             <osdmAllTables:ColumnCommentsDetails>
                <osdmAllTables:ColumnCommentsSequence>2</osdmAllTables:ColumnCommentsSequence>
                <osdmAllTables:ColumnCommentsName>INSTRUMENT_NAME</osdmAllTables:ColumnCommentsName>
                <osdmAllTables:ColumnDescription>Instrument name</osdmAllTables:ColumnDescription>
-               <osdmAllTables:ColumnNotes/>
             </osdmAllTables:ColumnCommentsDetails>
          </osdmAllTables:ColumnsCommentsCollection>
          <osdmAllTables:IndexesCollection>
@@ -882,7 +910,6 @@
       <osdmAllTables:TableDetails>
          <osdmAllTables:TableName>OBSERVATION_UNIT</osdmAllTables:TableName>
          <osdmAllTables:EncodedTableName>750324BD-FB7E2D3B9370</osdmAllTables:EncodedTableName>
-         <osdmAllTables:DiagramSuffix>__dg_rm_1</osdmAllTables:DiagramSuffix>
          <osdmAllTables:FunctionalName/>
          <osdmAllTables:Abbreviation/>
          <osdmAllTables:ClassificationTypeName/>
@@ -897,13 +924,6 @@
             <osdmAllTables:ExpectedGrowth>0</osdmAllTables:ExpectedGrowth>
             <osdmAllTables:GrowthInterval>Year</osdmAllTables:GrowthInterval>
          </osdmAllTables:QuantitativeInfoCollection>
-         <osdmAllTables:DiagramsCollection>
-            <osdmAllTables:Diagram>
-               <osdmAllTables:Name>/SERD</osdmAllTables:Name>
-               <osdmAllTables:Link>SERD</osdmAllTables:Link>
-               <osdmAllTables:Suffix>__dg_rm_1</osdmAllTables:Suffix>
-            </osdmAllTables:Diagram>
-         </osdmAllTables:DiagramsCollection>
          <osdmAllTables:ColumnsCollection>
             <osdmAllTables:ColumnDetails>
                <osdmAllTables:Sequence>1</osdmAllTables:Sequence>
@@ -938,13 +958,11 @@
                <osdmAllTables:ColumnCommentsName>OBSERVATION_UNIT_CD</osdmAllTables:ColumnCommentsName>
                <osdmAllTables:ColumnDescription>Refers to the units used in the original data.
 If Units code = 1 the corrections are given in imperial units, however all other data have been converted to metric units.</osdmAllTables:ColumnDescription>
-               <osdmAllTables:ColumnNotes/>
             </osdmAllTables:ColumnCommentsDetails>
             <osdmAllTables:ColumnCommentsDetails>
                <osdmAllTables:ColumnCommentsSequence>2</osdmAllTables:ColumnCommentsSequence>
                <osdmAllTables:ColumnCommentsName>OBSERVATION_UNIT_DESC</osdmAllTables:ColumnCommentsName>
                <osdmAllTables:ColumnDescription>Observation unit description.</osdmAllTables:ColumnDescription>
-               <osdmAllTables:ColumnNotes/>
             </osdmAllTables:ColumnCommentsDetails>
          </osdmAllTables:ColumnsCommentsCollection>
          <osdmAllTables:IndexesCollection>
@@ -974,7 +992,6 @@ If Units code = 1 the corrections are given in imperial units, however all other
       <osdmAllTables:TableDetails>
          <osdmAllTables:TableName>POSITION_ACCURACY</osdmAllTables:TableName>
          <osdmAllTables:EncodedTableName>2E833562-C014C81AF534</osdmAllTables:EncodedTableName>
-         <osdmAllTables:DiagramSuffix>__dg_rm_1</osdmAllTables:DiagramSuffix>
          <osdmAllTables:FunctionalName/>
          <osdmAllTables:Abbreviation/>
          <osdmAllTables:ClassificationTypeName/>
@@ -989,13 +1006,6 @@ If Units code = 1 the corrections are given in imperial units, however all other
             <osdmAllTables:ExpectedGrowth>0</osdmAllTables:ExpectedGrowth>
             <osdmAllTables:GrowthInterval>Year</osdmAllTables:GrowthInterval>
          </osdmAllTables:QuantitativeInfoCollection>
-         <osdmAllTables:DiagramsCollection>
-            <osdmAllTables:Diagram>
-               <osdmAllTables:Name>/SERD</osdmAllTables:Name>
-               <osdmAllTables:Link>SERD</osdmAllTables:Link>
-               <osdmAllTables:Suffix>__dg_rm_1</osdmAllTables:Suffix>
-            </osdmAllTables:Diagram>
-         </osdmAllTables:DiagramsCollection>
          <osdmAllTables:ColumnsCollection>
             <osdmAllTables:ColumnDetails>
                <osdmAllTables:Sequence>1</osdmAllTables:Sequence>
@@ -1029,13 +1039,11 @@ If Units code = 1 the corrections are given in imperial units, however all other
                <osdmAllTables:ColumnCommentsSequence>1</osdmAllTables:ColumnCommentsSequence>
                <osdmAllTables:ColumnCommentsName>POSITION_ACCURACY_CD</osdmAllTables:ColumnCommentsName>
                <osdmAllTables:ColumnDescription>Position Accuracy code. The estimated drift in station position or the estimated accuracy in the determination of the position of the station, whichever is the greater.</osdmAllTables:ColumnDescription>
-               <osdmAllTables:ColumnNotes/>
             </osdmAllTables:ColumnCommentsDetails>
             <osdmAllTables:ColumnCommentsDetails>
                <osdmAllTables:ColumnCommentsSequence>2</osdmAllTables:ColumnCommentsSequence>
                <osdmAllTables:ColumnCommentsName>POSITION_ACCURACY_DESC</osdmAllTables:ColumnCommentsName>
                <osdmAllTables:ColumnDescription>Position accuracy description.</osdmAllTables:ColumnDescription>
-               <osdmAllTables:ColumnNotes/>
             </osdmAllTables:ColumnCommentsDetails>
          </osdmAllTables:ColumnsCommentsCollection>
          <osdmAllTables:IndexesCollection>
@@ -1065,7 +1073,6 @@ If Units code = 1 the corrections are given in imperial units, however all other
       <osdmAllTables:TableDetails>
          <osdmAllTables:TableName>POSITION_DETERMINATION</osdmAllTables:TableName>
          <osdmAllTables:EncodedTableName>D4A1C796-5B8CB720D96F</osdmAllTables:EncodedTableName>
-         <osdmAllTables:DiagramSuffix>__dg_rm_1</osdmAllTables:DiagramSuffix>
          <osdmAllTables:FunctionalName/>
          <osdmAllTables:Abbreviation/>
          <osdmAllTables:ClassificationTypeName/>
@@ -1080,13 +1087,6 @@ If Units code = 1 the corrections are given in imperial units, however all other
             <osdmAllTables:ExpectedGrowth>0</osdmAllTables:ExpectedGrowth>
             <osdmAllTables:GrowthInterval>Year</osdmAllTables:GrowthInterval>
          </osdmAllTables:QuantitativeInfoCollection>
-         <osdmAllTables:DiagramsCollection>
-            <osdmAllTables:Diagram>
-               <osdmAllTables:Name>/SERD</osdmAllTables:Name>
-               <osdmAllTables:Link>SERD</osdmAllTables:Link>
-               <osdmAllTables:Suffix>__dg_rm_1</osdmAllTables:Suffix>
-            </osdmAllTables:Diagram>
-         </osdmAllTables:DiagramsCollection>
          <osdmAllTables:ColumnsCollection>
             <osdmAllTables:ColumnDetails>
                <osdmAllTables:Sequence>1</osdmAllTables:Sequence>
@@ -1120,13 +1120,11 @@ If Units code = 1 the corrections are given in imperial units, however all other
                <osdmAllTables:ColumnCommentsSequence>1</osdmAllTables:ColumnCommentsSequence>
                <osdmAllTables:ColumnCommentsName>POSITION_DETERMINATION_CD</osdmAllTables:ColumnCommentsName>
                <osdmAllTables:ColumnDescription>Position Determination, MIAS code for the fixing device used as the prime navigational aid in determining the position of the station.</osdmAllTables:ColumnDescription>
-               <osdmAllTables:ColumnNotes/>
             </osdmAllTables:ColumnCommentsDetails>
             <osdmAllTables:ColumnCommentsDetails>
                <osdmAllTables:ColumnCommentsSequence>2</osdmAllTables:ColumnCommentsSequence>
                <osdmAllTables:ColumnCommentsName>POSITION_DETERMINATION_DESC</osdmAllTables:ColumnCommentsName>
                <osdmAllTables:ColumnDescription>Position determination description</osdmAllTables:ColumnDescription>
-               <osdmAllTables:ColumnNotes/>
             </osdmAllTables:ColumnCommentsDetails>
          </osdmAllTables:ColumnsCommentsCollection>
          <osdmAllTables:IndexesCollection>
@@ -1156,7 +1154,6 @@ If Units code = 1 the corrections are given in imperial units, however all other
       <osdmAllTables:TableDetails>
          <osdmAllTables:TableName>SALINITY_QUALITY</osdmAllTables:TableName>
          <osdmAllTables:EncodedTableName>FB8DCE81-F4AE9B762DDE</osdmAllTables:EncodedTableName>
-         <osdmAllTables:DiagramSuffix>__dg_rm_1</osdmAllTables:DiagramSuffix>
          <osdmAllTables:FunctionalName/>
          <osdmAllTables:Abbreviation/>
          <osdmAllTables:ClassificationTypeName/>
@@ -1171,13 +1168,6 @@ If Units code = 1 the corrections are given in imperial units, however all other
             <osdmAllTables:ExpectedGrowth>0</osdmAllTables:ExpectedGrowth>
             <osdmAllTables:GrowthInterval>Year</osdmAllTables:GrowthInterval>
          </osdmAllTables:QuantitativeInfoCollection>
-         <osdmAllTables:DiagramsCollection>
-            <osdmAllTables:Diagram>
-               <osdmAllTables:Name>/SERD</osdmAllTables:Name>
-               <osdmAllTables:Link>SERD</osdmAllTables:Link>
-               <osdmAllTables:Suffix>__dg_rm_1</osdmAllTables:Suffix>
-            </osdmAllTables:Diagram>
-         </osdmAllTables:DiagramsCollection>
          <osdmAllTables:ColumnsCollection>
             <osdmAllTables:ColumnDetails>
                <osdmAllTables:Sequence>1</osdmAllTables:Sequence>
@@ -1210,14 +1200,12 @@ If Units code = 1 the corrections are given in imperial units, however all other
             <osdmAllTables:ColumnCommentsDetails>
                <osdmAllTables:ColumnCommentsSequence>1</osdmAllTables:ColumnCommentsSequence>
                <osdmAllTables:ColumnCommentsName>SALINITY_QUALITY_CD</osdmAllTables:ColumnCommentsName>
-               <osdmAllTables:ColumnDescription>Temperature quality code.</osdmAllTables:ColumnDescription>
-               <osdmAllTables:ColumnNotes/>
+               <osdmAllTables:ColumnDescription>Salinity quality code.</osdmAllTables:ColumnDescription>
             </osdmAllTables:ColumnCommentsDetails>
             <osdmAllTables:ColumnCommentsDetails>
                <osdmAllTables:ColumnCommentsSequence>2</osdmAllTables:ColumnCommentsSequence>
                <osdmAllTables:ColumnCommentsName>SALINITY_QUALITY_DESC</osdmAllTables:ColumnCommentsName>
-               <osdmAllTables:ColumnDescription>Temperature quality description.</osdmAllTables:ColumnDescription>
-               <osdmAllTables:ColumnNotes/>
+               <osdmAllTables:ColumnDescription>Salinity quality description.</osdmAllTables:ColumnDescription>
             </osdmAllTables:ColumnCommentsDetails>
          </osdmAllTables:ColumnsCommentsCollection>
          <osdmAllTables:IndexesCollection>
@@ -1231,11 +1219,22 @@ If Units code = 1 the corrections are given in imperial units, however all other
                <osdmAllTables:IndexSortOrder>ASC</osdmAllTables:IndexSortOrder>
             </osdmAllTables:IndexDetails>
          </osdmAllTables:IndexesCollection>
+         <osdmAllTables:FKRFCollection>
+            <osdmAllTables:FKRFDetails>
+               <osdmAllTables:FKName>DEPTH_LEVEL_SALINITY_QUALITY_FK</osdmAllTables:FKName>
+               <osdmAllTables:FKReferredFrom>DEPTH_LEVEL</osdmAllTables:FKReferredFrom>
+               <osdmAllTables:FKMandatory>Y</osdmAllTables:FKMandatory>
+               <osdmAllTables:FKTransferable>Y</osdmAllTables:FKTransferable>
+               <osdmAllTables:FKInArc/>
+               <osdmAllTables:FKReferringColumnName>SALINITY_QUALITY_CD</osdmAllTables:FKReferringColumnName>
+               <osdmAllTables:FKReferredColumnName>SALINITY_QUALITY_CD</osdmAllTables:FKReferredColumnName>
+               <osdmAllTables:FKDeleteRule/>
+            </osdmAllTables:FKRFDetails>
+         </osdmAllTables:FKRFCollection>
       </osdmAllTables:TableDetails>
       <osdmAllTables:TableDetails>
          <osdmAllTables:TableName>SALINITY_SCALE</osdmAllTables:TableName>
          <osdmAllTables:EncodedTableName>D3CE513B-51A21CDBD4D4</osdmAllTables:EncodedTableName>
-         <osdmAllTables:DiagramSuffix>__dg_rm_1</osdmAllTables:DiagramSuffix>
          <osdmAllTables:FunctionalName/>
          <osdmAllTables:Abbreviation/>
          <osdmAllTables:ClassificationTypeName/>
@@ -1250,13 +1249,6 @@ If Units code = 1 the corrections are given in imperial units, however all other
             <osdmAllTables:ExpectedGrowth>0</osdmAllTables:ExpectedGrowth>
             <osdmAllTables:GrowthInterval>Year</osdmAllTables:GrowthInterval>
          </osdmAllTables:QuantitativeInfoCollection>
-         <osdmAllTables:DiagramsCollection>
-            <osdmAllTables:Diagram>
-               <osdmAllTables:Name>/SERD</osdmAllTables:Name>
-               <osdmAllTables:Link>SERD</osdmAllTables:Link>
-               <osdmAllTables:Suffix>__dg_rm_1</osdmAllTables:Suffix>
-            </osdmAllTables:Diagram>
-         </osdmAllTables:DiagramsCollection>
          <osdmAllTables:ColumnsCollection>
             <osdmAllTables:ColumnDetails>
                <osdmAllTables:Sequence>1</osdmAllTables:Sequence>
@@ -1290,13 +1282,11 @@ If Units code = 1 the corrections are given in imperial units, however all other
                <osdmAllTables:ColumnCommentsSequence>1</osdmAllTables:ColumnCommentsSequence>
                <osdmAllTables:ColumnCommentsName>SALINITY_SCALE_CD</osdmAllTables:ColumnCommentsName>
                <osdmAllTables:ColumnDescription>Salinity scale code.</osdmAllTables:ColumnDescription>
-               <osdmAllTables:ColumnNotes/>
             </osdmAllTables:ColumnCommentsDetails>
             <osdmAllTables:ColumnCommentsDetails>
                <osdmAllTables:ColumnCommentsSequence>2</osdmAllTables:ColumnCommentsSequence>
                <osdmAllTables:ColumnCommentsName>SALINITY_SCALE_DESC</osdmAllTables:ColumnCommentsName>
                <osdmAllTables:ColumnDescription>Salinity scale description.</osdmAllTables:ColumnDescription>
-               <osdmAllTables:ColumnNotes/>
             </osdmAllTables:ColumnCommentsDetails>
          </osdmAllTables:ColumnsCommentsCollection>
          <osdmAllTables:IndexesCollection>
@@ -1326,7 +1316,6 @@ If Units code = 1 the corrections are given in imperial units, however all other
       <osdmAllTables:TableDetails>
          <osdmAllTables:TableName>SEA_STATE</osdmAllTables:TableName>
          <osdmAllTables:EncodedTableName>45579E81-D4F910CF5A8F</osdmAllTables:EncodedTableName>
-         <osdmAllTables:DiagramSuffix>__dg_rm_1</osdmAllTables:DiagramSuffix>
          <osdmAllTables:FunctionalName/>
          <osdmAllTables:Abbreviation/>
          <osdmAllTables:ClassificationTypeName/>
@@ -1341,13 +1330,6 @@ If Units code = 1 the corrections are given in imperial units, however all other
             <osdmAllTables:ExpectedGrowth>0</osdmAllTables:ExpectedGrowth>
             <osdmAllTables:GrowthInterval>Year</osdmAllTables:GrowthInterval>
          </osdmAllTables:QuantitativeInfoCollection>
-         <osdmAllTables:DiagramsCollection>
-            <osdmAllTables:Diagram>
-               <osdmAllTables:Name>/SERD</osdmAllTables:Name>
-               <osdmAllTables:Link>SERD</osdmAllTables:Link>
-               <osdmAllTables:Suffix>__dg_rm_1</osdmAllTables:Suffix>
-            </osdmAllTables:Diagram>
-         </osdmAllTables:DiagramsCollection>
          <osdmAllTables:ColumnsCollection>
             <osdmAllTables:ColumnDetails>
                <osdmAllTables:Sequence>1</osdmAllTables:Sequence>
@@ -1394,19 +1376,16 @@ If Units code = 1 the corrections are given in imperial units, however all other
                <osdmAllTables:ColumnCommentsSequence>1</osdmAllTables:ColumnCommentsSequence>
                <osdmAllTables:ColumnCommentsName>SEA_STATE_CD</osdmAllTables:ColumnCommentsName>
                <osdmAllTables:ColumnDescription>SEA_STATE code.</osdmAllTables:ColumnDescription>
-               <osdmAllTables:ColumnNotes/>
             </osdmAllTables:ColumnCommentsDetails>
             <osdmAllTables:ColumnCommentsDetails>
                <osdmAllTables:ColumnCommentsSequence>2</osdmAllTables:ColumnCommentsSequence>
                <osdmAllTables:ColumnCommentsName>SEA_STATE_DESC</osdmAllTables:ColumnCommentsName>
                <osdmAllTables:ColumnDescription>Sea state description.</osdmAllTables:ColumnDescription>
-               <osdmAllTables:ColumnNotes/>
             </osdmAllTables:ColumnCommentsDetails>
             <osdmAllTables:ColumnCommentsDetails>
                <osdmAllTables:ColumnCommentsSequence>3</osdmAllTables:ColumnCommentsSequence>
                <osdmAllTables:ColumnCommentsName>HEIGHT_VL</osdmAllTables:ColumnCommentsName>
                <osdmAllTables:ColumnDescription>Sea height in meters.</osdmAllTables:ColumnDescription>
-               <osdmAllTables:ColumnNotes/>
             </osdmAllTables:ColumnCommentsDetails>
          </osdmAllTables:ColumnsCommentsCollection>
          <osdmAllTables:IndexesCollection>
@@ -1436,7 +1415,6 @@ If Units code = 1 the corrections are given in imperial units, however all other
       <osdmAllTables:TableDetails>
          <osdmAllTables:TableName>SERD_HEADER</osdmAllTables:TableName>
          <osdmAllTables:EncodedTableName>85E06FE8-CF157E06B47C</osdmAllTables:EncodedTableName>
-         <osdmAllTables:DiagramSuffix>__dg_rm_1</osdmAllTables:DiagramSuffix>
          <osdmAllTables:FunctionalName/>
          <osdmAllTables:Abbreviation/>
          <osdmAllTables:ClassificationTypeName/>
@@ -1451,13 +1429,6 @@ If Units code = 1 the corrections are given in imperial units, however all other
             <osdmAllTables:ExpectedGrowth>0</osdmAllTables:ExpectedGrowth>
             <osdmAllTables:GrowthInterval>Year</osdmAllTables:GrowthInterval>
          </osdmAllTables:QuantitativeInfoCollection>
-         <osdmAllTables:DiagramsCollection>
-            <osdmAllTables:Diagram>
-               <osdmAllTables:Name>/SERD</osdmAllTables:Name>
-               <osdmAllTables:Link>SERD</osdmAllTables:Link>
-               <osdmAllTables:Suffix>__dg_rm_1</osdmAllTables:Suffix>
-            </osdmAllTables:Diagram>
-         </osdmAllTables:DiagramsCollection>
          <osdmAllTables:ColumnsCollection>
             <osdmAllTables:ColumnDetails>
                <osdmAllTables:Sequence>1</osdmAllTables:Sequence>
@@ -2390,7 +2361,6 @@ If Units code = 1 the corrections are given in imperial units, however all other
             <osdmAllTables:ColumnCommentsDetails>
                <osdmAllTables:ColumnCommentsSequence>34</osdmAllTables:ColumnCommentsSequence>
                <osdmAllTables:ColumnCommentsName>INSTRUMENT_CD</osdmAllTables:ColumnCommentsName>
-               <osdmAllTables:ColumnDescription/>
                <osdmAllTables:ColumnNotes>Start position 116</osdmAllTables:ColumnNotes>
             </osdmAllTables:ColumnCommentsDetails>
             <osdmAllTables:ColumnCommentsDetails>
@@ -2450,7 +2420,6 @@ If Units code = 1 the corrections are given in imperial units, however all other
             <osdmAllTables:ColumnCommentsDetails>
                <osdmAllTables:ColumnCommentsSequence>44</osdmAllTables:ColumnCommentsSequence>
                <osdmAllTables:ColumnCommentsName>SEA_STATE_CD</osdmAllTables:ColumnCommentsName>
-               <osdmAllTables:ColumnDescription/>
                <osdmAllTables:ColumnNotes>Start position 135</osdmAllTables:ColumnNotes>
             </osdmAllTables:ColumnCommentsDetails>
             <osdmAllTables:ColumnCommentsDetails>
@@ -2474,7 +2443,6 @@ If Units code = 1 the corrections are given in imperial units, however all other
             <osdmAllTables:ColumnCommentsDetails>
                <osdmAllTables:ColumnCommentsSequence>48</osdmAllTables:ColumnCommentsSequence>
                <osdmAllTables:ColumnCommentsName>WATER_COLOUR_CD</osdmAllTables:ColumnCommentsName>
-               <osdmAllTables:ColumnDescription/>
                <osdmAllTables:ColumnNotes>Start position 145</osdmAllTables:ColumnNotes>
             </osdmAllTables:ColumnCommentsDetails>
             <osdmAllTables:ColumnCommentsDetails>
@@ -2492,7 +2460,6 @@ If Units code = 1 the corrections are given in imperial units, however all other
             <osdmAllTables:ColumnCommentsDetails>
                <osdmAllTables:ColumnCommentsSequence>51</osdmAllTables:ColumnCommentsSequence>
                <osdmAllTables:ColumnCommentsName>BT_SEA_SURFACE_INSTRUMENT_CD</osdmAllTables:ColumnCommentsName>
-               <osdmAllTables:ColumnDescription/>
                <osdmAllTables:ColumnNotes>Start position 150</osdmAllTables:ColumnNotes>
             </osdmAllTables:ColumnCommentsDetails>
             <osdmAllTables:ColumnCommentsDetails>
@@ -2533,66 +2500,6 @@ If Units code = 1 the corrections are given in imperial units, however all other
          </osdmAllTables:IndexesCollection>
          <osdmAllTables:FKRTCollection>
             <osdmAllTables:FKRTDetails>
-               <osdmAllTables:FKName>SERD_HEADER_INSTRUMENT_FK</osdmAllTables:FKName>
-               <osdmAllTables:FKReferringTo>INSTRUMENT</osdmAllTables:FKReferringTo>
-               <osdmAllTables:FKMandatory>Y</osdmAllTables:FKMandatory>
-               <osdmAllTables:FKTransferable>Y</osdmAllTables:FKTransferable>
-               <osdmAllTables:FKInArc/>
-               <osdmAllTables:FKReferringColumnName>INSTRUMENT_CD</osdmAllTables:FKReferringColumnName>
-               <osdmAllTables:FKReferredColumnName>INSTRUMENT_CD</osdmAllTables:FKReferredColumnName>
-               <osdmAllTables:FKDeleteRule/>
-            </osdmAllTables:FKRTDetails>
-            <osdmAllTables:FKRTDetails>
-               <osdmAllTables:FKName>SERD_HEADER_WIND_DIRECTION_FK</osdmAllTables:FKName>
-               <osdmAllTables:FKReferringTo>WIND_DIRECTION</osdmAllTables:FKReferringTo>
-               <osdmAllTables:FKMandatory>Y</osdmAllTables:FKMandatory>
-               <osdmAllTables:FKTransferable>Y</osdmAllTables:FKTransferable>
-               <osdmAllTables:FKInArc/>
-               <osdmAllTables:FKReferringColumnName>WIND_DIRECTION_CD</osdmAllTables:FKReferringColumnName>
-               <osdmAllTables:FKReferredColumnName>WIND_DIRECTION_CD</osdmAllTables:FKReferredColumnName>
-               <osdmAllTables:FKDeleteRule/>
-            </osdmAllTables:FKRTDetails>
-            <osdmAllTables:FKRTDetails>
-               <osdmAllTables:FKName>SERD_HEADER_SEA_STATE_FK</osdmAllTables:FKName>
-               <osdmAllTables:FKReferringTo>SEA_STATE</osdmAllTables:FKReferringTo>
-               <osdmAllTables:FKMandatory>Y</osdmAllTables:FKMandatory>
-               <osdmAllTables:FKTransferable>Y</osdmAllTables:FKTransferable>
-               <osdmAllTables:FKInArc/>
-               <osdmAllTables:FKReferringColumnName>SEA_STATE_CD</osdmAllTables:FKReferringColumnName>
-               <osdmAllTables:FKReferredColumnName>SEA_STATE_CD</osdmAllTables:FKReferredColumnName>
-               <osdmAllTables:FKDeleteRule/>
-            </osdmAllTables:FKRTDetails>
-            <osdmAllTables:FKRTDetails>
-               <osdmAllTables:FKName>SERD_HEADER_POSITION_DETERMINATION_FK</osdmAllTables:FKName>
-               <osdmAllTables:FKReferringTo>POSITION_DETERMINATION</osdmAllTables:FKReferringTo>
-               <osdmAllTables:FKMandatory>Y</osdmAllTables:FKMandatory>
-               <osdmAllTables:FKTransferable>Y</osdmAllTables:FKTransferable>
-               <osdmAllTables:FKInArc/>
-               <osdmAllTables:FKReferringColumnName>POSITION_DETERMINATION_CD</osdmAllTables:FKReferringColumnName>
-               <osdmAllTables:FKReferredColumnName>POSITION_DETERMINATION_CD</osdmAllTables:FKReferredColumnName>
-               <osdmAllTables:FKDeleteRule/>
-            </osdmAllTables:FKRTDetails>
-            <osdmAllTables:FKRTDetails>
-               <osdmAllTables:FKName>SERD_HEADER_POSITION_ACCURACY_FK</osdmAllTables:FKName>
-               <osdmAllTables:FKReferringTo>POSITION_ACCURACY</osdmAllTables:FKReferringTo>
-               <osdmAllTables:FKMandatory>Y</osdmAllTables:FKMandatory>
-               <osdmAllTables:FKTransferable>Y</osdmAllTables:FKTransferable>
-               <osdmAllTables:FKInArc/>
-               <osdmAllTables:FKReferringColumnName>POSITION_ACCURACY_CD</osdmAllTables:FKReferringColumnName>
-               <osdmAllTables:FKReferredColumnName>POSITION_ACCURACY_CD</osdmAllTables:FKReferredColumnName>
-               <osdmAllTables:FKDeleteRule/>
-            </osdmAllTables:FKRTDetails>
-            <osdmAllTables:FKRTDetails>
-               <osdmAllTables:FKName>SERD_HEADER_OBSERVATION_UNIT_FK</osdmAllTables:FKName>
-               <osdmAllTables:FKReferringTo>OBSERVATION_UNIT</osdmAllTables:FKReferringTo>
-               <osdmAllTables:FKMandatory>Y</osdmAllTables:FKMandatory>
-               <osdmAllTables:FKTransferable>Y</osdmAllTables:FKTransferable>
-               <osdmAllTables:FKInArc/>
-               <osdmAllTables:FKReferringColumnName>OBSERVATION_UNIT_CD</osdmAllTables:FKReferringColumnName>
-               <osdmAllTables:FKReferredColumnName>OBSERVATION_UNIT_CD</osdmAllTables:FKReferredColumnName>
-               <osdmAllTables:FKDeleteRule/>
-            </osdmAllTables:FKRTDetails>
-            <osdmAllTables:FKRTDetails>
                <osdmAllTables:FKName>SERD_HEADER_DATA_TYPE_FK</osdmAllTables:FKName>
                <osdmAllTables:FKReferringTo>DATA_TYPE</osdmAllTables:FKReferringTo>
                <osdmAllTables:FKMandatory>Y</osdmAllTables:FKMandatory>
@@ -2600,46 +2507,6 @@ If Units code = 1 the corrections are given in imperial units, however all other
                <osdmAllTables:FKInArc/>
                <osdmAllTables:FKReferringColumnName>DATA_TYPE_CD</osdmAllTables:FKReferringColumnName>
                <osdmAllTables:FKReferredColumnName>DATA_TYPE_CD</osdmAllTables:FKReferredColumnName>
-               <osdmAllTables:FKDeleteRule/>
-            </osdmAllTables:FKRTDetails>
-            <osdmAllTables:FKRTDetails>
-               <osdmAllTables:FKName>SERD_HEADER_DATA_MODE_FK</osdmAllTables:FKName>
-               <osdmAllTables:FKReferringTo>DATA_MODE</osdmAllTables:FKReferringTo>
-               <osdmAllTables:FKMandatory>Y</osdmAllTables:FKMandatory>
-               <osdmAllTables:FKTransferable>Y</osdmAllTables:FKTransferable>
-               <osdmAllTables:FKInArc/>
-               <osdmAllTables:FKReferringColumnName>DATA_MODE_CD</osdmAllTables:FKReferringColumnName>
-               <osdmAllTables:FKReferredColumnName>DATA_MODE_CD</osdmAllTables:FKReferredColumnName>
-               <osdmAllTables:FKDeleteRule/>
-            </osdmAllTables:FKRTDetails>
-            <osdmAllTables:FKRTDetails>
-               <osdmAllTables:FKName>SERD_HEADER_DATA_METHOD_FK</osdmAllTables:FKName>
-               <osdmAllTables:FKReferringTo>DATA_METHOD</osdmAllTables:FKReferringTo>
-               <osdmAllTables:FKMandatory>Y</osdmAllTables:FKMandatory>
-               <osdmAllTables:FKTransferable>Y</osdmAllTables:FKTransferable>
-               <osdmAllTables:FKInArc/>
-               <osdmAllTables:FKReferringColumnName>DATA_METHOD_CD</osdmAllTables:FKReferringColumnName>
-               <osdmAllTables:FKReferredColumnName>DATA_METHOD_CD</osdmAllTables:FKReferredColumnName>
-               <osdmAllTables:FKDeleteRule/>
-            </osdmAllTables:FKRTDetails>
-            <osdmAllTables:FKRTDetails>
-               <osdmAllTables:FKName>SERD_HEADER_WEATHER_FK</osdmAllTables:FKName>
-               <osdmAllTables:FKReferringTo>WEATHER</osdmAllTables:FKReferringTo>
-               <osdmAllTables:FKMandatory>Y</osdmAllTables:FKMandatory>
-               <osdmAllTables:FKTransferable>Y</osdmAllTables:FKTransferable>
-               <osdmAllTables:FKInArc/>
-               <osdmAllTables:FKReferringColumnName>WEATHER_CD</osdmAllTables:FKReferringColumnName>
-               <osdmAllTables:FKReferredColumnName>WEATHER_CD</osdmAllTables:FKReferredColumnName>
-               <osdmAllTables:FKDeleteRule/>
-            </osdmAllTables:FKRTDetails>
-            <osdmAllTables:FKRTDetails>
-               <osdmAllTables:FKName>SERD_HEADER_CLOUD_COVERAGE_FK</osdmAllTables:FKName>
-               <osdmAllTables:FKReferringTo>CLOUD_COVERAGE</osdmAllTables:FKReferringTo>
-               <osdmAllTables:FKMandatory>Y</osdmAllTables:FKMandatory>
-               <osdmAllTables:FKTransferable>Y</osdmAllTables:FKTransferable>
-               <osdmAllTables:FKInArc/>
-               <osdmAllTables:FKReferringColumnName>CLOUD_COVERAGE_CD</osdmAllTables:FKReferringColumnName>
-               <osdmAllTables:FKReferredColumnName>CLOUD_COVERAGE_CD</osdmAllTables:FKReferredColumnName>
                <osdmAllTables:FKDeleteRule/>
             </osdmAllTables:FKRTDetails>
             <osdmAllTables:FKRTDetails>
@@ -2653,6 +2520,86 @@ If Units code = 1 the corrections are given in imperial units, however all other
                <osdmAllTables:FKDeleteRule/>
             </osdmAllTables:FKRTDetails>
             <osdmAllTables:FKRTDetails>
+               <osdmAllTables:FKName>SERD_HEADER_DATA_MODE_FK</osdmAllTables:FKName>
+               <osdmAllTables:FKReferringTo>DATA_MODE</osdmAllTables:FKReferringTo>
+               <osdmAllTables:FKMandatory>Y</osdmAllTables:FKMandatory>
+               <osdmAllTables:FKTransferable>Y</osdmAllTables:FKTransferable>
+               <osdmAllTables:FKInArc/>
+               <osdmAllTables:FKReferringColumnName>DATA_MODE_CD</osdmAllTables:FKReferringColumnName>
+               <osdmAllTables:FKReferredColumnName>DATA_MODE_CD</osdmAllTables:FKReferredColumnName>
+               <osdmAllTables:FKDeleteRule/>
+            </osdmAllTables:FKRTDetails>
+            <osdmAllTables:FKRTDetails>
+               <osdmAllTables:FKName>SERD_HEADER_WIND_DIRECTION_FK</osdmAllTables:FKName>
+               <osdmAllTables:FKReferringTo>WIND_DIRECTION</osdmAllTables:FKReferringTo>
+               <osdmAllTables:FKMandatory>Y</osdmAllTables:FKMandatory>
+               <osdmAllTables:FKTransferable>Y</osdmAllTables:FKTransferable>
+               <osdmAllTables:FKInArc/>
+               <osdmAllTables:FKReferringColumnName>WIND_DIRECTION_CD</osdmAllTables:FKReferringColumnName>
+               <osdmAllTables:FKReferredColumnName>WIND_DIRECTION_CD</osdmAllTables:FKReferredColumnName>
+               <osdmAllTables:FKDeleteRule/>
+            </osdmAllTables:FKRTDetails>
+            <osdmAllTables:FKRTDetails>
+               <osdmAllTables:FKName>SERD_HEADER_CLOUD_COVERAGE_FK</osdmAllTables:FKName>
+               <osdmAllTables:FKReferringTo>CLOUD_COVERAGE</osdmAllTables:FKReferringTo>
+               <osdmAllTables:FKMandatory>Y</osdmAllTables:FKMandatory>
+               <osdmAllTables:FKTransferable>Y</osdmAllTables:FKTransferable>
+               <osdmAllTables:FKInArc/>
+               <osdmAllTables:FKReferringColumnName>CLOUD_COVERAGE_CD</osdmAllTables:FKReferringColumnName>
+               <osdmAllTables:FKReferredColumnName>CLOUD_COVERAGE_CD</osdmAllTables:FKReferredColumnName>
+               <osdmAllTables:FKDeleteRule/>
+            </osdmAllTables:FKRTDetails>
+            <osdmAllTables:FKRTDetails>
+               <osdmAllTables:FKName>SERD_HEADER_INSTRUMENT_FK</osdmAllTables:FKName>
+               <osdmAllTables:FKReferringTo>INSTRUMENT</osdmAllTables:FKReferringTo>
+               <osdmAllTables:FKMandatory>Y</osdmAllTables:FKMandatory>
+               <osdmAllTables:FKTransferable>Y</osdmAllTables:FKTransferable>
+               <osdmAllTables:FKInArc/>
+               <osdmAllTables:FKReferringColumnName>INSTRUMENT_CD</osdmAllTables:FKReferringColumnName>
+               <osdmAllTables:FKReferredColumnName>INSTRUMENT_CD</osdmAllTables:FKReferredColumnName>
+               <osdmAllTables:FKDeleteRule/>
+            </osdmAllTables:FKRTDetails>
+            <osdmAllTables:FKRTDetails>
+               <osdmAllTables:FKName>SERD_HEADER_OBSERVATION_UNIT_FK</osdmAllTables:FKName>
+               <osdmAllTables:FKReferringTo>OBSERVATION_UNIT</osdmAllTables:FKReferringTo>
+               <osdmAllTables:FKMandatory>Y</osdmAllTables:FKMandatory>
+               <osdmAllTables:FKTransferable>Y</osdmAllTables:FKTransferable>
+               <osdmAllTables:FKInArc/>
+               <osdmAllTables:FKReferringColumnName>OBSERVATION_UNIT_CD</osdmAllTables:FKReferringColumnName>
+               <osdmAllTables:FKReferredColumnName>OBSERVATION_UNIT_CD</osdmAllTables:FKReferredColumnName>
+               <osdmAllTables:FKDeleteRule/>
+            </osdmAllTables:FKRTDetails>
+            <osdmAllTables:FKRTDetails>
+               <osdmAllTables:FKName>SERD_HEADER_SEA_STATE_FK</osdmAllTables:FKName>
+               <osdmAllTables:FKReferringTo>SEA_STATE</osdmAllTables:FKReferringTo>
+               <osdmAllTables:FKMandatory>Y</osdmAllTables:FKMandatory>
+               <osdmAllTables:FKTransferable>Y</osdmAllTables:FKTransferable>
+               <osdmAllTables:FKInArc/>
+               <osdmAllTables:FKReferringColumnName>SEA_STATE_CD</osdmAllTables:FKReferringColumnName>
+               <osdmAllTables:FKReferredColumnName>SEA_STATE_CD</osdmAllTables:FKReferredColumnName>
+               <osdmAllTables:FKDeleteRule/>
+            </osdmAllTables:FKRTDetails>
+            <osdmAllTables:FKRTDetails>
+               <osdmAllTables:FKName>SERD_HEADER_WEATHER_FK</osdmAllTables:FKName>
+               <osdmAllTables:FKReferringTo>WEATHER</osdmAllTables:FKReferringTo>
+               <osdmAllTables:FKMandatory>Y</osdmAllTables:FKMandatory>
+               <osdmAllTables:FKTransferable>Y</osdmAllTables:FKTransferable>
+               <osdmAllTables:FKInArc/>
+               <osdmAllTables:FKReferringColumnName>WEATHER_CD</osdmAllTables:FKReferringColumnName>
+               <osdmAllTables:FKReferredColumnName>WEATHER_CD</osdmAllTables:FKReferredColumnName>
+               <osdmAllTables:FKDeleteRule/>
+            </osdmAllTables:FKRTDetails>
+            <osdmAllTables:FKRTDetails>
+               <osdmAllTables:FKName>SERD_HEADER_POSITION_DETERMINATION_FK</osdmAllTables:FKName>
+               <osdmAllTables:FKReferringTo>POSITION_DETERMINATION</osdmAllTables:FKReferringTo>
+               <osdmAllTables:FKMandatory>Y</osdmAllTables:FKMandatory>
+               <osdmAllTables:FKTransferable>Y</osdmAllTables:FKTransferable>
+               <osdmAllTables:FKInArc/>
+               <osdmAllTables:FKReferringColumnName>POSITION_DETERMINATION_CD</osdmAllTables:FKReferringColumnName>
+               <osdmAllTables:FKReferredColumnName>POSITION_DETERMINATION_CD</osdmAllTables:FKReferredColumnName>
+               <osdmAllTables:FKDeleteRule/>
+            </osdmAllTables:FKRTDetails>
+            <osdmAllTables:FKRTDetails>
                <osdmAllTables:FKName>SERD_HEADER_SALINITY_SCALE_FK</osdmAllTables:FKName>
                <osdmAllTables:FKReferringTo>SALINITY_SCALE</osdmAllTables:FKReferringTo>
                <osdmAllTables:FKMandatory>Y</osdmAllTables:FKMandatory>
@@ -2660,6 +2607,26 @@ If Units code = 1 the corrections are given in imperial units, however all other
                <osdmAllTables:FKInArc/>
                <osdmAllTables:FKReferringColumnName>SALINITY_SCALE_CD</osdmAllTables:FKReferringColumnName>
                <osdmAllTables:FKReferredColumnName>SALINITY_SCALE_CD</osdmAllTables:FKReferredColumnName>
+               <osdmAllTables:FKDeleteRule/>
+            </osdmAllTables:FKRTDetails>
+            <osdmAllTables:FKRTDetails>
+               <osdmAllTables:FKName>SERD_HEADER_POSITION_ACCURACY_FK</osdmAllTables:FKName>
+               <osdmAllTables:FKReferringTo>POSITION_ACCURACY</osdmAllTables:FKReferringTo>
+               <osdmAllTables:FKMandatory>Y</osdmAllTables:FKMandatory>
+               <osdmAllTables:FKTransferable>Y</osdmAllTables:FKTransferable>
+               <osdmAllTables:FKInArc/>
+               <osdmAllTables:FKReferringColumnName>POSITION_ACCURACY_CD</osdmAllTables:FKReferringColumnName>
+               <osdmAllTables:FKReferredColumnName>POSITION_ACCURACY_CD</osdmAllTables:FKReferredColumnName>
+               <osdmAllTables:FKDeleteRule/>
+            </osdmAllTables:FKRTDetails>
+            <osdmAllTables:FKRTDetails>
+               <osdmAllTables:FKName>SERD_HEADER_DATA_METHOD_FK</osdmAllTables:FKName>
+               <osdmAllTables:FKReferringTo>DATA_METHOD</osdmAllTables:FKReferringTo>
+               <osdmAllTables:FKMandatory>Y</osdmAllTables:FKMandatory>
+               <osdmAllTables:FKTransferable>Y</osdmAllTables:FKTransferable>
+               <osdmAllTables:FKInArc/>
+               <osdmAllTables:FKReferringColumnName>DATA_METHOD_CD</osdmAllTables:FKReferringColumnName>
+               <osdmAllTables:FKReferredColumnName>DATA_METHOD_CD</osdmAllTables:FKReferredColumnName>
                <osdmAllTables:FKDeleteRule/>
             </osdmAllTables:FKRTDetails>
          </osdmAllTables:FKRTCollection>
@@ -2687,9 +2654,8 @@ If Units code = 1 the corrections are given in imperial units, however all other
          </osdmAllTables:FKRFCollection>
       </osdmAllTables:TableDetails>
       <osdmAllTables:TableDetails>
-         <osdmAllTables:TableName>TEMPERATURE_QUALITY</osdmAllTables:TableName>
-         <osdmAllTables:EncodedTableName>180B3D10-330D275CE960</osdmAllTables:EncodedTableName>
-         <osdmAllTables:DiagramSuffix>__dg_rm_1</osdmAllTables:DiagramSuffix>
+         <osdmAllTables:TableName>SOUND_VELOCITY</osdmAllTables:TableName>
+         <osdmAllTables:EncodedTableName>0DC2B30D-5B222CC2213B</osdmAllTables:EncodedTableName>
          <osdmAllTables:FunctionalName/>
          <osdmAllTables:Abbreviation/>
          <osdmAllTables:ClassificationTypeName/>
@@ -2704,13 +2670,168 @@ If Units code = 1 the corrections are given in imperial units, however all other
             <osdmAllTables:ExpectedGrowth>0</osdmAllTables:ExpectedGrowth>
             <osdmAllTables:GrowthInterval>Year</osdmAllTables:GrowthInterval>
          </osdmAllTables:QuantitativeInfoCollection>
-         <osdmAllTables:DiagramsCollection>
-            <osdmAllTables:Diagram>
-               <osdmAllTables:Name>/SERD</osdmAllTables:Name>
-               <osdmAllTables:Link>SERD</osdmAllTables:Link>
-               <osdmAllTables:Suffix>__dg_rm_1</osdmAllTables:Suffix>
-            </osdmAllTables:Diagram>
-         </osdmAllTables:DiagramsCollection>
+         <osdmAllTables:ColumnsCollection>
+            <osdmAllTables:ColumnDetails>
+               <osdmAllTables:Sequence>1</osdmAllTables:Sequence>
+               <osdmAllTables:ColumnName>SOUND_VELOCITY_CD</osdmAllTables:ColumnName>
+               <osdmAllTables:PK>P</osdmAllTables:PK>
+               <osdmAllTables:FK/>
+               <osdmAllTables:M>Y</osdmAllTables:M>
+               <osdmAllTables:DataType>NUMERIC</osdmAllTables:DataType>
+               <osdmAllTables:DataTypeKind>LT</osdmAllTables:DataTypeKind>
+               <osdmAllTables:DomainName/>
+               <osdmAllTables:Formula/>
+               <osdmAllTables:Security/>
+               <osdmAllTables:PreferredAbbreviation/>
+            </osdmAllTables:ColumnDetails>
+            <osdmAllTables:ColumnDetails>
+               <osdmAllTables:Sequence>2</osdmAllTables:Sequence>
+               <osdmAllTables:ColumnName>SOUND_VELOCITY_DESC</osdmAllTables:ColumnName>
+               <osdmAllTables:PK/>
+               <osdmAllTables:FK/>
+               <osdmAllTables:M>Y</osdmAllTables:M>
+               <osdmAllTables:DataType>VARCHAR (100) </osdmAllTables:DataType>
+               <osdmAllTables:DataTypeKind>LT</osdmAllTables:DataTypeKind>
+               <osdmAllTables:DomainName/>
+               <osdmAllTables:Formula/>
+               <osdmAllTables:Security/>
+               <osdmAllTables:PreferredAbbreviation/>
+            </osdmAllTables:ColumnDetails>
+         </osdmAllTables:ColumnsCollection>
+         <osdmAllTables:ColumnsCommentsCollection>
+            <osdmAllTables:ColumnCommentsDetails>
+               <osdmAllTables:ColumnCommentsSequence>1</osdmAllTables:ColumnCommentsSequence>
+               <osdmAllTables:ColumnCommentsName>SOUND_VELOCITY_CD</osdmAllTables:ColumnCommentsName>
+               <osdmAllTables:ColumnDescription>Sound velocity code.</osdmAllTables:ColumnDescription>
+            </osdmAllTables:ColumnCommentsDetails>
+            <osdmAllTables:ColumnCommentsDetails>
+               <osdmAllTables:ColumnCommentsSequence>2</osdmAllTables:ColumnCommentsSequence>
+               <osdmAllTables:ColumnCommentsName>SOUND_VELOCITY_DESC</osdmAllTables:ColumnCommentsName>
+               <osdmAllTables:ColumnDescription>Sound velocity description.</osdmAllTables:ColumnDescription>
+            </osdmAllTables:ColumnCommentsDetails>
+         </osdmAllTables:ColumnsCommentsCollection>
+         <osdmAllTables:IndexesCollection>
+            <osdmAllTables:IndexDetails>
+               <osdmAllTables:IndexName>SOUND_VELOCITY_PK</osdmAllTables:IndexName>
+               <osdmAllTables:IndexState>PK</osdmAllTables:IndexState>
+               <osdmAllTables:IndexFunctional/>
+               <osdmAllTables:IndexSpatial/>
+               <osdmAllTables:IndexExpression/>
+               <osdmAllTables:IndexColumnName>SOUND_VELOCITY_CD</osdmAllTables:IndexColumnName>
+               <osdmAllTables:IndexSortOrder>ASC</osdmAllTables:IndexSortOrder>
+            </osdmAllTables:IndexDetails>
+         </osdmAllTables:IndexesCollection>
+         <osdmAllTables:FKRFCollection>
+            <osdmAllTables:FKRFDetails>
+               <osdmAllTables:FKName>DEPTH_LEVEL_SOUND_VELOCITY_FK</osdmAllTables:FKName>
+               <osdmAllTables:FKReferredFrom>DEPTH_LEVEL</osdmAllTables:FKReferredFrom>
+               <osdmAllTables:FKMandatory>Y</osdmAllTables:FKMandatory>
+               <osdmAllTables:FKTransferable>Y</osdmAllTables:FKTransferable>
+               <osdmAllTables:FKInArc/>
+               <osdmAllTables:FKReferringColumnName>SOUND_VELOCITY_CD</osdmAllTables:FKReferringColumnName>
+               <osdmAllTables:FKReferredColumnName>SOUND_VELOCITY_CD</osdmAllTables:FKReferredColumnName>
+               <osdmAllTables:FKDeleteRule/>
+            </osdmAllTables:FKRFDetails>
+         </osdmAllTables:FKRFCollection>
+      </osdmAllTables:TableDetails>
+      <osdmAllTables:TableDetails>
+         <osdmAllTables:TableName>SOUND_VELOCITY_QUALITY</osdmAllTables:TableName>
+         <osdmAllTables:EncodedTableName>8FDF46A6-A2884CEF8C24</osdmAllTables:EncodedTableName>
+         <osdmAllTables:FunctionalName/>
+         <osdmAllTables:Abbreviation/>
+         <osdmAllTables:ClassificationTypeName/>
+         <osdmAllTables:ObjectTypeName/>
+         <osdmAllTables:MVPrebuilt/>
+         <osdmAllTables:MVQuery/>
+         <osdmAllTables:QuantitativeInfoCollection>
+            <osdmAllTables:NumberOfColumns>2</osdmAllTables:NumberOfColumns>
+            <osdmAllTables:NumberOfRowsMin>0</osdmAllTables:NumberOfRowsMin>
+            <osdmAllTables:NumberOfRowsMax>9999999</osdmAllTables:NumberOfRowsMax>
+            <osdmAllTables:ExpectedNumberOfRows>0</osdmAllTables:ExpectedNumberOfRows>
+            <osdmAllTables:ExpectedGrowth>0</osdmAllTables:ExpectedGrowth>
+            <osdmAllTables:GrowthInterval>Year</osdmAllTables:GrowthInterval>
+         </osdmAllTables:QuantitativeInfoCollection>
+         <osdmAllTables:ColumnsCollection>
+            <osdmAllTables:ColumnDetails>
+               <osdmAllTables:Sequence>1</osdmAllTables:Sequence>
+               <osdmAllTables:ColumnName>SOUND_VELOCITY_QUALITY_CD</osdmAllTables:ColumnName>
+               <osdmAllTables:PK>P</osdmAllTables:PK>
+               <osdmAllTables:FK/>
+               <osdmAllTables:M>Y</osdmAllTables:M>
+               <osdmAllTables:DataType>NUMERIC</osdmAllTables:DataType>
+               <osdmAllTables:DataTypeKind>LT</osdmAllTables:DataTypeKind>
+               <osdmAllTables:DomainName/>
+               <osdmAllTables:Formula/>
+               <osdmAllTables:Security/>
+               <osdmAllTables:PreferredAbbreviation/>
+            </osdmAllTables:ColumnDetails>
+            <osdmAllTables:ColumnDetails>
+               <osdmAllTables:Sequence>2</osdmAllTables:Sequence>
+               <osdmAllTables:ColumnName>SOUND_VELOCITY_QUALITY_DESC</osdmAllTables:ColumnName>
+               <osdmAllTables:PK/>
+               <osdmAllTables:FK/>
+               <osdmAllTables:M>Y</osdmAllTables:M>
+               <osdmAllTables:DataType>VARCHAR (100) </osdmAllTables:DataType>
+               <osdmAllTables:DataTypeKind>LT</osdmAllTables:DataTypeKind>
+               <osdmAllTables:DomainName/>
+               <osdmAllTables:Formula/>
+               <osdmAllTables:Security/>
+               <osdmAllTables:PreferredAbbreviation/>
+            </osdmAllTables:ColumnDetails>
+         </osdmAllTables:ColumnsCollection>
+         <osdmAllTables:ColumnsCommentsCollection>
+            <osdmAllTables:ColumnCommentsDetails>
+               <osdmAllTables:ColumnCommentsSequence>1</osdmAllTables:ColumnCommentsSequence>
+               <osdmAllTables:ColumnCommentsName>SOUND_VELOCITY_QUALITY_CD</osdmAllTables:ColumnCommentsName>
+               <osdmAllTables:ColumnDescription>Sound velocity quality code.</osdmAllTables:ColumnDescription>
+            </osdmAllTables:ColumnCommentsDetails>
+            <osdmAllTables:ColumnCommentsDetails>
+               <osdmAllTables:ColumnCommentsSequence>2</osdmAllTables:ColumnCommentsSequence>
+               <osdmAllTables:ColumnCommentsName>SOUND_VELOCITY_QUALITY_DESC</osdmAllTables:ColumnCommentsName>
+               <osdmAllTables:ColumnDescription>Sound velocity quality description.</osdmAllTables:ColumnDescription>
+            </osdmAllTables:ColumnCommentsDetails>
+         </osdmAllTables:ColumnsCommentsCollection>
+         <osdmAllTables:IndexesCollection>
+            <osdmAllTables:IndexDetails>
+               <osdmAllTables:IndexName>SOUND_VELOCITY_QUALITY_PK</osdmAllTables:IndexName>
+               <osdmAllTables:IndexState>PK</osdmAllTables:IndexState>
+               <osdmAllTables:IndexFunctional/>
+               <osdmAllTables:IndexSpatial/>
+               <osdmAllTables:IndexExpression/>
+               <osdmAllTables:IndexColumnName>SOUND_VELOCITY_QUALITY_CD</osdmAllTables:IndexColumnName>
+               <osdmAllTables:IndexSortOrder>ASC</osdmAllTables:IndexSortOrder>
+            </osdmAllTables:IndexDetails>
+         </osdmAllTables:IndexesCollection>
+         <osdmAllTables:FKRFCollection>
+            <osdmAllTables:FKRFDetails>
+               <osdmAllTables:FKName>DEPTH_LEVEL_SOUND_VELOCITY_QUALITY_FK</osdmAllTables:FKName>
+               <osdmAllTables:FKReferredFrom>DEPTH_LEVEL</osdmAllTables:FKReferredFrom>
+               <osdmAllTables:FKMandatory>Y</osdmAllTables:FKMandatory>
+               <osdmAllTables:FKTransferable>Y</osdmAllTables:FKTransferable>
+               <osdmAllTables:FKInArc/>
+               <osdmAllTables:FKReferringColumnName>SOUND_VELOCITY_QUALITY_CD</osdmAllTables:FKReferringColumnName>
+               <osdmAllTables:FKReferredColumnName>SOUND_VELOCITY_QUALITY_CD</osdmAllTables:FKReferredColumnName>
+               <osdmAllTables:FKDeleteRule/>
+            </osdmAllTables:FKRFDetails>
+         </osdmAllTables:FKRFCollection>
+      </osdmAllTables:TableDetails>
+      <osdmAllTables:TableDetails>
+         <osdmAllTables:TableName>TEMPERATURE_QUALITY</osdmAllTables:TableName>
+         <osdmAllTables:EncodedTableName>180B3D10-330D275CE960</osdmAllTables:EncodedTableName>
+         <osdmAllTables:FunctionalName/>
+         <osdmAllTables:Abbreviation/>
+         <osdmAllTables:ClassificationTypeName/>
+         <osdmAllTables:ObjectTypeName/>
+         <osdmAllTables:MVPrebuilt/>
+         <osdmAllTables:MVQuery/>
+         <osdmAllTables:QuantitativeInfoCollection>
+            <osdmAllTables:NumberOfColumns>2</osdmAllTables:NumberOfColumns>
+            <osdmAllTables:NumberOfRowsMin>0</osdmAllTables:NumberOfRowsMin>
+            <osdmAllTables:NumberOfRowsMax>9999999</osdmAllTables:NumberOfRowsMax>
+            <osdmAllTables:ExpectedNumberOfRows>0</osdmAllTables:ExpectedNumberOfRows>
+            <osdmAllTables:ExpectedGrowth>0</osdmAllTables:ExpectedGrowth>
+            <osdmAllTables:GrowthInterval>Year</osdmAllTables:GrowthInterval>
+         </osdmAllTables:QuantitativeInfoCollection>
          <osdmAllTables:ColumnsCollection>
             <osdmAllTables:ColumnDetails>
                <osdmAllTables:Sequence>1</osdmAllTables:Sequence>
@@ -2744,13 +2865,11 @@ If Units code = 1 the corrections are given in imperial units, however all other
                <osdmAllTables:ColumnCommentsSequence>1</osdmAllTables:ColumnCommentsSequence>
                <osdmAllTables:ColumnCommentsName>TEMPERATURE_QUALITY_CD</osdmAllTables:ColumnCommentsName>
                <osdmAllTables:ColumnDescription>Temperature quality code.</osdmAllTables:ColumnDescription>
-               <osdmAllTables:ColumnNotes/>
             </osdmAllTables:ColumnCommentsDetails>
             <osdmAllTables:ColumnCommentsDetails>
                <osdmAllTables:ColumnCommentsSequence>2</osdmAllTables:ColumnCommentsSequence>
                <osdmAllTables:ColumnCommentsName>TEMPERATURE_QUALITY_DESC</osdmAllTables:ColumnCommentsName>
                <osdmAllTables:ColumnDescription>Temperature quality description.</osdmAllTables:ColumnDescription>
-               <osdmAllTables:ColumnNotes/>
             </osdmAllTables:ColumnCommentsDetails>
          </osdmAllTables:ColumnsCommentsCollection>
          <osdmAllTables:IndexesCollection>
@@ -2780,7 +2899,6 @@ If Units code = 1 the corrections are given in imperial units, however all other
       <osdmAllTables:TableDetails>
          <osdmAllTables:TableName>WATER_COLOUR</osdmAllTables:TableName>
          <osdmAllTables:EncodedTableName>05B9E19A-EC790A141D10</osdmAllTables:EncodedTableName>
-         <osdmAllTables:DiagramSuffix>__dg_rm_1</osdmAllTables:DiagramSuffix>
          <osdmAllTables:FunctionalName/>
          <osdmAllTables:Abbreviation/>
          <osdmAllTables:ClassificationTypeName/>
@@ -2795,13 +2913,6 @@ If Units code = 1 the corrections are given in imperial units, however all other
             <osdmAllTables:ExpectedGrowth>0</osdmAllTables:ExpectedGrowth>
             <osdmAllTables:GrowthInterval>Year</osdmAllTables:GrowthInterval>
          </osdmAllTables:QuantitativeInfoCollection>
-         <osdmAllTables:DiagramsCollection>
-            <osdmAllTables:Diagram>
-               <osdmAllTables:Name>/SERD</osdmAllTables:Name>
-               <osdmAllTables:Link>SERD</osdmAllTables:Link>
-               <osdmAllTables:Suffix>__dg_rm_1</osdmAllTables:Suffix>
-            </osdmAllTables:Diagram>
-         </osdmAllTables:DiagramsCollection>
          <osdmAllTables:ColumnsCollection>
             <osdmAllTables:ColumnDetails>
                <osdmAllTables:Sequence>1</osdmAllTables:Sequence>
@@ -2835,13 +2946,11 @@ If Units code = 1 the corrections are given in imperial units, however all other
                <osdmAllTables:ColumnCommentsSequence>1</osdmAllTables:ColumnCommentsSequence>
                <osdmAllTables:ColumnCommentsName>WATER_COLOUR_CD</osdmAllTables:ColumnCommentsName>
                <osdmAllTables:ColumnDescription>Water colour, Forel Ule scale.</osdmAllTables:ColumnDescription>
-               <osdmAllTables:ColumnNotes/>
             </osdmAllTables:ColumnCommentsDetails>
             <osdmAllTables:ColumnCommentsDetails>
                <osdmAllTables:ColumnCommentsSequence>2</osdmAllTables:ColumnCommentsSequence>
                <osdmAllTables:ColumnCommentsName>WATER_COLOUR_DESC</osdmAllTables:ColumnCommentsName>
                <osdmAllTables:ColumnDescription>Water colour description.</osdmAllTables:ColumnDescription>
-               <osdmAllTables:ColumnNotes/>
             </osdmAllTables:ColumnCommentsDetails>
          </osdmAllTables:ColumnsCommentsCollection>
          <osdmAllTables:IndexesCollection>
@@ -2871,7 +2980,6 @@ If Units code = 1 the corrections are given in imperial units, however all other
       <osdmAllTables:TableDetails>
          <osdmAllTables:TableName>WEATHER</osdmAllTables:TableName>
          <osdmAllTables:EncodedTableName>E2732295-7C5CEC0D66D6</osdmAllTables:EncodedTableName>
-         <osdmAllTables:DiagramSuffix>__dg_rm_1</osdmAllTables:DiagramSuffix>
          <osdmAllTables:FunctionalName/>
          <osdmAllTables:Abbreviation/>
          <osdmAllTables:ClassificationTypeName/>
@@ -2886,13 +2994,6 @@ If Units code = 1 the corrections are given in imperial units, however all other
             <osdmAllTables:ExpectedGrowth>0</osdmAllTables:ExpectedGrowth>
             <osdmAllTables:GrowthInterval>Year</osdmAllTables:GrowthInterval>
          </osdmAllTables:QuantitativeInfoCollection>
-         <osdmAllTables:DiagramsCollection>
-            <osdmAllTables:Diagram>
-               <osdmAllTables:Name>/SERD</osdmAllTables:Name>
-               <osdmAllTables:Link>SERD</osdmAllTables:Link>
-               <osdmAllTables:Suffix>__dg_rm_1</osdmAllTables:Suffix>
-            </osdmAllTables:Diagram>
-         </osdmAllTables:DiagramsCollection>
          <osdmAllTables:ColumnsCollection>
             <osdmAllTables:ColumnDetails>
                <osdmAllTables:Sequence>1</osdmAllTables:Sequence>
@@ -2926,13 +3027,11 @@ If Units code = 1 the corrections are given in imperial units, however all other
                <osdmAllTables:ColumnCommentsSequence>1</osdmAllTables:ColumnCommentsSequence>
                <osdmAllTables:ColumnCommentsName>WEATHER_CD</osdmAllTables:ColumnCommentsName>
                <osdmAllTables:ColumnDescription>Weather code.</osdmAllTables:ColumnDescription>
-               <osdmAllTables:ColumnNotes/>
             </osdmAllTables:ColumnCommentsDetails>
             <osdmAllTables:ColumnCommentsDetails>
                <osdmAllTables:ColumnCommentsSequence>2</osdmAllTables:ColumnCommentsSequence>
                <osdmAllTables:ColumnCommentsName>WEATHER_DESC</osdmAllTables:ColumnCommentsName>
                <osdmAllTables:ColumnDescription>Weather description.</osdmAllTables:ColumnDescription>
-               <osdmAllTables:ColumnNotes/>
             </osdmAllTables:ColumnCommentsDetails>
          </osdmAllTables:ColumnsCommentsCollection>
          <osdmAllTables:IndexesCollection>
@@ -2962,7 +3061,6 @@ If Units code = 1 the corrections are given in imperial units, however all other
       <osdmAllTables:TableDetails>
          <osdmAllTables:TableName>WIND_DIRECTION</osdmAllTables:TableName>
          <osdmAllTables:EncodedTableName>32DB7534-FA25927516FF</osdmAllTables:EncodedTableName>
-         <osdmAllTables:DiagramSuffix>__dg_rm_1</osdmAllTables:DiagramSuffix>
          <osdmAllTables:FunctionalName/>
          <osdmAllTables:Abbreviation/>
          <osdmAllTables:ClassificationTypeName/>
@@ -2977,13 +3075,6 @@ If Units code = 1 the corrections are given in imperial units, however all other
             <osdmAllTables:ExpectedGrowth>0</osdmAllTables:ExpectedGrowth>
             <osdmAllTables:GrowthInterval>Year</osdmAllTables:GrowthInterval>
          </osdmAllTables:QuantitativeInfoCollection>
-         <osdmAllTables:DiagramsCollection>
-            <osdmAllTables:Diagram>
-               <osdmAllTables:Name>/SERD</osdmAllTables:Name>
-               <osdmAllTables:Link>SERD</osdmAllTables:Link>
-               <osdmAllTables:Suffix>__dg_rm_1</osdmAllTables:Suffix>
-            </osdmAllTables:Diagram>
-         </osdmAllTables:DiagramsCollection>
          <osdmAllTables:ColumnsCollection>
             <osdmAllTables:ColumnDetails>
                <osdmAllTables:Sequence>1</osdmAllTables:Sequence>
@@ -3017,13 +3108,11 @@ If Units code = 1 the corrections are given in imperial units, however all other
                <osdmAllTables:ColumnCommentsSequence>1</osdmAllTables:ColumnCommentsSequence>
                <osdmAllTables:ColumnCommentsName>WIND_DIRECTION_CD</osdmAllTables:ColumnCommentsName>
                <osdmAllTables:ColumnDescription>Instrument code.</osdmAllTables:ColumnDescription>
-               <osdmAllTables:ColumnNotes/>
             </osdmAllTables:ColumnCommentsDetails>
             <osdmAllTables:ColumnCommentsDetails>
                <osdmAllTables:ColumnCommentsSequence>2</osdmAllTables:ColumnCommentsSequence>
                <osdmAllTables:ColumnCommentsName>WIND_DIRECTION_DESC</osdmAllTables:ColumnCommentsName>
                <osdmAllTables:ColumnDescription>Instrument name</osdmAllTables:ColumnDescription>
-               <osdmAllTables:ColumnNotes/>
             </osdmAllTables:ColumnCommentsDetails>
          </osdmAllTables:ColumnsCommentsCollection>
          <osdmAllTables:IndexesCollection>

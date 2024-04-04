@@ -1,0 +1,32 @@
+<?xml version = '1.0' encoding = 'UTF-8'?>
+<TableProxyOraclev12c class="oracle.dbtools.crest.model.design.storage.oracle.v12c.TableProxyOraclev12c" name="MEDS_JOB_ERROR" directorySegmentName="seg_0" id="49DAFAD4-95E7-1C8D-6881-C33A7684D78B">
+<createdBy>darbo</createdBy>
+<createdTime>2024-02-13 17:12:16 UTC</createdTime>
+<ownerDesignName>MEDS</ownerDesignName>
+<schemaObject>198B7359-7E07-FB02-B07C-A0A91EE44FE7</schemaObject>
+<logging>YES</logging>
+<partitionedRowMovement>DISABLE</partitionedRowMovement>
+<segment>D7B54673-F74D-BFE1-8C5D-FBA86950D400</segment>
+<tableSpace>01F2BAC7-B949-43A6-09CC-CECB09A3E209</tableSpace>
+<temporaryChanged>false</temporaryChanged>
+<accessDriverType>oracle_loader</accessDriverType>
+<rejectLimit></rejectLimit>
+<inMemory>NO</inMemory>
+<columnProxies itemClass="oracle.dbtools.crest.model.design.storage.oracle.v12c.ColumnProxyOraclev12c">
+<ColumnProxy name="MEIC_NUMBER" id="74B61F60-C359-ED57-A4AB-A6ED0285F618">
+<createdBy>darbo</createdBy>
+<createdTime>2024-02-13 17:12:18 UTC</createdTime>
+<ownerDesignName>MEDS</ownerDesignName>
+</ColumnProxy>
+<ColumnProxy name="NUM_ERRORS" id="B92AF00C-4ED6-BE1E-5343-F5F65CE0022D">
+<createdBy>darbo</createdBy>
+<createdTime>2024-02-13 17:12:18 UTC</createdTime>
+<ownerDesignName>MEDS</ownerDesignName>
+</ColumnProxy>
+<ColumnProxy name="MEDS_ERROR_TYPE" id="D3A5B301-ED62-68E5-3802-75DC2E14FDC2">
+<createdBy>darbo</createdBy>
+<createdTime>2024-02-13 17:12:18 UTC</createdTime>
+<ownerDesignName>MEDS</ownerDesignName>
+</ColumnProxy>
+</columnProxies>
+</TableProxyOraclev12c>

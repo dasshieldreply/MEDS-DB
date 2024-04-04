@@ -1,0 +1,45 @@
+<?xml version = '1.0' encoding = 'UTF-8'?>
+<Table class="oracle.dbtools.crest.model.design.relational.Table" directorySegmentName="seg_1" id="10B92388-90C0-4A82-15BE-437D7488B29F" schemaObject="FD77D69E-489C-FEFD-81EE-34209F1C13AA" name="IPR_OWNER_CONTACT">
+<sourceConnName>MEDS ADMIN</sourceConnName>
+<sourceObjSchema>MEDSADMIN</sourceObjSchema>
+<sourceObjName>IPR_OWNER_CONTACT</sourceObjName>
+<createdBy>d.arboittedossantos</createdBy>
+<createdTime>2024-03-14 14:47:23 UTC</createdTime>
+<ownerDesignName>MEDS_DATA</ownerDesignName>
+<allowColumnReorder>false</allowColumnReorder>
+<existDependencyGenerateInDDl>true</existDependencyGenerateInDDl>
+<parsed>true</parsed>
+<columns itemClass="oracle.dbtools.crest.model.design.relational.Column">
+<Column name="OWNER" id="D97F5B2E-8AEB-F0D8-19DA-EED3AE10294E">
+<sourceConnName>MEDS ADMIN</sourceConnName>
+<sourceObjSchema>IPR_OWNER_CONTACT</sourceObjSchema>
+<sourceObjName>OWNER</sourceObjName>
+<createdBy>d.arboittedossantos</createdBy>
+<createdTime>2024-03-14 14:47:25 UTC</createdTime>
+<ownerDesignName>MEDS_DATA</ownerDesignName>
+<nullsAllowed>true</nullsAllowed>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT024</logicalDatatype>
+<dataTypeSize>50 BYTE</dataTypeSize>
+<ownDataTypeParameters>50 BYTE,,</ownDataTypeParameters>
+<autoIncrementCycle>false</autoIncrementCycle>
+</Column>
+<Column name="OWNER_CODE" id="E9D03469-7E1C-67D3-452F-3FDDB5DBB8BF">
+<sourceConnName>MEDS ADMIN</sourceConnName>
+<sourceObjSchema>IPR_OWNER_CONTACT</sourceObjSchema>
+<sourceObjName>OWNER_CODE</sourceObjName>
+<createdBy>d.arboittedossantos</createdBy>
+<createdTime>2024-03-14 14:47:25 UTC</createdTime>
+<ownerDesignName>MEDS_DATA</ownerDesignName>
+<nullsAllowed>true</nullsAllowed>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT019</logicalDatatype>
+<dataTypePrecision>10</dataTypePrecision>
+<dataTypeScale>0</dataTypeScale>
+<ownDataTypeParameters>,10,0</ownDataTypeParameters>
+<autoIncrementCycle>false</autoIncrementCycle>
+</Column>
+</columns>
+</Table>

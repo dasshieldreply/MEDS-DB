@@ -1,0 +1,122 @@
+<?xml version = '1.0' encoding = 'UTF-8'?>
+<Table class="oracle.dbtools.crest.model.design.relational.Table" directorySegmentName="seg_0" id="3BFD65DC-E97B-A74A-FDD7-83FAF11FD353" schemaObject="198B7359-7E07-FB02-B07C-A0A91EE44FE7" name="ASRAP_POLYGON_OBSERVATION">
+<sourceConnName>MEDS</sourceConnName>
+<sourceObjSchema>MEDSDATA</sourceObjSchema>
+<sourceObjName>ASRAP_POLYGON_OBSERVATION</sourceObjName>
+<createdBy>darbo</createdBy>
+<createdTime>2024-02-13 17:12:15 UTC</createdTime>
+<ownerDesignName>MEDS</ownerDesignName>
+<allowColumnReorder>false</allowColumnReorder>
+<existDependencyGenerateInDDl>true</existDependencyGenerateInDDl>
+<parsed>true</parsed>
+<columns itemClass="oracle.dbtools.crest.model.design.relational.Column">
+<Column name="LOCATION" id="9335BCB6-A045-0063-6033-7C3315F0AD8B">
+<sourceConnName>MEDS</sourceConnName>
+<sourceObjSchema>ASRAP_POLYGON_OBSERVATION</sourceObjSchema>
+<sourceObjName>LOCATION</sourceObjName>
+<createdBy>darbo</createdBy>
+<createdTime>2024-02-13 17:12:18 UTC</createdTime>
+<ownerDesignName>MEDS</ownerDesignName>
+<nullsAllowed>true</nullsAllowed>
+<useDomainConstraints>false</useDomainConstraints>
+<allowSubtypeSubstitution>false</allowSubtypeSubstitution>
+<use>3</use>
+<structuredType>47E390DE-0671-C4B1-8428-0F45CBEE18F8</structuredType>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
+<autoIncrementCycle>false</autoIncrementCycle>
+</Column>
+<Column name="MEDS_JOB_NUMBER" id="1A6E90C8-C9A2-A166-95D2-1D7E3DBA5573">
+<sourceConnName>MEDS</sourceConnName>
+<sourceObjSchema>ASRAP_POLYGON_OBSERVATION</sourceObjSchema>
+<sourceObjName>MEDS_JOB_NUMBER</sourceObjName>
+<createdBy>darbo</createdBy>
+<createdTime>2024-02-13 17:12:18 UTC</createdTime>
+<ownerDesignName>MEDS</ownerDesignName>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT019</logicalDatatype>
+<dataTypePrecision>10</dataTypePrecision>
+<dataTypeScale>0</dataTypeScale>
+<ownDataTypeParameters>,10,0</ownDataTypeParameters>
+<autoIncrementCycle>false</autoIncrementCycle>
+<associations>
+<colAssociation fkAssociation="31A3AFF6-EA6A-F7E6-D560-143E694EAD60" referredColumn="40C8F968-51F2-BBA4-F028-76A3890B7014"/>
+</associations>
+</Column>
+<Column name="MEDS_OBSERVATION_NUMBER" id="9095E7DB-D2B8-2E73-20C6-B06CBFB35846">
+<sourceConnName>MEDS</sourceConnName>
+<sourceObjSchema>ASRAP_POLYGON_OBSERVATION</sourceObjSchema>
+<sourceObjName>MEDS_OBSERVATION_NUMBER</sourceObjName>
+<createdBy>darbo</createdBy>
+<createdTime>2024-02-13 17:12:18 UTC</createdTime>
+<ownerDesignName>MEDS</ownerDesignName>
+<nullsAllowed>true</nullsAllowed>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT019</logicalDatatype>
+<dataTypePrecision>10</dataTypePrecision>
+<dataTypeScale>0</dataTypeScale>
+<ownDataTypeParameters>,10,0</ownDataTypeParameters>
+<autoIncrementCycle>false</autoIncrementCycle>
+</Column>
+<Column name="DOMAIN_ID" id="BE04431F-5C5A-1AD5-D752-B27ACFE30452">
+<sourceConnName>MEDS</sourceConnName>
+<sourceObjSchema>ASRAP_POLYGON_OBSERVATION</sourceObjSchema>
+<sourceObjName>DOMAIN_ID</sourceObjName>
+<createdBy>darbo</createdBy>
+<createdTime>2024-02-13 17:12:18 UTC</createdTime>
+<ownerDesignName>MEDS</ownerDesignName>
+<nullsAllowed>true</nullsAllowed>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT024</logicalDatatype>
+<dataTypeSize>10 BYTE</dataTypeSize>
+<ownDataTypeParameters>10 BYTE,,</ownDataTypeParameters>
+<autoIncrementCycle>false</autoIncrementCycle>
+</Column>
+</columns>
+<indexes itemClass="oracle.dbtools.crest.model.design.relational.Index">
+<ind_PK_UK id="B7360333-CF49-DF56-0827-5F781A5ACD6B" schemaObject="198B7359-7E07-FB02-B07C-A0A91EE44FE7" name="IDX_JOB_ASRAP_5">
+<sourceConnName>MEDS</sourceConnName>
+<sourceObjSchema>MEDSDATA</sourceObjSchema>
+<sourceObjName>IDX_JOB_ASRAP_5</sourceObjName>
+<createdBy>darbo</createdBy>
+<createdTime>2024-02-13 17:12:24 UTC</createdTime>
+<ownerDesignName>MEDS</ownerDesignName>
+<isSurrogateKey>false</isSurrogateKey>
+<indexColumnUsage>
+<colUsage columnID="1A6E90C8-C9A2-A166-95D2-1D7E3DBA5573"/>
+<colUsage columnID="9095E7DB-D2B8-2E73-20C6-B06CBFB35846"/>
+</indexColumnUsage>
+</ind_PK_UK>
+<ind_PK_UK id="54D2347D-BAC0-6110-BDCC-85404E05A270" schemaObject="198B7359-7E07-FB02-B07C-A0A91EE44FE7" name="SI_ASRAPPOLY">
+<sourceConnName>MEDS</sourceConnName>
+<sourceObjSchema>MEDSDATA</sourceObjSchema>
+<sourceObjName>SI_ASRAPPOLY</sourceObjName>
+<createdBy>darbo</createdBy>
+<createdTime>2024-02-13 17:12:24 UTC</createdTime>
+<ownerDesignName>MEDS</ownerDesignName>
+<spatialIndex>true</spatialIndex>
+<isSurrogateKey>false</isSurrogateKey>
+<indexColumnUsage>
+<colUsage columnID="9335BCB6-A045-0063-6033-7C3315F0AD8B"/>
+</indexColumnUsage>
+</ind_PK_UK>
+<ind_PK_UK id="4928C60C-BD4C-9EF7-F8AF-5F3BE0DEACAA" name="ASRAP_POLYGON_OBSERVATION_MEDS_PROCESSING_JOB_FK">
+<createdBy>d.arboittedossantos</createdBy>
+<createdTime>2024-03-14 16:44:51 UTC</createdTime>
+<ownerDesignName>MEDS</ownerDesignName>
+<indexState>Foreign Key</indexState>
+<isSurrogateKey>false</isSurrogateKey>
+<indexColumnUsage>
+<colUsage columnID="1A6E90C8-C9A2-A166-95D2-1D7E3DBA5573"/>
+</indexColumnUsage>
+</ind_PK_UK>
+</indexes>
+<spatialDefinitions>
+<spatialColumnDefinition class="oracle.dbtools.crest.model.design.relational.SpatialColumnDefObject" name="ColumnDefinition_1" objectID="452C353B-99D7-798F-2477-B5FF5FEA4E8D">
+<function>false</function>
+<spatialIndex>54D2347D-BAC0-6110-BDCC-85404E05A270</spatialIndex>
+</spatialColumnDefinition>
+</spatialDefinitions>
+</Table>

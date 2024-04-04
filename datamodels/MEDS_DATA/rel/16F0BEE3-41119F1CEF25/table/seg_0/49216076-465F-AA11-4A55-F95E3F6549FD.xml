@@ -1,0 +1,160 @@
+<?xml version = '1.0' encoding = 'UTF-8'?>
+<Table class="oracle.dbtools.crest.model.design.relational.Table" directorySegmentName="seg_0" id="49216076-465F-AA11-4A55-F95E3F6549FD" schemaObject="1FA4795A-F971-A0A7-EC72-1452C492DEA9" name="DEEP_SCATTERING_OBSERVATION">
+<sourceConnName>MEDS ADMIN</sourceConnName>
+<sourceObjSchema>MEDSADMIN</sourceObjSchema>
+<sourceObjName>DEEP_SCATTERING_OBSERVATION</sourceObjName>
+<createdBy>d.arboittedossantos</createdBy>
+<createdTime>2024-03-15 10:19:41 UTC</createdTime>
+<ownerDesignName>MEDS_DATA</ownerDesignName>
+<allowColumnReorder>false</allowColumnReorder>
+<existDependencyGenerateInDDl>true</existDependencyGenerateInDDl>
+<parsed>true</parsed>
+<columns itemClass="oracle.dbtools.crest.model.design.relational.Column">
+<Column name="LATITUDE" id="4271A021-78A4-BA8E-F324-1E4EAB2217F3">
+<sourceConnName>MEDS ADMIN</sourceConnName>
+<sourceObjSchema>DEEP_SCATTERING_OBSERVATION</sourceObjSchema>
+<sourceObjName>LATITUDE</sourceObjName>
+<createdBy>d.arboittedossantos</createdBy>
+<createdTime>2024-03-15 10:19:42 UTC</createdTime>
+<ownerDesignName>MEDS_DATA</ownerDesignName>
+<nullsAllowed>true</nullsAllowed>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT019</logicalDatatype>
+<dataTypePrecision>12</dataTypePrecision>
+<dataTypeScale>6</dataTypeScale>
+<ownDataTypeParameters>,12,6</ownDataTypeParameters>
+<autoIncrementCycle>false</autoIncrementCycle>
+</Column>
+<Column name="LONGITUDE" id="62D2678F-E0A8-403A-6592-F8AE080455C0">
+<sourceConnName>MEDS ADMIN</sourceConnName>
+<sourceObjSchema>DEEP_SCATTERING_OBSERVATION</sourceObjSchema>
+<sourceObjName>LONGITUDE</sourceObjName>
+<createdBy>d.arboittedossantos</createdBy>
+<createdTime>2024-03-15 10:19:42 UTC</createdTime>
+<ownerDesignName>MEDS_DATA</ownerDesignName>
+<nullsAllowed>true</nullsAllowed>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT019</logicalDatatype>
+<dataTypePrecision>12</dataTypePrecision>
+<dataTypeScale>6</dataTypeScale>
+<ownDataTypeParameters>,12,6</ownDataTypeParameters>
+<autoIncrementCycle>false</autoIncrementCycle>
+</Column>
+<Column name="DATE_RECORDED" id="792A1BE4-54F2-DD05-1F57-7527AB3B4019">
+<sourceConnName>MEDS ADMIN</sourceConnName>
+<sourceObjSchema>DEEP_SCATTERING_OBSERVATION</sourceObjSchema>
+<sourceObjName>DATE_RECORDED</sourceObjName>
+<createdBy>d.arboittedossantos</createdBy>
+<createdTime>2024-03-15 10:19:42 UTC</createdTime>
+<ownerDesignName>MEDS_DATA</ownerDesignName>
+<nullsAllowed>true</nullsAllowed>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT007</logicalDatatype>
+<dataTypeSize>7</dataTypeSize>
+<ownDataTypeParameters>7,,</ownDataTypeParameters>
+<autoIncrementCycle>false</autoIncrementCycle>
+</Column>
+<Column name="LOCATION" id="F138549F-0902-966B-CDAB-01EB5991A9D9">
+<sourceConnName>MEDS ADMIN</sourceConnName>
+<sourceObjSchema>DEEP_SCATTERING_OBSERVATION</sourceObjSchema>
+<sourceObjName>LOCATION</sourceObjName>
+<createdBy>d.arboittedossantos</createdBy>
+<createdTime>2024-03-15 10:19:42 UTC</createdTime>
+<ownerDesignName>MEDS_DATA</ownerDesignName>
+<nullsAllowed>true</nullsAllowed>
+<useDomainConstraints>false</useDomainConstraints>
+<allowSubtypeSubstitution>false</allowSubtypeSubstitution>
+<use>3</use>
+<structuredType>47E390DE-0671-C4B1-8428-0F45CBEE18F8</structuredType>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
+<autoIncrementCycle>false</autoIncrementCycle>
+</Column>
+<Column name="MEDS_JOB_NUMBER" id="368EA8B3-BC2B-4281-5E32-DDA88D947AEB">
+<sourceConnName>MEDS ADMIN</sourceConnName>
+<sourceObjSchema>DEEP_SCATTERING_OBSERVATION</sourceObjSchema>
+<sourceObjName>MEDS_JOB_NUMBER</sourceObjName>
+<createdBy>d.arboittedossantos</createdBy>
+<createdTime>2024-03-15 10:19:42 UTC</createdTime>
+<ownerDesignName>MEDS_DATA</ownerDesignName>
+<nullsAllowed>true</nullsAllowed>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT019</logicalDatatype>
+<dataTypePrecision>10</dataTypePrecision>
+<dataTypeScale>0</dataTypeScale>
+<ownDataTypeParameters>,10,0</ownDataTypeParameters>
+<autoIncrementCycle>false</autoIncrementCycle>
+</Column>
+<Column name="MEDS_OBSERVATION_NUMBER" id="38AC9B09-6CC4-CED5-6817-4056CE8DDDAD">
+<sourceConnName>MEDS ADMIN</sourceConnName>
+<sourceObjSchema>DEEP_SCATTERING_OBSERVATION</sourceObjSchema>
+<sourceObjName>MEDS_OBSERVATION_NUMBER</sourceObjName>
+<createdBy>d.arboittedossantos</createdBy>
+<createdTime>2024-03-15 10:19:42 UTC</createdTime>
+<ownerDesignName>MEDS_DATA</ownerDesignName>
+<nullsAllowed>true</nullsAllowed>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT019</logicalDatatype>
+<dataTypePrecision>10</dataTypePrecision>
+<dataTypeScale>0</dataTypeScale>
+<ownDataTypeParameters>,10,0</ownDataTypeParameters>
+<autoIncrementCycle>false</autoIncrementCycle>
+</Column>
+</columns>
+<indexes itemClass="oracle.dbtools.crest.model.design.relational.Index">
+<ind_PK_UK id="D4AB082C-F1B7-A11D-EB32-300F95D75EC4" schemaObject="1FA4795A-F971-A0A7-EC72-1452C492DEA9" name="IDX_DATE_DEEP_10">
+<sourceConnName>MEDS ADMIN</sourceConnName>
+<sourceObjSchema>MEDSADMIN</sourceObjSchema>
+<sourceObjName>IDX_DATE_DEEP_10</sourceObjName>
+<createdBy>d.arboittedossantos</createdBy>
+<createdTime>2024-03-15 10:19:45 UTC</createdTime>
+<ownerDesignName>MEDS_DATA</ownerDesignName>
+<isSurrogateKey>false</isSurrogateKey>
+<indexColumnUsage>
+<colUsage columnID="792A1BE4-54F2-DD05-1F57-7527AB3B4019"/>
+</indexColumnUsage>
+</ind_PK_UK>
+<ind_PK_UK id="00103C2C-37D0-EC78-238E-64B30D71A61B" schemaObject="1FA4795A-F971-A0A7-EC72-1452C492DEA9" name="IDX_JOB_DEEP_12">
+<sourceConnName>MEDS ADMIN</sourceConnName>
+<sourceObjSchema>MEDSADMIN</sourceObjSchema>
+<sourceObjName>IDX_JOB_DEEP_12</sourceObjName>
+<createdBy>d.arboittedossantos</createdBy>
+<createdTime>2024-03-15 10:19:45 UTC</createdTime>
+<ownerDesignName>MEDS_DATA</ownerDesignName>
+<isSurrogateKey>false</isSurrogateKey>
+<indexColumnUsage>
+<colUsage columnID="368EA8B3-BC2B-4281-5E32-DDA88D947AEB"/>
+<colUsage columnID="38AC9B09-6CC4-CED5-6817-4056CE8DDDAD"/>
+</indexColumnUsage>
+</ind_PK_UK>
+<ind_PK_UK id="C0377B3C-9F08-C388-ECA2-785E4D92D1F5" schemaObject="1FA4795A-F971-A0A7-EC72-1452C492DEA9" name="IDX_POSN_DEEP_5">
+<sourceConnName>MEDS ADMIN</sourceConnName>
+<sourceObjSchema>MEDSADMIN</sourceObjSchema>
+<sourceObjName>IDX_POSN_DEEP_5</sourceObjName>
+<createdBy>d.arboittedossantos</createdBy>
+<createdTime>2024-03-15 10:19:45 UTC</createdTime>
+<ownerDesignName>MEDS_DATA</ownerDesignName>
+<isSurrogateKey>false</isSurrogateKey>
+<indexColumnUsage>
+<colUsage columnID="4271A021-78A4-BA8E-F324-1E4EAB2217F3"/>
+<colUsage columnID="62D2678F-E0A8-403A-6592-F8AE080455C0"/>
+</indexColumnUsage>
+</ind_PK_UK>
+<ind_PK_UK id="AB3107A3-08D7-A710-E934-8353C2EE0EE2" schemaObject="1FA4795A-F971-A0A7-EC72-1452C492DEA9" name="SI_DEEPSCATTERIN">
+<sourceConnName>MEDS ADMIN</sourceConnName>
+<sourceObjSchema>MEDSADMIN</sourceObjSchema>
+<sourceObjName>SI_DEEPSCATTERIN</sourceObjName>
+<createdBy>d.arboittedossantos</createdBy>
+<createdTime>2024-03-15 10:19:45 UTC</createdTime>
+<ownerDesignName>MEDS_DATA</ownerDesignName>
+<isSurrogateKey>false</isSurrogateKey>
+<indexColumnUsage>
+<colUsage columnID="F138549F-0902-966B-CDAB-01EB5991A9D9"/>
+</indexColumnUsage>
+</ind_PK_UK>
+</indexes>
+</Table>

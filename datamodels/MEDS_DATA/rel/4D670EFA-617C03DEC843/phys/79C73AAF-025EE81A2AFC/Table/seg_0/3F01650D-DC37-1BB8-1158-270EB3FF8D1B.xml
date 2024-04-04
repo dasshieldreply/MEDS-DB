@@ -1,0 +1,131 @@
+<?xml version = '1.0' encoding = 'UTF-8'?>
+<TableProxyOraclev12c class="oracle.dbtools.crest.model.design.storage.oracle.v12c.TableProxyOraclev12c" name="REPRES_PROFILE_L1_NOV" directorySegmentName="seg_0" id="3F01650D-DC37-1BB8-1158-270EB3FF8D1B">
+<createdBy>darbo</createdBy>
+<createdTime>2024-02-13 17:12:14 UTC</createdTime>
+<ownerDesignName>MEDS_DATA</ownerDesignName>
+<schemaObject>198B7359-7E07-FB02-B07C-A0A91EE44FE7</schemaObject>
+<logging>YES</logging>
+<partitionedRowMovement>DISABLE</partitionedRowMovement>
+<segment>D7B54673-F74D-BFE1-8C5D-FBA86950D400</segment>
+<tableSpace>01F2BAC7-B949-43A6-09CC-CECB09A3E209</tableSpace>
+<temporaryChanged>false</temporaryChanged>
+<accessDriverType>oracle_loader</accessDriverType>
+<rejectLimit></rejectLimit>
+<inMemory>NO</inMemory>
+<columnProxies itemClass="oracle.dbtools.crest.model.design.storage.oracle.v12c.ColumnProxyOraclev12c">
+<ColumnProxy name="DATATYPE" id="2781D575-7CF2-4B18-E07B-09F0D54D4D82">
+<createdBy>darbo</createdBy>
+<createdTime>2024-02-13 17:12:19 UTC</createdTime>
+<ownerDesignName>MEDS_DATA</ownerDesignName>
+<defaultValue>&apos;GENERIC&apos;</defaultValue>
+</ColumnProxy>
+<ColumnProxy name="SALINITY" id="37406DE7-B5CF-FBBA-F73F-97D75410635B">
+<createdBy>darbo</createdBy>
+<createdTime>2024-02-13 17:12:19 UTC</createdTime>
+<ownerDesignName>MEDS_DATA</ownerDesignName>
+</ColumnProxy>
+<ColumnProxy name="DEPTH" id="473B7B79-F988-F760-0483-FE9F30271EE2">
+<createdBy>darbo</createdBy>
+<createdTime>2024-02-13 17:12:19 UTC</createdTime>
+<ownerDesignName>MEDS_DATA</ownerDesignName>
+</ColumnProxy>
+<ColumnProxy name="RH_SIGMA_T" id="5A347F57-097E-81FB-3284-4F4B087A49DF">
+<createdBy>darbo</createdBy>
+<createdTime>2024-02-13 17:12:19 UTC</createdTime>
+<ownerDesignName>MEDS_DATA</ownerDesignName>
+</ColumnProxy>
+<ColumnProxy name="TEMPERATURE" id="5BFC7298-D4B4-EE51-F8A1-CA550A0B9F32">
+<createdBy>darbo</createdBy>
+<createdTime>2024-02-13 17:12:19 UTC</createdTime>
+<ownerDesignName>MEDS_DATA</ownerDesignName>
+</ColumnProxy>
+<ColumnProxy name="LH_SALINITY" id="615244E6-0D21-BA59-3ABA-AD852547DB79">
+<createdBy>darbo</createdBy>
+<createdTime>2024-02-13 17:12:19 UTC</createdTime>
+<ownerDesignName>MEDS_DATA</ownerDesignName>
+</ColumnProxy>
+<ColumnProxy name="RH_SOUND_SPEED" id="61FAC0FC-663E-FB02-6E00-4AF08895BE39">
+<createdBy>darbo</createdBy>
+<createdTime>2024-02-13 17:12:19 UTC</createdTime>
+<ownerDesignName>MEDS_DATA</ownerDesignName>
+</ColumnProxy>
+<ColumnProxy name="SIGMA_T" id="6A528723-3AB8-54BF-6ECA-D6AE53670E9B">
+<createdBy>darbo</createdBy>
+<createdTime>2024-02-13 17:12:19 UTC</createdTime>
+<ownerDesignName>MEDS_DATA</ownerDesignName>
+</ColumnProxy>
+<ColumnProxy name="RH_TEMPERATURE" id="75A6F640-E07C-FE3C-70B4-099727EAADBA">
+<createdBy>darbo</createdBy>
+<createdTime>2024-02-13 17:12:19 UTC</createdTime>
+<ownerDesignName>MEDS_DATA</ownerDesignName>
+</ColumnProxy>
+<ColumnProxy name="SOUND_SPEED" id="802484DC-9AF0-6B96-300D-231BCA0297C8">
+<createdBy>darbo</createdBy>
+<createdTime>2024-02-13 17:12:19 UTC</createdTime>
+<ownerDesignName>MEDS_DATA</ownerDesignName>
+</ColumnProxy>
+<ColumnProxy name="TEMP_STDEV" id="8F3CBD81-0AC4-A728-12FE-8CE98C1C0EF4">
+<createdBy>darbo</createdBy>
+<createdTime>2024-02-13 17:12:19 UTC</createdTime>
+<ownerDesignName>MEDS_DATA</ownerDesignName>
+</ColumnProxy>
+<ColumnProxy name="LATITUDE" id="911542E3-3132-1541-4484-83CCF48B8FC5">
+<createdBy>darbo</createdBy>
+<createdTime>2024-02-13 17:12:19 UTC</createdTime>
+<ownerDesignName>MEDS_DATA</ownerDesignName>
+</ColumnProxy>
+<ColumnProxy name="SALINITY_STDEV" id="92AF3982-1DAE-69AC-2EC1-49A6D54BE1B6">
+<createdBy>darbo</createdBy>
+<createdTime>2024-02-13 17:12:19 UTC</createdTime>
+<ownerDesignName>MEDS_DATA</ownerDesignName>
+</ColumnProxy>
+<ColumnProxy name="LONGITUDE" id="A32C2B34-9227-1F41-CC9F-FDAFE7E11A07">
+<createdBy>darbo</createdBy>
+<createdTime>2024-02-13 17:12:19 UTC</createdTime>
+<ownerDesignName>MEDS_DATA</ownerDesignName>
+</ColumnProxy>
+<ColumnProxy name="LH_SIGMA_T" id="A46AD9DA-8C4B-1F06-BFE7-A2285709E380">
+<createdBy>darbo</createdBy>
+<createdTime>2024-02-13 17:12:19 UTC</createdTime>
+<ownerDesignName>MEDS_DATA</ownerDesignName>
+</ColumnProxy>
+<ColumnProxy name="GRID_INDEX" id="B8042507-7598-21D2-2E06-71FEE50EBB40">
+<createdBy>darbo</createdBy>
+<createdTime>2024-02-13 17:12:19 UTC</createdTime>
+<ownerDesignName>MEDS_DATA</ownerDesignName>
+</ColumnProxy>
+<ColumnProxy name="LH_SOUND_SPEED" id="B960838A-117B-ACDA-81F2-5BF699EDEBD9">
+<createdBy>darbo</createdBy>
+<createdTime>2024-02-13 17:12:19 UTC</createdTime>
+<ownerDesignName>MEDS_DATA</ownerDesignName>
+</ColumnProxy>
+<ColumnProxy name="RH_SALINITY" id="BF35EB92-7E8B-F557-D115-5FF7E1BB437A">
+<createdBy>darbo</createdBy>
+<createdTime>2024-02-13 17:12:19 UTC</createdTime>
+<ownerDesignName>MEDS_DATA</ownerDesignName>
+</ColumnProxy>
+<ColumnProxy name="LH_TEMPERATURE" id="E0D8FFA3-0CB9-2B40-EDC3-BF38FF7167F8">
+<createdBy>darbo</createdBy>
+<createdTime>2024-02-13 17:12:19 UTC</createdTime>
+<ownerDesignName>MEDS_DATA</ownerDesignName>
+</ColumnProxy>
+</columnProxies>
+<indexProxies>
+<IndexProxy class="oracle.dbtools.crest.model.design.storage.oracle.v10g.IndexProxyOraclev10g" name="IDX_REPPROFILEL1_NOV" id="C3EFF7E8-EA5A-F69A-19E6-5B00DA9A85D8">
+<createdBy>darbo</createdBy>
+<createdTime>2024-02-13 17:12:26 UTC</createdTime>
+<ownerDesignName>MEDS_DATA</ownerDesignName>
+<schemaObject>198B7359-7E07-FB02-B07C-A0A91EE44FE7</schemaObject>
+<segment>04DA2C71-86F8-F75A-7467-947016074CAA</segment>
+<tableSpace>01F2BAC7-B949-43A6-09CC-CECB09A3E209</tableSpace>
+</IndexProxy>
+<IndexProxy class="oracle.dbtools.crest.model.design.storage.oracle.v10g.IndexProxyOraclev10g" name="IDX_PROFILEL1NOV_LATLON" id="CF1F30CB-FC31-9AB9-34B7-5791D85E596F">
+<createdBy>darbo</createdBy>
+<createdTime>2024-02-13 17:12:26 UTC</createdTime>
+<ownerDesignName>MEDS_DATA</ownerDesignName>
+<schemaObject>198B7359-7E07-FB02-B07C-A0A91EE44FE7</schemaObject>
+<segment>04DA2C71-86F8-F75A-7467-947016074CAA</segment>
+<tableSpace>01F2BAC7-B949-43A6-09CC-CECB09A3E209</tableSpace>
+</IndexProxy>
+</indexProxies>
+</TableProxyOraclev12c>

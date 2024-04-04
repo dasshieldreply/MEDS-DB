@@ -1,0 +1,87 @@
+<?xml version = '1.0' encoding = 'UTF-8'?>
+<Table class="oracle.dbtools.crest.model.design.relational.Table" directorySegmentName="seg_1" id="E3AFB810-C3FE-EA3D-ED73-94A040063C97" schemaObject="198B7359-7E07-FB02-B07C-A0A91EE44FE7" name="HELP">
+<sourceConnName>MEDS</sourceConnName>
+<sourceObjSchema>MEDSDATA</sourceObjSchema>
+<sourceObjName>HELP</sourceObjName>
+<createdBy>darbo</createdBy>
+<createdTime>2024-02-13 17:12:16 UTC</createdTime>
+<ownerDesignName>MEDS_DATA</ownerDesignName>
+<allowColumnReorder>false</allowColumnReorder>
+<existDependencyGenerateInDDl>true</existDependencyGenerateInDDl>
+<parsed>true</parsed>
+<columns itemClass="oracle.dbtools.crest.model.design.relational.Column">
+<Column name="TOPIC" id="2437AE46-CC28-F4CA-894C-FC71BBBECDAC">
+<sourceConnName>MEDS</sourceConnName>
+<sourceObjSchema>HELP</sourceObjSchema>
+<sourceObjName>TOPIC</sourceObjName>
+<createdBy>darbo</createdBy>
+<createdTime>2024-02-13 17:12:18 UTC</createdTime>
+<ownerDesignName>MEDS_DATA</ownerDesignName>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT024</logicalDatatype>
+<dataTypeSize>50 BYTE</dataTypeSize>
+<ownDataTypeParameters>50 BYTE,,</ownDataTypeParameters>
+<autoIncrementCycle>false</autoIncrementCycle>
+</Column>
+<Column name="SEQ" id="62D0DD7C-22B6-283F-D6DE-EBEA9C710823">
+<sourceConnName>MEDS</sourceConnName>
+<sourceObjSchema>HELP</sourceObjSchema>
+<sourceObjName>SEQ</sourceObjName>
+<createdBy>darbo</createdBy>
+<createdTime>2024-02-13 17:12:18 UTC</createdTime>
+<ownerDesignName>MEDS_DATA</ownerDesignName>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT019</logicalDatatype>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
+<autoIncrementCycle>false</autoIncrementCycle>
+</Column>
+<Column name="INFO" id="D7699EF0-172B-587A-EC0B-5910BCD1A0CC">
+<sourceConnName>MEDS</sourceConnName>
+<sourceObjSchema>HELP</sourceObjSchema>
+<sourceObjName>INFO</sourceObjName>
+<createdBy>darbo</createdBy>
+<createdTime>2024-02-13 17:12:18 UTC</createdTime>
+<ownerDesignName>MEDS_DATA</ownerDesignName>
+<nullsAllowed>true</nullsAllowed>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT024</logicalDatatype>
+<dataTypeSize>80 BYTE</dataTypeSize>
+<ownDataTypeParameters>80 BYTE,,</ownDataTypeParameters>
+<autoIncrementCycle>false</autoIncrementCycle>
+</Column>
+</columns>
+<indexes itemClass="oracle.dbtools.crest.model.design.relational.Index">
+<ind_PK_UK id="0CE28632-E330-ACB4-15DA-FC1D0371685E" name="HELP_TOPIC_SEQ">
+<sourceConnName>MEDS</sourceConnName>
+<sourceObjSchema>MEDSDATA</sourceObjSchema>
+<sourceObjName>HELP_TOPIC_SEQ</sourceObjName>
+<createdBy>darbo</createdBy>
+<createdTime>2024-02-13 17:12:31 UTC</createdTime>
+<ownerDesignName>MEDS_DATA</ownerDesignName>
+<pk>true</pk>
+<indexState>Primary Constraint</indexState>
+<isSurrogateKey>false</isSurrogateKey>
+<indexColumnUsage>
+<colUsage columnID="2437AE46-CC28-F4CA-894C-FC71BBBECDAC"/>
+<colUsage columnID="62D0DD7C-22B6-283F-D6DE-EBEA9C710823"/>
+</indexColumnUsage>
+</ind_PK_UK>
+<ind_PK_UK id="AC2C11E9-D499-EF52-F8E4-0D16D4E15B4A" schemaObject="198B7359-7E07-FB02-B07C-A0A91EE44FE7" name="HELP_TOPIC_SEQ">
+<sourceConnName>MEDS</sourceConnName>
+<sourceObjSchema>MEDSDATA</sourceObjSchema>
+<sourceObjName>HELP_TOPIC_SEQ</sourceObjName>
+<createdBy>darbo</createdBy>
+<createdTime>2024-02-13 17:12:25 UTC</createdTime>
+<ownerDesignName>MEDS_DATA</ownerDesignName>
+<indexState>Unique Plain Index</indexState>
+<isSurrogateKey>false</isSurrogateKey>
+<indexColumnUsage>
+<colUsage columnID="2437AE46-CC28-F4CA-894C-FC71BBBECDAC"/>
+<colUsage columnID="62D0DD7C-22B6-283F-D6DE-EBEA9C710823"/>
+</indexColumnUsage>
+</ind_PK_UK>
+</indexes>
+</Table>

@@ -1,0 +1,117 @@
+<?xml version = '1.0' encoding = 'UTF-8'?>
+<TableProxyOraclev12c class="oracle.dbtools.crest.model.design.storage.oracle.v12c.TableProxyOraclev12c" name="MLO_FISH_DATA" directorySegmentName="seg_1" id="64767B45-8383-E254-8EFC-9F5F8877D425">
+<createdBy>darbo</createdBy>
+<createdTime>2024-02-13 17:12:16 UTC</createdTime>
+<ownerDesignName>MEDS</ownerDesignName>
+<schemaObject>198B7359-7E07-FB02-B07C-A0A91EE44FE7</schemaObject>
+<logging>YES</logging>
+<partitionedRowMovement>DISABLE</partitionedRowMovement>
+<segment>D7B54673-F74D-BFE1-8C5D-FBA86950D400</segment>
+<tableSpace>01F2BAC7-B949-43A6-09CC-CECB09A3E209</tableSpace>
+<temporaryChanged>false</temporaryChanged>
+<accessDriverType>oracle_loader</accessDriverType>
+<rejectLimit></rejectLimit>
+<inMemory>NO</inMemory>
+<columnProxies itemClass="oracle.dbtools.crest.model.design.storage.oracle.v12c.ColumnProxyOraclev12c">
+<ColumnProxy name="RANGE" id="20F2AABA-4C49-728E-609B-B14E65BDC20F">
+<createdBy>darbo</createdBy>
+<createdTime>2024-02-13 17:12:19 UTC</createdTime>
+<ownerDesignName>MEDS</ownerDesignName>
+</ColumnProxy>
+<ColumnProxy name="MONTH" id="2737BC65-7198-3F4A-608F-78E45E8F05D3">
+<createdBy>darbo</createdBy>
+<createdTime>2024-02-13 17:12:19 UTC</createdTime>
+<ownerDesignName>MEDS</ownerDesignName>
+</ColumnProxy>
+<ColumnProxy name="REFERENCE" id="27DF1C7A-AE9D-A337-53DB-0D4C418FC9E4">
+<createdBy>darbo</createdBy>
+<createdTime>2024-02-13 17:12:19 UTC</createdTime>
+<ownerDesignName>MEDS</ownerDesignName>
+</ColumnProxy>
+<ColumnProxy name="BEARING" id="362FAEFE-1A00-7277-AB0C-773344B4914A">
+<createdBy>darbo</createdBy>
+<createdTime>2024-02-13 17:12:19 UTC</createdTime>
+<ownerDesignName>MEDS</ownerDesignName>
+</ColumnProxy>
+<ColumnProxy name="SPEED" id="40E5356F-404F-8425-51BF-6D2F89D5603C">
+<createdBy>darbo</createdBy>
+<createdTime>2024-02-13 17:12:19 UTC</createdTime>
+<ownerDesignName>MEDS</ownerDesignName>
+</ColumnProxy>
+<ColumnProxy name="MEDS_JOB_NUMBER" id="432ED486-8DC2-395F-CB4D-787A0356E1B0">
+<createdBy>darbo</createdBy>
+<createdTime>2024-02-13 17:12:19 UTC</createdTime>
+<ownerDesignName>MEDS</ownerDesignName>
+</ColumnProxy>
+<ColumnProxy name="MEDS_OBSERVATION_NUMBER" id="44A9BDEE-3AB3-2708-25B8-1FB5573E7E5F">
+<createdBy>darbo</createdBy>
+<createdTime>2024-02-13 17:12:19 UTC</createdTime>
+<ownerDesignName>MEDS</ownerDesignName>
+</ColumnProxy>
+<ColumnProxy name="PERSON_NAME" id="67964326-8C7E-F3B8-35BE-C5CFE70F179E">
+<createdBy>darbo</createdBy>
+<createdTime>2024-02-13 17:12:19 UTC</createdTime>
+<ownerDesignName>MEDS</ownerDesignName>
+</ColumnProxy>
+<ColumnProxy name="COUNT_QUALITY" id="6B343CBA-2675-18D4-A376-5CC18A9EE4D5">
+<createdBy>darbo</createdBy>
+<createdTime>2024-02-13 17:12:19 UTC</createdTime>
+<ownerDesignName>MEDS</ownerDesignName>
+</ColumnProxy>
+<ColumnProxy name="SHIP" id="879342A8-6D44-1AAC-FF4B-00D0D69E77AC">
+<createdBy>darbo</createdBy>
+<createdTime>2024-02-13 17:12:19 UTC</createdTime>
+<ownerDesignName>MEDS</ownerDesignName>
+</ColumnProxy>
+<ColumnProxy name="COMMENTS" id="BCA72053-6AEB-6314-8C4A-190AE23A1EA6">
+<createdBy>darbo</createdBy>
+<createdTime>2024-02-13 17:12:19 UTC</createdTime>
+<ownerDesignName>MEDS</ownerDesignName>
+</ColumnProxy>
+<ColumnProxy name="ARCHIVED" id="C173DE5A-9763-EA12-E872-C5E1C8801D42">
+<createdBy>darbo</createdBy>
+<createdTime>2024-02-13 17:12:19 UTC</createdTime>
+<ownerDesignName>MEDS</ownerDesignName>
+</ColumnProxy>
+<ColumnProxy name="SIZE_" id="C4CB0968-3BA5-D9A2-B590-6F9921329EF5">
+<createdBy>darbo</createdBy>
+<createdTime>2024-02-13 17:12:19 UTC</createdTime>
+<ownerDesignName>MEDS</ownerDesignName>
+</ColumnProxy>
+<ColumnProxy name="SPECIES" id="C90422FD-90DE-48DB-AA85-97B1A1797DCE">
+<createdBy>darbo</createdBy>
+<createdTime>2024-02-13 17:12:19 UTC</createdTime>
+<ownerDesignName>MEDS</ownerDesignName>
+</ColumnProxy>
+<ColumnProxy name="HEADING" id="CC865661-E59F-A709-9D1B-62038DEC8FCF">
+<createdBy>darbo</createdBy>
+<createdTime>2024-02-13 17:12:19 UTC</createdTime>
+<ownerDesignName>MEDS</ownerDesignName>
+</ColumnProxy>
+<ColumnProxy name="ID_QUALITY" id="DE403BA6-A8B3-83F0-05C1-C94290606191">
+<createdBy>darbo</createdBy>
+<createdTime>2024-02-13 17:12:19 UTC</createdTime>
+<ownerDesignName>MEDS</ownerDesignName>
+</ColumnProxy>
+<ColumnProxy name="COUNT" id="E167BF98-61BA-1CCB-C17B-8B1479EBDE8F">
+<createdBy>darbo</createdBy>
+<createdTime>2024-02-13 17:12:19 UTC</createdTime>
+<ownerDesignName>MEDS</ownerDesignName>
+</ColumnProxy>
+<ColumnProxy name="RECORD_NUMBER" id="E9219D16-87DF-E6E9-14EC-1AB5D69E5D47">
+<createdBy>darbo</createdBy>
+<createdTime>2024-02-13 17:12:19 UTC</createdTime>
+<ownerDesignName>MEDS</ownerDesignName>
+</ColumnProxy>
+</columnProxies>
+<indexProxies>
+<IndexProxy class="oracle.dbtools.crest.model.design.storage.oracle.v10g.IndexProxyOraclev10g" name="IDX_JOB_MLO_56" id="B2A248C2-689D-C8C4-7C12-692F6A240CB3">
+<createdBy>darbo</createdBy>
+<createdTime>2024-02-13 17:12:26 UTC</createdTime>
+<ownerDesignName>MEDS</ownerDesignName>
+<schemaObject>198B7359-7E07-FB02-B07C-A0A91EE44FE7</schemaObject>
+<segment>04DA2C71-86F8-F75A-7467-947016074CAA</segment>
+<tableSpace>01F2BAC7-B949-43A6-09CC-CECB09A3E209</tableSpace>
+</IndexProxy>
+</indexProxies>
+</TableProxyOraclev12c>

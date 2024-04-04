@@ -1,0 +1,322 @@
+<?xml version = '1.0' encoding = 'UTF-8'?>
+<Table class="oracle.dbtools.crest.model.design.relational.Table" directorySegmentName="seg_3" id="E17F255F-05A6-E9CF-DF2B-588A7BEA3425" schemaObject="198B7359-7E07-FB02-B07C-A0A91EE44FE7" name="SECCHI_DISK_DATA_PRE_CR71887">
+<sourceConnName>MEDS</sourceConnName>
+<sourceObjSchema>MEDSDATA</sourceObjSchema>
+<sourceObjName>SECCHI_DISK_DATA_PRE_CR71887</sourceObjName>
+<createdBy>darbo</createdBy>
+<createdTime>2024-02-13 17:12:17 UTC</createdTime>
+<ownerDesignName>MEDS_DATA</ownerDesignName>
+<allowColumnReorder>false</allowColumnReorder>
+<existDependencyGenerateInDDl>true</existDependencyGenerateInDDl>
+<parsed>true</parsed>
+<columns itemClass="oracle.dbtools.crest.model.design.relational.Column">
+<Column name="RECORD_NUMBER" id="E45C6F76-FDA4-C34E-5615-563150C40395">
+<sourceConnName>MEDS</sourceConnName>
+<sourceObjSchema>SECCHI_DISK_DATA_PRE_CR71887</sourceObjSchema>
+<sourceObjName>RECORD_NUMBER</sourceObjName>
+<createdBy>darbo</createdBy>
+<createdTime>2024-02-13 17:12:19 UTC</createdTime>
+<ownerDesignName>MEDS_DATA</ownerDesignName>
+<nullsAllowed>true</nullsAllowed>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT019</logicalDatatype>
+<dataTypePrecision>6</dataTypePrecision>
+<dataTypeScale>0</dataTypeScale>
+<ownDataTypeParameters>,6,0</ownDataTypeParameters>
+<autoIncrementCycle>false</autoIncrementCycle>
+</Column>
+<Column name="WATER_COLOUR" id="84BFF88A-98EF-63CA-EC46-1BD38E6844AF">
+<sourceConnName>MEDS</sourceConnName>
+<sourceObjSchema>SECCHI_DISK_DATA_PRE_CR71887</sourceObjSchema>
+<sourceObjName>WATER_COLOUR</sourceObjName>
+<createdBy>darbo</createdBy>
+<createdTime>2024-02-13 17:12:19 UTC</createdTime>
+<ownerDesignName>MEDS_DATA</ownerDesignName>
+<nullsAllowed>true</nullsAllowed>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT024</logicalDatatype>
+<dataTypeSize>20 BYTE</dataTypeSize>
+<ownDataTypeParameters>20 BYTE,,</ownDataTypeParameters>
+<autoIncrementCycle>false</autoIncrementCycle>
+</Column>
+<Column name="SUN_ANGLE" id="9C8C8CBD-EE7E-2F39-78DB-AA375F8E767D">
+<sourceConnName>MEDS</sourceConnName>
+<sourceObjSchema>SECCHI_DISK_DATA_PRE_CR71887</sourceObjSchema>
+<sourceObjName>SUN_ANGLE</sourceObjName>
+<createdBy>darbo</createdBy>
+<createdTime>2024-02-13 17:12:19 UTC</createdTime>
+<ownerDesignName>MEDS_DATA</ownerDesignName>
+<nullsAllowed>true</nullsAllowed>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT024</logicalDatatype>
+<dataTypeSize>10 BYTE</dataTypeSize>
+<ownDataTypeParameters>10 BYTE,,</ownDataTypeParameters>
+<autoIncrementCycle>false</autoIncrementCycle>
+</Column>
+<Column name="REFERENCE" id="F9CEA070-0AF9-10CE-15F6-3EA6FCF1A440">
+<sourceConnName>MEDS</sourceConnName>
+<sourceObjSchema>SECCHI_DISK_DATA_PRE_CR71887</sourceObjSchema>
+<sourceObjName>REFERENCE</sourceObjName>
+<createdBy>darbo</createdBy>
+<createdTime>2024-02-13 17:12:19 UTC</createdTime>
+<ownerDesignName>MEDS_DATA</ownerDesignName>
+<nullsAllowed>true</nullsAllowed>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT024</logicalDatatype>
+<dataTypeSize>100 BYTE</dataTypeSize>
+<ownDataTypeParameters>100 BYTE,,</ownDataTypeParameters>
+<autoIncrementCycle>false</autoIncrementCycle>
+</Column>
+<Column name="GENERAL_AREA" id="1F3583F7-2889-6BB9-4921-0B397757D7AA">
+<sourceConnName>MEDS</sourceConnName>
+<sourceObjSchema>SECCHI_DISK_DATA_PRE_CR71887</sourceObjSchema>
+<sourceObjName>GENERAL_AREA</sourceObjName>
+<createdBy>darbo</createdBy>
+<createdTime>2024-02-13 17:12:19 UTC</createdTime>
+<ownerDesignName>MEDS_DATA</ownerDesignName>
+<nullsAllowed>true</nullsAllowed>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT024</logicalDatatype>
+<dataTypeSize>100 BYTE</dataTypeSize>
+<ownDataTypeParameters>100 BYTE,,</ownDataTypeParameters>
+<autoIncrementCycle>false</autoIncrementCycle>
+</Column>
+<Column name="STN_IDENTIFIER" id="67717259-9B82-14E0-4E40-3984BEAAB30B">
+<sourceConnName>MEDS</sourceConnName>
+<sourceObjSchema>SECCHI_DISK_DATA_PRE_CR71887</sourceObjSchema>
+<sourceObjName>STN_IDENTIFIER</sourceObjName>
+<createdBy>darbo</createdBy>
+<createdTime>2024-02-13 17:12:19 UTC</createdTime>
+<ownerDesignName>MEDS_DATA</ownerDesignName>
+<nullsAllowed>true</nullsAllowed>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT024</logicalDatatype>
+<dataTypeSize>50 BYTE</dataTypeSize>
+<ownDataTypeParameters>50 BYTE,,</ownDataTypeParameters>
+<autoIncrementCycle>false</autoIncrementCycle>
+</Column>
+<Column name="PHOTIC_DEPTH" id="5F6398CE-04F0-12AA-EF1A-55253D04CDC2">
+<sourceConnName>MEDS</sourceConnName>
+<sourceObjSchema>SECCHI_DISK_DATA_PRE_CR71887</sourceObjSchema>
+<sourceObjName>PHOTIC_DEPTH</sourceObjName>
+<createdBy>darbo</createdBy>
+<createdTime>2024-02-13 17:12:19 UTC</createdTime>
+<ownerDesignName>MEDS_DATA</ownerDesignName>
+<nullsAllowed>true</nullsAllowed>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT019</logicalDatatype>
+<dataTypePrecision>12</dataTypePrecision>
+<dataTypeScale>4</dataTypeScale>
+<ownDataTypeParameters>,12,4</ownDataTypeParameters>
+<autoIncrementCycle>false</autoIncrementCycle>
+</Column>
+<Column name="HORIZONTAL_VISABILITY" id="D72CA881-2B2D-03EE-7D1C-117C0FB46FF5">
+<sourceConnName>MEDS</sourceConnName>
+<sourceObjSchema>SECCHI_DISK_DATA_PRE_CR71887</sourceObjSchema>
+<sourceObjName>HORIZONTAL_VISABILITY</sourceObjName>
+<createdBy>darbo</createdBy>
+<createdTime>2024-02-13 17:12:19 UTC</createdTime>
+<ownerDesignName>MEDS_DATA</ownerDesignName>
+<nullsAllowed>true</nullsAllowed>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT019</logicalDatatype>
+<dataTypePrecision>12</dataTypePrecision>
+<dataTypeScale>4</dataTypeScale>
+<ownDataTypeParameters>,12,4</ownDataTypeParameters>
+<autoIncrementCycle>false</autoIncrementCycle>
+</Column>
+<Column name="WEATHER" id="3F92C7DC-5AAE-B78F-E812-DF10341F755E">
+<sourceConnName>MEDS</sourceConnName>
+<sourceObjSchema>SECCHI_DISK_DATA_PRE_CR71887</sourceObjSchema>
+<sourceObjName>WEATHER</sourceObjName>
+<createdBy>darbo</createdBy>
+<createdTime>2024-02-13 17:12:19 UTC</createdTime>
+<ownerDesignName>MEDS_DATA</ownerDesignName>
+<nullsAllowed>true</nullsAllowed>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT019</logicalDatatype>
+<dataTypePrecision>5</dataTypePrecision>
+<dataTypeScale>0</dataTypeScale>
+<ownDataTypeParameters>,5,0</ownDataTypeParameters>
+<autoIncrementCycle>false</autoIncrementCycle>
+</Column>
+<Column name="CLOUD" id="C3A28EE1-DDD7-796B-8392-0D7D5A461B10">
+<sourceConnName>MEDS</sourceConnName>
+<sourceObjSchema>SECCHI_DISK_DATA_PRE_CR71887</sourceObjSchema>
+<sourceObjName>CLOUD</sourceObjName>
+<createdBy>darbo</createdBy>
+<createdTime>2024-02-13 17:12:19 UTC</createdTime>
+<ownerDesignName>MEDS_DATA</ownerDesignName>
+<nullsAllowed>true</nullsAllowed>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT019</logicalDatatype>
+<dataTypePrecision>5</dataTypePrecision>
+<dataTypeScale>0</dataTypeScale>
+<ownDataTypeParameters>,5,0</ownDataTypeParameters>
+<autoIncrementCycle>false</autoIncrementCycle>
+</Column>
+<Column name="SHIP" id="67B1A0FD-1017-9DAD-0367-ADDC6254A0F9">
+<sourceConnName>MEDS</sourceConnName>
+<sourceObjSchema>SECCHI_DISK_DATA_PRE_CR71887</sourceObjSchema>
+<sourceObjName>SHIP</sourceObjName>
+<createdBy>darbo</createdBy>
+<createdTime>2024-02-13 17:12:19 UTC</createdTime>
+<ownerDesignName>MEDS_DATA</ownerDesignName>
+<nullsAllowed>true</nullsAllowed>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT024</logicalDatatype>
+<dataTypeSize>100 BYTE</dataTypeSize>
+<ownDataTypeParameters>100 BYTE,,</ownDataTypeParameters>
+<autoIncrementCycle>false</autoIncrementCycle>
+</Column>
+<Column name="CRUISE_IDENTIFIER" id="5DC3A0E7-80EA-F389-6B63-E857D835E177">
+<sourceConnName>MEDS</sourceConnName>
+<sourceObjSchema>SECCHI_DISK_DATA_PRE_CR71887</sourceObjSchema>
+<sourceObjName>CRUISE_IDENTIFIER</sourceObjName>
+<createdBy>darbo</createdBy>
+<createdTime>2024-02-13 17:12:19 UTC</createdTime>
+<ownerDesignName>MEDS_DATA</ownerDesignName>
+<nullsAllowed>true</nullsAllowed>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT024</logicalDatatype>
+<dataTypeSize>100 BYTE</dataTypeSize>
+<ownDataTypeParameters>100 BYTE,,</ownDataTypeParameters>
+<autoIncrementCycle>false</autoIncrementCycle>
+</Column>
+<Column name="MEDS_OBSERVATION_NUMBER" id="D01B1FB0-60B7-5F44-5148-637417F73D23">
+<sourceConnName>MEDS</sourceConnName>
+<sourceObjSchema>SECCHI_DISK_DATA_PRE_CR71887</sourceObjSchema>
+<sourceObjName>MEDS_OBSERVATION_NUMBER</sourceObjName>
+<createdBy>darbo</createdBy>
+<createdTime>2024-02-13 17:12:19 UTC</createdTime>
+<ownerDesignName>MEDS_DATA</ownerDesignName>
+<nullsAllowed>true</nullsAllowed>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT019</logicalDatatype>
+<dataTypePrecision>10</dataTypePrecision>
+<dataTypeScale>0</dataTypeScale>
+<ownDataTypeParameters>,10,0</ownDataTypeParameters>
+<autoIncrementCycle>false</autoIncrementCycle>
+</Column>
+<Column name="MEDS_JOB_NUMBER" id="F469CF06-78FC-9A09-24F9-B1AE2C793E0F">
+<sourceConnName>MEDS</sourceConnName>
+<sourceObjSchema>SECCHI_DISK_DATA_PRE_CR71887</sourceObjSchema>
+<sourceObjName>MEDS_JOB_NUMBER</sourceObjName>
+<createdBy>darbo</createdBy>
+<createdTime>2024-02-13 17:12:19 UTC</createdTime>
+<ownerDesignName>MEDS_DATA</ownerDesignName>
+<nullsAllowed>true</nullsAllowed>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT019</logicalDatatype>
+<dataTypePrecision>10</dataTypePrecision>
+<dataTypeScale>0</dataTypeScale>
+<ownDataTypeParameters>,10,0</ownDataTypeParameters>
+<autoIncrementCycle>false</autoIncrementCycle>
+</Column>
+<Column name="ARCHIVED" id="19C34B6F-6534-3EB4-A5CE-351680698B00">
+<sourceConnName>MEDS</sourceConnName>
+<sourceObjSchema>SECCHI_DISK_DATA_PRE_CR71887</sourceObjSchema>
+<sourceObjName>ARCHIVED</sourceObjName>
+<createdBy>darbo</createdBy>
+<createdTime>2024-02-13 17:12:19 UTC</createdTime>
+<ownerDesignName>MEDS_DATA</ownerDesignName>
+<nullsAllowed>true</nullsAllowed>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT024</logicalDatatype>
+<dataTypeSize>20 BYTE</dataTypeSize>
+<ownDataTypeParameters>20 BYTE,,</ownDataTypeParameters>
+<autoIncrementCycle>false</autoIncrementCycle>
+</Column>
+<Column name="DIFFUSE_ATTN_COE" id="24CFC0EC-B1FC-F5A3-8AF7-EB737D14DCB7">
+<sourceConnName>MEDS</sourceConnName>
+<sourceObjSchema>SECCHI_DISK_DATA_PRE_CR71887</sourceObjSchema>
+<sourceObjName>DIFFUSE_ATTN_COE</sourceObjName>
+<createdBy>darbo</createdBy>
+<createdTime>2024-02-13 17:12:19 UTC</createdTime>
+<ownerDesignName>MEDS_DATA</ownerDesignName>
+<nullsAllowed>true</nullsAllowed>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT024</logicalDatatype>
+<dataTypeSize>20 BYTE</dataTypeSize>
+<ownDataTypeParameters>20 BYTE,,</ownDataTypeParameters>
+<autoIncrementCycle>false</autoIncrementCycle>
+</Column>
+<Column name="MONTH" id="48C7AE1E-24F9-719A-31AF-EAE6FC146881">
+<sourceConnName>MEDS</sourceConnName>
+<sourceObjSchema>SECCHI_DISK_DATA_PRE_CR71887</sourceObjSchema>
+<sourceObjName>MONTH</sourceObjName>
+<createdBy>darbo</createdBy>
+<createdTime>2024-02-13 17:12:19 UTC</createdTime>
+<ownerDesignName>MEDS_DATA</ownerDesignName>
+<nullsAllowed>true</nullsAllowed>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT024</logicalDatatype>
+<dataTypeSize>10 BYTE</dataTypeSize>
+<ownDataTypeParameters>10 BYTE,,</ownDataTypeParameters>
+<autoIncrementCycle>false</autoIncrementCycle>
+</Column>
+<Column name="GMT" id="19E468E9-3804-8226-250D-2E86AAD7F6CE">
+<sourceConnName>MEDS</sourceConnName>
+<sourceObjSchema>SECCHI_DISK_DATA_PRE_CR71887</sourceObjSchema>
+<sourceObjName>GMT</sourceObjName>
+<createdBy>darbo</createdBy>
+<createdTime>2024-02-13 17:12:19 UTC</createdTime>
+<ownerDesignName>MEDS_DATA</ownerDesignName>
+<nullsAllowed>true</nullsAllowed>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT024</logicalDatatype>
+<dataTypeSize>20 BYTE</dataTypeSize>
+<ownDataTypeParameters>20 BYTE,,</ownDataTypeParameters>
+<autoIncrementCycle>false</autoIncrementCycle>
+</Column>
+<Column name="SEA_STATE" id="1A5857DD-B2C9-BAFA-1119-3770C0A45DF3">
+<sourceConnName>MEDS</sourceConnName>
+<sourceObjSchema>SECCHI_DISK_DATA_PRE_CR71887</sourceObjSchema>
+<sourceObjName>SEA_STATE</sourceObjName>
+<createdBy>darbo</createdBy>
+<createdTime>2024-02-13 17:12:19 UTC</createdTime>
+<ownerDesignName>MEDS_DATA</ownerDesignName>
+<nullsAllowed>true</nullsAllowed>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT024</logicalDatatype>
+<dataTypeSize>10 BYTE</dataTypeSize>
+<ownDataTypeParameters>10 BYTE,,</ownDataTypeParameters>
+<autoIncrementCycle>false</autoIncrementCycle>
+</Column>
+<Column name="SECCHI_DEPTH" id="C1A45BBF-DE2B-3398-EDAD-D127F6263B9F">
+<sourceConnName>MEDS</sourceConnName>
+<sourceObjSchema>SECCHI_DISK_DATA_PRE_CR71887</sourceObjSchema>
+<sourceObjName>SECCHI_DEPTH</sourceObjName>
+<createdBy>darbo</createdBy>
+<createdTime>2024-02-13 17:12:19 UTC</createdTime>
+<ownerDesignName>MEDS_DATA</ownerDesignName>
+<nullsAllowed>true</nullsAllowed>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT019</logicalDatatype>
+<dataTypePrecision>12</dataTypePrecision>
+<dataTypeScale>4</dataTypeScale>
+<ownDataTypeParameters>,12,4</ownDataTypeParameters>
+<autoIncrementCycle>false</autoIncrementCycle>
+</Column>
+</columns>
+</Table>

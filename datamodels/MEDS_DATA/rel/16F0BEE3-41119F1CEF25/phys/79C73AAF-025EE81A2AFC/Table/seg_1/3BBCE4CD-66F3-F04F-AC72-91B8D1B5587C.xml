@@ -1,0 +1,80 @@
+<?xml version = '1.0' encoding = 'UTF-8'?>
+<TableProxyOraclev12c class="oracle.dbtools.crest.model.design.storage.oracle.v12c.TableProxyOraclev12c" name="INTERNAL_WAVE_OBSERVATION" directorySegmentName="seg_1" id="3BBCE4CD-66F3-F04F-AC72-91B8D1B5587C">
+<createdBy>d.arboittedossantos</createdBy>
+<createdTime>2024-03-15 10:19:41 UTC</createdTime>
+<ownerDesignName>MEDS_DATA</ownerDesignName>
+<schemaObject>1FA4795A-F971-A0A7-EC72-1452C492DEA9</schemaObject>
+<logging>YES</logging>
+<partitionedRowMovement>DISABLE</partitionedRowMovement>
+<segment>B85E66D1-05A9-629F-E72C-AA7121C82339</segment>
+<tableSpace>E29DFC52-2441-9A41-19E2-FDF24A122B85</tableSpace>
+<temporaryChanged>false</temporaryChanged>
+<accessDriverType>oracle_loader</accessDriverType>
+<rejectLimit></rejectLimit>
+<inMemory>NO</inMemory>
+<columnProxies itemClass="oracle.dbtools.crest.model.design.storage.oracle.v12c.ColumnProxyOraclev12c">
+<ColumnProxy name="LONGITUDE" id="2696D74E-2FAD-5332-B585-D627F66B9B69">
+<createdBy>d.arboittedossantos</createdBy>
+<createdTime>2024-03-15 10:19:42 UTC</createdTime>
+<ownerDesignName>MEDS_DATA</ownerDesignName>
+</ColumnProxy>
+<ColumnProxy name="LATITUDE" id="3E7A4A80-26F7-E7FD-1C12-31090399DBA6">
+<createdBy>d.arboittedossantos</createdBy>
+<createdTime>2024-03-15 10:19:42 UTC</createdTime>
+<ownerDesignName>MEDS_DATA</ownerDesignName>
+</ColumnProxy>
+<ColumnProxy name="MEDS_JOB_NUMBER" id="56C8FFB8-D0B3-A112-3BB6-5049E5097B30">
+<createdBy>d.arboittedossantos</createdBy>
+<createdTime>2024-03-15 10:19:42 UTC</createdTime>
+<ownerDesignName>MEDS_DATA</ownerDesignName>
+</ColumnProxy>
+<ColumnProxy name="DATABASE_IDENTIFICATION_NUMBER" id="7C05E2FE-271D-52E5-D49A-82A1E71C9842">
+<createdBy>d.arboittedossantos</createdBy>
+<createdTime>2024-03-15 10:19:42 UTC</createdTime>
+<ownerDesignName>MEDS_DATA</ownerDesignName>
+</ColumnProxy>
+<ColumnProxy name="LOCATION" id="9CB68083-31CA-53EC-F34B-EBCBC02DA495">
+<createdBy>d.arboittedossantos</createdBy>
+<createdTime>2024-03-15 10:19:42 UTC</createdTime>
+<ownerDesignName>MEDS_DATA</ownerDesignName>
+</ColumnProxy>
+<ColumnProxy name="MEDS_OBSERVATION_NUMBER" id="C597BA2F-5B2E-7D14-DC0D-B9431B9C5B43">
+<createdBy>d.arboittedossantos</createdBy>
+<createdTime>2024-03-15 10:19:42 UTC</createdTime>
+<ownerDesignName>MEDS_DATA</ownerDesignName>
+</ColumnProxy>
+<ColumnProxy name="MONTH" id="FD37376D-CB9D-A18C-4FB7-D75AB64CB475">
+<createdBy>d.arboittedossantos</createdBy>
+<createdTime>2024-03-15 10:19:42 UTC</createdTime>
+<ownerDesignName>MEDS_DATA</ownerDesignName>
+</ColumnProxy>
+</columnProxies>
+<indexProxies>
+<IndexProxy class="oracle.dbtools.crest.model.design.storage.oracle.v10g.IndexProxyOraclev10g" name="SI_INTERNALWAVE" id="525F54A9-6D9D-84DF-6D94-F30342521807">
+<createdBy>d.arboittedossantos</createdBy>
+<createdTime>2024-03-15 10:19:45 UTC</createdTime>
+<ownerDesignName>MEDS_DATA</ownerDesignName>
+<schemaObject>1FA4795A-F971-A0A7-EC72-1452C492DEA9</schemaObject>
+<indexDomainParameters> </indexDomainParameters>
+<indexType>MDSYS.SPATIAL_INDEX_V2</indexType>
+<segment>17C4CE78-2414-76AE-F4E6-4FDE30C3CA19</segment>
+<tableSpace>E29DFC52-2441-9A41-19E2-FDF24A122B85</tableSpace>
+</IndexProxy>
+<IndexProxy class="oracle.dbtools.crest.model.design.storage.oracle.v10g.IndexProxyOraclev10g" name="IDX_JOB_INTERNAL_45" id="CF574BD2-A85B-9CD5-0537-9D6C0912CF07">
+<createdBy>d.arboittedossantos</createdBy>
+<createdTime>2024-03-15 10:19:45 UTC</createdTime>
+<ownerDesignName>MEDS_DATA</ownerDesignName>
+<schemaObject>1FA4795A-F971-A0A7-EC72-1452C492DEA9</schemaObject>
+<segment>98203FA3-7D36-ECC8-0F4B-7F206DC812C4</segment>
+<tableSpace>E29DFC52-2441-9A41-19E2-FDF24A122B85</tableSpace>
+</IndexProxy>
+<IndexProxy class="oracle.dbtools.crest.model.design.storage.oracle.v10g.IndexProxyOraclev10g" name="IDX_POSN_INTERNAL_18" id="ECC70E60-6F4B-051B-B0D1-C6986EAC6C38">
+<createdBy>d.arboittedossantos</createdBy>
+<createdTime>2024-03-15 10:19:45 UTC</createdTime>
+<ownerDesignName>MEDS_DATA</ownerDesignName>
+<schemaObject>1FA4795A-F971-A0A7-EC72-1452C492DEA9</schemaObject>
+<segment>98203FA3-7D36-ECC8-0F4B-7F206DC812C4</segment>
+<tableSpace>E29DFC52-2441-9A41-19E2-FDF24A122B85</tableSpace>
+</IndexProxy>
+</indexProxies>
+</TableProxyOraclev12c>

@@ -1,0 +1,60 @@
+<?xml version = '1.0' encoding = 'UTF-8'?>
+<Table class="oracle.dbtools.crest.model.design.relational.Table" directorySegmentName="seg_1" id="897797EF-1B00-BF1C-BC0F-37D40BAF8D14" schemaObject="198B7359-7E07-FB02-B07C-A0A91EE44FE7" name="LAYER_CRITERIA_LOOKUP_COPY">
+<sourceConnName>MEDS</sourceConnName>
+<sourceObjSchema>MEDSDATA</sourceObjSchema>
+<sourceObjName>LAYER_CRITERIA_LOOKUP_COPY</sourceObjName>
+<createdBy>darbo</createdBy>
+<createdTime>2024-02-13 17:12:15 UTC</createdTime>
+<ownerDesignName>MEDS</ownerDesignName>
+<allowColumnReorder>false</allowColumnReorder>
+<existDependencyGenerateInDDl>true</existDependencyGenerateInDDl>
+<parsed>true</parsed>
+<columns itemClass="oracle.dbtools.crest.model.design.relational.Column">
+<Column name="LAYER_INDEX" id="54E75CA7-1732-339A-70FD-8A06D0844534">
+<sourceConnName>MEDS</sourceConnName>
+<sourceObjSchema>LAYER_CRITERIA_LOOKUP_COPY</sourceObjSchema>
+<sourceObjName>LAYER_INDEX</sourceObjName>
+<createdBy>darbo</createdBy>
+<createdTime>2024-02-13 17:12:18 UTC</createdTime>
+<ownerDesignName>MEDS</ownerDesignName>
+<nullsAllowed>true</nullsAllowed>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT019</logicalDatatype>
+<dataTypePrecision>10</dataTypePrecision>
+<dataTypeScale>0</dataTypeScale>
+<ownDataTypeParameters>,10,0</ownDataTypeParameters>
+<autoIncrementCycle>false</autoIncrementCycle>
+</Column>
+<Column name="CRITERIA_STRING" id="7BE62DC7-1623-92E7-84CE-666C2F47D67A">
+<sourceConnName>MEDS</sourceConnName>
+<sourceObjSchema>LAYER_CRITERIA_LOOKUP_COPY</sourceObjSchema>
+<sourceObjName>CRITERIA_STRING</sourceObjName>
+<createdBy>darbo</createdBy>
+<createdTime>2024-02-13 17:12:18 UTC</createdTime>
+<ownerDesignName>MEDS</ownerDesignName>
+<nullsAllowed>true</nullsAllowed>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT024</logicalDatatype>
+<dataTypeSize>100 BYTE</dataTypeSize>
+<ownDataTypeParameters>100 BYTE,,</ownDataTypeParameters>
+<autoIncrementCycle>false</autoIncrementCycle>
+</Column>
+<Column name="CAPTION" id="B2825A87-AD60-5AA6-C5CF-7A3A46201AB5">
+<sourceConnName>MEDS</sourceConnName>
+<sourceObjSchema>LAYER_CRITERIA_LOOKUP_COPY</sourceObjSchema>
+<sourceObjName>CAPTION</sourceObjName>
+<createdBy>darbo</createdBy>
+<createdTime>2024-02-13 17:12:18 UTC</createdTime>
+<ownerDesignName>MEDS</ownerDesignName>
+<nullsAllowed>true</nullsAllowed>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT024</logicalDatatype>
+<dataTypeSize>50 BYTE</dataTypeSize>
+<ownDataTypeParameters>50 BYTE,,</ownDataTypeParameters>
+<autoIncrementCycle>false</autoIncrementCycle>
+</Column>
+</columns>
+</Table>

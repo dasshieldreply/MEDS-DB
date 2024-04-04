@@ -1,5 +1,5 @@
 <?xml version = '1.0' encoding = 'UTF-8'?>
-<Table class="oracle.dbtools.crest.model.design.relational.Table" directorySegmentName="seg_0" id="D7EA6BED-6B6E-DC68-7D6D-50C006602E07" name="DEPTH_QUALITY">
+<Table class="oracle.dbtools.crest.model.design.relational.Table" directorySegmentName="seg_0" id="D7EA6BED-6B6E-DC68-7D6D-50C006602E07" schemaObject="20651223-0797-3CAA-7021-8449492EE83B" name="SERD_LOV_DEPTH_QUALITY">
 <createdBy>darbo</createdBy>
 <createdTime>2024-02-14 15:24:21 UTC</createdTime>
 <ownerDesignName>MEDS_SERD</ownerDesignName>
@@ -8,6 +8,16 @@
 <existDependencyGenerateInDDl>true</existDependencyGenerateInDDl>
 <parsed>true</parsed>
 <columns itemClass="oracle.dbtools.crest.model.design.relational.Column">
+<Column name="SERD_LOV_DEPTH_QUALITY" id="4A5B3F65-49B5-7C81-5696-662248923F5C">
+<createdBy>d.arboittedossantos</createdBy>
+<createdTime>2024-04-04 15:30:12 UTC</createdTime>
+<ownerDesignName>MEDS_SERD</ownerDesignName>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT019</logicalDatatype>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
+<autoIncrementCycle>false</autoIncrementCycle>
+</Column>
 <Column name="DEPTH_QUALITY_CD" id="89415254-94A4-B850-897D-D89C3757349C">
 <createdBy>darbo</createdBy>
 <createdTime>2024-02-14 15:24:21 UTC</createdTime>
@@ -33,12 +43,22 @@
 </Column>
 </columns>
 <indexes itemClass="oracle.dbtools.crest.model.design.relational.Index">
-<ind_PK_UK id="067C247D-BBCF-F738-8918-C137BCF00B93" name="DEPTH_QUALITY_PK">
-<createdBy>darbo</createdBy>
-<createdTime>2024-02-14 15:24:21 UTC</createdTime>
+<ind_PK_UK id="0536525C-9F39-3B71-CC4B-96BBA19F9EAA" name="SERD_LOV_DEPTH_QUALITY_P">
+<createdBy>d.arboittedossantos</createdBy>
+<createdTime>2024-04-04 15:30:12 UTC</createdTime>
 <ownerDesignName>MEDS_SERD</ownerDesignName>
 <pk>true</pk>
 <indexState>Primary Constraint</indexState>
+<isSurrogateKey>false</isSurrogateKey>
+<indexColumnUsage>
+<colUsage columnID="4A5B3F65-49B5-7C81-5696-662248923F5C"/>
+</indexColumnUsage>
+</ind_PK_UK>
+<ind_PK_UK id="1929B7C7-E5C7-110E-2DF8-B28A30CA2860" name="SERD_LOV_DEPTH_QUALITY_CD_U">
+<createdBy>d.arboittedossantos</createdBy>
+<createdTime>2024-04-04 15:30:12 UTC</createdTime>
+<ownerDesignName>MEDS_SERD</ownerDesignName>
+<indexState>Unique Constraint</indexState>
 <isSurrogateKey>false</isSurrogateKey>
 <indexColumnUsage>
 <colUsage columnID="89415254-94A4-B850-897D-D89C3757349C"/>

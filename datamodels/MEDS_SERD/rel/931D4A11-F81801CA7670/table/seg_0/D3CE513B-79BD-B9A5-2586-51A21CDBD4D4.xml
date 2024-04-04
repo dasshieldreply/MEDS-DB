@@ -1,5 +1,5 @@
 <?xml version = '1.0' encoding = 'UTF-8'?>
-<Table class="oracle.dbtools.crest.model.design.relational.Table" directorySegmentName="seg_0" id="D3CE513B-79BD-B9A5-2586-51A21CDBD4D4" name="SALINITY_SCALE">
+<Table class="oracle.dbtools.crest.model.design.relational.Table" directorySegmentName="seg_0" id="D3CE513B-79BD-B9A5-2586-51A21CDBD4D4" schemaObject="20651223-0797-3CAA-7021-8449492EE83B" name="SERD_LOV_SALINITY_SCALE">
 <createdBy>darbo</createdBy>
 <createdTime>2024-02-14 14:27:59 UTC</createdTime>
 <ownerDesignName>MEDS_SERD</ownerDesignName>
@@ -8,6 +8,16 @@
 <existDependencyGenerateInDDl>true</existDependencyGenerateInDDl>
 <parsed>true</parsed>
 <columns itemClass="oracle.dbtools.crest.model.design.relational.Column">
+<Column name="SERD_LOV_SALINITY_SCALE" id="8A318330-F2BC-1A81-E7CB-04B1FC2C4D65">
+<createdBy>d.arboittedossantos</createdBy>
+<createdTime>2024-04-04 15:34:44 UTC</createdTime>
+<ownerDesignName>MEDS_SERD</ownerDesignName>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT019</logicalDatatype>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
+<autoIncrementCycle>false</autoIncrementCycle>
+</Column>
 <Column name="SALINITY_SCALE_CD" id="FC268CCE-3FB8-EE0C-AF47-8256314FC3A5">
 <createdBy>darbo</createdBy>
 <createdTime>2024-02-14 14:27:59 UTC</createdTime>
@@ -33,12 +43,22 @@
 </Column>
 </columns>
 <indexes itemClass="oracle.dbtools.crest.model.design.relational.Index">
-<ind_PK_UK id="FD5D0263-6954-398A-C338-508AA72DAFAE" name="SALINITY_SCALE_PK">
-<createdBy>darbo</createdBy>
-<createdTime>2024-02-14 14:27:59 UTC</createdTime>
+<ind_PK_UK id="4791CEA1-A03C-2B43-C01D-0FEC55FDE628" name="SERD_LOV_SALINITY_SCALE_P">
+<createdBy>d.arboittedossantos</createdBy>
+<createdTime>2024-04-04 15:34:44 UTC</createdTime>
 <ownerDesignName>MEDS_SERD</ownerDesignName>
 <pk>true</pk>
 <indexState>Primary Constraint</indexState>
+<isSurrogateKey>false</isSurrogateKey>
+<indexColumnUsage>
+<colUsage columnID="8A318330-F2BC-1A81-E7CB-04B1FC2C4D65"/>
+</indexColumnUsage>
+</ind_PK_UK>
+<ind_PK_UK id="71F6D04F-21BA-55FC-3AD9-502ECE7409EE" name="SERD_LOV_SALINITY_SCALE_CD_U">
+<createdBy>d.arboittedossantos</createdBy>
+<createdTime>2024-04-04 15:34:44 UTC</createdTime>
+<ownerDesignName>MEDS_SERD</ownerDesignName>
+<indexState>Unique Constraint</indexState>
 <isSurrogateKey>false</isSurrogateKey>
 <indexColumnUsage>
 <colUsage columnID="FC268CCE-3FB8-EE0C-AF47-8256314FC3A5"/>

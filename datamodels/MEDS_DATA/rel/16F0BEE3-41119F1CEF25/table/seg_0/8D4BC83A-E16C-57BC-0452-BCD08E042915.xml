@@ -1,0 +1,169 @@
+<?xml version = '1.0' encoding = 'UTF-8'?>
+<Table class="oracle.dbtools.crest.model.design.relational.Table" directorySegmentName="seg_0" id="8D4BC83A-E16C-57BC-0452-BCD08E042915" schemaObject="1FA4795A-F971-A0A7-EC72-1452C492DEA9" name="ASRAP_POINT_CADS_REPEAT">
+<sourceConnName>MEDS ADMIN</sourceConnName>
+<sourceObjSchema>MEDSADMIN</sourceObjSchema>
+<sourceObjName>ASRAP_POINT_CADS_REPEAT</sourceObjName>
+<createdBy>d.arboittedossantos</createdBy>
+<createdTime>2024-03-15 10:19:41 UTC</createdTime>
+<ownerDesignName>MEDS_DATA</ownerDesignName>
+<allowColumnReorder>false</allowColumnReorder>
+<existDependencyGenerateInDDl>true</existDependencyGenerateInDDl>
+<parsed>true</parsed>
+<columns itemClass="oracle.dbtools.crest.model.design.relational.Column">
+<Column name="MEDS_JOB_NUMBER" id="D42DAFE6-90D5-4E4D-797E-91D0A06F8FDD">
+<sourceConnName>MEDS ADMIN</sourceConnName>
+<sourceObjSchema>ASRAP_POINT_CADS_REPEAT</sourceObjSchema>
+<sourceObjName>MEDS_JOB_NUMBER</sourceObjName>
+<createdBy>d.arboittedossantos</createdBy>
+<createdTime>2024-03-15 10:19:42 UTC</createdTime>
+<ownerDesignName>MEDS_DATA</ownerDesignName>
+<nullsAllowed>true</nullsAllowed>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT019</logicalDatatype>
+<dataTypePrecision>10</dataTypePrecision>
+<dataTypeScale>0</dataTypeScale>
+<ownDataTypeParameters>,10,0</ownDataTypeParameters>
+<autoIncrementCycle>false</autoIncrementCycle>
+</Column>
+<Column name="MEDS_OBSERVATION_NUMBER" id="8FEE9131-BB99-BBB2-5499-474680F38AAC">
+<sourceConnName>MEDS ADMIN</sourceConnName>
+<sourceObjSchema>ASRAP_POINT_CADS_REPEAT</sourceObjSchema>
+<sourceObjName>MEDS_OBSERVATION_NUMBER</sourceObjName>
+<createdBy>d.arboittedossantos</createdBy>
+<createdTime>2024-03-15 10:19:42 UTC</createdTime>
+<ownerDesignName>MEDS_DATA</ownerDesignName>
+<nullsAllowed>true</nullsAllowed>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT019</logicalDatatype>
+<dataTypePrecision>10</dataTypePrecision>
+<dataTypeScale>0</dataTypeScale>
+<ownDataTypeParameters>,10,0</ownDataTypeParameters>
+<autoIncrementCycle>false</autoIncrementCycle>
+</Column>
+<Column name="MEAN_DEPTH" id="E8F80713-5E32-13F2-357E-D5092B1D2EA3">
+<sourceConnName>MEDS ADMIN</sourceConnName>
+<sourceObjSchema>ASRAP_POINT_CADS_REPEAT</sourceObjSchema>
+<sourceObjName>MEAN_DEPTH</sourceObjName>
+<createdBy>d.arboittedossantos</createdBy>
+<createdTime>2024-03-15 10:19:42 UTC</createdTime>
+<ownerDesignName>MEDS_DATA</ownerDesignName>
+<nullsAllowed>true</nullsAllowed>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT024</logicalDatatype>
+<dataTypeSize>4 BYTE</dataTypeSize>
+<ownDataTypeParameters>4 BYTE,,</ownDataTypeParameters>
+<autoIncrementCycle>false</autoIncrementCycle>
+</Column>
+<Column name="YEAR" id="0B78E698-71F2-4C75-93CB-F4A093D9F82E">
+<sourceConnName>MEDS ADMIN</sourceConnName>
+<sourceObjSchema>ASRAP_POINT_CADS_REPEAT</sourceObjSchema>
+<sourceObjName>YEAR</sourceObjName>
+<createdBy>d.arboittedossantos</createdBy>
+<createdTime>2024-03-15 10:19:42 UTC</createdTime>
+<ownerDesignName>MEDS_DATA</ownerDesignName>
+<nullsAllowed>true</nullsAllowed>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT019</logicalDatatype>
+<dataTypePrecision>4</dataTypePrecision>
+<dataTypeScale>0</dataTypeScale>
+<ownDataTypeParameters>,4,0</ownDataTypeParameters>
+<autoIncrementCycle>false</autoIncrementCycle>
+</Column>
+<Column name="QUALITY" id="10A3E1A6-5B2A-08D8-D96A-F73C59932110">
+<sourceConnName>MEDS ADMIN</sourceConnName>
+<sourceObjSchema>ASRAP_POINT_CADS_REPEAT</sourceObjSchema>
+<sourceObjName>QUALITY</sourceObjName>
+<createdBy>d.arboittedossantos</createdBy>
+<createdTime>2024-03-15 10:19:42 UTC</createdTime>
+<ownerDesignName>MEDS_DATA</ownerDesignName>
+<nullsAllowed>true</nullsAllowed>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT024</logicalDatatype>
+<dataTypeSize>1 BYTE</dataTypeSize>
+<ownDataTypeParameters>1 BYTE,,</ownDataTypeParameters>
+<autoIncrementCycle>false</autoIncrementCycle>
+</Column>
+<Column name="NUMBER_OF_DEPTH_LEVELS" id="BAA8620D-59D4-F556-CA38-6B0E6BCC9726">
+<sourceConnName>MEDS ADMIN</sourceConnName>
+<sourceObjSchema>ASRAP_POINT_CADS_REPEAT</sourceObjSchema>
+<sourceObjName>NUMBER_OF_DEPTH_LEVELS</sourceObjName>
+<createdBy>d.arboittedossantos</createdBy>
+<createdTime>2024-03-15 10:19:42 UTC</createdTime>
+<ownerDesignName>MEDS_DATA</ownerDesignName>
+<nullsAllowed>true</nullsAllowed>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT019</logicalDatatype>
+<dataTypePrecision>2</dataTypePrecision>
+<dataTypeScale>0</dataTypeScale>
+<ownDataTypeParameters>,2,0</ownDataTypeParameters>
+<autoIncrementCycle>false</autoIncrementCycle>
+</Column>
+<Column name="NUMBER_OF_COMMENTS" id="29837AD2-F826-20A0-652B-C26C592BB6CC">
+<sourceConnName>MEDS ADMIN</sourceConnName>
+<sourceObjSchema>ASRAP_POINT_CADS_REPEAT</sourceObjSchema>
+<sourceObjName>NUMBER_OF_COMMENTS</sourceObjName>
+<createdBy>d.arboittedossantos</createdBy>
+<createdTime>2024-03-15 10:19:42 UTC</createdTime>
+<ownerDesignName>MEDS_DATA</ownerDesignName>
+<nullsAllowed>true</nullsAllowed>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT019</logicalDatatype>
+<dataTypePrecision>2</dataTypePrecision>
+<dataTypeScale>0</dataTypeScale>
+<ownDataTypeParameters>,2,0</ownDataTypeParameters>
+<autoIncrementCycle>false</autoIncrementCycle>
+</Column>
+<Column name="COMMENTS" id="5F6E2899-DBC6-B22A-66CA-DF147178A50F">
+<sourceConnName>MEDS ADMIN</sourceConnName>
+<sourceObjSchema>ASRAP_POINT_CADS_REPEAT</sourceObjSchema>
+<sourceObjName>COMMENTS</sourceObjName>
+<createdBy>d.arboittedossantos</createdBy>
+<createdTime>2024-03-15 10:19:42 UTC</createdTime>
+<ownerDesignName>MEDS_DATA</ownerDesignName>
+<nullsAllowed>true</nullsAllowed>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT024</logicalDatatype>
+<dataTypeSize>650 BYTE</dataTypeSize>
+<ownDataTypeParameters>650 BYTE,,</ownDataTypeParameters>
+<autoIncrementCycle>false</autoIncrementCycle>
+</Column>
+<Column name="MONTH" id="859C59F4-CBEA-5B2C-4DF2-73CBBBF21070">
+<sourceConnName>MEDS ADMIN</sourceConnName>
+<sourceObjSchema>ASRAP_POINT_CADS_REPEAT</sourceObjSchema>
+<sourceObjName>MONTH</sourceObjName>
+<createdBy>d.arboittedossantos</createdBy>
+<createdTime>2024-03-15 10:19:42 UTC</createdTime>
+<ownerDesignName>MEDS_DATA</ownerDesignName>
+<nullsAllowed>true</nullsAllowed>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT024</logicalDatatype>
+<dataTypeSize>2 BYTE</dataTypeSize>
+<ownDataTypeParameters>2 BYTE,,</ownDataTypeParameters>
+<autoIncrementCycle>false</autoIncrementCycle>
+</Column>
+</columns>
+<indexes itemClass="oracle.dbtools.crest.model.design.relational.Index">
+<ind_PK_UK id="DF98B9E0-8577-6467-A5E6-A30E52E15EA8" schemaObject="1FA4795A-F971-A0A7-EC72-1452C492DEA9" name="IDX_JOB_ASRAP_1">
+<sourceConnName>MEDS ADMIN</sourceConnName>
+<sourceObjSchema>MEDSADMIN</sourceObjSchema>
+<sourceObjName>IDX_JOB_ASRAP_1</sourceObjName>
+<createdBy>d.arboittedossantos</createdBy>
+<createdTime>2024-03-15 10:19:45 UTC</createdTime>
+<ownerDesignName>MEDS_DATA</ownerDesignName>
+<isSurrogateKey>false</isSurrogateKey>
+<indexColumnUsage>
+<colUsage columnID="D42DAFE6-90D5-4E4D-797E-91D0A06F8FDD"/>
+<colUsage columnID="8FEE9131-BB99-BBB2-5499-474680F38AAC"/>
+</indexColumnUsage>
+</ind_PK_UK>
+</indexes>
+</Table>

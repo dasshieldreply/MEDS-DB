@@ -1,0 +1,317 @@
+<?xml version = '1.0' encoding = 'UTF-8'?>
+<Table class="oracle.dbtools.crest.model.design.relational.Table" directorySegmentName="seg_1" id="8E976498-5596-71C8-567C-1924E68CAAF7" schemaObject="1FA4795A-F971-A0A7-EC72-1452C492DEA9" name="MLO_PINNIPEDS_DATA">
+<sourceConnName>MEDS ADMIN</sourceConnName>
+<sourceObjSchema>MEDSADMIN</sourceObjSchema>
+<sourceObjName>MLO_PINNIPEDS_DATA</sourceObjName>
+<createdBy>d.arboittedossantos</createdBy>
+<createdTime>2024-03-15 10:19:42 UTC</createdTime>
+<ownerDesignName>MEDS_DATA</ownerDesignName>
+<allowColumnReorder>false</allowColumnReorder>
+<existDependencyGenerateInDDl>true</existDependencyGenerateInDDl>
+<parsed>true</parsed>
+<columns itemClass="oracle.dbtools.crest.model.design.relational.Column">
+<Column name="RECORD_NUMBER" id="D1F668AC-DD6D-31BB-8396-DC9716F1F133">
+<sourceConnName>MEDS ADMIN</sourceConnName>
+<sourceObjSchema>MLO_PINNIPEDS_DATA</sourceObjSchema>
+<sourceObjName>RECORD_NUMBER</sourceObjName>
+<createdBy>d.arboittedossantos</createdBy>
+<createdTime>2024-03-15 10:19:42 UTC</createdTime>
+<ownerDesignName>MEDS_DATA</ownerDesignName>
+<nullsAllowed>true</nullsAllowed>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT019</logicalDatatype>
+<dataTypePrecision>6</dataTypePrecision>
+<dataTypeScale>0</dataTypeScale>
+<ownDataTypeParameters>,6,0</ownDataTypeParameters>
+<autoIncrementCycle>false</autoIncrementCycle>
+</Column>
+<Column name="COUNT" id="F1063FBE-8B74-8EAA-A3D2-7DB7CB26FDA2">
+<sourceConnName>MEDS ADMIN</sourceConnName>
+<sourceObjSchema>MLO_PINNIPEDS_DATA</sourceObjSchema>
+<sourceObjName>COUNT</sourceObjName>
+<createdBy>d.arboittedossantos</createdBy>
+<createdTime>2024-03-15 10:19:42 UTC</createdTime>
+<ownerDesignName>MEDS_DATA</ownerDesignName>
+<nullsAllowed>true</nullsAllowed>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT024</logicalDatatype>
+<dataTypeSize>10 BYTE</dataTypeSize>
+<ownDataTypeParameters>10 BYTE,,</ownDataTypeParameters>
+<autoIncrementCycle>false</autoIncrementCycle>
+</Column>
+<Column name="HEADING" id="7E52CB18-23EF-C5F4-E3AE-6BA5A3676C07">
+<sourceConnName>MEDS ADMIN</sourceConnName>
+<sourceObjSchema>MLO_PINNIPEDS_DATA</sourceObjSchema>
+<sourceObjName>HEADING</sourceObjName>
+<createdBy>d.arboittedossantos</createdBy>
+<createdTime>2024-03-15 10:19:42 UTC</createdTime>
+<ownerDesignName>MEDS_DATA</ownerDesignName>
+<nullsAllowed>true</nullsAllowed>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT024</logicalDatatype>
+<dataTypeSize>50 BYTE</dataTypeSize>
+<ownDataTypeParameters>50 BYTE,,</ownDataTypeParameters>
+<autoIncrementCycle>false</autoIncrementCycle>
+</Column>
+<Column name="COMMENTS" id="3D5EA5D8-0609-D347-53B5-E43A5B0884BC">
+<sourceConnName>MEDS ADMIN</sourceConnName>
+<sourceObjSchema>MLO_PINNIPEDS_DATA</sourceObjSchema>
+<sourceObjName>COMMENTS</sourceObjName>
+<createdBy>d.arboittedossantos</createdBy>
+<createdTime>2024-03-15 10:19:42 UTC</createdTime>
+<ownerDesignName>MEDS_DATA</ownerDesignName>
+<nullsAllowed>true</nullsAllowed>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT024</logicalDatatype>
+<dataTypeSize>200 BYTE</dataTypeSize>
+<ownDataTypeParameters>200 BYTE,,</ownDataTypeParameters>
+<autoIncrementCycle>false</autoIncrementCycle>
+</Column>
+<Column name="SPECIES" id="5C4F9A74-79B9-24B2-640B-343BB7325818">
+<sourceConnName>MEDS ADMIN</sourceConnName>
+<sourceObjSchema>MLO_PINNIPEDS_DATA</sourceObjSchema>
+<sourceObjName>SPECIES</sourceObjName>
+<createdBy>d.arboittedossantos</createdBy>
+<createdTime>2024-03-15 10:19:42 UTC</createdTime>
+<ownerDesignName>MEDS_DATA</ownerDesignName>
+<nullsAllowed>true</nullsAllowed>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT024</logicalDatatype>
+<dataTypeSize>50 BYTE</dataTypeSize>
+<ownDataTypeParameters>50 BYTE,,</ownDataTypeParameters>
+<autoIncrementCycle>false</autoIncrementCycle>
+</Column>
+<Column name="REFERENCE" id="299CF0FD-7801-C258-9B43-D98F9CF1D6F1">
+<sourceConnName>MEDS ADMIN</sourceConnName>
+<sourceObjSchema>MLO_PINNIPEDS_DATA</sourceObjSchema>
+<sourceObjName>REFERENCE</sourceObjName>
+<createdBy>d.arboittedossantos</createdBy>
+<createdTime>2024-03-15 10:19:42 UTC</createdTime>
+<ownerDesignName>MEDS_DATA</ownerDesignName>
+<nullsAllowed>true</nullsAllowed>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT024</logicalDatatype>
+<dataTypeSize>100 BYTE</dataTypeSize>
+<ownDataTypeParameters>100 BYTE,,</ownDataTypeParameters>
+<autoIncrementCycle>false</autoIncrementCycle>
+</Column>
+<Column name="SHIP" id="C4BEA434-1E33-1647-C50E-87BAFF2AA753">
+<sourceConnName>MEDS ADMIN</sourceConnName>
+<sourceObjSchema>MLO_PINNIPEDS_DATA</sourceObjSchema>
+<sourceObjName>SHIP</sourceObjName>
+<createdBy>d.arboittedossantos</createdBy>
+<createdTime>2024-03-15 10:19:42 UTC</createdTime>
+<ownerDesignName>MEDS_DATA</ownerDesignName>
+<nullsAllowed>true</nullsAllowed>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT024</logicalDatatype>
+<dataTypeSize>50 BYTE</dataTypeSize>
+<ownDataTypeParameters>50 BYTE,,</ownDataTypeParameters>
+<autoIncrementCycle>false</autoIncrementCycle>
+</Column>
+<Column name="MEDS_JOB_NUMBER" id="55B8F833-52A7-9799-76A5-67E10089C740">
+<sourceConnName>MEDS ADMIN</sourceConnName>
+<sourceObjSchema>MLO_PINNIPEDS_DATA</sourceObjSchema>
+<sourceObjName>MEDS_JOB_NUMBER</sourceObjName>
+<createdBy>d.arboittedossantos</createdBy>
+<createdTime>2024-03-15 10:19:42 UTC</createdTime>
+<ownerDesignName>MEDS_DATA</ownerDesignName>
+<nullsAllowed>true</nullsAllowed>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT019</logicalDatatype>
+<dataTypePrecision>10</dataTypePrecision>
+<dataTypeScale>0</dataTypeScale>
+<ownDataTypeParameters>,10,0</ownDataTypeParameters>
+<autoIncrementCycle>false</autoIncrementCycle>
+</Column>
+<Column name="MEDS_OBSERVATION_NUMBER" id="2613EC15-7B50-E3C0-4D08-F21B78BCBDD0">
+<sourceConnName>MEDS ADMIN</sourceConnName>
+<sourceObjSchema>MLO_PINNIPEDS_DATA</sourceObjSchema>
+<sourceObjName>MEDS_OBSERVATION_NUMBER</sourceObjName>
+<createdBy>d.arboittedossantos</createdBy>
+<createdTime>2024-03-15 10:19:42 UTC</createdTime>
+<ownerDesignName>MEDS_DATA</ownerDesignName>
+<nullsAllowed>true</nullsAllowed>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT019</logicalDatatype>
+<dataTypePrecision>10</dataTypePrecision>
+<dataTypeScale>0</dataTypeScale>
+<ownDataTypeParameters>,10,0</ownDataTypeParameters>
+<autoIncrementCycle>false</autoIncrementCycle>
+</Column>
+<Column name="ARCHIVED" id="EC5E79F8-0BF2-3D01-4C5F-0462DE956431">
+<sourceConnName>MEDS ADMIN</sourceConnName>
+<sourceObjSchema>MLO_PINNIPEDS_DATA</sourceObjSchema>
+<sourceObjName>ARCHIVED</sourceObjName>
+<createdBy>d.arboittedossantos</createdBy>
+<createdTime>2024-03-15 10:19:42 UTC</createdTime>
+<ownerDesignName>MEDS_DATA</ownerDesignName>
+<nullsAllowed>true</nullsAllowed>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT024</logicalDatatype>
+<dataTypeSize>25 BYTE</dataTypeSize>
+<ownDataTypeParameters>25 BYTE,,</ownDataTypeParameters>
+<autoIncrementCycle>false</autoIncrementCycle>
+</Column>
+<Column name="COUNT_QUALITY" id="8DE9EE25-6C18-9C26-7832-9A7715442265">
+<sourceConnName>MEDS ADMIN</sourceConnName>
+<sourceObjSchema>MLO_PINNIPEDS_DATA</sourceObjSchema>
+<sourceObjName>COUNT_QUALITY</sourceObjName>
+<createdBy>d.arboittedossantos</createdBy>
+<createdTime>2024-03-15 10:19:42 UTC</createdTime>
+<ownerDesignName>MEDS_DATA</ownerDesignName>
+<nullsAllowed>true</nullsAllowed>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT024</logicalDatatype>
+<dataTypeSize>20 BYTE</dataTypeSize>
+<ownDataTypeParameters>20 BYTE,,</ownDataTypeParameters>
+<autoIncrementCycle>false</autoIncrementCycle>
+</Column>
+<Column name="ID_QUALITY" id="2345EFE8-E785-15D3-D6B7-692643CF42BF">
+<sourceConnName>MEDS ADMIN</sourceConnName>
+<sourceObjSchema>MLO_PINNIPEDS_DATA</sourceObjSchema>
+<sourceObjName>ID_QUALITY</sourceObjName>
+<createdBy>d.arboittedossantos</createdBy>
+<createdTime>2024-03-15 10:19:42 UTC</createdTime>
+<ownerDesignName>MEDS_DATA</ownerDesignName>
+<nullsAllowed>true</nullsAllowed>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT024</logicalDatatype>
+<dataTypeSize>20 BYTE</dataTypeSize>
+<ownDataTypeParameters>20 BYTE,,</ownDataTypeParameters>
+<autoIncrementCycle>false</autoIncrementCycle>
+</Column>
+<Column name="CODE" id="054033AB-55D0-7A32-7623-51C5EE2B980E">
+<sourceConnName>MEDS ADMIN</sourceConnName>
+<sourceObjSchema>MLO_PINNIPEDS_DATA</sourceObjSchema>
+<sourceObjName>CODE</sourceObjName>
+<createdBy>d.arboittedossantos</createdBy>
+<createdTime>2024-03-15 10:19:42 UTC</createdTime>
+<ownerDesignName>MEDS_DATA</ownerDesignName>
+<nullsAllowed>true</nullsAllowed>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT024</logicalDatatype>
+<dataTypeSize>10 BYTE</dataTypeSize>
+<ownDataTypeParameters>10 BYTE,,</ownDataTypeParameters>
+<autoIncrementCycle>false</autoIncrementCycle>
+</Column>
+<Column name="SPEED" id="4D5C65E3-DF38-FF39-548F-2C671062916E">
+<sourceConnName>MEDS ADMIN</sourceConnName>
+<sourceObjSchema>MLO_PINNIPEDS_DATA</sourceObjSchema>
+<sourceObjName>SPEED</sourceObjName>
+<createdBy>d.arboittedossantos</createdBy>
+<createdTime>2024-03-15 10:19:42 UTC</createdTime>
+<ownerDesignName>MEDS_DATA</ownerDesignName>
+<nullsAllowed>true</nullsAllowed>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT024</logicalDatatype>
+<dataTypeSize>20 BYTE</dataTypeSize>
+<ownDataTypeParameters>20 BYTE,,</ownDataTypeParameters>
+<autoIncrementCycle>false</autoIncrementCycle>
+</Column>
+<Column name="SIZE_" id="61FF873B-C488-3262-1C8C-04C05E03B5A6">
+<sourceConnName>MEDS ADMIN</sourceConnName>
+<sourceObjSchema>MLO_PINNIPEDS_DATA</sourceObjSchema>
+<sourceObjName>SIZE_</sourceObjName>
+<createdBy>d.arboittedossantos</createdBy>
+<createdTime>2024-03-15 10:19:42 UTC</createdTime>
+<ownerDesignName>MEDS_DATA</ownerDesignName>
+<nullsAllowed>true</nullsAllowed>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT024</logicalDatatype>
+<dataTypeSize>20 BYTE</dataTypeSize>
+<ownDataTypeParameters>20 BYTE,,</ownDataTypeParameters>
+<autoIncrementCycle>false</autoIncrementCycle>
+</Column>
+<Column name="MONTH" id="EB1965F1-F1A2-39E6-E40F-F4F47060E10F">
+<sourceConnName>MEDS ADMIN</sourceConnName>
+<sourceObjSchema>MLO_PINNIPEDS_DATA</sourceObjSchema>
+<sourceObjName>MONTH</sourceObjName>
+<createdBy>d.arboittedossantos</createdBy>
+<createdTime>2024-03-15 10:19:42 UTC</createdTime>
+<ownerDesignName>MEDS_DATA</ownerDesignName>
+<nullsAllowed>true</nullsAllowed>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT024</logicalDatatype>
+<dataTypeSize>10 BYTE</dataTypeSize>
+<ownDataTypeParameters>10 BYTE,,</ownDataTypeParameters>
+<autoIncrementCycle>false</autoIncrementCycle>
+</Column>
+<Column name="RANGE" id="99E9ED1B-D4C8-4EEB-7E80-D1E073B8F3E7">
+<sourceConnName>MEDS ADMIN</sourceConnName>
+<sourceObjSchema>MLO_PINNIPEDS_DATA</sourceObjSchema>
+<sourceObjName>RANGE</sourceObjName>
+<createdBy>d.arboittedossantos</createdBy>
+<createdTime>2024-03-15 10:19:42 UTC</createdTime>
+<ownerDesignName>MEDS_DATA</ownerDesignName>
+<nullsAllowed>true</nullsAllowed>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT024</logicalDatatype>
+<dataTypeSize>20 BYTE</dataTypeSize>
+<ownDataTypeParameters>20 BYTE,,</ownDataTypeParameters>
+<autoIncrementCycle>false</autoIncrementCycle>
+</Column>
+<Column name="BEARING" id="6291430E-C75C-3AEE-5477-9509AFD216C2">
+<sourceConnName>MEDS ADMIN</sourceConnName>
+<sourceObjSchema>MLO_PINNIPEDS_DATA</sourceObjSchema>
+<sourceObjName>BEARING</sourceObjName>
+<createdBy>d.arboittedossantos</createdBy>
+<createdTime>2024-03-15 10:19:42 UTC</createdTime>
+<ownerDesignName>MEDS_DATA</ownerDesignName>
+<nullsAllowed>true</nullsAllowed>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT024</logicalDatatype>
+<dataTypeSize>20 BYTE</dataTypeSize>
+<ownDataTypeParameters>20 BYTE,,</ownDataTypeParameters>
+<autoIncrementCycle>false</autoIncrementCycle>
+</Column>
+<Column name="PERSON_NAME" id="FC5A0EB1-DE91-B248-0489-A2E14D406FE5">
+<sourceConnName>MEDS ADMIN</sourceConnName>
+<sourceObjSchema>MLO_PINNIPEDS_DATA</sourceObjSchema>
+<sourceObjName>PERSON_NAME</sourceObjName>
+<createdBy>d.arboittedossantos</createdBy>
+<createdTime>2024-03-15 10:19:42 UTC</createdTime>
+<ownerDesignName>MEDS_DATA</ownerDesignName>
+<nullsAllowed>true</nullsAllowed>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT024</logicalDatatype>
+<dataTypeSize>100 BYTE</dataTypeSize>
+<ownDataTypeParameters>100 BYTE,,</ownDataTypeParameters>
+<autoIncrementCycle>false</autoIncrementCycle>
+</Column>
+</columns>
+<indexes itemClass="oracle.dbtools.crest.model.design.relational.Index">
+<ind_PK_UK id="7829CF6F-315F-A170-1FAB-87EAE9720D0E" schemaObject="1FA4795A-F971-A0A7-EC72-1452C492DEA9" name="IDX_JOB_MLO_62">
+<sourceConnName>MEDS ADMIN</sourceConnName>
+<sourceObjSchema>MEDSADMIN</sourceObjSchema>
+<sourceObjName>IDX_JOB_MLO_62</sourceObjName>
+<createdBy>d.arboittedossantos</createdBy>
+<createdTime>2024-03-15 10:19:46 UTC</createdTime>
+<ownerDesignName>MEDS_DATA</ownerDesignName>
+<isSurrogateKey>false</isSurrogateKey>
+<indexColumnUsage>
+<colUsage columnID="55B8F833-52A7-9799-76A5-67E10089C740"/>
+<colUsage columnID="2613EC15-7B50-E3C0-4D08-F21B78BCBDD0"/>
+</indexColumnUsage>
+</ind_PK_UK>
+</indexes>
+</Table>

@@ -1,0 +1,52 @@
+<?xml version = '1.0' encoding = 'UTF-8'?>
+<TableProxyOraclev12c class="oracle.dbtools.crest.model.design.storage.oracle.v12c.TableProxyOraclev12c" name="TAB_COLUMNS_COPY" directorySegmentName="seg_2" id="C91E9E03-B6BD-DE23-215F-64099452CE3C">
+<createdBy>d.arboittedossantos</createdBy>
+<createdTime>2024-03-14 14:47:24 UTC</createdTime>
+<ownerDesignName>MEDS_DATA</ownerDesignName>
+<schemaObject>FD77D69E-489C-FEFD-81EE-34209F1C13AA</schemaObject>
+<logging>YES</logging>
+<partitionedRowMovement>DISABLE</partitionedRowMovement>
+<segment>2A11820E-EDCF-FF28-336C-C7811EDF39B9</segment>
+<tableSpace>EC0DC591-CC8E-BC50-EEE8-5A0B46384BB0</tableSpace>
+<temporaryChanged>false</temporaryChanged>
+<accessDriverType>oracle_loader</accessDriverType>
+<rejectLimit></rejectLimit>
+<inMemory>NO</inMemory>
+<columnProxies itemClass="oracle.dbtools.crest.model.design.storage.oracle.v12c.ColumnProxyOraclev12c">
+<ColumnProxy name="EDIT_ORDER" id="11C93B75-E675-673C-089A-6CC8BD01C3E2">
+<createdBy>d.arboittedossantos</createdBy>
+<createdTime>2024-03-14 14:47:26 UTC</createdTime>
+<ownerDesignName>MEDS_DATA</ownerDesignName>
+</ColumnProxy>
+<ColumnProxy name="COLUMN_NAME" id="1FD1B713-3D39-753F-49AE-D19650272596">
+<createdBy>d.arboittedossantos</createdBy>
+<createdTime>2024-03-14 14:47:26 UTC</createdTime>
+<ownerDesignName>MEDS_DATA</ownerDesignName>
+</ColumnProxy>
+<ColumnProxy name="TAB_NAME" id="4D8C0606-4D19-C369-4B5C-5C11A26AF54E">
+<createdBy>d.arboittedossantos</createdBy>
+<createdTime>2024-03-14 14:47:26 UTC</createdTime>
+<ownerDesignName>MEDS_DATA</ownerDesignName>
+</ColumnProxy>
+<ColumnProxy name="MANDATORY" id="688B364C-96DD-2F27-132E-17B3C61D1CB8">
+<createdBy>d.arboittedossantos</createdBy>
+<createdTime>2024-03-14 14:47:26 UTC</createdTime>
+<ownerDesignName>MEDS_DATA</ownerDesignName>
+</ColumnProxy>
+<ColumnProxy name="TAB_NUMBER" id="792327F6-4E27-7279-1FAC-C536A3AB7D71">
+<createdBy>d.arboittedossantos</createdBy>
+<createdTime>2024-03-14 14:47:26 UTC</createdTime>
+<ownerDesignName>MEDS_DATA</ownerDesignName>
+</ColumnProxy>
+<ColumnProxy name="TABLE_NAME" id="939D5655-92AC-1C99-95C2-C73066995C4F">
+<createdBy>d.arboittedossantos</createdBy>
+<createdTime>2024-03-14 14:47:26 UTC</createdTime>
+<ownerDesignName>MEDS_DATA</ownerDesignName>
+</ColumnProxy>
+<ColumnProxy name="CONSTRAINT" id="F27C29AF-0D11-A630-D559-34835640CC69">
+<createdBy>d.arboittedossantos</createdBy>
+<createdTime>2024-03-14 14:47:26 UTC</createdTime>
+<ownerDesignName>MEDS_DATA</ownerDesignName>
+</ColumnProxy>
+</columnProxies>
+</TableProxyOraclev12c>

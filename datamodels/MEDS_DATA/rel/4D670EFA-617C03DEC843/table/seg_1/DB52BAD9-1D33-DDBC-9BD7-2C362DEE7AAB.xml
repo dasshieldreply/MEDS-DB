@@ -1,0 +1,170 @@
+<?xml version = '1.0' encoding = 'UTF-8'?>
+<Table class="oracle.dbtools.crest.model.design.relational.Table" directorySegmentName="seg_1" id="DB52BAD9-1D33-DDBC-9BD7-2C362DEE7AAB" schemaObject="198B7359-7E07-FB02-B07C-A0A91EE44FE7" name="INTERNAL_WAVE_OBSERVATION">
+<sourceConnName>MEDS</sourceConnName>
+<sourceObjSchema>MEDSDATA</sourceObjSchema>
+<sourceObjName>INTERNAL_WAVE_OBSERVATION</sourceObjName>
+<createdBy>darbo</createdBy>
+<createdTime>2024-02-13 17:12:15 UTC</createdTime>
+<ownerDesignName>MEDS_DATA</ownerDesignName>
+<allowColumnReorder>false</allowColumnReorder>
+<existDependencyGenerateInDDl>true</existDependencyGenerateInDDl>
+<parsed>true</parsed>
+<columns itemClass="oracle.dbtools.crest.model.design.relational.Column">
+<Column name="LATITUDE" id="3A36B179-3D06-25CD-46DA-F8A53231B60B">
+<sourceConnName>MEDS</sourceConnName>
+<sourceObjSchema>INTERNAL_WAVE_OBSERVATION</sourceObjSchema>
+<sourceObjName>LATITUDE</sourceObjName>
+<createdBy>darbo</createdBy>
+<createdTime>2024-02-13 17:12:18 UTC</createdTime>
+<ownerDesignName>MEDS_DATA</ownerDesignName>
+<nullsAllowed>true</nullsAllowed>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT019</logicalDatatype>
+<dataTypePrecision>12</dataTypePrecision>
+<dataTypeScale>6</dataTypeScale>
+<ownDataTypeParameters>,12,6</ownDataTypeParameters>
+<autoIncrementCycle>false</autoIncrementCycle>
+</Column>
+<Column name="LONGITUDE" id="D45BC79A-CA69-F190-76DA-2E2FD394A0F2">
+<sourceConnName>MEDS</sourceConnName>
+<sourceObjSchema>INTERNAL_WAVE_OBSERVATION</sourceObjSchema>
+<sourceObjName>LONGITUDE</sourceObjName>
+<createdBy>darbo</createdBy>
+<createdTime>2024-02-13 17:12:18 UTC</createdTime>
+<ownerDesignName>MEDS_DATA</ownerDesignName>
+<nullsAllowed>true</nullsAllowed>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT019</logicalDatatype>
+<dataTypePrecision>12</dataTypePrecision>
+<dataTypeScale>6</dataTypeScale>
+<ownDataTypeParameters>,12,6</ownDataTypeParameters>
+<autoIncrementCycle>false</autoIncrementCycle>
+</Column>
+<Column name="LOCATION" id="D24DE2CF-67B5-A02E-1D04-F2D5FAE7C41A">
+<sourceConnName>MEDS</sourceConnName>
+<sourceObjSchema>INTERNAL_WAVE_OBSERVATION</sourceObjSchema>
+<sourceObjName>LOCATION</sourceObjName>
+<createdBy>darbo</createdBy>
+<createdTime>2024-02-13 17:12:18 UTC</createdTime>
+<ownerDesignName>MEDS_DATA</ownerDesignName>
+<nullsAllowed>true</nullsAllowed>
+<useDomainConstraints>false</useDomainConstraints>
+<allowSubtypeSubstitution>false</allowSubtypeSubstitution>
+<use>3</use>
+<structuredType>47E390DE-0671-C4B1-8428-0F45CBEE18F8</structuredType>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
+<autoIncrementCycle>false</autoIncrementCycle>
+</Column>
+<Column name="DATABASE_IDENTIFICATION_NUMBER" id="8409531B-998C-73E3-B0E2-2134905B7AE9">
+<sourceConnName>MEDS</sourceConnName>
+<sourceObjSchema>INTERNAL_WAVE_OBSERVATION</sourceObjSchema>
+<sourceObjName>DATABASE_IDENTIFICATION_NUMBER</sourceObjName>
+<createdBy>darbo</createdBy>
+<createdTime>2024-02-13 17:12:18 UTC</createdTime>
+<ownerDesignName>MEDS_DATA</ownerDesignName>
+<nullsAllowed>true</nullsAllowed>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT024</logicalDatatype>
+<dataTypeSize>20 BYTE</dataTypeSize>
+<ownDataTypeParameters>20 BYTE,,</ownDataTypeParameters>
+<autoIncrementCycle>false</autoIncrementCycle>
+</Column>
+<Column name="MONTH" id="CB0666FC-D866-3E09-535D-305FDFEB0CF3">
+<sourceConnName>MEDS</sourceConnName>
+<sourceObjSchema>INTERNAL_WAVE_OBSERVATION</sourceObjSchema>
+<sourceObjName>MONTH</sourceObjName>
+<createdBy>darbo</createdBy>
+<createdTime>2024-02-13 17:12:18 UTC</createdTime>
+<ownerDesignName>MEDS_DATA</ownerDesignName>
+<nullsAllowed>true</nullsAllowed>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT024</logicalDatatype>
+<dataTypeSize>20 BYTE</dataTypeSize>
+<ownDataTypeParameters>20 BYTE,,</ownDataTypeParameters>
+<autoIncrementCycle>false</autoIncrementCycle>
+</Column>
+<Column name="MEDS_JOB_NUMBER" id="C6A333D7-067D-2D3A-886C-19DE2FE6672A">
+<sourceConnName>MEDS</sourceConnName>
+<sourceObjSchema>INTERNAL_WAVE_OBSERVATION</sourceObjSchema>
+<sourceObjName>MEDS_JOB_NUMBER</sourceObjName>
+<createdBy>darbo</createdBy>
+<createdTime>2024-02-13 17:12:18 UTC</createdTime>
+<ownerDesignName>MEDS_DATA</ownerDesignName>
+<nullsAllowed>true</nullsAllowed>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT019</logicalDatatype>
+<dataTypePrecision>10</dataTypePrecision>
+<dataTypeScale>0</dataTypeScale>
+<ownDataTypeParameters>,10,0</ownDataTypeParameters>
+<autoIncrementCycle>false</autoIncrementCycle>
+</Column>
+<Column name="MEDS_OBSERVATION_NUMBER" id="4A09D29B-D827-3E97-AC29-B5C347FBC3F5">
+<sourceConnName>MEDS</sourceConnName>
+<sourceObjSchema>INTERNAL_WAVE_OBSERVATION</sourceObjSchema>
+<sourceObjName>MEDS_OBSERVATION_NUMBER</sourceObjName>
+<createdBy>darbo</createdBy>
+<createdTime>2024-02-13 17:12:18 UTC</createdTime>
+<ownerDesignName>MEDS_DATA</ownerDesignName>
+<nullsAllowed>true</nullsAllowed>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT019</logicalDatatype>
+<dataTypePrecision>10</dataTypePrecision>
+<dataTypeScale>0</dataTypeScale>
+<ownDataTypeParameters>,10,0</ownDataTypeParameters>
+<autoIncrementCycle>false</autoIncrementCycle>
+</Column>
+</columns>
+<indexes itemClass="oracle.dbtools.crest.model.design.relational.Index">
+<ind_PK_UK id="C01822E7-325D-1F8A-2C2B-569EC17329D3" schemaObject="198B7359-7E07-FB02-B07C-A0A91EE44FE7" name="IDX_JOB_INTERNAL_45">
+<sourceConnName>MEDS</sourceConnName>
+<sourceObjSchema>MEDSDATA</sourceObjSchema>
+<sourceObjName>IDX_JOB_INTERNAL_45</sourceObjName>
+<createdBy>darbo</createdBy>
+<createdTime>2024-02-13 17:12:25 UTC</createdTime>
+<ownerDesignName>MEDS_DATA</ownerDesignName>
+<isSurrogateKey>false</isSurrogateKey>
+<indexColumnUsage>
+<colUsage columnID="C6A333D7-067D-2D3A-886C-19DE2FE6672A"/>
+<colUsage columnID="4A09D29B-D827-3E97-AC29-B5C347FBC3F5"/>
+</indexColumnUsage>
+</ind_PK_UK>
+<ind_PK_UK id="43219008-8D42-3C1B-7BE2-83C90E74C37D" schemaObject="198B7359-7E07-FB02-B07C-A0A91EE44FE7" name="IDX_POSN_INTERNAL_18">
+<sourceConnName>MEDS</sourceConnName>
+<sourceObjSchema>MEDSDATA</sourceObjSchema>
+<sourceObjName>IDX_POSN_INTERNAL_18</sourceObjName>
+<createdBy>darbo</createdBy>
+<createdTime>2024-02-13 17:12:25 UTC</createdTime>
+<ownerDesignName>MEDS_DATA</ownerDesignName>
+<isSurrogateKey>false</isSurrogateKey>
+<indexColumnUsage>
+<colUsage columnID="3A36B179-3D06-25CD-46DA-F8A53231B60B"/>
+<colUsage columnID="D45BC79A-CA69-F190-76DA-2E2FD394A0F2"/>
+</indexColumnUsage>
+</ind_PK_UK>
+<ind_PK_UK id="66C3AB59-4349-AA41-DC8E-2D2D936FE1BE" schemaObject="198B7359-7E07-FB02-B07C-A0A91EE44FE7" name="SI_INTERNALWAVE">
+<sourceConnName>MEDS</sourceConnName>
+<sourceObjSchema>MEDSDATA</sourceObjSchema>
+<sourceObjName>SI_INTERNALWAVE</sourceObjName>
+<createdBy>darbo</createdBy>
+<createdTime>2024-02-13 17:12:25 UTC</createdTime>
+<ownerDesignName>MEDS_DATA</ownerDesignName>
+<spatialIndex>true</spatialIndex>
+<isSurrogateKey>false</isSurrogateKey>
+<indexColumnUsage>
+<colUsage columnID="D24DE2CF-67B5-A02E-1D04-F2D5FAE7C41A"/>
+</indexColumnUsage>
+</ind_PK_UK>
+</indexes>
+<spatialDefinitions>
+<spatialColumnDefinition class="oracle.dbtools.crest.model.design.relational.SpatialColumnDefObject" name="ColumnDefinition_1" objectID="A83F0BF3-34F5-C079-A872-73E2BF823CDE">
+<function>false</function>
+<spatialIndex>66C3AB59-4349-AA41-DC8E-2D2D936FE1BE</spatialIndex>
+</spatialColumnDefinition>
+</spatialDefinitions>
+</Table>

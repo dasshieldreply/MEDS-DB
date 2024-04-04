@@ -1,0 +1,16 @@
+<?xml version = '1.0' encoding = 'UTF-8'?>
+<FKIndexAssociation class="oracle.dbtools.crest.model.design.relational.FKIndexAssociation" directorySegmentName="seg_0" id="DEAA8BBA-714E-0D9E-52DD-404EA1F9A3DA" containerWithKeyObject="69BC1AAD-3A20-A155-468B-AB9A273CB587" localFKIndex="DE6F7414-F594-5695-EDC5-B906C8888D6F" name="SERD_STG_DEPTH_LEVEL_SERD_LOV_TEMPERATURE_QUALITY_F">
+<createdBy>d.arboittedossantos</createdBy>
+<createdTime>2024-04-04 15:49:49 UTC</createdTime>
+<ownerDesignName>MEDS_SERD</ownerDesignName>
+<referredTableLongName>SERD_LOV_TEMPERATURE_QUALITY</referredTableLongName>
+<deleteRule>NO ACTION</deleteRule>
+<referredTableID>180B3D10-CD09-0AD6-C621-330D275CE960</referredTableID>
+<keyObject>9DAC5A27-57B2-BD8D-DC82-5AEADE5A807D</keyObject>
+<referredKeyID>9DAC5A27-57B2-BD8D-DC82-5AEADE5A807D</referredKeyID>
+<mandatory>true</mandatory>
+<refColNames>TEMPERATURE_QUALITY_CD</refColNames>
+<transferable>true</transferable>
+<rely>false</rely>
+<columnDependencyConstraintGenerateInDDL>true</columnDependencyConstraintGenerateInDDL>
+</FKIndexAssociation>

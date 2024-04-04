@@ -1,0 +1,70 @@
+<?xml version = '1.0' encoding = 'UTF-8'?>
+<Table class="oracle.dbtools.crest.model.design.relational.Table" directorySegmentName="seg_1" id="58328C92-1AA4-F374-1956-D3AB958E1284" schemaObject="1FA4795A-F971-A0A7-EC72-1452C492DEA9" name="MLO_COLUMNS">
+<sourceConnName>MEDS ADMIN</sourceConnName>
+<sourceObjSchema>MEDSADMIN</sourceObjSchema>
+<sourceObjName>MLO_COLUMNS</sourceObjName>
+<createdBy>d.arboittedossantos</createdBy>
+<createdTime>2024-03-15 10:19:41 UTC</createdTime>
+<ownerDesignName>MEDS_DATA</ownerDesignName>
+<allowColumnReorder>false</allowColumnReorder>
+<existDependencyGenerateInDDl>true</existDependencyGenerateInDDl>
+<parsed>true</parsed>
+<columns itemClass="oracle.dbtools.crest.model.design.relational.Column">
+<Column name="TABLE_NAME" id="E770794C-45E9-519F-4F38-AD1EE28634AE">
+<sourceConnName>MEDS ADMIN</sourceConnName>
+<sourceObjSchema>MLO_COLUMNS</sourceObjSchema>
+<sourceObjName>TABLE_NAME</sourceObjName>
+<createdBy>d.arboittedossantos</createdBy>
+<createdTime>2024-03-15 10:19:42 UTC</createdTime>
+<ownerDesignName>MEDS_DATA</ownerDesignName>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT024</logicalDatatype>
+<dataTypeSize>30 BYTE</dataTypeSize>
+<ownDataTypeParameters>30 BYTE,,</ownDataTypeParameters>
+<autoIncrementCycle>false</autoIncrementCycle>
+</Column>
+<Column name="COLUMN_NAME" id="9BB38A90-2D0B-4E12-14A9-927BF0147FE2">
+<sourceConnName>MEDS ADMIN</sourceConnName>
+<sourceObjSchema>MLO_COLUMNS</sourceObjSchema>
+<sourceObjName>COLUMN_NAME</sourceObjName>
+<createdBy>d.arboittedossantos</createdBy>
+<createdTime>2024-03-15 10:19:42 UTC</createdTime>
+<ownerDesignName>MEDS_DATA</ownerDesignName>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT024</logicalDatatype>
+<dataTypeSize>30 BYTE</dataTypeSize>
+<ownDataTypeParameters>30 BYTE,,</ownDataTypeParameters>
+<autoIncrementCycle>false</autoIncrementCycle>
+</Column>
+<Column name="EDIT_ORDER" id="5D65CA50-C080-1F1C-21F8-239C3226519D">
+<sourceConnName>MEDS ADMIN</sourceConnName>
+<sourceObjSchema>MLO_COLUMNS</sourceObjSchema>
+<sourceObjName>EDIT_ORDER</sourceObjName>
+<createdBy>d.arboittedossantos</createdBy>
+<createdTime>2024-03-15 10:19:42 UTC</createdTime>
+<ownerDesignName>MEDS_DATA</ownerDesignName>
+<nullsAllowed>true</nullsAllowed>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT019</logicalDatatype>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
+<autoIncrementCycle>false</autoIncrementCycle>
+</Column>
+<Column name="MANDATORY" id="7B668A15-E69A-CF43-4BAE-0EFE908A020D">
+<sourceConnName>MEDS ADMIN</sourceConnName>
+<sourceObjSchema>MLO_COLUMNS</sourceObjSchema>
+<sourceObjName>MANDATORY</sourceObjName>
+<createdBy>d.arboittedossantos</createdBy>
+<createdTime>2024-03-15 10:19:42 UTC</createdTime>
+<ownerDesignName>MEDS_DATA</ownerDesignName>
+<nullsAllowed>true</nullsAllowed>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT019</logicalDatatype>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
+<autoIncrementCycle>false</autoIncrementCycle>
+</Column>
+</columns>
+</Table>

@@ -1,0 +1,345 @@
+<?xml version = '1.0' encoding = 'UTF-8'?>
+<Table class="oracle.dbtools.crest.model.design.relational.Table" directorySegmentName="seg_2" id="0856E704-89D9-D014-E16D-1D586BE34538" schemaObject="FD77D69E-489C-FEFD-81EE-34209F1C13AA" name="REPRES_PROFILE_L2_MAY">
+<sourceConnName>MEDS ADMIN</sourceConnName>
+<sourceObjSchema>MEDSADMIN</sourceObjSchema>
+<sourceObjName>REPRES_PROFILE_L2_MAY</sourceObjName>
+<createdBy>d.arboittedossantos</createdBy>
+<createdTime>2024-03-14 14:47:25 UTC</createdTime>
+<ownerDesignName>MEDS_DATA</ownerDesignName>
+<allowColumnReorder>false</allowColumnReorder>
+<existDependencyGenerateInDDl>true</existDependencyGenerateInDDl>
+<parsed>true</parsed>
+<columns itemClass="oracle.dbtools.crest.model.design.relational.Column">
+<Column name="GRID_INDEX" id="C276FCED-5AD3-8F2D-C125-7382404FBD94">
+<sourceConnName>MEDS ADMIN</sourceConnName>
+<sourceObjSchema>REPRES_PROFILE_L2_MAY</sourceObjSchema>
+<sourceObjName>GRID_INDEX</sourceObjName>
+<createdBy>d.arboittedossantos</createdBy>
+<createdTime>2024-03-14 14:47:26 UTC</createdTime>
+<ownerDesignName>MEDS_DATA</ownerDesignName>
+<nullsAllowed>true</nullsAllowed>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT019</logicalDatatype>
+<dataTypePrecision>8</dataTypePrecision>
+<dataTypeScale>0</dataTypeScale>
+<ownDataTypeParameters>,8,0</ownDataTypeParameters>
+<autoIncrementCycle>false</autoIncrementCycle>
+</Column>
+<Column name="DEPTH" id="279D22A9-03A0-0384-44E0-3136BE7118AC">
+<sourceConnName>MEDS ADMIN</sourceConnName>
+<sourceObjSchema>REPRES_PROFILE_L2_MAY</sourceObjSchema>
+<sourceObjName>DEPTH</sourceObjName>
+<createdBy>d.arboittedossantos</createdBy>
+<createdTime>2024-03-14 14:47:26 UTC</createdTime>
+<ownerDesignName>MEDS_DATA</ownerDesignName>
+<nullsAllowed>true</nullsAllowed>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT019</logicalDatatype>
+<dataTypePrecision>10</dataTypePrecision>
+<dataTypeScale>3</dataTypeScale>
+<ownDataTypeParameters>,10,3</ownDataTypeParameters>
+<autoIncrementCycle>false</autoIncrementCycle>
+</Column>
+<Column name="TEMPERATURE" id="1E8B5864-3A4E-E81E-E990-CD85C89C1A13">
+<sourceConnName>MEDS ADMIN</sourceConnName>
+<sourceObjSchema>REPRES_PROFILE_L2_MAY</sourceObjSchema>
+<sourceObjName>TEMPERATURE</sourceObjName>
+<createdBy>d.arboittedossantos</createdBy>
+<createdTime>2024-03-14 14:47:26 UTC</createdTime>
+<ownerDesignName>MEDS_DATA</ownerDesignName>
+<nullsAllowed>true</nullsAllowed>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT019</logicalDatatype>
+<dataTypePrecision>10</dataTypePrecision>
+<dataTypeScale>3</dataTypeScale>
+<ownDataTypeParameters>,10,3</ownDataTypeParameters>
+<autoIncrementCycle>false</autoIncrementCycle>
+</Column>
+<Column name="SALINITY" id="9235CB8D-94B8-4113-41B6-ACCC4BB449EC">
+<sourceConnName>MEDS ADMIN</sourceConnName>
+<sourceObjSchema>REPRES_PROFILE_L2_MAY</sourceObjSchema>
+<sourceObjName>SALINITY</sourceObjName>
+<createdBy>d.arboittedossantos</createdBy>
+<createdTime>2024-03-14 14:47:26 UTC</createdTime>
+<ownerDesignName>MEDS_DATA</ownerDesignName>
+<nullsAllowed>true</nullsAllowed>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT019</logicalDatatype>
+<dataTypePrecision>10</dataTypePrecision>
+<dataTypeScale>3</dataTypeScale>
+<ownDataTypeParameters>,10,3</ownDataTypeParameters>
+<autoIncrementCycle>false</autoIncrementCycle>
+</Column>
+<Column name="SOUND_SPEED" id="8644B07A-181B-3FA7-479F-800416FADB70">
+<sourceConnName>MEDS ADMIN</sourceConnName>
+<sourceObjSchema>REPRES_PROFILE_L2_MAY</sourceObjSchema>
+<sourceObjName>SOUND_SPEED</sourceObjName>
+<createdBy>d.arboittedossantos</createdBy>
+<createdTime>2024-03-14 14:47:26 UTC</createdTime>
+<ownerDesignName>MEDS_DATA</ownerDesignName>
+<nullsAllowed>true</nullsAllowed>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT019</logicalDatatype>
+<dataTypePrecision>10</dataTypePrecision>
+<dataTypeScale>3</dataTypeScale>
+<ownDataTypeParameters>,10,3</ownDataTypeParameters>
+<autoIncrementCycle>false</autoIncrementCycle>
+</Column>
+<Column name="SIGMA_T" id="D32AB1A3-8DFA-6584-424C-F084980F13E5">
+<sourceConnName>MEDS ADMIN</sourceConnName>
+<sourceObjSchema>REPRES_PROFILE_L2_MAY</sourceObjSchema>
+<sourceObjName>SIGMA_T</sourceObjName>
+<createdBy>d.arboittedossantos</createdBy>
+<createdTime>2024-03-14 14:47:26 UTC</createdTime>
+<ownerDesignName>MEDS_DATA</ownerDesignName>
+<nullsAllowed>true</nullsAllowed>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT019</logicalDatatype>
+<dataTypePrecision>10</dataTypePrecision>
+<dataTypeScale>3</dataTypeScale>
+<ownDataTypeParameters>,10,3</ownDataTypeParameters>
+<autoIncrementCycle>false</autoIncrementCycle>
+</Column>
+<Column name="LH_SALINITY" id="B2C10E88-D708-9052-1846-718A9DF74941">
+<sourceConnName>MEDS ADMIN</sourceConnName>
+<sourceObjSchema>REPRES_PROFILE_L2_MAY</sourceObjSchema>
+<sourceObjName>LH_SALINITY</sourceObjName>
+<createdBy>d.arboittedossantos</createdBy>
+<createdTime>2024-03-14 14:47:26 UTC</createdTime>
+<ownerDesignName>MEDS_DATA</ownerDesignName>
+<nullsAllowed>true</nullsAllowed>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT019</logicalDatatype>
+<dataTypePrecision>10</dataTypePrecision>
+<dataTypeScale>3</dataTypeScale>
+<ownDataTypeParameters>,10,3</ownDataTypeParameters>
+<autoIncrementCycle>false</autoIncrementCycle>
+</Column>
+<Column name="RH_SALINITY" id="B77383A2-E831-516B-1E35-E8EC2965F31E">
+<sourceConnName>MEDS ADMIN</sourceConnName>
+<sourceObjSchema>REPRES_PROFILE_L2_MAY</sourceObjSchema>
+<sourceObjName>RH_SALINITY</sourceObjName>
+<createdBy>d.arboittedossantos</createdBy>
+<createdTime>2024-03-14 14:47:26 UTC</createdTime>
+<ownerDesignName>MEDS_DATA</ownerDesignName>
+<nullsAllowed>true</nullsAllowed>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT019</logicalDatatype>
+<dataTypePrecision>10</dataTypePrecision>
+<dataTypeScale>3</dataTypeScale>
+<ownDataTypeParameters>,10,3</ownDataTypeParameters>
+<autoIncrementCycle>false</autoIncrementCycle>
+</Column>
+<Column name="LH_TEMPERATURE" id="C2EEC165-82D2-555A-67CD-D602C8996AD5">
+<sourceConnName>MEDS ADMIN</sourceConnName>
+<sourceObjSchema>REPRES_PROFILE_L2_MAY</sourceObjSchema>
+<sourceObjName>LH_TEMPERATURE</sourceObjName>
+<createdBy>d.arboittedossantos</createdBy>
+<createdTime>2024-03-14 14:47:26 UTC</createdTime>
+<ownerDesignName>MEDS_DATA</ownerDesignName>
+<nullsAllowed>true</nullsAllowed>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT019</logicalDatatype>
+<dataTypePrecision>10</dataTypePrecision>
+<dataTypeScale>3</dataTypeScale>
+<ownDataTypeParameters>,10,3</ownDataTypeParameters>
+<autoIncrementCycle>false</autoIncrementCycle>
+</Column>
+<Column name="RH_TEMPERATURE" id="187A4DED-92DB-36CE-5E9B-C3E473E39265">
+<sourceConnName>MEDS ADMIN</sourceConnName>
+<sourceObjSchema>REPRES_PROFILE_L2_MAY</sourceObjSchema>
+<sourceObjName>RH_TEMPERATURE</sourceObjName>
+<createdBy>d.arboittedossantos</createdBy>
+<createdTime>2024-03-14 14:47:26 UTC</createdTime>
+<ownerDesignName>MEDS_DATA</ownerDesignName>
+<nullsAllowed>true</nullsAllowed>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT019</logicalDatatype>
+<dataTypePrecision>10</dataTypePrecision>
+<dataTypeScale>3</dataTypeScale>
+<ownDataTypeParameters>,10,3</ownDataTypeParameters>
+<autoIncrementCycle>false</autoIncrementCycle>
+</Column>
+<Column name="RH_SIGMA_T" id="4B776E70-235F-68C4-FF00-9DC21940913C">
+<sourceConnName>MEDS ADMIN</sourceConnName>
+<sourceObjSchema>REPRES_PROFILE_L2_MAY</sourceObjSchema>
+<sourceObjName>RH_SIGMA_T</sourceObjName>
+<createdBy>d.arboittedossantos</createdBy>
+<createdTime>2024-03-14 14:47:26 UTC</createdTime>
+<ownerDesignName>MEDS_DATA</ownerDesignName>
+<nullsAllowed>true</nullsAllowed>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT019</logicalDatatype>
+<dataTypePrecision>10</dataTypePrecision>
+<dataTypeScale>3</dataTypeScale>
+<ownDataTypeParameters>,10,3</ownDataTypeParameters>
+<autoIncrementCycle>false</autoIncrementCycle>
+</Column>
+<Column name="LH_SIGMA_T" id="6125DB28-9EF8-BD86-7014-7BDF19D5CA07">
+<sourceConnName>MEDS ADMIN</sourceConnName>
+<sourceObjSchema>REPRES_PROFILE_L2_MAY</sourceObjSchema>
+<sourceObjName>LH_SIGMA_T</sourceObjName>
+<createdBy>d.arboittedossantos</createdBy>
+<createdTime>2024-03-14 14:47:26 UTC</createdTime>
+<ownerDesignName>MEDS_DATA</ownerDesignName>
+<nullsAllowed>true</nullsAllowed>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT019</logicalDatatype>
+<dataTypePrecision>10</dataTypePrecision>
+<dataTypeScale>3</dataTypeScale>
+<ownDataTypeParameters>,10,3</ownDataTypeParameters>
+<autoIncrementCycle>false</autoIncrementCycle>
+</Column>
+<Column name="RH_SOUND_SPEED" id="B6E674C9-2BA0-C8B4-2ED3-8CA99FCBD29F">
+<sourceConnName>MEDS ADMIN</sourceConnName>
+<sourceObjSchema>REPRES_PROFILE_L2_MAY</sourceObjSchema>
+<sourceObjName>RH_SOUND_SPEED</sourceObjName>
+<createdBy>d.arboittedossantos</createdBy>
+<createdTime>2024-03-14 14:47:26 UTC</createdTime>
+<ownerDesignName>MEDS_DATA</ownerDesignName>
+<nullsAllowed>true</nullsAllowed>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT019</logicalDatatype>
+<dataTypePrecision>10</dataTypePrecision>
+<dataTypeScale>3</dataTypeScale>
+<ownDataTypeParameters>,10,3</ownDataTypeParameters>
+<autoIncrementCycle>false</autoIncrementCycle>
+</Column>
+<Column name="LH_SOUND_SPEED" id="3C43BE1D-0350-F8F0-E21C-62A8EE004629">
+<sourceConnName>MEDS ADMIN</sourceConnName>
+<sourceObjSchema>REPRES_PROFILE_L2_MAY</sourceObjSchema>
+<sourceObjName>LH_SOUND_SPEED</sourceObjName>
+<createdBy>d.arboittedossantos</createdBy>
+<createdTime>2024-03-14 14:47:26 UTC</createdTime>
+<ownerDesignName>MEDS_DATA</ownerDesignName>
+<nullsAllowed>true</nullsAllowed>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT019</logicalDatatype>
+<dataTypePrecision>10</dataTypePrecision>
+<dataTypeScale>3</dataTypeScale>
+<ownDataTypeParameters>,10,3</ownDataTypeParameters>
+<autoIncrementCycle>false</autoIncrementCycle>
+</Column>
+<Column name="LATITUDE" id="6F47B5A7-5143-6187-BA44-3720576E45E9">
+<sourceConnName>MEDS ADMIN</sourceConnName>
+<sourceObjSchema>REPRES_PROFILE_L2_MAY</sourceObjSchema>
+<sourceObjName>LATITUDE</sourceObjName>
+<createdBy>d.arboittedossantos</createdBy>
+<createdTime>2024-03-14 14:47:26 UTC</createdTime>
+<ownerDesignName>MEDS_DATA</ownerDesignName>
+<nullsAllowed>true</nullsAllowed>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT019</logicalDatatype>
+<dataTypePrecision>12</dataTypePrecision>
+<dataTypeScale>3</dataTypeScale>
+<ownDataTypeParameters>,12,3</ownDataTypeParameters>
+<autoIncrementCycle>false</autoIncrementCycle>
+</Column>
+<Column name="LONGITUDE" id="28431739-4CB4-3B8E-F106-3BA16A3D54E3">
+<sourceConnName>MEDS ADMIN</sourceConnName>
+<sourceObjSchema>REPRES_PROFILE_L2_MAY</sourceObjSchema>
+<sourceObjName>LONGITUDE</sourceObjName>
+<createdBy>d.arboittedossantos</createdBy>
+<createdTime>2024-03-14 14:47:26 UTC</createdTime>
+<ownerDesignName>MEDS_DATA</ownerDesignName>
+<nullsAllowed>true</nullsAllowed>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT019</logicalDatatype>
+<dataTypePrecision>12</dataTypePrecision>
+<dataTypeScale>3</dataTypeScale>
+<ownDataTypeParameters>,12,3</ownDataTypeParameters>
+<autoIncrementCycle>false</autoIncrementCycle>
+</Column>
+<Column name="DATATYPE" id="2FA27DA6-A3A1-225E-9145-F1DCF56CB5D9">
+<sourceConnName>MEDS ADMIN</sourceConnName>
+<sourceObjSchema>REPRES_PROFILE_L2_MAY</sourceObjSchema>
+<sourceObjName>DATATYPE</sourceObjName>
+<createdBy>d.arboittedossantos</createdBy>
+<createdTime>2024-03-14 14:47:26 UTC</createdTime>
+<ownerDesignName>MEDS_DATA</ownerDesignName>
+<nullsAllowed>true</nullsAllowed>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT024</logicalDatatype>
+<dataTypeSize>20 BYTE</dataTypeSize>
+<defaultValue>&apos;GENERIC&apos;</defaultValue>
+<ownDataTypeParameters>20 BYTE,,</ownDataTypeParameters>
+<autoIncrementCycle>false</autoIncrementCycle>
+</Column>
+<Column name="TEMP_STDEV" id="3DBFC222-7387-CD98-A299-6E87D1E7CFE5">
+<sourceConnName>MEDS ADMIN</sourceConnName>
+<sourceObjSchema>REPRES_PROFILE_L2_MAY</sourceObjSchema>
+<sourceObjName>TEMP_STDEV</sourceObjName>
+<createdBy>d.arboittedossantos</createdBy>
+<createdTime>2024-03-14 14:47:26 UTC</createdTime>
+<ownerDesignName>MEDS_DATA</ownerDesignName>
+<nullsAllowed>true</nullsAllowed>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT019</logicalDatatype>
+<dataTypePrecision>10</dataTypePrecision>
+<dataTypeScale>3</dataTypeScale>
+<ownDataTypeParameters>,10,3</ownDataTypeParameters>
+<autoIncrementCycle>false</autoIncrementCycle>
+</Column>
+<Column name="SALINITY_STDEV" id="10DBBE4F-2690-5F65-26CC-7B85018FD40F">
+<sourceConnName>MEDS ADMIN</sourceConnName>
+<sourceObjSchema>REPRES_PROFILE_L2_MAY</sourceObjSchema>
+<sourceObjName>SALINITY_STDEV</sourceObjName>
+<createdBy>d.arboittedossantos</createdBy>
+<createdTime>2024-03-14 14:47:26 UTC</createdTime>
+<ownerDesignName>MEDS_DATA</ownerDesignName>
+<nullsAllowed>true</nullsAllowed>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT019</logicalDatatype>
+<dataTypePrecision>10</dataTypePrecision>
+<dataTypeScale>3</dataTypeScale>
+<ownDataTypeParameters>,10,3</ownDataTypeParameters>
+<autoIncrementCycle>false</autoIncrementCycle>
+</Column>
+</columns>
+<indexes itemClass="oracle.dbtools.crest.model.design.relational.Index">
+<ind_PK_UK id="A10D949C-64E3-C199-F379-B17C8907ACE0" schemaObject="FD77D69E-489C-FEFD-81EE-34209F1C13AA" name="IDX_PROFILEL2MAY_LATLON">
+<sourceConnName>MEDS ADMIN</sourceConnName>
+<sourceObjSchema>MEDSADMIN</sourceObjSchema>
+<sourceObjName>IDX_PROFILEL2MAY_LATLON</sourceObjName>
+<createdBy>d.arboittedossantos</createdBy>
+<createdTime>2024-03-14 14:47:29 UTC</createdTime>
+<ownerDesignName>MEDS_DATA</ownerDesignName>
+<isSurrogateKey>false</isSurrogateKey>
+<indexColumnUsage>
+<colUsage columnID="6F47B5A7-5143-6187-BA44-3720576E45E9"/>
+<colUsage columnID="28431739-4CB4-3B8E-F106-3BA16A3D54E3"/>
+</indexColumnUsage>
+</ind_PK_UK>
+<ind_PK_UK id="F84B0165-A9A6-5C76-F193-5334DE5595F6" schemaObject="FD77D69E-489C-FEFD-81EE-34209F1C13AA" name="IDX_REPPROFILEL2_MAY">
+<sourceConnName>MEDS ADMIN</sourceConnName>
+<sourceObjSchema>MEDSADMIN</sourceObjSchema>
+<sourceObjName>IDX_REPPROFILEL2_MAY</sourceObjName>
+<createdBy>d.arboittedossantos</createdBy>
+<createdTime>2024-03-14 14:47:29 UTC</createdTime>
+<ownerDesignName>MEDS_DATA</ownerDesignName>
+<isSurrogateKey>false</isSurrogateKey>
+<indexColumnUsage>
+<colUsage columnID="C276FCED-5AD3-8F2D-C125-7382404FBD94"/>
+</indexColumnUsage>
+</ind_PK_UK>
+</indexes>
+</Table>

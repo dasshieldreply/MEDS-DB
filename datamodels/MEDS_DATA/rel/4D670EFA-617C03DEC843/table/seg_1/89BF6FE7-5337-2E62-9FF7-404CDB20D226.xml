@@ -1,0 +1,41 @@
+<?xml version = '1.0' encoding = 'UTF-8'?>
+<Table class="oracle.dbtools.crest.model.design.relational.Table" directorySegmentName="seg_1" id="89BF6FE7-5337-2E62-9FF7-404CDB20D226" schemaObject="198B7359-7E07-FB02-B07C-A0A91EE44FE7" name="MEDS_ERRORS">
+<sourceConnName>MEDS</sourceConnName>
+<sourceObjSchema>MEDSDATA</sourceObjSchema>
+<sourceObjName>MEDS_ERRORS</sourceObjName>
+<createdBy>darbo</createdBy>
+<createdTime>2024-02-13 17:12:17 UTC</createdTime>
+<ownerDesignName>MEDS_DATA</ownerDesignName>
+<allowColumnReorder>false</allowColumnReorder>
+<existDependencyGenerateInDDl>true</existDependencyGenerateInDDl>
+<parsed>true</parsed>
+<columns itemClass="oracle.dbtools.crest.model.design.relational.Column">
+<Column name="MEDS_ERROR_TYPE" id="3DA531EC-0261-2082-F43E-836791A29FB6">
+<sourceConnName>MEDS</sourceConnName>
+<sourceObjSchema>MEDS_ERRORS</sourceObjSchema>
+<sourceObjName>MEDS_ERROR_TYPE</sourceObjName>
+<createdBy>darbo</createdBy>
+<createdTime>2024-02-13 17:12:18 UTC</createdTime>
+<ownerDesignName>MEDS_DATA</ownerDesignName>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT019</logicalDatatype>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
+<autoIncrementCycle>false</autoIncrementCycle>
+</Column>
+<Column name="ERROR_DESCRIPTION" id="900FC650-8538-9DE9-C431-A17C57FBCAC2">
+<sourceConnName>MEDS</sourceConnName>
+<sourceObjSchema>MEDS_ERRORS</sourceObjSchema>
+<sourceObjName>ERROR_DESCRIPTION</sourceObjName>
+<createdBy>darbo</createdBy>
+<createdTime>2024-02-13 17:12:18 UTC</createdTime>
+<ownerDesignName>MEDS_DATA</ownerDesignName>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT024</logicalDatatype>
+<dataTypeSize>64 BYTE</dataTypeSize>
+<ownDataTypeParameters>64 BYTE,,</ownDataTypeParameters>
+<autoIncrementCycle>false</autoIncrementCycle>
+</Column>
+</columns>
+</Table>

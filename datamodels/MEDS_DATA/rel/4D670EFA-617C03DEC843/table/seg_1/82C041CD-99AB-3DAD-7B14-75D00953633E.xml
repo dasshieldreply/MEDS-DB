@@ -1,0 +1,313 @@
+<?xml version = '1.0' encoding = 'UTF-8'?>
+<Table class="oracle.dbtools.crest.model.design.relational.Table" directorySegmentName="seg_1" id="82C041CD-99AB-3DAD-7B14-75D00953633E" schemaObject="198B7359-7E07-FB02-B07C-A0A91EE44FE7" name="MEDS_FLAGS">
+<sourceConnName>MEDS</sourceConnName>
+<sourceObjSchema>MEDSDATA</sourceObjSchema>
+<sourceObjName>MEDS_FLAGS</sourceObjName>
+<createdBy>darbo</createdBy>
+<createdTime>2024-02-13 17:12:15 UTC</createdTime>
+<ownerDesignName>MEDS_DATA</ownerDesignName>
+<allowColumnReorder>false</allowColumnReorder>
+<existDependencyGenerateInDDl>true</existDependencyGenerateInDDl>
+<parsed>true</parsed>
+<columns itemClass="oracle.dbtools.crest.model.design.relational.Column">
+<Column name="FLAG_STATUS" id="0B4AAAF4-82D8-E59A-6D63-EAE21C9A39AA">
+<sourceConnName>MEDS</sourceConnName>
+<sourceObjSchema>MEDS_FLAGS</sourceObjSchema>
+<sourceObjName>FLAG_STATUS</sourceObjName>
+<createdBy>darbo</createdBy>
+<createdTime>2024-02-13 17:12:18 UTC</createdTime>
+<ownerDesignName>MEDS_DATA</ownerDesignName>
+<nullsAllowed>true</nullsAllowed>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT019</logicalDatatype>
+<dataTypePrecision>1</dataTypePrecision>
+<dataTypeScale>0</dataTypeScale>
+<ownDataTypeParameters>,1,0</ownDataTypeParameters>
+<autoIncrementCycle>false</autoIncrementCycle>
+</Column>
+<Column name="AUTHOR" id="1830EA86-086A-165E-450B-A98A7A1DA6DC">
+<sourceConnName>MEDS</sourceConnName>
+<sourceObjSchema>MEDS_FLAGS</sourceObjSchema>
+<sourceObjName>AUTHOR</sourceObjName>
+<createdBy>darbo</createdBy>
+<createdTime>2024-02-13 17:12:18 UTC</createdTime>
+<ownerDesignName>MEDS_DATA</ownerDesignName>
+<nullsAllowed>true</nullsAllowed>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT024</logicalDatatype>
+<dataTypeSize>100 BYTE</dataTypeSize>
+<ownDataTypeParameters>100 BYTE,,</ownDataTypeParameters>
+<autoIncrementCycle>false</autoIncrementCycle>
+</Column>
+<Column name="DATE_ENTERED" id="5A09031D-F419-A916-6A5E-E9F9E93BA104">
+<sourceConnName>MEDS</sourceConnName>
+<sourceObjSchema>MEDS_FLAGS</sourceObjSchema>
+<sourceObjName>DATE_ENTERED</sourceObjName>
+<createdBy>darbo</createdBy>
+<createdTime>2024-02-13 17:12:18 UTC</createdTime>
+<ownerDesignName>MEDS_DATA</ownerDesignName>
+<nullsAllowed>true</nullsAllowed>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT007</logicalDatatype>
+<dataTypeSize>7</dataTypeSize>
+<ownDataTypeParameters>7,,</ownDataTypeParameters>
+<autoIncrementCycle>false</autoIncrementCycle>
+</Column>
+<Column name="COMMENTS" id="36603A84-0F1B-8213-AA19-729433A7381A">
+<sourceConnName>MEDS</sourceConnName>
+<sourceObjSchema>MEDS_FLAGS</sourceObjSchema>
+<sourceObjName>COMMENTS</sourceObjName>
+<createdBy>darbo</createdBy>
+<createdTime>2024-02-13 17:12:18 UTC</createdTime>
+<ownerDesignName>MEDS_DATA</ownerDesignName>
+<nullsAllowed>true</nullsAllowed>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT024</logicalDatatype>
+<dataTypeSize>500 BYTE</dataTypeSize>
+<ownDataTypeParameters>500 BYTE,,</ownDataTypeParameters>
+<autoIncrementCycle>false</autoIncrementCycle>
+</Column>
+<Column name="CATEGORY" id="DAFBEDF6-3BA9-2206-4193-42ED6AFD74B5">
+<sourceConnName>MEDS</sourceConnName>
+<sourceObjSchema>MEDS_FLAGS</sourceObjSchema>
+<sourceObjName>CATEGORY</sourceObjName>
+<createdBy>darbo</createdBy>
+<createdTime>2024-02-13 17:12:18 UTC</createdTime>
+<ownerDesignName>MEDS_DATA</ownerDesignName>
+<nullsAllowed>true</nullsAllowed>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT024</logicalDatatype>
+<dataTypeSize>20 BYTE</dataTypeSize>
+<ownDataTypeParameters>20 BYTE,,</ownDataTypeParameters>
+<autoIncrementCycle>false</autoIncrementCycle>
+</Column>
+<Column name="DATA_TYPE" id="AF85E611-7010-10D8-BDC2-DFA6E4FEB93C">
+<sourceConnName>MEDS</sourceConnName>
+<sourceObjSchema>MEDS_FLAGS</sourceObjSchema>
+<sourceObjName>DATA_TYPE</sourceObjName>
+<createdBy>darbo</createdBy>
+<createdTime>2024-02-13 17:12:18 UTC</createdTime>
+<ownerDesignName>MEDS_DATA</ownerDesignName>
+<nullsAllowed>true</nullsAllowed>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT024</logicalDatatype>
+<dataTypeSize>50 BYTE</dataTypeSize>
+<ownDataTypeParameters>50 BYTE,,</ownDataTypeParameters>
+<autoIncrementCycle>false</autoIncrementCycle>
+</Column>
+<Column name="MEDS_JOB_NUMBER" id="7DD93427-E0F1-7B01-E935-72103B6DFD2E">
+<sourceConnName>MEDS</sourceConnName>
+<sourceObjSchema>MEDS_FLAGS</sourceObjSchema>
+<sourceObjName>MEDS_JOB_NUMBER</sourceObjName>
+<createdBy>darbo</createdBy>
+<createdTime>2024-02-13 17:12:18 UTC</createdTime>
+<ownerDesignName>MEDS_DATA</ownerDesignName>
+<nullsAllowed>true</nullsAllowed>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT019</logicalDatatype>
+<dataTypePrecision>10</dataTypePrecision>
+<dataTypeScale>0</dataTypeScale>
+<ownDataTypeParameters>,10,0</ownDataTypeParameters>
+<autoIncrementCycle>false</autoIncrementCycle>
+</Column>
+<Column name="MEDS_OBSERVATION_NUMBER" id="242DC02F-AE42-48E2-3453-8602CCE3BB11">
+<sourceConnName>MEDS</sourceConnName>
+<sourceObjSchema>MEDS_FLAGS</sourceObjSchema>
+<sourceObjName>MEDS_OBSERVATION_NUMBER</sourceObjName>
+<createdBy>darbo</createdBy>
+<createdTime>2024-02-13 17:12:18 UTC</createdTime>
+<ownerDesignName>MEDS_DATA</ownerDesignName>
+<nullsAllowed>true</nullsAllowed>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT019</logicalDatatype>
+<dataTypePrecision>10</dataTypePrecision>
+<dataTypeScale>0</dataTypeScale>
+<ownDataTypeParameters>,10,0</ownDataTypeParameters>
+<autoIncrementCycle>false</autoIncrementCycle>
+</Column>
+<Column name="GRID_INDEX" id="ECABC7C2-EBD1-1EC6-C49F-DAD29CD8E89F">
+<sourceConnName>MEDS</sourceConnName>
+<sourceObjSchema>MEDS_FLAGS</sourceObjSchema>
+<sourceObjName>GRID_INDEX</sourceObjName>
+<createdBy>darbo</createdBy>
+<createdTime>2024-02-13 17:12:18 UTC</createdTime>
+<ownerDesignName>MEDS_DATA</ownerDesignName>
+<nullsAllowed>true</nullsAllowed>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT019</logicalDatatype>
+<dataTypePrecision>10</dataTypePrecision>
+<dataTypeScale>0</dataTypeScale>
+<ownDataTypeParameters>,10,0</ownDataTypeParameters>
+<autoIncrementCycle>false</autoIncrementCycle>
+</Column>
+<Column name="GRID_RESOLUTION" id="D66272A6-A45D-C97A-F87A-9B70140346C0">
+<sourceConnName>MEDS</sourceConnName>
+<sourceObjSchema>MEDS_FLAGS</sourceObjSchema>
+<sourceObjName>GRID_RESOLUTION</sourceObjName>
+<createdBy>darbo</createdBy>
+<createdTime>2024-02-13 17:12:18 UTC</createdTime>
+<ownerDesignName>MEDS_DATA</ownerDesignName>
+<nullsAllowed>true</nullsAllowed>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT019</logicalDatatype>
+<dataTypePrecision>2</dataTypePrecision>
+<dataTypeScale>0</dataTypeScale>
+<ownDataTypeParameters>,2,0</ownDataTypeParameters>
+<autoIncrementCycle>false</autoIncrementCycle>
+</Column>
+<Column name="GRID_TYPE" id="49AA840F-AA53-E891-1C1E-368FE13FF1BE">
+<sourceConnName>MEDS</sourceConnName>
+<sourceObjSchema>MEDS_FLAGS</sourceObjSchema>
+<sourceObjName>GRID_TYPE</sourceObjName>
+<createdBy>darbo</createdBy>
+<createdTime>2024-02-13 17:12:18 UTC</createdTime>
+<ownerDesignName>MEDS_DATA</ownerDesignName>
+<nullsAllowed>true</nullsAllowed>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT024</logicalDatatype>
+<dataTypeSize>1 BYTE</dataTypeSize>
+<ownDataTypeParameters>1 BYTE,,</ownDataTypeParameters>
+<autoIncrementCycle>false</autoIncrementCycle>
+</Column>
+<Column name="GRID_TEMPORAL" id="40D2F2A5-941A-F099-7B52-8985A21B0DBB">
+<sourceConnName>MEDS</sourceConnName>
+<sourceObjSchema>MEDS_FLAGS</sourceObjSchema>
+<sourceObjName>GRID_TEMPORAL</sourceObjName>
+<createdBy>darbo</createdBy>
+<createdTime>2024-02-13 17:12:18 UTC</createdTime>
+<ownerDesignName>MEDS_DATA</ownerDesignName>
+<nullsAllowed>true</nullsAllowed>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT024</logicalDatatype>
+<dataTypeSize>10 BYTE</dataTypeSize>
+<ownDataTypeParameters>10 BYTE,,</ownDataTypeParameters>
+<autoIncrementCycle>false</autoIncrementCycle>
+</Column>
+<Column name="FLAGS_INDEX" id="E73243DC-811E-BA4C-E52B-BE82C8DEB09D">
+<sourceConnName>MEDS</sourceConnName>
+<sourceObjSchema>MEDS_FLAGS</sourceObjSchema>
+<sourceObjName>FLAGS_INDEX</sourceObjName>
+<createdBy>darbo</createdBy>
+<createdTime>2024-02-13 17:12:18 UTC</createdTime>
+<ownerDesignName>MEDS_DATA</ownerDesignName>
+<nullsAllowed>true</nullsAllowed>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT019</logicalDatatype>
+<dataTypePrecision>10</dataTypePrecision>
+<dataTypeScale>0</dataTypeScale>
+<ownDataTypeParameters>,10,0</ownDataTypeParameters>
+<autoIncrementCycle>false</autoIncrementCycle>
+</Column>
+<Column name="LATITUDE" id="8BC83BC3-6C50-EEFB-4F48-37563D41A2D1">
+<sourceConnName>MEDS</sourceConnName>
+<sourceObjSchema>MEDS_FLAGS</sourceObjSchema>
+<sourceObjName>LATITUDE</sourceObjName>
+<createdBy>darbo</createdBy>
+<createdTime>2024-02-13 17:12:18 UTC</createdTime>
+<ownerDesignName>MEDS_DATA</ownerDesignName>
+<nullsAllowed>true</nullsAllowed>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT019</logicalDatatype>
+<dataTypePrecision>12</dataTypePrecision>
+<dataTypeScale>6</dataTypeScale>
+<ownDataTypeParameters>,12,6</ownDataTypeParameters>
+<autoIncrementCycle>false</autoIncrementCycle>
+</Column>
+<Column name="LONGITUDE" id="A13CBBD2-3CDA-D386-1443-FAFD3B80159F">
+<sourceConnName>MEDS</sourceConnName>
+<sourceObjSchema>MEDS_FLAGS</sourceObjSchema>
+<sourceObjName>LONGITUDE</sourceObjName>
+<createdBy>darbo</createdBy>
+<createdTime>2024-02-13 17:12:18 UTC</createdTime>
+<ownerDesignName>MEDS_DATA</ownerDesignName>
+<nullsAllowed>true</nullsAllowed>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT019</logicalDatatype>
+<dataTypePrecision>12</dataTypePrecision>
+<dataTypeScale>6</dataTypeScale>
+<ownDataTypeParameters>,12,6</ownDataTypeParameters>
+<autoIncrementCycle>false</autoIncrementCycle>
+</Column>
+<Column name="FLAG_VALUE" id="CA02889B-519A-DAD4-2FD0-34AA3076F5B8">
+<sourceConnName>MEDS</sourceConnName>
+<sourceObjSchema>MEDS_FLAGS</sourceObjSchema>
+<sourceObjName>FLAG_VALUE</sourceObjName>
+<createdBy>darbo</createdBy>
+<createdTime>2024-02-13 17:12:18 UTC</createdTime>
+<ownerDesignName>MEDS_DATA</ownerDesignName>
+<nullsAllowed>true</nullsAllowed>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT024</logicalDatatype>
+<dataTypeSize>100 BYTE</dataTypeSize>
+<ownDataTypeParameters>100 BYTE,,</ownDataTypeParameters>
+<autoIncrementCycle>false</autoIncrementCycle>
+</Column>
+</columns>
+<indexes itemClass="oracle.dbtools.crest.model.design.relational.Index">
+<ind_PK_UK id="17F8740B-7149-86B3-37A5-89B629FE2F0D" schemaObject="198B7359-7E07-FB02-B07C-A0A91EE44FE7" name="IDX_FLAGS_CATEGORY">
+<sourceConnName>MEDS</sourceConnName>
+<sourceObjSchema>MEDSDATA</sourceObjSchema>
+<sourceObjName>IDX_FLAGS_CATEGORY</sourceObjName>
+<createdBy>darbo</createdBy>
+<createdTime>2024-02-13 17:12:25 UTC</createdTime>
+<ownerDesignName>MEDS_DATA</ownerDesignName>
+<isSurrogateKey>false</isSurrogateKey>
+<indexColumnUsage>
+<colUsage columnID="DAFBEDF6-3BA9-2206-4193-42ED6AFD74B5"/>
+</indexColumnUsage>
+</ind_PK_UK>
+<ind_PK_UK id="E5A83F0F-FC5B-A85E-32C5-0AD6ADA6E4F3" schemaObject="198B7359-7E07-FB02-B07C-A0A91EE44FE7" name="IDX_FLAGS_JOB_OBS_NUMBER">
+<sourceConnName>MEDS</sourceConnName>
+<sourceObjSchema>MEDSDATA</sourceObjSchema>
+<sourceObjName>IDX_FLAGS_JOB_OBS_NUMBER</sourceObjName>
+<createdBy>darbo</createdBy>
+<createdTime>2024-02-13 17:12:25 UTC</createdTime>
+<ownerDesignName>MEDS_DATA</ownerDesignName>
+<isSurrogateKey>false</isSurrogateKey>
+<indexColumnUsage>
+<colUsage columnID="7DD93427-E0F1-7B01-E935-72103B6DFD2E"/>
+<colUsage columnID="242DC02F-AE42-48E2-3453-8602CCE3BB11"/>
+</indexColumnUsage>
+</ind_PK_UK>
+<ind_PK_UK id="17CE4BF6-3030-D8C0-0067-B48C37B6D895" schemaObject="198B7359-7E07-FB02-B07C-A0A91EE44FE7" name="IDX_FLAGS_STATUS">
+<sourceConnName>MEDS</sourceConnName>
+<sourceObjSchema>MEDSDATA</sourceObjSchema>
+<sourceObjName>IDX_FLAGS_STATUS</sourceObjName>
+<createdBy>darbo</createdBy>
+<createdTime>2024-02-13 17:12:25 UTC</createdTime>
+<ownerDesignName>MEDS_DATA</ownerDesignName>
+<isSurrogateKey>false</isSurrogateKey>
+<indexColumnUsage>
+<colUsage columnID="0B4AAAF4-82D8-E59A-6D63-EAE21C9A39AA"/>
+</indexColumnUsage>
+</ind_PK_UK>
+<ind_PK_UK id="2C33E32F-F889-BFD2-4CD0-2F1059E7653E" schemaObject="198B7359-7E07-FB02-B07C-A0A91EE44FE7" name="IDX_FLAGS_VALUE">
+<sourceConnName>MEDS</sourceConnName>
+<sourceObjSchema>MEDSDATA</sourceObjSchema>
+<sourceObjName>IDX_FLAGS_VALUE</sourceObjName>
+<createdBy>darbo</createdBy>
+<createdTime>2024-02-13 17:12:25 UTC</createdTime>
+<ownerDesignName>MEDS_DATA</ownerDesignName>
+<isSurrogateKey>false</isSurrogateKey>
+<indexColumnUsage>
+<colUsage columnID="CA02889B-519A-DAD4-2FD0-34AA3076F5B8"/>
+</indexColumnUsage>
+</ind_PK_UK>
+</indexes>
+</Table>

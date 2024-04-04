@@ -1,0 +1,16 @@
+<?xml version = '1.0' encoding = 'UTF-8'?>
+<FKIndexAssociation class="oracle.dbtools.crest.model.design.relational.FKIndexAssociation" directorySegmentName="seg_0" id="A8A6C2F0-CEDF-A9E6-37EB-838D1AE08EF5" containerWithKeyObject="85E06FE8-87CC-24E5-6567-CF157E06B47C" localFKIndex="974D1D6A-48EF-CE54-40D3-32D41DDA7C87" name="SERD_STG_HEADER_SERD_LOV_CLOUD_COVERAGE_F">
+<createdBy>d.arboittedossantos</createdBy>
+<createdTime>2024-04-04 15:54:19 UTC</createdTime>
+<ownerDesignName>MEDS_SERD</ownerDesignName>
+<referredTableLongName>MEDS_ADMIN.SERD_LOV_CLOUD_COVERAGE</referredTableLongName>
+<deleteRule>NO ACTION</deleteRule>
+<referredTableID>B84889F9-4EA7-6589-ED9B-EB809ED0B8B2</referredTableID>
+<keyObject>F6E88219-6CD0-2E7E-AFC7-77315CD1281B</keyObject>
+<referredKeyID>F6E88219-6CD0-2E7E-AFC7-77315CD1281B</referredKeyID>
+<mandatory>true</mandatory>
+<refColNames>CLOUD_COVERAGE_CD</refColNames>
+<transferable>true</transferable>
+<rely>false</rely>
+<columnDependencyConstraintGenerateInDDL>true</columnDependencyConstraintGenerateInDDL>
+</FKIndexAssociation>

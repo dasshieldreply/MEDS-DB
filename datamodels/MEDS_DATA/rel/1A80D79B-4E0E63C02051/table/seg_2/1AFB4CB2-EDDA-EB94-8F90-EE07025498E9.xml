@@ -1,0 +1,176 @@
+<?xml version = '1.0' encoding = 'UTF-8'?>
+<Table class="oracle.dbtools.crest.model.design.relational.Table" directorySegmentName="seg_2" id="1AFB4CB2-EDDA-EB94-8F90-EE07025498E9" schemaObject="FD77D69E-489C-FEFD-81EE-34209F1C13AA" name="SHIP_DETAILS">
+<sourceConnName>MEDS ADMIN</sourceConnName>
+<sourceObjSchema>MEDSADMIN</sourceObjSchema>
+<sourceObjName>SHIP_DETAILS</sourceObjName>
+<createdBy>d.arboittedossantos</createdBy>
+<createdTime>2024-03-14 14:47:24 UTC</createdTime>
+<ownerDesignName>MEDS_DATA</ownerDesignName>
+<allowColumnReorder>false</allowColumnReorder>
+<existDependencyGenerateInDDl>true</existDependencyGenerateInDDl>
+<parsed>true</parsed>
+<columns itemClass="oracle.dbtools.crest.model.design.relational.Column">
+<Column name="COUNTRY_CODE" id="28F7342F-C6AC-C7D8-7FD5-BFD36E6C5621">
+<sourceConnName>MEDS ADMIN</sourceConnName>
+<sourceObjSchema>SHIP_DETAILS</sourceObjSchema>
+<sourceObjName>COUNTRY_CODE</sourceObjName>
+<createdBy>d.arboittedossantos</createdBy>
+<createdTime>2024-03-14 14:47:26 UTC</createdTime>
+<ownerDesignName>MEDS_DATA</ownerDesignName>
+<nullsAllowed>true</nullsAllowed>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT024</logicalDatatype>
+<dataTypeSize>2 BYTE</dataTypeSize>
+<ownDataTypeParameters>2 BYTE,,</ownDataTypeParameters>
+<autoIncrementCycle>false</autoIncrementCycle>
+</Column>
+<Column name="ICES_SHIP_CODE" id="6B4281FA-F952-525C-FB36-9DA59B34B867">
+<sourceConnName>MEDS ADMIN</sourceConnName>
+<sourceObjSchema>SHIP_DETAILS</sourceObjSchema>
+<sourceObjName>ICES_SHIP_CODE</sourceObjName>
+<createdBy>d.arboittedossantos</createdBy>
+<createdTime>2024-03-14 14:47:26 UTC</createdTime>
+<ownerDesignName>MEDS_DATA</ownerDesignName>
+<nullsAllowed>true</nullsAllowed>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT024</logicalDatatype>
+<dataTypeSize>2 BYTE</dataTypeSize>
+<ownDataTypeParameters>2 BYTE,,</ownDataTypeParameters>
+<autoIncrementCycle>false</autoIncrementCycle>
+</Column>
+<Column name="MIAS_INSTITUTE_CODE" id="391C355E-40AF-E7F2-6E61-DB3AD7F8A9EF">
+<sourceConnName>MEDS ADMIN</sourceConnName>
+<sourceObjSchema>SHIP_DETAILS</sourceObjSchema>
+<sourceObjName>MIAS_INSTITUTE_CODE</sourceObjName>
+<createdBy>d.arboittedossantos</createdBy>
+<createdTime>2024-03-14 14:47:26 UTC</createdTime>
+<ownerDesignName>MEDS_DATA</ownerDesignName>
+<nullsAllowed>true</nullsAllowed>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT024</logicalDatatype>
+<dataTypeSize>3 BYTE</dataTypeSize>
+<ownDataTypeParameters>3 BYTE,,</ownDataTypeParameters>
+<autoIncrementCycle>false</autoIncrementCycle>
+</Column>
+<Column name="MIAS_INSTITUTE_FLAG" id="87560080-D85F-DF50-8B8C-8AF8F803D2F5">
+<sourceConnName>MEDS ADMIN</sourceConnName>
+<sourceObjSchema>SHIP_DETAILS</sourceObjSchema>
+<sourceObjName>MIAS_INSTITUTE_FLAG</sourceObjName>
+<createdBy>d.arboittedossantos</createdBy>
+<createdTime>2024-03-14 14:47:26 UTC</createdTime>
+<ownerDesignName>MEDS_DATA</ownerDesignName>
+<nullsAllowed>true</nullsAllowed>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT019</logicalDatatype>
+<dataTypePrecision>2</dataTypePrecision>
+<dataTypeScale>0</dataTypeScale>
+<ownDataTypeParameters>,2,0</ownDataTypeParameters>
+<autoIncrementCycle>false</autoIncrementCycle>
+</Column>
+<Column name="ICES_SHIP_FLAG" id="FBF53543-589E-4210-4F20-BB60D1141B82">
+<sourceConnName>MEDS ADMIN</sourceConnName>
+<sourceObjSchema>SHIP_DETAILS</sourceObjSchema>
+<sourceObjName>ICES_SHIP_FLAG</sourceObjName>
+<createdBy>d.arboittedossantos</createdBy>
+<createdTime>2024-03-14 14:47:26 UTC</createdTime>
+<ownerDesignName>MEDS_DATA</ownerDesignName>
+<nullsAllowed>true</nullsAllowed>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT019</logicalDatatype>
+<dataTypePrecision>2</dataTypePrecision>
+<dataTypeScale>0</dataTypeScale>
+<ownDataTypeParameters>,2,0</ownDataTypeParameters>
+<autoIncrementCycle>false</autoIncrementCycle>
+</Column>
+<Column name="VESSEL_NAME" id="33913F50-BBC7-5C44-ECA4-6E45EC8EE46B">
+<sourceConnName>MEDS ADMIN</sourceConnName>
+<sourceObjSchema>SHIP_DETAILS</sourceObjSchema>
+<sourceObjName>VESSEL_NAME</sourceObjName>
+<createdBy>d.arboittedossantos</createdBy>
+<createdTime>2024-03-14 14:47:26 UTC</createdTime>
+<ownerDesignName>MEDS_DATA</ownerDesignName>
+<nullsAllowed>true</nullsAllowed>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT024</logicalDatatype>
+<dataTypeSize>50 BYTE</dataTypeSize>
+<ownDataTypeParameters>50 BYTE,,</ownDataTypeParameters>
+<autoIncrementCycle>false</autoIncrementCycle>
+</Column>
+<Column name="MEDS_SHIP_NUMBER" id="EE75608C-0CCE-1A31-3AAD-A5C93859459D">
+<sourceConnName>MEDS ADMIN</sourceConnName>
+<sourceObjSchema>SHIP_DETAILS</sourceObjSchema>
+<sourceObjName>MEDS_SHIP_NUMBER</sourceObjName>
+<createdBy>d.arboittedossantos</createdBy>
+<createdTime>2024-03-14 14:47:26 UTC</createdTime>
+<ownerDesignName>MEDS_DATA</ownerDesignName>
+<nullsAllowed>true</nullsAllowed>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT019</logicalDatatype>
+<dataTypePrecision>10</dataTypePrecision>
+<dataTypeScale>0</dataTypeScale>
+<ownDataTypeParameters>,10,0</ownDataTypeParameters>
+<autoIncrementCycle>false</autoIncrementCycle>
+</Column>
+<Column name="MEDS_CRUISE_NUMBER" id="1420247F-52F1-E706-A6FE-5A38A19EB203">
+<sourceConnName>MEDS ADMIN</sourceConnName>
+<sourceObjSchema>SHIP_DETAILS</sourceObjSchema>
+<sourceObjName>MEDS_CRUISE_NUMBER</sourceObjName>
+<createdBy>d.arboittedossantos</createdBy>
+<createdTime>2024-03-14 14:47:26 UTC</createdTime>
+<ownerDesignName>MEDS_DATA</ownerDesignName>
+<nullsAllowed>true</nullsAllowed>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT019</logicalDatatype>
+<dataTypePrecision>10</dataTypePrecision>
+<dataTypeScale>0</dataTypeScale>
+<ownDataTypeParameters>,10,0</ownDataTypeParameters>
+<autoIncrementCycle>false</autoIncrementCycle>
+</Column>
+</columns>
+<indexes itemClass="oracle.dbtools.crest.model.design.relational.Index">
+<ind_PK_UK id="7131BCE5-CD64-1EBF-6867-12EBE5FB1586" schemaObject="FD77D69E-489C-FEFD-81EE-34209F1C13AA" name="SHIP_DETAILS_CRUISE_IDX">
+<sourceConnName>MEDS ADMIN</sourceConnName>
+<sourceObjSchema>MEDSADMIN</sourceObjSchema>
+<sourceObjName>SHIP_DETAILS_CRUISE_IDX</sourceObjName>
+<createdBy>d.arboittedossantos</createdBy>
+<createdTime>2024-03-14 14:47:30 UTC</createdTime>
+<ownerDesignName>MEDS_DATA</ownerDesignName>
+<isSurrogateKey>false</isSurrogateKey>
+<indexColumnUsage>
+<colUsage columnID="1420247F-52F1-E706-A6FE-5A38A19EB203"/>
+</indexColumnUsage>
+</ind_PK_UK>
+<ind_PK_UK id="E7FF7249-AAA0-CC28-71E5-F390F575BC68" schemaObject="FD77D69E-489C-FEFD-81EE-34209F1C13AA" name="SHIP_DETAILS_INSTCODE">
+<sourceConnName>MEDS ADMIN</sourceConnName>
+<sourceObjSchema>MEDSADMIN</sourceObjSchema>
+<sourceObjName>SHIP_DETAILS_INSTCODE</sourceObjName>
+<createdBy>d.arboittedossantos</createdBy>
+<createdTime>2024-03-14 14:47:30 UTC</createdTime>
+<ownerDesignName>MEDS_DATA</ownerDesignName>
+<isSurrogateKey>false</isSurrogateKey>
+<indexColumnUsage>
+<colUsage columnID="391C355E-40AF-E7F2-6E61-DB3AD7F8A9EF"/>
+</indexColumnUsage>
+</ind_PK_UK>
+<ind_PK_UK id="DDBF5619-FA09-5776-50CC-D29351D62E38" schemaObject="FD77D69E-489C-FEFD-81EE-34209F1C13AA" name="SHIP_DETAILS_SHIP_IDX">
+<sourceConnName>MEDS ADMIN</sourceConnName>
+<sourceObjSchema>MEDSADMIN</sourceObjSchema>
+<sourceObjName>SHIP_DETAILS_SHIP_IDX</sourceObjName>
+<createdBy>d.arboittedossantos</createdBy>
+<createdTime>2024-03-14 14:47:30 UTC</createdTime>
+<ownerDesignName>MEDS_DATA</ownerDesignName>
+<isSurrogateKey>false</isSurrogateKey>
+<indexColumnUsage>
+<colUsage columnID="EE75608C-0CCE-1A31-3AAD-A5C93859459D"/>
+</indexColumnUsage>
+</ind_PK_UK>
+</indexes>
+</Table>

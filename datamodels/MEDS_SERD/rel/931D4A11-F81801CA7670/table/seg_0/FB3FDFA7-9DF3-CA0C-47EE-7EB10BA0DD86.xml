@@ -1,5 +1,5 @@
 <?xml version = '1.0' encoding = 'UTF-8'?>
-<Table class="oracle.dbtools.crest.model.design.relational.Table" directorySegmentName="seg_0" id="FB3FDFA7-9DF3-CA0C-47EE-7EB10BA0DD86" name="INSTRUMENT">
+<Table class="oracle.dbtools.crest.model.design.relational.Table" directorySegmentName="seg_0" id="FB3FDFA7-9DF3-CA0C-47EE-7EB10BA0DD86" schemaObject="20651223-0797-3CAA-7021-8449492EE83B" name="SERD_LOV_INSTRUMENT">
 <createdBy>darbo</createdBy>
 <createdTime>2024-02-14 10:52:53 UTC</createdTime>
 <ownerDesignName>MEDS_SERD</ownerDesignName>
@@ -8,6 +8,16 @@
 <existDependencyGenerateInDDl>true</existDependencyGenerateInDDl>
 <parsed>true</parsed>
 <columns itemClass="oracle.dbtools.crest.model.design.relational.Column">
+<Column name="SERD_LOV_INSTRUMENT" id="63E12539-7F09-D447-6050-CEA4C46689EE">
+<createdBy>d.arboittedossantos</createdBy>
+<createdTime>2024-04-04 15:31:27 UTC</createdTime>
+<ownerDesignName>MEDS_SERD</ownerDesignName>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT019</logicalDatatype>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
+<autoIncrementCycle>false</autoIncrementCycle>
+</Column>
 <Column name="INSTRUMENT_CD" id="717AF847-7ABD-7390-1F85-4F512D4C22D3">
 <createdBy>darbo</createdBy>
 <createdTime>2024-02-14 10:54:35 UTC</createdTime>
@@ -33,12 +43,22 @@
 </Column>
 </columns>
 <indexes itemClass="oracle.dbtools.crest.model.design.relational.Index">
-<ind_PK_UK id="F145A728-8140-CC88-4A20-E84DD2AAF235" name="INSTRUMENT_PK">
-<createdBy>darbo</createdBy>
-<createdTime>2024-02-14 10:54:44 UTC</createdTime>
+<ind_PK_UK id="2F7CDFD1-9019-ECC9-7110-0511A34EE508" name="SERD_LOV_INSTRUMENT_P">
+<createdBy>d.arboittedossantos</createdBy>
+<createdTime>2024-04-04 15:31:27 UTC</createdTime>
 <ownerDesignName>MEDS_SERD</ownerDesignName>
 <pk>true</pk>
 <indexState>Primary Constraint</indexState>
+<isSurrogateKey>false</isSurrogateKey>
+<indexColumnUsage>
+<colUsage columnID="63E12539-7F09-D447-6050-CEA4C46689EE"/>
+</indexColumnUsage>
+</ind_PK_UK>
+<ind_PK_UK id="CA3607AE-142C-EFD8-1A41-AC2F764B482D" name="SERD_LOV_INSTRUMENT_CD_U">
+<createdBy>d.arboittedossantos</createdBy>
+<createdTime>2024-04-04 15:31:27 UTC</createdTime>
+<ownerDesignName>MEDS_SERD</ownerDesignName>
+<indexState>Unique Constraint</indexState>
 <isSurrogateKey>false</isSurrogateKey>
 <indexColumnUsage>
 <colUsage columnID="717AF847-7ABD-7390-1F85-4F512D4C22D3"/>

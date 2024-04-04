@@ -1,5 +1,5 @@
 <?xml version = '1.0' encoding = 'UTF-8'?>
-<Table class="oracle.dbtools.crest.model.design.relational.Table" directorySegmentName="seg_0" id="B84889F9-4EA7-6589-ED9B-EB809ED0B8B2" name="CLOUD_COVERAGE">
+<Table class="oracle.dbtools.crest.model.design.relational.Table" directorySegmentName="seg_0" id="B84889F9-4EA7-6589-ED9B-EB809ED0B8B2" schemaObject="20651223-0797-3CAA-7021-8449492EE83B" name="SERD_LOV_CLOUD_COVERAGE">
 <createdBy>darbo</createdBy>
 <createdTime>2024-02-14 14:06:02 UTC</createdTime>
 <ownerDesignName>MEDS_SERD</ownerDesignName>
@@ -8,6 +8,16 @@
 <existDependencyGenerateInDDl>true</existDependencyGenerateInDDl>
 <parsed>true</parsed>
 <columns itemClass="oracle.dbtools.crest.model.design.relational.Column">
+<Column name="SERD_LOV_CLOUD_COVERAGE" id="EEEF50E8-24BB-7F4D-A927-0C47092A6ACA">
+<createdBy>d.arboittedossantos</createdBy>
+<createdTime>2024-04-04 15:22:00 UTC</createdTime>
+<ownerDesignName>MEDS_SERD</ownerDesignName>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT019</logicalDatatype>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
+<autoIncrementCycle>false</autoIncrementCycle>
+</Column>
 <Column name="CLOUD_COVERAGE_CD" id="A0E4FA86-C2B5-8CC4-386D-8EA76539DA0E">
 <createdBy>darbo</createdBy>
 <createdTime>2024-02-14 14:06:02 UTC</createdTime>
@@ -22,7 +32,7 @@
 <Column name="CLOUD_COVERAGE_DESC" id="3678F907-213E-7D04-F893-47E6ADE874E1">
 <createdBy>darbo</createdBy>
 <createdTime>2024-02-14 14:06:02 UTC</createdTime>
-<commentInRDBMS><![CDATA[Cloud coverage  description.]]></commentInRDBMS>
+<commentInRDBMS><![CDATA[Cloud coverage description.]]></commentInRDBMS>
 <ownerDesignName>MEDS_SERD</ownerDesignName>
 <useDomainConstraints>false</useDomainConstraints>
 <use>1</use>
@@ -33,12 +43,22 @@
 </Column>
 </columns>
 <indexes itemClass="oracle.dbtools.crest.model.design.relational.Index">
-<ind_PK_UK id="AF6326CB-1F3A-78B6-C197-D8FA50AA1CA8" name="CLOUD_COVERAGE_PK">
-<createdBy>darbo</createdBy>
-<createdTime>2024-02-14 14:06:02 UTC</createdTime>
+<ind_PK_UK id="D9625E38-5021-D90C-35A7-8A325C82E287" name="SERD_LOV_CLOUD_COVERAGE_P">
+<createdBy>d.arboittedossantos</createdBy>
+<createdTime>2024-04-04 15:54:14 UTC</createdTime>
 <ownerDesignName>MEDS_SERD</ownerDesignName>
 <pk>true</pk>
 <indexState>Primary Constraint</indexState>
+<isSurrogateKey>false</isSurrogateKey>
+<indexColumnUsage>
+<colUsage columnID="EEEF50E8-24BB-7F4D-A927-0C47092A6ACA"/>
+</indexColumnUsage>
+</ind_PK_UK>
+<ind_PK_UK id="F6E88219-6CD0-2E7E-AFC7-77315CD1281B" name="SERD_LOV_CLOUD_COVERAGE_CD_U">
+<createdBy>d.arboittedossantos</createdBy>
+<createdTime>2024-04-04 15:22:00 UTC</createdTime>
+<ownerDesignName>MEDS_SERD</ownerDesignName>
+<indexState>Unique Constraint</indexState>
 <isSurrogateKey>false</isSurrogateKey>
 <indexColumnUsage>
 <colUsage columnID="A0E4FA86-C2B5-8CC4-386D-8EA76539DA0E"/>

@@ -1,5 +1,5 @@
 <?xml version = '1.0' encoding = 'UTF-8'?>
-<Table class="oracle.dbtools.crest.model.design.relational.Table" directorySegmentName="seg_0" id="D4A1C796-FA62-C383-1775-5B8CB720D96F" name="POSITION_DETERMINATION">
+<Table class="oracle.dbtools.crest.model.design.relational.Table" directorySegmentName="seg_0" id="D4A1C796-FA62-C383-1775-5B8CB720D96F" schemaObject="20651223-0797-3CAA-7021-8449492EE83B" name="SERD_LOV_POSITION_DETERMINATION">
 <createdBy>darbo</createdBy>
 <createdTime>2024-02-14 13:45:22 UTC</createdTime>
 <ownerDesignName>MEDS_SERD</ownerDesignName>
@@ -8,6 +8,16 @@
 <existDependencyGenerateInDDl>true</existDependencyGenerateInDDl>
 <parsed>true</parsed>
 <columns itemClass="oracle.dbtools.crest.model.design.relational.Column">
+<Column name="SERD_LOV_POSITION_DETERMINATION" id="F732FC76-445F-BCF2-09B6-DD7B1DAE4F96">
+<createdBy>d.arboittedossantos</createdBy>
+<createdTime>2024-04-04 15:33:28 UTC</createdTime>
+<ownerDesignName>MEDS_SERD</ownerDesignName>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT019</logicalDatatype>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
+<autoIncrementCycle>false</autoIncrementCycle>
+</Column>
 <Column name="POSITION_DETERMINATION_CD" id="55488733-15B3-05E2-12E7-49D22B9E956D">
 <createdBy>darbo</createdBy>
 <createdTime>2024-02-14 13:45:22 UTC</createdTime>
@@ -33,12 +43,22 @@
 </Column>
 </columns>
 <indexes itemClass="oracle.dbtools.crest.model.design.relational.Index">
-<ind_PK_UK id="F4EDE08D-BA23-5AD6-DB76-4FA0C5A28CA9" name="POSITION_DETERMINATION_PK">
-<createdBy>darbo</createdBy>
-<createdTime>2024-02-14 13:45:22 UTC</createdTime>
+<ind_PK_UK id="0EA1E480-6203-ABBA-7897-42DDFB4EC3D4" name="SERD_LOV_POSITION_DETERMINATION_P">
+<createdBy>d.arboittedossantos</createdBy>
+<createdTime>2024-04-04 15:33:28 UTC</createdTime>
 <ownerDesignName>MEDS_SERD</ownerDesignName>
 <pk>true</pk>
 <indexState>Primary Constraint</indexState>
+<isSurrogateKey>false</isSurrogateKey>
+<indexColumnUsage>
+<colUsage columnID="F732FC76-445F-BCF2-09B6-DD7B1DAE4F96"/>
+</indexColumnUsage>
+</ind_PK_UK>
+<ind_PK_UK id="95B81D8D-5659-9C63-D919-08E02FDDE883" name="SERD_LOV_POSITION_DETERMINATION_CD_U">
+<createdBy>d.arboittedossantos</createdBy>
+<createdTime>2024-04-04 15:33:28 UTC</createdTime>
+<ownerDesignName>MEDS_SERD</ownerDesignName>
+<indexState>Unique Constraint</indexState>
 <isSurrogateKey>false</isSurrogateKey>
 <indexColumnUsage>
 <colUsage columnID="55488733-15B3-05E2-12E7-49D22B9E956D"/>

@@ -1,0 +1,16 @@
+<?xml version = '1.0' encoding = 'UTF-8'?>
+<FKIndexAssociation class="oracle.dbtools.crest.model.design.relational.FKIndexAssociation" directorySegmentName="seg_0" id="31A3AFF6-EA6A-F7E6-D560-143E694EAD60" containerWithKeyObject="3BFD65DC-E97B-A74A-FDD7-83FAF11FD353" localFKIndex="4928C60C-BD4C-9EF7-F8AF-5F3BE0DEACAA" name="ASRAP_POLYGON_OBSERVATION_MEDS_PROCESSING_JOB_FK">
+<createdBy>d.arboittedossantos</createdBy>
+<createdTime>2024-03-14 16:44:51 UTC</createdTime>
+<ownerDesignName>MEDS</ownerDesignName>
+<referredTableLongName>MEDSDATA.MEDS_PROCESSING_JOB</referredTableLongName>
+<deleteRule>NO ACTION</deleteRule>
+<referredTableID>ACE54DE6-EC3D-5E15-C6F5-FC246AEF129C</referredTableID>
+<keyObject>DA122C4D-BE53-5BF5-E5A0-7484199325C6</keyObject>
+<referredKeyID>DA122C4D-BE53-5BF5-E5A0-7484199325C6</referredKeyID>
+<mandatory>true</mandatory>
+<refColNames>JOB_NUMBER</refColNames>
+<transferable>true</transferable>
+<rely>false</rely>
+<columnDependencyConstraintGenerateInDDL>true</columnDependencyConstraintGenerateInDDL>
+</FKIndexAssociation>

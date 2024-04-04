@@ -1,0 +1,14 @@
+<?xml version = '1.0' encoding = 'UTF-8'?>
+<SequenceOraclev10g class="oracle.dbtools.crest.model.design.storage.oracle.v10g.SequenceOraclev10g" name="R370" directorySegmentName="seg_4" id="13CE8B93-CB64-4D91-F65A-7CDCAECCCCA2">
+<sourceConnName>MEDS</sourceConnName>
+<sourceObjSchema>MEDSDATA</sourceObjSchema>
+<sourceObjName>R370</sourceObjName>
+<createdBy>darbo</createdBy>
+<createdTime>2024-02-13 17:12:09 UTC</createdTime>
+<ownerDesignName>MEDS_DATA</ownerDesignName>
+<cache>20</cache>
+<incrementBy>16</incrementBy>
+<maxValue>2147483647</maxValue>
+<minValue>1</minValue>
+<user>EC810D67-49CA-B5C0-3EC6-B779C0C6D3EC</user>
+</SequenceOraclev10g>

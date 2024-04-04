@@ -1,0 +1,46 @@
+<?xml version = '1.0' encoding = 'UTF-8'?>
+<TableProxyOraclev20c class="oracle.dbtools.crest.model.design.storage.oracle.v20c.TableProxyOraclev20c" name="SERD_LOV_SALINITY_QUALITY" directorySegmentName="seg_0" id="FB8DCE81-67BD-7C81-9E04-F4AE9B762DDE">
+<createdBy>d.arboittedossantos</createdBy>
+<createdTime>2024-04-04 16:11:57 UTC</createdTime>
+<ownerDesignName>MEDS_SERD</ownerDesignName>
+<schemaObject>20651223-0797-3CAA-7021-8449492EE83B</schemaObject>
+<logging>YES</logging>
+<partitionedRowMovement>DISABLE</partitionedRowMovement>
+<temporaryChanged>false</temporaryChanged>
+<user>28DF8DA2-9C77-E269-F136-0994A498F661</user>
+<accessDriverType>oracle_loader</accessDriverType>
+<rejectLimit></rejectLimit>
+<columnProxies itemClass="oracle.dbtools.crest.model.design.storage.oracle.v12c.ColumnProxyOraclev12c">
+<ColumnProxy name="SALINITY_QUALITY_DESC" id="1F4F0A12-B71A-335E-BD42-51FFA6B8E38C">
+<createdBy>d.arboittedossantos</createdBy>
+<createdTime>2024-04-04 16:11:57 UTC</createdTime>
+<ownerDesignName>MEDS_SERD</ownerDesignName>
+</ColumnProxy>
+<ColumnProxy name="SALINITY_QUALITY_CD" id="63ECADA3-B8DD-E498-9977-B1B9435F143E">
+<createdBy>d.arboittedossantos</createdBy>
+<createdTime>2024-04-04 16:11:57 UTC</createdTime>
+<ownerDesignName>MEDS_SERD</ownerDesignName>
+</ColumnProxy>
+<ColumnProxy name="SERD_LOV_SALINITY_QUALITY" id="8614148C-EBDD-8C4C-3B5D-3826571CE1A0">
+<createdBy>d.arboittedossantos</createdBy>
+<createdTime>2024-04-04 16:11:57 UTC</createdTime>
+<ownerDesignName>MEDS_SERD</ownerDesignName>
+</ColumnProxy>
+</columnProxies>
+<primaryKeys>
+<PrimaryKey class="oracle.dbtools.crest.model.design.storage.oracle.v10g.PKProxyOraclev10g" name="SERD_LOV_SALINITY_QUALITY_P" id="F08E7398-4B48-BCAD-4D9B-E1822724D5AC">
+<createdBy>d.arboittedossantos</createdBy>
+<createdTime>2024-04-04 16:11:57 UTC</createdTime>
+<ownerDesignName>MEDS_SERD</ownerDesignName>
+<indexSort>SORTED</indexSort>
+</PrimaryKey>
+</primaryKeys>
+<uniqueKeys>
+<UniqueKey class="oracle.dbtools.crest.model.design.storage.oracle.v10g.UniqueOraclev10g" name="SERD_LOV_SALINITY_QUALITY_CD_U" id="61001AC6-547D-7C24-569C-5E83BDA989A5">
+<createdBy>d.arboittedossantos</createdBy>
+<createdTime>2024-04-04 16:11:57 UTC</createdTime>
+<ownerDesignName>MEDS_SERD</ownerDesignName>
+<indexSort>SORTED</indexSort>
+</UniqueKey>
+</uniqueKeys>
+</TableProxyOraclev20c>

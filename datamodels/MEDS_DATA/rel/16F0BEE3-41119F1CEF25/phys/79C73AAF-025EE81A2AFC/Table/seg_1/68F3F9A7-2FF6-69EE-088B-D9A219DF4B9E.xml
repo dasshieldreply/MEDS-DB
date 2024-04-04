@@ -1,0 +1,210 @@
+<?xml version = '1.0' encoding = 'UTF-8'?>
+<TableProxyOraclev12c class="oracle.dbtools.crest.model.design.storage.oracle.v12c.TableProxyOraclev12c" name="IW_IMAGE_DATA" directorySegmentName="seg_1" id="68F3F9A7-2FF6-69EE-088B-D9A219DF4B9E">
+<createdBy>d.arboittedossantos</createdBy>
+<createdTime>2024-03-15 10:19:41 UTC</createdTime>
+<ownerDesignName>MEDS_DATA</ownerDesignName>
+<schemaObject>1FA4795A-F971-A0A7-EC72-1452C492DEA9</schemaObject>
+<logging>YES</logging>
+<partitionedRowMovement>DISABLE</partitionedRowMovement>
+<segment>B85E66D1-05A9-629F-E72C-AA7121C82339</segment>
+<tableSpace>E29DFC52-2441-9A41-19E2-FDF24A122B85</tableSpace>
+<temporaryChanged>false</temporaryChanged>
+<accessDriverType>oracle_loader</accessDriverType>
+<rejectLimit></rejectLimit>
+<inMemory>NO</inMemory>
+<columnProxies itemClass="oracle.dbtools.crest.model.design.storage.oracle.v12c.ColumnProxyOraclev12c">
+<ColumnProxy name="PROJECT_OF_IMAGE" id="0A75FBDA-EE9D-E75B-2E5F-7E9A75A110D1">
+<createdBy>d.arboittedossantos</createdBy>
+<createdTime>2024-03-15 10:19:42 UTC</createdTime>
+<ownerDesignName>MEDS_DATA</ownerDesignName>
+</ColumnProxy>
+<ColumnProxy name="ORIGINAL_X_RESOLUTION" id="0BB47D36-206C-06A7-4055-B8089B9657AA">
+<createdBy>d.arboittedossantos</createdBy>
+<createdTime>2024-03-15 10:19:42 UTC</createdTime>
+<ownerDesignName>MEDS_DATA</ownerDesignName>
+</ColumnProxy>
+<ColumnProxy name="TIME_OF_TIDE" id="26E4B026-1326-DFD1-4BF0-1DAA4DFD82D9">
+<createdBy>d.arboittedossantos</createdBy>
+<createdTime>2024-03-15 10:19:42 UTC</createdTime>
+<ownerDesignName>MEDS_DATA</ownerDesignName>
+</ColumnProxy>
+<ColumnProxy name="SOURCE_OF_TIDE_INFO" id="26EDFA48-A1E8-6B95-D621-81603026B59B">
+<createdBy>d.arboittedossantos</createdBy>
+<createdTime>2024-03-15 10:19:42 UTC</createdTime>
+<ownerDesignName>MEDS_DATA</ownerDesignName>
+</ColumnProxy>
+<ColumnProxy name="OCEAN_AREA" id="2B2FAC28-CA40-DB5A-B70D-1F7DA7F4169D">
+<createdBy>d.arboittedossantos</createdBy>
+<createdTime>2024-03-15 10:19:42 UTC</createdTime>
+<ownerDesignName>MEDS_DATA</ownerDesignName>
+</ColumnProxy>
+<ColumnProxy name="ORIGINAL_IMAGE_PRODUCT" id="2DC5CFD1-77FC-1398-16A1-7A90359D6287">
+<createdBy>d.arboittedossantos</createdBy>
+<createdTime>2024-03-15 10:19:42 UTC</createdTime>
+<ownerDesignName>MEDS_DATA</ownerDesignName>
+</ColumnProxy>
+<ColumnProxy name="MEDS_OBSERVATION_NUMBER" id="32251FAC-33B4-1715-F101-1CE37A3863EE">
+<createdBy>d.arboittedossantos</createdBy>
+<createdTime>2024-03-15 10:19:42 UTC</createdTime>
+<ownerDesignName>MEDS_DATA</ownerDesignName>
+</ColumnProxy>
+<ColumnProxy name="FRAME_NUMBER" id="3A31C50E-36C3-1B40-F8C9-33D452B42F98">
+<createdBy>d.arboittedossantos</createdBy>
+<createdTime>2024-03-15 10:19:42 UTC</createdTime>
+<ownerDesignName>MEDS_DATA</ownerDesignName>
+</ColumnProxy>
+<ColumnProxy name="LATITUDE_SE" id="3EDC304A-53E2-820A-7794-6A5391FD8B9A">
+<createdBy>d.arboittedossantos</createdBy>
+<createdTime>2024-03-15 10:19:42 UTC</createdTime>
+<ownerDesignName>MEDS_DATA</ownerDesignName>
+</ColumnProxy>
+<ColumnProxy name="INSTRUMENT" id="45408E7A-801E-BC16-D9AA-0273ED937805">
+<createdBy>d.arboittedossantos</createdBy>
+<createdTime>2024-03-15 10:19:42 UTC</createdTime>
+<ownerDesignName>MEDS_DATA</ownerDesignName>
+</ColumnProxy>
+<ColumnProxy name="ARCHIVE_DATE" id="45695023-DB6C-6DED-5783-1BF5321967D7">
+<createdBy>d.arboittedossantos</createdBy>
+<createdTime>2024-03-15 10:19:42 UTC</createdTime>
+<ownerDesignName>MEDS_DATA</ownerDesignName>
+</ColumnProxy>
+<ColumnProxy name="LONGITUDE_NW" id="4800DE4D-A485-326F-6791-7FDBECDBD655">
+<createdBy>d.arboittedossantos</createdBy>
+<createdTime>2024-03-15 10:19:42 UTC</createdTime>
+<ownerDesignName>MEDS_DATA</ownerDesignName>
+</ColumnProxy>
+<ColumnProxy name="FILE_REFERENCE" id="4C24FBF0-0069-8D8F-AEBF-7B95045FBDDA">
+<createdBy>d.arboittedossantos</createdBy>
+<createdTime>2024-03-15 10:19:42 UTC</createdTime>
+<ownerDesignName>MEDS_DATA</ownerDesignName>
+</ColumnProxy>
+<ColumnProxy name="STORAGE_FORMAT" id="50B68E29-DB27-4FBC-CF2E-0D8ED8000BC9">
+<createdBy>d.arboittedossantos</createdBy>
+<createdTime>2024-03-15 10:19:42 UTC</createdTime>
+<ownerDesignName>MEDS_DATA</ownerDesignName>
+</ColumnProxy>
+<ColumnProxy name="ORIGINAL_Y_RESOLUTION" id="53E7FD40-75F1-ECAC-70AD-F7969293D213">
+<createdBy>d.arboittedossantos</createdBy>
+<createdTime>2024-03-15 10:19:42 UTC</createdTime>
+<ownerDesignName>MEDS_DATA</ownerDesignName>
+</ColumnProxy>
+<ColumnProxy name="STORED_Y_RESOLUTION" id="59474993-12B8-36F1-05E6-53755E5CBAB2">
+<createdBy>d.arboittedossantos</createdBy>
+<createdTime>2024-03-15 10:19:42 UTC</createdTime>
+<ownerDesignName>MEDS_DATA</ownerDesignName>
+</ColumnProxy>
+<ColumnProxy name="IMAGE_SOURCE" id="5E32FE8B-9997-2ADD-B0A9-A5A4F5869487">
+<createdBy>d.arboittedossantos</createdBy>
+<createdTime>2024-03-15 10:19:42 UTC</createdTime>
+<ownerDesignName>MEDS_DATA</ownerDesignName>
+</ColumnProxy>
+<ColumnProxy name="FEATURE_NAME" id="5F0E08D3-3EFB-535E-A602-73D22D52ABAD">
+<createdBy>d.arboittedossantos</createdBy>
+<createdTime>2024-03-15 10:19:42 UTC</createdTime>
+<ownerDesignName>MEDS_DATA</ownerDesignName>
+</ColumnProxy>
+<ColumnProxy name="LONGITUDE_SE" id="5FBB1EF8-D012-BFC1-5748-44B34A4D8D97">
+<createdBy>d.arboittedossantos</createdBy>
+<createdTime>2024-03-15 10:19:42 UTC</createdTime>
+<ownerDesignName>MEDS_DATA</ownerDesignName>
+</ColumnProxy>
+<ColumnProxy name="ORBIT_NUMBER" id="66327D71-2531-C222-CA72-E673BED67F7D">
+<createdBy>d.arboittedossantos</createdBy>
+<createdTime>2024-03-15 10:19:42 UTC</createdTime>
+<ownerDesignName>MEDS_DATA</ownerDesignName>
+</ColumnProxy>
+<ColumnProxy name="STORED_X_RESOLUTION" id="67DFD029-B6DD-4EB9-BB4F-CC1FD83E729C">
+<createdBy>d.arboittedossantos</createdBy>
+<createdTime>2024-03-15 10:19:42 UTC</createdTime>
+<ownerDesignName>MEDS_DATA</ownerDesignName>
+</ColumnProxy>
+<ColumnProxy name="ADDITIONAL_INFORMATION" id="6F834F8B-38FA-49F9-6B6B-4B437A2F2DB6">
+<createdBy>d.arboittedossantos</createdBy>
+<createdTime>2024-03-15 10:19:42 UTC</createdTime>
+<ownerDesignName>MEDS_DATA</ownerDesignName>
+</ColumnProxy>
+<ColumnProxy name="SATELLITE" id="7B4030FC-1828-8C2B-364A-4EF30D4DF17D">
+<createdBy>d.arboittedossantos</createdBy>
+<createdTime>2024-03-15 10:19:42 UTC</createdTime>
+<ownerDesignName>MEDS_DATA</ownerDesignName>
+</ColumnProxy>
+<ColumnProxy name="MEASUREMENT" id="81B9199D-983B-72EC-D674-64946C3738AA">
+<createdBy>d.arboittedossantos</createdBy>
+<createdTime>2024-03-15 10:19:42 UTC</createdTime>
+<ownerDesignName>MEDS_DATA</ownerDesignName>
+</ColumnProxy>
+<ColumnProxy name="LATITUDE_SW" id="87896F8B-8A17-514D-3C77-FE17A0AD3A43">
+<createdBy>d.arboittedossantos</createdBy>
+<createdTime>2024-03-15 10:19:42 UTC</createdTime>
+<ownerDesignName>MEDS_DATA</ownerDesignName>
+</ColumnProxy>
+<ColumnProxy name="LONGITUDE_NE" id="976FE318-4A57-61D6-7D15-A4A5856AEA1A">
+<createdBy>d.arboittedossantos</createdBy>
+<createdTime>2024-03-15 10:19:42 UTC</createdTime>
+<ownerDesignName>MEDS_DATA</ownerDesignName>
+</ColumnProxy>
+<ColumnProxy name="X_SIZE" id="9B04E742-CFDC-D280-BEB1-F288FF5B03C6">
+<createdBy>d.arboittedossantos</createdBy>
+<createdTime>2024-03-15 10:19:42 UTC</createdTime>
+<ownerDesignName>MEDS_DATA</ownerDesignName>
+</ColumnProxy>
+<ColumnProxy name="LATITUDE_NW" id="CD4108B3-1C56-3727-D411-5E55F5EDE150">
+<createdBy>d.arboittedossantos</createdBy>
+<createdTime>2024-03-15 10:19:42 UTC</createdTime>
+<ownerDesignName>MEDS_DATA</ownerDesignName>
+</ColumnProxy>
+<ColumnProxy name="FEATURE_TYPE" id="D0A36887-16AD-3D91-0BAC-208DB2D6DB19">
+<createdBy>d.arboittedossantos</createdBy>
+<createdTime>2024-03-15 10:19:42 UTC</createdTime>
+<ownerDesignName>MEDS_DATA</ownerDesignName>
+</ColumnProxy>
+<ColumnProxy name="MEDS_JOB_NUMBER" id="D93DB863-7A2D-E1FE-CB5B-2FCD8ED1A961">
+<createdBy>d.arboittedossantos</createdBy>
+<createdTime>2024-03-15 10:19:42 UTC</createdTime>
+<ownerDesignName>MEDS_DATA</ownerDesignName>
+</ColumnProxy>
+<ColumnProxy name="LATITUDE_NE" id="DFDA10CE-7152-210B-1EC7-576D4473C6A5">
+<createdBy>d.arboittedossantos</createdBy>
+<createdTime>2024-03-15 10:19:42 UTC</createdTime>
+<ownerDesignName>MEDS_DATA</ownerDesignName>
+</ColumnProxy>
+<ColumnProxy name="Y_SIZE" id="E043E666-A211-6A4F-72F3-FB106B051569">
+<createdBy>d.arboittedossantos</createdBy>
+<createdTime>2024-03-15 10:19:42 UTC</createdTime>
+<ownerDesignName>MEDS_DATA</ownerDesignName>
+</ColumnProxy>
+<ColumnProxy name="LONGITUDE_SW" id="E58CF9A8-9016-1AD7-5406-9543BFA51D3D">
+<createdBy>d.arboittedossantos</createdBy>
+<createdTime>2024-03-15 10:19:42 UTC</createdTime>
+<ownerDesignName>MEDS_DATA</ownerDesignName>
+</ColumnProxy>
+<ColumnProxy name="NUMBER_OF_WAVE_PACKETS" id="F6AAF968-89DE-AAB3-BC9F-869A816397DE">
+<createdBy>d.arboittedossantos</createdBy>
+<createdTime>2024-03-15 10:19:42 UTC</createdTime>
+<ownerDesignName>MEDS_DATA</ownerDesignName>
+</ColumnProxy>
+<ColumnProxy name="IMAGE_FILE_REFERENCE" id="F9A8BE86-D121-5C3A-1939-B61F005CAA7E">
+<createdBy>d.arboittedossantos</createdBy>
+<createdTime>2024-03-15 10:19:42 UTC</createdTime>
+<ownerDesignName>MEDS_DATA</ownerDesignName>
+</ColumnProxy>
+</columnProxies>
+<indexProxies>
+<IndexProxy class="oracle.dbtools.crest.model.design.storage.oracle.v10g.IndexProxyOraclev10g" name="IDX_DATE_IW_28" id="002FF287-1831-D7B8-3D5D-8A13D027B876">
+<createdBy>d.arboittedossantos</createdBy>
+<createdTime>2024-03-15 10:19:45 UTC</createdTime>
+<ownerDesignName>MEDS_DATA</ownerDesignName>
+<schemaObject>1FA4795A-F971-A0A7-EC72-1452C492DEA9</schemaObject>
+<segment>98203FA3-7D36-ECC8-0F4B-7F206DC812C4</segment>
+<tableSpace>E29DFC52-2441-9A41-19E2-FDF24A122B85</tableSpace>
+</IndexProxy>
+<IndexProxy class="oracle.dbtools.crest.model.design.storage.oracle.v10g.IndexProxyOraclev10g" name="IDX_JOB_IW_47" id="76209241-2E5E-8F44-06B2-C001273897E5">
+<createdBy>d.arboittedossantos</createdBy>
+<createdTime>2024-03-15 10:19:45 UTC</createdTime>
+<ownerDesignName>MEDS_DATA</ownerDesignName>
+<schemaObject>1FA4795A-F971-A0A7-EC72-1452C492DEA9</schemaObject>
+<segment>98203FA3-7D36-ECC8-0F4B-7F206DC812C4</segment>
+<tableSpace>E29DFC52-2441-9A41-19E2-FDF24A122B85</tableSpace>
+</IndexProxy>
+</indexProxies>
+</TableProxyOraclev12c>

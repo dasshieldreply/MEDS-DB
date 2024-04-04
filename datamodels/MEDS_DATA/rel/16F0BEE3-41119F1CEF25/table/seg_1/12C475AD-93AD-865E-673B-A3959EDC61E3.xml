@@ -1,0 +1,120 @@
+<?xml version = '1.0' encoding = 'UTF-8'?>
+<Table class="oracle.dbtools.crest.model.design.relational.Table" directorySegmentName="seg_1" id="12C475AD-93AD-865E-673B-A3959EDC61E3" schemaObject="1FA4795A-F971-A0A7-EC72-1452C492DEA9" name="OBSERVATION">
+<sourceConnName>MEDS ADMIN</sourceConnName>
+<sourceObjSchema>MEDSADMIN</sourceObjSchema>
+<sourceObjName>OBSERVATION</sourceObjName>
+<createdBy>d.arboittedossantos</createdBy>
+<createdTime>2024-03-15 10:19:40 UTC</createdTime>
+<ownerDesignName>MEDS_DATA</ownerDesignName>
+<allowColumnReorder>false</allowColumnReorder>
+<existDependencyGenerateInDDl>true</existDependencyGenerateInDDl>
+<parsed>true</parsed>
+<columns itemClass="oracle.dbtools.crest.model.design.relational.Column">
+<Column name="USER_NAME" id="B832D226-E89F-A7C2-5A8E-02BFAEB1D5A2">
+<sourceConnName>MEDS ADMIN</sourceConnName>
+<sourceObjSchema>OBSERVATION</sourceObjSchema>
+<sourceObjName>USER_NAME</sourceObjName>
+<createdBy>d.arboittedossantos</createdBy>
+<createdTime>2024-03-15 10:19:42 UTC</createdTime>
+<ownerDesignName>MEDS_DATA</ownerDesignName>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT025</logicalDatatype>
+<dataTypeSize>64 BYTE</dataTypeSize>
+<ownDataTypeParameters>64 BYTE,,</ownDataTypeParameters>
+<autoIncrementCycle>false</autoIncrementCycle>
+</Column>
+<Column name="JOB_NUMBER" id="D547036A-78DB-7036-C9BF-5C8B13653E07">
+<sourceConnName>MEDS ADMIN</sourceConnName>
+<sourceObjSchema>OBSERVATION</sourceObjSchema>
+<sourceObjName>JOB_NUMBER</sourceObjName>
+<createdBy>d.arboittedossantos</createdBy>
+<createdTime>2024-03-15 10:19:42 UTC</createdTime>
+<ownerDesignName>MEDS_DATA</ownerDesignName>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT019</logicalDatatype>
+<dataTypePrecision>*</dataTypePrecision>
+<ownDataTypeParameters>,*,</ownDataTypeParameters>
+<autoIncrementCycle>false</autoIncrementCycle>
+<associations>
+<colAssociation fkAssociation="2EF4FC36-267D-842B-E9D8-0081F230854E" referredColumn="8FC48CAA-0AEB-A714-E48B-8CFAA5D89647"/>
+</associations>
+</Column>
+<Column name="OBSERVATION_NUMBER" id="8BD8F40A-B8ED-CA8F-0F26-123AB3260403">
+<sourceConnName>MEDS ADMIN</sourceConnName>
+<sourceObjSchema>OBSERVATION</sourceObjSchema>
+<sourceObjName>OBSERVATION_NUMBER</sourceObjName>
+<createdBy>d.arboittedossantos</createdBy>
+<createdTime>2024-03-15 10:19:42 UTC</createdTime>
+<ownerDesignName>MEDS_DATA</ownerDesignName>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT019</logicalDatatype>
+<dataTypePrecision>*</dataTypePrecision>
+<dataTypeScale>0</dataTypeScale>
+<ownDataTypeParameters>,*,0</ownDataTypeParameters>
+<autoIncrementCycle>false</autoIncrementCycle>
+</Column>
+</columns>
+<indexes itemClass="oracle.dbtools.crest.model.design.relational.Index">
+<ind_PK_UK id="8D93ACBF-BA0C-EF8E-C531-6147E06320CA" name="OBSERVATION_PK">
+<createdBy>d.arboittedossantos</createdBy>
+<createdTime>2024-03-15 14:27:23 UTC</createdTime>
+<ownerDesignName>MEDS_DATA</ownerDesignName>
+<pk>true</pk>
+<indexState>Primary Constraint</indexState>
+<isSurrogateKey>false</isSurrogateKey>
+<indexColumnUsage>
+<colUsage columnID="D547036A-78DB-7036-C9BF-5C8B13653E07"/>
+<colUsage columnID="8BD8F40A-B8ED-CA8F-0F26-123AB3260403"/>
+</indexColumnUsage>
+</ind_PK_UK>
+<ind_PK_UK id="C00428A8-BE05-0859-329D-B7DB809D8A4A" schemaObject="1FA4795A-F971-A0A7-EC72-1452C492DEA9" name="OBSERVATION_IDX1">
+<sourceConnName>MEDS ADMIN</sourceConnName>
+<sourceObjSchema>MEDSADMIN</sourceObjSchema>
+<sourceObjName>OBSERVATION_IDX1</sourceObjName>
+<createdBy>d.arboittedossantos</createdBy>
+<createdTime>2024-03-15 10:19:46 UTC</createdTime>
+<ownerDesignName>MEDS_DATA</ownerDesignName>
+<isSurrogateKey>false</isSurrogateKey>
+<indexColumnUsage>
+<colUsage columnID="B832D226-E89F-A7C2-5A8E-02BFAEB1D5A2"/>
+</indexColumnUsage>
+</ind_PK_UK>
+<ind_PK_UK id="361BFEC0-430B-72ED-B7F6-711D29669E8A" schemaObject="1FA4795A-F971-A0A7-EC72-1452C492DEA9" name="OBSERVATION_IDX2">
+<sourceConnName>MEDS ADMIN</sourceConnName>
+<sourceObjSchema>MEDSADMIN</sourceObjSchema>
+<sourceObjName>OBSERVATION_IDX2</sourceObjName>
+<createdBy>d.arboittedossantos</createdBy>
+<createdTime>2024-03-15 10:19:46 UTC</createdTime>
+<ownerDesignName>MEDS_DATA</ownerDesignName>
+<isSurrogateKey>false</isSurrogateKey>
+<indexColumnUsage>
+<colUsage columnID="D547036A-78DB-7036-C9BF-5C8B13653E07"/>
+</indexColumnUsage>
+</ind_PK_UK>
+<ind_PK_UK id="F80C1EDA-1DF5-37DD-926C-FF74A0F2E6F7" schemaObject="1FA4795A-F971-A0A7-EC72-1452C492DEA9" name="OBSERVATION_IDX3">
+<sourceConnName>MEDS ADMIN</sourceConnName>
+<sourceObjSchema>MEDSADMIN</sourceObjSchema>
+<sourceObjName>OBSERVATION_IDX3</sourceObjName>
+<createdBy>d.arboittedossantos</createdBy>
+<createdTime>2024-03-15 10:19:46 UTC</createdTime>
+<ownerDesignName>MEDS_DATA</ownerDesignName>
+<isSurrogateKey>false</isSurrogateKey>
+<indexColumnUsage>
+<colUsage columnID="8BD8F40A-B8ED-CA8F-0F26-123AB3260403"/>
+</indexColumnUsage>
+</ind_PK_UK>
+<ind_PK_UK id="CF62208A-FFC7-800D-8B9D-9BB1D0B109A6" name="OBSERVATION_MEDS_PROCESSING_JOB_FK">
+<createdBy>d.arboittedossantos</createdBy>
+<createdTime>2024-03-15 14:26:41 UTC</createdTime>
+<ownerDesignName>MEDS_DATA</ownerDesignName>
+<indexState>Foreign Key</indexState>
+<isSurrogateKey>false</isSurrogateKey>
+<indexColumnUsage>
+<colUsage columnID="D547036A-78DB-7036-C9BF-5C8B13653E07"/>
+</indexColumnUsage>
+</ind_PK_UK>
+</indexes>
+</Table>

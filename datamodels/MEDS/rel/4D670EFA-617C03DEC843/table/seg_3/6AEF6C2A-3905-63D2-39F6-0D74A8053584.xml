@@ -1,0 +1,58 @@
+<?xml version = '1.0' encoding = 'UTF-8'?>
+<Table class="oracle.dbtools.crest.model.design.relational.Table" directorySegmentName="seg_3" id="6AEF6C2A-3905-63D2-39F6-0D74A8053584" schemaObject="198B7359-7E07-FB02-B07C-A0A91EE44FE7" name="TIFF_CHARTS_BACKUP">
+<sourceConnName>MEDS</sourceConnName>
+<sourceObjSchema>MEDSDATA</sourceObjSchema>
+<sourceObjName>TIFF_CHARTS_BACKUP</sourceObjName>
+<createdBy>darbo</createdBy>
+<createdTime>2024-02-13 17:12:15 UTC</createdTime>
+<ownerDesignName>MEDS</ownerDesignName>
+<allowColumnReorder>false</allowColumnReorder>
+<existDependencyGenerateInDDl>true</existDependencyGenerateInDDl>
+<parsed>true</parsed>
+<columns itemClass="oracle.dbtools.crest.model.design.relational.Column">
+<Column name="FILENAME" id="ED53A8BC-4912-3FBE-96EE-07B708CB3B66">
+<sourceConnName>MEDS</sourceConnName>
+<sourceObjSchema>TIFF_CHARTS_BACKUP</sourceObjSchema>
+<sourceObjName>FILENAME</sourceObjName>
+<createdBy>darbo</createdBy>
+<createdTime>2024-02-13 17:12:19 UTC</createdTime>
+<ownerDesignName>MEDS</ownerDesignName>
+<nullsAllowed>true</nullsAllowed>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT025</logicalDatatype>
+<dataTypeSize>64 BYTE</dataTypeSize>
+<ownDataTypeParameters>64 BYTE,,</ownDataTypeParameters>
+<autoIncrementCycle>false</autoIncrementCycle>
+</Column>
+<Column name="SIZE_DEGREES" id="D1A965B0-C1BA-4C5D-DCA5-3A0FAE2B1552">
+<sourceConnName>MEDS</sourceConnName>
+<sourceObjSchema>TIFF_CHARTS_BACKUP</sourceObjSchema>
+<sourceObjName>SIZE_DEGREES</sourceObjName>
+<createdBy>darbo</createdBy>
+<createdTime>2024-02-13 17:12:19 UTC</createdTime>
+<ownerDesignName>MEDS</ownerDesignName>
+<nullsAllowed>true</nullsAllowed>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT019</logicalDatatype>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
+<autoIncrementCycle>false</autoIncrementCycle>
+</Column>
+<Column name="LIMITS" id="63578CF1-EB09-DB71-D1B2-2E1DE4C4EF21">
+<sourceConnName>MEDS</sourceConnName>
+<sourceObjSchema>TIFF_CHARTS_BACKUP</sourceObjSchema>
+<sourceObjName>LIMITS</sourceObjName>
+<createdBy>darbo</createdBy>
+<createdTime>2024-02-13 17:12:19 UTC</createdTime>
+<ownerDesignName>MEDS</ownerDesignName>
+<nullsAllowed>true</nullsAllowed>
+<useDomainConstraints>false</useDomainConstraints>
+<allowSubtypeSubstitution>false</allowSubtypeSubstitution>
+<use>3</use>
+<structuredType>47E390DE-0671-C4B1-8428-0F45CBEE18F8</structuredType>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
+<autoIncrementCycle>false</autoIncrementCycle>
+</Column>
+</columns>
+</Table>

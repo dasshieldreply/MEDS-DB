@@ -1,5 +1,5 @@
 <?xml version = '1.0' encoding = 'UTF-8'?>
-<Table class="oracle.dbtools.crest.model.design.relational.Table" directorySegmentName="seg_0" id="0DC2B30D-B0C8-7432-FF05-5B222CC2213B" name="SOUND_VELOCITY">
+<Table class="oracle.dbtools.crest.model.design.relational.Table" directorySegmentName="seg_0" id="0DC2B30D-B0C8-7432-FF05-5B222CC2213B" schemaObject="20651223-0797-3CAA-7021-8449492EE83B" name="SERD_LOV_SOUND_VELOCITY">
 <createdBy>darbo</createdBy>
 <createdTime>2024-02-14 16:18:49 UTC</createdTime>
 <ownerDesignName>MEDS_SERD</ownerDesignName>
@@ -8,6 +8,16 @@
 <existDependencyGenerateInDDl>true</existDependencyGenerateInDDl>
 <parsed>true</parsed>
 <columns itemClass="oracle.dbtools.crest.model.design.relational.Column">
+<Column name="SERD_LOV_SOUND_VELOCITY" id="840BD15D-BF67-720C-0596-837B8E4EE4E0">
+<createdBy>d.arboittedossantos</createdBy>
+<createdTime>2024-04-04 15:36:08 UTC</createdTime>
+<ownerDesignName>MEDS_SERD</ownerDesignName>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT019</logicalDatatype>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
+<autoIncrementCycle>false</autoIncrementCycle>
+</Column>
 <Column name="SOUND_VELOCITY_CD" id="FD5154B4-501B-30CA-DE94-45ED73AB4007">
 <createdBy>darbo</createdBy>
 <createdTime>2024-02-14 16:18:49 UTC</createdTime>
@@ -33,12 +43,22 @@
 </Column>
 </columns>
 <indexes itemClass="oracle.dbtools.crest.model.design.relational.Index">
-<ind_PK_UK id="3EBB6A67-56C8-029F-F6A4-AAFD3A70EC00" name="SOUND_VELOCITY_PK">
-<createdBy>darbo</createdBy>
-<createdTime>2024-02-14 16:18:49 UTC</createdTime>
+<ind_PK_UK id="43B237DE-92F4-150D-8D6A-193D625D6C02" name="SERD_LOV_SOUND_VELOCITY_P">
+<createdBy>d.arboittedossantos</createdBy>
+<createdTime>2024-04-04 15:36:08 UTC</createdTime>
 <ownerDesignName>MEDS_SERD</ownerDesignName>
 <pk>true</pk>
 <indexState>Primary Constraint</indexState>
+<isSurrogateKey>false</isSurrogateKey>
+<indexColumnUsage>
+<colUsage columnID="840BD15D-BF67-720C-0596-837B8E4EE4E0"/>
+</indexColumnUsage>
+</ind_PK_UK>
+<ind_PK_UK id="A72AC79D-386F-56AF-2091-CCDB5EA39DC1" name="SERD_LOV_SOUND_VELOCITY_CD_U">
+<createdBy>d.arboittedossantos</createdBy>
+<createdTime>2024-04-04 15:36:08 UTC</createdTime>
+<ownerDesignName>MEDS_SERD</ownerDesignName>
+<indexState>Unique Constraint</indexState>
 <isSurrogateKey>false</isSurrogateKey>
 <indexColumnUsage>
 <colUsage columnID="FD5154B4-501B-30CA-DE94-45ED73AB4007"/>

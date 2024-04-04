@@ -1,0 +1,167 @@
+<?xml version = '1.0' encoding = 'UTF-8'?>
+<Table class="oracle.dbtools.crest.model.design.relational.Table" directorySegmentName="seg_3" id="38E9B6D4-18C6-4E00-3DDB-C11CA80543DF" schemaObject="198B7359-7E07-FB02-B07C-A0A91EE44FE7" name="SECCHI_DISK_OBSERVATION">
+<sourceConnName>MEDS</sourceConnName>
+<sourceObjSchema>MEDSDATA</sourceObjSchema>
+<sourceObjName>SECCHI_DISK_OBSERVATION</sourceObjName>
+<createdBy>darbo</createdBy>
+<createdTime>2024-02-13 17:12:16 UTC</createdTime>
+<ownerDesignName>MEDS_DATA</ownerDesignName>
+<allowColumnReorder>false</allowColumnReorder>
+<existDependencyGenerateInDDl>true</existDependencyGenerateInDDl>
+<parsed>true</parsed>
+<columns itemClass="oracle.dbtools.crest.model.design.relational.Column">
+<Column name="MEDS_OBSERVATION_NUMBER" id="379F3FD1-BE42-228E-9F0C-F90C5EC47FA5">
+<sourceConnName>MEDS</sourceConnName>
+<sourceObjSchema>SECCHI_DISK_OBSERVATION</sourceObjSchema>
+<sourceObjName>MEDS_OBSERVATION_NUMBER</sourceObjName>
+<createdBy>darbo</createdBy>
+<createdTime>2024-02-13 17:12:19 UTC</createdTime>
+<ownerDesignName>MEDS_DATA</ownerDesignName>
+<nullsAllowed>true</nullsAllowed>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT019</logicalDatatype>
+<dataTypePrecision>10</dataTypePrecision>
+<dataTypeScale>0</dataTypeScale>
+<ownDataTypeParameters>,10,0</ownDataTypeParameters>
+<autoIncrementCycle>false</autoIncrementCycle>
+</Column>
+<Column name="MEDS_JOB_NUMBER" id="E8CB3D36-78B9-904A-0646-A7828EBB3661">
+<sourceConnName>MEDS</sourceConnName>
+<sourceObjSchema>SECCHI_DISK_OBSERVATION</sourceObjSchema>
+<sourceObjName>MEDS_JOB_NUMBER</sourceObjName>
+<createdBy>darbo</createdBy>
+<createdTime>2024-02-13 17:12:19 UTC</createdTime>
+<ownerDesignName>MEDS_DATA</ownerDesignName>
+<nullsAllowed>true</nullsAllowed>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT019</logicalDatatype>
+<dataTypePrecision>10</dataTypePrecision>
+<dataTypeScale>0</dataTypeScale>
+<ownDataTypeParameters>,10,0</ownDataTypeParameters>
+<autoIncrementCycle>false</autoIncrementCycle>
+</Column>
+<Column name="LOCATION" id="C328ABDB-C84B-8C15-7049-E7AEDC7AE399">
+<sourceConnName>MEDS</sourceConnName>
+<sourceObjSchema>SECCHI_DISK_OBSERVATION</sourceObjSchema>
+<sourceObjName>LOCATION</sourceObjName>
+<createdBy>darbo</createdBy>
+<createdTime>2024-02-13 17:12:19 UTC</createdTime>
+<ownerDesignName>MEDS_DATA</ownerDesignName>
+<nullsAllowed>true</nullsAllowed>
+<useDomainConstraints>false</useDomainConstraints>
+<allowSubtypeSubstitution>false</allowSubtypeSubstitution>
+<use>3</use>
+<structuredType>47E390DE-0671-C4B1-8428-0F45CBEE18F8</structuredType>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
+<autoIncrementCycle>false</autoIncrementCycle>
+</Column>
+<Column name="DATE_RECORDED" id="876F3B35-B330-937B-0B00-34B0EB918B21">
+<sourceConnName>MEDS</sourceConnName>
+<sourceObjSchema>SECCHI_DISK_OBSERVATION</sourceObjSchema>
+<sourceObjName>DATE_RECORDED</sourceObjName>
+<createdBy>darbo</createdBy>
+<createdTime>2024-02-13 17:12:19 UTC</createdTime>
+<ownerDesignName>MEDS_DATA</ownerDesignName>
+<nullsAllowed>true</nullsAllowed>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT007</logicalDatatype>
+<dataTypeSize>7</dataTypeSize>
+<ownDataTypeParameters>7,,</ownDataTypeParameters>
+<autoIncrementCycle>false</autoIncrementCycle>
+</Column>
+<Column name="LATITUDE" id="230D0FEA-1255-8187-CA6E-2F6E467B7617">
+<sourceConnName>MEDS</sourceConnName>
+<sourceObjSchema>SECCHI_DISK_OBSERVATION</sourceObjSchema>
+<sourceObjName>LATITUDE</sourceObjName>
+<createdBy>darbo</createdBy>
+<createdTime>2024-02-13 17:12:19 UTC</createdTime>
+<ownerDesignName>MEDS_DATA</ownerDesignName>
+<nullsAllowed>true</nullsAllowed>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT019</logicalDatatype>
+<dataTypePrecision>12</dataTypePrecision>
+<dataTypeScale>8</dataTypeScale>
+<ownDataTypeParameters>,12,8</ownDataTypeParameters>
+<autoIncrementCycle>false</autoIncrementCycle>
+</Column>
+<Column name="LONGITUDE" id="6DD5C74A-58EB-12DF-88C7-D322865773B3">
+<sourceConnName>MEDS</sourceConnName>
+<sourceObjSchema>SECCHI_DISK_OBSERVATION</sourceObjSchema>
+<sourceObjName>LONGITUDE</sourceObjName>
+<createdBy>darbo</createdBy>
+<createdTime>2024-02-13 17:12:19 UTC</createdTime>
+<ownerDesignName>MEDS_DATA</ownerDesignName>
+<nullsAllowed>true</nullsAllowed>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT019</logicalDatatype>
+<dataTypePrecision>12</dataTypePrecision>
+<dataTypeScale>8</dataTypeScale>
+<ownDataTypeParameters>,12,8</ownDataTypeParameters>
+<autoIncrementCycle>false</autoIncrementCycle>
+</Column>
+</columns>
+<indexes itemClass="oracle.dbtools.crest.model.design.relational.Index">
+<ind_PK_UK id="D17DA663-A36F-3A3E-23FB-82FC64CC5860" schemaObject="198B7359-7E07-FB02-B07C-A0A91EE44FE7" name="IDX_DATE_SECCHI_42">
+<sourceConnName>MEDS</sourceConnName>
+<sourceObjSchema>MEDSDATA</sourceObjSchema>
+<sourceObjName>IDX_DATE_SECCHI_42</sourceObjName>
+<createdBy>darbo</createdBy>
+<createdTime>2024-02-13 17:12:28 UTC</createdTime>
+<ownerDesignName>MEDS_DATA</ownerDesignName>
+<isSurrogateKey>false</isSurrogateKey>
+<indexColumnUsage>
+<colUsage columnID="876F3B35-B330-937B-0B00-34B0EB918B21"/>
+</indexColumnUsage>
+</ind_PK_UK>
+<ind_PK_UK id="BD8B391C-D038-2435-CBAF-AB96458565E5" schemaObject="198B7359-7E07-FB02-B07C-A0A91EE44FE7" name="IDX_JOB_SECCHI_74">
+<sourceConnName>MEDS</sourceConnName>
+<sourceObjSchema>MEDSDATA</sourceObjSchema>
+<sourceObjName>IDX_JOB_SECCHI_74</sourceObjName>
+<createdBy>darbo</createdBy>
+<createdTime>2024-02-13 17:12:28 UTC</createdTime>
+<ownerDesignName>MEDS_DATA</ownerDesignName>
+<isSurrogateKey>false</isSurrogateKey>
+<indexColumnUsage>
+<colUsage columnID="E8CB3D36-78B9-904A-0646-A7828EBB3661"/>
+<colUsage columnID="379F3FD1-BE42-228E-9F0C-F90C5EC47FA5"/>
+</indexColumnUsage>
+</ind_PK_UK>
+<ind_PK_UK id="FC0BC9BF-0F0C-B671-06F2-A6B149F57473" schemaObject="198B7359-7E07-FB02-B07C-A0A91EE44FE7" name="IDX_POSN_SECCHI_29">
+<sourceConnName>MEDS</sourceConnName>
+<sourceObjSchema>MEDSDATA</sourceObjSchema>
+<sourceObjName>IDX_POSN_SECCHI_29</sourceObjName>
+<createdBy>darbo</createdBy>
+<createdTime>2024-02-13 17:12:28 UTC</createdTime>
+<ownerDesignName>MEDS_DATA</ownerDesignName>
+<isSurrogateKey>false</isSurrogateKey>
+<indexColumnUsage>
+<colUsage columnID="230D0FEA-1255-8187-CA6E-2F6E467B7617"/>
+<colUsage columnID="6DD5C74A-58EB-12DF-88C7-D322865773B3"/>
+</indexColumnUsage>
+</ind_PK_UK>
+<ind_PK_UK id="F25D13F7-37A4-52B0-8E84-A4812194BF77" schemaObject="198B7359-7E07-FB02-B07C-A0A91EE44FE7" name="SI_SECCHIDISK">
+<sourceConnName>MEDS</sourceConnName>
+<sourceObjSchema>MEDSDATA</sourceObjSchema>
+<sourceObjName>SI_SECCHIDISK</sourceObjName>
+<createdBy>darbo</createdBy>
+<createdTime>2024-02-13 17:12:28 UTC</createdTime>
+<ownerDesignName>MEDS_DATA</ownerDesignName>
+<spatialIndex>true</spatialIndex>
+<isSurrogateKey>false</isSurrogateKey>
+<indexColumnUsage>
+<colUsage columnID="C328ABDB-C84B-8C15-7049-E7AEDC7AE399"/>
+</indexColumnUsage>
+</ind_PK_UK>
+</indexes>
+<spatialDefinitions>
+<spatialColumnDefinition class="oracle.dbtools.crest.model.design.relational.SpatialColumnDefObject" name="ColumnDefinition_1" objectID="5EA6B18E-12EE-71BF-30CB-91B11914A4D7">
+<function>false</function>
+<spatialIndex>F25D13F7-37A4-52B0-8E84-A4812194BF77</spatialIndex>
+</spatialColumnDefinition>
+</spatialDefinitions>
+</Table>

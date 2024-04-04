@@ -1,0 +1,107 @@
+<?xml version = '1.0' encoding = 'UTF-8'?>
+<Table class="oracle.dbtools.crest.model.design.relational.Table" directorySegmentName="seg_1" id="8FEE1C4D-C3B2-202B-2118-A766FED8C56C" schemaObject="1FA4795A-F971-A0A7-EC72-1452C492DEA9" name="JOB_STATS_SETTINGS">
+<sourceConnName>MEDS ADMIN</sourceConnName>
+<sourceObjSchema>MEDSADMIN</sourceObjSchema>
+<sourceObjName>JOB_STATS_SETTINGS</sourceObjName>
+<createdBy>d.arboittedossantos</createdBy>
+<createdTime>2024-03-15 10:19:40 UTC</createdTime>
+<ownerDesignName>MEDS_DATA</ownerDesignName>
+<allowColumnReorder>false</allowColumnReorder>
+<existDependencyGenerateInDDl>true</existDependencyGenerateInDDl>
+<parsed>true</parsed>
+<columns itemClass="oracle.dbtools.crest.model.design.relational.Column">
+<Column name="VALUE" id="BA89FE57-5F9D-0508-AD31-5DC7A8A766CD">
+<sourceConnName>MEDS ADMIN</sourceConnName>
+<sourceObjSchema>JOB_STATS_SETTINGS</sourceObjSchema>
+<sourceObjName>VALUE</sourceObjName>
+<createdBy>d.arboittedossantos</createdBy>
+<createdTime>2024-03-15 10:19:42 UTC</createdTime>
+<ownerDesignName>MEDS_DATA</ownerDesignName>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT019</logicalDatatype>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
+<autoIncrementCycle>false</autoIncrementCycle>
+</Column>
+<Column name="DAY" id="B2C167FE-3315-E2E7-350B-1430019E0265">
+<sourceConnName>MEDS ADMIN</sourceConnName>
+<sourceObjSchema>JOB_STATS_SETTINGS</sourceObjSchema>
+<sourceObjName>DAY</sourceObjName>
+<createdBy>d.arboittedossantos</createdBy>
+<createdTime>2024-03-15 10:19:42 UTC</createdTime>
+<ownerDesignName>MEDS_DATA</ownerDesignName>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT019</logicalDatatype>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
+<autoIncrementCycle>false</autoIncrementCycle>
+</Column>
+<Column name="MONTH" id="04FAD9FC-7717-1CD4-E6C0-7CF341E4987B">
+<sourceConnName>MEDS ADMIN</sourceConnName>
+<sourceObjSchema>JOB_STATS_SETTINGS</sourceObjSchema>
+<sourceObjName>MONTH</sourceObjName>
+<createdBy>d.arboittedossantos</createdBy>
+<createdTime>2024-03-15 10:19:42 UTC</createdTime>
+<ownerDesignName>MEDS_DATA</ownerDesignName>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT024</logicalDatatype>
+<dataTypeSize>16 BYTE</dataTypeSize>
+<ownDataTypeParameters>16 BYTE,,</ownDataTypeParameters>
+<autoIncrementCycle>false</autoIncrementCycle>
+</Column>
+<Column name="YEAR" id="DDCA1084-D496-2348-95BC-0941ABD012C1">
+<sourceConnName>MEDS ADMIN</sourceConnName>
+<sourceObjSchema>JOB_STATS_SETTINGS</sourceObjSchema>
+<sourceObjName>YEAR</sourceObjName>
+<createdBy>d.arboittedossantos</createdBy>
+<createdTime>2024-03-15 10:19:42 UTC</createdTime>
+<ownerDesignName>MEDS_DATA</ownerDesignName>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT019</logicalDatatype>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
+<autoIncrementCycle>false</autoIncrementCycle>
+</Column>
+<Column name="INTERVAL" id="91268467-C1C7-8594-436D-ECF21FBC6C57">
+<sourceConnName>MEDS ADMIN</sourceConnName>
+<sourceObjSchema>JOB_STATS_SETTINGS</sourceObjSchema>
+<sourceObjName>INTERVAL</sourceObjName>
+<createdBy>d.arboittedossantos</createdBy>
+<createdTime>2024-03-15 10:19:42 UTC</createdTime>
+<ownerDesignName>MEDS_DATA</ownerDesignName>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT024</logicalDatatype>
+<dataTypeSize>16 BYTE</dataTypeSize>
+<ownDataTypeParameters>16 BYTE,,</ownDataTypeParameters>
+<autoIncrementCycle>false</autoIncrementCycle>
+</Column>
+<Column name="NUM_INTERVALS" id="1FEDFB68-D91F-940D-DF53-18D25709626C">
+<sourceConnName>MEDS ADMIN</sourceConnName>
+<sourceObjSchema>JOB_STATS_SETTINGS</sourceObjSchema>
+<sourceObjName>NUM_INTERVALS</sourceObjName>
+<createdBy>d.arboittedossantos</createdBy>
+<createdTime>2024-03-15 10:19:42 UTC</createdTime>
+<ownerDesignName>MEDS_DATA</ownerDesignName>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT019</logicalDatatype>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
+<autoIncrementCycle>false</autoIncrementCycle>
+</Column>
+<Column name="TOTAL" id="8AE2AF1F-BFD8-4478-3E74-49E1DA80F7B8">
+<sourceConnName>MEDS ADMIN</sourceConnName>
+<sourceObjSchema>JOB_STATS_SETTINGS</sourceObjSchema>
+<sourceObjName>TOTAL</sourceObjName>
+<createdBy>d.arboittedossantos</createdBy>
+<createdTime>2024-03-15 10:19:42 UTC</createdTime>
+<ownerDesignName>MEDS_DATA</ownerDesignName>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT019</logicalDatatype>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
+<autoIncrementCycle>false</autoIncrementCycle>
+</Column>
+</columns>
+</Table>

@@ -1,5 +1,5 @@
 <?xml version = '1.0' encoding = 'UTF-8'?>
-<Table class="oracle.dbtools.crest.model.design.relational.Table" directorySegmentName="seg_0" id="32DB7534-CB88-5487-204A-FA25927516FF" name="WIND_DIRECTION">
+<Table class="oracle.dbtools.crest.model.design.relational.Table" directorySegmentName="seg_0" id="32DB7534-CB88-5487-204A-FA25927516FF" schemaObject="20651223-0797-3CAA-7021-8449492EE83B" name="SERD_LOV_WIND_DIRECTION">
 <createdBy>darbo</createdBy>
 <createdTime>2024-02-14 13:32:21 UTC</createdTime>
 <ownerDesignName>MEDS_SERD</ownerDesignName>
@@ -8,6 +8,16 @@
 <existDependencyGenerateInDDl>true</existDependencyGenerateInDDl>
 <parsed>true</parsed>
 <columns itemClass="oracle.dbtools.crest.model.design.relational.Column">
+<Column name="SERD_LOV_WIND_DIRECTION" id="AD342F57-E23A-D6C3-197F-AF92074D680E">
+<createdBy>d.arboittedossantos</createdBy>
+<createdTime>2024-04-04 15:39:02 UTC</createdTime>
+<ownerDesignName>MEDS_SERD</ownerDesignName>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT019</logicalDatatype>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
+<autoIncrementCycle>false</autoIncrementCycle>
+</Column>
 <Column name="WIND_DIRECTION_CD" id="2BE0D5E1-804B-C97C-A052-2065315A8222">
 <createdBy>darbo</createdBy>
 <createdTime>2024-02-14 13:33:08 UTC</createdTime>
@@ -33,12 +43,22 @@
 </Column>
 </columns>
 <indexes itemClass="oracle.dbtools.crest.model.design.relational.Index">
-<ind_PK_UK id="B0643FCF-89E8-8CE5-23A8-C00BB0D43F3F" name="WIND_DIRECTION_PK">
-<createdBy>darbo</createdBy>
-<createdTime>2024-02-14 13:33:19 UTC</createdTime>
+<ind_PK_UK id="D65DF0F1-C823-460F-5D0D-FB88E9617A73" name="SERD_LOV_WIND_DIRECTION_P">
+<createdBy>d.arboittedossantos</createdBy>
+<createdTime>2024-04-04 15:39:02 UTC</createdTime>
 <ownerDesignName>MEDS_SERD</ownerDesignName>
 <pk>true</pk>
 <indexState>Primary Constraint</indexState>
+<isSurrogateKey>false</isSurrogateKey>
+<indexColumnUsage>
+<colUsage columnID="AD342F57-E23A-D6C3-197F-AF92074D680E"/>
+</indexColumnUsage>
+</ind_PK_UK>
+<ind_PK_UK id="AC68683C-9486-DD09-7E06-CB5E996420B7" name="SERD_LOV_WIND_DIRECTION_CD_U">
+<createdBy>d.arboittedossantos</createdBy>
+<createdTime>2024-04-04 15:39:02 UTC</createdTime>
+<ownerDesignName>MEDS_SERD</ownerDesignName>
+<indexState>Unique Constraint</indexState>
 <isSurrogateKey>false</isSurrogateKey>
 <indexColumnUsage>
 <colUsage columnID="2BE0D5E1-804B-C97C-A052-2065315A8222"/>

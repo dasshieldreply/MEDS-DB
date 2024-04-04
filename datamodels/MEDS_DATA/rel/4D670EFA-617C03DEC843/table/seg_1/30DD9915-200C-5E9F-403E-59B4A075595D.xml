@@ -1,0 +1,112 @@
+<?xml version = '1.0' encoding = 'UTF-8'?>
+<Table class="oracle.dbtools.crest.model.design.relational.Table" directorySegmentName="seg_1" id="30DD9915-200C-5E9F-403E-59B4A075595D" schemaObject="198B7359-7E07-FB02-B07C-A0A91EE44FE7" name="MLO_CETACEANS_ENVELOPE">
+<sourceConnName>MEDS</sourceConnName>
+<sourceObjSchema>MEDSDATA</sourceObjSchema>
+<sourceObjName>MLO_CETACEANS_ENVELOPE</sourceObjName>
+<createdBy>darbo</createdBy>
+<createdTime>2024-02-13 17:12:15 UTC</createdTime>
+<ownerDesignName>MEDS_DATA</ownerDesignName>
+<allowColumnReorder>false</allowColumnReorder>
+<existDependencyGenerateInDDl>true</existDependencyGenerateInDDl>
+<parsed>true</parsed>
+<columns itemClass="oracle.dbtools.crest.model.design.relational.Column">
+<Column name="ENVELOPE" id="7EE61F64-1C97-D9A9-1978-AC86A8E1DC4A">
+<sourceConnName>MEDS</sourceConnName>
+<sourceObjSchema>MLO_CETACEANS_ENVELOPE</sourceObjSchema>
+<sourceObjName>ENVELOPE</sourceObjName>
+<createdBy>darbo</createdBy>
+<createdTime>2024-02-13 17:12:19 UTC</createdTime>
+<ownerDesignName>MEDS_DATA</ownerDesignName>
+<nullsAllowed>true</nullsAllowed>
+<useDomainConstraints>false</useDomainConstraints>
+<allowSubtypeSubstitution>false</allowSubtypeSubstitution>
+<use>3</use>
+<structuredType>47E390DE-0671-C4B1-8428-0F45CBEE18F8</structuredType>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
+<autoIncrementCycle>false</autoIncrementCycle>
+</Column>
+<Column name="MEDS_JOB_NUMBER" id="C9A12003-7F4C-7319-BA49-E3B30B461AB2">
+<sourceConnName>MEDS</sourceConnName>
+<sourceObjSchema>MLO_CETACEANS_ENVELOPE</sourceObjSchema>
+<sourceObjName>MEDS_JOB_NUMBER</sourceObjName>
+<createdBy>darbo</createdBy>
+<createdTime>2024-02-13 17:12:19 UTC</createdTime>
+<ownerDesignName>MEDS_DATA</ownerDesignName>
+<nullsAllowed>true</nullsAllowed>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT019</logicalDatatype>
+<dataTypePrecision>10</dataTypePrecision>
+<dataTypeScale>0</dataTypeScale>
+<ownDataTypeParameters>,10,0</ownDataTypeParameters>
+<autoIncrementCycle>false</autoIncrementCycle>
+</Column>
+<Column name="MEDS_TRACK_NUMBER" id="6E96A95E-F65E-6F8F-B1D1-4FB9AE02B15F">
+<sourceConnName>MEDS</sourceConnName>
+<sourceObjSchema>MLO_CETACEANS_ENVELOPE</sourceObjSchema>
+<sourceObjName>MEDS_TRACK_NUMBER</sourceObjName>
+<createdBy>darbo</createdBy>
+<createdTime>2024-02-13 17:12:19 UTC</createdTime>
+<ownerDesignName>MEDS_DATA</ownerDesignName>
+<nullsAllowed>true</nullsAllowed>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT019</logicalDatatype>
+<dataTypePrecision>10</dataTypePrecision>
+<dataTypeScale>0</dataTypeScale>
+<ownDataTypeParameters>,10,0</ownDataTypeParameters>
+<autoIncrementCycle>false</autoIncrementCycle>
+</Column>
+<Column name="NUM_OBS" id="EDD35194-553E-B190-A605-3BCCB76A272A">
+<sourceConnName>MEDS</sourceConnName>
+<sourceObjSchema>MLO_CETACEANS_ENVELOPE</sourceObjSchema>
+<sourceObjName>NUM_OBS</sourceObjName>
+<createdBy>darbo</createdBy>
+<createdTime>2024-02-13 17:12:19 UTC</createdTime>
+<ownerDesignName>MEDS_DATA</ownerDesignName>
+<nullsAllowed>true</nullsAllowed>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT019</logicalDatatype>
+<dataTypePrecision>10</dataTypePrecision>
+<dataTypeScale>0</dataTypeScale>
+<defaultValue>0</defaultValue>
+<ownDataTypeParameters>,10,0</ownDataTypeParameters>
+<autoIncrementCycle>false</autoIncrementCycle>
+</Column>
+</columns>
+<indexes itemClass="oracle.dbtools.crest.model.design.relational.Index">
+<ind_PK_UK id="68076BEF-591D-BA5C-A9A2-F32B0B9D5FB2" schemaObject="198B7359-7E07-FB02-B07C-A0A91EE44FE7" name="IDX_MLO_CETACEANS_ENVELOPE_JOB">
+<sourceConnName>MEDS</sourceConnName>
+<sourceObjSchema>MEDSDATA</sourceObjSchema>
+<sourceObjName>IDX_MLO_CETACEANS_ENVELOPE_JOB</sourceObjName>
+<createdBy>darbo</createdBy>
+<createdTime>2024-02-13 17:12:26 UTC</createdTime>
+<ownerDesignName>MEDS_DATA</ownerDesignName>
+<isSurrogateKey>false</isSurrogateKey>
+<indexColumnUsage>
+<colUsage columnID="C9A12003-7F4C-7319-BA49-E3B30B461AB2"/>
+<colUsage columnID="6E96A95E-F65E-6F8F-B1D1-4FB9AE02B15F"/>
+</indexColumnUsage>
+</ind_PK_UK>
+<ind_PK_UK id="98F580FD-ACDF-5B1D-5E0C-6854AA662F26" schemaObject="198B7359-7E07-FB02-B07C-A0A91EE44FE7" name="SI_MLO_CETACEANS_ENVELOPE">
+<sourceConnName>MEDS</sourceConnName>
+<sourceObjSchema>MEDSDATA</sourceObjSchema>
+<sourceObjName>SI_MLO_CETACEANS_ENVELOPE</sourceObjName>
+<createdBy>darbo</createdBy>
+<createdTime>2024-02-13 17:12:26 UTC</createdTime>
+<ownerDesignName>MEDS_DATA</ownerDesignName>
+<spatialIndex>true</spatialIndex>
+<isSurrogateKey>false</isSurrogateKey>
+<indexColumnUsage>
+<colUsage columnID="7EE61F64-1C97-D9A9-1978-AC86A8E1DC4A"/>
+</indexColumnUsage>
+</ind_PK_UK>
+</indexes>
+<spatialDefinitions>
+<spatialColumnDefinition class="oracle.dbtools.crest.model.design.relational.SpatialColumnDefObject" name="ColumnDefinition_1" objectID="B271D50F-F2E9-6A90-0174-38E0E7AA6F41">
+<function>false</function>
+<spatialIndex>98F580FD-ACDF-5B1D-5E0C-6854AA662F26</spatialIndex>
+</spatialColumnDefinition>
+</spatialDefinitions>
+</Table>

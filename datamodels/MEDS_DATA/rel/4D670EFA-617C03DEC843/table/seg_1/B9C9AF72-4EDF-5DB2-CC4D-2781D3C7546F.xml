@@ -1,0 +1,194 @@
+<?xml version = '1.0' encoding = 'UTF-8'?>
+<Table class="oracle.dbtools.crest.model.design.relational.Table" directorySegmentName="seg_1" id="B9C9AF72-4EDF-5DB2-CC4D-2781D3C7546F" schemaObject="198B7359-7E07-FB02-B07C-A0A91EE44FE7" name="MAPINFO_MAPCATALOG">
+<sourceConnName>MEDS</sourceConnName>
+<sourceObjSchema>MEDSDATA</sourceObjSchema>
+<sourceObjName>MAPINFO_MAPCATALOG</sourceObjName>
+<createdBy>darbo</createdBy>
+<createdTime>2024-02-13 17:12:15 UTC</createdTime>
+<ownerDesignName>MEDS_DATA</ownerDesignName>
+<allowColumnReorder>false</allowColumnReorder>
+<existDependencyGenerateInDDl>true</existDependencyGenerateInDDl>
+<parsed>true</parsed>
+<columns itemClass="oracle.dbtools.crest.model.design.relational.Column">
+<Column name="SPATIALTYPE" id="18CC7F26-FC3F-0C99-8271-80D0BB5594A8">
+<sourceConnName>MEDS</sourceConnName>
+<sourceObjSchema>MAPINFO_MAPCATALOG</sourceObjSchema>
+<sourceObjName>SPATIALTYPE</sourceObjName>
+<createdBy>darbo</createdBy>
+<createdTime>2024-02-13 17:12:18 UTC</createdTime>
+<ownerDesignName>MEDS_DATA</ownerDesignName>
+<nullsAllowed>true</nullsAllowed>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT021</logicalDatatype>
+<dataTypePrecision>126</dataTypePrecision>
+<ownDataTypeParameters>,126,</ownDataTypeParameters>
+<autoIncrementCycle>false</autoIncrementCycle>
+</Column>
+<Column name="TABLENAME" id="9B9DAEE0-8A04-402B-9C88-2A0ED9203A76">
+<sourceConnName>MEDS</sourceConnName>
+<sourceObjSchema>MAPINFO_MAPCATALOG</sourceObjSchema>
+<sourceObjName>TABLENAME</sourceObjName>
+<createdBy>darbo</createdBy>
+<createdTime>2024-02-13 17:12:18 UTC</createdTime>
+<ownerDesignName>MEDS_DATA</ownerDesignName>
+<nullsAllowed>true</nullsAllowed>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT024</logicalDatatype>
+<dataTypeSize>32 BYTE</dataTypeSize>
+<ownDataTypeParameters>32 BYTE,,</ownDataTypeParameters>
+<autoIncrementCycle>false</autoIncrementCycle>
+</Column>
+<Column name="OWNERNAME" id="956DD81B-4A05-3DA7-9851-9C340958081E">
+<sourceConnName>MEDS</sourceConnName>
+<sourceObjSchema>MAPINFO_MAPCATALOG</sourceObjSchema>
+<sourceObjName>OWNERNAME</sourceObjName>
+<createdBy>darbo</createdBy>
+<createdTime>2024-02-13 17:12:18 UTC</createdTime>
+<ownerDesignName>MEDS_DATA</ownerDesignName>
+<nullsAllowed>true</nullsAllowed>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT024</logicalDatatype>
+<dataTypeSize>32 BYTE</dataTypeSize>
+<ownDataTypeParameters>32 BYTE,,</ownDataTypeParameters>
+<autoIncrementCycle>false</autoIncrementCycle>
+</Column>
+<Column name="SPATIALCOLUMN" id="BE5F1B7C-3321-2A0A-EB69-F41F1CB81D97">
+<sourceConnName>MEDS</sourceConnName>
+<sourceObjSchema>MAPINFO_MAPCATALOG</sourceObjSchema>
+<sourceObjName>SPATIALCOLUMN</sourceObjName>
+<createdBy>darbo</createdBy>
+<createdTime>2024-02-13 17:12:18 UTC</createdTime>
+<ownerDesignName>MEDS_DATA</ownerDesignName>
+<nullsAllowed>true</nullsAllowed>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT024</logicalDatatype>
+<dataTypeSize>32 BYTE</dataTypeSize>
+<ownDataTypeParameters>32 BYTE,,</ownDataTypeParameters>
+<autoIncrementCycle>false</autoIncrementCycle>
+</Column>
+<Column name="DB_X_LL" id="3B57379F-EA12-80EA-ED53-92AC5A53F8A2">
+<sourceConnName>MEDS</sourceConnName>
+<sourceObjSchema>MAPINFO_MAPCATALOG</sourceObjSchema>
+<sourceObjName>DB_X_LL</sourceObjName>
+<createdBy>darbo</createdBy>
+<createdTime>2024-02-13 17:12:18 UTC</createdTime>
+<ownerDesignName>MEDS_DATA</ownerDesignName>
+<nullsAllowed>true</nullsAllowed>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT021</logicalDatatype>
+<dataTypePrecision>126</dataTypePrecision>
+<ownDataTypeParameters>,126,</ownDataTypeParameters>
+<autoIncrementCycle>false</autoIncrementCycle>
+</Column>
+<Column name="DB_Y_LL" id="4666845B-94F1-6557-4B1C-8468F03C84DE">
+<sourceConnName>MEDS</sourceConnName>
+<sourceObjSchema>MAPINFO_MAPCATALOG</sourceObjSchema>
+<sourceObjName>DB_Y_LL</sourceObjName>
+<createdBy>darbo</createdBy>
+<createdTime>2024-02-13 17:12:18 UTC</createdTime>
+<ownerDesignName>MEDS_DATA</ownerDesignName>
+<nullsAllowed>true</nullsAllowed>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT021</logicalDatatype>
+<dataTypePrecision>126</dataTypePrecision>
+<ownDataTypeParameters>,126,</ownDataTypeParameters>
+<autoIncrementCycle>false</autoIncrementCycle>
+</Column>
+<Column name="DB_X_UR" id="E61A7A85-0552-E8FC-5C12-B36B1A9FD716">
+<sourceConnName>MEDS</sourceConnName>
+<sourceObjSchema>MAPINFO_MAPCATALOG</sourceObjSchema>
+<sourceObjName>DB_X_UR</sourceObjName>
+<createdBy>darbo</createdBy>
+<createdTime>2024-02-13 17:12:18 UTC</createdTime>
+<ownerDesignName>MEDS_DATA</ownerDesignName>
+<nullsAllowed>true</nullsAllowed>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT021</logicalDatatype>
+<dataTypePrecision>126</dataTypePrecision>
+<ownDataTypeParameters>,126,</ownDataTypeParameters>
+<autoIncrementCycle>false</autoIncrementCycle>
+</Column>
+<Column name="DB_Y_UR" id="55345C01-EDCC-0AD8-1EAC-0CA1D2945D73">
+<sourceConnName>MEDS</sourceConnName>
+<sourceObjSchema>MAPINFO_MAPCATALOG</sourceObjSchema>
+<sourceObjName>DB_Y_UR</sourceObjName>
+<createdBy>darbo</createdBy>
+<createdTime>2024-02-13 17:12:18 UTC</createdTime>
+<ownerDesignName>MEDS_DATA</ownerDesignName>
+<nullsAllowed>true</nullsAllowed>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT021</logicalDatatype>
+<dataTypePrecision>126</dataTypePrecision>
+<ownDataTypeParameters>,126,</ownDataTypeParameters>
+<autoIncrementCycle>false</autoIncrementCycle>
+</Column>
+<Column name="COORDINATESYSTEM" id="9C84FA71-B38D-1079-BE2C-427EEA61EBDA">
+<sourceConnName>MEDS</sourceConnName>
+<sourceObjSchema>MAPINFO_MAPCATALOG</sourceObjSchema>
+<sourceObjName>COORDINATESYSTEM</sourceObjName>
+<createdBy>darbo</createdBy>
+<createdTime>2024-02-13 17:12:18 UTC</createdTime>
+<ownerDesignName>MEDS_DATA</ownerDesignName>
+<nullsAllowed>true</nullsAllowed>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT024</logicalDatatype>
+<dataTypeSize>254 BYTE</dataTypeSize>
+<ownDataTypeParameters>254 BYTE,,</ownDataTypeParameters>
+<autoIncrementCycle>false</autoIncrementCycle>
+</Column>
+<Column name="SYMBOL" id="1B1A5B1E-1F31-8BE7-39EC-CE1236C4CDEF">
+<sourceConnName>MEDS</sourceConnName>
+<sourceObjSchema>MAPINFO_MAPCATALOG</sourceObjSchema>
+<sourceObjName>SYMBOL</sourceObjName>
+<createdBy>darbo</createdBy>
+<createdTime>2024-02-13 17:12:18 UTC</createdTime>
+<ownerDesignName>MEDS_DATA</ownerDesignName>
+<nullsAllowed>true</nullsAllowed>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT024</logicalDatatype>
+<dataTypeSize>254 BYTE</dataTypeSize>
+<ownDataTypeParameters>254 BYTE,,</ownDataTypeParameters>
+<autoIncrementCycle>false</autoIncrementCycle>
+</Column>
+<Column name="XCOLUMNNAME" id="68B7BD06-94A0-60D5-5C41-91E2ADA0B33C">
+<sourceConnName>MEDS</sourceConnName>
+<sourceObjSchema>MAPINFO_MAPCATALOG</sourceObjSchema>
+<sourceObjName>XCOLUMNNAME</sourceObjName>
+<createdBy>darbo</createdBy>
+<createdTime>2024-02-13 17:12:18 UTC</createdTime>
+<ownerDesignName>MEDS_DATA</ownerDesignName>
+<nullsAllowed>true</nullsAllowed>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT024</logicalDatatype>
+<dataTypeSize>32 BYTE</dataTypeSize>
+<ownDataTypeParameters>32 BYTE,,</ownDataTypeParameters>
+<autoIncrementCycle>false</autoIncrementCycle>
+</Column>
+<Column name="YCOLUMNNAME" id="392B4243-6E88-1704-F92D-BA69C3E3890D">
+<sourceConnName>MEDS</sourceConnName>
+<sourceObjSchema>MAPINFO_MAPCATALOG</sourceObjSchema>
+<sourceObjName>YCOLUMNNAME</sourceObjName>
+<createdBy>darbo</createdBy>
+<createdTime>2024-02-13 17:12:18 UTC</createdTime>
+<ownerDesignName>MEDS_DATA</ownerDesignName>
+<nullsAllowed>true</nullsAllowed>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT024</logicalDatatype>
+<dataTypeSize>32 BYTE</dataTypeSize>
+<ownDataTypeParameters>32 BYTE,,</ownDataTypeParameters>
+<autoIncrementCycle>false</autoIncrementCycle>
+</Column>
+</columns>
+</Table>

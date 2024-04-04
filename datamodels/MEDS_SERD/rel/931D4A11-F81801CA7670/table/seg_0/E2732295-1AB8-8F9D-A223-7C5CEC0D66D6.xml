@@ -1,5 +1,5 @@
 <?xml version = '1.0' encoding = 'UTF-8'?>
-<Table class="oracle.dbtools.crest.model.design.relational.Table" directorySegmentName="seg_0" id="E2732295-1AB8-8F9D-A223-7C5CEC0D66D6" name="WEATHER">
+<Table class="oracle.dbtools.crest.model.design.relational.Table" directorySegmentName="seg_0" id="E2732295-1AB8-8F9D-A223-7C5CEC0D66D6" schemaObject="20651223-0797-3CAA-7021-8449492EE83B" name="SERD_LOV_WEATHER">
 <createdBy>darbo</createdBy>
 <createdTime>2024-02-14 14:04:04 UTC</createdTime>
 <ownerDesignName>MEDS_SERD</ownerDesignName>
@@ -8,6 +8,16 @@
 <existDependencyGenerateInDDl>true</existDependencyGenerateInDDl>
 <parsed>true</parsed>
 <columns itemClass="oracle.dbtools.crest.model.design.relational.Column">
+<Column name="SERD_LOV_WEATHER" id="7CF56515-1E29-89F0-D1D4-EB255F7E58C4">
+<createdBy>d.arboittedossantos</createdBy>
+<createdTime>2024-04-04 15:38:21 UTC</createdTime>
+<ownerDesignName>MEDS_SERD</ownerDesignName>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT019</logicalDatatype>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
+<autoIncrementCycle>false</autoIncrementCycle>
+</Column>
 <Column name="WEATHER_CD" id="59848FC8-6807-F96F-FFE4-9059D897334B">
 <createdBy>darbo</createdBy>
 <createdTime>2024-02-14 14:04:04 UTC</createdTime>
@@ -33,12 +43,22 @@
 </Column>
 </columns>
 <indexes itemClass="oracle.dbtools.crest.model.design.relational.Index">
-<ind_PK_UK id="86DFB5C5-3678-D773-F631-8EAF2A73BA71" name="WEATHER_PK">
-<createdBy>darbo</createdBy>
-<createdTime>2024-02-14 14:04:04 UTC</createdTime>
+<ind_PK_UK id="A1CD3D55-372A-4771-819F-8DD045AF5C52" name="SERD_LOV_WEATHER_P">
+<createdBy>d.arboittedossantos</createdBy>
+<createdTime>2024-04-04 15:38:21 UTC</createdTime>
 <ownerDesignName>MEDS_SERD</ownerDesignName>
 <pk>true</pk>
 <indexState>Primary Constraint</indexState>
+<isSurrogateKey>false</isSurrogateKey>
+<indexColumnUsage>
+<colUsage columnID="7CF56515-1E29-89F0-D1D4-EB255F7E58C4"/>
+</indexColumnUsage>
+</ind_PK_UK>
+<ind_PK_UK id="75E51665-C42D-4731-44DE-700586FF7B9B" name="SERD_LOV_WEATHER_CD_U">
+<createdBy>d.arboittedossantos</createdBy>
+<createdTime>2024-04-04 15:38:21 UTC</createdTime>
+<ownerDesignName>MEDS_SERD</ownerDesignName>
+<indexState>Unique Constraint</indexState>
 <isSurrogateKey>false</isSurrogateKey>
 <indexColumnUsage>
 <colUsage columnID="59848FC8-6807-F96F-FFE4-9059D897334B"/>

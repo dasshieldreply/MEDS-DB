@@ -1,0 +1,47 @@
+<?xml version = '1.0' encoding = 'UTF-8'?>
+<Table class="oracle.dbtools.crest.model.design.relational.Table" directorySegmentName="seg_3" id="4412EB38-4A3B-DFAF-9036-28C7023E2F0E" schemaObject="198B7359-7E07-FB02-B07C-A0A91EE44FE7" name="UNIFIED_WATER_COLOUR_LOOKUP">
+<sourceConnName>MEDS</sourceConnName>
+<sourceObjSchema>MEDSDATA</sourceObjSchema>
+<sourceObjName>UNIFIED_WATER_COLOUR_LOOKUP</sourceObjName>
+<createdBy>darbo</createdBy>
+<createdTime>2024-02-13 17:12:17 UTC</createdTime>
+<ownerDesignName>MEDS</ownerDesignName>
+<allowColumnReorder>false</allowColumnReorder>
+<existDependencyGenerateInDDl>true</existDependencyGenerateInDDl>
+<parsed>true</parsed>
+<columns itemClass="oracle.dbtools.crest.model.design.relational.Column">
+<Column name="UNIFIED_COLOUR_H631A_NAME" id="468D5236-411F-7577-8D44-0C1FA6317F45">
+<sourceConnName>MEDS</sourceConnName>
+<sourceObjSchema>UNIFIED_WATER_COLOUR_LOOKUP</sourceObjSchema>
+<sourceObjName>UNIFIED_COLOUR_H631A_NAME</sourceObjName>
+<createdBy>darbo</createdBy>
+<createdTime>2024-02-13 17:12:19 UTC</createdTime>
+<ownerDesignName>MEDS</ownerDesignName>
+<nullsAllowed>true</nullsAllowed>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT024</logicalDatatype>
+<dataTypeSize>20 BYTE</dataTypeSize>
+<defaultValue>NULL</defaultValue>
+<ownDataTypeParameters>20 BYTE,,</ownDataTypeParameters>
+<autoIncrementCycle>false</autoIncrementCycle>
+</Column>
+<Column name="UNIFIED_COLOUR_H631A_SCALE" id="A09EE051-875C-5F55-F871-96952EA0C063">
+<sourceConnName>MEDS</sourceConnName>
+<sourceObjSchema>UNIFIED_WATER_COLOUR_LOOKUP</sourceObjSchema>
+<sourceObjName>UNIFIED_COLOUR_H631A_SCALE</sourceObjName>
+<createdBy>darbo</createdBy>
+<createdTime>2024-02-13 17:12:19 UTC</createdTime>
+<ownerDesignName>MEDS</ownerDesignName>
+<nullsAllowed>true</nullsAllowed>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT019</logicalDatatype>
+<dataTypePrecision>5</dataTypePrecision>
+<dataTypeScale>0</dataTypeScale>
+<defaultValue>NULL</defaultValue>
+<ownDataTypeParameters>,5,0</ownDataTypeParameters>
+<autoIncrementCycle>false</autoIncrementCycle>
+</Column>
+</columns>
+</Table>

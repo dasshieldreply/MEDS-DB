@@ -1,0 +1,341 @@
+<?xml version = '1.0' encoding = 'UTF-8'?>
+<Table class="oracle.dbtools.crest.model.design.relational.Table" directorySegmentName="seg_1" id="29F68004-A74A-5493-B73D-C80B0E70A911" schemaObject="FD77D69E-489C-FEFD-81EE-34209F1C13AA" name="MLO_CETACEANS_TRACK">
+<sourceConnName>MEDS ADMIN</sourceConnName>
+<sourceObjSchema>MEDSADMIN</sourceObjSchema>
+<sourceObjName>MLO_CETACEANS_TRACK</sourceObjName>
+<createdBy>d.arboittedossantos</createdBy>
+<createdTime>2024-03-14 14:47:25 UTC</createdTime>
+<ownerDesignName>MEDS_DATA</ownerDesignName>
+<allowColumnReorder>false</allowColumnReorder>
+<existDependencyGenerateInDDl>true</existDependencyGenerateInDDl>
+<parsed>true</parsed>
+<columns itemClass="oracle.dbtools.crest.model.design.relational.Column">
+<Column name="LOCATION" id="41C07395-E8EB-0BE7-91C8-9DED1C0A3DAC">
+<sourceConnName>MEDS ADMIN</sourceConnName>
+<sourceObjSchema>MLO_CETACEANS_TRACK</sourceObjSchema>
+<sourceObjName>LOCATION</sourceObjName>
+<createdBy>d.arboittedossantos</createdBy>
+<createdTime>2024-03-14 14:47:25 UTC</createdTime>
+<ownerDesignName>MEDS_DATA</ownerDesignName>
+<nullsAllowed>true</nullsAllowed>
+<useDomainConstraints>false</useDomainConstraints>
+<allowSubtypeSubstitution>false</allowSubtypeSubstitution>
+<use>3</use>
+<structuredType>47E390DE-0671-C4B1-8428-0F45CBEE18F8</structuredType>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
+<autoIncrementCycle>false</autoIncrementCycle>
+</Column>
+<Column name="MEDS_JOB_NUMBER" id="2A15E04A-D5AA-75F7-462A-7025D007D9F0">
+<sourceConnName>MEDS ADMIN</sourceConnName>
+<sourceObjSchema>MLO_CETACEANS_TRACK</sourceObjSchema>
+<sourceObjName>MEDS_JOB_NUMBER</sourceObjName>
+<createdBy>d.arboittedossantos</createdBy>
+<createdTime>2024-03-14 14:47:25 UTC</createdTime>
+<ownerDesignName>MEDS_DATA</ownerDesignName>
+<nullsAllowed>true</nullsAllowed>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT019</logicalDatatype>
+<dataTypePrecision>10</dataTypePrecision>
+<dataTypeScale>0</dataTypeScale>
+<ownDataTypeParameters>,10,0</ownDataTypeParameters>
+<autoIncrementCycle>false</autoIncrementCycle>
+</Column>
+<Column name="MEDS_TRACK_NUMBER" id="EEBD1A34-2D8E-0AE0-FE28-7FB8717A7BDF">
+<sourceConnName>MEDS ADMIN</sourceConnName>
+<sourceObjSchema>MLO_CETACEANS_TRACK</sourceObjSchema>
+<sourceObjName>MEDS_TRACK_NUMBER</sourceObjName>
+<createdBy>d.arboittedossantos</createdBy>
+<createdTime>2024-03-14 14:47:25 UTC</createdTime>
+<ownerDesignName>MEDS_DATA</ownerDesignName>
+<nullsAllowed>true</nullsAllowed>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT019</logicalDatatype>
+<dataTypePrecision>10</dataTypePrecision>
+<dataTypeScale>0</dataTypeScale>
+<ownDataTypeParameters>,10,0</ownDataTypeParameters>
+<autoIncrementCycle>false</autoIncrementCycle>
+</Column>
+<Column name="LONGITUDE_START" id="B0FE5A58-C0FC-953F-7951-475F7BAA2DDD">
+<sourceConnName>MEDS ADMIN</sourceConnName>
+<sourceObjSchema>MLO_CETACEANS_TRACK</sourceObjSchema>
+<sourceObjName>LONGITUDE_START</sourceObjName>
+<createdBy>d.arboittedossantos</createdBy>
+<createdTime>2024-03-14 14:47:25 UTC</createdTime>
+<ownerDesignName>MEDS_DATA</ownerDesignName>
+<nullsAllowed>true</nullsAllowed>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT019</logicalDatatype>
+<dataTypePrecision>20</dataTypePrecision>
+<dataTypeScale>10</dataTypeScale>
+<ownDataTypeParameters>,20,10</ownDataTypeParameters>
+<autoIncrementCycle>false</autoIncrementCycle>
+</Column>
+<Column name="LATITUDE_START" id="C3D60B84-56D5-B1BF-2FA2-D386FAF2BCF3">
+<sourceConnName>MEDS ADMIN</sourceConnName>
+<sourceObjSchema>MLO_CETACEANS_TRACK</sourceObjSchema>
+<sourceObjName>LATITUDE_START</sourceObjName>
+<createdBy>d.arboittedossantos</createdBy>
+<createdTime>2024-03-14 14:47:25 UTC</createdTime>
+<ownerDesignName>MEDS_DATA</ownerDesignName>
+<nullsAllowed>true</nullsAllowed>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT019</logicalDatatype>
+<dataTypePrecision>20</dataTypePrecision>
+<dataTypeScale>10</dataTypeScale>
+<ownDataTypeParameters>,20,10</ownDataTypeParameters>
+<autoIncrementCycle>false</autoIncrementCycle>
+</Column>
+<Column name="DATE_RECORDED_START" id="FDAF4785-726B-4294-D1CC-BD84A2FAC18E">
+<sourceConnName>MEDS ADMIN</sourceConnName>
+<sourceObjSchema>MLO_CETACEANS_TRACK</sourceObjSchema>
+<sourceObjName>DATE_RECORDED_START</sourceObjName>
+<createdBy>d.arboittedossantos</createdBy>
+<createdTime>2024-03-14 14:47:25 UTC</createdTime>
+<ownerDesignName>MEDS_DATA</ownerDesignName>
+<nullsAllowed>true</nullsAllowed>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT007</logicalDatatype>
+<dataTypeSize>7</dataTypeSize>
+<ownDataTypeParameters>7,,</ownDataTypeParameters>
+<autoIncrementCycle>false</autoIncrementCycle>
+</Column>
+<Column name="OFFSET_START" id="BB2E2C78-69D9-A7ED-B7AD-B709455BCA1A">
+<sourceConnName>MEDS ADMIN</sourceConnName>
+<sourceObjSchema>MLO_CETACEANS_TRACK</sourceObjSchema>
+<sourceObjName>OFFSET_START</sourceObjName>
+<createdBy>d.arboittedossantos</createdBy>
+<createdTime>2024-03-14 14:47:25 UTC</createdTime>
+<ownerDesignName>MEDS_DATA</ownerDesignName>
+<nullsAllowed>true</nullsAllowed>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT019</logicalDatatype>
+<dataTypePrecision>20</dataTypePrecision>
+<dataTypeScale>10</dataTypeScale>
+<ownDataTypeParameters>,20,10</ownDataTypeParameters>
+<autoIncrementCycle>false</autoIncrementCycle>
+</Column>
+<Column name="LONGITUDE_END" id="5B9A010A-6655-A140-7EF7-F0DA718661EC">
+<sourceConnName>MEDS ADMIN</sourceConnName>
+<sourceObjSchema>MLO_CETACEANS_TRACK</sourceObjSchema>
+<sourceObjName>LONGITUDE_END</sourceObjName>
+<createdBy>d.arboittedossantos</createdBy>
+<createdTime>2024-03-14 14:47:25 UTC</createdTime>
+<ownerDesignName>MEDS_DATA</ownerDesignName>
+<nullsAllowed>true</nullsAllowed>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT019</logicalDatatype>
+<dataTypePrecision>20</dataTypePrecision>
+<dataTypeScale>10</dataTypeScale>
+<ownDataTypeParameters>,20,10</ownDataTypeParameters>
+<autoIncrementCycle>false</autoIncrementCycle>
+</Column>
+<Column name="LATITUDE_END" id="079F8CF8-5732-09C0-D45D-2DF03A102EA2">
+<sourceConnName>MEDS ADMIN</sourceConnName>
+<sourceObjSchema>MLO_CETACEANS_TRACK</sourceObjSchema>
+<sourceObjName>LATITUDE_END</sourceObjName>
+<createdBy>d.arboittedossantos</createdBy>
+<createdTime>2024-03-14 14:47:25 UTC</createdTime>
+<ownerDesignName>MEDS_DATA</ownerDesignName>
+<nullsAllowed>true</nullsAllowed>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT019</logicalDatatype>
+<dataTypePrecision>20</dataTypePrecision>
+<dataTypeScale>10</dataTypeScale>
+<ownDataTypeParameters>,20,10</ownDataTypeParameters>
+<autoIncrementCycle>false</autoIncrementCycle>
+</Column>
+<Column name="DATE_RECORDED_END" id="F47B4BB0-1947-83E4-1C5B-AAAF4FDC2757">
+<sourceConnName>MEDS ADMIN</sourceConnName>
+<sourceObjSchema>MLO_CETACEANS_TRACK</sourceObjSchema>
+<sourceObjName>DATE_RECORDED_END</sourceObjName>
+<createdBy>d.arboittedossantos</createdBy>
+<createdTime>2024-03-14 14:47:25 UTC</createdTime>
+<ownerDesignName>MEDS_DATA</ownerDesignName>
+<nullsAllowed>true</nullsAllowed>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT007</logicalDatatype>
+<dataTypeSize>7</dataTypeSize>
+<ownDataTypeParameters>7,,</ownDataTypeParameters>
+<autoIncrementCycle>false</autoIncrementCycle>
+</Column>
+<Column name="OFFSET_END" id="260BA4BB-EDF2-0B10-D745-EFD45AD56EFF">
+<sourceConnName>MEDS ADMIN</sourceConnName>
+<sourceObjSchema>MLO_CETACEANS_TRACK</sourceObjSchema>
+<sourceObjName>OFFSET_END</sourceObjName>
+<createdBy>d.arboittedossantos</createdBy>
+<createdTime>2024-03-14 14:47:25 UTC</createdTime>
+<ownerDesignName>MEDS_DATA</ownerDesignName>
+<nullsAllowed>true</nullsAllowed>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT019</logicalDatatype>
+<dataTypePrecision>20</dataTypePrecision>
+<dataTypeScale>10</dataTypeScale>
+<ownDataTypeParameters>,20,10</ownDataTypeParameters>
+<autoIncrementCycle>false</autoIncrementCycle>
+</Column>
+<Column name="SHIP" id="0A4B9094-AAF0-18B8-25D9-CC4DBA93BD34">
+<sourceConnName>MEDS ADMIN</sourceConnName>
+<sourceObjSchema>MLO_CETACEANS_TRACK</sourceObjSchema>
+<sourceObjName>SHIP</sourceObjName>
+<createdBy>d.arboittedossantos</createdBy>
+<createdTime>2024-03-14 14:47:25 UTC</createdTime>
+<ownerDesignName>MEDS_DATA</ownerDesignName>
+<nullsAllowed>true</nullsAllowed>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT024</logicalDatatype>
+<dataTypeSize>50 BYTE</dataTypeSize>
+<ownDataTypeParameters>50 BYTE,,</ownDataTypeParameters>
+<autoIncrementCycle>false</autoIncrementCycle>
+</Column>
+<Column name="NUM_OBS" id="D18001FB-A685-968E-9783-FC298A408900">
+<sourceConnName>MEDS ADMIN</sourceConnName>
+<sourceObjSchema>MLO_CETACEANS_TRACK</sourceObjSchema>
+<sourceObjName>NUM_OBS</sourceObjName>
+<createdBy>d.arboittedossantos</createdBy>
+<createdTime>2024-03-14 14:47:25 UTC</createdTime>
+<ownerDesignName>MEDS_DATA</ownerDesignName>
+<nullsAllowed>true</nullsAllowed>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT019</logicalDatatype>
+<dataTypePrecision>10</dataTypePrecision>
+<dataTypeScale>0</dataTypeScale>
+<defaultValue>0</defaultValue>
+<ownDataTypeParameters>,10,0</ownDataTypeParameters>
+<autoIncrementCycle>false</autoIncrementCycle>
+</Column>
+<Column name="MONITORING_TYPE" id="102CEFD5-F4CC-5457-9A9D-90B767ED4621">
+<sourceConnName>MEDS ADMIN</sourceConnName>
+<sourceObjSchema>MLO_CETACEANS_TRACK</sourceObjSchema>
+<sourceObjName>MONITORING_TYPE</sourceObjName>
+<createdBy>d.arboittedossantos</createdBy>
+<createdTime>2024-03-14 14:47:25 UTC</createdTime>
+<ownerDesignName>MEDS_DATA</ownerDesignName>
+<nullsAllowed>true</nullsAllowed>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT024</logicalDatatype>
+<dataTypeSize>1 BYTE</dataTypeSize>
+<defaultValue>&apos;V&apos;</defaultValue>
+<ownDataTypeParameters>1 BYTE,,</ownDataTypeParameters>
+<autoIncrementCycle>false</autoIncrementCycle>
+</Column>
+<Column name="PERIOD_OF_SONAR" id="2945D514-6473-1C06-3080-DD8700D488AC">
+<sourceConnName>MEDS ADMIN</sourceConnName>
+<sourceObjSchema>MLO_CETACEANS_TRACK</sourceObjSchema>
+<sourceObjName>PERIOD_OF_SONAR</sourceObjName>
+<createdBy>d.arboittedossantos</createdBy>
+<createdTime>2024-03-14 14:47:25 UTC</createdTime>
+<ownerDesignName>MEDS_DATA</ownerDesignName>
+<nullsAllowed>true</nullsAllowed>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT019</logicalDatatype>
+<dataTypePrecision>10</dataTypePrecision>
+<dataTypeScale>0</dataTypeScale>
+<defaultValue>NULL</defaultValue>
+<ownDataTypeParameters>,10,0</ownDataTypeParameters>
+<autoIncrementCycle>false</autoIncrementCycle>
+</Column>
+<Column name="SEA_STATE" id="96D5589F-0A3F-CE0F-1260-435294F6B21F">
+<sourceConnName>MEDS ADMIN</sourceConnName>
+<sourceObjSchema>MLO_CETACEANS_TRACK</sourceObjSchema>
+<sourceObjName>SEA_STATE</sourceObjName>
+<createdBy>d.arboittedossantos</createdBy>
+<createdTime>2024-03-14 14:47:25 UTC</createdTime>
+<ownerDesignName>MEDS_DATA</ownerDesignName>
+<nullsAllowed>true</nullsAllowed>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT019</logicalDatatype>
+<dataTypePrecision>10</dataTypePrecision>
+<dataTypeScale>0</dataTypeScale>
+<defaultValue>NULL</defaultValue>
+<ownDataTypeParameters>,10,0</ownDataTypeParameters>
+<autoIncrementCycle>false</autoIncrementCycle>
+</Column>
+<Column name="WIND_SPEED" id="8E7C9A3B-D70B-60FF-E911-E2B0F26B27B0">
+<sourceConnName>MEDS ADMIN</sourceConnName>
+<sourceObjSchema>MLO_CETACEANS_TRACK</sourceObjSchema>
+<sourceObjName>WIND_SPEED</sourceObjName>
+<createdBy>d.arboittedossantos</createdBy>
+<createdTime>2024-03-14 14:47:25 UTC</createdTime>
+<ownerDesignName>MEDS_DATA</ownerDesignName>
+<nullsAllowed>true</nullsAllowed>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT019</logicalDatatype>
+<dataTypePrecision>10</dataTypePrecision>
+<dataTypeScale>0</dataTypeScale>
+<defaultValue>NULL</defaultValue>
+<ownDataTypeParameters>,10,0</ownDataTypeParameters>
+<autoIncrementCycle>false</autoIncrementCycle>
+</Column>
+<Column name="SOUND_SOURCE" id="3E1C5A5E-6E48-F62D-EBF1-24329C3A6F3B">
+<sourceConnName>MEDS ADMIN</sourceConnName>
+<sourceObjSchema>MLO_CETACEANS_TRACK</sourceObjSchema>
+<sourceObjName>SOUND_SOURCE</sourceObjName>
+<createdBy>d.arboittedossantos</createdBy>
+<createdTime>2024-03-14 14:47:25 UTC</createdTime>
+<ownerDesignName>MEDS_DATA</ownerDesignName>
+<nullsAllowed>true</nullsAllowed>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT024</logicalDatatype>
+<dataTypeSize>50 BYTE</dataTypeSize>
+<defaultValue>NULL</defaultValue>
+<ownDataTypeParameters>50 BYTE,,</ownDataTypeParameters>
+<autoIncrementCycle>false</autoIncrementCycle>
+</Column>
+</columns>
+<indexes itemClass="oracle.dbtools.crest.model.design.relational.Index">
+<ind_PK_UK id="E6BCB2A4-77B8-7577-017C-7C822BA36036" schemaObject="FD77D69E-489C-FEFD-81EE-34209F1C13AA" name="IDX_MLO_CETACEANS_TRACK_DATE">
+<sourceConnName>MEDS ADMIN</sourceConnName>
+<sourceObjSchema>MEDSADMIN</sourceObjSchema>
+<sourceObjName>IDX_MLO_CETACEANS_TRACK_DATE</sourceObjName>
+<createdBy>d.arboittedossantos</createdBy>
+<createdTime>2024-03-14 14:47:29 UTC</createdTime>
+<ownerDesignName>MEDS_DATA</ownerDesignName>
+<isSurrogateKey>false</isSurrogateKey>
+<indexColumnUsage>
+<colUsage columnID="FDAF4785-726B-4294-D1CC-BD84A2FAC18E"/>
+</indexColumnUsage>
+</ind_PK_UK>
+<ind_PK_UK id="8E653EAF-CCE2-0F9D-03E0-2ED24B449BD4" schemaObject="FD77D69E-489C-FEFD-81EE-34209F1C13AA" name="IDX_MLO_CETACEANS_TRACK_JOB">
+<sourceConnName>MEDS ADMIN</sourceConnName>
+<sourceObjSchema>MEDSADMIN</sourceObjSchema>
+<sourceObjName>IDX_MLO_CETACEANS_TRACK_JOB</sourceObjName>
+<createdBy>d.arboittedossantos</createdBy>
+<createdTime>2024-03-14 14:47:29 UTC</createdTime>
+<ownerDesignName>MEDS_DATA</ownerDesignName>
+<isSurrogateKey>false</isSurrogateKey>
+<indexColumnUsage>
+<colUsage columnID="2A15E04A-D5AA-75F7-462A-7025D007D9F0"/>
+<colUsage columnID="EEBD1A34-2D8E-0AE0-FE28-7FB8717A7BDF"/>
+</indexColumnUsage>
+</ind_PK_UK>
+<ind_PK_UK id="3B39FDC9-D095-1B05-84D8-625992BA6982" schemaObject="FD77D69E-489C-FEFD-81EE-34209F1C13AA" name="SI_MLO_CETACEANS_TRACK">
+<sourceConnName>MEDS ADMIN</sourceConnName>
+<sourceObjSchema>MEDSADMIN</sourceObjSchema>
+<sourceObjName>SI_MLO_CETACEANS_TRACK</sourceObjName>
+<createdBy>d.arboittedossantos</createdBy>
+<createdTime>2024-03-14 14:47:29 UTC</createdTime>
+<ownerDesignName>MEDS_DATA</ownerDesignName>
+<isSurrogateKey>false</isSurrogateKey>
+<indexColumnUsage>
+<colUsage columnID="41C07395-E8EB-0BE7-91C8-9DED1C0A3DAC"/>
+</indexColumnUsage>
+</ind_PK_UK>
+</indexes>
+</Table>

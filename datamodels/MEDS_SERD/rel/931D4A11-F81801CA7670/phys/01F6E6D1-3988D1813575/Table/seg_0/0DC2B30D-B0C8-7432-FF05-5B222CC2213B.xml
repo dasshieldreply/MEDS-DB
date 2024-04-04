@@ -1,0 +1,46 @@
+<?xml version = '1.0' encoding = 'UTF-8'?>
+<TableProxyOraclev20c class="oracle.dbtools.crest.model.design.storage.oracle.v20c.TableProxyOraclev20c" name="SERD_LOV_SOUND_VELOCITY" directorySegmentName="seg_0" id="0DC2B30D-B0C8-7432-FF05-5B222CC2213B">
+<createdBy>d.arboittedossantos</createdBy>
+<createdTime>2024-04-04 16:11:57 UTC</createdTime>
+<ownerDesignName>MEDS_SERD</ownerDesignName>
+<schemaObject>20651223-0797-3CAA-7021-8449492EE83B</schemaObject>
+<logging>YES</logging>
+<partitionedRowMovement>DISABLE</partitionedRowMovement>
+<temporaryChanged>false</temporaryChanged>
+<user>28DF8DA2-9C77-E269-F136-0994A498F661</user>
+<accessDriverType>oracle_loader</accessDriverType>
+<rejectLimit></rejectLimit>
+<columnProxies itemClass="oracle.dbtools.crest.model.design.storage.oracle.v12c.ColumnProxyOraclev12c">
+<ColumnProxy name="SERD_LOV_SOUND_VELOCITY" id="840BD15D-BF67-720C-0596-837B8E4EE4E0">
+<createdBy>d.arboittedossantos</createdBy>
+<createdTime>2024-04-04 16:11:57 UTC</createdTime>
+<ownerDesignName>MEDS_SERD</ownerDesignName>
+</ColumnProxy>
+<ColumnProxy name="SOUND_VELOCITY_DESC" id="AF252002-7ABB-3817-A1EC-DD285652B15B">
+<createdBy>d.arboittedossantos</createdBy>
+<createdTime>2024-04-04 16:11:57 UTC</createdTime>
+<ownerDesignName>MEDS_SERD</ownerDesignName>
+</ColumnProxy>
+<ColumnProxy name="SOUND_VELOCITY_CD" id="FD5154B4-501B-30CA-DE94-45ED73AB4007">
+<createdBy>d.arboittedossantos</createdBy>
+<createdTime>2024-04-04 16:11:57 UTC</createdTime>
+<ownerDesignName>MEDS_SERD</ownerDesignName>
+</ColumnProxy>
+</columnProxies>
+<primaryKeys>
+<PrimaryKey class="oracle.dbtools.crest.model.design.storage.oracle.v10g.PKProxyOraclev10g" name="SERD_LOV_SOUND_VELOCITY_P" id="43B237DE-92F4-150D-8D6A-193D625D6C02">
+<createdBy>d.arboittedossantos</createdBy>
+<createdTime>2024-04-04 16:11:57 UTC</createdTime>
+<ownerDesignName>MEDS_SERD</ownerDesignName>
+<indexSort>SORTED</indexSort>
+</PrimaryKey>
+</primaryKeys>
+<uniqueKeys>
+<UniqueKey class="oracle.dbtools.crest.model.design.storage.oracle.v10g.UniqueOraclev10g" name="SERD_LOV_SOUND_VELOCITY_CD_U" id="A72AC79D-386F-56AF-2091-CCDB5EA39DC1">
+<createdBy>d.arboittedossantos</createdBy>
+<createdTime>2024-04-04 16:11:57 UTC</createdTime>
+<ownerDesignName>MEDS_SERD</ownerDesignName>
+<indexSort>SORTED</indexSort>
+</UniqueKey>
+</uniqueKeys>
+</TableProxyOraclev20c>

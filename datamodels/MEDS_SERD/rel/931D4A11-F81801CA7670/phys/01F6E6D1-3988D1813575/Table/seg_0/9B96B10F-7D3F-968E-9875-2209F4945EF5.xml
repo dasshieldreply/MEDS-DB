@@ -1,0 +1,46 @@
+<?xml version = '1.0' encoding = 'UTF-8'?>
+<TableProxyOraclev20c class="oracle.dbtools.crest.model.design.storage.oracle.v20c.TableProxyOraclev20c" name="SERD_LOV_DATA_METHOD" directorySegmentName="seg_0" id="9B96B10F-7D3F-968E-9875-2209F4945EF5">
+<createdBy>d.arboittedossantos</createdBy>
+<createdTime>2024-04-04 16:11:57 UTC</createdTime>
+<ownerDesignName>MEDS_SERD</ownerDesignName>
+<schemaObject>20651223-0797-3CAA-7021-8449492EE83B</schemaObject>
+<logging>YES</logging>
+<partitionedRowMovement>DISABLE</partitionedRowMovement>
+<temporaryChanged>false</temporaryChanged>
+<user>28DF8DA2-9C77-E269-F136-0994A498F661</user>
+<accessDriverType>oracle_loader</accessDriverType>
+<rejectLimit></rejectLimit>
+<columnProxies itemClass="oracle.dbtools.crest.model.design.storage.oracle.v12c.ColumnProxyOraclev12c">
+<ColumnProxy name="DATA_MODE_DESC" id="3FE400F5-B463-78E6-3751-B2A47A7A5C0C">
+<createdBy>d.arboittedossantos</createdBy>
+<createdTime>2024-04-04 16:11:57 UTC</createdTime>
+<ownerDesignName>MEDS_SERD</ownerDesignName>
+</ColumnProxy>
+<ColumnProxy name="DATA_METHOD_CD" id="45185ADC-F2F2-E406-F5C3-BF3201DF8235">
+<createdBy>d.arboittedossantos</createdBy>
+<createdTime>2024-04-04 16:11:57 UTC</createdTime>
+<ownerDesignName>MEDS_SERD</ownerDesignName>
+</ColumnProxy>
+<ColumnProxy name="SERD_LOV_DATA_METHOD" id="A7A5A611-02F7-7718-3530-2228C733CB53">
+<createdBy>d.arboittedossantos</createdBy>
+<createdTime>2024-04-04 16:11:57 UTC</createdTime>
+<ownerDesignName>MEDS_SERD</ownerDesignName>
+</ColumnProxy>
+</columnProxies>
+<primaryKeys>
+<PrimaryKey class="oracle.dbtools.crest.model.design.storage.oracle.v10g.PKProxyOraclev10g" name="SERD_LOV_DATA_METHOD_P" id="9CCBB6B2-1784-4A51-B45C-AEB7B9B98CD9">
+<createdBy>d.arboittedossantos</createdBy>
+<createdTime>2024-04-04 16:11:57 UTC</createdTime>
+<ownerDesignName>MEDS_SERD</ownerDesignName>
+<indexSort>SORTED</indexSort>
+</PrimaryKey>
+</primaryKeys>
+<uniqueKeys>
+<UniqueKey class="oracle.dbtools.crest.model.design.storage.oracle.v10g.UniqueOraclev10g" name="SERD_LOV_DATA_METHOD_CD_U" id="970071FD-19E8-4FCF-675B-A6CC4C320CAF">
+<createdBy>d.arboittedossantos</createdBy>
+<createdTime>2024-04-04 16:11:57 UTC</createdTime>
+<ownerDesignName>MEDS_SERD</ownerDesignName>
+<indexSort>SORTED</indexSort>
+</UniqueKey>
+</uniqueKeys>
+</TableProxyOraclev20c>

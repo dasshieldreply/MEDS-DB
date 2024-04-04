@@ -1,5 +1,5 @@
 <?xml version = '1.0' encoding = 'UTF-8'?>
-<Table class="oracle.dbtools.crest.model.design.relational.Table" directorySegmentName="seg_0" id="C8D9D867-84ED-A408-D21A-F14B616AA12C" name="DATA_TYPE">
+<Table class="oracle.dbtools.crest.model.design.relational.Table" directorySegmentName="seg_0" id="C8D9D867-84ED-A408-D21A-F14B616AA12C" schemaObject="20651223-0797-3CAA-7021-8449492EE83B" name="SERD_LOV_DATA_TYPE">
 <createdBy>darbo</createdBy>
 <createdTime>2024-02-14 13:55:43 UTC</createdTime>
 <ownerDesignName>MEDS_SERD</ownerDesignName>
@@ -8,7 +8,7 @@
 <existDependencyGenerateInDDl>true</existDependencyGenerateInDDl>
 <parsed>true</parsed>
 <columns itemClass="oracle.dbtools.crest.model.design.relational.Column">
-<Column name="DATA_TYPE_CD" id="2D7B301B-0DFE-0869-7A46-45F57A0308D0">
+<Column name="SERD_LOV_DATA_TYPE" id="2D7B301B-0DFE-0869-7A46-45F57A0308D0">
 <createdBy>darbo</createdBy>
 <createdTime>2024-02-14 13:55:43 UTC</createdTime>
 <commentInRDBMS><![CDATA[Data type, MIAS code.]]></commentInRDBMS>
@@ -31,17 +31,39 @@
 <ownDataTypeParameters>100,,</ownDataTypeParameters>
 <autoIncrementCycle>false</autoIncrementCycle>
 </Column>
+<Column name="DATA_TYPE_CD" id="7FC40E61-4EAA-E098-C022-CF8F00E58612">
+<createdBy>d.arboittedossantos</createdBy>
+<createdTime>2024-04-04 13:33:13 UTC</createdTime>
+<commentInRDBMS><![CDATA[Data type, MIAS code.]]></commentInRDBMS>
+<notes><![CDATA[Start position 118]]></notes>
+<ownerDesignName>MEDS_SERD</ownerDesignName>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT019</logicalDatatype>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
+<autoIncrementCycle>false</autoIncrementCycle>
+</Column>
 </columns>
 <indexes itemClass="oracle.dbtools.crest.model.design.relational.Index">
-<ind_PK_UK id="EE41513A-3D71-1967-E49D-B433F0F2F62B" name="DATA_TYPE_PK">
-<createdBy>darbo</createdBy>
-<createdTime>2024-02-14 13:55:43 UTC</createdTime>
+<ind_PK_UK id="0D7D44CC-2ED8-1BE9-580C-1A30CC560B1B" name="SERD_LOV_DATA_TYPE_P">
+<createdBy>d.arboittedossantos</createdBy>
+<createdTime>2024-04-04 13:37:10 UTC</createdTime>
 <ownerDesignName>MEDS_SERD</ownerDesignName>
 <pk>true</pk>
 <indexState>Primary Constraint</indexState>
 <isSurrogateKey>false</isSurrogateKey>
 <indexColumnUsage>
 <colUsage columnID="2D7B301B-0DFE-0869-7A46-45F57A0308D0"/>
+</indexColumnUsage>
+</ind_PK_UK>
+<ind_PK_UK id="AA74CA92-FCC5-E0E2-9671-21159B14FB2E" name="SERD_LOV_DATA_TYPE_CD_U">
+<createdBy>d.arboittedossantos</createdBy>
+<createdTime>2024-04-04 13:36:06 UTC</createdTime>
+<ownerDesignName>MEDS_SERD</ownerDesignName>
+<indexState>Unique Constraint</indexState>
+<isSurrogateKey>false</isSurrogateKey>
+<indexColumnUsage>
+<colUsage columnID="7FC40E61-4EAA-E098-C022-CF8F00E58612"/>
 </indexColumnUsage>
 </ind_PK_UK>
 </indexes>

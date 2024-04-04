@@ -1,0 +1,381 @@
+<?xml version = '1.0' encoding = 'UTF-8'?>
+<Table class="oracle.dbtools.crest.model.design.relational.Table" directorySegmentName="seg_1" id="E4419958-1239-0A33-A777-433C6B22B817" schemaObject="198B7359-7E07-FB02-B07C-A0A91EE44FE7" name="GEOLOGY_QUALITY_DATA">
+<sourceConnName>MEDS</sourceConnName>
+<sourceObjSchema>MEDSDATA</sourceObjSchema>
+<sourceObjName>GEOLOGY_QUALITY_DATA</sourceObjName>
+<createdBy>darbo</createdBy>
+<createdTime>2024-02-13 17:12:16 UTC</createdTime>
+<ownerDesignName>MEDS_DATA</ownerDesignName>
+<allowColumnReorder>false</allowColumnReorder>
+<existDependencyGenerateInDDl>true</existDependencyGenerateInDDl>
+<parsed>true</parsed>
+<columns itemClass="oracle.dbtools.crest.model.design.relational.Column">
+<Column name="SEDIMENT_TYPE_CONFIDENCE" id="90AA9458-A0A9-060F-F6E0-B5AFB9E2CC0B">
+<sourceConnName>MEDS</sourceConnName>
+<sourceObjSchema>GEOLOGY_QUALITY_DATA</sourceObjSchema>
+<sourceObjName>SEDIMENT_TYPE_CONFIDENCE</sourceObjName>
+<createdBy>darbo</createdBy>
+<createdTime>2024-02-13 17:12:18 UTC</createdTime>
+<ownerDesignName>MEDS_DATA</ownerDesignName>
+<nullsAllowed>true</nullsAllowed>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT019</logicalDatatype>
+<dataTypePrecision>3</dataTypePrecision>
+<dataTypeScale>0</dataTypeScale>
+<ownDataTypeParameters>,3,0</ownDataTypeParameters>
+<autoIncrementCycle>false</autoIncrementCycle>
+</Column>
+<Column name="SEDIMENT_TYPE_DATA" id="F69E68D6-52BD-0645-5D88-DE3FAA7E4E59">
+<sourceConnName>MEDS</sourceConnName>
+<sourceObjSchema>GEOLOGY_QUALITY_DATA</sourceObjSchema>
+<sourceObjName>SEDIMENT_TYPE_DATA</sourceObjName>
+<createdBy>darbo</createdBy>
+<createdTime>2024-02-13 17:12:18 UTC</createdTime>
+<ownerDesignName>MEDS_DATA</ownerDesignName>
+<nullsAllowed>true</nullsAllowed>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT019</logicalDatatype>
+<dataTypePrecision>3</dataTypePrecision>
+<dataTypeScale>0</dataTypeScale>
+<ownDataTypeParameters>,3,0</ownDataTypeParameters>
+<autoIncrementCycle>false</autoIncrementCycle>
+</Column>
+<Column name="SEDIMENT_THICKNESS_CONFIDENCE" id="8310CC6C-E70D-E0A6-6CA9-DE3ED328F08B">
+<sourceConnName>MEDS</sourceConnName>
+<sourceObjSchema>GEOLOGY_QUALITY_DATA</sourceObjSchema>
+<sourceObjName>SEDIMENT_THICKNESS_CONFIDENCE</sourceObjName>
+<createdBy>darbo</createdBy>
+<createdTime>2024-02-13 17:12:18 UTC</createdTime>
+<ownerDesignName>MEDS_DATA</ownerDesignName>
+<nullsAllowed>true</nullsAllowed>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT019</logicalDatatype>
+<dataTypePrecision>3</dataTypePrecision>
+<dataTypeScale>0</dataTypeScale>
+<ownDataTypeParameters>,3,0</ownDataTypeParameters>
+<autoIncrementCycle>false</autoIncrementCycle>
+</Column>
+<Column name="SEDIMENT_THICKNESS_DATA" id="BA9DE87F-E569-B432-EF76-A999A92B22AA">
+<sourceConnName>MEDS</sourceConnName>
+<sourceObjSchema>GEOLOGY_QUALITY_DATA</sourceObjSchema>
+<sourceObjName>SEDIMENT_THICKNESS_DATA</sourceObjName>
+<createdBy>darbo</createdBy>
+<createdTime>2024-02-13 17:12:18 UTC</createdTime>
+<ownerDesignName>MEDS_DATA</ownerDesignName>
+<nullsAllowed>true</nullsAllowed>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT019</logicalDatatype>
+<dataTypePrecision>3</dataTypePrecision>
+<dataTypeScale>0</dataTypeScale>
+<ownDataTypeParameters>,3,0</ownDataTypeParameters>
+<autoIncrementCycle>false</autoIncrementCycle>
+</Column>
+<Column name="BEDROCK_TYPE_CONFIDENCE" id="FD7CFFE5-FC3D-B7BE-30D9-EC5372DAD391">
+<sourceConnName>MEDS</sourceConnName>
+<sourceObjSchema>GEOLOGY_QUALITY_DATA</sourceObjSchema>
+<sourceObjName>BEDROCK_TYPE_CONFIDENCE</sourceObjName>
+<createdBy>darbo</createdBy>
+<createdTime>2024-02-13 17:12:18 UTC</createdTime>
+<ownerDesignName>MEDS_DATA</ownerDesignName>
+<nullsAllowed>true</nullsAllowed>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT019</logicalDatatype>
+<dataTypePrecision>3</dataTypePrecision>
+<dataTypeScale>0</dataTypeScale>
+<ownDataTypeParameters>,3,0</ownDataTypeParameters>
+<autoIncrementCycle>false</autoIncrementCycle>
+</Column>
+<Column name="BEDROCK_TYPE_DATA" id="F8AE6732-4E69-0915-8EA9-0F0FE56766C9">
+<sourceConnName>MEDS</sourceConnName>
+<sourceObjSchema>GEOLOGY_QUALITY_DATA</sourceObjSchema>
+<sourceObjName>BEDROCK_TYPE_DATA</sourceObjName>
+<createdBy>darbo</createdBy>
+<createdTime>2024-02-13 17:12:18 UTC</createdTime>
+<ownerDesignName>MEDS_DATA</ownerDesignName>
+<nullsAllowed>true</nullsAllowed>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT019</logicalDatatype>
+<dataTypePrecision>3</dataTypePrecision>
+<dataTypeScale>0</dataTypeScale>
+<ownDataTypeParameters>,3,0</ownDataTypeParameters>
+<autoIncrementCycle>false</autoIncrementCycle>
+</Column>
+<Column name="BEDROCK_LITH_ID_CONFIDENCE" id="E71EB1BF-D217-F923-397F-CF0188D3FD03">
+<sourceConnName>MEDS</sourceConnName>
+<sourceObjSchema>GEOLOGY_QUALITY_DATA</sourceObjSchema>
+<sourceObjName>BEDROCK_LITH_ID_CONFIDENCE</sourceObjName>
+<createdBy>darbo</createdBy>
+<createdTime>2024-02-13 17:12:18 UTC</createdTime>
+<ownerDesignName>MEDS_DATA</ownerDesignName>
+<nullsAllowed>true</nullsAllowed>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT019</logicalDatatype>
+<dataTypePrecision>3</dataTypePrecision>
+<dataTypeScale>0</dataTypeScale>
+<ownDataTypeParameters>,3,0</ownDataTypeParameters>
+<autoIncrementCycle>false</autoIncrementCycle>
+</Column>
+<Column name="BEDROCK_LITH_ID_DATA" id="5E6D2F14-027B-57BD-7101-DE04F71F0817">
+<sourceConnName>MEDS</sourceConnName>
+<sourceObjSchema>GEOLOGY_QUALITY_DATA</sourceObjSchema>
+<sourceObjName>BEDROCK_LITH_ID_DATA</sourceObjName>
+<createdBy>darbo</createdBy>
+<createdTime>2024-02-13 17:12:18 UTC</createdTime>
+<ownerDesignName>MEDS_DATA</ownerDesignName>
+<nullsAllowed>true</nullsAllowed>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT019</logicalDatatype>
+<dataTypePrecision>3</dataTypePrecision>
+<dataTypeScale>0</dataTypeScale>
+<ownDataTypeParameters>,3,0</ownDataTypeParameters>
+<autoIncrementCycle>false</autoIncrementCycle>
+</Column>
+<Column name="BATHYMETRY_CONFIDENCE" id="48D97B07-D7B7-E858-5222-20636AC27B4A">
+<sourceConnName>MEDS</sourceConnName>
+<sourceObjSchema>GEOLOGY_QUALITY_DATA</sourceObjSchema>
+<sourceObjName>BATHYMETRY_CONFIDENCE</sourceObjName>
+<createdBy>darbo</createdBy>
+<createdTime>2024-02-13 17:12:18 UTC</createdTime>
+<ownerDesignName>MEDS_DATA</ownerDesignName>
+<nullsAllowed>true</nullsAllowed>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT019</logicalDatatype>
+<dataTypePrecision>3</dataTypePrecision>
+<dataTypeScale>0</dataTypeScale>
+<ownDataTypeParameters>,3,0</ownDataTypeParameters>
+<autoIncrementCycle>false</autoIncrementCycle>
+</Column>
+<Column name="BATHYMETRY_DATA" id="5684A4A0-6AFD-BB1F-2F4D-A5A04C0FF4C8">
+<sourceConnName>MEDS</sourceConnName>
+<sourceObjSchema>GEOLOGY_QUALITY_DATA</sourceObjSchema>
+<sourceObjName>BATHYMETRY_DATA</sourceObjName>
+<createdBy>darbo</createdBy>
+<createdTime>2024-02-13 17:12:18 UTC</createdTime>
+<ownerDesignName>MEDS_DATA</ownerDesignName>
+<nullsAllowed>true</nullsAllowed>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT019</logicalDatatype>
+<dataTypePrecision>3</dataTypePrecision>
+<dataTypeScale>0</dataTypeScale>
+<ownDataTypeParameters>,3,0</ownDataTypeParameters>
+<autoIncrementCycle>false</autoIncrementCycle>
+</Column>
+<Column name="GAS_TYPE_DATA" id="91C94E0D-6707-3287-37A8-9E38967615B8">
+<sourceConnName>MEDS</sourceConnName>
+<sourceObjSchema>GEOLOGY_QUALITY_DATA</sourceObjSchema>
+<sourceObjName>GAS_TYPE_DATA</sourceObjName>
+<createdBy>darbo</createdBy>
+<createdTime>2024-02-13 17:12:18 UTC</createdTime>
+<ownerDesignName>MEDS_DATA</ownerDesignName>
+<nullsAllowed>true</nullsAllowed>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT019</logicalDatatype>
+<dataTypePrecision>3</dataTypePrecision>
+<dataTypeScale>0</dataTypeScale>
+<ownDataTypeParameters>,3,0</ownDataTypeParameters>
+<autoIncrementCycle>false</autoIncrementCycle>
+</Column>
+<Column name="GAS_TYPE_CONFIDENCE" id="C05D65AF-371B-CF10-B07C-574DCE8C8D61">
+<sourceConnName>MEDS</sourceConnName>
+<sourceObjSchema>GEOLOGY_QUALITY_DATA</sourceObjSchema>
+<sourceObjName>GAS_TYPE_CONFIDENCE</sourceObjName>
+<createdBy>darbo</createdBy>
+<createdTime>2024-02-13 17:12:18 UTC</createdTime>
+<ownerDesignName>MEDS_DATA</ownerDesignName>
+<nullsAllowed>true</nullsAllowed>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT019</logicalDatatype>
+<dataTypePrecision>3</dataTypePrecision>
+<dataTypeScale>0</dataTypeScale>
+<ownDataTypeParameters>,3,0</ownDataTypeParameters>
+<autoIncrementCycle>false</autoIncrementCycle>
+</Column>
+<Column name="GAS_DEPTH_DATA" id="5E3BC478-C163-A41C-4FDF-7D03BF40FD48">
+<sourceConnName>MEDS</sourceConnName>
+<sourceObjSchema>GEOLOGY_QUALITY_DATA</sourceObjSchema>
+<sourceObjName>GAS_DEPTH_DATA</sourceObjName>
+<createdBy>darbo</createdBy>
+<createdTime>2024-02-13 17:12:18 UTC</createdTime>
+<ownerDesignName>MEDS_DATA</ownerDesignName>
+<nullsAllowed>true</nullsAllowed>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT019</logicalDatatype>
+<dataTypePrecision>3</dataTypePrecision>
+<dataTypeScale>0</dataTypeScale>
+<ownDataTypeParameters>,3,0</ownDataTypeParameters>
+<autoIncrementCycle>false</autoIncrementCycle>
+</Column>
+<Column name="GAS_DEPTH_CONFIDENCE" id="B6315C52-6108-8CFF-2F66-70B7AC3DA4B5">
+<sourceConnName>MEDS</sourceConnName>
+<sourceObjSchema>GEOLOGY_QUALITY_DATA</sourceObjSchema>
+<sourceObjName>GAS_DEPTH_CONFIDENCE</sourceObjName>
+<createdBy>darbo</createdBy>
+<createdTime>2024-02-13 17:12:18 UTC</createdTime>
+<ownerDesignName>MEDS_DATA</ownerDesignName>
+<nullsAllowed>true</nullsAllowed>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT019</logicalDatatype>
+<dataTypePrecision>3</dataTypePrecision>
+<dataTypeScale>0</dataTypeScale>
+<ownDataTypeParameters>,3,0</ownDataTypeParameters>
+<autoIncrementCycle>false</autoIncrementCycle>
+</Column>
+<Column name="BULK_LAYERS_CONFIDENCE" id="6DC1E964-FCC5-644F-B736-F8A39627F0EE">
+<sourceConnName>MEDS</sourceConnName>
+<sourceObjSchema>GEOLOGY_QUALITY_DATA</sourceObjSchema>
+<sourceObjName>BULK_LAYERS_CONFIDENCE</sourceObjName>
+<createdBy>darbo</createdBy>
+<createdTime>2024-02-13 17:12:18 UTC</createdTime>
+<ownerDesignName>MEDS_DATA</ownerDesignName>
+<nullsAllowed>true</nullsAllowed>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT019</logicalDatatype>
+<dataTypePrecision>3</dataTypePrecision>
+<dataTypeScale>0</dataTypeScale>
+<ownDataTypeParameters>,3,0</ownDataTypeParameters>
+<autoIncrementCycle>false</autoIncrementCycle>
+</Column>
+<Column name="BULK_LAYERS_DATA_CODE" id="1C8F216A-96D1-B909-0EB3-B9EC7D4D21C3">
+<sourceConnName>MEDS</sourceConnName>
+<sourceObjSchema>GEOLOGY_QUALITY_DATA</sourceObjSchema>
+<sourceObjName>BULK_LAYERS_DATA_CODE</sourceObjName>
+<createdBy>darbo</createdBy>
+<createdTime>2024-02-13 17:12:18 UTC</createdTime>
+<ownerDesignName>MEDS_DATA</ownerDesignName>
+<nullsAllowed>true</nullsAllowed>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT019</logicalDatatype>
+<dataTypePrecision>3</dataTypePrecision>
+<dataTypeScale>0</dataTypeScale>
+<ownDataTypeParameters>,3,0</ownDataTypeParameters>
+<autoIncrementCycle>false</autoIncrementCycle>
+</Column>
+<Column name="MASTER_BSL" id="DAF69A7E-80A9-9B22-25FE-BBB75857574D">
+<sourceConnName>MEDS</sourceConnName>
+<sourceObjSchema>GEOLOGY_QUALITY_DATA</sourceObjSchema>
+<sourceObjName>MASTER_BSL</sourceObjName>
+<createdBy>darbo</createdBy>
+<createdTime>2024-02-13 17:12:18 UTC</createdTime>
+<ownerDesignName>MEDS_DATA</ownerDesignName>
+<nullsAllowed>true</nullsAllowed>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT019</logicalDatatype>
+<dataTypePrecision>3</dataTypePrecision>
+<dataTypeScale>0</dataTypeScale>
+<ownDataTypeParameters>,3,0</ownDataTypeParameters>
+<autoIncrementCycle>false</autoIncrementCycle>
+</Column>
+<Column name="MASTER_BSL_DATA" id="E61B81EF-2A4B-77C4-60C2-C69BD48FE307">
+<sourceConnName>MEDS</sourceConnName>
+<sourceObjSchema>GEOLOGY_QUALITY_DATA</sourceObjSchema>
+<sourceObjName>MASTER_BSL_DATA</sourceObjName>
+<createdBy>darbo</createdBy>
+<createdTime>2024-02-13 17:12:18 UTC</createdTime>
+<ownerDesignName>MEDS_DATA</ownerDesignName>
+<nullsAllowed>true</nullsAllowed>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT019</logicalDatatype>
+<dataTypePrecision>3</dataTypePrecision>
+<dataTypeScale>0</dataTypeScale>
+<ownDataTypeParameters>,3,0</ownDataTypeParameters>
+<autoIncrementCycle>false</autoIncrementCycle>
+</Column>
+<Column name="MASTER_BSL_THICKNESS_CONFIDENC" id="09773A59-E0FB-17B4-6FC6-8654F9142546">
+<sourceConnName>MEDS</sourceConnName>
+<sourceObjSchema>GEOLOGY_QUALITY_DATA</sourceObjSchema>
+<sourceObjName>MASTER_BSL_THICKNESS_CONFIDENC</sourceObjName>
+<createdBy>darbo</createdBy>
+<createdTime>2024-02-13 17:12:18 UTC</createdTime>
+<ownerDesignName>MEDS_DATA</ownerDesignName>
+<nullsAllowed>true</nullsAllowed>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT019</logicalDatatype>
+<dataTypePrecision>3</dataTypePrecision>
+<dataTypeScale>0</dataTypeScale>
+<ownDataTypeParameters>,3,0</ownDataTypeParameters>
+<autoIncrementCycle>false</autoIncrementCycle>
+</Column>
+<Column name="MASTER_BSL_THICKNESS_CODE" id="B667B811-5635-C0A7-6446-32F6D1F292B0">
+<sourceConnName>MEDS</sourceConnName>
+<sourceObjSchema>GEOLOGY_QUALITY_DATA</sourceObjSchema>
+<sourceObjName>MASTER_BSL_THICKNESS_CODE</sourceObjName>
+<createdBy>darbo</createdBy>
+<createdTime>2024-02-13 17:12:18 UTC</createdTime>
+<ownerDesignName>MEDS_DATA</ownerDesignName>
+<nullsAllowed>true</nullsAllowed>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT019</logicalDatatype>
+<dataTypePrecision>3</dataTypePrecision>
+<dataTypeScale>0</dataTypeScale>
+<ownDataTypeParameters>,3,0</ownDataTypeParameters>
+<autoIncrementCycle>false</autoIncrementCycle>
+</Column>
+<Column name="MEDS_OBSERVATION_NUMBER" id="4D32398B-9931-A5A2-02EA-4FACB7402F6A">
+<sourceConnName>MEDS</sourceConnName>
+<sourceObjSchema>GEOLOGY_QUALITY_DATA</sourceObjSchema>
+<sourceObjName>MEDS_OBSERVATION_NUMBER</sourceObjName>
+<createdBy>darbo</createdBy>
+<createdTime>2024-02-13 17:12:18 UTC</createdTime>
+<ownerDesignName>MEDS_DATA</ownerDesignName>
+<nullsAllowed>true</nullsAllowed>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT019</logicalDatatype>
+<dataTypePrecision>10</dataTypePrecision>
+<dataTypeScale>0</dataTypeScale>
+<ownDataTypeParameters>,10,0</ownDataTypeParameters>
+<autoIncrementCycle>false</autoIncrementCycle>
+</Column>
+<Column name="MEDS_JOB_NUMBER" id="156E86D1-12CD-71C9-0A54-5911E964891A">
+<sourceConnName>MEDS</sourceConnName>
+<sourceObjSchema>GEOLOGY_QUALITY_DATA</sourceObjSchema>
+<sourceObjName>MEDS_JOB_NUMBER</sourceObjName>
+<createdBy>darbo</createdBy>
+<createdTime>2024-02-13 17:12:18 UTC</createdTime>
+<ownerDesignName>MEDS_DATA</ownerDesignName>
+<nullsAllowed>true</nullsAllowed>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT019</logicalDatatype>
+<dataTypePrecision>10</dataTypePrecision>
+<dataTypeScale>0</dataTypeScale>
+<ownDataTypeParameters>,10,0</ownDataTypeParameters>
+<autoIncrementCycle>false</autoIncrementCycle>
+</Column>
+</columns>
+<indexes itemClass="oracle.dbtools.crest.model.design.relational.Index">
+<ind_PK_UK id="8F14E403-4619-F56F-7339-69F54A2C351B" schemaObject="198B7359-7E07-FB02-B07C-A0A91EE44FE7" name="IDX_JOB_GEOLOGY_42">
+<sourceConnName>MEDS</sourceConnName>
+<sourceObjSchema>MEDSDATA</sourceObjSchema>
+<sourceObjName>IDX_JOB_GEOLOGY_42</sourceObjName>
+<createdBy>darbo</createdBy>
+<createdTime>2024-02-13 17:12:25 UTC</createdTime>
+<ownerDesignName>MEDS_DATA</ownerDesignName>
+<isSurrogateKey>false</isSurrogateKey>
+<indexColumnUsage>
+<colUsage columnID="156E86D1-12CD-71C9-0A54-5911E964891A"/>
+<colUsage columnID="4D32398B-9931-A5A2-02EA-4FACB7402F6A"/>
+</indexColumnUsage>
+</ind_PK_UK>
+</indexes>
+</Table>

@@ -1,5 +1,5 @@
 <?xml version = '1.0' encoding = 'UTF-8'?>
-<Table class="oracle.dbtools.crest.model.design.relational.Table" directorySegmentName="seg_0" id="8FDF46A6-BFE5-DCD1-384E-A2884CEF8C24" name="SOUND_VELOCITY_QUALITY">
+<Table class="oracle.dbtools.crest.model.design.relational.Table" directorySegmentName="seg_0" id="8FDF46A6-BFE5-DCD1-384E-A2884CEF8C24" schemaObject="20651223-0797-3CAA-7021-8449492EE83B" name="SERD_LOV_SOUND_VELOCITY_QUALITY">
 <createdBy>darbo</createdBy>
 <createdTime>2024-02-14 16:15:04 UTC</createdTime>
 <ownerDesignName>MEDS_SERD</ownerDesignName>
@@ -31,14 +31,34 @@
 <ownDataTypeParameters>100,,</ownDataTypeParameters>
 <autoIncrementCycle>false</autoIncrementCycle>
 </Column>
+<Column name="SERD_LOV_SOUND_VELOCITY_QUALITY" id="1E6E71D3-3240-23BC-0AC3-293089AB13B1">
+<createdBy>d.arboittedossantos</createdBy>
+<createdTime>2024-04-04 15:36:42 UTC</createdTime>
+<ownerDesignName>MEDS_SERD</ownerDesignName>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT019</logicalDatatype>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
+<autoIncrementCycle>false</autoIncrementCycle>
+</Column>
 </columns>
 <indexes itemClass="oracle.dbtools.crest.model.design.relational.Index">
-<ind_PK_UK id="37AAE5CF-344B-8FA6-6A66-AAC3D6414437" name="SOUND_VELOCITY_QUALITY_PK">
-<createdBy>darbo</createdBy>
-<createdTime>2024-02-14 16:15:04 UTC</createdTime>
+<ind_PK_UK id="CBCA9604-63A2-88EA-250C-A8F5D5ACD168" name="SERD_LOV_SOUND_VELOCITY_QUALITY_P">
+<createdBy>d.arboittedossantos</createdBy>
+<createdTime>2024-04-04 15:36:42 UTC</createdTime>
 <ownerDesignName>MEDS_SERD</ownerDesignName>
 <pk>true</pk>
 <indexState>Primary Constraint</indexState>
+<isSurrogateKey>false</isSurrogateKey>
+<indexColumnUsage>
+<colUsage columnID="1E6E71D3-3240-23BC-0AC3-293089AB13B1"/>
+</indexColumnUsage>
+</ind_PK_UK>
+<ind_PK_UK id="0DC49C1D-B735-96A4-6DA1-655BD62FD9DD" name="SERD_LOV_SOUND_VELOCITY_QUALITY_CD_U">
+<createdBy>d.arboittedossantos</createdBy>
+<createdTime>2024-04-04 15:36:42 UTC</createdTime>
+<ownerDesignName>MEDS_SERD</ownerDesignName>
+<indexState>Unique Constraint</indexState>
 <isSurrogateKey>false</isSurrogateKey>
 <indexColumnUsage>
 <colUsage columnID="FBE97307-370A-35F5-8719-46548E89DC97"/>

@@ -1,0 +1,16 @@
+<?xml version = '1.0' encoding = 'UTF-8'?>
+<FKIndexAssociation class="oracle.dbtools.crest.model.design.relational.FKIndexAssociation" directorySegmentName="seg_0" id="47F2F8D4-50F7-0852-35CA-553E85EB0ACA" containerWithKeyObject="69BC1AAD-3A20-A155-468B-AB9A273CB587" localFKIndex="56865AC2-B821-DAF0-E2E3-5073E3B42384" name="SERD_STG_DEPTH_LEVEL_SERD_STG_HEADER_F">
+<createdBy>d.arboittedossantos</createdBy>
+<createdTime>2024-04-04 15:46:06 UTC</createdTime>
+<ownerDesignName>MEDS_SERD</ownerDesignName>
+<referredTableLongName>SERD_STG_HEADER</referredTableLongName>
+<deleteRule>NO ACTION</deleteRule>
+<referredTableID>85E06FE8-87CC-24E5-6567-CF157E06B47C</referredTableID>
+<keyObject>1493B27E-9A17-7113-6ED4-EE27273430F6</keyObject>
+<referredKeyID>1493B27E-9A17-7113-6ED4-EE27273430F6</referredKeyID>
+<mandatory>true</mandatory>
+<refColNames>RECORD_ID</refColNames>
+<transferable>true</transferable>
+<rely>false</rely>
+<columnDependencyConstraintGenerateInDDL>true</columnDependencyConstraintGenerateInDDL>
+</FKIndexAssociation>

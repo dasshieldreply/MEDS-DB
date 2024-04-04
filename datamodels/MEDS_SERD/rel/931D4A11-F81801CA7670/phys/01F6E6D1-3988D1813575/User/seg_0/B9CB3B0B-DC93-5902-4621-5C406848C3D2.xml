@@ -1,0 +1,176 @@
+<?xml version = '1.0' encoding = 'UTF-8'?>
+<UserOraclev10g class="oracle.dbtools.crest.model.design.storage.oracle.v10g.UserOraclev10g" name="CM" directorySegmentName="seg_0" id="B9CB3B0B-DC93-5902-4621-5C406848C3D2">
+<createdBy>d.arboittedossantos</createdBy>
+<createdTime>2024-04-04 16:13:38 UTC</createdTime>
+<ownerDesignName>MEDS_SERD</ownerDesignName>
+<identifier>055C9F5C0F4E433859EC94E4A4F4720C1F</identifier>
+<permissions>
+<Permission class="oracle.dbtools.crest.model.design.storage.oracle.v10g.PermissionsOraclev10g" name="Permissions1" id="1DA4C113-D2A8-9338-4862-056A8251A00D">
+<createdBy>d.arboittedossantos</createdBy>
+<createdTime>2024-04-04 16:13:54 UTC</createdTime>
+<ownerDesignName>MEDS_SERD</ownerDesignName>
+<privileges>SELECT</privileges>
+<table>B84889F9-4EA7-6589-ED9B-EB809ED0B8B2</table>
+</Permission>
+<Permission class="oracle.dbtools.crest.model.design.storage.oracle.v10g.PermissionsOraclev10g" name="Permissions1" id="5AACEA15-5E82-A1D7-5811-B12C3C3C8AF2">
+<createdBy>d.arboittedossantos</createdBy>
+<createdTime>2024-04-04 16:13:54 UTC</createdTime>
+<generatorID>1DA4C113-D2A8-9338-4862-056A8251A00D</generatorID>
+<ownerDesignName>MEDS_SERD</ownerDesignName>
+<privileges>SELECT</privileges>
+<table>9B96B10F-7D3F-968E-9875-2209F4945EF5</table>
+</Permission>
+<Permission class="oracle.dbtools.crest.model.design.storage.oracle.v10g.PermissionsOraclev10g" name="Permissions1" id="97D0CC92-B49D-A533-9BEA-D4F313A543FB">
+<createdBy>d.arboittedossantos</createdBy>
+<createdTime>2024-04-04 16:13:54 UTC</createdTime>
+<generatorID>1DA4C113-D2A8-9338-4862-056A8251A00D</generatorID>
+<ownerDesignName>MEDS_SERD</ownerDesignName>
+<privileges>SELECT</privileges>
+<table>1611D5CF-654F-AE2D-5DB0-F5EC08CC073B</table>
+</Permission>
+<Permission class="oracle.dbtools.crest.model.design.storage.oracle.v10g.PermissionsOraclev10g" name="Permissions1" id="29420EC7-4A8F-AA89-C524-37425AD6DC0F">
+<createdBy>d.arboittedossantos</createdBy>
+<createdTime>2024-04-04 16:13:54 UTC</createdTime>
+<generatorID>1DA4C113-D2A8-9338-4862-056A8251A00D</generatorID>
+<ownerDesignName>MEDS_SERD</ownerDesignName>
+<privileges>SELECT</privileges>
+<table>C8D9D867-84ED-A408-D21A-F14B616AA12C</table>
+</Permission>
+<Permission class="oracle.dbtools.crest.model.design.storage.oracle.v10g.PermissionsOraclev10g" name="Permissions1" id="FA9F4D79-4DE0-2A5B-8AA0-74C1C449B903">
+<createdBy>d.arboittedossantos</createdBy>
+<createdTime>2024-04-04 16:13:54 UTC</createdTime>
+<generatorID>1DA4C113-D2A8-9338-4862-056A8251A00D</generatorID>
+<ownerDesignName>MEDS_SERD</ownerDesignName>
+<privileges>SELECT</privileges>
+<table>D7EA6BED-6B6E-DC68-7D6D-50C006602E07</table>
+</Permission>
+<Permission class="oracle.dbtools.crest.model.design.storage.oracle.v10g.PermissionsOraclev10g" name="Permissions1" id="AE2351A1-2B25-50B7-A610-D24197655757">
+<createdBy>d.arboittedossantos</createdBy>
+<createdTime>2024-04-04 16:13:54 UTC</createdTime>
+<generatorID>1DA4C113-D2A8-9338-4862-056A8251A00D</generatorID>
+<ownerDesignName>MEDS_SERD</ownerDesignName>
+<privileges>SELECT</privileges>
+<table>FB3FDFA7-9DF3-CA0C-47EE-7EB10BA0DD86</table>
+</Permission>
+<Permission class="oracle.dbtools.crest.model.design.storage.oracle.v10g.PermissionsOraclev10g" name="Permissions1" id="454323B1-8991-1E2F-53C7-2F52FA8B9EDB">
+<createdBy>d.arboittedossantos</createdBy>
+<createdTime>2024-04-04 16:13:54 UTC</createdTime>
+<generatorID>1DA4C113-D2A8-9338-4862-056A8251A00D</generatorID>
+<ownerDesignName>MEDS_SERD</ownerDesignName>
+<privileges>SELECT</privileges>
+<table>750324BD-8026-DC19-98A6-FB7E2D3B9370</table>
+</Permission>
+<Permission class="oracle.dbtools.crest.model.design.storage.oracle.v10g.PermissionsOraclev10g" name="Permissions1" id="B034E57D-5609-698D-0712-FB4C1E132A80">
+<createdBy>d.arboittedossantos</createdBy>
+<createdTime>2024-04-04 16:13:54 UTC</createdTime>
+<generatorID>1DA4C113-D2A8-9338-4862-056A8251A00D</generatorID>
+<ownerDesignName>MEDS_SERD</ownerDesignName>
+<privileges>SELECT</privileges>
+<table>2E833562-ED73-D9A4-AB15-C014C81AF534</table>
+</Permission>
+<Permission class="oracle.dbtools.crest.model.design.storage.oracle.v10g.PermissionsOraclev10g" name="Permissions1" id="6793D15F-DDEE-E41D-C03D-235EF6B81F86">
+<createdBy>d.arboittedossantos</createdBy>
+<createdTime>2024-04-04 16:13:54 UTC</createdTime>
+<generatorID>1DA4C113-D2A8-9338-4862-056A8251A00D</generatorID>
+<ownerDesignName>MEDS_SERD</ownerDesignName>
+<privileges>SELECT</privileges>
+<table>D4A1C796-FA62-C383-1775-5B8CB720D96F</table>
+</Permission>
+<Permission class="oracle.dbtools.crest.model.design.storage.oracle.v10g.PermissionsOraclev10g" name="Permissions1" id="69EE56CE-DE64-5EDA-0581-4EE5BC6185E6">
+<createdBy>d.arboittedossantos</createdBy>
+<createdTime>2024-04-04 16:13:54 UTC</createdTime>
+<generatorID>1DA4C113-D2A8-9338-4862-056A8251A00D</generatorID>
+<ownerDesignName>MEDS_SERD</ownerDesignName>
+<privileges>SELECT</privileges>
+<table>FB8DCE81-67BD-7C81-9E04-F4AE9B762DDE</table>
+</Permission>
+<Permission class="oracle.dbtools.crest.model.design.storage.oracle.v10g.PermissionsOraclev10g" name="Permissions1" id="29D670F5-0FDF-94F9-0D2C-2325BD940365">
+<createdBy>d.arboittedossantos</createdBy>
+<createdTime>2024-04-04 16:13:54 UTC</createdTime>
+<generatorID>1DA4C113-D2A8-9338-4862-056A8251A00D</generatorID>
+<ownerDesignName>MEDS_SERD</ownerDesignName>
+<privileges>SELECT</privileges>
+<table>D3CE513B-79BD-B9A5-2586-51A21CDBD4D4</table>
+</Permission>
+<Permission class="oracle.dbtools.crest.model.design.storage.oracle.v10g.PermissionsOraclev10g" name="Permissions1" id="EC3EECBD-891E-C4EF-99C0-8BE4F60DAE29">
+<createdBy>d.arboittedossantos</createdBy>
+<createdTime>2024-04-04 16:13:54 UTC</createdTime>
+<generatorID>1DA4C113-D2A8-9338-4862-056A8251A00D</generatorID>
+<ownerDesignName>MEDS_SERD</ownerDesignName>
+<privileges>SELECT</privileges>
+<table>45579E81-B6E8-776B-EE98-D4F910CF5A8F</table>
+</Permission>
+<Permission class="oracle.dbtools.crest.model.design.storage.oracle.v10g.PermissionsOraclev10g" name="Permissions1" id="B2EF8DBF-0BBE-27B6-9DD4-4B1A72D995CA">
+<createdBy>d.arboittedossantos</createdBy>
+<createdTime>2024-04-04 16:13:54 UTC</createdTime>
+<generatorID>1DA4C113-D2A8-9338-4862-056A8251A00D</generatorID>
+<ownerDesignName>MEDS_SERD</ownerDesignName>
+<privileges>SELECT</privileges>
+<table>0DC2B30D-B0C8-7432-FF05-5B222CC2213B</table>
+</Permission>
+<Permission class="oracle.dbtools.crest.model.design.storage.oracle.v10g.PermissionsOraclev10g" name="Permissions1" id="A1AC6195-5F83-21F5-516B-26750D8F6C44">
+<createdBy>d.arboittedossantos</createdBy>
+<createdTime>2024-04-04 16:13:54 UTC</createdTime>
+<generatorID>1DA4C113-D2A8-9338-4862-056A8251A00D</generatorID>
+<ownerDesignName>MEDS_SERD</ownerDesignName>
+<privileges>SELECT</privileges>
+<table>8FDF46A6-BFE5-DCD1-384E-A2884CEF8C24</table>
+</Permission>
+<Permission class="oracle.dbtools.crest.model.design.storage.oracle.v10g.PermissionsOraclev10g" name="Permissions1" id="209CE9BD-735C-482A-83F6-597212207A09">
+<createdBy>d.arboittedossantos</createdBy>
+<createdTime>2024-04-04 16:13:54 UTC</createdTime>
+<generatorID>1DA4C113-D2A8-9338-4862-056A8251A00D</generatorID>
+<ownerDesignName>MEDS_SERD</ownerDesignName>
+<privileges>SELECT</privileges>
+<table>180B3D10-CD09-0AD6-C621-330D275CE960</table>
+</Permission>
+<Permission class="oracle.dbtools.crest.model.design.storage.oracle.v10g.PermissionsOraclev10g" name="Permissions1" id="34B057AD-CB2B-CA2A-0D5F-3FAEDAFB9359">
+<createdBy>d.arboittedossantos</createdBy>
+<createdTime>2024-04-04 16:13:54 UTC</createdTime>
+<generatorID>1DA4C113-D2A8-9338-4862-056A8251A00D</generatorID>
+<ownerDesignName>MEDS_SERD</ownerDesignName>
+<privileges>SELECT</privileges>
+<table>05B9E19A-9BB9-9357-E2E1-EC790A141D10</table>
+</Permission>
+<Permission class="oracle.dbtools.crest.model.design.storage.oracle.v10g.PermissionsOraclev10g" name="Permissions1" id="46A0E5AE-00BA-2543-808B-B6322637F768">
+<createdBy>d.arboittedossantos</createdBy>
+<createdTime>2024-04-04 16:13:54 UTC</createdTime>
+<generatorID>1DA4C113-D2A8-9338-4862-056A8251A00D</generatorID>
+<ownerDesignName>MEDS_SERD</ownerDesignName>
+<privileges>SELECT</privileges>
+<table>E2732295-1AB8-8F9D-A223-7C5CEC0D66D6</table>
+</Permission>
+<Permission class="oracle.dbtools.crest.model.design.storage.oracle.v10g.PermissionsOraclev10g" name="Permissions1" id="58D236BB-7D07-1FA2-4CB0-97E22BDD2C91">
+<createdBy>d.arboittedossantos</createdBy>
+<createdTime>2024-04-04 16:13:54 UTC</createdTime>
+<generatorID>1DA4C113-D2A8-9338-4862-056A8251A00D</generatorID>
+<ownerDesignName>MEDS_SERD</ownerDesignName>
+<privileges>SELECT</privileges>
+<table>32DB7534-CB88-5487-204A-FA25927516FF</table>
+</Permission>
+<Permission class="oracle.dbtools.crest.model.design.storage.oracle.v10g.PermissionsOraclev10g" name="Permissions1" id="3FA83D93-CFB6-D73C-CE76-8F01655CA611">
+<createdBy>d.arboittedossantos</createdBy>
+<createdTime>2024-04-04 16:13:54 UTC</createdTime>
+<generatorID>1DA4C113-D2A8-9338-4862-056A8251A00D</generatorID>
+<ownerDesignName>MEDS_SERD</ownerDesignName>
+<privileges>SELECT</privileges>
+<table>9B899E90-7644-AA37-553A-5FB3EA93E1F8</table>
+</Permission>
+<Permission class="oracle.dbtools.crest.model.design.storage.oracle.v10g.PermissionsOraclev10g" name="Permissions1" id="8E01599E-F033-709B-ED8F-2D7501C8FF8E">
+<createdBy>d.arboittedossantos</createdBy>
+<createdTime>2024-04-04 16:13:54 UTC</createdTime>
+<generatorID>1DA4C113-D2A8-9338-4862-056A8251A00D</generatorID>
+<ownerDesignName>MEDS_SERD</ownerDesignName>
+<privileges>SELECT</privileges>
+<table>69BC1AAD-3A20-A155-468B-AB9A273CB587</table>
+</Permission>
+<Permission class="oracle.dbtools.crest.model.design.storage.oracle.v10g.PermissionsOraclev10g" name="Permissions1" id="3367FECD-5186-820F-B36E-4C138B25D5F9">
+<createdBy>d.arboittedossantos</createdBy>
+<createdTime>2024-04-04 16:13:54 UTC</createdTime>
+<generatorID>1DA4C113-D2A8-9338-4862-056A8251A00D</generatorID>
+<ownerDesignName>MEDS_SERD</ownerDesignName>
+<privileges>SELECT</privileges>
+<table>85E06FE8-87CC-24E5-6567-CF157E06B47C</table>
+</Permission>
+</permissions>
+</UserOraclev10g>

@@ -1,0 +1,371 @@
+<?xml version = '1.0' encoding = 'UTF-8'?>
+<TableProxyOraclev20c class="oracle.dbtools.crest.model.design.storage.oracle.v20c.TableProxyOraclev20c" name="SERD_STG_HEADER" directorySegmentName="seg_0" id="85E06FE8-87CC-24E5-6567-CF157E06B47C">
+<createdBy>d.arboittedossantos</createdBy>
+<createdTime>2024-04-04 16:11:57 UTC</createdTime>
+<ownerDesignName>MEDS_SERD</ownerDesignName>
+<schemaObject>20651223-0797-3CAA-7021-8449492EE83B</schemaObject>
+<logging>YES</logging>
+<partitionedRowMovement>DISABLE</partitionedRowMovement>
+<temporaryChanged>false</temporaryChanged>
+<user>28DF8DA2-9C77-E269-F136-0994A498F661</user>
+<accessDriverType>oracle_loader</accessDriverType>
+<rejectLimit></rejectLimit>
+<storeAs>CLOB</storeAs>
+<columnProxies itemClass="oracle.dbtools.crest.model.design.storage.oracle.v12c.ColumnProxyOraclev12c">
+<ColumnProxy name="COUNTRY_CD" id="045D46FA-405D-A146-3F5A-19920F4DD6A2">
+<createdBy>d.arboittedossantos</createdBy>
+<createdTime>2024-04-04 16:11:57 UTC</createdTime>
+<ownerDesignName>MEDS_SERD</ownerDesignName>
+</ColumnProxy>
+<ColumnProxy name="POSITION_ADDITIONAL_REF" id="06FCE60A-D05B-8023-11FF-C40991973097">
+<createdBy>d.arboittedossantos</createdBy>
+<createdTime>2024-04-04 16:11:57 UTC</createdTime>
+<ownerDesignName>MEDS_SERD</ownerDesignName>
+</ColumnProxy>
+<ColumnProxy name="MBT_SEA_SURFACE_TEMPERATURE_CORRECTION_VL" id="08905933-8BE7-2716-A6A3-AF3B7502E8F7">
+<createdBy>d.arboittedossantos</createdBy>
+<createdTime>2024-04-04 16:11:57 UTC</createdTime>
+<ownerDesignName>MEDS_SERD</ownerDesignName>
+</ColumnProxy>
+<ColumnProxy name="DEGREE_SQUARE_VL" id="0A71A774-82A5-8C02-7E27-2EF2BC70A6F7">
+<createdBy>d.arboittedossantos</createdBy>
+<createdTime>2024-04-04 16:11:57 UTC</createdTime>
+<ownerDesignName>MEDS_SERD</ownerDesignName>
+</ColumnProxy>
+<ColumnProxy name="MIN_OBSERVATION_DEPTH_VL" id="0CA47C47-8202-785A-720A-ADD30F8B008E">
+<createdBy>d.arboittedossantos</createdBy>
+<createdTime>2024-04-04 16:11:57 UTC</createdTime>
+<ownerDesignName>MEDS_SERD</ownerDesignName>
+</ColumnProxy>
+<ColumnProxy name="WIND_SPEED_VL" id="173272EF-D050-0686-D79E-20257D75313A">
+<createdBy>d.arboittedossantos</createdBy>
+<createdTime>2024-04-04 16:11:57 UTC</createdTime>
+<ownerDesignName>MEDS_SERD</ownerDesignName>
+</ColumnProxy>
+<ColumnProxy name="SERD_STG_HEADER" id="1B124D92-6055-F62E-4706-08413235267D">
+<createdBy>d.arboittedossantos</createdBy>
+<createdTime>2024-04-04 16:11:57 UTC</createdTime>
+<ownerDesignName>MEDS_SERD</ownerDesignName>
+</ColumnProxy>
+<ColumnProxy name="LAND_CHECK_IND" id="1CBD52EA-9CA1-8345-F7BB-B85BFFA3E921">
+<createdBy>d.arboittedossantos</createdBy>
+<createdTime>2024-04-04 16:11:57 UTC</createdTime>
+<ownerDesignName>MEDS_SERD</ownerDesignName>
+</ColumnProxy>
+<ColumnProxy name="INSTITUTE_DESCR" id="1F7C08D2-1166-E7C2-699C-1048ECF3DBF5">
+<createdBy>d.arboittedossantos</createdBy>
+<createdTime>2024-04-04 16:11:57 UTC</createdTime>
+<ownerDesignName>MEDS_SERD</ownerDesignName>
+</ColumnProxy>
+<ColumnProxy name="DEPTH_LEVEL_NO" id="206B237F-DA46-C447-6290-A164DCE444F4">
+<createdBy>d.arboittedossantos</createdBy>
+<createdTime>2024-04-04 16:11:57 UTC</createdTime>
+<ownerDesignName>MEDS_SERD</ownerDesignName>
+</ColumnProxy>
+<ColumnProxy name="DRY_AIR_TEMPERATURE_VL" id="26EA6201-D911-BB10-A26F-BAF5AD4C1095">
+<createdBy>d.arboittedossantos</createdBy>
+<createdTime>2024-04-04 16:11:57 UTC</createdTime>
+<ownerDesignName>MEDS_SERD</ownerDesignName>
+</ColumnProxy>
+<ColumnProxy name="BT_SEA_SURFACE_REFERENCE_TEMPERATURE_VL" id="2BC3682B-77A2-93C4-C5C0-18C198B4088A">
+<createdBy>d.arboittedossantos</createdBy>
+<createdTime>2024-04-04 16:11:57 UTC</createdTime>
+<ownerDesignName>MEDS_SERD</ownerDesignName>
+</ColumnProxy>
+<ColumnProxy name="CLOUD_COVERAGE_CD" id="2D085FC3-DD02-E25C-D13D-9DFDA0BE3656">
+<createdBy>d.arboittedossantos</createdBy>
+<createdTime>2024-04-04 16:11:57 UTC</createdTime>
+<ownerDesignName>MEDS_SERD</ownerDesignName>
+</ColumnProxy>
+<ColumnProxy name="OBSERVATION_UNIT_CD" id="2E8AB5E0-CA1F-EE53-F1CC-C2332F032F1D">
+<createdBy>d.arboittedossantos</createdBy>
+<createdTime>2024-04-04 16:11:57 UTC</createdTime>
+<ownerDesignName>MEDS_SERD</ownerDesignName>
+</ColumnProxy>
+<ColumnProxy name="INSTITUTE_NO_CD" id="36563322-9FA1-27D5-4FBA-B051F7B81E33">
+<createdBy>d.arboittedossantos</createdBy>
+<createdTime>2024-04-04 16:11:57 UTC</createdTime>
+<ownerDesignName>MEDS_SERD</ownerDesignName>
+</ColumnProxy>
+<ColumnProxy name="FILE_CD" id="44DC46F3-B70E-A92A-0E34-643C0AE400FC">
+<createdBy>d.arboittedossantos</createdBy>
+<createdTime>2024-04-04 16:11:57 UTC</createdTime>
+<ownerDesignName>MEDS_SERD</ownerDesignName>
+</ColumnProxy>
+<ColumnProxy name="SEA_STATE_CD" id="450DCDB8-77A1-6D52-5734-D2B8246E020E">
+<createdBy>d.arboittedossantos</createdBy>
+<createdTime>2024-04-04 16:11:57 UTC</createdTime>
+<ownerDesignName>MEDS_SERD</ownerDesignName>
+</ColumnProxy>
+<ColumnProxy name="RECORD_TP" id="4BF7475D-0D1C-F10B-815C-76A9C4BA7258">
+<createdBy>d.arboittedossantos</createdBy>
+<createdTime>2024-04-04 16:11:57 UTC</createdTime>
+<ownerDesignName>MEDS_SERD</ownerDesignName>
+</ColumnProxy>
+<ColumnProxy name="SEQUENCE_NO" id="4E18E3FB-77AC-7EFB-45DD-4091B667C068">
+<createdBy>d.arboittedossantos</createdBy>
+<createdTime>2024-04-04 16:11:57 UTC</createdTime>
+<ownerDesignName>MEDS_SERD</ownerDesignName>
+</ColumnProxy>
+<ColumnProxy name="MAX_OBSERVATION_DEPTH_VL" id="5265C185-70BC-1BFB-D212-98F42787AED3">
+<createdBy>d.arboittedossantos</createdBy>
+<createdTime>2024-04-04 16:11:57 UTC</createdTime>
+<ownerDesignName>MEDS_SERD</ownerDesignName>
+</ColumnProxy>
+<ColumnProxy name="SHIP_NO_CD" id="5C0B88E0-CA74-30A1-3D86-210D0F8F3E8F">
+<createdBy>d.arboittedossantos</createdBy>
+<createdTime>2024-04-04 16:11:57 UTC</createdTime>
+<ownerDesignName>MEDS_SERD</ownerDesignName>
+</ColumnProxy>
+<ColumnProxy name="INSTITUTE_NO" id="5D1426EE-5BAF-A465-5D91-40FD20712DF3">
+<createdBy>d.arboittedossantos</createdBy>
+<createdTime>2024-04-04 16:11:57 UTC</createdTime>
+<ownerDesignName>MEDS_SERD</ownerDesignName>
+</ColumnProxy>
+<ColumnProxy name="SEABED_DEPTH_VL" id="70057B31-0299-8226-F0A2-7247AB190CB3">
+<createdBy>d.arboittedossantos</createdBy>
+<createdTime>2024-04-04 16:11:57 UTC</createdTime>
+<ownerDesignName>MEDS_SERD</ownerDesignName>
+</ColumnProxy>
+<ColumnProxy name="OBSERVATION_TM" id="704746D3-1211-5028-0194-3336F80F9ABF">
+<createdBy>d.arboittedossantos</createdBy>
+<createdTime>2024-04-04 16:11:57 UTC</createdTime>
+<ownerDesignName>MEDS_SERD</ownerDesignName>
+</ColumnProxy>
+<ColumnProxy name="WATER TRANSPARENCY" id="718500FB-69E7-2374-E15F-6A7FE20535E5">
+<createdBy>d.arboittedossantos</createdBy>
+<createdTime>2024-04-04 16:11:57 UTC</createdTime>
+<ownerDesignName>MEDS_SERD</ownerDesignName>
+</ColumnProxy>
+<ColumnProxy name="QUADRANT_CD" id="732BF464-E30C-0C1B-0F03-7643118A1CD0">
+<createdBy>d.arboittedossantos</createdBy>
+<createdTime>2024-04-04 16:11:57 UTC</createdTime>
+<ownerDesignName>MEDS_SERD</ownerDesignName>
+</ColumnProxy>
+<ColumnProxy name="DATA_ID" id="7994CD80-BBD9-E6D2-5F8F-591C441ECFC4">
+<createdBy>d.arboittedossantos</createdBy>
+<createdTime>2024-04-04 16:11:57 UTC</createdTime>
+<ownerDesignName>MEDS_SERD</ownerDesignName>
+</ColumnProxy>
+<ColumnProxy name="DEPTH_CORRECTION_VL" id="7E524667-B3FE-7A83-7FF7-B529390830ED">
+<createdBy>d.arboittedossantos</createdBy>
+<createdTime>2024-04-04 16:11:57 UTC</createdTime>
+<ownerDesignName>MEDS_SERD</ownerDesignName>
+</ColumnProxy>
+<ColumnProxy name="WATER_COLOUR_CD" id="866C7808-1D37-4990-3E1E-2F7493BB6433">
+<createdBy>d.arboittedossantos</createdBy>
+<createdTime>2024-04-04 16:11:57 UTC</createdTime>
+<ownerDesignName>MEDS_SERD</ownerDesignName>
+</ColumnProxy>
+<ColumnProxy name="SALINITY_CORRECTION_VL" id="86A54351-1846-20E3-41FD-222A805C8440">
+<createdBy>d.arboittedossantos</createdBy>
+<createdTime>2024-04-04 16:11:57 UTC</createdTime>
+<ownerDesignName>MEDS_SERD</ownerDesignName>
+</ColumnProxy>
+<ColumnProxy name="MBT_GRADE_QUALITTY_CD" id="8B9469AC-AE47-D78B-607E-FE980A9BB4CC">
+<createdBy>d.arboittedossantos</createdBy>
+<createdTime>2024-04-04 16:11:57 UTC</createdTime>
+<ownerDesignName>MEDS_SERD</ownerDesignName>
+</ColumnProxy>
+<ColumnProxy name="TEMPERATURE_CORRECTION_VL" id="8FF2A038-2B2E-7171-4542-74E3F540C711">
+<createdBy>d.arboittedossantos</createdBy>
+<createdTime>2024-04-04 16:11:57 UTC</createdTime>
+<ownerDesignName>MEDS_SERD</ownerDesignName>
+</ColumnProxy>
+<ColumnProxy name="POSITION_ACCURACY_CD" id="92CBFE0E-7B4C-5D7C-E008-257A349C2FB3">
+<createdBy>d.arboittedossantos</createdBy>
+<createdTime>2024-04-04 16:11:57 UTC</createdTime>
+<ownerDesignName>MEDS_SERD</ownerDesignName>
+</ColumnProxy>
+<ColumnProxy name="MARSDEN_SQUARE_VL" id="96AA1474-AA0A-CE46-68DE-5B649AB744DE">
+<createdBy>d.arboittedossantos</createdBy>
+<createdTime>2024-04-04 16:11:57 UTC</createdTime>
+<ownerDesignName>MEDS_SERD</ownerDesignName>
+</ColumnProxy>
+<ColumnProxy name="WAVE_HEIGHT_VL" id="9EFB7373-A136-173A-4D23-A9B6888C4455">
+<createdBy>d.arboittedossantos</createdBy>
+<createdTime>2024-04-04 16:11:57 UTC</createdTime>
+<ownerDesignName>MEDS_SERD</ownerDesignName>
+</ColumnProxy>
+<ColumnProxy name="DATA_TYPE_CD" id="A9F008BC-688E-8AE3-E145-00D58F30E49B">
+<createdBy>d.arboittedossantos</createdBy>
+<createdTime>2024-04-04 16:11:57 UTC</createdTime>
+<ownerDesignName>MEDS_SERD</ownerDesignName>
+</ColumnProxy>
+<ColumnProxy name="WEATHER_CD" id="ABB0F2C7-65D9-BDE6-C405-8B25DFAA5646">
+<createdBy>d.arboittedossantos</createdBy>
+<createdTime>2024-04-04 16:11:57 UTC</createdTime>
+<ownerDesignName>MEDS_SERD</ownerDesignName>
+</ColumnProxy>
+<ColumnProxy name="ATMOSPHERIC_PRESSURE_VL" id="AFFE3FD5-B34B-88AF-75F4-8EDEC73C48B2">
+<createdBy>d.arboittedossantos</createdBy>
+<createdTime>2024-04-04 16:11:57 UTC</createdTime>
+<ownerDesignName>MEDS_SERD</ownerDesignName>
+</ColumnProxy>
+<ColumnProxy name="ORIGINATOR_CRUISE_NO" id="B1E3DC83-7C71-36B2-E89E-A636E7E6EB99">
+<createdBy>d.arboittedossantos</createdBy>
+<createdTime>2024-04-04 16:11:57 UTC</createdTime>
+<ownerDesignName>MEDS_SERD</ownerDesignName>
+</ColumnProxy>
+<ColumnProxy name="DATA_MODE_CD" id="B36C085A-E0AE-3554-11D0-7110E55A4562">
+<createdBy>d.arboittedossantos</createdBy>
+<createdTime>2024-04-04 16:11:57 UTC</createdTime>
+<ownerDesignName>MEDS_SERD</ownerDesignName>
+</ColumnProxy>
+<ColumnProxy name="ARCHIVE_YEAR" id="B5277DB6-67A4-D752-555B-56CBE1B04499">
+<createdBy>d.arboittedossantos</createdBy>
+<createdTime>2024-04-04 16:11:57 UTC</createdTime>
+<ownerDesignName>MEDS_SERD</ownerDesignName>
+</ColumnProxy>
+<ColumnProxy name="WIND_DIRECTION_CD" id="B73F8E15-BE8C-5723-DCD1-B32DCC0F5AF7">
+<createdBy>d.arboittedossantos</createdBy>
+<createdTime>2024-04-04 16:11:57 UTC</createdTime>
+<ownerDesignName>MEDS_SERD</ownerDesignName>
+</ColumnProxy>
+<ColumnProxy name="WAVE_PERIOD_TM" id="BD6394AA-F09A-A402-8299-788EFA4FEF47">
+<createdBy>d.arboittedossantos</createdBy>
+<createdTime>2024-04-04 16:11:57 UTC</createdTime>
+<ownerDesignName>MEDS_SERD</ownerDesignName>
+</ColumnProxy>
+<ColumnProxy name="SALINITY_SCALE_CD" id="C6928C11-43F1-20EF-CB68-F7B93CBA3ED0">
+<createdBy>d.arboittedossantos</createdBy>
+<createdTime>2024-04-04 16:11:57 UTC</createdTime>
+<ownerDesignName>MEDS_SERD</ownerDesignName>
+</ColumnProxy>
+<ColumnProxy name="BT_SEA_SURFACE_INSTRUMENT_CD" id="CB02B850-199C-F266-AE07-992DFECDACED">
+<createdBy>d.arboittedossantos</createdBy>
+<createdTime>2024-04-04 16:11:57 UTC</createdTime>
+<ownerDesignName>MEDS_SERD</ownerDesignName>
+</ColumnProxy>
+<ColumnProxy name="GEO_POSITION_DESC" id="CFC13F87-5657-6591-91DF-966909C62766">
+<createdBy>d.arboittedossantos</createdBy>
+<createdTime>2024-04-04 16:11:57 UTC</createdTime>
+<ownerDesignName>MEDS_SERD</ownerDesignName>
+</ColumnProxy>
+<ColumnProxy name="MBT_TYPE_QUALITTY_CD" id="D09D8B27-1419-7C25-D87A-D3A39EE1C870">
+<createdBy>d.arboittedossantos</createdBy>
+<createdTime>2024-04-04 16:11:57 UTC</createdTime>
+<ownerDesignName>MEDS_SERD</ownerDesignName>
+</ColumnProxy>
+<ColumnProxy name="POSITION_DETERMINATION_CD" id="D61682F2-FFB5-FC5B-32D7-C7684C4180FA">
+<createdBy>d.arboittedossantos</createdBy>
+<createdTime>2024-04-04 16:11:57 UTC</createdTime>
+<ownerDesignName>MEDS_SERD</ownerDesignName>
+</ColumnProxy>
+<ColumnProxy name="SOUND_VELOCITY_CORRECTION_VL" id="D8B1CD91-4E17-14AC-9FA6-9C5874F646BA">
+<createdBy>d.arboittedossantos</createdBy>
+<createdTime>2024-04-04 16:11:57 UTC</createdTime>
+<ownerDesignName>MEDS_SERD</ownerDesignName>
+</ColumnProxy>
+<ColumnProxy name="MEDS_JOB_NUMBER" id="E9A3BD18-D1B8-A671-65AB-BF009E2436FC">
+<createdBy>d.arboittedossantos</createdBy>
+<createdTime>2024-04-04 16:11:57 UTC</createdTime>
+<ownerDesignName>MEDS_SERD</ownerDesignName>
+</ColumnProxy>
+<ColumnProxy name="DATA_METHOD_CD" id="EA625CDF-2A24-6B42-D4EC-59D9C2753C25">
+<createdBy>d.arboittedossantos</createdBy>
+<createdTime>2024-04-04 16:11:57 UTC</createdTime>
+<ownerDesignName>MEDS_SERD</ownerDesignName>
+</ColumnProxy>
+<ColumnProxy name="INSTRUMENT_CD" id="EAD3605F-9DC8-38F2-09FB-250F71038C07">
+<createdBy>d.arboittedossantos</createdBy>
+<createdTime>2024-04-04 16:11:57 UTC</createdTime>
+<ownerDesignName>MEDS_SERD</ownerDesignName>
+</ColumnProxy>
+<ColumnProxy name="SHIP_NO" id="EC666C18-3182-E3E1-C3B3-29D654EC0295">
+<createdBy>d.arboittedossantos</createdBy>
+<createdTime>2024-04-04 16:11:57 UTC</createdTime>
+<ownerDesignName>MEDS_SERD</ownerDesignName>
+</ColumnProxy>
+<ColumnProxy name="WET_AIR_TEMPERATURE_VL" id="F240965A-01C1-4C73-DFBF-2D160A393462">
+<createdBy>d.arboittedossantos</createdBy>
+<createdTime>2024-04-04 16:11:57 UTC</createdTime>
+<ownerDesignName>MEDS_SERD</ownerDesignName>
+</ColumnProxy>
+<ColumnProxy name="DATA_USE_CD" id="FD804B09-80BA-3B71-D611-AF2AFFBC0242">
+<createdBy>d.arboittedossantos</createdBy>
+<createdTime>2024-04-04 16:11:57 UTC</createdTime>
+<ownerDesignName>MEDS_SERD</ownerDesignName>
+</ColumnProxy>
+<ColumnProxy name="OBSERVATION_DT" id="FFC3A734-B713-0D5D-0B81-061449E40B2F">
+<createdBy>d.arboittedossantos</createdBy>
+<createdTime>2024-04-04 16:11:57 UTC</createdTime>
+<ownerDesignName>MEDS_SERD</ownerDesignName>
+</ColumnProxy>
+</columnProxies>
+<foreignKeys>
+<ForeignKey class="oracle.dbtools.crest.model.design.storage.oracle.v10g.FKProxyOraclev10g" name="SERD_STG_HEADER_SERD_LOV_WEATHER_F" id="1D6C1DEB-7F35-6F71-B59A-7E5DDA7E689D">
+<createdBy>d.arboittedossantos</createdBy>
+<createdTime>2024-04-04 16:11:57 UTC</createdTime>
+<ownerDesignName>MEDS_SERD</ownerDesignName>
+</ForeignKey>
+<ForeignKey class="oracle.dbtools.crest.model.design.storage.oracle.v10g.FKProxyOraclev10g" name="SERD_STG_HEADER_SERD_LOV_POSITION_DETERMINATION_F" id="4321519F-AF8A-57B4-B839-BADFAAEC1A9D">
+<createdBy>d.arboittedossantos</createdBy>
+<createdTime>2024-04-04 16:11:57 UTC</createdTime>
+<ownerDesignName>MEDS_SERD</ownerDesignName>
+</ForeignKey>
+<ForeignKey class="oracle.dbtools.crest.model.design.storage.oracle.v10g.FKProxyOraclev10g" name="SERD_STG_HEADER_SERD_LOV_DATA_MODE_F" id="710F2709-B990-ACF8-EAD4-AFCD7B4A8FB8">
+<createdBy>d.arboittedossantos</createdBy>
+<createdTime>2024-04-04 16:11:57 UTC</createdTime>
+<ownerDesignName>MEDS_SERD</ownerDesignName>
+</ForeignKey>
+<ForeignKey class="oracle.dbtools.crest.model.design.storage.oracle.v10g.FKProxyOraclev10g" name="SERD_STG_HEADER_SERD_LOV_SEA_STATE_F" id="7CE15832-2FF2-F1E0-5E9E-F224F90B9967">
+<createdBy>d.arboittedossantos</createdBy>
+<createdTime>2024-04-04 16:11:57 UTC</createdTime>
+<ownerDesignName>MEDS_SERD</ownerDesignName>
+</ForeignKey>
+<ForeignKey class="oracle.dbtools.crest.model.design.storage.oracle.v10g.FKProxyOraclev10g" name="SERD_STG_HEADER_SERD_LOV_OBSERVATION_UNIT_F" id="7FF9DFA9-CE07-A6B4-7235-51BB82A744C0">
+<createdBy>d.arboittedossantos</createdBy>
+<createdTime>2024-04-04 16:11:57 UTC</createdTime>
+<ownerDesignName>MEDS_SERD</ownerDesignName>
+</ForeignKey>
+<ForeignKey class="oracle.dbtools.crest.model.design.storage.oracle.v10g.FKProxyOraclev10g" name="SERD_STG_HEADER_SERD_LOV_WATER_COLOUR_F" id="8CEB1705-2C09-4149-95BC-BA7E610442ED">
+<createdBy>d.arboittedossantos</createdBy>
+<createdTime>2024-04-04 16:11:57 UTC</createdTime>
+<ownerDesignName>MEDS_SERD</ownerDesignName>
+</ForeignKey>
+<ForeignKey class="oracle.dbtools.crest.model.design.storage.oracle.v10g.FKProxyOraclev10g" name="SERD_STG_HEADER_SERD_LOV_CLOUD_COVERAGE_F" id="974D1D6A-48EF-CE54-40D3-32D41DDA7C87">
+<createdBy>d.arboittedossantos</createdBy>
+<createdTime>2024-04-04 16:11:57 UTC</createdTime>
+<ownerDesignName>MEDS_SERD</ownerDesignName>
+</ForeignKey>
+<ForeignKey class="oracle.dbtools.crest.model.design.storage.oracle.v10g.FKProxyOraclev10g" name="SERD_STG_HEADER_SERD_LOV_DATA_METHOD_F" id="B03597AC-9C0F-F1A1-CBD7-D76BF61BF1EE">
+<createdBy>d.arboittedossantos</createdBy>
+<createdTime>2024-04-04 16:11:57 UTC</createdTime>
+<ownerDesignName>MEDS_SERD</ownerDesignName>
+</ForeignKey>
+<ForeignKey class="oracle.dbtools.crest.model.design.storage.oracle.v10g.FKProxyOraclev10g" name="SERD_STG_HEADER_SERD_LOV_SALINITY_SCALE_F" id="E106C434-7199-1C9B-BDDA-A43DAFEBF561">
+<createdBy>d.arboittedossantos</createdBy>
+<createdTime>2024-04-04 16:11:57 UTC</createdTime>
+<ownerDesignName>MEDS_SERD</ownerDesignName>
+</ForeignKey>
+<ForeignKey class="oracle.dbtools.crest.model.design.storage.oracle.v10g.FKProxyOraclev10g" name="SERD_STG_HEADER_SERD_LOV_INSTRUMENT_F" id="E11EF7DE-C8EF-2BE6-3522-9C496FD4B46B">
+<createdBy>d.arboittedossantos</createdBy>
+<createdTime>2024-04-04 16:11:57 UTC</createdTime>
+<ownerDesignName>MEDS_SERD</ownerDesignName>
+</ForeignKey>
+<ForeignKey class="oracle.dbtools.crest.model.design.storage.oracle.v10g.FKProxyOraclev10g" name="SERD_STG_HEADER_SERD_LOV_WIND_DIRECTION_F" id="E2BF9A85-E8C3-834A-6549-4069DF892F2A">
+<createdBy>d.arboittedossantos</createdBy>
+<createdTime>2024-04-04 16:11:57 UTC</createdTime>
+<ownerDesignName>MEDS_SERD</ownerDesignName>
+</ForeignKey>
+<ForeignKey class="oracle.dbtools.crest.model.design.storage.oracle.v10g.FKProxyOraclev10g" name="SERD_STG_HEADER_SERD_LOV_DATA_TYPE_F" id="ED5D729D-320A-38EC-0470-2C3FC2CA8EB9">
+<createdBy>d.arboittedossantos</createdBy>
+<createdTime>2024-04-04 16:11:57 UTC</createdTime>
+<ownerDesignName>MEDS_SERD</ownerDesignName>
+</ForeignKey>
+<ForeignKey class="oracle.dbtools.crest.model.design.storage.oracle.v10g.FKProxyOraclev10g" name="SERD_STG_HEADER_SERD_LOV_POSITION_ACCURACY_F" id="EF3B2F6A-B784-3227-7703-8AC8EBAA4FD6">
+<createdBy>d.arboittedossantos</createdBy>
+<createdTime>2024-04-04 16:11:57 UTC</createdTime>
+<ownerDesignName>MEDS_SERD</ownerDesignName>
+</ForeignKey>
+</foreignKeys>
+<primaryKeys>
+<PrimaryKey class="oracle.dbtools.crest.model.design.storage.oracle.v10g.PKProxyOraclev10g" name="SERD_STG_HEADER_P" id="7258652E-38CB-F1E5-84FD-5EBFE2E10DCF">
+<createdBy>d.arboittedossantos</createdBy>
+<createdTime>2024-04-04 16:11:57 UTC</createdTime>
+<ownerDesignName>MEDS_SERD</ownerDesignName>
+<indexSort>SORTED</indexSort>
+</PrimaryKey>
+</primaryKeys>
+</TableProxyOraclev20c>

@@ -1,0 +1,41 @@
+<?xml version = '1.0' encoding = 'UTF-8'?>
+<Table class="oracle.dbtools.crest.model.design.relational.Table" directorySegmentName="seg_1" id="1D3738E3-91F5-B552-4DE7-D112DBF3DE25" schemaObject="1FA4795A-F971-A0A7-EC72-1452C492DEA9" name="MEDS_ERRORS">
+<sourceConnName>MEDS ADMIN</sourceConnName>
+<sourceObjSchema>MEDSADMIN</sourceObjSchema>
+<sourceObjName>MEDS_ERRORS</sourceObjName>
+<createdBy>d.arboittedossantos</createdBy>
+<createdTime>2024-03-15 10:19:40 UTC</createdTime>
+<ownerDesignName>MEDS_DATA</ownerDesignName>
+<allowColumnReorder>false</allowColumnReorder>
+<existDependencyGenerateInDDl>true</existDependencyGenerateInDDl>
+<parsed>true</parsed>
+<columns itemClass="oracle.dbtools.crest.model.design.relational.Column">
+<Column name="MEDS_ERROR_TYPE" id="8B49B628-AA3C-FCFD-2FCC-750CD240BF41">
+<sourceConnName>MEDS ADMIN</sourceConnName>
+<sourceObjSchema>MEDS_ERRORS</sourceObjSchema>
+<sourceObjName>MEDS_ERROR_TYPE</sourceObjName>
+<createdBy>d.arboittedossantos</createdBy>
+<createdTime>2024-03-15 10:19:42 UTC</createdTime>
+<ownerDesignName>MEDS_DATA</ownerDesignName>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT019</logicalDatatype>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
+<autoIncrementCycle>false</autoIncrementCycle>
+</Column>
+<Column name="ERROR_DESCRIPTION" id="B25A88CA-46D2-DAF9-39C9-100A09455474">
+<sourceConnName>MEDS ADMIN</sourceConnName>
+<sourceObjSchema>MEDS_ERRORS</sourceObjSchema>
+<sourceObjName>ERROR_DESCRIPTION</sourceObjName>
+<createdBy>d.arboittedossantos</createdBy>
+<createdTime>2024-03-15 10:19:42 UTC</createdTime>
+<ownerDesignName>MEDS_DATA</ownerDesignName>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT024</logicalDatatype>
+<dataTypeSize>64 BYTE</dataTypeSize>
+<ownDataTypeParameters>64 BYTE,,</ownDataTypeParameters>
+<autoIncrementCycle>false</autoIncrementCycle>
+</Column>
+</columns>
+</Table>
