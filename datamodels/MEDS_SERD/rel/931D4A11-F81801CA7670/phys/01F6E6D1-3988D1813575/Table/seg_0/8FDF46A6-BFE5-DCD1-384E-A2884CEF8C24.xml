@@ -27,6 +27,22 @@
 <ownerDesignName>MEDS_SERD</ownerDesignName>
 </ColumnProxy>
 </columnProxies>
+<indexProxies>
+<IndexProxy class="oracle.dbtools.crest.model.design.storage.oracle.v10g.IndexProxyOraclev10g" name="SERD_LOV_SOUND_VELOCITY_QUALITY_CD_U" id="48112D92-9345-09B7-85A5-BC7C3AE5D5D6">
+<createdBy>d.arboittedossantos</createdBy>
+<createdTime>2024-04-04 17:19:08 UTC</createdTime>
+<ownerDesignName>MEDS_SERD</ownerDesignName>
+<schemaObject>20651223-0797-3CAA-7021-8449492EE83B</schemaObject>
+<user>28DF8DA2-9C77-E269-F136-0994A498F661</user>
+</IndexProxy>
+<IndexProxy class="oracle.dbtools.crest.model.design.storage.oracle.v10g.IndexProxyOraclev10g" name="SERD_LOV_SOUND_VELOCITY_QUALITY_P" id="A690BA52-7CD9-FF85-27F3-2C703D426FEF">
+<createdBy>d.arboittedossantos</createdBy>
+<createdTime>2024-04-04 17:19:08 UTC</createdTime>
+<ownerDesignName>MEDS_SERD</ownerDesignName>
+<schemaObject>20651223-0797-3CAA-7021-8449492EE83B</schemaObject>
+<user>28DF8DA2-9C77-E269-F136-0994A498F661</user>
+</IndexProxy>
+</indexProxies>
 <primaryKeys>
 <PrimaryKey class="oracle.dbtools.crest.model.design.storage.oracle.v10g.PKProxyOraclev10g" name="SERD_LOV_SOUND_VELOCITY_QUALITY_P" id="CBCA9604-63A2-88EA-250C-A8F5D5ACD168">
 <createdBy>d.arboittedossantos</createdBy>

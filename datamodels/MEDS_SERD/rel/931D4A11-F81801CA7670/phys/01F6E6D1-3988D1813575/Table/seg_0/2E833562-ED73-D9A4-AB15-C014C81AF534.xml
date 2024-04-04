@@ -27,6 +27,22 @@
 <ownerDesignName>MEDS_SERD</ownerDesignName>
 </ColumnProxy>
 </columnProxies>
+<indexProxies>
+<IndexProxy class="oracle.dbtools.crest.model.design.storage.oracle.v10g.IndexProxyOraclev10g" name="SERD_LOV_POSITION_ACCURACY_P" id="2C21E60B-56D4-A8CA-82B4-907DB8356898">
+<createdBy>d.arboittedossantos</createdBy>
+<createdTime>2024-04-04 17:19:08 UTC</createdTime>
+<ownerDesignName>MEDS_SERD</ownerDesignName>
+<schemaObject>20651223-0797-3CAA-7021-8449492EE83B</schemaObject>
+<user>28DF8DA2-9C77-E269-F136-0994A498F661</user>
+</IndexProxy>
+<IndexProxy class="oracle.dbtools.crest.model.design.storage.oracle.v10g.IndexProxyOraclev10g" name="SERD_LOV_POSITION_ACCURACY_CD_U" id="39AD6228-FD87-2CE9-3509-D407DC7F7362">
+<createdBy>d.arboittedossantos</createdBy>
+<createdTime>2024-04-04 17:19:08 UTC</createdTime>
+<ownerDesignName>MEDS_SERD</ownerDesignName>
+<schemaObject>20651223-0797-3CAA-7021-8449492EE83B</schemaObject>
+<user>28DF8DA2-9C77-E269-F136-0994A498F661</user>
+</IndexProxy>
+</indexProxies>
 <primaryKeys>
 <PrimaryKey class="oracle.dbtools.crest.model.design.storage.oracle.v10g.PKProxyOraclev10g" name="SERD_LOV_POSITION_ACCURACY_P" id="8857EAAD-3C7A-2678-740F-5545BF9645D3">
 <createdBy>d.arboittedossantos</createdBy>

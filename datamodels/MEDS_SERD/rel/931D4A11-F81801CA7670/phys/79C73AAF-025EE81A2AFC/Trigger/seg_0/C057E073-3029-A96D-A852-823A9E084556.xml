@@ -1,0 +1,15 @@
+<?xml version = '1.0' encoding = 'UTF-8'?>
+<TriggerOraclev10g class="oracle.dbtools.crest.model.design.storage.oracle.v10g.TriggerOraclev10g" name="BI_SERD_LOV_SOUND_VELOCITY_QUALITY" directorySegmentName="seg_0" id="C057E073-3029-A96D-A852-823A9E084556">
+<createdBy>d.arboittedossantos</createdBy>
+<createdTime>2024-04-04 17:18:43 UTC</createdTime>
+<ownerDesignName>MEDS_SERD</ownerDesignName>
+<actions>INSERT</actions>
+<body><![CDATA[begin
+   if :new.SERD_LOV_SOUND_VELOCITY_QUALITY is null then
+      :new.SERD_LOV_SOUND_VELOCITY_QUALITY := to_number(sys_guid(),'xxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxx');
+   end if;
+end bi_serd_lov_sound_velocity_quality;]]></body>
+<triggerTime>BEFORE</triggerTime>
+<owner>34521F75-6140-B967-C5AE-9003F0D59F82</owner>
+<table>8FDF46A6-BFE5-DCD1-384E-A2884CEF8C24</table>
+</TriggerOraclev10g>

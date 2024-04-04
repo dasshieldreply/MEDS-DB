@@ -1,0 +1,15 @@
+<?xml version = '1.0' encoding = 'UTF-8'?>
+<TriggerOraclev10g class="oracle.dbtools.crest.model.design.storage.oracle.v10g.TriggerOraclev10g" name="BI_SERD_LOV_DATA_MODE" directorySegmentName="seg_0" id="FCF4A217-CE84-94BE-EB2F-967DFA3B0B27">
+<createdBy>d.arboittedossantos</createdBy>
+<createdTime>2024-04-04 17:18:43 UTC</createdTime>
+<ownerDesignName>MEDS_SERD</ownerDesignName>
+<actions>INSERT</actions>
+<body><![CDATA[begin
+   if :new.SERD_LOV_DATA_MODE is null then
+      :new.SERD_LOV_DATA_MODE := to_number(sys_guid(),'xxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxx');
+   end if;
+end bi_serd_lov_data_mode;]]></body>
+<triggerTime>BEFORE</triggerTime>
+<owner>34521F75-6140-B967-C5AE-9003F0D59F82</owner>
+<table>1611D5CF-654F-AE2D-5DB0-F5EC08CC073B</table>
+</TriggerOraclev10g>

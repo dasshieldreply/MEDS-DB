@@ -1,0 +1,15 @@
+<?xml version = '1.0' encoding = 'UTF-8'?>
+<TriggerOraclev10g class="oracle.dbtools.crest.model.design.storage.oracle.v10g.TriggerOraclev10g" name="BI_SERD_LOV_SALINITY_QUALITY" directorySegmentName="seg_0" id="EE575E77-E069-9B8E-0941-1ED5DA410B8B">
+<createdBy>d.arboittedossantos</createdBy>
+<createdTime>2024-04-04 17:18:43 UTC</createdTime>
+<ownerDesignName>MEDS_SERD</ownerDesignName>
+<actions>INSERT</actions>
+<body><![CDATA[begin
+   if :new.SERD_LOV_SALINITY_QUALITY is null then
+      :new.SERD_LOV_SALINITY_QUALITY := to_number(sys_guid(),'xxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxx');
+   end if;
+end bi_serd_lov_salinity_quality;]]></body>
+<triggerTime>BEFORE</triggerTime>
+<owner>34521F75-6140-B967-C5AE-9003F0D59F82</owner>
+<table>FB8DCE81-67BD-7C81-9E04-F4AE9B762DDE</table>
+</TriggerOraclev10g>

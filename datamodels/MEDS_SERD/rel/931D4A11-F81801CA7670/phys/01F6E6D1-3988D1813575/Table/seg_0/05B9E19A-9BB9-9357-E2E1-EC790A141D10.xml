@@ -27,6 +27,22 @@
 <ownerDesignName>MEDS_SERD</ownerDesignName>
 </ColumnProxy>
 </columnProxies>
+<indexProxies>
+<IndexProxy class="oracle.dbtools.crest.model.design.storage.oracle.v10g.IndexProxyOraclev10g" name="SERD_LOV_WATER_COLOUR_P" id="0AFE07D7-FB2D-4591-6FF7-22C92CCFB5DC">
+<createdBy>d.arboittedossantos</createdBy>
+<createdTime>2024-04-04 17:19:08 UTC</createdTime>
+<ownerDesignName>MEDS_SERD</ownerDesignName>
+<schemaObject>20651223-0797-3CAA-7021-8449492EE83B</schemaObject>
+<user>28DF8DA2-9C77-E269-F136-0994A498F661</user>
+</IndexProxy>
+<IndexProxy class="oracle.dbtools.crest.model.design.storage.oracle.v10g.IndexProxyOraclev10g" name="SERD_LOV_WATER_COLOUR_CD_U" id="8DAB8877-0C17-5298-FF16-7630EE03AA9A">
+<createdBy>d.arboittedossantos</createdBy>
+<createdTime>2024-04-04 17:19:08 UTC</createdTime>
+<ownerDesignName>MEDS_SERD</ownerDesignName>
+<schemaObject>20651223-0797-3CAA-7021-8449492EE83B</schemaObject>
+<user>28DF8DA2-9C77-E269-F136-0994A498F661</user>
+</IndexProxy>
+</indexProxies>
 <primaryKeys>
 <PrimaryKey class="oracle.dbtools.crest.model.design.storage.oracle.v10g.PKProxyOraclev10g" name="SERD_LOV_WATER_COLOUR_P" id="CA19DBD6-23C5-D95D-39C4-16470B892457">
 <createdBy>d.arboittedossantos</createdBy>

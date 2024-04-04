@@ -1,0 +1,76 @@
+<?xml version = '1.0' encoding = 'UTF-8'?>
+<TableProxyOraclev12c class="oracle.dbtools.crest.model.design.storage.oracle.v12c.TableProxyOraclev12c" name="SERD_LOV_WEATHER" directorySegmentName="seg_0" id="E2732295-1AB8-8F9D-A223-7C5CEC0D66D6">
+<createdBy>d.arboittedossantos</createdBy>
+<createdTime>2024-04-04 17:18:43 UTC</createdTime>
+<ownerDesignName>MEDS_SERD</ownerDesignName>
+<schemaObject>20651223-0797-3CAA-7021-8449492EE83B</schemaObject>
+<logging>YES</logging>
+<partitionedRowMovement>DISABLE</partitionedRowMovement>
+<segment>3E06A385-5E5C-26DE-8E1F-3286519803BA</segment>
+<tableSpace>380574C8-F4A5-8566-A9EE-9CE7BDB27C99</tableSpace>
+<temporaryChanged>false</temporaryChanged>
+<accessDriverType>oracle_loader</accessDriverType>
+<rejectLimit></rejectLimit>
+<inMemory>NO</inMemory>
+<columnProxies itemClass="oracle.dbtools.crest.model.design.storage.oracle.v12c.ColumnProxyOraclev12c">
+<ColumnProxy name="WEATHER_CD" id="59848FC8-6807-F96F-FFE4-9059D897334B">
+<createdBy>d.arboittedossantos</createdBy>
+<createdTime>2024-04-04 17:18:43 UTC</createdTime>
+<ownerDesignName>MEDS_SERD</ownerDesignName>
+</ColumnProxy>
+<ColumnProxy name="SERD_LOV_WEATHER" id="7CF56515-1E29-89F0-D1D4-EB255F7E58C4">
+<createdBy>d.arboittedossantos</createdBy>
+<createdTime>2024-04-04 17:18:43 UTC</createdTime>
+<ownerDesignName>MEDS_SERD</ownerDesignName>
+</ColumnProxy>
+<ColumnProxy name="WEATHER_DESC" id="A7CEF8DF-5C8E-A536-0516-3FF3B2A9EBF7">
+<createdBy>d.arboittedossantos</createdBy>
+<createdTime>2024-04-04 17:18:43 UTC</createdTime>
+<ownerDesignName>MEDS_SERD</ownerDesignName>
+</ColumnProxy>
+</columnProxies>
+<indexProxies>
+<IndexProxy class="oracle.dbtools.crest.model.design.storage.oracle.v10g.IndexProxyOraclev10g" name="SERD_LOV_WEATHER_CD_U" id="1F808EEF-374C-5312-130E-716AF55FA27E">
+<createdBy>d.arboittedossantos</createdBy>
+<createdTime>2024-04-04 17:19:08 UTC</createdTime>
+<ownerDesignName>MEDS_SERD</ownerDesignName>
+<schemaObject>20651223-0797-3CAA-7021-8449492EE83B</schemaObject>
+<segment>A3703CFE-2A29-A98A-0471-ED5C0EB4ACC4</segment>
+<tableSpace>380574C8-F4A5-8566-A9EE-9CE7BDB27C99</tableSpace>
+</IndexProxy>
+<IndexProxy class="oracle.dbtools.crest.model.design.storage.oracle.v10g.IndexProxyOraclev10g" name="SERD_LOV_WEATHER_P" id="66C13301-5B6E-5B78-378A-AF0E417FD442">
+<createdBy>d.arboittedossantos</createdBy>
+<createdTime>2024-04-04 17:19:08 UTC</createdTime>
+<ownerDesignName>MEDS_SERD</ownerDesignName>
+<schemaObject>20651223-0797-3CAA-7021-8449492EE83B</schemaObject>
+<segment>A3703CFE-2A29-A98A-0471-ED5C0EB4ACC4</segment>
+<tableSpace>380574C8-F4A5-8566-A9EE-9CE7BDB27C99</tableSpace>
+</IndexProxy>
+</indexProxies>
+<primaryKeys>
+<PrimaryKey class="oracle.dbtools.crest.model.design.storage.oracle.v10g.PKProxyOraclev10g" name="SERD_LOV_WEATHER_P" id="A1CD3D55-372A-4771-819F-8DD045AF5C52">
+<createdBy>d.arboittedossantos</createdBy>
+<createdTime>2024-04-04 17:18:43 UTC</createdTime>
+<ownerDesignName>MEDS_SERD</ownerDesignName>
+<segment>87D2821C-317D-53D0-74F1-14916AB61D6D</segment>
+<tableSpace>380574C8-F4A5-8566-A9EE-9CE7BDB27C99</tableSpace>
+<existingIndex>66C13301-5B6E-5B78-378A-AF0E417FD442</existingIndex>
+<indexSegment>87D2821C-317D-53D0-74F1-14916AB61D6D</indexSegment>
+<indexSort>SORTED</indexSort>
+<usingIndex>BY INDEX NAME</usingIndex>
+</PrimaryKey>
+</primaryKeys>
+<uniqueKeys>
+<UniqueKey class="oracle.dbtools.crest.model.design.storage.oracle.v10g.UniqueOraclev10g" name="SERD_LOV_WEATHER_CD_U" id="75E51665-C42D-4731-44DE-700586FF7B9B">
+<createdBy>d.arboittedossantos</createdBy>
+<createdTime>2024-04-04 17:18:43 UTC</createdTime>
+<ownerDesignName>MEDS_SERD</ownerDesignName>
+<segment>87D2821C-317D-53D0-74F1-14916AB61D6D</segment>
+<tableSpace>380574C8-F4A5-8566-A9EE-9CE7BDB27C99</tableSpace>
+<existingIndex>1F808EEF-374C-5312-130E-716AF55FA27E</existingIndex>
+<indexSegment>87D2821C-317D-53D0-74F1-14916AB61D6D</indexSegment>
+<indexSort>SORTED</indexSort>
+<usingIndex>BY INDEX NAME</usingIndex>
+</UniqueKey>
+</uniqueKeys>
+</TableProxyOraclev12c>

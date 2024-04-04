@@ -53,12 +53,12 @@
 <useDomainConstraints>false</useDomainConstraints>
 <use>1</use>
 <logicalDatatype>LOGDT025</logicalDatatype>
-<dataTypeSize>1</dataTypeSize>
+<dataTypeSize>1 BYTE</dataTypeSize>
 <listOfValues>
 <valueDef value="0" description="Unspecified depth indicator"/>
 <valueDef value="1" description="Difference between accepted depth and thermometric depth is 1% or less"/>
 </listOfValues>
-<ownDataTypeParameters>1,,</ownDataTypeParameters>
+<ownDataTypeParameters>1 BYTE,,</ownDataTypeParameters>
 <autoIncrementCycle>false</autoIncrementCycle>
 </Column>
 <Column name="DEPTH_LEVEL_VL" id="E373F2E1-D7CB-163E-2D77-3BB9BF091FDB">
@@ -201,6 +201,17 @@
 <ownerDesignName>MEDS_SERD</ownerDesignName>
 <pk>true</pk>
 <indexState>Primary Constraint</indexState>
+<isSurrogateKey>false</isSurrogateKey>
+<indexColumnUsage>
+<colUsage columnID="D94DEF12-C369-3307-CE55-C5DBC5025FB9"/>
+</indexColumnUsage>
+</ind_PK_UK>
+<ind_PK_UK id="9BCE9703-DF98-E8AC-B056-4D1712BD5CB4" schemaObject="20651223-0797-3CAA-7021-8449492EE83B" name="SERD_STG_DEPTH_LEVEL_P">
+<createdBy>d.arboittedossantos</createdBy>
+<createdTime>2024-04-04 17:19:08 UTC</createdTime>
+<ownerDesignName>MEDS_SERD</ownerDesignName>
+<importedID>592622F4-025F-177C-26E2-8A70B2466D43</importedID>
+<indexState>Unique Plain Index</indexState>
 <isSurrogateKey>false</isSurrogateKey>
 <indexColumnUsage>
 <colUsage columnID="D94DEF12-C369-3307-CE55-C5DBC5025FB9"/>

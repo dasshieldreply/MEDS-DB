@@ -27,6 +27,22 @@
 <ownerDesignName>MEDS_SERD</ownerDesignName>
 </ColumnProxy>
 </columnProxies>
+<indexProxies>
+<IndexProxy class="oracle.dbtools.crest.model.design.storage.oracle.v10g.IndexProxyOraclev10g" name="SERD_LOV_SALINITY_SCALE_CD_U" id="A3C3A564-0860-6D80-03BE-EB96E106A94F">
+<createdBy>d.arboittedossantos</createdBy>
+<createdTime>2024-04-04 17:19:08 UTC</createdTime>
+<ownerDesignName>MEDS_SERD</ownerDesignName>
+<schemaObject>20651223-0797-3CAA-7021-8449492EE83B</schemaObject>
+<user>28DF8DA2-9C77-E269-F136-0994A498F661</user>
+</IndexProxy>
+<IndexProxy class="oracle.dbtools.crest.model.design.storage.oracle.v10g.IndexProxyOraclev10g" name="SERD_LOV_SALINITY_SCALE_P" id="BA67FC24-2E41-9364-1369-544BE7262AC3">
+<createdBy>d.arboittedossantos</createdBy>
+<createdTime>2024-04-04 17:19:08 UTC</createdTime>
+<ownerDesignName>MEDS_SERD</ownerDesignName>
+<schemaObject>20651223-0797-3CAA-7021-8449492EE83B</schemaObject>
+<user>28DF8DA2-9C77-E269-F136-0994A498F661</user>
+</IndexProxy>
+</indexProxies>
 <primaryKeys>
 <PrimaryKey class="oracle.dbtools.crest.model.design.storage.oracle.v10g.PKProxyOraclev10g" name="SERD_LOV_SALINITY_SCALE_P" id="4791CEA1-A03C-2B43-C01D-0FEC55FDE628">
 <createdBy>d.arboittedossantos</createdBy>

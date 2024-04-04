@@ -64,8 +64,8 @@
 <useDomainConstraints>false</useDomainConstraints>
 <use>1</use>
 <logicalDatatype>LOGDT025</logicalDatatype>
-<dataTypeSize>1</dataTypeSize>
-<ownDataTypeParameters>1,,</ownDataTypeParameters>
+<dataTypeSize>1 BYTE</dataTypeSize>
+<ownDataTypeParameters>1 BYTE,,</ownDataTypeParameters>
 <autoIncrementCycle>false</autoIncrementCycle>
 </Column>
 <Column name="DATA_USE_CD" id="FD804B09-80BA-3B71-D611-AF2AFFBC0242">
@@ -78,8 +78,8 @@
 <useDomainConstraints>false</useDomainConstraints>
 <use>1</use>
 <logicalDatatype>LOGDT025</logicalDatatype>
-<dataTypeSize>1</dataTypeSize>
-<ownDataTypeParameters>1,,</ownDataTypeParameters>
+<dataTypeSize>1 BYTE</dataTypeSize>
+<ownDataTypeParameters>1 BYTE,,</ownDataTypeParameters>
 <autoIncrementCycle>false</autoIncrementCycle>
 </Column>
 <Column name="FILE_CD" id="44DC46F3-B70E-A92A-0E34-643C0AE400FC">
@@ -92,8 +92,8 @@
 <useDomainConstraints>false</useDomainConstraints>
 <use>1</use>
 <logicalDatatype>LOGDT025</logicalDatatype>
-<dataTypeSize>2</dataTypeSize>
-<ownDataTypeParameters>2,,</ownDataTypeParameters>
+<dataTypeSize>2 BYTE</dataTypeSize>
+<ownDataTypeParameters>2 BYTE,,</ownDataTypeParameters>
 <autoIncrementCycle>false</autoIncrementCycle>
 </Column>
 <Column name="MARSDEN_SQUARE_VL" id="96AA1474-AA0A-CE46-68DE-5B649AB744DE">
@@ -140,15 +140,15 @@
 <Column name="QUADRANT_CD" id="732BF464-E30C-0C1B-0F03-7643118A1CD0">
 <createdBy>darbo</createdBy>
 <createdTime>2024-02-13 13:19:38 UTC</createdTime>
-<commentInRDBMS><![CDATA[Quadrant, ICES code (NE = 0  SE = 2, SW = 3  NW = 1).]]></commentInRDBMS>
+<commentInRDBMS><![CDATA[Quadrant, ICES code (NE = 0, SE = 2, SW = 3, NW = 1).]]></commentInRDBMS>
 <notes><![CDATA[Start position 32]]></notes>
 <ownerDesignName>MEDS_SERD</ownerDesignName>
 <nullsAllowed>true</nullsAllowed>
 <useDomainConstraints>false</useDomainConstraints>
 <use>1</use>
 <logicalDatatype>LOGDT025</logicalDatatype>
-<dataTypeSize>1</dataTypeSize>
-<ownDataTypeParameters>1,,</ownDataTypeParameters>
+<dataTypeSize>1 BYTE</dataTypeSize>
+<ownDataTypeParameters>1 BYTE,,</ownDataTypeParameters>
 <autoIncrementCycle>false</autoIncrementCycle>
 </Column>
 <Column name="POSITION_DETERMINATION_CD" id="D61682F2-FFB5-FC5B-32D7-C7684C4180FA">
@@ -244,8 +244,8 @@
 <useDomainConstraints>false</useDomainConstraints>
 <use>1</use>
 <logicalDatatype>LOGDT025</logicalDatatype>
-<dataTypeSize>2</dataTypeSize>
-<ownDataTypeParameters>2,,</ownDataTypeParameters>
+<dataTypeSize>2 BYTE</dataTypeSize>
+<ownDataTypeParameters>2 BYTE,,</ownDataTypeParameters>
 <autoIncrementCycle>false</autoIncrementCycle>
 </Column>
 <Column name="SHIP_NO" id="EC666C18-3182-E3E1-C3B3-29D654EC0295">
@@ -261,8 +261,8 @@ at Taunton.
 <useDomainConstraints>false</useDomainConstraints>
 <use>1</use>
 <logicalDatatype>LOGDT025</logicalDatatype>
-<dataTypeSize>2</dataTypeSize>
-<ownDataTypeParameters>2,,</ownDataTypeParameters>
+<dataTypeSize>2 BYTE</dataTypeSize>
+<ownDataTypeParameters>2 BYTE,,</ownDataTypeParameters>
 <autoIncrementCycle>false</autoIncrementCycle>
 </Column>
 <Column name="SHIP_NO_CD" id="5C0B88E0-CA74-30A1-3D86-210D0F8F3E8F">
@@ -348,8 +348,8 @@ at Taunton.
 <useDomainConstraints>false</useDomainConstraints>
 <use>1</use>
 <logicalDatatype>LOGDT025</logicalDatatype>
-<dataTypeSize>1</dataTypeSize>
-<ownDataTypeParameters>1,,</ownDataTypeParameters>
+<dataTypeSize>1 BYTE</dataTypeSize>
+<ownDataTypeParameters>1 BYTE,,</ownDataTypeParameters>
 <autoIncrementCycle>false</autoIncrementCycle>
 </Column>
 <Column name="DEPTH_LEVEL_NO" id="206B237F-DA46-C447-6290-A164DCE444F4">
@@ -421,7 +421,7 @@ at Taunton.
 <createdBy>darbo</createdBy>
 <createdTime>2024-02-14 10:46:43 UTC</createdTime>
 <commentInRDBMS><![CDATA[Temperature correction which have been applied to the observed values [±.nn ;  sign, tenths, hundredths (of degree)].
-If the instrument code is 31(MBT) the format of the field is: n.n; integer, tenths(of degree).]]></commentInRDBMS>
+If the instrument code is 31(MBT) the format of the field is: ?n.n; integer, tenths(of degree).]]></commentInRDBMS>
 <notes><![CDATA[105]]></notes>
 <ownerDesignName>MEDS_SERD</ownerDesignName>
 <nullsAllowed>true</nullsAllowed>
@@ -698,8 +698,8 @@ If Units code = 1 the corrections are given in imperial units, however all other
 <useDomainConstraints>false</useDomainConstraints>
 <use>1</use>
 <logicalDatatype>LOGDT025</logicalDatatype>
-<dataTypeSize>2</dataTypeSize>
-<ownDataTypeParameters>2,,</ownDataTypeParameters>
+<dataTypeSize>2 BYTE</dataTypeSize>
+<ownDataTypeParameters>2 BYTE,,</ownDataTypeParameters>
 <autoIncrementCycle>false</autoIncrementCycle>
 </Column>
 <Column name="SALINITY_SCALE_CD" id="C6928C11-43F1-20EF-CB68-F7B93CBA3ED0">
@@ -726,8 +726,8 @@ If Units code = 1 the corrections are given in imperial units, however all other
 <useDomainConstraints>false</useDomainConstraints>
 <use>1</use>
 <logicalDatatype>LOGDT025</logicalDatatype>
-<dataTypeSize>1</dataTypeSize>
-<ownDataTypeParameters>1,,</ownDataTypeParameters>
+<dataTypeSize>1 BYTE</dataTypeSize>
+<ownDataTypeParameters>1 BYTE,,</ownDataTypeParameters>
 <autoIncrementCycle>false</autoIncrementCycle>
 </Column>
 <Column name="BT_SEA_SURFACE_REFERENCE_TEMPERATURE_VL" id="2BC3682B-77A2-93C4-C5C0-18C198B4088A">
@@ -766,8 +766,8 @@ If Units code = 1 the corrections are given in imperial units, however all other
 <useDomainConstraints>false</useDomainConstraints>
 <use>1</use>
 <logicalDatatype>LOGDT025</logicalDatatype>
-<dataTypeSize>1</dataTypeSize>
-<ownDataTypeParameters>1,,</ownDataTypeParameters>
+<dataTypeSize>1 BYTE</dataTypeSize>
+<ownDataTypeParameters>1 BYTE,,</ownDataTypeParameters>
 <autoIncrementCycle>false</autoIncrementCycle>
 </Column>
 <Column name="MBT_GRADE_QUALITTY_CD" id="8B9469AC-AE47-D78B-607E-FE980A9BB4CC">
@@ -780,8 +780,8 @@ If Units code = 1 the corrections are given in imperial units, however all other
 <useDomainConstraints>false</useDomainConstraints>
 <use>1</use>
 <logicalDatatype>LOGDT025</logicalDatatype>
-<dataTypeSize>1</dataTypeSize>
-<ownDataTypeParameters>1,,</ownDataTypeParameters>
+<dataTypeSize>1 BYTE</dataTypeSize>
+<ownDataTypeParameters>1 BYTE,,</ownDataTypeParameters>
 <autoIncrementCycle>false</autoIncrementCycle>
 </Column>
 </columns>
@@ -792,6 +792,17 @@ If Units code = 1 the corrections are given in imperial units, however all other
 <ownerDesignName>MEDS_SERD</ownerDesignName>
 <pk>true</pk>
 <indexState>Primary Constraint</indexState>
+<isSurrogateKey>false</isSurrogateKey>
+<indexColumnUsage>
+<colUsage columnID="1B124D92-6055-F62E-4706-08413235267D"/>
+</indexColumnUsage>
+</ind_PK_UK>
+<ind_PK_UK id="C2C39FC0-C0EA-03C4-D5C2-790BCBEAAE5B" schemaObject="20651223-0797-3CAA-7021-8449492EE83B" name="SERD_STG_HEADER_P">
+<createdBy>d.arboittedossantos</createdBy>
+<createdTime>2024-04-04 17:19:08 UTC</createdTime>
+<ownerDesignName>MEDS_SERD</ownerDesignName>
+<importedID>7A4DB10F-94E0-5457-75DE-0EC5944AABB9</importedID>
+<indexState>Unique Plain Index</indexState>
 <isSurrogateKey>false</isSurrogateKey>
 <indexColumnUsage>
 <colUsage columnID="1B124D92-6055-F62E-4706-08413235267D"/>

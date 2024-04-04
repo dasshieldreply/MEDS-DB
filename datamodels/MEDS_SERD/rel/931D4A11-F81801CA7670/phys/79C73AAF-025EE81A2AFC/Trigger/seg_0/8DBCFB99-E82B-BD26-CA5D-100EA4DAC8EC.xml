@@ -1,0 +1,15 @@
+<?xml version = '1.0' encoding = 'UTF-8'?>
+<TriggerOraclev10g class="oracle.dbtools.crest.model.design.storage.oracle.v10g.TriggerOraclev10g" name="BI_SERD_STG_DEPTH_LEVEL" directorySegmentName="seg_0" id="8DBCFB99-E82B-BD26-CA5D-100EA4DAC8EC">
+<createdBy>d.arboittedossantos</createdBy>
+<createdTime>2024-04-04 17:18:43 UTC</createdTime>
+<ownerDesignName>MEDS_SERD</ownerDesignName>
+<actions>INSERT</actions>
+<body><![CDATA[begin
+   if :new.SERD_STG_DEPTH_LEVEL is null then
+      :new.SERD_STG_DEPTH_LEVEL := to_number(sys_guid(),'xxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxx');
+   end if;
+end bi_serd_stg_depth_level;]]></body>
+<triggerTime>BEFORE</triggerTime>
+<owner>34521F75-6140-B967-C5AE-9003F0D59F82</owner>
+<table>69BC1AAD-3A20-A155-468B-AB9A273CB587</table>
+</TriggerOraclev10g>

@@ -1,0 +1,76 @@
+<?xml version = '1.0' encoding = 'UTF-8'?>
+<TableProxyOraclev12c class="oracle.dbtools.crest.model.design.storage.oracle.v12c.TableProxyOraclev12c" name="SERD_LOV_POSITION_DETERMINATION" directorySegmentName="seg_0" id="D4A1C796-FA62-C383-1775-5B8CB720D96F">
+<createdBy>d.arboittedossantos</createdBy>
+<createdTime>2024-04-04 17:18:43 UTC</createdTime>
+<ownerDesignName>MEDS_SERD</ownerDesignName>
+<schemaObject>20651223-0797-3CAA-7021-8449492EE83B</schemaObject>
+<logging>YES</logging>
+<partitionedRowMovement>DISABLE</partitionedRowMovement>
+<segment>3E06A385-5E5C-26DE-8E1F-3286519803BA</segment>
+<tableSpace>380574C8-F4A5-8566-A9EE-9CE7BDB27C99</tableSpace>
+<temporaryChanged>false</temporaryChanged>
+<accessDriverType>oracle_loader</accessDriverType>
+<rejectLimit></rejectLimit>
+<inMemory>NO</inMemory>
+<columnProxies itemClass="oracle.dbtools.crest.model.design.storage.oracle.v12c.ColumnProxyOraclev12c">
+<ColumnProxy name="POSITION_DETERMINATION_CD" id="55488733-15B3-05E2-12E7-49D22B9E956D">
+<createdBy>d.arboittedossantos</createdBy>
+<createdTime>2024-04-04 17:18:43 UTC</createdTime>
+<ownerDesignName>MEDS_SERD</ownerDesignName>
+</ColumnProxy>
+<ColumnProxy name="POSITION_DETERMINATION_DESC" id="A3AD1FB8-A3F1-886B-CDDB-B9230AD94922">
+<createdBy>d.arboittedossantos</createdBy>
+<createdTime>2024-04-04 17:18:43 UTC</createdTime>
+<ownerDesignName>MEDS_SERD</ownerDesignName>
+</ColumnProxy>
+<ColumnProxy name="SERD_LOV_POSITION_DETERMINATION" id="F732FC76-445F-BCF2-09B6-DD7B1DAE4F96">
+<createdBy>d.arboittedossantos</createdBy>
+<createdTime>2024-04-04 17:18:43 UTC</createdTime>
+<ownerDesignName>MEDS_SERD</ownerDesignName>
+</ColumnProxy>
+</columnProxies>
+<indexProxies>
+<IndexProxy class="oracle.dbtools.crest.model.design.storage.oracle.v10g.IndexProxyOraclev10g" name="SERD_LOV_POSITION_DETERMINATION_P" id="34D1143C-B443-10DE-B369-1236B93F437D">
+<createdBy>d.arboittedossantos</createdBy>
+<createdTime>2024-04-04 17:19:08 UTC</createdTime>
+<ownerDesignName>MEDS_SERD</ownerDesignName>
+<schemaObject>20651223-0797-3CAA-7021-8449492EE83B</schemaObject>
+<segment>A3703CFE-2A29-A98A-0471-ED5C0EB4ACC4</segment>
+<tableSpace>380574C8-F4A5-8566-A9EE-9CE7BDB27C99</tableSpace>
+</IndexProxy>
+<IndexProxy class="oracle.dbtools.crest.model.design.storage.oracle.v10g.IndexProxyOraclev10g" name="SERD_LOV_POSITION_DETERMINATION_CD_U" id="BE05FEE4-E9EC-3820-1060-B55AEADA4B73">
+<createdBy>d.arboittedossantos</createdBy>
+<createdTime>2024-04-04 17:19:08 UTC</createdTime>
+<ownerDesignName>MEDS_SERD</ownerDesignName>
+<schemaObject>20651223-0797-3CAA-7021-8449492EE83B</schemaObject>
+<segment>A3703CFE-2A29-A98A-0471-ED5C0EB4ACC4</segment>
+<tableSpace>380574C8-F4A5-8566-A9EE-9CE7BDB27C99</tableSpace>
+</IndexProxy>
+</indexProxies>
+<primaryKeys>
+<PrimaryKey class="oracle.dbtools.crest.model.design.storage.oracle.v10g.PKProxyOraclev10g" name="SERD_LOV_POSITION_DETERMINATION_P" id="0EA1E480-6203-ABBA-7897-42DDFB4EC3D4">
+<createdBy>d.arboittedossantos</createdBy>
+<createdTime>2024-04-04 17:18:43 UTC</createdTime>
+<ownerDesignName>MEDS_SERD</ownerDesignName>
+<segment>87D2821C-317D-53D0-74F1-14916AB61D6D</segment>
+<tableSpace>380574C8-F4A5-8566-A9EE-9CE7BDB27C99</tableSpace>
+<existingIndex>34D1143C-B443-10DE-B369-1236B93F437D</existingIndex>
+<indexSegment>87D2821C-317D-53D0-74F1-14916AB61D6D</indexSegment>
+<indexSort>SORTED</indexSort>
+<usingIndex>BY INDEX NAME</usingIndex>
+</PrimaryKey>
+</primaryKeys>
+<uniqueKeys>
+<UniqueKey class="oracle.dbtools.crest.model.design.storage.oracle.v10g.UniqueOraclev10g" name="SERD_LOV_POSITION_DETERMINATION_CD_U" id="95B81D8D-5659-9C63-D919-08E02FDDE883">
+<createdBy>d.arboittedossantos</createdBy>
+<createdTime>2024-04-04 17:18:43 UTC</createdTime>
+<ownerDesignName>MEDS_SERD</ownerDesignName>
+<segment>87D2821C-317D-53D0-74F1-14916AB61D6D</segment>
+<tableSpace>380574C8-F4A5-8566-A9EE-9CE7BDB27C99</tableSpace>
+<existingIndex>BE05FEE4-E9EC-3820-1060-B55AEADA4B73</existingIndex>
+<indexSegment>87D2821C-317D-53D0-74F1-14916AB61D6D</indexSegment>
+<indexSort>SORTED</indexSort>
+<usingIndex>BY INDEX NAME</usingIndex>
+</UniqueKey>
+</uniqueKeys>
+</TableProxyOraclev12c>

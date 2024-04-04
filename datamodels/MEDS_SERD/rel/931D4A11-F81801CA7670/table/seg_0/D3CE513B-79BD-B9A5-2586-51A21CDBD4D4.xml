@@ -64,5 +64,27 @@
 <colUsage columnID="FC268CCE-3FB8-EE0C-AF47-8256314FC3A5"/>
 </indexColumnUsage>
 </ind_PK_UK>
+<ind_PK_UK id="A3C3A564-0860-6D80-03BE-EB96E106A94F" schemaObject="20651223-0797-3CAA-7021-8449492EE83B" name="SERD_LOV_SALINITY_SCALE_CD_U">
+<createdBy>d.arboittedossantos</createdBy>
+<createdTime>2024-04-04 17:19:08 UTC</createdTime>
+<ownerDesignName>MEDS_SERD</ownerDesignName>
+<importedID>2BA06C01-B895-F8FF-045E-8E30F6012EAD</importedID>
+<indexState>Unique Plain Index</indexState>
+<isSurrogateKey>false</isSurrogateKey>
+<indexColumnUsage>
+<colUsage columnID="FC268CCE-3FB8-EE0C-AF47-8256314FC3A5"/>
+</indexColumnUsage>
+</ind_PK_UK>
+<ind_PK_UK id="BA67FC24-2E41-9364-1369-544BE7262AC3" schemaObject="20651223-0797-3CAA-7021-8449492EE83B" name="SERD_LOV_SALINITY_SCALE_P">
+<createdBy>d.arboittedossantos</createdBy>
+<createdTime>2024-04-04 17:19:08 UTC</createdTime>
+<ownerDesignName>MEDS_SERD</ownerDesignName>
+<importedID>E02721AA-09A4-ABA3-BDE8-2223B0000922</importedID>
+<indexState>Unique Plain Index</indexState>
+<isSurrogateKey>false</isSurrogateKey>
+<indexColumnUsage>
+<colUsage columnID="8A318330-F2BC-1A81-E7CB-04B1FC2C4D65"/>
+</indexColumnUsage>
+</ind_PK_UK>
 </indexes>
 </Table>

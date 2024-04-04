@@ -77,6 +77,15 @@
 <ownerDesignName>MEDS_SERD</ownerDesignName>
 </ColumnProxy>
 </columnProxies>
+<indexProxies>
+<IndexProxy class="oracle.dbtools.crest.model.design.storage.oracle.v10g.IndexProxyOraclev10g" name="SERD_STG_DEPTH_LEVEL_P" id="9BCE9703-DF98-E8AC-B056-4D1712BD5CB4">
+<createdBy>d.arboittedossantos</createdBy>
+<createdTime>2024-04-04 17:19:08 UTC</createdTime>
+<ownerDesignName>MEDS_SERD</ownerDesignName>
+<schemaObject>20651223-0797-3CAA-7021-8449492EE83B</schemaObject>
+<user>28DF8DA2-9C77-E269-F136-0994A498F661</user>
+</IndexProxy>
+</indexProxies>
 <foreignKeys>
 <ForeignKey class="oracle.dbtools.crest.model.design.storage.oracle.v10g.FKProxyOraclev10g" name="SERD_STG_DEPTH_LEVEL_SERD_LOV_DEPTH_QUALITY_F" id="61B39AF6-B3E0-E74C-CF1A-CAB1B6F0F078">
 <createdBy>d.arboittedossantos</createdBy>

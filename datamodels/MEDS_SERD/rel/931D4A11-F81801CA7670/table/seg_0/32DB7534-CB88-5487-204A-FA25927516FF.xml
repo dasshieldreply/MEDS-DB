@@ -64,5 +64,27 @@
 <colUsage columnID="2BE0D5E1-804B-C97C-A052-2065315A8222"/>
 </indexColumnUsage>
 </ind_PK_UK>
+<ind_PK_UK id="0310B25F-56D5-9F89-803D-D4B372EC5B8D" schemaObject="20651223-0797-3CAA-7021-8449492EE83B" name="SERD_LOV_WIND_DIRECTION_CD_U">
+<createdBy>d.arboittedossantos</createdBy>
+<createdTime>2024-04-04 17:19:08 UTC</createdTime>
+<ownerDesignName>MEDS_SERD</ownerDesignName>
+<importedID>040208F4-5D70-3DC1-ECEF-A2B755409C01</importedID>
+<indexState>Unique Plain Index</indexState>
+<isSurrogateKey>false</isSurrogateKey>
+<indexColumnUsage>
+<colUsage columnID="2BE0D5E1-804B-C97C-A052-2065315A8222"/>
+</indexColumnUsage>
+</ind_PK_UK>
+<ind_PK_UK id="441EDD00-5365-373C-2118-616EF5F712BC" schemaObject="20651223-0797-3CAA-7021-8449492EE83B" name="SERD_LOV_WIND_DIRECTION_P">
+<createdBy>d.arboittedossantos</createdBy>
+<createdTime>2024-04-04 17:19:08 UTC</createdTime>
+<ownerDesignName>MEDS_SERD</ownerDesignName>
+<importedID>06F886DE-3876-0CE0-E8D8-D1F5A045D73B</importedID>
+<indexState>Unique Plain Index</indexState>
+<isSurrogateKey>false</isSurrogateKey>
+<indexColumnUsage>
+<colUsage columnID="AD342F57-E23A-D6C3-197F-AF92074D680E"/>
+</indexColumnUsage>
+</ind_PK_UK>
 </indexes>
 </Table>

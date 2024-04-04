@@ -64,5 +64,27 @@
 <colUsage columnID="59848FC8-6807-F96F-FFE4-9059D897334B"/>
 </indexColumnUsage>
 </ind_PK_UK>
+<ind_PK_UK id="1F808EEF-374C-5312-130E-716AF55FA27E" schemaObject="20651223-0797-3CAA-7021-8449492EE83B" name="SERD_LOV_WEATHER_CD_U">
+<createdBy>d.arboittedossantos</createdBy>
+<createdTime>2024-04-04 17:19:08 UTC</createdTime>
+<ownerDesignName>MEDS_SERD</ownerDesignName>
+<importedID>19D7B85E-9D2F-9236-39FD-6634CF4328A9</importedID>
+<indexState>Unique Plain Index</indexState>
+<isSurrogateKey>false</isSurrogateKey>
+<indexColumnUsage>
+<colUsage columnID="59848FC8-6807-F96F-FFE4-9059D897334B"/>
+</indexColumnUsage>
+</ind_PK_UK>
+<ind_PK_UK id="66C13301-5B6E-5B78-378A-AF0E417FD442" schemaObject="20651223-0797-3CAA-7021-8449492EE83B" name="SERD_LOV_WEATHER_P">
+<createdBy>d.arboittedossantos</createdBy>
+<createdTime>2024-04-04 17:19:08 UTC</createdTime>
+<ownerDesignName>MEDS_SERD</ownerDesignName>
+<importedID>44FC3BCC-A9E7-9E69-224E-A03D13FEDE38</importedID>
+<indexState>Unique Plain Index</indexState>
+<isSurrogateKey>false</isSurrogateKey>
+<indexColumnUsage>
+<colUsage columnID="7CF56515-1E29-89F0-D1D4-EB255F7E58C4"/>
+</indexColumnUsage>
+</ind_PK_UK>
 </indexes>
 </Table>

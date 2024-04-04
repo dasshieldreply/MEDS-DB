@@ -1,0 +1,76 @@
+<?xml version = '1.0' encoding = 'UTF-8'?>
+<TableProxyOraclev12c class="oracle.dbtools.crest.model.design.storage.oracle.v12c.TableProxyOraclev12c" name="SERD_LOV_DATA_MODE" directorySegmentName="seg_0" id="1611D5CF-654F-AE2D-5DB0-F5EC08CC073B">
+<createdBy>d.arboittedossantos</createdBy>
+<createdTime>2024-04-04 17:18:43 UTC</createdTime>
+<ownerDesignName>MEDS_SERD</ownerDesignName>
+<schemaObject>20651223-0797-3CAA-7021-8449492EE83B</schemaObject>
+<logging>YES</logging>
+<partitionedRowMovement>DISABLE</partitionedRowMovement>
+<segment>3E06A385-5E5C-26DE-8E1F-3286519803BA</segment>
+<tableSpace>380574C8-F4A5-8566-A9EE-9CE7BDB27C99</tableSpace>
+<temporaryChanged>false</temporaryChanged>
+<accessDriverType>oracle_loader</accessDriverType>
+<rejectLimit></rejectLimit>
+<inMemory>NO</inMemory>
+<columnProxies itemClass="oracle.dbtools.crest.model.design.storage.oracle.v12c.ColumnProxyOraclev12c">
+<ColumnProxy name="DATA_MODE_DESC" id="01605707-E192-2A86-CE86-EC3FFED118FC">
+<createdBy>d.arboittedossantos</createdBy>
+<createdTime>2024-04-04 17:18:43 UTC</createdTime>
+<ownerDesignName>MEDS_SERD</ownerDesignName>
+</ColumnProxy>
+<ColumnProxy name="SERD_LOV_DATA_MODE" id="10A08886-3F99-BF8E-4EF6-638B8B3D4962">
+<createdBy>d.arboittedossantos</createdBy>
+<createdTime>2024-04-04 17:18:43 UTC</createdTime>
+<ownerDesignName>MEDS_SERD</ownerDesignName>
+</ColumnProxy>
+<ColumnProxy name="DATA_MODE_CD" id="8B562246-9C43-68B7-25FC-CA2AC51915F3">
+<createdBy>d.arboittedossantos</createdBy>
+<createdTime>2024-04-04 17:18:43 UTC</createdTime>
+<ownerDesignName>MEDS_SERD</ownerDesignName>
+</ColumnProxy>
+</columnProxies>
+<indexProxies>
+<IndexProxy class="oracle.dbtools.crest.model.design.storage.oracle.v10g.IndexProxyOraclev10g" name="SERD_LOV_DATA_MODE_P" id="2C4993B0-AC17-0122-3DD4-633159F42BB7">
+<createdBy>d.arboittedossantos</createdBy>
+<createdTime>2024-04-04 17:19:08 UTC</createdTime>
+<ownerDesignName>MEDS_SERD</ownerDesignName>
+<schemaObject>20651223-0797-3CAA-7021-8449492EE83B</schemaObject>
+<segment>A3703CFE-2A29-A98A-0471-ED5C0EB4ACC4</segment>
+<tableSpace>380574C8-F4A5-8566-A9EE-9CE7BDB27C99</tableSpace>
+</IndexProxy>
+<IndexProxy class="oracle.dbtools.crest.model.design.storage.oracle.v10g.IndexProxyOraclev10g" name="SERD_LOV_DATA_MODE_CD_U" id="DFD0FBE9-FF60-096F-4F65-051EDC79A69C">
+<createdBy>d.arboittedossantos</createdBy>
+<createdTime>2024-04-04 17:19:08 UTC</createdTime>
+<ownerDesignName>MEDS_SERD</ownerDesignName>
+<schemaObject>20651223-0797-3CAA-7021-8449492EE83B</schemaObject>
+<segment>A3703CFE-2A29-A98A-0471-ED5C0EB4ACC4</segment>
+<tableSpace>380574C8-F4A5-8566-A9EE-9CE7BDB27C99</tableSpace>
+</IndexProxy>
+</indexProxies>
+<primaryKeys>
+<PrimaryKey class="oracle.dbtools.crest.model.design.storage.oracle.v10g.PKProxyOraclev10g" name="SERD_LOV_DATA_MODE_P" id="E60B06FF-AC11-C090-00E6-A6357A98B0B1">
+<createdBy>d.arboittedossantos</createdBy>
+<createdTime>2024-04-04 17:18:43 UTC</createdTime>
+<ownerDesignName>MEDS_SERD</ownerDesignName>
+<segment>87D2821C-317D-53D0-74F1-14916AB61D6D</segment>
+<tableSpace>380574C8-F4A5-8566-A9EE-9CE7BDB27C99</tableSpace>
+<existingIndex>2C4993B0-AC17-0122-3DD4-633159F42BB7</existingIndex>
+<indexSegment>87D2821C-317D-53D0-74F1-14916AB61D6D</indexSegment>
+<indexSort>SORTED</indexSort>
+<usingIndex>BY INDEX NAME</usingIndex>
+</PrimaryKey>
+</primaryKeys>
+<uniqueKeys>
+<UniqueKey class="oracle.dbtools.crest.model.design.storage.oracle.v10g.UniqueOraclev10g" name="SERD_LOV_DATA_MODE_CD_U" id="01A356B0-5318-8A5D-FEC6-5045F95A7B0A">
+<createdBy>d.arboittedossantos</createdBy>
+<createdTime>2024-04-04 17:18:43 UTC</createdTime>
+<ownerDesignName>MEDS_SERD</ownerDesignName>
+<segment>87D2821C-317D-53D0-74F1-14916AB61D6D</segment>
+<tableSpace>380574C8-F4A5-8566-A9EE-9CE7BDB27C99</tableSpace>
+<existingIndex>DFD0FBE9-FF60-096F-4F65-051EDC79A69C</existingIndex>
+<indexSegment>87D2821C-317D-53D0-74F1-14916AB61D6D</indexSegment>
+<indexSort>SORTED</indexSort>
+<usingIndex>BY INDEX NAME</usingIndex>
+</UniqueKey>
+</uniqueKeys>
+</TableProxyOraclev12c>

@@ -64,5 +64,27 @@
 <colUsage columnID="D8305E07-08E4-37AB-AF4C-1FAB3662BD47"/>
 </indexColumnUsage>
 </ind_PK_UK>
+<ind_PK_UK id="F6E5F9D5-2082-3A55-B537-C14D40B73055" schemaObject="20651223-0797-3CAA-7021-8449492EE83B" name="SERD_LOV_TEMPERATURE_QUALITY_CD_U">
+<createdBy>d.arboittedossantos</createdBy>
+<createdTime>2024-04-04 17:19:08 UTC</createdTime>
+<ownerDesignName>MEDS_SERD</ownerDesignName>
+<importedID>01D7D8BE-254C-1A8D-7A48-0F7CDB63C4DC</importedID>
+<indexState>Unique Plain Index</indexState>
+<isSurrogateKey>false</isSurrogateKey>
+<indexColumnUsage>
+<colUsage columnID="D8305E07-08E4-37AB-AF4C-1FAB3662BD47"/>
+</indexColumnUsage>
+</ind_PK_UK>
+<ind_PK_UK id="DC5C71C2-0A2D-4DD2-04DE-2F65BDE9A486" schemaObject="20651223-0797-3CAA-7021-8449492EE83B" name="SERD_LOV_TEMPERATURE_QUALITY_P">
+<createdBy>d.arboittedossantos</createdBy>
+<createdTime>2024-04-04 17:19:08 UTC</createdTime>
+<ownerDesignName>MEDS_SERD</ownerDesignName>
+<importedID>E9C6F4B5-1DB5-6B60-51B5-F762AE0762E1</importedID>
+<indexState>Unique Plain Index</indexState>
+<isSurrogateKey>false</isSurrogateKey>
+<indexColumnUsage>
+<colUsage columnID="D90E692D-C327-2FF4-47C1-59045D54B2F4"/>
+</indexColumnUsage>
+</ind_PK_UK>
 </indexes>
 </Table>

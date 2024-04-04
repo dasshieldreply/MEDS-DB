@@ -65,5 +65,27 @@ If Units code = 1 the corrections are given in imperial units, however all other
 <colUsage columnID="17A73DEC-4C28-7279-CA6F-1865699E3784"/>
 </indexColumnUsage>
 </ind_PK_UK>
+<ind_PK_UK id="2106BDCC-3D92-384E-9C5B-F58502687283" schemaObject="20651223-0797-3CAA-7021-8449492EE83B" name="SERD_LOV_OBSERVATION_UNIT_CD_U">
+<createdBy>d.arboittedossantos</createdBy>
+<createdTime>2024-04-04 17:19:08 UTC</createdTime>
+<ownerDesignName>MEDS_SERD</ownerDesignName>
+<importedID>5A6E7919-9C3D-95AD-083C-B31B55EF8E66</importedID>
+<indexState>Unique Plain Index</indexState>
+<isSurrogateKey>false</isSurrogateKey>
+<indexColumnUsage>
+<colUsage columnID="17A73DEC-4C28-7279-CA6F-1865699E3784"/>
+</indexColumnUsage>
+</ind_PK_UK>
+<ind_PK_UK id="845C7E02-C042-E668-406B-2D59EB0C208A" schemaObject="20651223-0797-3CAA-7021-8449492EE83B" name="SERD_LOV_OBSERVATION_UNIT_P">
+<createdBy>d.arboittedossantos</createdBy>
+<createdTime>2024-04-04 17:19:08 UTC</createdTime>
+<ownerDesignName>MEDS_SERD</ownerDesignName>
+<importedID>FB3D23E0-8AF3-B949-6C98-9A6762D97ED4</importedID>
+<indexState>Unique Plain Index</indexState>
+<isSurrogateKey>false</isSurrogateKey>
+<indexColumnUsage>
+<colUsage columnID="5008FEF1-8C39-5ED5-0D02-619203546B67"/>
+</indexColumnUsage>
+</ind_PK_UK>
 </indexes>
 </Table>
