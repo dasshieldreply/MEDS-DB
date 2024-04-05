@@ -1,5 +1,5 @@
 <?xml version = '1.0' encoding = 'UTF-8'?>
-<Table class="oracle.dbtools.crest.model.design.relational.Table" directorySegmentName="seg_0" id="45579E81-B6E8-776B-EE98-D4F910CF5A8F" schemaObject="20651223-0797-3CAA-7021-8449492EE83B" name="SERD_LOV_SEA_STATE">
+<Table class="oracle.dbtools.crest.model.design.relational.Table" directorySegmentName="seg_0" id="45579E81-B6E8-776B-EE98-D4F910CF5A8F" schemaObject="20651223-0797-3CAA-7021-8449492EE83B" name="SERD_SEA_STATE_LOOKUP">
 <createdBy>darbo</createdBy>
 <createdTime>2024-02-14 13:42:26 UTC</createdTime>
 <ownerDesignName>MEDS_SERD</ownerDesignName>
@@ -8,7 +8,7 @@
 <existDependencyGenerateInDDl>true</existDependencyGenerateInDDl>
 <parsed>true</parsed>
 <columns itemClass="oracle.dbtools.crest.model.design.relational.Column">
-<Column name="SERD_LOV_SEA_STATE" id="19E8DAB6-4012-57ED-3DA4-DAC100B56E4F">
+<Column name="SERD_SEA_STATE_LOOKUP" id="19E8DAB6-4012-57ED-3DA4-DAC100B56E4F">
 <createdBy>d.arboittedossantos</createdBy>
 <createdTime>2024-04-04 15:35:17 UTC</createdTime>
 <ownerDesignName>MEDS_SERD</ownerDesignName>
@@ -18,7 +18,7 @@
 <ownDataTypeParameters>,,</ownDataTypeParameters>
 <autoIncrementCycle>false</autoIncrementCycle>
 </Column>
-<Column name="SEA_STATE_CD" id="3F84290C-0EDA-651A-6D05-698C5F92736A">
+<Column name="SEA_STATE_CODE" id="3F84290C-0EDA-651A-6D05-698C5F92736A">
 <createdBy>darbo</createdBy>
 <createdTime>2024-02-14 13:42:26 UTC</createdTime>
 <commentInRDBMS><![CDATA[SEA_STATE code.]]></commentInRDBMS>
@@ -29,7 +29,7 @@
 <ownDataTypeParameters>,,</ownDataTypeParameters>
 <autoIncrementCycle>false</autoIncrementCycle>
 </Column>
-<Column name="SEA_STATE_DESC" id="B54620DD-3336-CD8A-8559-D14502255FE0">
+<Column name="LABEL" id="B54620DD-3336-CD8A-8559-D14502255FE0">
 <createdBy>darbo</createdBy>
 <createdTime>2024-02-14 13:42:26 UTC</createdTime>
 <commentInRDBMS><![CDATA[Sea state description.]]></commentInRDBMS>
@@ -41,7 +41,7 @@
 <ownDataTypeParameters>100,,</ownDataTypeParameters>
 <autoIncrementCycle>false</autoIncrementCycle>
 </Column>
-<Column name="HEIGHT_VL" id="1C99C316-6F74-B6D1-217B-CEBD11281C18">
+<Column name="HEIGHT" id="1C99C316-6F74-B6D1-217B-CEBD11281C18">
 <createdBy>darbo</createdBy>
 <createdTime>2024-02-14 14:15:30 UTC</createdTime>
 <commentInRDBMS><![CDATA[Sea height in meters.]]></commentInRDBMS>

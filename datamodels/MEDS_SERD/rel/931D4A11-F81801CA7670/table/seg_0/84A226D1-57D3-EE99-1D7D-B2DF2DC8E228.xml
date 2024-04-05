@@ -1,5 +1,5 @@
 <?xml version = '1.0' encoding = 'UTF-8'?>
-<Table class="oracle.dbtools.crest.model.design.relational.Table" directorySegmentName="seg_0" id="84A226D1-57D3-EE99-1D7D-B2DF2DC8E228" schemaObject="20651223-0797-3CAA-7021-8449492EE83B" name="SERD_LOV_CODE_LOOKUP">
+<Table class="oracle.dbtools.crest.model.design.relational.Table" directorySegmentName="seg_0" id="84A226D1-57D3-EE99-1D7D-B2DF2DC8E228" schemaObject="20651223-0797-3CAA-7021-8449492EE83B" name="SERD_CODE_LOOOKUP">
 <createdBy>d.arboittedossantos</createdBy>
 <createdTime>2024-04-05 07:15:09 UTC</createdTime>
 <ownerDesignName>MEDS_SERD</ownerDesignName>
@@ -8,7 +8,7 @@
 <existDependencyGenerateInDDl>true</existDependencyGenerateInDDl>
 <parsed>true</parsed>
 <columns itemClass="oracle.dbtools.crest.model.design.relational.Column">
-<Column name="SERD_LOV_CODE_LOOKUP" id="D78CEDE8-9DA3-FD9B-AA13-D412ADFF4086">
+<Column name="SERD_CODE_LOOOKUP" id="D78CEDE8-9DA3-FD9B-AA13-D412ADFF4086">
 <createdBy>d.arboittedossantos</createdBy>
 <createdTime>2024-04-05 07:16:18 UTC</createdTime>
 <ownerDesignName>MEDS_SERD</ownerDesignName>
@@ -18,10 +18,10 @@
 <ownDataTypeParameters>,,</ownDataTypeParameters>
 <autoIncrementCycle>false</autoIncrementCycle>
 </Column>
-<Column name="CODE_TP" id="61EE3643-F531-F613-70DE-6FEF65731118">
+<Column name="COLUMN_OFFSET" id="61EE3643-F531-F613-70DE-6FEF65731118">
 <createdBy>d.arboittedossantos</createdBy>
 <createdTime>2024-04-05 07:17:54 UTC</createdTime>
-<commentInRDBMS><![CDATA[Unique identifier of the code stored, generaly the position of the related field in the SERD file.]]></commentInRDBMS>
+<commentInRDBMS><![CDATA[Unique identifier of the code stored, as the position of the related field in the SERD file. ]]></commentInRDBMS>
 <ownerDesignName>MEDS_SERD</ownerDesignName>
 <nullsAllowed>true</nullsAllowed>
 <useDomainConstraints>false</useDomainConstraints>
@@ -30,7 +30,7 @@
 <ownDataTypeParameters>,,</ownDataTypeParameters>
 <autoIncrementCycle>false</autoIncrementCycle>
 </Column>
-<Column name="CODE_VL" id="49B7AB7F-CA11-0562-D9C0-40A103430E93">
+<Column name="CODE_VALUE" id="49B7AB7F-CA11-0562-D9C0-40A103430E93">
 <createdBy>d.arboittedossantos</createdBy>
 <createdTime>2024-04-05 07:19:36 UTC</createdTime>
 <commentInRDBMS><![CDATA[Code value.]]></commentInRDBMS>
@@ -38,11 +38,12 @@
 <nullsAllowed>true</nullsAllowed>
 <useDomainConstraints>false</useDomainConstraints>
 <use>1</use>
-<logicalDatatype>LOGDT019</logicalDatatype>
-<ownDataTypeParameters>,,</ownDataTypeParameters>
+<logicalDatatype>LOGDT024</logicalDatatype>
+<dataTypeSize>100</dataTypeSize>
+<ownDataTypeParameters>100,,</ownDataTypeParameters>
 <autoIncrementCycle>false</autoIncrementCycle>
 </Column>
-<Column name="CODE_DESC" id="90A7B8BE-B5A7-18D9-0CF7-9639184478BA">
+<Column name="LABEL" id="90A7B8BE-B5A7-18D9-0CF7-9639184478BA">
 <createdBy>d.arboittedossantos</createdBy>
 <createdTime>2024-04-05 07:19:36 UTC</createdTime>
 <commentInRDBMS><![CDATA[Code description]]></commentInRDBMS>
@@ -51,8 +52,8 @@
 <useDomainConstraints>false</useDomainConstraints>
 <use>1</use>
 <logicalDatatype>LOGDT024</logicalDatatype>
-<dataTypeSize>100</dataTypeSize>
-<ownDataTypeParameters>100,,</ownDataTypeParameters>
+<dataTypeSize>1000</dataTypeSize>
+<ownDataTypeParameters>1000,,</ownDataTypeParameters>
 <autoIncrementCycle>false</autoIncrementCycle>
 </Column>
 </columns>
