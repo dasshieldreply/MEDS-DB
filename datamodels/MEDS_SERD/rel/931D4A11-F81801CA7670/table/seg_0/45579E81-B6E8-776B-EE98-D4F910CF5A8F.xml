@@ -54,9 +54,9 @@
 </Column>
 </columns>
 <indexes itemClass="oracle.dbtools.crest.model.design.relational.Index">
-<ind_PK_UK id="323C23F9-3A49-272E-F1AC-93EE273D4867" name="SERD_LOV_SEA_STATE_P">
+<ind_PK_UK id="AC8F92BF-AF7C-5A93-8FFA-D68F1BCC8FF7" name="SERD_SEA_STATE_LOOKUP_P">
 <createdBy>d.arboittedossantos</createdBy>
-<createdTime>2024-04-04 15:35:17 UTC</createdTime>
+<createdTime>2024-04-05 10:34:25 UTC</createdTime>
 <ownerDesignName>MEDS_SERD</ownerDesignName>
 <pk>true</pk>
 <indexState>Primary Constraint</indexState>
@@ -65,9 +65,9 @@
 <colUsage columnID="19E8DAB6-4012-57ED-3DA4-DAC100B56E4F"/>
 </indexColumnUsage>
 </ind_PK_UK>
-<ind_PK_UK id="AC5F33A0-303C-BB14-E587-45FB49BD0AFE" name="SERD_LOV_SEA_STATE_CD_U">
+<ind_PK_UK id="A5AAFC32-AE1D-E1A8-82BD-630FB851D178" name="SERD_SEA_STATE_LOOKUP_CODE_U">
 <createdBy>d.arboittedossantos</createdBy>
-<createdTime>2024-04-04 15:35:17 UTC</createdTime>
+<createdTime>2024-04-05 10:35:25 UTC</createdTime>
 <ownerDesignName>MEDS_SERD</ownerDesignName>
 <indexState>Unique Constraint</indexState>
 <isSurrogateKey>false</isSurrogateKey>

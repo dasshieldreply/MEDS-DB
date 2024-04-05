@@ -6,14 +6,14 @@
 <schemaObject>20651223-0797-3CAA-7021-8449492EE83B</schemaObject>
 <logging>YES</logging>
 <partitionedRowMovement>DISABLE</partitionedRowMovement>
-<segment>3E06A385-5E5C-26DE-8E1F-3286519803BA</segment>
-<tableSpace>380574C8-F4A5-8566-A9EE-9CE7BDB27C99</tableSpace>
 <temporaryChanged>false</temporaryChanged>
+<user>34521F75-6140-B967-C5AE-9003F0D59F82</user>
 <accessDriverType>oracle_loader</accessDriverType>
 <rejectLimit></rejectLimit>
+<storeAs>CLOB</storeAs>
 <inMemory>NO</inMemory>
 <columnProxies itemClass="oracle.dbtools.crest.model.design.storage.oracle.v12c.ColumnProxyOraclev12c">
-<ColumnProxy name="COMMENT_NO" id="57364E9E-FBE8-6E8B-24BC-6395322558E8">
+<ColumnProxy name="ROW_SEQUENCE" id="57364E9E-FBE8-6E8B-24BC-6395322558E8">
 <createdBy>d.arboittedossantos</createdBy>
 <createdTime>2024-04-04 17:18:43 UTC</createdTime>
 <ownerDesignName>MEDS_SERD</ownerDesignName>
@@ -28,7 +28,7 @@
 <createdTime>2024-04-04 17:18:43 UTC</createdTime>
 <ownerDesignName>MEDS_SERD</ownerDesignName>
 </ColumnProxy>
-<ColumnProxy name="COMMENT_TEXT" id="E23F540D-BDF8-DD6B-5A40-B92A28C41CE2">
+<ColumnProxy name="TEXT" id="E23F540D-BDF8-DD6B-5A40-B92A28C41CE2">
 <createdBy>d.arboittedossantos</createdBy>
 <createdTime>2024-04-04 17:18:43 UTC</createdTime>
 <ownerDesignName>MEDS_SERD</ownerDesignName>

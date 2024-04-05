@@ -8,6 +8,16 @@
 <existDependencyGenerateInDDl>true</existDependencyGenerateInDDl>
 <parsed>true</parsed>
 <columns itemClass="oracle.dbtools.crest.model.design.relational.Column">
+<Column name="SERD_STG_COMMENT" id="6EE5E42D-B450-EA66-93DD-A35D95F97574">
+<createdBy>d.arboittedossantos</createdBy>
+<createdTime>2024-04-04 15:40:42 UTC</createdTime>
+<ownerDesignName>MEDS_SERD</ownerDesignName>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT019</logicalDatatype>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
+<autoIncrementCycle>false</autoIncrementCycle>
+</Column>
 <Column name="SERD_STG_HEADER" id="634C5438-72A2-F797-B830-87FF6FD75DED">
 <createdBy>d.arboittedossantos</createdBy>
 <createdTime>2024-04-04 16:48:46 UTC</createdTime>
@@ -22,17 +32,7 @@
 <colAssociation fkAssociation="98DC0589-29FA-594D-C4A1-EDD3C486CE8A" referredColumn="1B124D92-6055-F62E-4706-08413235267D"/>
 </associations>
 </Column>
-<Column name="SERD_STG_COMMENT" id="6EE5E42D-B450-EA66-93DD-A35D95F97574">
-<createdBy>d.arboittedossantos</createdBy>
-<createdTime>2024-04-04 15:40:42 UTC</createdTime>
-<ownerDesignName>MEDS_SERD</ownerDesignName>
-<useDomainConstraints>false</useDomainConstraints>
-<use>1</use>
-<logicalDatatype>LOGDT019</logicalDatatype>
-<ownDataTypeParameters>,,</ownDataTypeParameters>
-<autoIncrementCycle>false</autoIncrementCycle>
-</Column>
-<Column name="COMMENT_NO" id="57364E9E-FBE8-6E8B-24BC-6395322558E8">
+<Column name="ROW_SEQUENCE" id="57364E9E-FBE8-6E8B-24BC-6395322558E8">
 <createdBy>darbo</createdBy>
 <createdTime>2024-02-14 14:47:09 UTC</createdTime>
 <ownerDesignName>MEDS_SERD</ownerDesignName>
@@ -42,7 +42,7 @@
 <ownDataTypeParameters>,,</ownDataTypeParameters>
 <autoIncrementCycle>false</autoIncrementCycle>
 </Column>
-<Column name="COMMENT_TEXT" id="E23F540D-BDF8-DD6B-5A40-B92A28C41CE2">
+<Column name="TEXT" id="E23F540D-BDF8-DD6B-5A40-B92A28C41CE2">
 <createdBy>darbo</createdBy>
 <createdTime>2024-02-14 14:46:20 UTC</createdTime>
 <ownerDesignName>MEDS_SERD</ownerDesignName>

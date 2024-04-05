@@ -28,7 +28,7 @@
 <ownDataTypeParameters>,,</ownDataTypeParameters>
 <autoIncrementCycle>false</autoIncrementCycle>
 </Column>
-<Column name="RECORD_TP" id="4BF7475D-0D1C-F10B-815C-76A9C4BA7258">
+<Column name="RECORD_TYPE" id="4BF7475D-0D1C-F10B-815C-76A9C4BA7258">
 <createdBy>darbo</createdBy>
 <createdTime>2024-02-13 13:09:23 UTC</createdTime>
 <commentInRDBMS><![CDATA[Record type, Main = 2, Continuation = 3.]]></commentInRDBMS>
@@ -41,7 +41,7 @@
 <ownDataTypeParameters>,,</ownDataTypeParameters>
 <autoIncrementCycle>false</autoIncrementCycle>
 </Column>
-<Column name="SEQUENCE_NO" id="4E18E3FB-77AC-7EFB-45DD-4091B667C068">
+<Column name="RECORD_SEQUENCE" id="4E18E3FB-77AC-7EFB-45DD-4091B667C068">
 <createdBy>darbo</createdBy>
 <createdTime>2024-02-13 13:10:40 UTC</createdTime>
 <commentInRDBMS><![CDATA[Sequential record number, 01-99.]]></commentInRDBMS>
@@ -54,7 +54,7 @@
 <ownDataTypeParameters>,,</ownDataTypeParameters>
 <autoIncrementCycle>false</autoIncrementCycle>
 </Column>
-<Column name="DATA_ID" id="7994CD80-BBD9-E6D2-5F8F-591C441ECFC4">
+<Column name="DATA_IDENTIFIER" id="7994CD80-BBD9-E6D2-5F8F-591C441ECFC4">
 <createdBy>darbo</createdBy>
 <createdTime>2024-02-13 13:12:14 UTC</createdTime>
 <commentInRDBMS><![CDATA[Data Identifier, used for data management by the HO, usually a space.]]></commentInRDBMS>
@@ -68,7 +68,7 @@
 <ownDataTypeParameters>1 BYTE,,</ownDataTypeParameters>
 <autoIncrementCycle>false</autoIncrementCycle>
 </Column>
-<Column name="DATA_USE_CD" id="FD804B09-80BA-3B71-D611-AF2AFFBC0242">
+<Column name="DATA_USE_CODE" id="FD804B09-80BA-3B71-D611-AF2AFFBC0242">
 <createdBy>darbo</createdBy>
 <createdTime>2024-02-13 13:13:14 UTC</createdTime>
 <commentInRDBMS><![CDATA[Data Use code (DUC), used for data management by the HO.]]></commentInRDBMS>
@@ -82,7 +82,7 @@
 <ownDataTypeParameters>1 BYTE,,</ownDataTypeParameters>
 <autoIncrementCycle>false</autoIncrementCycle>
 </Column>
-<Column name="FILE_CD" id="44DC46F3-B70E-A92A-0E34-643C0AE400FC">
+<Column name="FILE_CODE" id="44DC46F3-B70E-A92A-0E34-643C0AE400FC">
 <createdBy>darbo</createdBy>
 <createdTime>2024-02-13 13:14:08 UTC</createdTime>
 <commentInRDBMS><![CDATA[File code, used for data management by the HO.]]></commentInRDBMS>
@@ -96,7 +96,7 @@
 <ownDataTypeParameters>2 BYTE,,</ownDataTypeParameters>
 <autoIncrementCycle>false</autoIncrementCycle>
 </Column>
-<Column name="MARSDEN_SQUARE_VL" id="96AA1474-AA0A-CE46-68DE-5B649AB744DE">
+<Column name="MARSDEN_SQUARE" id="96AA1474-AA0A-CE46-68DE-5B649AB744DE">
 <createdBy>darbo</createdBy>
 <createdTime>2024-02-13 13:16:22 UTC</createdTime>
 <commentInRDBMS><![CDATA[Marsden square, generated from the geographicals.]]></commentInRDBMS>
@@ -109,7 +109,7 @@
 <ownDataTypeParameters>,,</ownDataTypeParameters>
 <autoIncrementCycle>false</autoIncrementCycle>
 </Column>
-<Column name="DEGREE_SQUARE_VL" id="0A71A774-82A5-8C02-7E27-2EF2BC70A6F7">
+<Column name="DEGREE_SQUARE" id="0A71A774-82A5-8C02-7E27-2EF2BC70A6F7">
 <createdBy>darbo</createdBy>
 <createdTime>2024-02-13 13:16:57 UTC</createdTime>
 <commentInRDBMS><![CDATA[Degree square, generated from the latitude and longitude degrees.]]></commentInRDBMS>
@@ -122,7 +122,7 @@
 <ownDataTypeParameters>,,</ownDataTypeParameters>
 <autoIncrementCycle>false</autoIncrementCycle>
 </Column>
-<Column name="GEO_POSITION_DESC" id="CFC13F87-5657-6591-91DF-966909C62766">
+<Column name="GEO_POSITION" id="CFC13F87-5657-6591-91DF-966909C62766">
 <createdBy>darbo</createdBy>
 <createdTime>2024-02-13 13:18:41 UTC</createdTime>
 <commentInRDBMS><![CDATA[GEOPOSITIONDESC in degrees and minutes (to tenths), South and West shown as negative values.
@@ -137,7 +137,7 @@
 <ownDataTypeParameters>15,,</ownDataTypeParameters>
 <autoIncrementCycle>false</autoIncrementCycle>
 </Column>
-<Column name="QUADRANT_CD" id="732BF464-E30C-0C1B-0F03-7643118A1CD0">
+<Column name="QUADRANT_CODE" id="732BF464-E30C-0C1B-0F03-7643118A1CD0">
 <createdBy>darbo</createdBy>
 <createdTime>2024-02-13 13:19:38 UTC</createdTime>
 <commentInRDBMS><![CDATA[Quadrant, ICES code (NE = 0, SE = 2, SW = 3, NW = 1).]]></commentInRDBMS>
@@ -151,7 +151,7 @@
 <ownDataTypeParameters>1 BYTE,,</ownDataTypeParameters>
 <autoIncrementCycle>false</autoIncrementCycle>
 </Column>
-<Column name="POSITION_DETERMINATION_CD" id="D61682F2-FFB5-FC5B-32D7-C7684C4180FA">
+<Column name="POSITION_DETERMINATION_CODE" id="D61682F2-FFB5-FC5B-32D7-C7684C4180FA">
 <createdBy>darbo</createdBy>
 <createdTime>2024-02-13 13:22:26 UTC</createdTime>
 <commentInRDBMS><![CDATA[Position Determination, MIAS code for the fixing device used as the prime navigational aid in determining the position of the station.]]></commentInRDBMS>
@@ -162,11 +162,8 @@
 <logicalDatatype>LOGDT019</logicalDatatype>
 <ownDataTypeParameters>,,</ownDataTypeParameters>
 <autoIncrementCycle>false</autoIncrementCycle>
-<associations>
-<colAssociation fkAssociation="A0C8F24A-974E-C413-A97F-79A6DDEE3C5C" referredColumn="55488733-15B3-05E2-12E7-49D22B9E956D"/>
-</associations>
 </Column>
-<Column name="POSITION_ACCURACY_CD" id="92CBFE0E-7B4C-5D7C-E008-257A349C2FB3">
+<Column name="POSITION_ACCURACY_CODE" id="92CBFE0E-7B4C-5D7C-E008-257A349C2FB3">
 <createdBy>darbo</createdBy>
 <createdTime>2024-02-13 13:29:49 UTC</createdTime>
 <commentInRDBMS><![CDATA[Position Accuracy code. The estimated drift in station position or the estimated accuracy in the determination of the position of the station, whichever is the greater.]]></commentInRDBMS>
@@ -177,11 +174,8 @@
 <logicalDatatype>LOGDT019</logicalDatatype>
 <ownDataTypeParameters>,,</ownDataTypeParameters>
 <autoIncrementCycle>false</autoIncrementCycle>
-<associations>
-<colAssociation fkAssociation="799AD53E-1F0B-6530-BABC-3165C60A6432" referredColumn="51E3CF96-61A6-E83F-0521-9D23EB32442C"/>
-</associations>
 </Column>
-<Column name="POSITION_ADDITIONAL_REF" id="06FCE60A-D05B-8023-11FF-C40991973097">
+<Column name="POSITION_ADDITIONAL_REFERENCE" id="06FCE60A-D05B-8023-11FF-C40991973097">
 <createdBy>darbo</createdBy>
 <createdTime>2024-02-13 13:30:39 UTC</createdTime>
 <commentInRDBMS><![CDATA[Additional positional reference.]]></commentInRDBMS>
@@ -208,7 +202,7 @@
 <ownDataTypeParameters>,,</ownDataTypeParameters>
 <autoIncrementCycle>false</autoIncrementCycle>
 </Column>
-<Column name="OBSERVATION_DT" id="FFC3A734-B713-0D5D-0B81-061449E40B2F">
+<Column name="OBSERVATION_DATE" id="FFC3A734-B713-0D5D-0B81-061449E40B2F">
 <createdBy>darbo</createdBy>
 <createdTime>2024-02-13 13:35:34 UTC</createdTime>
 <commentInRDBMS><![CDATA[Date observation collected.]]></commentInRDBMS>
@@ -221,7 +215,7 @@
 <ownDataTypeParameters>,,</ownDataTypeParameters>
 <autoIncrementCycle>false</autoIncrementCycle>
 </Column>
-<Column name="OBSERVATION_TM" id="704746D3-1211-5028-0194-3336F80F9ABF">
+<Column name="OBSERVATION_TIME" id="704746D3-1211-5028-0194-3336F80F9ABF">
 <createdBy>darbo</createdBy>
 <createdTime>2024-02-13 13:36:52 UTC</createdTime>
 <commentInRDBMS><![CDATA[Time observation collected (Greenwich Mean Time).]]></commentInRDBMS>
@@ -234,7 +228,7 @@
 <ownDataTypeParameters>,,</ownDataTypeParameters>
 <autoIncrementCycle>false</autoIncrementCycle>
 </Column>
-<Column name="COUNTRY_CD" id="045D46FA-405D-A146-3F5A-19920F4DD6A2">
+<Column name="COUNTRY_CODE" id="045D46FA-405D-A146-3F5A-19920F4DD6A2">
 <createdBy>darbo</createdBy>
 <createdTime>2024-02-13 13:38:22 UTC</createdTime>
 <commentInRDBMS><![CDATA[Country code (ICES).]]></commentInRDBMS>
@@ -248,7 +242,7 @@
 <ownDataTypeParameters>2 BYTE,,</ownDataTypeParameters>
 <autoIncrementCycle>false</autoIncrementCycle>
 </Column>
-<Column name="SHIP_NO" id="EC666C18-3182-E3E1-C3B3-29D654EC0295">
+<Column name="SHIP_NUMBER" id="EC666C18-3182-E3E1-C3B3-29D654EC0295">
 <createdBy>darbo</createdBy>
 <createdTime>2024-02-13 13:43:50 UTC</createdTime>
 <commentInRDBMS><![CDATA[Ship number, ICES code is used, where possible, for data processed
@@ -265,7 +259,7 @@ at Taunton.
 <ownDataTypeParameters>2 BYTE,,</ownDataTypeParameters>
 <autoIncrementCycle>false</autoIncrementCycle>
 </Column>
-<Column name="SHIP_NO_CD" id="5C0B88E0-CA74-30A1-3D86-210D0F8F3E8F">
+<Column name="SHIP_NUMBER_TYPE" id="5C0B88E0-CA74-30A1-3D86-210D0F8F3E8F">
 <createdBy>darbo</createdBy>
 <createdTime>2024-02-13 13:44:54 UTC</createdTime>
 <commentInRDBMS><![CDATA[Ship number code, if 1 inserted then the Ship number is ICES code.]]></commentInRDBMS>
@@ -278,7 +272,7 @@ at Taunton.
 <ownDataTypeParameters>,,</ownDataTypeParameters>
 <autoIncrementCycle>false</autoIncrementCycle>
 </Column>
-<Column name="ORIGINATOR_CRUISE_NO" id="B1E3DC83-7C71-36B2-E89E-A636E7E6EB99">
+<Column name="ORIGINATOR_CRUISE_NUMBER" id="B1E3DC83-7C71-36B2-E89E-A636E7E6EB99">
 <createdBy>darbo</createdBy>
 <createdTime>2024-02-13 13:45:38 UTC</createdTime>
 <commentInRDBMS><![CDATA[Originator's Cruise number.]]></commentInRDBMS>
@@ -292,7 +286,7 @@ at Taunton.
 <ownDataTypeParameters>8,,</ownDataTypeParameters>
 <autoIncrementCycle>false</autoIncrementCycle>
 </Column>
-<Column name="INSTITUTE_DESCR" id="1F7C08D2-1166-E7C2-699C-1048ECF3DBF5">
+<Column name="INSTITUTE_LABEL" id="1F7C08D2-1166-E7C2-699C-1048ECF3DBF5">
 <createdBy>darbo</createdBy>
 <createdTime>2024-02-14 14:55:56 UTC</createdTime>
 <commentInRDBMS><![CDATA[Institute description.]]></commentInRDBMS>
@@ -306,7 +300,7 @@ at Taunton.
 <ownDataTypeParameters>6,,</ownDataTypeParameters>
 <autoIncrementCycle>false</autoIncrementCycle>
 </Column>
-<Column name="INSTITUTE_NO" id="5D1426EE-5BAF-A465-5D91-40FD20712DF3">
+<Column name="INSTITUTE_NUMBER" id="5D1426EE-5BAF-A465-5D91-40FD20712DF3">
 <createdBy>darbo</createdBy>
 <createdTime>2024-02-13 13:48:27 UTC</createdTime>
 <commentInRDBMS><![CDATA[Institute number, MIAS code normally used:
@@ -325,7 +319,7 @@ at Taunton.
 <ownDataTypeParameters>,,</ownDataTypeParameters>
 <autoIncrementCycle>false</autoIncrementCycle>
 </Column>
-<Column name="INSTITUTE_NO_CD" id="36563322-9FA1-27D5-4FBA-B051F7B81E33">
+<Column name="INSTITUTE_NUMBER_TYPE" id="36563322-9FA1-27D5-4FBA-B051F7B81E33">
 <createdBy>darbo</createdBy>
 <createdTime>2024-02-13 13:49:17 UTC</createdTime>
 <commentInRDBMS><![CDATA[Institute number code, if it contains 1 it indicates the MIAS code has been used.]]></commentInRDBMS>
@@ -338,7 +332,7 @@ at Taunton.
 <ownDataTypeParameters>,,</ownDataTypeParameters>
 <autoIncrementCycle>false</autoIncrementCycle>
 </Column>
-<Column name="LAND_CHECK_IND" id="1CBD52EA-9CA1-8345-F7BB-B85BFFA3E921">
+<Column name="LAND_CHECK_INDICATOR" id="1CBD52EA-9CA1-8345-F7BB-B85BFFA3E921">
 <createdBy>darbo</createdBy>
 <createdTime>2024-02-13 13:57:39 UTC</createdTime>
 <commentInRDBMS><![CDATA[Land check indicator. Field used for data management by H0.]]></commentInRDBMS>
@@ -352,7 +346,7 @@ at Taunton.
 <ownDataTypeParameters>1 BYTE,,</ownDataTypeParameters>
 <autoIncrementCycle>false</autoIncrementCycle>
 </Column>
-<Column name="DEPTH_LEVEL_NO" id="206B237F-DA46-C447-6290-A164DCE444F4">
+<Column name="DEPTH_LEVEL_NUMBER" id="206B237F-DA46-C447-6290-A164DCE444F4">
 <createdBy>darbo</createdBy>
 <createdTime>2024-02-13 14:10:45 UTC</createdTime>
 <commentInRDBMS><![CDATA[Number of depth levels. Indicates how many depth levels are held on the record.]]></commentInRDBMS>
@@ -365,7 +359,7 @@ at Taunton.
 <ownDataTypeParameters>,,</ownDataTypeParameters>
 <autoIncrementCycle>false</autoIncrementCycle>
 </Column>
-<Column name="SEABED_DEPTH_VL" id="70057B31-0299-8226-F0A2-7247AB190CB3">
+<Column name="SEABED_DEPTH" id="70057B31-0299-8226-F0A2-7247AB190CB3">
 <createdBy>darbo</createdBy>
 <createdTime>2024-02-14 15:06:43 UTC</createdTime>
 <commentInRDBMS><![CDATA[Depth to Seabed.]]></commentInRDBMS>
@@ -378,7 +372,7 @@ at Taunton.
 <ownDataTypeParameters>,,</ownDataTypeParameters>
 <autoIncrementCycle>false</autoIncrementCycle>
 </Column>
-<Column name="MIN_OBSERVATION_DEPTH_VL" id="0CA47C47-8202-785A-720A-ADD30F8B008E">
+<Column name="MIN_OBSERVATION_DEPTH" id="0CA47C47-8202-785A-720A-ADD30F8B008E">
 <createdBy>darbo</createdBy>
 <createdTime>2024-02-13 14:17:58 UTC</createdTime>
 <commentInRDBMS><![CDATA[Minimum depth of observation.]]></commentInRDBMS>
@@ -391,7 +385,7 @@ at Taunton.
 <ownDataTypeParameters>,,</ownDataTypeParameters>
 <autoIncrementCycle>false</autoIncrementCycle>
 </Column>
-<Column name="MAX_OBSERVATION_DEPTH_VL" id="5265C185-70BC-1BFB-D212-98F42787AED3">
+<Column name="MAX_OBSERVATION_DEPTH" id="5265C185-70BC-1BFB-D212-98F42787AED3">
 <createdBy>darbo</createdBy>
 <createdTime>2024-02-13 14:17:58 UTC</createdTime>
 <commentInRDBMS><![CDATA[Maximum depth of observation.]]></commentInRDBMS>
@@ -404,7 +398,7 @@ at Taunton.
 <ownDataTypeParameters>,,</ownDataTypeParameters>
 <autoIncrementCycle>false</autoIncrementCycle>
 </Column>
-<Column name="DEPTH_CORRECTION_VL" id="7E524667-B3FE-7A83-7FF7-B529390830ED">
+<Column name="DEPTH_CORRECTION" id="7E524667-B3FE-7A83-7FF7-B529390830ED">
 <createdBy>darbo</createdBy>
 <createdTime>2024-02-13 14:18:53 UTC</createdTime>
 <commentInRDBMS><![CDATA[Depth correction which have been applied to the observed values [±nn ;  sign, tens, units (of metres)].]]></commentInRDBMS>
@@ -417,7 +411,7 @@ at Taunton.
 <ownDataTypeParameters>,,</ownDataTypeParameters>
 <autoIncrementCycle>false</autoIncrementCycle>
 </Column>
-<Column name="TEMPERATURE_CORRECTION_VL" id="8FF2A038-2B2E-7171-4542-74E3F540C711">
+<Column name="TEMPERATURE_CORRECTION" id="8FF2A038-2B2E-7171-4542-74E3F540C711">
 <createdBy>darbo</createdBy>
 <createdTime>2024-02-14 10:46:43 UTC</createdTime>
 <commentInRDBMS><![CDATA[Temperature correction which have been applied to the observed values [±.nn ;  sign, tenths, hundredths (of degree)].
@@ -431,7 +425,7 @@ If the instrument code is 31(MBT) the format of the field is: ?n.n; integer, ten
 <ownDataTypeParameters>,,</ownDataTypeParameters>
 <autoIncrementCycle>false</autoIncrementCycle>
 </Column>
-<Column name="SALINITY_CORRECTION_VL" id="86A54351-1846-20E3-41FD-222A805C8440">
+<Column name="SALINITY_CORRECTION" id="86A54351-1846-20E3-41FD-222A805C8440">
 <createdBy>darbo</createdBy>
 <createdTime>2024-02-14 10:47:24 UTC</createdTime>
 <commentInRDBMS><![CDATA[Salinity correction which have been applied to the observed values [±.nnn ;  sign, tenths, hundredths, thousandths (of psu)].]]></commentInRDBMS>
@@ -444,7 +438,7 @@ If the instrument code is 31(MBT) the format of the field is: ?n.n; integer, ten
 <ownDataTypeParameters>,,</ownDataTypeParameters>
 <autoIncrementCycle>false</autoIncrementCycle>
 </Column>
-<Column name="SOUND_VELOCITY_CORRECTION_VL" id="D8B1CD91-4E17-14AC-9FA6-9C5874F646BA">
+<Column name="SOUND_VELOCITY_CORRECTION" id="D8B1CD91-4E17-14AC-9FA6-9C5874F646BA">
 <createdBy>darbo</createdBy>
 <createdTime>2024-02-14 10:49:32 UTC</createdTime>
 <commentInRDBMS><![CDATA[Sound velocity correction which have been applied to the observed values [±n.n ;  sign, units, tenths (of m/s)].
@@ -458,7 +452,7 @@ If the instrument code is 31(MBT) the format of the field is: ?n.n; integer, ten
 <ownDataTypeParameters>,,</ownDataTypeParameters>
 <autoIncrementCycle>false</autoIncrementCycle>
 </Column>
-<Column name="OBSERVATION_UNIT_CD" id="2E8AB5E0-CA1F-EE53-F1CC-C2332F032F1D">
+<Column name="OBSERVATION_UNIT_CODE" id="2E8AB5E0-CA1F-EE53-F1CC-C2332F032F1D">
 <createdBy>darbo</createdBy>
 <createdTime>2024-02-14 10:52:43 UTC</createdTime>
 <commentInRDBMS><![CDATA[Refers to the units used in the original data.
@@ -470,11 +464,8 @@ If Units code = 1 the corrections are given in imperial units, however all other
 <logicalDatatype>LOGDT019</logicalDatatype>
 <ownDataTypeParameters>,,</ownDataTypeParameters>
 <autoIncrementCycle>false</autoIncrementCycle>
-<associations>
-<colAssociation fkAssociation="160476EA-CFF8-3C34-5DA4-DABC5A4A0F3E" referredColumn="17A73DEC-4C28-7279-CA6F-1865699E3784"/>
-</associations>
 </Column>
-<Column name="INSTRUMENT_CD" id="EAD3605F-9DC8-38F2-09FB-250F71038C07">
+<Column name="INSTRUMENT_CODE" id="EAD3605F-9DC8-38F2-09FB-250F71038C07">
 <createdBy>darbo</createdBy>
 <createdTime>2024-02-14 10:54:54 UTC</createdTime>
 <notes><![CDATA[Start position 116]]></notes>
@@ -485,11 +476,8 @@ If Units code = 1 the corrections are given in imperial units, however all other
 <ownDataTypeParameters>,,</ownDataTypeParameters>
 <previousColumn>false</previousColumn>
 <autoIncrementCycle>false</autoIncrementCycle>
-<associations>
-<colAssociation fkAssociation="09A15994-C233-72FB-C042-C9D7E3709CE0" referredColumn="717AF847-7ABD-7390-1F85-4F512D4C22D3"/>
-</associations>
 </Column>
-<Column name="DATA_TYPE_CD" id="A9F008BC-688E-8AE3-E145-00D58F30E49B">
+<Column name="DATA_TYPE_CODE" id="A9F008BC-688E-8AE3-E145-00D58F30E49B">
 <createdBy>darbo</createdBy>
 <createdTime>2024-02-14 11:02:18 UTC</createdTime>
 <commentInRDBMS><![CDATA[Data type, MIAS code.]]></commentInRDBMS>
@@ -500,11 +488,8 @@ If Units code = 1 the corrections are given in imperial units, however all other
 <logicalDatatype>LOGDT019</logicalDatatype>
 <ownDataTypeParameters>,,</ownDataTypeParameters>
 <autoIncrementCycle>false</autoIncrementCycle>
-<associations>
-<colAssociation fkAssociation="CC388EF1-A318-D52D-3A2F-414A42CDEA65" referredColumn="7FC40E61-4EAA-E098-C022-CF8F00E58612"/>
-</associations>
 </Column>
-<Column name="DATA_MODE_CD" id="B36C085A-E0AE-3554-11D0-7110E55A4562">
+<Column name="DATA_MODE_CODE" id="B36C085A-E0AE-3554-11D0-7110E55A4562">
 <createdBy>darbo</createdBy>
 <createdTime>2024-02-14 11:02:18 UTC</createdTime>
 <commentInRDBMS><![CDATA[Data mode.]]></commentInRDBMS>
@@ -515,11 +500,8 @@ If Units code = 1 the corrections are given in imperial units, however all other
 <logicalDatatype>LOGDT019</logicalDatatype>
 <ownDataTypeParameters>,,</ownDataTypeParameters>
 <autoIncrementCycle>false</autoIncrementCycle>
-<associations>
-<colAssociation fkAssociation="AA8F7427-DF6D-5D60-C1F9-CC8BA7E53232" referredColumn="8B562246-9C43-68B7-25FC-CA2AC51915F3"/>
-</associations>
 </Column>
-<Column name="DATA_METHOD_CD" id="EA625CDF-2A24-6B42-D4EC-59D9C2753C25">
+<Column name="DATA_METHOD_CODE" id="EA625CDF-2A24-6B42-D4EC-59D9C2753C25">
 <createdBy>darbo</createdBy>
 <createdTime>2024-02-14 11:02:18 UTC</createdTime>
 <commentInRDBMS><![CDATA[Data capture method code.]]></commentInRDBMS>
@@ -530,11 +512,8 @@ If Units code = 1 the corrections are given in imperial units, however all other
 <logicalDatatype>LOGDT019</logicalDatatype>
 <ownDataTypeParameters>,,</ownDataTypeParameters>
 <autoIncrementCycle>false</autoIncrementCycle>
-<associations>
-<colAssociation fkAssociation="F6F51F2F-7D30-A9E8-74F1-6496CAC38BC8" referredColumn="45185ADC-F2F2-E406-F5C3-BF3201DF8235"/>
-</associations>
 </Column>
-<Column name="WIND_DIRECTION_CD" id="B73F8E15-BE8C-5723-DCD1-B32DCC0F5AF7">
+<Column name="WIND_DIRECTION_CODE" id="B73F8E15-BE8C-5723-DCD1-B32DCC0F5AF7">
 <createdBy>darbo</createdBy>
 <createdTime>2024-02-14 13:33:27 UTC</createdTime>
 <commentInRDBMS><![CDATA[Wind direction, WMO code 0877, true direction, in tenths of degrees from which the wind is blowing]]></commentInRDBMS>
@@ -546,11 +525,8 @@ If Units code = 1 the corrections are given in imperial units, however all other
 <ownDataTypeParameters>,,</ownDataTypeParameters>
 <previousColumn>false</previousColumn>
 <autoIncrementCycle>false</autoIncrementCycle>
-<associations>
-<colAssociation fkAssociation="A154888C-A292-975A-2225-322084D73329" referredColumn="2BE0D5E1-804B-C97C-A052-2065315A8222"/>
-</associations>
 </Column>
-<Column name="WIND_SPEED_VL" id="173272EF-D050-0686-D79E-20257D75313A">
+<Column name="WIND_SPEED" id="173272EF-D050-0686-D79E-20257D75313A">
 <createdBy>darbo</createdBy>
 <createdTime>2024-02-14 13:36:17 UTC</createdTime>
 <commentInRDBMS><![CDATA[Wind speed in knots.]]></commentInRDBMS>
@@ -563,7 +539,7 @@ If Units code = 1 the corrections are given in imperial units, however all other
 <ownDataTypeParameters>,,</ownDataTypeParameters>
 <autoIncrementCycle>false</autoIncrementCycle>
 </Column>
-<Column name="DRY_AIR_TEMPERATURE_VL" id="26EA6201-D911-BB10-A26F-BAF5AD4C1095">
+<Column name="DRY_AIR_TEMPERATURE" id="26EA6201-D911-BB10-A26F-BAF5AD4C1095">
 <createdBy>darbo</createdBy>
 <createdTime>2024-02-14 13:36:17 UTC</createdTime>
 <commentInRDBMS><![CDATA[Dry air temperature.]]></commentInRDBMS>
@@ -576,7 +552,7 @@ If Units code = 1 the corrections are given in imperial units, however all other
 <ownDataTypeParameters>,,</ownDataTypeParameters>
 <autoIncrementCycle>false</autoIncrementCycle>
 </Column>
-<Column name="WET_AIR_TEMPERATURE_VL" id="F240965A-01C1-4C73-DFBF-2D160A393462">
+<Column name="WET_AIR_TEMPERATURE" id="F240965A-01C1-4C73-DFBF-2D160A393462">
 <createdBy>darbo</createdBy>
 <createdTime>2024-02-14 13:36:47 UTC</createdTime>
 <commentInRDBMS><![CDATA[Wet  air temperature.]]></commentInRDBMS>
@@ -589,7 +565,7 @@ If Units code = 1 the corrections are given in imperial units, however all other
 <ownDataTypeParameters>,,</ownDataTypeParameters>
 <autoIncrementCycle>false</autoIncrementCycle>
 </Column>
-<Column name="WEATHER_CD" id="ABB0F2C7-65D9-BDE6-C405-8B25DFAA5646">
+<Column name="WEATHER_CODE" id="ABB0F2C7-65D9-BDE6-C405-8B25DFAA5646">
 <createdBy>darbo</createdBy>
 <createdTime>2024-02-14 13:37:14 UTC</createdTime>
 <commentInRDBMS><![CDATA[Weather code.]]></commentInRDBMS>
@@ -600,11 +576,8 @@ If Units code = 1 the corrections are given in imperial units, however all other
 <logicalDatatype>LOGDT019</logicalDatatype>
 <ownDataTypeParameters>,,</ownDataTypeParameters>
 <autoIncrementCycle>false</autoIncrementCycle>
-<associations>
-<colAssociation fkAssociation="52650522-9DD7-F071-5E3D-C501BB7F51D4" referredColumn="59848FC8-6807-F96F-FFE4-9059D897334B"/>
-</associations>
 </Column>
-<Column name="CLOUD_COVERAGE_CD" id="2D085FC3-DD02-E25C-D13D-9DFDA0BE3656">
+<Column name="CLOUD_COVERAGE_CODE" id="2D085FC3-DD02-E25C-D13D-9DFDA0BE3656">
 <createdBy>darbo</createdBy>
 <createdTime>2024-02-14 13:39:59 UTC</createdTime>
 <commentInRDBMS><![CDATA[Cloud coverage, WMO code 2700.]]></commentInRDBMS>
@@ -615,11 +588,8 @@ If Units code = 1 the corrections are given in imperial units, however all other
 <logicalDatatype>LOGDT019</logicalDatatype>
 <ownDataTypeParameters>,,</ownDataTypeParameters>
 <autoIncrementCycle>false</autoIncrementCycle>
-<associations>
-<colAssociation fkAssociation="A8A6C2F0-CEDF-A9E6-37EB-838D1AE08EF5" referredColumn="A0E4FA86-C2B5-8CC4-386D-8EA76539DA0E"/>
-</associations>
 </Column>
-<Column name="SEA_STATE_CD" id="450DCDB8-77A1-6D52-5734-D2B8246E020E">
+<Column name="SEA_STATE_CODE" id="450DCDB8-77A1-6D52-5734-D2B8246E020E">
 <createdBy>darbo</createdBy>
 <createdTime>2024-02-14 13:43:30 UTC</createdTime>
 <notes><![CDATA[Start position 135]]></notes>
@@ -631,10 +601,10 @@ If Units code = 1 the corrections are given in imperial units, however all other
 <previousColumn>false</previousColumn>
 <autoIncrementCycle>false</autoIncrementCycle>
 <associations>
-<colAssociation fkAssociation="E11D59D0-4433-3435-F94E-7C5834DD1033" referredColumn="3F84290C-0EDA-651A-6D05-698C5F92736A"/>
+<colAssociation fkAssociation="D5867200-7A2D-DB9C-E20C-34DF73E288E1" referredColumn="3F84290C-0EDA-651A-6D05-698C5F92736A"/>
 </associations>
 </Column>
-<Column name="WAVE_PERIOD_TM" id="BD6394AA-F09A-A402-8299-788EFA4FEF47">
+<Column name="WAVE_PERIOD" id="BD6394AA-F09A-A402-8299-788EFA4FEF47">
 <createdBy>darbo</createdBy>
 <createdTime>2024-02-14 14:20:52 UTC</createdTime>
 <commentInRDBMS><![CDATA[Wave period, in seconds.]]></commentInRDBMS>
@@ -647,7 +617,7 @@ If Units code = 1 the corrections are given in imperial units, however all other
 <ownDataTypeParameters>,,</ownDataTypeParameters>
 <autoIncrementCycle>false</autoIncrementCycle>
 </Column>
-<Column name="WAVE_HEIGHT_VL" id="9EFB7373-A136-173A-4D23-A9B6888C4455">
+<Column name="WAVE_HEIGHT" id="9EFB7373-A136-173A-4D23-A9B6888C4455">
 <createdBy>darbo</createdBy>
 <createdTime>2024-02-14 14:20:52 UTC</createdTime>
 <commentInRDBMS><![CDATA[Wave height, in half metres.]]></commentInRDBMS>
@@ -660,7 +630,7 @@ If Units code = 1 the corrections are given in imperial units, however all other
 <ownDataTypeParameters>,,</ownDataTypeParameters>
 <autoIncrementCycle>false</autoIncrementCycle>
 </Column>
-<Column name="ATMOSPHERIC_PRESSURE_VL" id="AFFE3FD5-B34B-88AF-75F4-8EDEC73C48B2">
+<Column name="ATMOSPHERIC_PRESSURE" id="AFFE3FD5-B34B-88AF-75F4-8EDEC73C48B2">
 <createdBy>darbo</createdBy>
 <createdTime>2024-02-14 14:20:52 UTC</createdTime>
 <commentInRDBMS><![CDATA[Atmospheric pressure in millibars and tenths.]]></commentInRDBMS>
@@ -673,7 +643,7 @@ If Units code = 1 the corrections are given in imperial units, however all other
 <ownDataTypeParameters>,,</ownDataTypeParameters>
 <autoIncrementCycle>false</autoIncrementCycle>
 </Column>
-<Column name="WATER_COLOUR_CD" id="866C7808-1D37-4990-3E1E-2F7493BB6433">
+<Column name="WATER_COLOUR_CODE" id="866C7808-1D37-4990-3E1E-2F7493BB6433">
 <createdBy>darbo</createdBy>
 <createdTime>2024-02-14 14:23:26 UTC</createdTime>
 <notes><![CDATA[Start position 145]]></notes>
@@ -684,9 +654,6 @@ If Units code = 1 the corrections are given in imperial units, however all other
 <ownDataTypeParameters>,,</ownDataTypeParameters>
 <previousColumn>false</previousColumn>
 <autoIncrementCycle>false</autoIncrementCycle>
-<associations>
-<colAssociation fkAssociation="0E44A55F-0705-C60C-E35C-C91DCE9D11BB" referredColumn="1CE82E96-7C15-DA71-25D7-19DC6AA26B1A"/>
-</associations>
 </Column>
 <Column name="WATER TRANSPARENCY" id="718500FB-69E7-2374-E15F-6A7FE20535E5">
 <createdBy>darbo</createdBy>
@@ -702,7 +669,7 @@ If Units code = 1 the corrections are given in imperial units, however all other
 <ownDataTypeParameters>2 BYTE,,</ownDataTypeParameters>
 <autoIncrementCycle>false</autoIncrementCycle>
 </Column>
-<Column name="SALINITY_SCALE_CD" id="C6928C11-43F1-20EF-CB68-F7B93CBA3ED0">
+<Column name="SALINITY_SCALE_CODE" id="C6928C11-43F1-20EF-CB68-F7B93CBA3ED0">
 <createdBy>darbo</createdBy>
 <createdTime>2024-02-14 14:27:43 UTC</createdTime>
 <commentInRDBMS><![CDATA[Salinity scale code.]]></commentInRDBMS>
@@ -713,11 +680,8 @@ If Units code = 1 the corrections are given in imperial units, however all other
 <logicalDatatype>LOGDT019</logicalDatatype>
 <ownDataTypeParameters>,,</ownDataTypeParameters>
 <autoIncrementCycle>false</autoIncrementCycle>
-<associations>
-<colAssociation fkAssociation="DBEAB931-76D9-2217-C34C-2EB1583047EF" referredColumn="FC268CCE-3FB8-EE0C-AF47-8256314FC3A5"/>
-</associations>
 </Column>
-<Column name="BT_SEA_SURFACE_INSTRUMENT_CD" id="CB02B850-199C-F266-AE07-992DFECDACED">
+<Column name="BT_SEA_SURFACE_INSTRUMENT_CODE" id="CB02B850-199C-F266-AE07-992DFECDACED">
 <createdBy>darbo</createdBy>
 <createdTime>2024-02-14 14:33:19 UTC</createdTime>
 <notes><![CDATA[Start position 150]]></notes>
@@ -730,7 +694,7 @@ If Units code = 1 the corrections are given in imperial units, however all other
 <ownDataTypeParameters>1 BYTE,,</ownDataTypeParameters>
 <autoIncrementCycle>false</autoIncrementCycle>
 </Column>
-<Column name="BT_SEA_SURFACE_REFERENCE_TEMPERATURE_VL" id="2BC3682B-77A2-93C4-C5C0-18C198B4088A">
+<Column name="BT_SEA_SURFACE_REFERENCE_TEMPERATURE" id="2BC3682B-77A2-93C4-C5C0-18C198B4088A">
 <createdBy>darbo</createdBy>
 <createdTime>2024-02-14 14:36:44 UTC</createdTime>
 <commentInRDBMS><![CDATA[BT Sea Surface Reference Temperature.]]></commentInRDBMS>
@@ -743,7 +707,7 @@ If Units code = 1 the corrections are given in imperial units, however all other
 <ownDataTypeParameters>,,</ownDataTypeParameters>
 <autoIncrementCycle>false</autoIncrementCycle>
 </Column>
-<Column name="MBT_SEA_SURFACE_TEMPERATURE_CORRECTION_VL" id="08905933-8BE7-2716-A6A3-AF3B7502E8F7">
+<Column name="MBT_SEA_SURFACE_TEMPERATURE_CORRECTION" id="08905933-8BE7-2716-A6A3-AF3B7502E8F7">
 <createdBy>darbo</createdBy>
 <createdTime>2024-02-14 14:36:44 UTC</createdTime>
 <commentInRDBMS><![CDATA[MBT Temperature Correction at the Surface.]]></commentInRDBMS>
@@ -756,7 +720,7 @@ If Units code = 1 the corrections are given in imperial units, however all other
 <ownDataTypeParameters>,,</ownDataTypeParameters>
 <autoIncrementCycle>false</autoIncrementCycle>
 </Column>
-<Column name="MBT_TYPE_QUALITTY_CD" id="D09D8B27-1419-7C25-D87A-D3A39EE1C870">
+<Column name="MBT_TYPE_QUALITTY_CODE" id="D09D8B27-1419-7C25-D87A-D3A39EE1C870">
 <createdBy>darbo</createdBy>
 <createdTime>2024-02-14 14:42:30 UTC</createdTime>
 <commentInRDBMS><![CDATA[MBT Type/XBT Quality code.]]></commentInRDBMS>
@@ -770,7 +734,7 @@ If Units code = 1 the corrections are given in imperial units, however all other
 <ownDataTypeParameters>1 BYTE,,</ownDataTypeParameters>
 <autoIncrementCycle>false</autoIncrementCycle>
 </Column>
-<Column name="MBT_GRADE_QUALITTY_CD" id="8B9469AC-AE47-D78B-607E-FE980A9BB4CC">
+<Column name="MBT_GRADE_QUALITTY_CODE" id="8B9469AC-AE47-D78B-607E-FE980A9BB4CC">
 <createdBy>darbo</createdBy>
 <createdTime>2024-02-14 14:42:30 UTC</createdTime>
 <commentInRDBMS><![CDATA[MBT Grade/XBT Quality code.]]></commentInRDBMS>
@@ -808,134 +772,14 @@ If Units code = 1 the corrections are given in imperial units, however all other
 <colUsage columnID="1B124D92-6055-F62E-4706-08413235267D"/>
 </indexColumnUsage>
 </ind_PK_UK>
-<ind_PK_UK id="E106C434-7199-1C9B-BDDA-A43DAFEBF561" name="SERD_STG_HEADER_SERD_LOV_SALINITY_SCALE_F">
+<ind_PK_UK id="9E616C08-0F6B-819C-0E6A-6BF00558053A" name="SERD_STG_HEADER_SERD_SEA_STATE_LOOKUP_F">
 <createdBy>d.arboittedossantos</createdBy>
-<createdTime>2024-04-04 15:51:05 UTC</createdTime>
-<ownerDesignName>MEDS_SERD</ownerDesignName>
-<indexState>Foreign Key</indexState>
-<isSurrogateKey>false</isSurrogateKey>
-<indexColumnUsage>
-<colUsage columnID="C6928C11-43F1-20EF-CB68-F7B93CBA3ED0"/>
-</indexColumnUsage>
-</ind_PK_UK>
-<ind_PK_UK id="7FF9DFA9-CE07-A6B4-7235-51BB82A744C0" name="SERD_STG_HEADER_SERD_LOV_OBSERVATION_UNIT_F">
-<createdBy>d.arboittedossantos</createdBy>
-<createdTime>2024-04-04 15:52:00 UTC</createdTime>
-<ownerDesignName>MEDS_SERD</ownerDesignName>
-<indexState>Foreign Key</indexState>
-<isSurrogateKey>false</isSurrogateKey>
-<indexColumnUsage>
-<colUsage columnID="2E8AB5E0-CA1F-EE53-F1CC-C2332F032F1D"/>
-</indexColumnUsage>
-</ind_PK_UK>
-<ind_PK_UK id="974D1D6A-48EF-CE54-40D3-32D41DDA7C87" name="SERD_STG_HEADER_SERD_LOV_CLOUD_COVERAGE_F">
-<createdBy>d.arboittedossantos</createdBy>
-<createdTime>2024-04-04 15:54:19 UTC</createdTime>
-<ownerDesignName>MEDS_SERD</ownerDesignName>
-<indexState>Foreign Key</indexState>
-<isSurrogateKey>false</isSurrogateKey>
-<indexColumnUsage>
-<colUsage columnID="2D085FC3-DD02-E25C-D13D-9DFDA0BE3656"/>
-</indexColumnUsage>
-</ind_PK_UK>
-<ind_PK_UK id="EF3B2F6A-B784-3227-7703-8AC8EBAA4FD6" name="SERD_STG_HEADER_SERD_LOV_POSITION_ACCURACY_F">
-<createdBy>d.arboittedossantos</createdBy>
-<createdTime>2024-04-04 15:54:40 UTC</createdTime>
-<ownerDesignName>MEDS_SERD</ownerDesignName>
-<indexState>Foreign Key</indexState>
-<isSurrogateKey>false</isSurrogateKey>
-<indexColumnUsage>
-<colUsage columnID="92CBFE0E-7B4C-5D7C-E008-257A349C2FB3"/>
-</indexColumnUsage>
-</ind_PK_UK>
-<ind_PK_UK id="4321519F-AF8A-57B4-B839-BADFAAEC1A9D" name="SERD_STG_HEADER_SERD_LOV_POSITION_DETERMINATION_F">
-<createdBy>d.arboittedossantos</createdBy>
-<createdTime>2024-04-04 15:54:50 UTC</createdTime>
-<ownerDesignName>MEDS_SERD</ownerDesignName>
-<indexState>Foreign Key</indexState>
-<isSurrogateKey>false</isSurrogateKey>
-<indexColumnUsage>
-<colUsage columnID="D61682F2-FFB5-FC5B-32D7-C7684C4180FA"/>
-</indexColumnUsage>
-</ind_PK_UK>
-<ind_PK_UK id="7CE15832-2FF2-F1E0-5E9E-F224F90B9967" name="SERD_STG_HEADER_SERD_LOV_SEA_STATE_F">
-<createdBy>d.arboittedossantos</createdBy>
-<createdTime>2024-04-04 15:55:41 UTC</createdTime>
+<createdTime>2024-04-05 10:36:51 UTC</createdTime>
 <ownerDesignName>MEDS_SERD</ownerDesignName>
 <indexState>Foreign Key</indexState>
 <isSurrogateKey>false</isSurrogateKey>
 <indexColumnUsage>
 <colUsage columnID="450DCDB8-77A1-6D52-5734-D2B8246E020E"/>
-</indexColumnUsage>
-</ind_PK_UK>
-<ind_PK_UK id="E2BF9A85-E8C3-834A-6549-4069DF892F2A" name="SERD_STG_HEADER_SERD_LOV_WIND_DIRECTION_F">
-<createdBy>d.arboittedossantos</createdBy>
-<createdTime>2024-04-04 15:55:49 UTC</createdTime>
-<ownerDesignName>MEDS_SERD</ownerDesignName>
-<indexState>Foreign Key</indexState>
-<isSurrogateKey>false</isSurrogateKey>
-<indexColumnUsage>
-<colUsage columnID="B73F8E15-BE8C-5723-DCD1-B32DCC0F5AF7"/>
-</indexColumnUsage>
-</ind_PK_UK>
-<ind_PK_UK id="E11EF7DE-C8EF-2BE6-3522-9C496FD4B46B" name="SERD_STG_HEADER_SERD_LOV_INSTRUMENT_F">
-<createdBy>d.arboittedossantos</createdBy>
-<createdTime>2024-04-04 15:55:56 UTC</createdTime>
-<ownerDesignName>MEDS_SERD</ownerDesignName>
-<indexState>Foreign Key</indexState>
-<isSurrogateKey>false</isSurrogateKey>
-<indexColumnUsage>
-<colUsage columnID="EAD3605F-9DC8-38F2-09FB-250F71038C07"/>
-</indexColumnUsage>
-</ind_PK_UK>
-<ind_PK_UK id="ED5D729D-320A-38EC-0470-2C3FC2CA8EB9" name="SERD_STG_HEADER_SERD_LOV_DATA_TYPE_F">
-<createdBy>d.arboittedossantos</createdBy>
-<createdTime>2024-04-04 15:56:07 UTC</createdTime>
-<ownerDesignName>MEDS_SERD</ownerDesignName>
-<indexState>Foreign Key</indexState>
-<isSurrogateKey>false</isSurrogateKey>
-<indexColumnUsage>
-<colUsage columnID="A9F008BC-688E-8AE3-E145-00D58F30E49B"/>
-</indexColumnUsage>
-</ind_PK_UK>
-<ind_PK_UK id="710F2709-B990-ACF8-EAD4-AFCD7B4A8FB8" name="SERD_STG_HEADER_SERD_LOV_DATA_MODE_F">
-<createdBy>d.arboittedossantos</createdBy>
-<createdTime>2024-04-04 15:56:15 UTC</createdTime>
-<ownerDesignName>MEDS_SERD</ownerDesignName>
-<indexState>Foreign Key</indexState>
-<isSurrogateKey>false</isSurrogateKey>
-<indexColumnUsage>
-<colUsage columnID="B36C085A-E0AE-3554-11D0-7110E55A4562"/>
-</indexColumnUsage>
-</ind_PK_UK>
-<ind_PK_UK id="B03597AC-9C0F-F1A1-CBD7-D76BF61BF1EE" name="SERD_STG_HEADER_SERD_LOV_DATA_METHOD_F">
-<createdBy>d.arboittedossantos</createdBy>
-<createdTime>2024-04-04 15:56:22 UTC</createdTime>
-<ownerDesignName>MEDS_SERD</ownerDesignName>
-<indexState>Foreign Key</indexState>
-<isSurrogateKey>false</isSurrogateKey>
-<indexColumnUsage>
-<colUsage columnID="EA625CDF-2A24-6B42-D4EC-59D9C2753C25"/>
-</indexColumnUsage>
-</ind_PK_UK>
-<ind_PK_UK id="1D6C1DEB-7F35-6F71-B59A-7E5DDA7E689D" name="SERD_STG_HEADER_SERD_LOV_WEATHER_F">
-<createdBy>d.arboittedossantos</createdBy>
-<createdTime>2024-04-04 15:56:33 UTC</createdTime>
-<ownerDesignName>MEDS_SERD</ownerDesignName>
-<indexState>Foreign Key</indexState>
-<isSurrogateKey>false</isSurrogateKey>
-<indexColumnUsage>
-<colUsage columnID="ABB0F2C7-65D9-BDE6-C405-8B25DFAA5646"/>
-</indexColumnUsage>
-</ind_PK_UK>
-<ind_PK_UK id="8CEB1705-2C09-4149-95BC-BA7E610442ED" name="SERD_STG_HEADER_SERD_LOV_WATER_COLOUR_F">
-<createdBy>d.arboittedossantos</createdBy>
-<createdTime>2024-04-04 15:56:41 UTC</createdTime>
-<ownerDesignName>MEDS_SERD</ownerDesignName>
-<indexState>Foreign Key</indexState>
-<isSurrogateKey>false</isSurrogateKey>
-<indexColumnUsage>
-<colUsage columnID="866C7808-1D37-4990-3E1E-2F7493BB6433"/>
 </indexColumnUsage>
 </ind_PK_UK>
 </indexes>
