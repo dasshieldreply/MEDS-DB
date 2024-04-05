@@ -8,6 +8,16 @@
 <existDependencyGenerateInDDl>true</existDependencyGenerateInDDl>
 <parsed>true</parsed>
 <columns itemClass="oracle.dbtools.crest.model.design.relational.Column">
+<Column name="SERD_LOV_SOUND_VELOCITY_QUALITY" id="1E6E71D3-3240-23BC-0AC3-293089AB13B1">
+<createdBy>d.arboittedossantos</createdBy>
+<createdTime>2024-04-04 15:36:42 UTC</createdTime>
+<ownerDesignName>MEDS_SERD</ownerDesignName>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT019</logicalDatatype>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
+<autoIncrementCycle>false</autoIncrementCycle>
+</Column>
 <Column name="SOUND_VELOCITY_QUALITY_CD" id="FBE97307-370A-35F5-8719-46548E89DC97">
 <createdBy>darbo</createdBy>
 <createdTime>2024-02-14 16:15:04 UTC</createdTime>
@@ -29,16 +39,6 @@
 <logicalDatatype>LOGDT024</logicalDatatype>
 <dataTypeSize>100</dataTypeSize>
 <ownDataTypeParameters>100,,</ownDataTypeParameters>
-<autoIncrementCycle>false</autoIncrementCycle>
-</Column>
-<Column name="SERD_LOV_SOUND_VELOCITY_QUALITY" id="1E6E71D3-3240-23BC-0AC3-293089AB13B1">
-<createdBy>d.arboittedossantos</createdBy>
-<createdTime>2024-04-04 15:36:42 UTC</createdTime>
-<ownerDesignName>MEDS_SERD</ownerDesignName>
-<useDomainConstraints>false</useDomainConstraints>
-<use>1</use>
-<logicalDatatype>LOGDT019</logicalDatatype>
-<ownDataTypeParameters>,,</ownDataTypeParameters>
 <autoIncrementCycle>false</autoIncrementCycle>
 </Column>
 </columns>
