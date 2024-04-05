@@ -1,5 +1,5 @@
 <?xml version = '1.0' encoding = 'UTF-8'?>
-<Table class="oracle.dbtools.crest.model.design.relational.Table" directorySegmentName="seg_0" id="84A226D1-57D3-EE99-1D7D-B2DF2DC8E228" schemaObject="20651223-0797-3CAA-7021-8449492EE83B" name="SERD_CODE_LOOOKUP">
+<Table class="oracle.dbtools.crest.model.design.relational.Table" directorySegmentName="seg_0" id="84A226D1-57D3-EE99-1D7D-B2DF2DC8E228" schemaObject="20651223-0797-3CAA-7021-8449492EE83B" name="SERD_CODE_LOOKUP">
 <createdBy>d.arboittedossantos</createdBy>
 <createdTime>2024-04-05 07:15:09 UTC</createdTime>
 <ownerDesignName>MEDS_SERD</ownerDesignName>
@@ -8,7 +8,7 @@
 <existDependencyGenerateInDDl>true</existDependencyGenerateInDDl>
 <parsed>true</parsed>
 <columns itemClass="oracle.dbtools.crest.model.design.relational.Column">
-<Column name="SERD_CODE_LOOOKUP" id="D78CEDE8-9DA3-FD9B-AA13-D412ADFF4086">
+<Column name="SERD_CODE_LOOKUP" id="D78CEDE8-9DA3-FD9B-AA13-D412ADFF4086">
 <createdBy>d.arboittedossantos</createdBy>
 <createdTime>2024-04-05 07:16:18 UTC</createdTime>
 <ownerDesignName>MEDS_SERD</ownerDesignName>
@@ -58,7 +58,7 @@
 </Column>
 </columns>
 <indexes itemClass="oracle.dbtools.crest.model.design.relational.Index">
-<ind_PK_UK id="5869AD6B-D53B-BCB2-2CC2-9B12660DD999" name="SERD_CODE_LOOOKUP_P">
+<ind_PK_UK id="5869AD6B-D53B-BCB2-2CC2-9B12660DD999" name="SERD_CODE_LOOKUP_P">
 <createdBy>d.arboittedossantos</createdBy>
 <createdTime>2024-04-05 10:35:55 UTC</createdTime>
 <ownerDesignName>MEDS_SERD</ownerDesignName>
@@ -69,34 +69,11 @@
 <colUsage columnID="D78CEDE8-9DA3-FD9B-AA13-D412ADFF4086"/>
 </indexColumnUsage>
 </ind_PK_UK>
-<ind_PK_UK id="C50CBC7E-854E-A35A-57FA-18133FF0C9DE" name="SERD_CODE_LOOOKUP_VALUE_U">
+<ind_PK_UK id="C50CBC7E-854E-A35A-57FA-18133FF0C9DE" name="SERD_CODE_LOOKUP_VALUE_U">
 <createdBy>d.arboittedossantos</createdBy>
 <createdTime>2024-04-05 10:36:20 UTC</createdTime>
 <ownerDesignName>MEDS_SERD</ownerDesignName>
 <indexState>Unique Constraint</indexState>
-<isSurrogateKey>false</isSurrogateKey>
-<indexColumnUsage>
-<colUsage columnID="61EE3643-F531-F613-70DE-6FEF65731118"/>
-<colUsage columnID="49B7AB7F-CA11-0562-D9C0-40A103430E93"/>
-</indexColumnUsage>
-</ind_PK_UK>
-<ind_PK_UK id="EB93D35E-1467-5E7F-9831-BC76EC3BE9F7" schemaObject="20651223-0797-3CAA-7021-8449492EE83B" name="SERD_LOV_CODE_LOOKUP_P">
-<createdBy>d.arboittedossantos</createdBy>
-<createdTime>2024-04-05 08:07:53 UTC</createdTime>
-<ownerDesignName>MEDS_SERD</ownerDesignName>
-<importedID>A1790530-61A4-8013-9F6F-4454F606FF7D</importedID>
-<indexState>Unique Plain Index</indexState>
-<isSurrogateKey>false</isSurrogateKey>
-<indexColumnUsage>
-<colUsage columnID="D78CEDE8-9DA3-FD9B-AA13-D412ADFF4086"/>
-</indexColumnUsage>
-</ind_PK_UK>
-<ind_PK_UK id="ACFFDC2C-E1F0-6DD7-86CE-25E07D76F1E4" schemaObject="20651223-0797-3CAA-7021-8449492EE83B" name="SERD_LOV_CODE_LOOKUP_VL_U">
-<createdBy>d.arboittedossantos</createdBy>
-<createdTime>2024-04-05 08:07:53 UTC</createdTime>
-<ownerDesignName>MEDS_SERD</ownerDesignName>
-<importedID>65A47D46-799B-B319-454B-0F5D6D616718</importedID>
-<indexState>Unique Plain Index</indexState>
 <isSurrogateKey>false</isSurrogateKey>
 <indexColumnUsage>
 <colUsage columnID="61EE3643-F531-F613-70DE-6FEF65731118"/>

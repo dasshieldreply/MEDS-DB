@@ -1,14 +1,14 @@
 <?xml version = '1.0' encoding = 'UTF-8'?>
-<TriggerOraclev10g class="oracle.dbtools.crest.model.design.storage.oracle.v10g.TriggerOraclev10g" name="BI_SERD_LOV_CODE_LOOKUP" directorySegmentName="seg_0" id="D60773D8-4E97-5B5C-3D46-6190157DDC62">
+<TriggerOraclev10g class="oracle.dbtools.crest.model.design.storage.oracle.v10g.TriggerOraclev10g" name="BI_SERD_CODE_LOOKUP" directorySegmentName="seg_0" id="D60773D8-4E97-5B5C-3D46-6190157DDC62">
 <createdBy>d.arboittedossantos</createdBy>
 <createdTime>2024-04-05 08:07:33 UTC</createdTime>
 <ownerDesignName>MEDS_SERD</ownerDesignName>
 <actions>INSERT</actions>
 <body><![CDATA[begin
-   if :new.SERD_LOV_CODE_LOOKUP is null then
-      :new.SERD_LOV_CODE_LOOKUP := to_number(sys_guid(),'xxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxx');
+   if :new.SERD_CODE_LOOKUP is null then
+      :new.SERD_CODE_LOOKUP := to_number(sys_guid(),'xxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxx');
    end if;
-end bi_serd_lov_code_lookup;]]></body>
+end bi_serd_code_lookup;]]></body>
 <triggerTime>BEFORE</triggerTime>
 <owner>34521F75-6140-B967-C5AE-9003F0D59F82</owner>
 <table>84A226D1-57D3-EE99-1D7D-B2DF2DC8E228</table>

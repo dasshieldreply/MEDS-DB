@@ -304,13 +304,6 @@
 <tableSpace>380574C8-F4A5-8566-A9EE-9CE7BDB27C99</tableSpace>
 </IndexProxy>
 </indexProxies>
-<foreignKeys>
-<ForeignKey class="oracle.dbtools.crest.model.design.storage.oracle.v10g.FKProxyOraclev10g" name="SERD_STG_HEADER_SERD_SEA_STATE_LOOKUP_F" id="9E616C08-0F6B-819C-0E6A-6BF00558053A">
-<createdBy>d.arboittedossantos</createdBy>
-<createdTime>2024-04-05 10:36:51 UTC</createdTime>
-<ownerDesignName>MEDS_SERD</ownerDesignName>
-</ForeignKey>
-</foreignKeys>
 <primaryKeys>
 <PrimaryKey class="oracle.dbtools.crest.model.design.storage.oracle.v10g.PKProxyOraclev10g" name="SERD_STG_HEADER_P" id="7258652E-38CB-F1E5-84FD-5EBFE2E10DCF">
 <createdBy>d.arboittedossantos</createdBy>

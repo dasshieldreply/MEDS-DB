@@ -600,9 +600,6 @@ If Units code = 1 the corrections are given in imperial units, however all other
 <ownDataTypeParameters>,,</ownDataTypeParameters>
 <previousColumn>false</previousColumn>
 <autoIncrementCycle>false</autoIncrementCycle>
-<associations>
-<colAssociation fkAssociation="D5867200-7A2D-DB9C-E20C-34DF73E288E1" referredColumn="3F84290C-0EDA-651A-6D05-698C5F92736A"/>
-</associations>
 </Column>
 <Column name="WAVE_PERIOD" id="BD6394AA-F09A-A402-8299-788EFA4FEF47">
 <createdBy>darbo</createdBy>
@@ -770,16 +767,6 @@ If Units code = 1 the corrections are given in imperial units, however all other
 <isSurrogateKey>false</isSurrogateKey>
 <indexColumnUsage>
 <colUsage columnID="1B124D92-6055-F62E-4706-08413235267D"/>
-</indexColumnUsage>
-</ind_PK_UK>
-<ind_PK_UK id="9E616C08-0F6B-819C-0E6A-6BF00558053A" name="SERD_STG_HEADER_SERD_SEA_STATE_LOOKUP_F">
-<createdBy>d.arboittedossantos</createdBy>
-<createdTime>2024-04-05 10:36:51 UTC</createdTime>
-<ownerDesignName>MEDS_SERD</ownerDesignName>
-<indexState>Foreign Key</indexState>
-<isSurrogateKey>false</isSurrogateKey>
-<indexColumnUsage>
-<colUsage columnID="450DCDB8-77A1-6D52-5734-D2B8246E020E"/>
 </indexColumnUsage>
 </ind_PK_UK>
 </indexes>
