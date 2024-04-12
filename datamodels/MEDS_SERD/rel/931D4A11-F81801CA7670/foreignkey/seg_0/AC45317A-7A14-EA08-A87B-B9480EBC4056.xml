@@ -1,0 +1,16 @@
+<?xml version = '1.0' encoding = 'UTF-8'?>
+<FKIndexAssociation class="oracle.dbtools.crest.model.design.relational.FKIndexAssociation" directorySegmentName="seg_0" id="AC45317A-7A14-EA08-A87B-B9480EBC4056" containerWithKeyObject="E6959608-8A42-3C6A-83AC-27964A801390" localFKIndex="C6EBAA81-9BE7-EF2F-F4DD-38C728401673" name="STG_FILE_ROW_STG_FILE_UPLOAD_F">
+<createdBy>d.arboittedossantos</createdBy>
+<createdTime>2024-04-12 14:12:03 UTC</createdTime>
+<ownerDesignName>MEDS_SERD</ownerDesignName>
+<referredTableLongName>MEDSADMIN.STG_FILE_UPLOAD</referredTableLongName>
+<deleteRule>NO ACTION</deleteRule>
+<referredTableID>94F843D2-65A5-522A-A843-5FDBFF4E48BC</referredTableID>
+<keyObject>8A254244-FF6B-58FE-C59B-3E06B17E1EA7</keyObject>
+<referredKeyID>8A254244-FF6B-58FE-C59B-3E06B17E1EA7</referredKeyID>
+<mandatory>true</mandatory>
+<refColNames>STG_FILE_UPLOAD</refColNames>
+<transferable>true</transferable>
+<rely>false</rely>
+<columnDependencyConstraintGenerateInDDL>true</columnDependencyConstraintGenerateInDDL>
+</FKIndexAssociation>

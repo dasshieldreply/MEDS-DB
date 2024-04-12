@@ -18,6 +18,20 @@
 <ownDataTypeParameters>,,</ownDataTypeParameters>
 <autoIncrementCycle>false</autoIncrementCycle>
 </Column>
+<Column name="STG_FILE_UPLOAD" id="CC3A6B18-B0D4-FF95-B2C3-18A624A78E6E">
+<createdBy>d.arboittedossantos</createdBy>
+<createdTime>2024-04-12 14:13:27 UTC</createdTime>
+<ownerDesignName>MEDS_SERD</ownerDesignName>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT019</logicalDatatype>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
+<previousColumn>false</previousColumn>
+<autoIncrementCycle>false</autoIncrementCycle>
+<associations>
+<colAssociation fkAssociation="557B2B7C-7716-9B5E-B4DF-399E6C52DA58" referredColumn="11800107-DE90-020F-5AC7-001BBA8A861E"/>
+</associations>
+</Column>
 <Column name="MEDS_JOB_NUMBER" id="E9A3BD18-D1B8-A671-65AB-BF009E2436FC">
 <createdBy>d.arboittedossantos</createdBy>
 <createdTime>2024-04-04 16:04:35 UTC</createdTime>
@@ -767,6 +781,16 @@ If Units code = 1 the corrections are given in imperial units, however all other
 <isSurrogateKey>false</isSurrogateKey>
 <indexColumnUsage>
 <colUsage columnID="1B124D92-6055-F62E-4706-08413235267D"/>
+</indexColumnUsage>
+</ind_PK_UK>
+<ind_PK_UK id="773BE2C0-4A34-24C2-1BD0-2A98DD6B1120" name="SERD_STG_HEADER_STG_FILE_UPLOAD_F">
+<createdBy>d.arboittedossantos</createdBy>
+<createdTime>2024-04-12 14:13:27 UTC</createdTime>
+<ownerDesignName>MEDS_SERD</ownerDesignName>
+<indexState>Foreign Key</indexState>
+<isSurrogateKey>false</isSurrogateKey>
+<indexColumnUsage>
+<colUsage columnID="CC3A6B18-B0D4-FF95-B2C3-18A624A78E6E"/>
 </indexColumnUsage>
 </ind_PK_UK>
 </indexes>

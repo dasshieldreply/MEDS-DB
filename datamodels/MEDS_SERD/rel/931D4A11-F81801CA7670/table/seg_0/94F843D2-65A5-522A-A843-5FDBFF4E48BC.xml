@@ -1,0 +1,108 @@
+<?xml version = '1.0' encoding = 'UTF-8'?>
+<Table class="oracle.dbtools.crest.model.design.relational.Table" directorySegmentName="seg_0" id="94F843D2-65A5-522A-A843-5FDBFF4E48BC" schemaObject="20651223-0797-3CAA-7021-8449492EE83B" name="STG_FILE_UPLOAD">
+<createdBy>d.arboittedossantos</createdBy>
+<createdTime>2024-04-12 13:33:25 UTC</createdTime>
+<ownerDesignName>MEDS_SERD</ownerDesignName>
+<ordsAlias>table_5</ordsAlias>
+<allowColumnReorder>false</allowColumnReorder>
+<existDependencyGenerateInDDl>true</existDependencyGenerateInDDl>
+<parsed>true</parsed>
+<columns itemClass="oracle.dbtools.crest.model.design.relational.Column">
+<Column name="STG_FILE_UPLOAD" id="11800107-DE90-020F-5AC7-001BBA8A861E">
+<createdBy>d.arboittedossantos</createdBy>
+<createdTime>2024-04-12 13:34:44 UTC</createdTime>
+<ownerDesignName>MEDS_SERD</ownerDesignName>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT019</logicalDatatype>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
+<autoIncrementCycle>false</autoIncrementCycle>
+</Column>
+<Column name="FILENAME" id="11265025-8EB6-CB21-2CA1-C17A12B931FD">
+<createdBy>d.arboittedossantos</createdBy>
+<createdTime>2024-04-12 13:41:44 UTC</createdTime>
+<commentInRDBMS><![CDATA[Filename, without path]]></commentInRDBMS>
+<ownerDesignName>MEDS_SERD</ownerDesignName>
+<nullsAllowed>true</nullsAllowed>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT024</logicalDatatype>
+<dataTypeSize>4000</dataTypeSize>
+<ownDataTypeParameters>4000,,</ownDataTypeParameters>
+<autoIncrementCycle>false</autoIncrementCycle>
+</Column>
+<Column name="MIMETYPE" id="901EA13A-90F2-B30B-4C61-77FF134D4D70">
+<createdBy>d.arboittedossantos</createdBy>
+<createdTime>2024-04-12 13:41:44 UTC</createdTime>
+<commentInRDBMS><![CDATA[Mime type]]></commentInRDBMS>
+<ownerDesignName>MEDS_SERD</ownerDesignName>
+<nullsAllowed>true</nullsAllowed>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT024</logicalDatatype>
+<dataTypeSize>512</dataTypeSize>
+<ownDataTypeParameters>512,,</ownDataTypeParameters>
+<autoIncrementCycle>false</autoIncrementCycle>
+</Column>
+<Column name="FILE_SIZE" id="4F328878-D00D-5E01-46B1-0755A8ED1DCB">
+<createdBy>d.arboittedossantos</createdBy>
+<createdTime>2024-04-12 13:41:44 UTC</createdTime>
+<commentInRDBMS><![CDATA[File size in kb]]></commentInRDBMS>
+<ownerDesignName>MEDS_SERD</ownerDesignName>
+<nullsAllowed>true</nullsAllowed>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT019</logicalDatatype>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
+<autoIncrementCycle>false</autoIncrementCycle>
+</Column>
+<Column name="CONTENT" id="497172B8-CFB2-BA47-F6FD-2190DE153985">
+<createdBy>d.arboittedossantos</createdBy>
+<createdTime>2024-04-12 13:41:44 UTC</createdTime>
+<commentInRDBMS><![CDATA[BLOB of file content]]></commentInRDBMS>
+<ownerDesignName>MEDS_SERD</ownerDesignName>
+<nullsAllowed>true</nullsAllowed>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT029</logicalDatatype>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
+<autoIncrementCycle>false</autoIncrementCycle>
+</Column>
+<Column name="DATE_CREATED" id="8C21B34D-976D-25B6-B8CB-AEB774046AE2">
+<createdBy>d.arboittedossantos</createdBy>
+<createdTime>2024-04-12 13:41:44 UTC</createdTime>
+<ownerDesignName>MEDS_SERD</ownerDesignName>
+<nullsAllowed>true</nullsAllowed>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT015</logicalDatatype>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
+<autoIncrementCycle>false</autoIncrementCycle>
+</Column>
+<Column name="CMUSER_CREATED" id="59931207-DE6A-CC4E-FE40-4B5AE777E5D7">
+<createdBy>d.arboittedossantos</createdBy>
+<createdTime>2024-04-12 14:17:16 UTC</createdTime>
+<ownerDesignName>MEDS_SERD</ownerDesignName>
+<nullsAllowed>true</nullsAllowed>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT024</logicalDatatype>
+<dataTypeSize>100</dataTypeSize>
+<ownDataTypeParameters>100,,</ownDataTypeParameters>
+<autoIncrementCycle>false</autoIncrementCycle>
+</Column>
+</columns>
+<indexes itemClass="oracle.dbtools.crest.model.design.relational.Index">
+<ind_PK_UK id="8A254244-FF6B-58FE-C59B-3E06B17E1EA7" name="STG_FILE_UPLOAD_P">
+<createdBy>d.arboittedossantos</createdBy>
+<createdTime>2024-04-12 13:34:44 UTC</createdTime>
+<ownerDesignName>MEDS_SERD</ownerDesignName>
+<pk>true</pk>
+<indexState>Primary Constraint</indexState>
+<isSurrogateKey>false</isSurrogateKey>
+<indexColumnUsage>
+<colUsage columnID="11800107-DE90-020F-5AC7-001BBA8A861E"/>
+</indexColumnUsage>
+</ind_PK_UK>
+</indexes>
+</Table>
