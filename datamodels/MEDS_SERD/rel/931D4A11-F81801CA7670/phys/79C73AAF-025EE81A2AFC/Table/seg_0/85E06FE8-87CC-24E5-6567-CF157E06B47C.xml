@@ -6,6 +6,8 @@
 <schemaObject>20651223-0797-3CAA-7021-8449492EE83B</schemaObject>
 <logging>YES</logging>
 <partitionedRowMovement>DISABLE</partitionedRowMovement>
+<segment>3E06A385-5E5C-26DE-8E1F-3286519803BA</segment>
+<tableSpace>380574C8-F4A5-8566-A9EE-9CE7BDB27C99</tableSpace>
 <temporaryChanged>false</temporaryChanged>
 <user>34521F75-6140-B967-C5AE-9003F0D59F82</user>
 <accessDriverType>oracle_loader</accessDriverType>
@@ -304,15 +306,27 @@
 <tableSpace>380574C8-F4A5-8566-A9EE-9CE7BDB27C99</tableSpace>
 </IndexProxy>
 </indexProxies>
+<foreignKeys>
+<ForeignKey class="oracle.dbtools.crest.model.design.storage.oracle.v10g.FKProxyOraclev10g" name="SERD_STG_HEADER_MEDS_PROCESSING_JOB_F" id="04357ADE-99D2-2FD9-1C6D-E91D80684ABB">
+<createdBy>d.arboittedossantos</createdBy>
+<createdTime>2024-04-15 09:54:26 UTC</createdTime>
+<ownerDesignName>MEDS_SERD</ownerDesignName>
+</ForeignKey>
+<ForeignKey class="oracle.dbtools.crest.model.design.storage.oracle.v10g.FKProxyOraclev10g" name="SERD_STG_HEADER_STG_FILE_F" id="773BE2C0-4A34-24C2-1BD0-2A98DD6B1120">
+<createdBy>d.arboittedossantos</createdBy>
+<createdTime>2024-04-15 09:39:13 UTC</createdTime>
+<ownerDesignName>MEDS_SERD</ownerDesignName>
+</ForeignKey>
+</foreignKeys>
 <primaryKeys>
 <PrimaryKey class="oracle.dbtools.crest.model.design.storage.oracle.v10g.PKProxyOraclev10g" name="SERD_STG_HEADER_P" id="7258652E-38CB-F1E5-84FD-5EBFE2E10DCF">
 <createdBy>d.arboittedossantos</createdBy>
 <createdTime>2024-04-04 17:18:43 UTC</createdTime>
 <ownerDesignName>MEDS_SERD</ownerDesignName>
-<segment>87D2821C-317D-53D0-74F1-14916AB61D6D</segment>
+<segment>A3703CFE-2A29-A98A-0471-ED5C0EB4ACC4</segment>
 <tableSpace>380574C8-F4A5-8566-A9EE-9CE7BDB27C99</tableSpace>
 <existingIndex>C2C39FC0-C0EA-03C4-D5C2-790BCBEAAE5B</existingIndex>
-<indexSegment>87D2821C-317D-53D0-74F1-14916AB61D6D</indexSegment>
+<indexSegment>A3703CFE-2A29-A98A-0471-ED5C0EB4ACC4</indexSegment>
 <indexSort>SORTED</indexSort>
 <usingIndex>BY INDEX NAME</usingIndex>
 </PrimaryKey>

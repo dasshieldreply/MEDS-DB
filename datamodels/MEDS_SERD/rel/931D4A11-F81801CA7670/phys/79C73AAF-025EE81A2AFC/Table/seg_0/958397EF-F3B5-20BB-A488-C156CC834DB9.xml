@@ -1,0 +1,201 @@
+<?xml version = '1.0' encoding = 'UTF-8'?>
+<TableProxyOraclev12c class="oracle.dbtools.crest.model.design.storage.oracle.v12c.TableProxyOraclev12c" name="JOB_TRACKING" directorySegmentName="seg_0" id="958397EF-F3B5-20BB-A488-C156CC834DB9">
+<createdBy>d.arboittedossantos</createdBy>
+<createdTime>2024-04-15 09:51:40 UTC</createdTime>
+<ownerDesignName>MEDS_SERD</ownerDesignName>
+<schemaObject>20651223-0797-3CAA-7021-8449492EE83B</schemaObject>
+<logging>YES</logging>
+<partitionedRowMovement>DISABLE</partitionedRowMovement>
+<segment>1C34D8C5-3983-ECB3-58FC-6C1298CB82F3</segment>
+<tableSpace>380574C8-F4A5-8566-A9EE-9CE7BDB27C99</tableSpace>
+<temporaryChanged>false</temporaryChanged>
+<accessDriverType>oracle_loader</accessDriverType>
+<rejectLimit></rejectLimit>
+<inMemory>NO</inMemory>
+<columnProxies itemClass="oracle.dbtools.crest.model.design.storage.oracle.v12c.ColumnProxyOraclev12c">
+<ColumnProxy name="MEIC_NUMBER" id="025C8937-4FC3-ADCC-D770-40F783E8694F">
+<createdBy>d.arboittedossantos</createdBy>
+<createdTime>2024-04-15 09:51:40 UTC</createdTime>
+<ownerDesignName>MEDS_SERD</ownerDesignName>
+<defaultValue>&quot;MEDSADMIN&quot;.&quot;MEIC_NUMBER_SEQUENCE&quot;.&quot;NEXTVAL&quot;</defaultValue>
+</ColumnProxy>
+<ColumnProxy name="QA_PROCESSING_COMPLETED" id="086ED279-00B6-6C8B-6F36-9E53AD350EBA">
+<createdBy>d.arboittedossantos</createdBy>
+<createdTime>2024-04-15 09:51:40 UTC</createdTime>
+<ownerDesignName>MEDS_SERD</ownerDesignName>
+</ColumnProxy>
+<ColumnProxy name="COLLECTION_START" id="0926289B-81C8-2589-42E9-303975F19664">
+<createdBy>d.arboittedossantos</createdBy>
+<createdTime>2024-04-15 09:51:40 UTC</createdTime>
+<ownerDesignName>MEDS_SERD</ownerDesignName>
+</ColumnProxy>
+<ColumnProxy name="COLLECTION_END" id="112734EB-5FF9-4AA2-4CC9-28F11CF04248">
+<createdBy>d.arboittedossantos</createdBy>
+<createdTime>2024-04-15 09:51:40 UTC</createdTime>
+<ownerDesignName>MEDS_SERD</ownerDesignName>
+</ColumnProxy>
+<ColumnProxy name="DATABASED" id="12D2F5D0-B6E8-4F21-ECFB-9D1797071A47">
+<createdBy>d.arboittedossantos</createdBy>
+<createdTime>2024-04-15 09:51:40 UTC</createdTime>
+<ownerDesignName>MEDS_SERD</ownerDesignName>
+</ColumnProxy>
+<ColumnProxy name="PRIORITY_REGION2" id="1310C50E-F765-E8B1-4150-4C31DF93E3F1">
+<createdBy>d.arboittedossantos</createdBy>
+<createdTime>2024-04-15 09:51:40 UTC</createdTime>
+<ownerDesignName>MEDS_SERD</ownerDesignName>
+</ColumnProxy>
+<ColumnProxy name="PRIORITY_REGION1" id="15FBEBFB-F86D-7745-0DFB-7A0A3C049AD8">
+<createdBy>d.arboittedossantos</createdBy>
+<createdTime>2024-04-15 09:51:40 UTC</createdTime>
+<ownerDesignName>MEDS_SERD</ownerDesignName>
+</ColumnProxy>
+<ColumnProxy name="SUPPLIER" id="1BCA860C-99F5-590D-43DB-51406D9E9E5E">
+<createdBy>d.arboittedossantos</createdBy>
+<createdTime>2024-04-15 09:51:40 UTC</createdTime>
+<ownerDesignName>MEDS_SERD</ownerDesignName>
+</ColumnProxy>
+<ColumnProxy name="QA_PROCESSING_NAME" id="2869AD7B-30AC-1E71-AF01-9DE5A2453165">
+<createdBy>d.arboittedossantos</createdBy>
+<createdTime>2024-04-15 09:51:40 UTC</createdTime>
+<ownerDesignName>MEDS_SERD</ownerDesignName>
+</ColumnProxy>
+<ColumnProxy name="INGRES_NO" id="298F35E7-82B0-FD02-9977-FFEB8AC24F84">
+<createdBy>d.arboittedossantos</createdBy>
+<createdTime>2024-04-15 09:51:40 UTC</createdTime>
+<ownerDesignName>MEDS_SERD</ownerDesignName>
+</ColumnProxy>
+<ColumnProxy name="PRIORITY_REGION6" id="3D97B40E-4387-D38A-DF8E-DEC1CB39498A">
+<createdBy>d.arboittedossantos</createdBy>
+<createdTime>2024-04-15 09:51:40 UTC</createdTime>
+<ownerDesignName>MEDS_SERD</ownerDesignName>
+</ColumnProxy>
+<ColumnProxy name="PRIORITY_REGION5" id="4496ADDD-073E-8CA8-D1F0-81A095EC50B0">
+<createdBy>d.arboittedossantos</createdBy>
+<createdTime>2024-04-15 09:51:40 UTC</createdTime>
+<ownerDesignName>MEDS_SERD</ownerDesignName>
+</ColumnProxy>
+<ColumnProxy name="ACKNOWLEDGE" id="44FB06CB-6D60-A0B6-455A-800B0E1D7A1A">
+<createdBy>d.arboittedossantos</createdBy>
+<createdTime>2024-04-15 09:51:40 UTC</createdTime>
+<ownerDesignName>MEDS_SERD</ownerDesignName>
+</ColumnProxy>
+<ColumnProxy name="DATE_RECEIVED" id="46889C09-DBD9-C3AA-EE0A-6D43097B65A3">
+<createdBy>d.arboittedossantos</createdBy>
+<createdTime>2024-04-15 09:51:40 UTC</createdTime>
+<ownerDesignName>MEDS_SERD</ownerDesignName>
+</ColumnProxy>
+<ColumnProxy name="STATUS" id="48DA80B1-E494-D7A4-B301-24B40F8F88E0">
+<createdBy>d.arboittedossantos</createdBy>
+<createdTime>2024-04-15 09:51:40 UTC</createdTime>
+<ownerDesignName>MEDS_SERD</ownerDesignName>
+</ColumnProxy>
+<ColumnProxy name="DATABASED_NAME" id="523763EA-A4E7-6FED-985D-2848375202D8">
+<createdBy>d.arboittedossantos</createdBy>
+<createdTime>2024-04-15 09:51:40 UTC</createdTime>
+<ownerDesignName>MEDS_SERD</ownerDesignName>
+</ColumnProxy>
+<ColumnProxy name="JOB_DATA_TYPE" id="5C33A2BD-94DD-4A5C-4F90-D7C89EE3A17B">
+<createdBy>d.arboittedossantos</createdBy>
+<createdTime>2024-04-15 09:51:40 UTC</createdTime>
+<ownerDesignName>MEDS_SERD</ownerDesignName>
+</ColumnProxy>
+<ColumnProxy name="QA_PROCESSING_TARGET" id="80EE267D-DFA0-0433-7E00-2C5684DF830A">
+<createdBy>d.arboittedossantos</createdBy>
+<createdTime>2024-04-15 09:51:40 UTC</createdTime>
+<ownerDesignName>MEDS_SERD</ownerDesignName>
+</ColumnProxy>
+<ColumnProxy name="SOURCE" id="851EACCF-B932-AEB6-8F31-4A4D58280B1C">
+<createdBy>d.arboittedossantos</createdBy>
+<createdTime>2024-04-15 09:51:40 UTC</createdTime>
+<ownerDesignName>MEDS_SERD</ownerDesignName>
+</ColumnProxy>
+<ColumnProxy name="ASSIGNED" id="87F70F72-EFC1-F5AE-C8AF-0484BDE4C46B">
+<createdBy>d.arboittedossantos</createdBy>
+<createdTime>2024-04-15 09:51:40 UTC</createdTime>
+<ownerDesignName>MEDS_SERD</ownerDesignName>
+</ColumnProxy>
+<ColumnProxy name="PO_TASK" id="99B8A65D-F19F-0224-E495-C522547FA0E3">
+<createdBy>d.arboittedossantos</createdBy>
+<createdTime>2024-04-15 09:51:40 UTC</createdTime>
+<ownerDesignName>MEDS_SERD</ownerDesignName>
+</ColumnProxy>
+<ColumnProxy name="NO_OBS" id="9F612DC5-B6D4-8591-A1A7-2B46B2240580">
+<createdBy>d.arboittedossantos</createdBy>
+<createdTime>2024-04-15 09:51:40 UTC</createdTime>
+<ownerDesignName>MEDS_SERD</ownerDesignName>
+</ColumnProxy>
+<ColumnProxy name="VALIDATED_NAME" id="A991503F-82D2-BAE2-02E3-BF790A5C117D">
+<createdBy>d.arboittedossantos</createdBy>
+<createdTime>2024-04-15 09:51:40 UTC</createdTime>
+<ownerDesignName>MEDS_SERD</ownerDesignName>
+</ColumnProxy>
+<ColumnProxy name="OBS_REJECTED" id="AD36EECA-CDE9-DAA8-A0B7-4A4981B1E262">
+<createdBy>d.arboittedossantos</createdBy>
+<createdTime>2024-04-15 09:51:40 UTC</createdTime>
+<ownerDesignName>MEDS_SERD</ownerDesignName>
+</ColumnProxy>
+<ColumnProxy name="PRIORITY_REGION3" id="B65F3130-5CEC-192D-0E05-DE8329CBFB65">
+<createdBy>d.arboittedossantos</createdBy>
+<createdTime>2024-04-15 09:51:40 UTC</createdTime>
+<ownerDesignName>MEDS_SERD</ownerDesignName>
+</ColumnProxy>
+<ColumnProxy name="VALIDATED" id="BCD03C98-E390-037D-F795-C680AFBC7A40">
+<createdBy>d.arboittedossantos</createdBy>
+<createdTime>2024-04-15 09:51:40 UTC</createdTime>
+<ownerDesignName>MEDS_SERD</ownerDesignName>
+</ColumnProxy>
+<ColumnProxy name="PRIORITY_REGION4" id="CD6390C8-F429-F7AC-99AA-B900AB7681B3">
+<createdBy>d.arboittedossantos</createdBy>
+<createdTime>2024-04-15 09:51:40 UTC</createdTime>
+<ownerDesignName>MEDS_SERD</ownerDesignName>
+</ColumnProxy>
+<ColumnProxy name="PO_NUMBER" id="DB55C4BC-3C64-EA9C-25DF-38706C2BB388">
+<createdBy>d.arboittedossantos</createdBy>
+<createdTime>2024-04-15 09:51:40 UTC</createdTime>
+<ownerDesignName>MEDS_SERD</ownerDesignName>
+</ColumnProxy>
+<ColumnProxy name="OBS_ACCEPTED" id="DD78DFD2-2642-5B1D-D4D6-9BF280C0508A">
+<createdBy>d.arboittedossantos</createdBy>
+<createdTime>2024-04-15 09:51:40 UTC</createdTime>
+<ownerDesignName>MEDS_SERD</ownerDesignName>
+</ColumnProxy>
+<ColumnProxy name="COMMENTS" id="E2E38BA7-992D-47A7-A457-77426D8FDA14">
+<createdBy>d.arboittedossantos</createdBy>
+<createdTime>2024-04-15 09:51:40 UTC</createdTime>
+<ownerDesignName>MEDS_SERD</ownerDesignName>
+</ColumnProxy>
+<ColumnProxy name="CLASSIFICATION" id="F7A46310-873C-09CB-C920-651BF6B314B7">
+<createdBy>d.arboittedossantos</createdBy>
+<createdTime>2024-04-15 09:51:40 UTC</createdTime>
+<ownerDesignName>MEDS_SERD</ownerDesignName>
+</ColumnProxy>
+<ColumnProxy name="JOB_TYPE_NUMBER" id="F86F8D69-A02C-6369-1B37-D27AB8460811">
+<createdBy>d.arboittedossantos</createdBy>
+<createdTime>2024-04-15 09:51:40 UTC</createdTime>
+<ownerDesignName>MEDS_SERD</ownerDesignName>
+</ColumnProxy>
+</columnProxies>
+<indexProxies>
+<IndexProxy class="oracle.dbtools.crest.model.design.storage.oracle.v10g.IndexProxyOraclev10g" name="PK_JOB_TRACKING" id="7C01AAC3-F5CD-C21F-2340-2E1FC6AADF64">
+<createdBy>d.arboittedossantos</createdBy>
+<createdTime>2024-04-15 09:51:40 UTC</createdTime>
+<ownerDesignName>MEDS_SERD</ownerDesignName>
+<schemaObject>20651223-0797-3CAA-7021-8449492EE83B</schemaObject>
+<segment>A05A241F-C764-A5EC-5093-3CD013F996D6</segment>
+<tableSpace>380574C8-F4A5-8566-A9EE-9CE7BDB27C99</tableSpace>
+</IndexProxy>
+</indexProxies>
+<primaryKeys>
+<PrimaryKey class="oracle.dbtools.crest.model.design.storage.oracle.v10g.PKProxyOraclev10g" name="PK_JOB_TRACKING" id="20016763-82AB-4A61-FA35-1ED1D74DB586">
+<createdBy>d.arboittedossantos</createdBy>
+<createdTime>2024-04-15 09:51:40 UTC</createdTime>
+<ownerDesignName>MEDS_SERD</ownerDesignName>
+<segment>A05A241F-C764-A5EC-5093-3CD013F996D6</segment>
+<tableSpace>380574C8-F4A5-8566-A9EE-9CE7BDB27C99</tableSpace>
+<existingIndex>7C01AAC3-F5CD-C21F-2340-2E1FC6AADF64</existingIndex>
+<indexSegment>A05A241F-C764-A5EC-5093-3CD013F996D6</indexSegment>
+<indexSort>SORTED</indexSort>
+<usingIndex>BY INDEX NAME</usingIndex>
+</PrimaryKey>
+</primaryKeys>
+</TableProxyOraclev12c>

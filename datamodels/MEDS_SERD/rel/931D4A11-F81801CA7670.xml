@@ -11,4 +11,11 @@
 <connType>1</connType>
 <syncSelected>-1</syncSelected>
 </redirectConnectionStamp>
+<importConnectionStamps>
+<importConnectionStamp class="oracle.dbtools.crest.imports.DBConnectionStamp">
+<connName>MEDS ADMIN</connName>
+<connUser>medsadmin</connUser>
+<connType>1</connType>
+</importConnectionStamp>
+</importConnectionStamps>
 </relationalModel>

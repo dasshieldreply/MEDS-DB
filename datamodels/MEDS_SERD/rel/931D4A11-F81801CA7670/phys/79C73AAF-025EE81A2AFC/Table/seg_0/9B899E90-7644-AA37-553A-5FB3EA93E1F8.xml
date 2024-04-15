@@ -6,6 +6,8 @@
 <schemaObject>20651223-0797-3CAA-7021-8449492EE83B</schemaObject>
 <logging>YES</logging>
 <partitionedRowMovement>DISABLE</partitionedRowMovement>
+<segment>3E06A385-5E5C-26DE-8E1F-3286519803BA</segment>
+<tableSpace>380574C8-F4A5-8566-A9EE-9CE7BDB27C99</tableSpace>
 <temporaryChanged>false</temporaryChanged>
 <user>34521F75-6140-B967-C5AE-9003F0D59F82</user>
 <accessDriverType>oracle_loader</accessDriverType>
@@ -56,10 +58,10 @@
 <createdBy>d.arboittedossantos</createdBy>
 <createdTime>2024-04-04 17:18:43 UTC</createdTime>
 <ownerDesignName>MEDS_SERD</ownerDesignName>
-<segment>87D2821C-317D-53D0-74F1-14916AB61D6D</segment>
+<segment>A3703CFE-2A29-A98A-0471-ED5C0EB4ACC4</segment>
 <tableSpace>380574C8-F4A5-8566-A9EE-9CE7BDB27C99</tableSpace>
 <existingIndex>515A9B61-9C1F-E310-C80D-CC2E9965C48B</existingIndex>
-<indexSegment>87D2821C-317D-53D0-74F1-14916AB61D6D</indexSegment>
+<indexSegment>A3703CFE-2A29-A98A-0471-ED5C0EB4ACC4</indexSegment>
 <indexSort>SORTED</indexSort>
 <usingIndex>BY INDEX NAME</usingIndex>
 </PrimaryKey>

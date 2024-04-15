@@ -6,14 +6,11 @@
 <schemaObject>20651223-0797-3CAA-7021-8449492EE83B</schemaObject>
 <logging>YES</logging>
 <partitionedRowMovement>DISABLE</partitionedRowMovement>
-<segment>3E06A385-5E5C-26DE-8E1F-3286519803BA</segment>
-<tableSpace>380574C8-F4A5-8566-A9EE-9CE7BDB27C99</tableSpace>
 <temporaryChanged>false</temporaryChanged>
 <user>34521F75-6140-B967-C5AE-9003F0D59F82</user>
 <accessDriverType>oracle_loader</accessDriverType>
 <rejectLimit></rejectLimit>
 <storeAs>CLOB</storeAs>
-<inMemory>NO</inMemory>
 <columnProxies itemClass="oracle.dbtools.crest.model.design.storage.oracle.v12c.ColumnProxyOraclev12c">
 <ColumnProxy name="FILENAME" id="11265025-8EB6-CB21-2CA1-C17A12B931FD">
 <createdBy>d.arboittedossantos</createdBy>
@@ -33,6 +30,11 @@
 <ColumnProxy name="FILE_SIZE" id="4F328878-D00D-5E01-46B1-0755A8ED1DCB">
 <createdBy>d.arboittedossantos</createdBy>
 <createdTime>2024-04-15 09:39:13 UTC</createdTime>
+<ownerDesignName>MEDS_SERD</ownerDesignName>
+</ColumnProxy>
+<ColumnProxy name="JOB_NUMBER" id="5218F482-ACAE-DCE5-A542-5F24BF5F195C">
+<createdBy>d.arboittedossantos</createdBy>
+<createdTime>2024-04-15 09:55:59 UTC</createdTime>
 <ownerDesignName>MEDS_SERD</ownerDesignName>
 </ColumnProxy>
 <ColumnProxy name="CMUSER_CREATED" id="59931207-DE6A-CC4E-FE40-4B5AE777E5D7">
@@ -62,8 +64,15 @@
 <user>34521F75-6140-B967-C5AE-9003F0D59F82</user>
 </IndexProxy>
 </indexProxies>
+<foreignKeys>
+<ForeignKey class="oracle.dbtools.crest.model.design.storage.oracle.v10g.FKProxyOraclev10g" name="STG_FILE_MEDS_PROCESSING_JOB_F" id="6D06ED7A-2034-1FBE-76FF-433712AE4606">
+<createdBy>d.arboittedossantos</createdBy>
+<createdTime>2024-04-15 09:55:59 UTC</createdTime>
+<ownerDesignName>MEDS_SERD</ownerDesignName>
+</ForeignKey>
+</foreignKeys>
 <lobStorages>
-<LobStorage class="oracle.dbtools.crest.model.design.storage.oracle.v11g.LobStorageOraclev11g" name="SYS_LOB0000543661C00005$$" id="E683BE4E-F453-9FBF-5D10-3B791C6CB3CD">
+<LobStorage class="oracle.dbtools.crest.model.design.storage.oracle.v11g.LobStorageOraclev11g" name="SYS_LOB0000543661C00005$$" id="523640B4-E8A9-B06F-F14B-41FD09C0BA52">
 <createdBy>d.arboittedossantos</createdBy>
 <createdTime>2024-04-15 09:47:16 UTC</createdTime>
 <ownerDesignName>MEDS_SERD</ownerDesignName>
@@ -82,10 +91,10 @@
 <createdBy>d.arboittedossantos</createdBy>
 <createdTime>2024-04-15 09:39:13 UTC</createdTime>
 <ownerDesignName>MEDS_SERD</ownerDesignName>
-<segment>87D2821C-317D-53D0-74F1-14916AB61D6D</segment>
+<segment>A3703CFE-2A29-A98A-0471-ED5C0EB4ACC4</segment>
 <tableSpace>380574C8-F4A5-8566-A9EE-9CE7BDB27C99</tableSpace>
 <existingIndex>ABC7517C-B9BD-6B4B-E37B-B9EDDDE86737</existingIndex>
-<indexSegment>87D2821C-317D-53D0-74F1-14916AB61D6D</indexSegment>
+<indexSegment>A3703CFE-2A29-A98A-0471-ED5C0EB4ACC4</indexSegment>
 <indexSort>SORTED</indexSort>
 <usingIndex>BY INDEX NAME</usingIndex>
 </PrimaryKey>

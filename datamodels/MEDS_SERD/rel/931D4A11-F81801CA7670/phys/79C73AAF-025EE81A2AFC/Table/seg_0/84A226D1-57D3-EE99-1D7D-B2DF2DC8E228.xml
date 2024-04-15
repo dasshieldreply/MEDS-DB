@@ -6,6 +6,8 @@
 <schemaObject>20651223-0797-3CAA-7021-8449492EE83B</schemaObject>
 <logging>YES</logging>
 <partitionedRowMovement>DISABLE</partitionedRowMovement>
+<segment>FD7E7110-54CE-CE02-473E-94CD6E2CDF33</segment>
+<tableSpace>380574C8-F4A5-8566-A9EE-9CE7BDB27C99</tableSpace>
 <temporaryChanged>false</temporaryChanged>
 <user>34521F75-6140-B967-C5AE-9003F0D59F82</user>
 <accessDriverType>oracle_loader</accessDriverType>
@@ -34,12 +36,37 @@
 <ownerDesignName>MEDS_SERD</ownerDesignName>
 </ColumnProxy>
 </columnProxies>
+<indexProxies>
+<IndexProxy class="oracle.dbtools.crest.model.design.storage.oracle.v10g.IndexProxyOraclev10g" name="SERD_CODE_LOOKUP_P" id="4E5D59BF-A50C-C6AE-DC3F-065A732C09A9">
+<createdBy>d.arboittedossantos</createdBy>
+<createdTime>2024-04-15 09:51:40 UTC</createdTime>
+<ownerDesignName>MEDS_SERD</ownerDesignName>
+<schemaObject>20651223-0797-3CAA-7021-8449492EE83B</schemaObject>
+<segment>A05A241F-C764-A5EC-5093-3CD013F996D6</segment>
+<tableSpace>380574C8-F4A5-8566-A9EE-9CE7BDB27C99</tableSpace>
+<user>34521F75-6140-B967-C5AE-9003F0D59F82</user>
+</IndexProxy>
+<IndexProxy class="oracle.dbtools.crest.model.design.storage.oracle.v10g.IndexProxyOraclev10g" name="SERD_CODE_LOOKUP_VALUE_U" id="A79D2B3B-3E94-8D86-45FC-D9A3A2306ABC">
+<createdBy>d.arboittedossantos</createdBy>
+<createdTime>2024-04-15 09:51:40 UTC</createdTime>
+<ownerDesignName>MEDS_SERD</ownerDesignName>
+<schemaObject>20651223-0797-3CAA-7021-8449492EE83B</schemaObject>
+<segment>A05A241F-C764-A5EC-5093-3CD013F996D6</segment>
+<tableSpace>380574C8-F4A5-8566-A9EE-9CE7BDB27C99</tableSpace>
+<user>34521F75-6140-B967-C5AE-9003F0D59F82</user>
+</IndexProxy>
+</indexProxies>
 <primaryKeys>
 <PrimaryKey class="oracle.dbtools.crest.model.design.storage.oracle.v10g.PKProxyOraclev10g" name="SERD_CODE_LOOKUP_P" id="5869AD6B-D53B-BCB2-2CC2-9B12660DD999">
 <createdBy>d.arboittedossantos</createdBy>
 <createdTime>2024-04-05 10:35:55 UTC</createdTime>
 <ownerDesignName>MEDS_SERD</ownerDesignName>
+<segment>BCF47C1C-6636-8240-7ED1-D91B7217835F</segment>
+<tableSpace>380574C8-F4A5-8566-A9EE-9CE7BDB27C99</tableSpace>
+<existingIndex>4E5D59BF-A50C-C6AE-DC3F-065A732C09A9</existingIndex>
+<indexSegment>BCF47C1C-6636-8240-7ED1-D91B7217835F</indexSegment>
 <indexSort>SORTED</indexSort>
+<usingIndex>BY INDEX NAME</usingIndex>
 </PrimaryKey>
 </primaryKeys>
 <uniqueKeys>
@@ -47,7 +74,12 @@
 <createdBy>d.arboittedossantos</createdBy>
 <createdTime>2024-04-05 10:36:20 UTC</createdTime>
 <ownerDesignName>MEDS_SERD</ownerDesignName>
+<segment>BCF47C1C-6636-8240-7ED1-D91B7217835F</segment>
+<tableSpace>380574C8-F4A5-8566-A9EE-9CE7BDB27C99</tableSpace>
+<existingIndex>A79D2B3B-3E94-8D86-45FC-D9A3A2306ABC</existingIndex>
+<indexSegment>BCF47C1C-6636-8240-7ED1-D91B7217835F</indexSegment>
 <indexSort>SORTED</indexSort>
+<usingIndex>BY INDEX NAME</usingIndex>
 </UniqueKey>
 </uniqueKeys>
 </TableProxyOraclev12c>

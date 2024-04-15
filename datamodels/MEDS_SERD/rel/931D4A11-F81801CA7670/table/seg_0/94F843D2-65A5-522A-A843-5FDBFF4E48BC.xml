@@ -1,5 +1,8 @@
 <?xml version = '1.0' encoding = 'UTF-8'?>
 <Table class="oracle.dbtools.crest.model.design.relational.Table" directorySegmentName="seg_0" id="94F843D2-65A5-522A-A843-5FDBFF4E48BC" schemaObject="20651223-0797-3CAA-7021-8449492EE83B" name="STG_FILE">
+<sourceConnName>MEDS ADMIN</sourceConnName>
+<sourceObjSchema>MEDSADMIN</sourceObjSchema>
+<sourceObjName>STG_FILE</sourceObjName>
 <createdBy>d.arboittedossantos</createdBy>
 <createdTime>2024-04-12 13:33:25 UTC</createdTime>
 <ownerDesignName>MEDS_SERD</ownerDesignName>
@@ -17,6 +20,20 @@
 <logicalDatatype>LOGDT019</logicalDatatype>
 <ownDataTypeParameters>,,</ownDataTypeParameters>
 <autoIncrementCycle>false</autoIncrementCycle>
+</Column>
+<Column name="JOB_NUMBER" id="5218F482-ACAE-DCE5-A542-5F24BF5F195C">
+<createdBy>d.arboittedossantos</createdBy>
+<createdTime>2024-04-15 09:55:59 UTC</createdTime>
+<ownerDesignName>MEDS_SERD</ownerDesignName>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT019</logicalDatatype>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
+<previousColumn>false</previousColumn>
+<autoIncrementCycle>false</autoIncrementCycle>
+<associations>
+<colAssociation fkAssociation="C89361D2-F74D-42C1-2531-E9C855BECDC4" referredColumn="1B216CF3-9A69-389E-5346-F24B4F3E3E13"/>
+</associations>
 </Column>
 <Column name="FILENAME" id="11265025-8EB6-CB21-2CA1-C17A12B931FD">
 <createdBy>d.arboittedossantos</createdBy>
@@ -72,7 +89,6 @@
 <createdBy>d.arboittedossantos</createdBy>
 <createdTime>2024-04-12 13:41:44 UTC</createdTime>
 <ownerDesignName>MEDS_SERD</ownerDesignName>
-<nullsAllowed>true</nullsAllowed>
 <useDomainConstraints>false</useDomainConstraints>
 <use>1</use>
 <logicalDatatype>LOGDT015</logicalDatatype>
@@ -113,6 +129,16 @@
 <isSurrogateKey>false</isSurrogateKey>
 <indexColumnUsage>
 <colUsage columnID="11800107-DE90-020F-5AC7-001BBA8A861E"/>
+</indexColumnUsage>
+</ind_PK_UK>
+<ind_PK_UK id="6D06ED7A-2034-1FBE-76FF-433712AE4606" name="STG_FILE_MEDS_PROCESSING_JOB_F">
+<createdBy>d.arboittedossantos</createdBy>
+<createdTime>2024-04-15 09:55:59 UTC</createdTime>
+<ownerDesignName>MEDS_SERD</ownerDesignName>
+<indexState>Foreign Key</indexState>
+<isSurrogateKey>false</isSurrogateKey>
+<indexColumnUsage>
+<colUsage columnID="5218F482-ACAE-DCE5-A542-5F24BF5F195C"/>
 </indexColumnUsage>
 </ind_PK_UK>
 </indexes>
