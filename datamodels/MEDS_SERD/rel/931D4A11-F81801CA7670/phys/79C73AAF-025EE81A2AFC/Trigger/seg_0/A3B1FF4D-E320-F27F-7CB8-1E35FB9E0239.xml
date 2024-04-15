@@ -1,0 +1,15 @@
+<?xml version = '1.0' encoding = 'UTF-8'?>
+<TriggerOraclev10g class="oracle.dbtools.crest.model.design.storage.oracle.v10g.TriggerOraclev10g" name="BI_STG_FILE_ROW" directorySegmentName="seg_0" id="A3B1FF4D-E320-F27F-7CB8-1E35FB9E0239">
+<createdBy>d.arboittedossantos</createdBy>
+<createdTime>2024-04-15 09:46:45 UTC</createdTime>
+<ownerDesignName>MEDS_SERD</ownerDesignName>
+<actions>INSERT</actions>
+<body><![CDATA[begin
+   if :new.STG_FILE_ROW is null then
+      :new.STG_FILE_ROW := to_number(sys_guid(),'xxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxx');
+   end if;
+end bi_stg_file_row;]]></body>
+<triggerTime>BEFORE</triggerTime>
+<owner>34521F75-6140-B967-C5AE-9003F0D59F82</owner>
+<table>E6959608-8A42-3C6A-83AC-27964A801390</table>
+</TriggerOraclev10g>

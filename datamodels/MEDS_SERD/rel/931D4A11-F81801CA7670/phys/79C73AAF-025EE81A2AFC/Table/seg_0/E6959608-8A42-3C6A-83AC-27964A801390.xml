@@ -1,0 +1,560 @@
+<?xml version = '1.0' encoding = 'UTF-8'?>
+<TableProxyOraclev12c class="oracle.dbtools.crest.model.design.storage.oracle.v12c.TableProxyOraclev12c" name="STG_FILE_ROW" directorySegmentName="seg_0" id="E6959608-8A42-3C6A-83AC-27964A801390">
+<createdBy>d.arboittedossantos</createdBy>
+<createdTime>2024-04-15 09:39:13 UTC</createdTime>
+<ownerDesignName>MEDS_SERD</ownerDesignName>
+<schemaObject>20651223-0797-3CAA-7021-8449492EE83B</schemaObject>
+<logging>YES</logging>
+<partitionedRowMovement>DISABLE</partitionedRowMovement>
+<segment>3E06A385-5E5C-26DE-8E1F-3286519803BA</segment>
+<tableSpace>380574C8-F4A5-8566-A9EE-9CE7BDB27C99</tableSpace>
+<temporaryChanged>false</temporaryChanged>
+<user>34521F75-6140-B967-C5AE-9003F0D59F82</user>
+<accessDriverType>oracle_loader</accessDriverType>
+<rejectLimit></rejectLimit>
+<storeAs>CLOB</storeAs>
+<inMemory>NO</inMemory>
+<columnProxies itemClass="oracle.dbtools.crest.model.design.storage.oracle.v12c.ColumnProxyOraclev12c">
+<ColumnProxy name="COL028" id="0080FE1A-6F5D-1684-1A16-DEDD37224117">
+<createdBy>d.arboittedossantos</createdBy>
+<createdTime>2024-04-15 09:39:13 UTC</createdTime>
+<ownerDesignName>MEDS_SERD</ownerDesignName>
+</ColumnProxy>
+<ColumnProxy name="COL072" id="018C41F3-7B29-37B9-11A7-C41FBB7D75A9">
+<createdBy>d.arboittedossantos</createdBy>
+<createdTime>2024-04-15 09:39:13 UTC</createdTime>
+<ownerDesignName>MEDS_SERD</ownerDesignName>
+</ColumnProxy>
+<ColumnProxy name="COL061" id="087D8171-FA2D-9C7B-4A8F-0E694EF3AB67">
+<createdBy>d.arboittedossantos</createdBy>
+<createdTime>2024-04-15 09:39:13 UTC</createdTime>
+<ownerDesignName>MEDS_SERD</ownerDesignName>
+</ColumnProxy>
+<ColumnProxy name="COL054" id="0B26C9D4-7D17-9F10-A148-A30D827713E6">
+<createdBy>d.arboittedossantos</createdBy>
+<createdTime>2024-04-15 09:39:13 UTC</createdTime>
+<ownerDesignName>MEDS_SERD</ownerDesignName>
+</ColumnProxy>
+<ColumnProxy name="COL078" id="0BE77C7E-E064-C7EF-6FF6-E3D70A310E8A">
+<createdBy>d.arboittedossantos</createdBy>
+<createdTime>2024-04-15 09:39:13 UTC</createdTime>
+<ownerDesignName>MEDS_SERD</ownerDesignName>
+</ColumnProxy>
+<ColumnProxy name="COL091" id="0CFBDC19-FD98-2CA4-84A1-78661BFDB9F7">
+<createdBy>d.arboittedossantos</createdBy>
+<createdTime>2024-04-15 09:39:13 UTC</createdTime>
+<ownerDesignName>MEDS_SERD</ownerDesignName>
+</ColumnProxy>
+<ColumnProxy name="COL087" id="10FE6B5D-D250-B06B-38CF-9CD0B0FA548C">
+<createdBy>d.arboittedossantos</createdBy>
+<createdTime>2024-04-15 09:39:13 UTC</createdTime>
+<ownerDesignName>MEDS_SERD</ownerDesignName>
+</ColumnProxy>
+<ColumnProxy name="COL029" id="1670D75B-FD54-9535-E1BB-DDD254C4C4C4">
+<createdBy>d.arboittedossantos</createdBy>
+<createdTime>2024-04-15 09:39:13 UTC</createdTime>
+<ownerDesignName>MEDS_SERD</ownerDesignName>
+</ColumnProxy>
+<ColumnProxy name="COL051" id="172547B0-2398-236B-D4C4-055E6F50CDAF">
+<createdBy>d.arboittedossantos</createdBy>
+<createdTime>2024-04-15 09:39:13 UTC</createdTime>
+<ownerDesignName>MEDS_SERD</ownerDesignName>
+</ColumnProxy>
+<ColumnProxy name="COL055" id="19D37790-453F-E37F-4A48-E3AD00CC87D3">
+<createdBy>d.arboittedossantos</createdBy>
+<createdTime>2024-04-15 09:39:13 UTC</createdTime>
+<ownerDesignName>MEDS_SERD</ownerDesignName>
+</ColumnProxy>
+<ColumnProxy name="COL059" id="1DBE0459-E5BF-99A0-B6CA-86848CFFAD79">
+<createdBy>d.arboittedossantos</createdBy>
+<createdTime>2024-04-15 09:39:13 UTC</createdTime>
+<ownerDesignName>MEDS_SERD</ownerDesignName>
+</ColumnProxy>
+<ColumnProxy name="COL011" id="204B1BCF-54E1-6207-5DD2-76CA58C404FE">
+<createdBy>d.arboittedossantos</createdBy>
+<createdTime>2024-04-15 09:39:13 UTC</createdTime>
+<ownerDesignName>MEDS_SERD</ownerDesignName>
+</ColumnProxy>
+<ColumnProxy name="COL048" id="20FF0C65-9E4D-E994-05DD-3D9E925AF790">
+<createdBy>d.arboittedossantos</createdBy>
+<createdTime>2024-04-15 09:39:13 UTC</createdTime>
+<ownerDesignName>MEDS_SERD</ownerDesignName>
+</ColumnProxy>
+<ColumnProxy name="COL017" id="22C037AF-4B51-F4EA-7602-DE310CFE4F48">
+<createdBy>d.arboittedossantos</createdBy>
+<createdTime>2024-04-15 09:39:13 UTC</createdTime>
+<ownerDesignName>MEDS_SERD</ownerDesignName>
+</ColumnProxy>
+<ColumnProxy name="COL006" id="26E3EB72-6945-C756-B093-8376EBE2B051">
+<createdBy>d.arboittedossantos</createdBy>
+<createdTime>2024-04-15 09:39:13 UTC</createdTime>
+<ownerDesignName>MEDS_SERD</ownerDesignName>
+</ColumnProxy>
+<ColumnProxy name="COL098" id="2AD43F10-B56A-8666-E536-87BEA189F98E">
+<createdBy>d.arboittedossantos</createdBy>
+<createdTime>2024-04-15 09:39:13 UTC</createdTime>
+<ownerDesignName>MEDS_SERD</ownerDesignName>
+</ColumnProxy>
+<ColumnProxy name="COL052" id="304FB0A2-32C8-171C-5325-D38DF5553509">
+<createdBy>d.arboittedossantos</createdBy>
+<createdTime>2024-04-15 09:39:13 UTC</createdTime>
+<ownerDesignName>MEDS_SERD</ownerDesignName>
+</ColumnProxy>
+<ColumnProxy name="COL001" id="35E34CA8-5866-79FD-5EE5-66C1E1C0ED27">
+<createdBy>d.arboittedossantos</createdBy>
+<createdTime>2024-04-15 09:39:13 UTC</createdTime>
+<ownerDesignName>MEDS_SERD</ownerDesignName>
+</ColumnProxy>
+<ColumnProxy name="COL045" id="37694528-8FC1-E966-4420-A5323FB5F572">
+<createdBy>d.arboittedossantos</createdBy>
+<createdTime>2024-04-15 09:39:13 UTC</createdTime>
+<ownerDesignName>MEDS_SERD</ownerDesignName>
+</ColumnProxy>
+<ColumnProxy name="COL003" id="39013B69-40AC-D1CB-29AF-3C81664B385F">
+<createdBy>d.arboittedossantos</createdBy>
+<createdTime>2024-04-15 09:39:13 UTC</createdTime>
+<ownerDesignName>MEDS_SERD</ownerDesignName>
+</ColumnProxy>
+<ColumnProxy name="COL021" id="3B1BBEFC-646D-5950-84C1-94E0FAE7A1D3">
+<createdBy>d.arboittedossantos</createdBy>
+<createdTime>2024-04-15 09:39:13 UTC</createdTime>
+<ownerDesignName>MEDS_SERD</ownerDesignName>
+</ColumnProxy>
+<ColumnProxy name="COL069" id="3EE8BDBF-BFCE-0109-2B1E-0E2E5E3F7E5A">
+<createdBy>d.arboittedossantos</createdBy>
+<createdTime>2024-04-15 09:39:13 UTC</createdTime>
+<ownerDesignName>MEDS_SERD</ownerDesignName>
+</ColumnProxy>
+<ColumnProxy name="COL010" id="41526893-5B48-8FAC-0933-D8F38143EA96">
+<createdBy>d.arboittedossantos</createdBy>
+<createdTime>2024-04-15 09:39:13 UTC</createdTime>
+<ownerDesignName>MEDS_SERD</ownerDesignName>
+</ColumnProxy>
+<ColumnProxy name="COL034" id="46230B74-1568-6170-3B91-FACBEDD8B8E7">
+<createdBy>d.arboittedossantos</createdBy>
+<createdTime>2024-04-15 09:39:13 UTC</createdTime>
+<ownerDesignName>MEDS_SERD</ownerDesignName>
+</ColumnProxy>
+<ColumnProxy name="COL014" id="4C5740BB-C1E5-0C4A-8A28-2F6236D955AE">
+<createdBy>d.arboittedossantos</createdBy>
+<createdTime>2024-04-15 09:39:13 UTC</createdTime>
+<ownerDesignName>MEDS_SERD</ownerDesignName>
+</ColumnProxy>
+<ColumnProxy name="COL095" id="4DFFB705-1D2C-D2A9-69D3-19E51670799E">
+<createdBy>d.arboittedossantos</createdBy>
+<createdTime>2024-04-15 09:39:13 UTC</createdTime>
+<ownerDesignName>MEDS_SERD</ownerDesignName>
+</ColumnProxy>
+<ColumnProxy name="COL047" id="5169C9DF-4881-E6BC-16CF-01F5F800E98D">
+<createdBy>d.arboittedossantos</createdBy>
+<createdTime>2024-04-15 09:39:13 UTC</createdTime>
+<ownerDesignName>MEDS_SERD</ownerDesignName>
+</ColumnProxy>
+<ColumnProxy name="COL083" id="56F34BEF-34DB-B0DB-A533-7E38EF04D057">
+<createdBy>d.arboittedossantos</createdBy>
+<createdTime>2024-04-15 09:39:13 UTC</createdTime>
+<ownerDesignName>MEDS_SERD</ownerDesignName>
+</ColumnProxy>
+<ColumnProxy name="COL075" id="59376ED2-111C-703E-D104-E179D8804F3C">
+<createdBy>d.arboittedossantos</createdBy>
+<createdTime>2024-04-15 09:39:13 UTC</createdTime>
+<ownerDesignName>MEDS_SERD</ownerDesignName>
+</ColumnProxy>
+<ColumnProxy name="COL062" id="5A43B223-D4B2-EABD-E2C8-2324B5B41428">
+<createdBy>d.arboittedossantos</createdBy>
+<createdTime>2024-04-15 09:39:13 UTC</createdTime>
+<ownerDesignName>MEDS_SERD</ownerDesignName>
+</ColumnProxy>
+<ColumnProxy name="COL049" id="5AB1138B-077A-2E8A-4303-56B1DC010AA1">
+<createdBy>d.arboittedossantos</createdBy>
+<createdTime>2024-04-15 09:39:13 UTC</createdTime>
+<ownerDesignName>MEDS_SERD</ownerDesignName>
+</ColumnProxy>
+<ColumnProxy name="COL073" id="5EB3DF51-3A02-B747-2231-258160DED54F">
+<createdBy>d.arboittedossantos</createdBy>
+<createdTime>2024-04-15 09:39:13 UTC</createdTime>
+<ownerDesignName>MEDS_SERD</ownerDesignName>
+</ColumnProxy>
+<ColumnProxy name="COL100" id="60B4F0F4-5636-2DD3-509B-444411BDEFB2">
+<createdBy>d.arboittedossantos</createdBy>
+<createdTime>2024-04-15 09:39:13 UTC</createdTime>
+<ownerDesignName>MEDS_SERD</ownerDesignName>
+</ColumnProxy>
+<ColumnProxy name="COL012" id="612D7CC1-8677-63DB-9EED-8CE77B9D23DB">
+<createdBy>d.arboittedossantos</createdBy>
+<createdTime>2024-04-15 09:39:13 UTC</createdTime>
+<ownerDesignName>MEDS_SERD</ownerDesignName>
+</ColumnProxy>
+<ColumnProxy name="COL089" id="6307F021-1FD1-0BDE-C4E9-9467B6B3E17B">
+<createdBy>d.arboittedossantos</createdBy>
+<createdTime>2024-04-15 09:39:13 UTC</createdTime>
+<ownerDesignName>MEDS_SERD</ownerDesignName>
+</ColumnProxy>
+<ColumnProxy name="COL080" id="67BAB86D-3E48-5F9E-14EF-48BFC5D3A71D">
+<createdBy>d.arboittedossantos</createdBy>
+<createdTime>2024-04-15 09:39:13 UTC</createdTime>
+<ownerDesignName>MEDS_SERD</ownerDesignName>
+</ColumnProxy>
+<ColumnProxy name="COL090" id="69B1A280-BCE1-87BB-CC6B-605A1818A531">
+<createdBy>d.arboittedossantos</createdBy>
+<createdTime>2024-04-15 09:39:13 UTC</createdTime>
+<ownerDesignName>MEDS_SERD</ownerDesignName>
+</ColumnProxy>
+<ColumnProxy name="COL042" id="6CEDF8D5-9B1A-BE61-F1F3-77BF0C5FDCDA">
+<createdBy>d.arboittedossantos</createdBy>
+<createdTime>2024-04-15 09:39:13 UTC</createdTime>
+<ownerDesignName>MEDS_SERD</ownerDesignName>
+</ColumnProxy>
+<ColumnProxy name="COL079" id="73053CA7-8B06-74F2-9EFB-F3E8DAF0A0DC">
+<createdBy>d.arboittedossantos</createdBy>
+<createdTime>2024-04-15 09:39:13 UTC</createdTime>
+<ownerDesignName>MEDS_SERD</ownerDesignName>
+</ColumnProxy>
+<ColumnProxy name="COL016" id="7381A443-21DA-10AE-22A5-5BF63526712C">
+<createdBy>d.arboittedossantos</createdBy>
+<createdTime>2024-04-15 09:39:13 UTC</createdTime>
+<ownerDesignName>MEDS_SERD</ownerDesignName>
+</ColumnProxy>
+<ColumnProxy name="COL038" id="7473F227-2772-966A-A08F-673A39F6F86B">
+<createdBy>d.arboittedossantos</createdBy>
+<createdTime>2024-04-15 09:39:13 UTC</createdTime>
+<ownerDesignName>MEDS_SERD</ownerDesignName>
+</ColumnProxy>
+<ColumnProxy name="COL056" id="762D0F8C-2C69-9F25-53D6-64808A33085C">
+<createdBy>d.arboittedossantos</createdBy>
+<createdTime>2024-04-15 09:39:13 UTC</createdTime>
+<ownerDesignName>MEDS_SERD</ownerDesignName>
+</ColumnProxy>
+<ColumnProxy name="COL033" id="7707BCF5-ED5A-7946-85C1-4DED9DF66C4D">
+<createdBy>d.arboittedossantos</createdBy>
+<createdTime>2024-04-15 09:39:13 UTC</createdTime>
+<ownerDesignName>MEDS_SERD</ownerDesignName>
+</ColumnProxy>
+<ColumnProxy name="COL002" id="7C39D47C-067D-29DF-91EF-A96103A6946F">
+<createdBy>d.arboittedossantos</createdBy>
+<createdTime>2024-04-15 09:39:13 UTC</createdTime>
+<ownerDesignName>MEDS_SERD</ownerDesignName>
+</ColumnProxy>
+<ColumnProxy name="COL043" id="7EED0F56-93EA-A99D-BE67-FEE6344AE310">
+<createdBy>d.arboittedossantos</createdBy>
+<createdTime>2024-04-15 09:39:13 UTC</createdTime>
+<ownerDesignName>MEDS_SERD</ownerDesignName>
+</ColumnProxy>
+<ColumnProxy name="COL058" id="7FC5F891-17BE-91CE-885A-E15AF62E3596">
+<createdBy>d.arboittedossantos</createdBy>
+<createdTime>2024-04-15 09:39:13 UTC</createdTime>
+<ownerDesignName>MEDS_SERD</ownerDesignName>
+</ColumnProxy>
+<ColumnProxy name="COL031" id="846C98C9-827A-E3EB-CCE0-AA920B916E2C">
+<createdBy>d.arboittedossantos</createdBy>
+<createdTime>2024-04-15 09:39:13 UTC</createdTime>
+<ownerDesignName>MEDS_SERD</ownerDesignName>
+</ColumnProxy>
+<ColumnProxy name="COL035" id="87F3DCE3-2C12-6073-E4B2-A92C12D5FDFC">
+<createdBy>d.arboittedossantos</createdBy>
+<createdTime>2024-04-15 09:39:13 UTC</createdTime>
+<ownerDesignName>MEDS_SERD</ownerDesignName>
+</ColumnProxy>
+<ColumnProxy name="COL039" id="8A7E00BA-9F02-B605-A486-6D8DF6D6CACC">
+<createdBy>d.arboittedossantos</createdBy>
+<createdTime>2024-04-15 09:39:13 UTC</createdTime>
+<ownerDesignName>MEDS_SERD</ownerDesignName>
+</ColumnProxy>
+<ColumnProxy name="COL025" id="8C31EF22-3D2B-2DEF-7EBC-902EA65BD1F0">
+<createdBy>d.arboittedossantos</createdBy>
+<createdTime>2024-04-15 09:39:13 UTC</createdTime>
+<ownerDesignName>MEDS_SERD</ownerDesignName>
+</ColumnProxy>
+<ColumnProxy name="COL022" id="8CC818AB-9547-D477-F160-B07A8F02807B">
+<createdBy>d.arboittedossantos</createdBy>
+<createdTime>2024-04-15 09:39:13 UTC</createdTime>
+<ownerDesignName>MEDS_SERD</ownerDesignName>
+</ColumnProxy>
+<ColumnProxy name="COL070" id="8D20751F-89E9-6F7F-7B1E-BE4F024E3EF7">
+<createdBy>d.arboittedossantos</createdBy>
+<createdTime>2024-04-15 09:39:13 UTC</createdTime>
+<ownerDesignName>MEDS_SERD</ownerDesignName>
+</ColumnProxy>
+<ColumnProxy name="COL007" id="8ED673FC-0BE4-66AB-8344-AF59C3FAAC07">
+<createdBy>d.arboittedossantos</createdBy>
+<createdTime>2024-04-15 09:39:13 UTC</createdTime>
+<ownerDesignName>MEDS_SERD</ownerDesignName>
+</ColumnProxy>
+<ColumnProxy name="COL018" id="9349813D-EF00-B66B-9A80-3823E5304B57">
+<createdBy>d.arboittedossantos</createdBy>
+<createdTime>2024-04-15 09:39:13 UTC</createdTime>
+<ownerDesignName>MEDS_SERD</ownerDesignName>
+</ColumnProxy>
+<ColumnProxy name="COL050" id="93C8FE02-EAA2-2704-147F-FAC735D86A27">
+<createdBy>d.arboittedossantos</createdBy>
+<createdTime>2024-04-15 09:39:13 UTC</createdTime>
+<ownerDesignName>MEDS_SERD</ownerDesignName>
+</ColumnProxy>
+<ColumnProxy name="COL044" id="945505A1-54CF-1F37-5757-1F6F24E4BAE9">
+<createdBy>d.arboittedossantos</createdBy>
+<createdTime>2024-04-15 09:39:13 UTC</createdTime>
+<ownerDesignName>MEDS_SERD</ownerDesignName>
+</ColumnProxy>
+<ColumnProxy name="COL005" id="950924E6-9FFD-0F4E-137C-DCB3F4C92429">
+<createdBy>d.arboittedossantos</createdBy>
+<createdTime>2024-04-15 09:39:13 UTC</createdTime>
+<ownerDesignName>MEDS_SERD</ownerDesignName>
+</ColumnProxy>
+<ColumnProxy name="COL032" id="964CC10F-64D5-1872-0369-CCFA79EB625A">
+<createdBy>d.arboittedossantos</createdBy>
+<createdTime>2024-04-15 09:39:13 UTC</createdTime>
+<ownerDesignName>MEDS_SERD</ownerDesignName>
+</ColumnProxy>
+<ColumnProxy name="COL085" id="9851D1A7-9561-388C-9F59-8FF1CC7D37AB">
+<createdBy>d.arboittedossantos</createdBy>
+<createdTime>2024-04-15 09:39:13 UTC</createdTime>
+<ownerDesignName>MEDS_SERD</ownerDesignName>
+</ColumnProxy>
+<ColumnProxy name="COL019" id="9AC8EE87-FD74-ABB1-117A-51ED399D5975">
+<createdBy>d.arboittedossantos</createdBy>
+<createdTime>2024-04-15 09:39:13 UTC</createdTime>
+<ownerDesignName>MEDS_SERD</ownerDesignName>
+</ColumnProxy>
+<ColumnProxy name="COL082" id="9F103486-6A07-BED5-B589-26DCC0E6F672">
+<createdBy>d.arboittedossantos</createdBy>
+<createdTime>2024-04-15 09:39:13 UTC</createdTime>
+<ownerDesignName>MEDS_SERD</ownerDesignName>
+</ColumnProxy>
+<ColumnProxy name="COL097" id="A7F07816-7EA3-EEC9-6537-4FABFBB2C62F">
+<createdBy>d.arboittedossantos</createdBy>
+<createdTime>2024-04-15 09:39:13 UTC</createdTime>
+<ownerDesignName>MEDS_SERD</ownerDesignName>
+</ColumnProxy>
+<ColumnProxy name="COL076" id="AC9D3A77-6639-514D-5B37-A2460BE980C4">
+<createdBy>d.arboittedossantos</createdBy>
+<createdTime>2024-04-15 09:39:13 UTC</createdTime>
+<ownerDesignName>MEDS_SERD</ownerDesignName>
+</ColumnProxy>
+<ColumnProxy name="COL036" id="ACCEAFE3-8858-1951-7591-297D755B3AA5">
+<createdBy>d.arboittedossantos</createdBy>
+<createdTime>2024-04-15 09:39:13 UTC</createdTime>
+<ownerDesignName>MEDS_SERD</ownerDesignName>
+</ColumnProxy>
+<ColumnProxy name="COL077" id="ACF0DD08-EF3C-3195-E3E7-9870091667A3">
+<createdBy>d.arboittedossantos</createdBy>
+<createdTime>2024-04-15 09:39:13 UTC</createdTime>
+<ownerDesignName>MEDS_SERD</ownerDesignName>
+</ColumnProxy>
+<ColumnProxy name="COL099" id="AD2D4367-EDFC-DECC-1437-470AEE16BFCF">
+<createdBy>d.arboittedossantos</createdBy>
+<createdTime>2024-04-15 09:39:13 UTC</createdTime>
+<ownerDesignName>MEDS_SERD</ownerDesignName>
+</ColumnProxy>
+<ColumnProxy name="COL026" id="AF5D35C0-0D3D-F981-8E55-E29C28A0D271">
+<createdBy>d.arboittedossantos</createdBy>
+<createdTime>2024-04-15 09:39:13 UTC</createdTime>
+<ownerDesignName>MEDS_SERD</ownerDesignName>
+</ColumnProxy>
+<ColumnProxy name="COL020" id="B081AB00-8267-A179-B2F0-8206722BF317">
+<createdBy>d.arboittedossantos</createdBy>
+<createdTime>2024-04-15 09:39:13 UTC</createdTime>
+<ownerDesignName>MEDS_SERD</ownerDesignName>
+</ColumnProxy>
+<ColumnProxy name="COL092" id="B2ED03A2-C859-457A-3803-0D185A42BC2C">
+<createdBy>d.arboittedossantos</createdBy>
+<createdTime>2024-04-15 09:39:13 UTC</createdTime>
+<ownerDesignName>MEDS_SERD</ownerDesignName>
+</ColumnProxy>
+<ColumnProxy name="COL067" id="B3A56B86-E3AE-6884-E2D3-B441B9B57420">
+<createdBy>d.arboittedossantos</createdBy>
+<createdTime>2024-04-15 09:39:13 UTC</createdTime>
+<ownerDesignName>MEDS_SERD</ownerDesignName>
+</ColumnProxy>
+<ColumnProxy name="COL008" id="B4CBB322-4CD9-3822-E60B-7B3AFC4C2337">
+<createdBy>d.arboittedossantos</createdBy>
+<createdTime>2024-04-15 09:39:13 UTC</createdTime>
+<ownerDesignName>MEDS_SERD</ownerDesignName>
+</ColumnProxy>
+<ColumnProxy name="COL074" id="B4EBFB42-38AA-58FC-B900-322550035669">
+<createdBy>d.arboittedossantos</createdBy>
+<createdTime>2024-04-15 09:39:13 UTC</createdTime>
+<ownerDesignName>MEDS_SERD</ownerDesignName>
+</ColumnProxy>
+<ColumnProxy name="COL013" id="B56176CE-875A-B9CC-D826-738330801143">
+<createdBy>d.arboittedossantos</createdBy>
+<createdTime>2024-04-15 09:39:13 UTC</createdTime>
+<ownerDesignName>MEDS_SERD</ownerDesignName>
+</ColumnProxy>
+<ColumnProxy name="COL024" id="B66768B2-5E04-0A2B-EF82-65D8FF597865">
+<createdBy>d.arboittedossantos</createdBy>
+<createdTime>2024-04-15 09:39:13 UTC</createdTime>
+<ownerDesignName>MEDS_SERD</ownerDesignName>
+</ColumnProxy>
+<ColumnProxy name="COL093" id="B7C763DB-49CD-74FF-0D62-DAF0F135D04D">
+<createdBy>d.arboittedossantos</createdBy>
+<createdTime>2024-04-15 09:39:13 UTC</createdTime>
+<ownerDesignName>MEDS_SERD</ownerDesignName>
+</ColumnProxy>
+<ColumnProxy name="COL057" id="B86A1F23-F10D-EACC-1806-5CD5E2556FB6">
+<createdBy>d.arboittedossantos</createdBy>
+<createdTime>2024-04-15 09:39:13 UTC</createdTime>
+<ownerDesignName>MEDS_SERD</ownerDesignName>
+</ColumnProxy>
+<ColumnProxy name="COL063" id="B8F9695B-DBC2-FEB1-C91A-5A8EC3A28FA2">
+<createdBy>d.arboittedossantos</createdBy>
+<createdTime>2024-04-15 09:39:13 UTC</createdTime>
+<ownerDesignName>MEDS_SERD</ownerDesignName>
+</ColumnProxy>
+<ColumnProxy name="COL027" id="BD3DD5FC-CA27-88FF-CC29-AFFFE1374E8E">
+<createdBy>d.arboittedossantos</createdBy>
+<createdTime>2024-04-15 09:39:13 UTC</createdTime>
+<ownerDesignName>MEDS_SERD</ownerDesignName>
+</ColumnProxy>
+<ColumnProxy name="COL015" id="C40EA66B-203B-E399-FA3D-0684B509380D">
+<createdBy>d.arboittedossantos</createdBy>
+<createdTime>2024-04-15 09:39:13 UTC</createdTime>
+<ownerDesignName>MEDS_SERD</ownerDesignName>
+</ColumnProxy>
+<ColumnProxy name="STG_FILE" id="C597BF7A-42E4-F1CB-EC1C-8F67ACDD1ED5">
+<createdBy>d.arboittedossantos</createdBy>
+<createdTime>2024-04-15 09:39:13 UTC</createdTime>
+<ownerDesignName>MEDS_SERD</ownerDesignName>
+</ColumnProxy>
+<ColumnProxy name="COL060" id="C8E95C77-FFB6-9496-9A8D-1D2619D99F42">
+<createdBy>d.arboittedossantos</createdBy>
+<createdTime>2024-04-15 09:39:13 UTC</createdTime>
+<ownerDesignName>MEDS_SERD</ownerDesignName>
+</ColumnProxy>
+<ColumnProxy name="COL086" id="CA3E76F3-48B7-8904-2F56-36E716B29B3C">
+<createdBy>d.arboittedossantos</createdBy>
+<createdTime>2024-04-15 09:39:13 UTC</createdTime>
+<ownerDesignName>MEDS_SERD</ownerDesignName>
+</ColumnProxy>
+<ColumnProxy name="COL096" id="CC7F8607-C25F-0AD7-BCD5-8EFC5E60D646">
+<createdBy>d.arboittedossantos</createdBy>
+<createdTime>2024-04-15 09:39:13 UTC</createdTime>
+<ownerDesignName>MEDS_SERD</ownerDesignName>
+</ColumnProxy>
+<ColumnProxy name="STG_FILE_ROW" id="CEE8413D-3EBA-932B-6C5E-C5D4009D9BD9">
+<createdBy>d.arboittedossantos</createdBy>
+<createdTime>2024-04-15 09:39:13 UTC</createdTime>
+<ownerDesignName>MEDS_SERD</ownerDesignName>
+</ColumnProxy>
+<ColumnProxy name="COL088" id="D15A2D1C-092A-562C-DF57-EC5F0C2EB40A">
+<createdBy>d.arboittedossantos</createdBy>
+<createdTime>2024-04-15 09:39:13 UTC</createdTime>
+<ownerDesignName>MEDS_SERD</ownerDesignName>
+</ColumnProxy>
+<ColumnProxy name="COL066" id="D17957B3-5609-B2A6-F5DB-864B4953EFA4">
+<createdBy>d.arboittedossantos</createdBy>
+<createdTime>2024-04-15 09:39:13 UTC</createdTime>
+<ownerDesignName>MEDS_SERD</ownerDesignName>
+</ColumnProxy>
+<ColumnProxy name="COL046" id="D3B59FF1-C22E-68ED-70B4-CAAF06B404C3">
+<createdBy>d.arboittedossantos</createdBy>
+<createdTime>2024-04-15 09:39:13 UTC</createdTime>
+<ownerDesignName>MEDS_SERD</ownerDesignName>
+</ColumnProxy>
+<ColumnProxy name="COL040" id="D3EB54E7-C2C4-3B16-0F6A-3438860A18B0">
+<createdBy>d.arboittedossantos</createdBy>
+<createdTime>2024-04-15 09:39:13 UTC</createdTime>
+<ownerDesignName>MEDS_SERD</ownerDesignName>
+</ColumnProxy>
+<ColumnProxy name="COL030" id="D8DA67A2-E454-50E2-73DA-5565118AB510">
+<createdBy>d.arboittedossantos</createdBy>
+<createdTime>2024-04-15 09:39:13 UTC</createdTime>
+<ownerDesignName>MEDS_SERD</ownerDesignName>
+</ColumnProxy>
+<ColumnProxy name="COL094" id="D9A822F2-B490-4504-2E0E-34B7495E40FB">
+<createdBy>d.arboittedossantos</createdBy>
+<createdTime>2024-04-15 09:39:13 UTC</createdTime>
+<ownerDesignName>MEDS_SERD</ownerDesignName>
+</ColumnProxy>
+<ColumnProxy name="COL064" id="DAB86E56-911C-5FF4-7D5A-B99E9BD5DD59">
+<createdBy>d.arboittedossantos</createdBy>
+<createdTime>2024-04-15 09:39:13 UTC</createdTime>
+<ownerDesignName>MEDS_SERD</ownerDesignName>
+</ColumnProxy>
+<ColumnProxy name="COL065" id="DDDD301A-73C7-5BAA-79D9-2ED4FB24268A">
+<createdBy>d.arboittedossantos</createdBy>
+<createdTime>2024-04-15 09:39:13 UTC</createdTime>
+<ownerDesignName>MEDS_SERD</ownerDesignName>
+</ColumnProxy>
+<ColumnProxy name="COL084" id="DDEF61A4-8759-5903-7CE4-6E2F5BBE062D">
+<createdBy>d.arboittedossantos</createdBy>
+<createdTime>2024-04-15 09:39:13 UTC</createdTime>
+<ownerDesignName>MEDS_SERD</ownerDesignName>
+</ColumnProxy>
+<ColumnProxy name="COL009" id="E7F9D75F-7221-B56A-67B6-7E4E9C4C0D1F">
+<createdBy>d.arboittedossantos</createdBy>
+<createdTime>2024-04-15 09:39:13 UTC</createdTime>
+<ownerDesignName>MEDS_SERD</ownerDesignName>
+</ColumnProxy>
+<ColumnProxy name="COL004" id="E876BB2F-BE13-AA79-6B16-D4C4D91B747E">
+<createdBy>d.arboittedossantos</createdBy>
+<createdTime>2024-04-15 09:39:13 UTC</createdTime>
+<ownerDesignName>MEDS_SERD</ownerDesignName>
+</ColumnProxy>
+<ColumnProxy name="COL023" id="E8E15158-0D9D-9FFE-C3D0-7F155BE48A8A">
+<createdBy>d.arboittedossantos</createdBy>
+<createdTime>2024-04-15 09:39:13 UTC</createdTime>
+<ownerDesignName>MEDS_SERD</ownerDesignName>
+</ColumnProxy>
+<ColumnProxy name="COL041" id="EAF56253-0A0A-DE92-2A35-B8D26C87C357">
+<createdBy>d.arboittedossantos</createdBy>
+<createdTime>2024-04-15 09:39:13 UTC</createdTime>
+<ownerDesignName>MEDS_SERD</ownerDesignName>
+</ColumnProxy>
+<ColumnProxy name="COL053" id="EB0E24D1-9703-9449-0287-0512351AF2DC">
+<createdBy>d.arboittedossantos</createdBy>
+<createdTime>2024-04-15 09:39:13 UTC</createdTime>
+<ownerDesignName>MEDS_SERD</ownerDesignName>
+</ColumnProxy>
+<ColumnProxy name="COL037" id="F6B20EE1-DDC1-A7C5-41E8-A798491FDBC8">
+<createdBy>d.arboittedossantos</createdBy>
+<createdTime>2024-04-15 09:39:13 UTC</createdTime>
+<ownerDesignName>MEDS_SERD</ownerDesignName>
+</ColumnProxy>
+<ColumnProxy name="COL068" id="F759C6F6-BCBA-E606-94CF-D63DDD6B845B">
+<createdBy>d.arboittedossantos</createdBy>
+<createdTime>2024-04-15 09:39:13 UTC</createdTime>
+<ownerDesignName>MEDS_SERD</ownerDesignName>
+</ColumnProxy>
+<ColumnProxy name="COL071" id="F8DAC7B8-F913-5790-64E6-0D4F48BFB883">
+<createdBy>d.arboittedossantos</createdBy>
+<createdTime>2024-04-15 09:39:13 UTC</createdTime>
+<ownerDesignName>MEDS_SERD</ownerDesignName>
+</ColumnProxy>
+<ColumnProxy name="COL081" id="FF06EF2B-EC6C-4F35-EF55-1929B2A9930F">
+<createdBy>d.arboittedossantos</createdBy>
+<createdTime>2024-04-15 09:39:13 UTC</createdTime>
+<ownerDesignName>MEDS_SERD</ownerDesignName>
+</ColumnProxy>
+</columnProxies>
+<indexProxies>
+<IndexProxy class="oracle.dbtools.crest.model.design.storage.oracle.v10g.IndexProxyOraclev10g" name="STG_FILE_ROW_P" id="0E2DF35D-9308-BD1F-BCD1-4F18AFD7AB85">
+<createdBy>d.arboittedossantos</createdBy>
+<createdTime>2024-04-15 09:47:16 UTC</createdTime>
+<ownerDesignName>MEDS_SERD</ownerDesignName>
+<schemaObject>20651223-0797-3CAA-7021-8449492EE83B</schemaObject>
+<segment>A3703CFE-2A29-A98A-0471-ED5C0EB4ACC4</segment>
+<tableSpace>380574C8-F4A5-8566-A9EE-9CE7BDB27C99</tableSpace>
+<user>34521F75-6140-B967-C5AE-9003F0D59F82</user>
+</IndexProxy>
+</indexProxies>
+<foreignKeys>
+<ForeignKey class="oracle.dbtools.crest.model.design.storage.oracle.v10g.FKProxyOraclev10g" name="STG_FILE_ROW_STG_FILE_F" id="C6EBAA81-9BE7-EF2F-F4DD-38C728401673">
+<createdBy>d.arboittedossantos</createdBy>
+<createdTime>2024-04-15 09:39:13 UTC</createdTime>
+<ownerDesignName>MEDS_SERD</ownerDesignName>
+</ForeignKey>
+</foreignKeys>
+<primaryKeys>
+<PrimaryKey class="oracle.dbtools.crest.model.design.storage.oracle.v10g.PKProxyOraclev10g" name="STG_FILE_ROW_P" id="A1D8D155-900C-4056-E24F-E56F774E539D">
+<createdBy>d.arboittedossantos</createdBy>
+<createdTime>2024-04-15 09:39:13 UTC</createdTime>
+<ownerDesignName>MEDS_SERD</ownerDesignName>
+<segment>87D2821C-317D-53D0-74F1-14916AB61D6D</segment>
+<tableSpace>380574C8-F4A5-8566-A9EE-9CE7BDB27C99</tableSpace>
+<existingIndex>0E2DF35D-9308-BD1F-BCD1-4F18AFD7AB85</existingIndex>
+<indexSegment>87D2821C-317D-53D0-74F1-14916AB61D6D</indexSegment>
+<indexSort>SORTED</indexSort>
+<usingIndex>BY INDEX NAME</usingIndex>
+</PrimaryKey>
+</primaryKeys>
+</TableProxyOraclev12c>

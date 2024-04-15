@@ -1,0 +1,93 @@
+<?xml version = '1.0' encoding = 'UTF-8'?>
+<TableProxyOraclev12c class="oracle.dbtools.crest.model.design.storage.oracle.v12c.TableProxyOraclev12c" name="STG_FILE" directorySegmentName="seg_0" id="94F843D2-65A5-522A-A843-5FDBFF4E48BC">
+<createdBy>d.arboittedossantos</createdBy>
+<createdTime>2024-04-15 09:39:13 UTC</createdTime>
+<ownerDesignName>MEDS_SERD</ownerDesignName>
+<schemaObject>20651223-0797-3CAA-7021-8449492EE83B</schemaObject>
+<logging>YES</logging>
+<partitionedRowMovement>DISABLE</partitionedRowMovement>
+<segment>3E06A385-5E5C-26DE-8E1F-3286519803BA</segment>
+<tableSpace>380574C8-F4A5-8566-A9EE-9CE7BDB27C99</tableSpace>
+<temporaryChanged>false</temporaryChanged>
+<user>34521F75-6140-B967-C5AE-9003F0D59F82</user>
+<accessDriverType>oracle_loader</accessDriverType>
+<rejectLimit></rejectLimit>
+<storeAs>CLOB</storeAs>
+<inMemory>NO</inMemory>
+<columnProxies itemClass="oracle.dbtools.crest.model.design.storage.oracle.v12c.ColumnProxyOraclev12c">
+<ColumnProxy name="FILENAME" id="11265025-8EB6-CB21-2CA1-C17A12B931FD">
+<createdBy>d.arboittedossantos</createdBy>
+<createdTime>2024-04-15 09:39:13 UTC</createdTime>
+<ownerDesignName>MEDS_SERD</ownerDesignName>
+</ColumnProxy>
+<ColumnProxy name="STG_FILE" id="11800107-DE90-020F-5AC7-001BBA8A861E">
+<createdBy>d.arboittedossantos</createdBy>
+<createdTime>2024-04-15 09:39:13 UTC</createdTime>
+<ownerDesignName>MEDS_SERD</ownerDesignName>
+</ColumnProxy>
+<ColumnProxy name="CONTENT" id="497172B8-CFB2-BA47-F6FD-2190DE153985">
+<createdBy>d.arboittedossantos</createdBy>
+<createdTime>2024-04-15 09:39:13 UTC</createdTime>
+<ownerDesignName>MEDS_SERD</ownerDesignName>
+</ColumnProxy>
+<ColumnProxy name="FILE_SIZE" id="4F328878-D00D-5E01-46B1-0755A8ED1DCB">
+<createdBy>d.arboittedossantos</createdBy>
+<createdTime>2024-04-15 09:39:13 UTC</createdTime>
+<ownerDesignName>MEDS_SERD</ownerDesignName>
+</ColumnProxy>
+<ColumnProxy name="CMUSER_CREATED" id="59931207-DE6A-CC4E-FE40-4B5AE777E5D7">
+<createdBy>d.arboittedossantos</createdBy>
+<createdTime>2024-04-15 09:39:13 UTC</createdTime>
+<ownerDesignName>MEDS_SERD</ownerDesignName>
+</ColumnProxy>
+<ColumnProxy name="DATE_CREATED" id="8C21B34D-976D-25B6-B8CB-AEB774046AE2">
+<createdBy>d.arboittedossantos</createdBy>
+<createdTime>2024-04-15 09:39:13 UTC</createdTime>
+<ownerDesignName>MEDS_SERD</ownerDesignName>
+</ColumnProxy>
+<ColumnProxy name="MIMETYPE" id="901EA13A-90F2-B30B-4C61-77FF134D4D70">
+<createdBy>d.arboittedossantos</createdBy>
+<createdTime>2024-04-15 09:39:13 UTC</createdTime>
+<ownerDesignName>MEDS_SERD</ownerDesignName>
+</ColumnProxy>
+</columnProxies>
+<indexProxies>
+<IndexProxy class="oracle.dbtools.crest.model.design.storage.oracle.v10g.IndexProxyOraclev10g" name="STG_FILE_P" id="ABC7517C-B9BD-6B4B-E37B-B9EDDDE86737">
+<createdBy>d.arboittedossantos</createdBy>
+<createdTime>2024-04-15 09:47:16 UTC</createdTime>
+<ownerDesignName>MEDS_SERD</ownerDesignName>
+<schemaObject>20651223-0797-3CAA-7021-8449492EE83B</schemaObject>
+<segment>A3703CFE-2A29-A98A-0471-ED5C0EB4ACC4</segment>
+<tableSpace>380574C8-F4A5-8566-A9EE-9CE7BDB27C99</tableSpace>
+<user>34521F75-6140-B967-C5AE-9003F0D59F82</user>
+</IndexProxy>
+</indexProxies>
+<lobStorages>
+<LobStorage class="oracle.dbtools.crest.model.design.storage.oracle.v11g.LobStorageOraclev11g" name="SYS_LOB0000543661C00005$$" id="E683BE4E-F453-9FBF-5D10-3B791C6CB3CD">
+<createdBy>d.arboittedossantos</createdBy>
+<createdTime>2024-04-15 09:47:16 UTC</createdTime>
+<ownerDesignName>MEDS_SERD</ownerDesignName>
+<cache>NOCACHE</cache>
+<chunk>8192</chunk>
+<column>CONTENT</column>
+<compression>NO</compression>
+<duplication>KEEP_DUPLICATES</duplication>
+<logging>YES</logging>
+<tableSpace>380574C8-F4A5-8566-A9EE-9CE7BDB27C99</tableSpace>
+<lobStorageType>SECUREFILE</lobStorageType>
+</LobStorage>
+</lobStorages>
+<primaryKeys>
+<PrimaryKey class="oracle.dbtools.crest.model.design.storage.oracle.v10g.PKProxyOraclev10g" name="STG_FILE_P" id="8A254244-FF6B-58FE-C59B-3E06B17E1EA7">
+<createdBy>d.arboittedossantos</createdBy>
+<createdTime>2024-04-15 09:39:13 UTC</createdTime>
+<ownerDesignName>MEDS_SERD</ownerDesignName>
+<segment>87D2821C-317D-53D0-74F1-14916AB61D6D</segment>
+<tableSpace>380574C8-F4A5-8566-A9EE-9CE7BDB27C99</tableSpace>
+<existingIndex>ABC7517C-B9BD-6B4B-E37B-B9EDDDE86737</existingIndex>
+<indexSegment>87D2821C-317D-53D0-74F1-14916AB61D6D</indexSegment>
+<indexSort>SORTED</indexSort>
+<usingIndex>BY INDEX NAME</usingIndex>
+</PrimaryKey>
+</primaryKeys>
+</TableProxyOraclev12c>

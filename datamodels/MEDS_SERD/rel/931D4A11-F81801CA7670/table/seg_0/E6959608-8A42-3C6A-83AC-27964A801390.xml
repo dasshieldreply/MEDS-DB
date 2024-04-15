@@ -18,7 +18,7 @@
 <ownDataTypeParameters>,,</ownDataTypeParameters>
 <autoIncrementCycle>false</autoIncrementCycle>
 </Column>
-<Column name="STG_FILE_UPLOAD" id="C597BF7A-42E4-F1CB-EC1C-8F67ACDD1ED5">
+<Column name="STG_FILE" id="C597BF7A-42E4-F1CB-EC1C-8F67ACDD1ED5">
 <createdBy>d.arboittedossantos</createdBy>
 <createdTime>2024-04-12 14:12:03 UTC</createdTime>
 <ownerDesignName>MEDS_SERD</ownerDesignName>
@@ -1245,7 +1245,18 @@
 <colUsage columnID="CEE8413D-3EBA-932B-6C5E-C5D4009D9BD9"/>
 </indexColumnUsage>
 </ind_PK_UK>
-<ind_PK_UK id="C6EBAA81-9BE7-EF2F-F4DD-38C728401673" name="STG_FILE_ROW_STG_FILE_UPLOAD_F">
+<ind_PK_UK id="0E2DF35D-9308-BD1F-BCD1-4F18AFD7AB85" schemaObject="20651223-0797-3CAA-7021-8449492EE83B" name="STG_FILE_ROW_P">
+<createdBy>d.arboittedossantos</createdBy>
+<createdTime>2024-04-15 09:47:16 UTC</createdTime>
+<ownerDesignName>MEDS_SERD</ownerDesignName>
+<importedID>B331C82C-0A94-B9E6-C622-95206BB5107C</importedID>
+<indexState>Unique Plain Index</indexState>
+<isSurrogateKey>false</isSurrogateKey>
+<indexColumnUsage>
+<colUsage columnID="CEE8413D-3EBA-932B-6C5E-C5D4009D9BD9"/>
+</indexColumnUsage>
+</ind_PK_UK>
+<ind_PK_UK id="C6EBAA81-9BE7-EF2F-F4DD-38C728401673" name="STG_FILE_ROW_STG_FILE_F">
 <createdBy>d.arboittedossantos</createdBy>
 <createdTime>2024-04-12 14:12:03 UTC</createdTime>
 <ownerDesignName>MEDS_SERD</ownerDesignName>

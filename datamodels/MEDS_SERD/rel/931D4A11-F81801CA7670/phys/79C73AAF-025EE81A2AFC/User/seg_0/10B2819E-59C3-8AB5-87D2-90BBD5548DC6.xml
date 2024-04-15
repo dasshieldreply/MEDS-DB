@@ -12,12 +12,18 @@
 <privileges>SELECT</privileges>
 <table>84A226D1-57D3-EE99-1D7D-B2DF2DC8E228</table>
 </Permission>
+<Permission class="oracle.dbtools.crest.model.design.storage.oracle.v10g.PermissionsOraclev10g" name="Permissions23" id="0D42E158-A8F1-369E-C2C4-30FB559F2EB2">
+<createdBy>d.arboittedossantos</createdBy>
+<createdTime>2024-04-15 09:40:16 UTC</createdTime>
+<ownerDesignName>MEDS_SERD</ownerDesignName>
+<privileges>SELECT</privileges>
+<table>94F843D2-65A5-522A-A843-5FDBFF4E48BC</table>
+</Permission>
 <Permission class="oracle.dbtools.crest.model.design.storage.oracle.v10g.PermissionsOraclev10g" name="Permissions24" id="336576C8-2F53-A91A-272D-62A1773B5996">
 <createdBy>d.arboittedossantos</createdBy>
 <createdTime>2024-04-05 10:43:28 UTC</createdTime>
 <ownerDesignName>MEDS_SERD</ownerDesignName>
 <privileges>SELECT</privileges>
-<table>45579E81-B6E8-776B-EE98-D4F910CF5A8F</table>
 </Permission>
 <Permission class="oracle.dbtools.crest.model.design.storage.oracle.v10g.PermissionsOraclev10g" name="Permissions25" id="436E2E0B-3BB7-A824-ADE7-CD0E46E0F70A">
 <createdBy>d.arboittedossantos</createdBy>
@@ -39,6 +45,13 @@
 <ownerDesignName>MEDS_SERD</ownerDesignName>
 <privileges>SELECT</privileges>
 <table>69BC1AAD-3A20-A155-468B-AB9A273CB587</table>
+</Permission>
+<Permission class="oracle.dbtools.crest.model.design.storage.oracle.v10g.PermissionsOraclev10g" name="Permissions28" id="C6E4C71C-A118-F12F-C259-ABAFFB529ACE">
+<createdBy>d.arboittedossantos</createdBy>
+<createdTime>2024-04-15 09:40:51 UTC</createdTime>
+<ownerDesignName>MEDS_SERD</ownerDesignName>
+<privileges>SELECT</privileges>
+<table>E6959608-8A42-3C6A-83AC-27964A801390</table>
 </Permission>
 </permissions>
 </UserOraclev10g>
