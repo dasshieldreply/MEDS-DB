@@ -53,5 +53,12 @@
 <privileges>SELECT</privileges>
 <table>E6959608-8A42-3C6A-83AC-27964A801390</table>
 </Permission>
+<Permission class="oracle.dbtools.crest.model.design.storage.oracle.v10g.PermissionsOraclev10g" name="Permissions29" id="B5B29922-63AA-8EC3-2E77-0ACC93FE3E48">
+<createdBy>d.arboittedossantos</createdBy>
+<createdTime>2024-04-17 09:07:01 UTC</createdTime>
+<ownerDesignName>MEDS_SERD</ownerDesignName>
+<privileges>SELECT</privileges>
+<table>E60C6671-890C-10C6-1E8D-F0C50BE4DFB8</table>
+</Permission>
 </permissions>
 </UserOraclev10g>

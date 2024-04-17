@@ -1,5 +1,8 @@
 <?xml version = '1.0' encoding = 'UTF-8'?>
 <Table class="oracle.dbtools.crest.model.design.relational.Table" directorySegmentName="seg_0" id="E6959608-8A42-3C6A-83AC-27964A801390" schemaObject="20651223-0797-3CAA-7021-8449492EE83B" name="STG_FILE_ROW">
+<sourceConnName>MEDS ADMIN</sourceConnName>
+<sourceObjSchema>MEDSADMIN</sourceObjSchema>
+<sourceObjName>STG_FILE_ROW</sourceObjName>
 <createdBy>d.arboittedossantos</createdBy>
 <createdTime>2024-04-12 13:44:35 UTC</createdTime>
 <ownerDesignName>MEDS_SERD</ownerDesignName>
@@ -31,6 +34,17 @@
 <associations>
 <colAssociation fkAssociation="AC45317A-7A14-EA08-A87B-B9480EBC4056" referredColumn="11800107-DE90-020F-5AC7-001BBA8A861E"/>
 </associations>
+</Column>
+<Column name="ROW_SEQUENCE" id="53E9DFE4-A30A-F1D5-9617-6D23CE7230DC">
+<createdBy>d.arboittedossantos</createdBy>
+<createdTime>2024-04-16 13:55:29 UTC</createdTime>
+<ownerDesignName>MEDS_SERD</ownerDesignName>
+<nullsAllowed>true</nullsAllowed>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT019</logicalDatatype>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
+<autoIncrementCycle>false</autoIncrementCycle>
 </Column>
 <Column name="COL001" id="35E34CA8-5866-79FD-5EE5-66C1E1C0ED27">
 <createdBy>d.arboittedossantos</createdBy>
@@ -1230,6 +1244,1606 @@
 <logicalDatatype>LOGDT024</logicalDatatype>
 <dataTypeSize>512</dataTypeSize>
 <ownDataTypeParameters>512,,</ownDataTypeParameters>
+<autoIncrementCycle>false</autoIncrementCycle>
+</Column>
+<Column name="COL101" id="7AE4A03F-9A91-C820-D5B5-7A9155786255">
+<sourceConnName>MEDS ADMIN</sourceConnName>
+<sourceObjSchema>STG_FILE_ROW</sourceObjSchema>
+<sourceObjName>COL101</sourceObjName>
+<createdBy>d.arboittedossantos</createdBy>
+<createdTime>2024-04-16 15:19:11 UTC</createdTime>
+<ownerDesignName>MEDS_SERD</ownerDesignName>
+<importedID>D09A551B-2118-1D03-5A8E-88762BDD6462</importedID>
+<nullsAllowed>true</nullsAllowed>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT024</logicalDatatype>
+<dataTypeSize>512 BYTE</dataTypeSize>
+<ownDataTypeParameters>512 BYTE,,</ownDataTypeParameters>
+<autoIncrementCycle>false</autoIncrementCycle>
+</Column>
+<Column name="COL102" id="358B79EC-3A1B-7B16-AB32-DD807234CB84">
+<sourceConnName>MEDS ADMIN</sourceConnName>
+<sourceObjSchema>STG_FILE_ROW</sourceObjSchema>
+<sourceObjName>COL102</sourceObjName>
+<createdBy>d.arboittedossantos</createdBy>
+<createdTime>2024-04-16 15:19:11 UTC</createdTime>
+<ownerDesignName>MEDS_SERD</ownerDesignName>
+<importedID>9992508B-0D66-9A80-450E-3B4D271E7349</importedID>
+<nullsAllowed>true</nullsAllowed>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT024</logicalDatatype>
+<dataTypeSize>512 BYTE</dataTypeSize>
+<ownDataTypeParameters>512 BYTE,,</ownDataTypeParameters>
+<autoIncrementCycle>false</autoIncrementCycle>
+</Column>
+<Column name="COL103" id="958D0FB8-2B72-AA43-4F34-097478CEE55F">
+<sourceConnName>MEDS ADMIN</sourceConnName>
+<sourceObjSchema>STG_FILE_ROW</sourceObjSchema>
+<sourceObjName>COL103</sourceObjName>
+<createdBy>d.arboittedossantos</createdBy>
+<createdTime>2024-04-16 15:19:11 UTC</createdTime>
+<ownerDesignName>MEDS_SERD</ownerDesignName>
+<importedID>A08D6BA5-8638-8443-BF62-6C8BDC16D256</importedID>
+<nullsAllowed>true</nullsAllowed>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT024</logicalDatatype>
+<dataTypeSize>512 BYTE</dataTypeSize>
+<ownDataTypeParameters>512 BYTE,,</ownDataTypeParameters>
+<autoIncrementCycle>false</autoIncrementCycle>
+</Column>
+<Column name="COL104" id="8F9D5852-9FB3-A8CE-C840-846A18C3F75B">
+<sourceConnName>MEDS ADMIN</sourceConnName>
+<sourceObjSchema>STG_FILE_ROW</sourceObjSchema>
+<sourceObjName>COL104</sourceObjName>
+<createdBy>d.arboittedossantos</createdBy>
+<createdTime>2024-04-16 15:19:11 UTC</createdTime>
+<ownerDesignName>MEDS_SERD</ownerDesignName>
+<importedID>10422B45-7B88-3243-85BE-7B6EDAFE2CB1</importedID>
+<nullsAllowed>true</nullsAllowed>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT024</logicalDatatype>
+<dataTypeSize>512 BYTE</dataTypeSize>
+<ownDataTypeParameters>512 BYTE,,</ownDataTypeParameters>
+<autoIncrementCycle>false</autoIncrementCycle>
+</Column>
+<Column name="COL105" id="70A66BE9-FB8E-8CB9-D3AE-3598D8830339">
+<sourceConnName>MEDS ADMIN</sourceConnName>
+<sourceObjSchema>STG_FILE_ROW</sourceObjSchema>
+<sourceObjName>COL105</sourceObjName>
+<createdBy>d.arboittedossantos</createdBy>
+<createdTime>2024-04-16 15:19:11 UTC</createdTime>
+<ownerDesignName>MEDS_SERD</ownerDesignName>
+<importedID>23CA9390-819C-36F1-2382-5D3856F0FFAC</importedID>
+<nullsAllowed>true</nullsAllowed>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT024</logicalDatatype>
+<dataTypeSize>512 BYTE</dataTypeSize>
+<ownDataTypeParameters>512 BYTE,,</ownDataTypeParameters>
+<autoIncrementCycle>false</autoIncrementCycle>
+</Column>
+<Column name="COL106" id="BC17F56F-EE31-68A0-39C5-BCF230ABB96E">
+<sourceConnName>MEDS ADMIN</sourceConnName>
+<sourceObjSchema>STG_FILE_ROW</sourceObjSchema>
+<sourceObjName>COL106</sourceObjName>
+<createdBy>d.arboittedossantos</createdBy>
+<createdTime>2024-04-16 15:19:11 UTC</createdTime>
+<ownerDesignName>MEDS_SERD</ownerDesignName>
+<importedID>754992EA-6831-2B20-420C-17359CEA2206</importedID>
+<nullsAllowed>true</nullsAllowed>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT024</logicalDatatype>
+<dataTypeSize>512 BYTE</dataTypeSize>
+<ownDataTypeParameters>512 BYTE,,</ownDataTypeParameters>
+<autoIncrementCycle>false</autoIncrementCycle>
+</Column>
+<Column name="COL107" id="CE119EEA-B97B-5AD8-C2FC-80BB9393CBF8">
+<sourceConnName>MEDS ADMIN</sourceConnName>
+<sourceObjSchema>STG_FILE_ROW</sourceObjSchema>
+<sourceObjName>COL107</sourceObjName>
+<createdBy>d.arboittedossantos</createdBy>
+<createdTime>2024-04-16 15:19:11 UTC</createdTime>
+<ownerDesignName>MEDS_SERD</ownerDesignName>
+<importedID>608BC47C-9B49-C7C1-6576-87AAEE0AED7B</importedID>
+<nullsAllowed>true</nullsAllowed>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT024</logicalDatatype>
+<dataTypeSize>512 BYTE</dataTypeSize>
+<ownDataTypeParameters>512 BYTE,,</ownDataTypeParameters>
+<autoIncrementCycle>false</autoIncrementCycle>
+</Column>
+<Column name="COL108" id="18516781-CC84-294C-E17A-930E250E13C7">
+<sourceConnName>MEDS ADMIN</sourceConnName>
+<sourceObjSchema>STG_FILE_ROW</sourceObjSchema>
+<sourceObjName>COL108</sourceObjName>
+<createdBy>d.arboittedossantos</createdBy>
+<createdTime>2024-04-16 15:19:11 UTC</createdTime>
+<ownerDesignName>MEDS_SERD</ownerDesignName>
+<importedID>2CB6716B-8B89-CB53-C18D-DD1D705DA7F5</importedID>
+<nullsAllowed>true</nullsAllowed>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT024</logicalDatatype>
+<dataTypeSize>512 BYTE</dataTypeSize>
+<ownDataTypeParameters>512 BYTE,,</ownDataTypeParameters>
+<autoIncrementCycle>false</autoIncrementCycle>
+</Column>
+<Column name="COL109" id="0F529A2A-D89D-D566-D300-8398551A0001">
+<sourceConnName>MEDS ADMIN</sourceConnName>
+<sourceObjSchema>STG_FILE_ROW</sourceObjSchema>
+<sourceObjName>COL109</sourceObjName>
+<createdBy>d.arboittedossantos</createdBy>
+<createdTime>2024-04-16 15:19:11 UTC</createdTime>
+<ownerDesignName>MEDS_SERD</ownerDesignName>
+<importedID>821C00AC-F29A-60B8-7105-951CBF564269</importedID>
+<nullsAllowed>true</nullsAllowed>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT024</logicalDatatype>
+<dataTypeSize>512 BYTE</dataTypeSize>
+<ownDataTypeParameters>512 BYTE,,</ownDataTypeParameters>
+<autoIncrementCycle>false</autoIncrementCycle>
+</Column>
+<Column name="COL110" id="575FE01B-4D13-1107-987C-D68331FD7953">
+<sourceConnName>MEDS ADMIN</sourceConnName>
+<sourceObjSchema>STG_FILE_ROW</sourceObjSchema>
+<sourceObjName>COL110</sourceObjName>
+<createdBy>d.arboittedossantos</createdBy>
+<createdTime>2024-04-16 15:19:11 UTC</createdTime>
+<ownerDesignName>MEDS_SERD</ownerDesignName>
+<importedID>23514822-740D-582F-16BA-438573496EDA</importedID>
+<nullsAllowed>true</nullsAllowed>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT024</logicalDatatype>
+<dataTypeSize>512 BYTE</dataTypeSize>
+<ownDataTypeParameters>512 BYTE,,</ownDataTypeParameters>
+<autoIncrementCycle>false</autoIncrementCycle>
+</Column>
+<Column name="COL111" id="02E58BD9-ACEE-A6EC-7603-8D75FE8F6918">
+<sourceConnName>MEDS ADMIN</sourceConnName>
+<sourceObjSchema>STG_FILE_ROW</sourceObjSchema>
+<sourceObjName>COL111</sourceObjName>
+<createdBy>d.arboittedossantos</createdBy>
+<createdTime>2024-04-16 15:19:11 UTC</createdTime>
+<ownerDesignName>MEDS_SERD</ownerDesignName>
+<importedID>159A1D36-4105-D540-7AD1-155CFA4E8995</importedID>
+<nullsAllowed>true</nullsAllowed>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT024</logicalDatatype>
+<dataTypeSize>512 BYTE</dataTypeSize>
+<ownDataTypeParameters>512 BYTE,,</ownDataTypeParameters>
+<autoIncrementCycle>false</autoIncrementCycle>
+</Column>
+<Column name="COL112" id="6BA99373-D703-BEE6-893D-021EBB3B4EBB">
+<sourceConnName>MEDS ADMIN</sourceConnName>
+<sourceObjSchema>STG_FILE_ROW</sourceObjSchema>
+<sourceObjName>COL112</sourceObjName>
+<createdBy>d.arboittedossantos</createdBy>
+<createdTime>2024-04-16 15:19:11 UTC</createdTime>
+<ownerDesignName>MEDS_SERD</ownerDesignName>
+<importedID>747EB068-9044-125D-3BEA-EAAD067F8981</importedID>
+<nullsAllowed>true</nullsAllowed>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT024</logicalDatatype>
+<dataTypeSize>512 BYTE</dataTypeSize>
+<ownDataTypeParameters>512 BYTE,,</ownDataTypeParameters>
+<autoIncrementCycle>false</autoIncrementCycle>
+</Column>
+<Column name="COL113" id="12B14617-5E36-4081-4D53-C33891FB8587">
+<sourceConnName>MEDS ADMIN</sourceConnName>
+<sourceObjSchema>STG_FILE_ROW</sourceObjSchema>
+<sourceObjName>COL113</sourceObjName>
+<createdBy>d.arboittedossantos</createdBy>
+<createdTime>2024-04-16 15:19:11 UTC</createdTime>
+<ownerDesignName>MEDS_SERD</ownerDesignName>
+<importedID>77203104-FDA5-A748-E9D9-C21ED0C148B4</importedID>
+<nullsAllowed>true</nullsAllowed>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT024</logicalDatatype>
+<dataTypeSize>512 BYTE</dataTypeSize>
+<ownDataTypeParameters>512 BYTE,,</ownDataTypeParameters>
+<autoIncrementCycle>false</autoIncrementCycle>
+</Column>
+<Column name="COL114" id="8B3ADF2C-AE3B-E9C5-9888-44DBAF36E500">
+<sourceConnName>MEDS ADMIN</sourceConnName>
+<sourceObjSchema>STG_FILE_ROW</sourceObjSchema>
+<sourceObjName>COL114</sourceObjName>
+<createdBy>d.arboittedossantos</createdBy>
+<createdTime>2024-04-16 15:19:11 UTC</createdTime>
+<ownerDesignName>MEDS_SERD</ownerDesignName>
+<importedID>A5CB7FDD-89ED-3F30-6A51-4134C156B6C2</importedID>
+<nullsAllowed>true</nullsAllowed>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT024</logicalDatatype>
+<dataTypeSize>512 BYTE</dataTypeSize>
+<ownDataTypeParameters>512 BYTE,,</ownDataTypeParameters>
+<autoIncrementCycle>false</autoIncrementCycle>
+</Column>
+<Column name="COL115" id="9D5D41D5-31A6-69C5-FB85-A465629B81E9">
+<sourceConnName>MEDS ADMIN</sourceConnName>
+<sourceObjSchema>STG_FILE_ROW</sourceObjSchema>
+<sourceObjName>COL115</sourceObjName>
+<createdBy>d.arboittedossantos</createdBy>
+<createdTime>2024-04-16 15:19:11 UTC</createdTime>
+<ownerDesignName>MEDS_SERD</ownerDesignName>
+<importedID>6F36EB3B-AC28-48F6-2CCE-11423AC565F7</importedID>
+<nullsAllowed>true</nullsAllowed>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT024</logicalDatatype>
+<dataTypeSize>512 BYTE</dataTypeSize>
+<ownDataTypeParameters>512 BYTE,,</ownDataTypeParameters>
+<autoIncrementCycle>false</autoIncrementCycle>
+</Column>
+<Column name="COL116" id="A4489E72-E7FF-DFEB-B75D-F7BDC8C6CF49">
+<sourceConnName>MEDS ADMIN</sourceConnName>
+<sourceObjSchema>STG_FILE_ROW</sourceObjSchema>
+<sourceObjName>COL116</sourceObjName>
+<createdBy>d.arboittedossantos</createdBy>
+<createdTime>2024-04-16 15:19:11 UTC</createdTime>
+<ownerDesignName>MEDS_SERD</ownerDesignName>
+<importedID>E5ACE6D6-99D2-F812-F3B6-91B85720BFE9</importedID>
+<nullsAllowed>true</nullsAllowed>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT024</logicalDatatype>
+<dataTypeSize>512 BYTE</dataTypeSize>
+<ownDataTypeParameters>512 BYTE,,</ownDataTypeParameters>
+<autoIncrementCycle>false</autoIncrementCycle>
+</Column>
+<Column name="COL117" id="B520709C-7DEF-9158-5656-0A25538D7A84">
+<sourceConnName>MEDS ADMIN</sourceConnName>
+<sourceObjSchema>STG_FILE_ROW</sourceObjSchema>
+<sourceObjName>COL117</sourceObjName>
+<createdBy>d.arboittedossantos</createdBy>
+<createdTime>2024-04-16 15:19:11 UTC</createdTime>
+<ownerDesignName>MEDS_SERD</ownerDesignName>
+<importedID>304244A3-FCF7-4772-306E-A7DE4F29E036</importedID>
+<nullsAllowed>true</nullsAllowed>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT024</logicalDatatype>
+<dataTypeSize>512 BYTE</dataTypeSize>
+<ownDataTypeParameters>512 BYTE,,</ownDataTypeParameters>
+<autoIncrementCycle>false</autoIncrementCycle>
+</Column>
+<Column name="COL118" id="DAF5113F-43CA-3821-A538-734031EBE5A7">
+<sourceConnName>MEDS ADMIN</sourceConnName>
+<sourceObjSchema>STG_FILE_ROW</sourceObjSchema>
+<sourceObjName>COL118</sourceObjName>
+<createdBy>d.arboittedossantos</createdBy>
+<createdTime>2024-04-16 15:19:11 UTC</createdTime>
+<ownerDesignName>MEDS_SERD</ownerDesignName>
+<importedID>D0613E6E-5EA7-43CB-F838-A402980E12F4</importedID>
+<nullsAllowed>true</nullsAllowed>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT024</logicalDatatype>
+<dataTypeSize>512 BYTE</dataTypeSize>
+<ownDataTypeParameters>512 BYTE,,</ownDataTypeParameters>
+<autoIncrementCycle>false</autoIncrementCycle>
+</Column>
+<Column name="COL119" id="546093DD-9903-44DA-EC80-E176BE795DDA">
+<sourceConnName>MEDS ADMIN</sourceConnName>
+<sourceObjSchema>STG_FILE_ROW</sourceObjSchema>
+<sourceObjName>COL119</sourceObjName>
+<createdBy>d.arboittedossantos</createdBy>
+<createdTime>2024-04-16 15:19:11 UTC</createdTime>
+<ownerDesignName>MEDS_SERD</ownerDesignName>
+<importedID>7F44509A-DFFD-FECE-CE83-1B987DC1B5F4</importedID>
+<nullsAllowed>true</nullsAllowed>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT024</logicalDatatype>
+<dataTypeSize>512 BYTE</dataTypeSize>
+<ownDataTypeParameters>512 BYTE,,</ownDataTypeParameters>
+<autoIncrementCycle>false</autoIncrementCycle>
+</Column>
+<Column name="COL120" id="C0F0562D-390C-6FF8-2556-5A13052C20EC">
+<sourceConnName>MEDS ADMIN</sourceConnName>
+<sourceObjSchema>STG_FILE_ROW</sourceObjSchema>
+<sourceObjName>COL120</sourceObjName>
+<createdBy>d.arboittedossantos</createdBy>
+<createdTime>2024-04-16 15:19:11 UTC</createdTime>
+<ownerDesignName>MEDS_SERD</ownerDesignName>
+<importedID>6DA83862-D29C-0403-FDCC-1FA678379CB4</importedID>
+<nullsAllowed>true</nullsAllowed>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT024</logicalDatatype>
+<dataTypeSize>512 BYTE</dataTypeSize>
+<ownDataTypeParameters>512 BYTE,,</ownDataTypeParameters>
+<autoIncrementCycle>false</autoIncrementCycle>
+</Column>
+<Column name="COL121" id="F19F82E5-2355-6903-9195-380DC0EF0025">
+<sourceConnName>MEDS ADMIN</sourceConnName>
+<sourceObjSchema>STG_FILE_ROW</sourceObjSchema>
+<sourceObjName>COL121</sourceObjName>
+<createdBy>d.arboittedossantos</createdBy>
+<createdTime>2024-04-16 15:19:11 UTC</createdTime>
+<ownerDesignName>MEDS_SERD</ownerDesignName>
+<importedID>7E4218F0-3F7F-70B5-C429-45EE65A857E2</importedID>
+<nullsAllowed>true</nullsAllowed>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT024</logicalDatatype>
+<dataTypeSize>512 BYTE</dataTypeSize>
+<ownDataTypeParameters>512 BYTE,,</ownDataTypeParameters>
+<autoIncrementCycle>false</autoIncrementCycle>
+</Column>
+<Column name="COL122" id="4B75640D-C423-F87F-B1FF-6EAD476C6156">
+<sourceConnName>MEDS ADMIN</sourceConnName>
+<sourceObjSchema>STG_FILE_ROW</sourceObjSchema>
+<sourceObjName>COL122</sourceObjName>
+<createdBy>d.arboittedossantos</createdBy>
+<createdTime>2024-04-16 15:19:11 UTC</createdTime>
+<ownerDesignName>MEDS_SERD</ownerDesignName>
+<importedID>4F285565-5AC7-28A9-6EB2-2A6E0D82D76A</importedID>
+<nullsAllowed>true</nullsAllowed>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT024</logicalDatatype>
+<dataTypeSize>512 BYTE</dataTypeSize>
+<ownDataTypeParameters>512 BYTE,,</ownDataTypeParameters>
+<autoIncrementCycle>false</autoIncrementCycle>
+</Column>
+<Column name="COL123" id="8572A60E-A730-48AD-499A-D27A5DCAD9A1">
+<sourceConnName>MEDS ADMIN</sourceConnName>
+<sourceObjSchema>STG_FILE_ROW</sourceObjSchema>
+<sourceObjName>COL123</sourceObjName>
+<createdBy>d.arboittedossantos</createdBy>
+<createdTime>2024-04-16 15:19:11 UTC</createdTime>
+<ownerDesignName>MEDS_SERD</ownerDesignName>
+<importedID>D8363106-8585-9889-8AB4-70FD2BA46D0F</importedID>
+<nullsAllowed>true</nullsAllowed>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT024</logicalDatatype>
+<dataTypeSize>512 BYTE</dataTypeSize>
+<ownDataTypeParameters>512 BYTE,,</ownDataTypeParameters>
+<autoIncrementCycle>false</autoIncrementCycle>
+</Column>
+<Column name="COL124" id="07C12296-6F86-9609-E97B-FF6770ACBFA8">
+<sourceConnName>MEDS ADMIN</sourceConnName>
+<sourceObjSchema>STG_FILE_ROW</sourceObjSchema>
+<sourceObjName>COL124</sourceObjName>
+<createdBy>d.arboittedossantos</createdBy>
+<createdTime>2024-04-16 15:19:11 UTC</createdTime>
+<ownerDesignName>MEDS_SERD</ownerDesignName>
+<importedID>7C62F48B-0392-E583-694A-6F674017A4A5</importedID>
+<nullsAllowed>true</nullsAllowed>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT024</logicalDatatype>
+<dataTypeSize>512 BYTE</dataTypeSize>
+<ownDataTypeParameters>512 BYTE,,</ownDataTypeParameters>
+<autoIncrementCycle>false</autoIncrementCycle>
+</Column>
+<Column name="COL125" id="10BBC802-C0C7-8317-7852-F3AC0BED76AC">
+<sourceConnName>MEDS ADMIN</sourceConnName>
+<sourceObjSchema>STG_FILE_ROW</sourceObjSchema>
+<sourceObjName>COL125</sourceObjName>
+<createdBy>d.arboittedossantos</createdBy>
+<createdTime>2024-04-16 15:19:11 UTC</createdTime>
+<ownerDesignName>MEDS_SERD</ownerDesignName>
+<importedID>453C0F55-FC11-52BD-D520-7B1AE65FEB30</importedID>
+<nullsAllowed>true</nullsAllowed>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT024</logicalDatatype>
+<dataTypeSize>512 BYTE</dataTypeSize>
+<ownDataTypeParameters>512 BYTE,,</ownDataTypeParameters>
+<autoIncrementCycle>false</autoIncrementCycle>
+</Column>
+<Column name="COL126" id="15120C0C-0BCC-8EA3-ECD8-5C5F4C421D28">
+<sourceConnName>MEDS ADMIN</sourceConnName>
+<sourceObjSchema>STG_FILE_ROW</sourceObjSchema>
+<sourceObjName>COL126</sourceObjName>
+<createdBy>d.arboittedossantos</createdBy>
+<createdTime>2024-04-16 15:19:11 UTC</createdTime>
+<ownerDesignName>MEDS_SERD</ownerDesignName>
+<importedID>0FF3E611-7BA5-EDE5-E775-2F4A5CBBE219</importedID>
+<nullsAllowed>true</nullsAllowed>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT024</logicalDatatype>
+<dataTypeSize>512 BYTE</dataTypeSize>
+<ownDataTypeParameters>512 BYTE,,</ownDataTypeParameters>
+<autoIncrementCycle>false</autoIncrementCycle>
+</Column>
+<Column name="COL127" id="5CF279D9-C0E2-17EF-BEB2-84D9FAE4DA39">
+<sourceConnName>MEDS ADMIN</sourceConnName>
+<sourceObjSchema>STG_FILE_ROW</sourceObjSchema>
+<sourceObjName>COL127</sourceObjName>
+<createdBy>d.arboittedossantos</createdBy>
+<createdTime>2024-04-16 15:19:11 UTC</createdTime>
+<ownerDesignName>MEDS_SERD</ownerDesignName>
+<importedID>955AD2B8-001B-4AB2-7756-71E2191D5661</importedID>
+<nullsAllowed>true</nullsAllowed>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT024</logicalDatatype>
+<dataTypeSize>512 BYTE</dataTypeSize>
+<ownDataTypeParameters>512 BYTE,,</ownDataTypeParameters>
+<autoIncrementCycle>false</autoIncrementCycle>
+</Column>
+<Column name="COL128" id="2C4B35B0-25A2-44CC-C8C6-B632A8D9D085">
+<sourceConnName>MEDS ADMIN</sourceConnName>
+<sourceObjSchema>STG_FILE_ROW</sourceObjSchema>
+<sourceObjName>COL128</sourceObjName>
+<createdBy>d.arboittedossantos</createdBy>
+<createdTime>2024-04-16 15:19:11 UTC</createdTime>
+<ownerDesignName>MEDS_SERD</ownerDesignName>
+<importedID>95673DD8-765B-C8A2-A0F8-7E8ACF2FF0AA</importedID>
+<nullsAllowed>true</nullsAllowed>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT024</logicalDatatype>
+<dataTypeSize>512 BYTE</dataTypeSize>
+<ownDataTypeParameters>512 BYTE,,</ownDataTypeParameters>
+<autoIncrementCycle>false</autoIncrementCycle>
+</Column>
+<Column name="COL129" id="A8DC1312-C930-D3DC-F7E4-3B2E1CF2685E">
+<sourceConnName>MEDS ADMIN</sourceConnName>
+<sourceObjSchema>STG_FILE_ROW</sourceObjSchema>
+<sourceObjName>COL129</sourceObjName>
+<createdBy>d.arboittedossantos</createdBy>
+<createdTime>2024-04-16 15:19:11 UTC</createdTime>
+<ownerDesignName>MEDS_SERD</ownerDesignName>
+<importedID>1925BA5F-D522-C364-0896-06AEE3CFBBC5</importedID>
+<nullsAllowed>true</nullsAllowed>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT024</logicalDatatype>
+<dataTypeSize>512 BYTE</dataTypeSize>
+<ownDataTypeParameters>512 BYTE,,</ownDataTypeParameters>
+<autoIncrementCycle>false</autoIncrementCycle>
+</Column>
+<Column name="COL130" id="6BD74C86-6A2C-7BA6-BC67-BC6ACBA1AF7A">
+<sourceConnName>MEDS ADMIN</sourceConnName>
+<sourceObjSchema>STG_FILE_ROW</sourceObjSchema>
+<sourceObjName>COL130</sourceObjName>
+<createdBy>d.arboittedossantos</createdBy>
+<createdTime>2024-04-16 15:19:11 UTC</createdTime>
+<ownerDesignName>MEDS_SERD</ownerDesignName>
+<importedID>115C2E5F-F94D-9BE8-DE43-B73DD7DF19FA</importedID>
+<nullsAllowed>true</nullsAllowed>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT024</logicalDatatype>
+<dataTypeSize>512 BYTE</dataTypeSize>
+<ownDataTypeParameters>512 BYTE,,</ownDataTypeParameters>
+<autoIncrementCycle>false</autoIncrementCycle>
+</Column>
+<Column name="COL131" id="A3796268-8A20-B5ED-9291-9E86819C1D05">
+<sourceConnName>MEDS ADMIN</sourceConnName>
+<sourceObjSchema>STG_FILE_ROW</sourceObjSchema>
+<sourceObjName>COL131</sourceObjName>
+<createdBy>d.arboittedossantos</createdBy>
+<createdTime>2024-04-16 15:19:11 UTC</createdTime>
+<ownerDesignName>MEDS_SERD</ownerDesignName>
+<importedID>071EA324-D888-45E5-9F12-F09F31A0CCF8</importedID>
+<nullsAllowed>true</nullsAllowed>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT024</logicalDatatype>
+<dataTypeSize>512 BYTE</dataTypeSize>
+<ownDataTypeParameters>512 BYTE,,</ownDataTypeParameters>
+<autoIncrementCycle>false</autoIncrementCycle>
+</Column>
+<Column name="COL132" id="649B2BAB-3E2E-1848-9E76-C7D1993FC528">
+<sourceConnName>MEDS ADMIN</sourceConnName>
+<sourceObjSchema>STG_FILE_ROW</sourceObjSchema>
+<sourceObjName>COL132</sourceObjName>
+<createdBy>d.arboittedossantos</createdBy>
+<createdTime>2024-04-16 15:19:11 UTC</createdTime>
+<ownerDesignName>MEDS_SERD</ownerDesignName>
+<importedID>65916011-97FA-1636-8AF4-DB27E2415041</importedID>
+<nullsAllowed>true</nullsAllowed>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT024</logicalDatatype>
+<dataTypeSize>512 BYTE</dataTypeSize>
+<ownDataTypeParameters>512 BYTE,,</ownDataTypeParameters>
+<autoIncrementCycle>false</autoIncrementCycle>
+</Column>
+<Column name="COL133" id="EAA415F3-ED84-C641-1425-6B8926E716CF">
+<sourceConnName>MEDS ADMIN</sourceConnName>
+<sourceObjSchema>STG_FILE_ROW</sourceObjSchema>
+<sourceObjName>COL133</sourceObjName>
+<createdBy>d.arboittedossantos</createdBy>
+<createdTime>2024-04-16 15:19:11 UTC</createdTime>
+<ownerDesignName>MEDS_SERD</ownerDesignName>
+<importedID>BAE8C073-543F-E783-B42A-DAF445697D79</importedID>
+<nullsAllowed>true</nullsAllowed>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT024</logicalDatatype>
+<dataTypeSize>512 BYTE</dataTypeSize>
+<ownDataTypeParameters>512 BYTE,,</ownDataTypeParameters>
+<autoIncrementCycle>false</autoIncrementCycle>
+</Column>
+<Column name="COL134" id="90B1BCF9-FF88-81BD-CC1B-F5D174B5B78F">
+<sourceConnName>MEDS ADMIN</sourceConnName>
+<sourceObjSchema>STG_FILE_ROW</sourceObjSchema>
+<sourceObjName>COL134</sourceObjName>
+<createdBy>d.arboittedossantos</createdBy>
+<createdTime>2024-04-16 15:19:11 UTC</createdTime>
+<ownerDesignName>MEDS_SERD</ownerDesignName>
+<importedID>5828DC0F-5611-70E8-1E84-9CEF6462674D</importedID>
+<nullsAllowed>true</nullsAllowed>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT024</logicalDatatype>
+<dataTypeSize>512 BYTE</dataTypeSize>
+<ownDataTypeParameters>512 BYTE,,</ownDataTypeParameters>
+<autoIncrementCycle>false</autoIncrementCycle>
+</Column>
+<Column name="COL135" id="BEA6D87B-BEFF-21A9-8BBD-263C5C63D77E">
+<sourceConnName>MEDS ADMIN</sourceConnName>
+<sourceObjSchema>STG_FILE_ROW</sourceObjSchema>
+<sourceObjName>COL135</sourceObjName>
+<createdBy>d.arboittedossantos</createdBy>
+<createdTime>2024-04-16 15:19:11 UTC</createdTime>
+<ownerDesignName>MEDS_SERD</ownerDesignName>
+<importedID>34B42AE1-DA9D-02D9-87B5-61084F8CA2D3</importedID>
+<nullsAllowed>true</nullsAllowed>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT024</logicalDatatype>
+<dataTypeSize>512 BYTE</dataTypeSize>
+<ownDataTypeParameters>512 BYTE,,</ownDataTypeParameters>
+<autoIncrementCycle>false</autoIncrementCycle>
+</Column>
+<Column name="COL136" id="781745CF-733D-8CB6-64D5-90864E3873A7">
+<sourceConnName>MEDS ADMIN</sourceConnName>
+<sourceObjSchema>STG_FILE_ROW</sourceObjSchema>
+<sourceObjName>COL136</sourceObjName>
+<createdBy>d.arboittedossantos</createdBy>
+<createdTime>2024-04-16 15:19:11 UTC</createdTime>
+<ownerDesignName>MEDS_SERD</ownerDesignName>
+<importedID>D4D4A9CF-8F88-6452-5970-CE13ED2C6BBF</importedID>
+<nullsAllowed>true</nullsAllowed>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT024</logicalDatatype>
+<dataTypeSize>512 BYTE</dataTypeSize>
+<ownDataTypeParameters>512 BYTE,,</ownDataTypeParameters>
+<autoIncrementCycle>false</autoIncrementCycle>
+</Column>
+<Column name="COL137" id="C29EC752-7A96-BF85-26CE-38F49CCCB73A">
+<sourceConnName>MEDS ADMIN</sourceConnName>
+<sourceObjSchema>STG_FILE_ROW</sourceObjSchema>
+<sourceObjName>COL137</sourceObjName>
+<createdBy>d.arboittedossantos</createdBy>
+<createdTime>2024-04-16 15:19:11 UTC</createdTime>
+<ownerDesignName>MEDS_SERD</ownerDesignName>
+<importedID>DDAA2E87-44A9-859B-1DBB-FDF952A2FBA1</importedID>
+<nullsAllowed>true</nullsAllowed>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT024</logicalDatatype>
+<dataTypeSize>512 BYTE</dataTypeSize>
+<ownDataTypeParameters>512 BYTE,,</ownDataTypeParameters>
+<autoIncrementCycle>false</autoIncrementCycle>
+</Column>
+<Column name="COL138" id="F4D7369B-4FB8-DA71-CDB5-51B3615F5F95">
+<sourceConnName>MEDS ADMIN</sourceConnName>
+<sourceObjSchema>STG_FILE_ROW</sourceObjSchema>
+<sourceObjName>COL138</sourceObjName>
+<createdBy>d.arboittedossantos</createdBy>
+<createdTime>2024-04-16 15:19:11 UTC</createdTime>
+<ownerDesignName>MEDS_SERD</ownerDesignName>
+<importedID>808BE754-BDFA-ACA0-9CC5-9A0DBB009A92</importedID>
+<nullsAllowed>true</nullsAllowed>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT024</logicalDatatype>
+<dataTypeSize>512 BYTE</dataTypeSize>
+<ownDataTypeParameters>512 BYTE,,</ownDataTypeParameters>
+<autoIncrementCycle>false</autoIncrementCycle>
+</Column>
+<Column name="COL139" id="C8451B76-1111-69EC-D335-3041FB2E3009">
+<sourceConnName>MEDS ADMIN</sourceConnName>
+<sourceObjSchema>STG_FILE_ROW</sourceObjSchema>
+<sourceObjName>COL139</sourceObjName>
+<createdBy>d.arboittedossantos</createdBy>
+<createdTime>2024-04-16 15:19:11 UTC</createdTime>
+<ownerDesignName>MEDS_SERD</ownerDesignName>
+<importedID>4CE5CCA5-CFC7-1925-7973-83F25591FB87</importedID>
+<nullsAllowed>true</nullsAllowed>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT024</logicalDatatype>
+<dataTypeSize>512 BYTE</dataTypeSize>
+<ownDataTypeParameters>512 BYTE,,</ownDataTypeParameters>
+<autoIncrementCycle>false</autoIncrementCycle>
+</Column>
+<Column name="COL140" id="E907737B-7E6F-B65A-48D7-56EEFC86DD20">
+<sourceConnName>MEDS ADMIN</sourceConnName>
+<sourceObjSchema>STG_FILE_ROW</sourceObjSchema>
+<sourceObjName>COL140</sourceObjName>
+<createdBy>d.arboittedossantos</createdBy>
+<createdTime>2024-04-16 15:19:11 UTC</createdTime>
+<ownerDesignName>MEDS_SERD</ownerDesignName>
+<importedID>B3DFE01C-3C29-F22D-995D-F9447AC59AFB</importedID>
+<nullsAllowed>true</nullsAllowed>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT024</logicalDatatype>
+<dataTypeSize>512 BYTE</dataTypeSize>
+<ownDataTypeParameters>512 BYTE,,</ownDataTypeParameters>
+<autoIncrementCycle>false</autoIncrementCycle>
+</Column>
+<Column name="COL141" id="C93C2FB1-902C-3DEE-7FFB-A5BA31559C8B">
+<sourceConnName>MEDS ADMIN</sourceConnName>
+<sourceObjSchema>STG_FILE_ROW</sourceObjSchema>
+<sourceObjName>COL141</sourceObjName>
+<createdBy>d.arboittedossantos</createdBy>
+<createdTime>2024-04-16 15:19:11 UTC</createdTime>
+<ownerDesignName>MEDS_SERD</ownerDesignName>
+<importedID>269D52C1-53B1-635B-4BF6-345E57051909</importedID>
+<nullsAllowed>true</nullsAllowed>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT024</logicalDatatype>
+<dataTypeSize>512 BYTE</dataTypeSize>
+<ownDataTypeParameters>512 BYTE,,</ownDataTypeParameters>
+<autoIncrementCycle>false</autoIncrementCycle>
+</Column>
+<Column name="COL142" id="F674E38D-4C79-F0D5-3CA2-CF906376E449">
+<sourceConnName>MEDS ADMIN</sourceConnName>
+<sourceObjSchema>STG_FILE_ROW</sourceObjSchema>
+<sourceObjName>COL142</sourceObjName>
+<createdBy>d.arboittedossantos</createdBy>
+<createdTime>2024-04-16 15:19:11 UTC</createdTime>
+<ownerDesignName>MEDS_SERD</ownerDesignName>
+<importedID>3CCD7A05-A766-E269-C335-ADAC544BC7F5</importedID>
+<nullsAllowed>true</nullsAllowed>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT024</logicalDatatype>
+<dataTypeSize>512 BYTE</dataTypeSize>
+<ownDataTypeParameters>512 BYTE,,</ownDataTypeParameters>
+<autoIncrementCycle>false</autoIncrementCycle>
+</Column>
+<Column name="COL143" id="DD5BBA61-4693-AECA-83BD-5B883C548CFA">
+<sourceConnName>MEDS ADMIN</sourceConnName>
+<sourceObjSchema>STG_FILE_ROW</sourceObjSchema>
+<sourceObjName>COL143</sourceObjName>
+<createdBy>d.arboittedossantos</createdBy>
+<createdTime>2024-04-16 15:19:11 UTC</createdTime>
+<ownerDesignName>MEDS_SERD</ownerDesignName>
+<importedID>A41ED277-EBC6-7411-EF51-17FC84D77E93</importedID>
+<nullsAllowed>true</nullsAllowed>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT024</logicalDatatype>
+<dataTypeSize>512 BYTE</dataTypeSize>
+<ownDataTypeParameters>512 BYTE,,</ownDataTypeParameters>
+<autoIncrementCycle>false</autoIncrementCycle>
+</Column>
+<Column name="COL144" id="0E33444C-540F-C5C7-7BF9-89FEE61F225E">
+<sourceConnName>MEDS ADMIN</sourceConnName>
+<sourceObjSchema>STG_FILE_ROW</sourceObjSchema>
+<sourceObjName>COL144</sourceObjName>
+<createdBy>d.arboittedossantos</createdBy>
+<createdTime>2024-04-16 15:19:11 UTC</createdTime>
+<ownerDesignName>MEDS_SERD</ownerDesignName>
+<importedID>21268A21-B758-5F99-F34C-49BE41FF73EB</importedID>
+<nullsAllowed>true</nullsAllowed>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT024</logicalDatatype>
+<dataTypeSize>512 BYTE</dataTypeSize>
+<ownDataTypeParameters>512 BYTE,,</ownDataTypeParameters>
+<autoIncrementCycle>false</autoIncrementCycle>
+</Column>
+<Column name="COL145" id="860454F3-2706-C9EE-C378-6EC22EA9A022">
+<sourceConnName>MEDS ADMIN</sourceConnName>
+<sourceObjSchema>STG_FILE_ROW</sourceObjSchema>
+<sourceObjName>COL145</sourceObjName>
+<createdBy>d.arboittedossantos</createdBy>
+<createdTime>2024-04-16 15:19:11 UTC</createdTime>
+<ownerDesignName>MEDS_SERD</ownerDesignName>
+<importedID>569F704B-18A1-4CFE-FE1A-687C53594DF3</importedID>
+<nullsAllowed>true</nullsAllowed>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT024</logicalDatatype>
+<dataTypeSize>512 BYTE</dataTypeSize>
+<ownDataTypeParameters>512 BYTE,,</ownDataTypeParameters>
+<autoIncrementCycle>false</autoIncrementCycle>
+</Column>
+<Column name="COL146" id="D1E689BD-A1FE-A728-4B56-AA7B84A7F5C2">
+<sourceConnName>MEDS ADMIN</sourceConnName>
+<sourceObjSchema>STG_FILE_ROW</sourceObjSchema>
+<sourceObjName>COL146</sourceObjName>
+<createdBy>d.arboittedossantos</createdBy>
+<createdTime>2024-04-16 15:19:11 UTC</createdTime>
+<ownerDesignName>MEDS_SERD</ownerDesignName>
+<importedID>AF0E74EE-7D85-898C-52CD-518438AB91C9</importedID>
+<nullsAllowed>true</nullsAllowed>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT024</logicalDatatype>
+<dataTypeSize>512 BYTE</dataTypeSize>
+<ownDataTypeParameters>512 BYTE,,</ownDataTypeParameters>
+<autoIncrementCycle>false</autoIncrementCycle>
+</Column>
+<Column name="COL147" id="1185EDD7-3782-7652-8071-1185057E0B4E">
+<sourceConnName>MEDS ADMIN</sourceConnName>
+<sourceObjSchema>STG_FILE_ROW</sourceObjSchema>
+<sourceObjName>COL147</sourceObjName>
+<createdBy>d.arboittedossantos</createdBy>
+<createdTime>2024-04-16 15:19:11 UTC</createdTime>
+<ownerDesignName>MEDS_SERD</ownerDesignName>
+<importedID>2F81F738-AD28-7D8C-F156-A65CB3451CFA</importedID>
+<nullsAllowed>true</nullsAllowed>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT024</logicalDatatype>
+<dataTypeSize>512 BYTE</dataTypeSize>
+<ownDataTypeParameters>512 BYTE,,</ownDataTypeParameters>
+<autoIncrementCycle>false</autoIncrementCycle>
+</Column>
+<Column name="COL148" id="3E15F99E-AEDA-41B2-06CC-44FCCFCDCFE4">
+<sourceConnName>MEDS ADMIN</sourceConnName>
+<sourceObjSchema>STG_FILE_ROW</sourceObjSchema>
+<sourceObjName>COL148</sourceObjName>
+<createdBy>d.arboittedossantos</createdBy>
+<createdTime>2024-04-16 15:19:11 UTC</createdTime>
+<ownerDesignName>MEDS_SERD</ownerDesignName>
+<importedID>269EFA8E-3693-7858-F507-15CFB5139852</importedID>
+<nullsAllowed>true</nullsAllowed>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT024</logicalDatatype>
+<dataTypeSize>512 BYTE</dataTypeSize>
+<ownDataTypeParameters>512 BYTE,,</ownDataTypeParameters>
+<autoIncrementCycle>false</autoIncrementCycle>
+</Column>
+<Column name="COL149" id="1E9B4CAF-8E5D-67D3-D7E0-34B5CB84F198">
+<sourceConnName>MEDS ADMIN</sourceConnName>
+<sourceObjSchema>STG_FILE_ROW</sourceObjSchema>
+<sourceObjName>COL149</sourceObjName>
+<createdBy>d.arboittedossantos</createdBy>
+<createdTime>2024-04-16 15:19:11 UTC</createdTime>
+<ownerDesignName>MEDS_SERD</ownerDesignName>
+<importedID>1FE83095-4CEB-7679-E67D-E49892044095</importedID>
+<nullsAllowed>true</nullsAllowed>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT024</logicalDatatype>
+<dataTypeSize>512 BYTE</dataTypeSize>
+<ownDataTypeParameters>512 BYTE,,</ownDataTypeParameters>
+<autoIncrementCycle>false</autoIncrementCycle>
+</Column>
+<Column name="COL150" id="11277051-2C1D-CF75-2D31-4675A919A70D">
+<sourceConnName>MEDS ADMIN</sourceConnName>
+<sourceObjSchema>STG_FILE_ROW</sourceObjSchema>
+<sourceObjName>COL150</sourceObjName>
+<createdBy>d.arboittedossantos</createdBy>
+<createdTime>2024-04-16 15:19:11 UTC</createdTime>
+<ownerDesignName>MEDS_SERD</ownerDesignName>
+<importedID>C6551127-E1D7-5056-07C0-AA5E2E31ED63</importedID>
+<nullsAllowed>true</nullsAllowed>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT024</logicalDatatype>
+<dataTypeSize>512 BYTE</dataTypeSize>
+<ownDataTypeParameters>512 BYTE,,</ownDataTypeParameters>
+<autoIncrementCycle>false</autoIncrementCycle>
+</Column>
+<Column name="COL151" id="1D0A78D7-ECF7-D9C1-D355-4E14078F21AE">
+<sourceConnName>MEDS ADMIN</sourceConnName>
+<sourceObjSchema>STG_FILE_ROW</sourceObjSchema>
+<sourceObjName>COL151</sourceObjName>
+<createdBy>d.arboittedossantos</createdBy>
+<createdTime>2024-04-16 15:19:11 UTC</createdTime>
+<ownerDesignName>MEDS_SERD</ownerDesignName>
+<importedID>53909E26-D877-D111-3131-CD1726935064</importedID>
+<nullsAllowed>true</nullsAllowed>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT024</logicalDatatype>
+<dataTypeSize>512 BYTE</dataTypeSize>
+<ownDataTypeParameters>512 BYTE,,</ownDataTypeParameters>
+<autoIncrementCycle>false</autoIncrementCycle>
+</Column>
+<Column name="COL152" id="06A565F8-EA19-B9E7-46A7-EA962125ADEA">
+<sourceConnName>MEDS ADMIN</sourceConnName>
+<sourceObjSchema>STG_FILE_ROW</sourceObjSchema>
+<sourceObjName>COL152</sourceObjName>
+<createdBy>d.arboittedossantos</createdBy>
+<createdTime>2024-04-16 15:19:11 UTC</createdTime>
+<ownerDesignName>MEDS_SERD</ownerDesignName>
+<importedID>252E1B02-AA70-9942-D407-18CA40A9C020</importedID>
+<nullsAllowed>true</nullsAllowed>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT024</logicalDatatype>
+<dataTypeSize>512 BYTE</dataTypeSize>
+<ownDataTypeParameters>512 BYTE,,</ownDataTypeParameters>
+<autoIncrementCycle>false</autoIncrementCycle>
+</Column>
+<Column name="COL153" id="33727F32-EA3A-3E8E-A881-B39E28D8E525">
+<sourceConnName>MEDS ADMIN</sourceConnName>
+<sourceObjSchema>STG_FILE_ROW</sourceObjSchema>
+<sourceObjName>COL153</sourceObjName>
+<createdBy>d.arboittedossantos</createdBy>
+<createdTime>2024-04-16 15:19:11 UTC</createdTime>
+<ownerDesignName>MEDS_SERD</ownerDesignName>
+<importedID>4CABF106-9C0F-8C09-E0B1-9698B279A74B</importedID>
+<nullsAllowed>true</nullsAllowed>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT024</logicalDatatype>
+<dataTypeSize>512 BYTE</dataTypeSize>
+<ownDataTypeParameters>512 BYTE,,</ownDataTypeParameters>
+<autoIncrementCycle>false</autoIncrementCycle>
+</Column>
+<Column name="COL154" id="CFE0534D-020D-6882-B5B1-3E39CBF2929A">
+<sourceConnName>MEDS ADMIN</sourceConnName>
+<sourceObjSchema>STG_FILE_ROW</sourceObjSchema>
+<sourceObjName>COL154</sourceObjName>
+<createdBy>d.arboittedossantos</createdBy>
+<createdTime>2024-04-16 15:19:11 UTC</createdTime>
+<ownerDesignName>MEDS_SERD</ownerDesignName>
+<importedID>170C31BA-B3E6-40BE-666D-34846AC3B6AA</importedID>
+<nullsAllowed>true</nullsAllowed>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT024</logicalDatatype>
+<dataTypeSize>512 BYTE</dataTypeSize>
+<ownDataTypeParameters>512 BYTE,,</ownDataTypeParameters>
+<autoIncrementCycle>false</autoIncrementCycle>
+</Column>
+<Column name="COL155" id="152E1C13-226B-174D-6ECE-F464242E9A2D">
+<sourceConnName>MEDS ADMIN</sourceConnName>
+<sourceObjSchema>STG_FILE_ROW</sourceObjSchema>
+<sourceObjName>COL155</sourceObjName>
+<createdBy>d.arboittedossantos</createdBy>
+<createdTime>2024-04-16 15:19:11 UTC</createdTime>
+<ownerDesignName>MEDS_SERD</ownerDesignName>
+<importedID>003836E9-225E-5B7F-4E43-641E1AD8126E</importedID>
+<nullsAllowed>true</nullsAllowed>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT024</logicalDatatype>
+<dataTypeSize>512 BYTE</dataTypeSize>
+<ownDataTypeParameters>512 BYTE,,</ownDataTypeParameters>
+<autoIncrementCycle>false</autoIncrementCycle>
+</Column>
+<Column name="COL156" id="B34A2298-CD27-89DF-3D3C-E5936F35B5CA">
+<sourceConnName>MEDS ADMIN</sourceConnName>
+<sourceObjSchema>STG_FILE_ROW</sourceObjSchema>
+<sourceObjName>COL156</sourceObjName>
+<createdBy>d.arboittedossantos</createdBy>
+<createdTime>2024-04-16 15:19:11 UTC</createdTime>
+<ownerDesignName>MEDS_SERD</ownerDesignName>
+<importedID>AC4EC624-A0BF-0398-6D16-FF177668A3F9</importedID>
+<nullsAllowed>true</nullsAllowed>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT024</logicalDatatype>
+<dataTypeSize>512 BYTE</dataTypeSize>
+<ownDataTypeParameters>512 BYTE,,</ownDataTypeParameters>
+<autoIncrementCycle>false</autoIncrementCycle>
+</Column>
+<Column name="COL157" id="D9818F25-2EE9-F804-A372-5A43113A886E">
+<sourceConnName>MEDS ADMIN</sourceConnName>
+<sourceObjSchema>STG_FILE_ROW</sourceObjSchema>
+<sourceObjName>COL157</sourceObjName>
+<createdBy>d.arboittedossantos</createdBy>
+<createdTime>2024-04-16 15:19:11 UTC</createdTime>
+<ownerDesignName>MEDS_SERD</ownerDesignName>
+<importedID>0D1628A5-E268-95C7-9A70-05FAA667E25B</importedID>
+<nullsAllowed>true</nullsAllowed>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT024</logicalDatatype>
+<dataTypeSize>512 BYTE</dataTypeSize>
+<ownDataTypeParameters>512 BYTE,,</ownDataTypeParameters>
+<autoIncrementCycle>false</autoIncrementCycle>
+</Column>
+<Column name="COL158" id="2D9FAE0D-4CEC-5E98-506C-D8482F727F6B">
+<sourceConnName>MEDS ADMIN</sourceConnName>
+<sourceObjSchema>STG_FILE_ROW</sourceObjSchema>
+<sourceObjName>COL158</sourceObjName>
+<createdBy>d.arboittedossantos</createdBy>
+<createdTime>2024-04-16 15:19:11 UTC</createdTime>
+<ownerDesignName>MEDS_SERD</ownerDesignName>
+<importedID>A4729F02-BA99-D0DC-6F81-64027F2B3A8E</importedID>
+<nullsAllowed>true</nullsAllowed>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT024</logicalDatatype>
+<dataTypeSize>512 BYTE</dataTypeSize>
+<ownDataTypeParameters>512 BYTE,,</ownDataTypeParameters>
+<autoIncrementCycle>false</autoIncrementCycle>
+</Column>
+<Column name="COL159" id="59FBF19B-3AF2-A3C2-9CCE-23F212851F8D">
+<sourceConnName>MEDS ADMIN</sourceConnName>
+<sourceObjSchema>STG_FILE_ROW</sourceObjSchema>
+<sourceObjName>COL159</sourceObjName>
+<createdBy>d.arboittedossantos</createdBy>
+<createdTime>2024-04-16 15:19:11 UTC</createdTime>
+<ownerDesignName>MEDS_SERD</ownerDesignName>
+<importedID>2828EF3A-87CB-3F06-86BB-267CD2CDFFFB</importedID>
+<nullsAllowed>true</nullsAllowed>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT024</logicalDatatype>
+<dataTypeSize>512 BYTE</dataTypeSize>
+<ownDataTypeParameters>512 BYTE,,</ownDataTypeParameters>
+<autoIncrementCycle>false</autoIncrementCycle>
+</Column>
+<Column name="COL160" id="79DB0C2F-6034-C25B-454E-E29A8907417B">
+<sourceConnName>MEDS ADMIN</sourceConnName>
+<sourceObjSchema>STG_FILE_ROW</sourceObjSchema>
+<sourceObjName>COL160</sourceObjName>
+<createdBy>d.arboittedossantos</createdBy>
+<createdTime>2024-04-16 15:19:11 UTC</createdTime>
+<ownerDesignName>MEDS_SERD</ownerDesignName>
+<importedID>DF2A00B0-4676-B965-BB3B-E74275D157C4</importedID>
+<nullsAllowed>true</nullsAllowed>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT024</logicalDatatype>
+<dataTypeSize>512 BYTE</dataTypeSize>
+<ownDataTypeParameters>512 BYTE,,</ownDataTypeParameters>
+<autoIncrementCycle>false</autoIncrementCycle>
+</Column>
+<Column name="COL161" id="E4AE373F-3860-4794-3376-5671A6FF2F6C">
+<sourceConnName>MEDS ADMIN</sourceConnName>
+<sourceObjSchema>STG_FILE_ROW</sourceObjSchema>
+<sourceObjName>COL161</sourceObjName>
+<createdBy>d.arboittedossantos</createdBy>
+<createdTime>2024-04-16 15:19:11 UTC</createdTime>
+<ownerDesignName>MEDS_SERD</ownerDesignName>
+<importedID>B0EAF8C5-ED38-A396-E135-5CA4D48BE3E1</importedID>
+<nullsAllowed>true</nullsAllowed>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT024</logicalDatatype>
+<dataTypeSize>512 BYTE</dataTypeSize>
+<ownDataTypeParameters>512 BYTE,,</ownDataTypeParameters>
+<autoIncrementCycle>false</autoIncrementCycle>
+</Column>
+<Column name="COL162" id="2FBD7316-5868-6F00-041A-4976421255E3">
+<sourceConnName>MEDS ADMIN</sourceConnName>
+<sourceObjSchema>STG_FILE_ROW</sourceObjSchema>
+<sourceObjName>COL162</sourceObjName>
+<createdBy>d.arboittedossantos</createdBy>
+<createdTime>2024-04-16 15:19:11 UTC</createdTime>
+<ownerDesignName>MEDS_SERD</ownerDesignName>
+<importedID>7E0B1BF8-79B5-0663-9BFA-A09BDDB63DA5</importedID>
+<nullsAllowed>true</nullsAllowed>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT024</logicalDatatype>
+<dataTypeSize>512 BYTE</dataTypeSize>
+<ownDataTypeParameters>512 BYTE,,</ownDataTypeParameters>
+<autoIncrementCycle>false</autoIncrementCycle>
+</Column>
+<Column name="COL163" id="39B2CAB7-5B2D-E9A6-89AD-097939DDE76C">
+<sourceConnName>MEDS ADMIN</sourceConnName>
+<sourceObjSchema>STG_FILE_ROW</sourceObjSchema>
+<sourceObjName>COL163</sourceObjName>
+<createdBy>d.arboittedossantos</createdBy>
+<createdTime>2024-04-16 15:19:11 UTC</createdTime>
+<ownerDesignName>MEDS_SERD</ownerDesignName>
+<importedID>6D5C439C-A8D2-FB67-FBE9-E3310A64A463</importedID>
+<nullsAllowed>true</nullsAllowed>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT024</logicalDatatype>
+<dataTypeSize>512 BYTE</dataTypeSize>
+<ownDataTypeParameters>512 BYTE,,</ownDataTypeParameters>
+<autoIncrementCycle>false</autoIncrementCycle>
+</Column>
+<Column name="COL164" id="E915A987-FE46-A423-83A0-465D581DEE88">
+<sourceConnName>MEDS ADMIN</sourceConnName>
+<sourceObjSchema>STG_FILE_ROW</sourceObjSchema>
+<sourceObjName>COL164</sourceObjName>
+<createdBy>d.arboittedossantos</createdBy>
+<createdTime>2024-04-16 15:19:11 UTC</createdTime>
+<ownerDesignName>MEDS_SERD</ownerDesignName>
+<importedID>089C8751-CDAD-E585-908A-11AE96FD5D97</importedID>
+<nullsAllowed>true</nullsAllowed>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT024</logicalDatatype>
+<dataTypeSize>512 BYTE</dataTypeSize>
+<ownDataTypeParameters>512 BYTE,,</ownDataTypeParameters>
+<autoIncrementCycle>false</autoIncrementCycle>
+</Column>
+<Column name="COL165" id="0D012BFE-42C2-14ED-D325-9E05FEC97DEE">
+<sourceConnName>MEDS ADMIN</sourceConnName>
+<sourceObjSchema>STG_FILE_ROW</sourceObjSchema>
+<sourceObjName>COL165</sourceObjName>
+<createdBy>d.arboittedossantos</createdBy>
+<createdTime>2024-04-16 15:19:11 UTC</createdTime>
+<ownerDesignName>MEDS_SERD</ownerDesignName>
+<importedID>AAD03644-BC90-04E4-16F8-C8ABB2593583</importedID>
+<nullsAllowed>true</nullsAllowed>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT024</logicalDatatype>
+<dataTypeSize>512 BYTE</dataTypeSize>
+<ownDataTypeParameters>512 BYTE,,</ownDataTypeParameters>
+<autoIncrementCycle>false</autoIncrementCycle>
+</Column>
+<Column name="COL166" id="29B560A3-AB25-C375-B134-9F8D8B42E758">
+<sourceConnName>MEDS ADMIN</sourceConnName>
+<sourceObjSchema>STG_FILE_ROW</sourceObjSchema>
+<sourceObjName>COL166</sourceObjName>
+<createdBy>d.arboittedossantos</createdBy>
+<createdTime>2024-04-16 15:19:11 UTC</createdTime>
+<ownerDesignName>MEDS_SERD</ownerDesignName>
+<importedID>F26A4335-3392-0CCB-2FB0-70E3070727E2</importedID>
+<nullsAllowed>true</nullsAllowed>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT024</logicalDatatype>
+<dataTypeSize>512 BYTE</dataTypeSize>
+<ownDataTypeParameters>512 BYTE,,</ownDataTypeParameters>
+<autoIncrementCycle>false</autoIncrementCycle>
+</Column>
+<Column name="COL167" id="8614D4B7-9D6A-EB17-B0FC-C9817655FB89">
+<sourceConnName>MEDS ADMIN</sourceConnName>
+<sourceObjSchema>STG_FILE_ROW</sourceObjSchema>
+<sourceObjName>COL167</sourceObjName>
+<createdBy>d.arboittedossantos</createdBy>
+<createdTime>2024-04-16 15:19:11 UTC</createdTime>
+<ownerDesignName>MEDS_SERD</ownerDesignName>
+<importedID>6E8200D7-1593-33F9-8654-83E78D304F98</importedID>
+<nullsAllowed>true</nullsAllowed>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT024</logicalDatatype>
+<dataTypeSize>512 BYTE</dataTypeSize>
+<ownDataTypeParameters>512 BYTE,,</ownDataTypeParameters>
+<autoIncrementCycle>false</autoIncrementCycle>
+</Column>
+<Column name="COL168" id="A72E1879-F6CD-4D51-CEE4-7003A5E618D8">
+<sourceConnName>MEDS ADMIN</sourceConnName>
+<sourceObjSchema>STG_FILE_ROW</sourceObjSchema>
+<sourceObjName>COL168</sourceObjName>
+<createdBy>d.arboittedossantos</createdBy>
+<createdTime>2024-04-16 15:19:11 UTC</createdTime>
+<ownerDesignName>MEDS_SERD</ownerDesignName>
+<importedID>39329D1C-6478-7239-844C-3709362CD968</importedID>
+<nullsAllowed>true</nullsAllowed>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT024</logicalDatatype>
+<dataTypeSize>512 BYTE</dataTypeSize>
+<ownDataTypeParameters>512 BYTE,,</ownDataTypeParameters>
+<autoIncrementCycle>false</autoIncrementCycle>
+</Column>
+<Column name="COL169" id="DCDB266F-1CC3-E5EB-82F7-5A0F55DBD098">
+<sourceConnName>MEDS ADMIN</sourceConnName>
+<sourceObjSchema>STG_FILE_ROW</sourceObjSchema>
+<sourceObjName>COL169</sourceObjName>
+<createdBy>d.arboittedossantos</createdBy>
+<createdTime>2024-04-16 15:19:11 UTC</createdTime>
+<ownerDesignName>MEDS_SERD</ownerDesignName>
+<importedID>A23B7DDA-25B9-5181-4B7B-FA78BBAF70D7</importedID>
+<nullsAllowed>true</nullsAllowed>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT024</logicalDatatype>
+<dataTypeSize>512 BYTE</dataTypeSize>
+<ownDataTypeParameters>512 BYTE,,</ownDataTypeParameters>
+<autoIncrementCycle>false</autoIncrementCycle>
+</Column>
+<Column name="COL170" id="D1309F5C-F216-BFFD-5DC3-285249C10B0F">
+<sourceConnName>MEDS ADMIN</sourceConnName>
+<sourceObjSchema>STG_FILE_ROW</sourceObjSchema>
+<sourceObjName>COL170</sourceObjName>
+<createdBy>d.arboittedossantos</createdBy>
+<createdTime>2024-04-16 15:19:11 UTC</createdTime>
+<ownerDesignName>MEDS_SERD</ownerDesignName>
+<importedID>38680E88-3A5A-3750-C4F9-3610D4A4D364</importedID>
+<nullsAllowed>true</nullsAllowed>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT024</logicalDatatype>
+<dataTypeSize>512 BYTE</dataTypeSize>
+<ownDataTypeParameters>512 BYTE,,</ownDataTypeParameters>
+<autoIncrementCycle>false</autoIncrementCycle>
+</Column>
+<Column name="COL171" id="9EB62847-00B1-5422-F8B4-7CBD496D00C7">
+<sourceConnName>MEDS ADMIN</sourceConnName>
+<sourceObjSchema>STG_FILE_ROW</sourceObjSchema>
+<sourceObjName>COL171</sourceObjName>
+<createdBy>d.arboittedossantos</createdBy>
+<createdTime>2024-04-16 15:19:11 UTC</createdTime>
+<ownerDesignName>MEDS_SERD</ownerDesignName>
+<importedID>DAF8E488-EF7C-1AFF-D1C3-1F7E05B65AA7</importedID>
+<nullsAllowed>true</nullsAllowed>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT024</logicalDatatype>
+<dataTypeSize>512 BYTE</dataTypeSize>
+<ownDataTypeParameters>512 BYTE,,</ownDataTypeParameters>
+<autoIncrementCycle>false</autoIncrementCycle>
+</Column>
+<Column name="COL172" id="AB29DDD7-5576-1447-5427-0648D27620C4">
+<sourceConnName>MEDS ADMIN</sourceConnName>
+<sourceObjSchema>STG_FILE_ROW</sourceObjSchema>
+<sourceObjName>COL172</sourceObjName>
+<createdBy>d.arboittedossantos</createdBy>
+<createdTime>2024-04-16 15:19:11 UTC</createdTime>
+<ownerDesignName>MEDS_SERD</ownerDesignName>
+<importedID>16EB13BC-9F60-2FE2-0259-3669D8E3CE48</importedID>
+<nullsAllowed>true</nullsAllowed>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT024</logicalDatatype>
+<dataTypeSize>512 BYTE</dataTypeSize>
+<ownDataTypeParameters>512 BYTE,,</ownDataTypeParameters>
+<autoIncrementCycle>false</autoIncrementCycle>
+</Column>
+<Column name="COL173" id="9B2F6268-C6D1-E33C-837E-F28FD038C147">
+<sourceConnName>MEDS ADMIN</sourceConnName>
+<sourceObjSchema>STG_FILE_ROW</sourceObjSchema>
+<sourceObjName>COL173</sourceObjName>
+<createdBy>d.arboittedossantos</createdBy>
+<createdTime>2024-04-16 15:19:11 UTC</createdTime>
+<ownerDesignName>MEDS_SERD</ownerDesignName>
+<importedID>1F391316-4676-ED5A-52DF-874812CC8A55</importedID>
+<nullsAllowed>true</nullsAllowed>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT024</logicalDatatype>
+<dataTypeSize>512 BYTE</dataTypeSize>
+<ownDataTypeParameters>512 BYTE,,</ownDataTypeParameters>
+<autoIncrementCycle>false</autoIncrementCycle>
+</Column>
+<Column name="COL174" id="2AE4290F-31EA-422A-61EA-F8CE2AF68AB8">
+<sourceConnName>MEDS ADMIN</sourceConnName>
+<sourceObjSchema>STG_FILE_ROW</sourceObjSchema>
+<sourceObjName>COL174</sourceObjName>
+<createdBy>d.arboittedossantos</createdBy>
+<createdTime>2024-04-16 15:19:11 UTC</createdTime>
+<ownerDesignName>MEDS_SERD</ownerDesignName>
+<importedID>78FC2D5E-64E5-AC4D-063F-78CDC633F47E</importedID>
+<nullsAllowed>true</nullsAllowed>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT024</logicalDatatype>
+<dataTypeSize>512 BYTE</dataTypeSize>
+<ownDataTypeParameters>512 BYTE,,</ownDataTypeParameters>
+<autoIncrementCycle>false</autoIncrementCycle>
+</Column>
+<Column name="COL175" id="1E3BD6E9-10AC-3AEA-CA61-E113A990034C">
+<sourceConnName>MEDS ADMIN</sourceConnName>
+<sourceObjSchema>STG_FILE_ROW</sourceObjSchema>
+<sourceObjName>COL175</sourceObjName>
+<createdBy>d.arboittedossantos</createdBy>
+<createdTime>2024-04-16 15:19:11 UTC</createdTime>
+<ownerDesignName>MEDS_SERD</ownerDesignName>
+<importedID>B5786374-4B53-3A07-59E2-FB51C9E9A1C0</importedID>
+<nullsAllowed>true</nullsAllowed>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT024</logicalDatatype>
+<dataTypeSize>512 BYTE</dataTypeSize>
+<ownDataTypeParameters>512 BYTE,,</ownDataTypeParameters>
+<autoIncrementCycle>false</autoIncrementCycle>
+</Column>
+<Column name="COL176" id="5EF1B29A-DCB1-64F5-9519-D75F82E42BA3">
+<sourceConnName>MEDS ADMIN</sourceConnName>
+<sourceObjSchema>STG_FILE_ROW</sourceObjSchema>
+<sourceObjName>COL176</sourceObjName>
+<createdBy>d.arboittedossantos</createdBy>
+<createdTime>2024-04-16 15:19:11 UTC</createdTime>
+<ownerDesignName>MEDS_SERD</ownerDesignName>
+<importedID>016F597C-B580-FE92-4DEF-F689FEF093F6</importedID>
+<nullsAllowed>true</nullsAllowed>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT024</logicalDatatype>
+<dataTypeSize>512 BYTE</dataTypeSize>
+<ownDataTypeParameters>512 BYTE,,</ownDataTypeParameters>
+<autoIncrementCycle>false</autoIncrementCycle>
+</Column>
+<Column name="COL177" id="03A556C8-36B2-CBD0-310D-EE72A5C69D13">
+<sourceConnName>MEDS ADMIN</sourceConnName>
+<sourceObjSchema>STG_FILE_ROW</sourceObjSchema>
+<sourceObjName>COL177</sourceObjName>
+<createdBy>d.arboittedossantos</createdBy>
+<createdTime>2024-04-16 15:19:11 UTC</createdTime>
+<ownerDesignName>MEDS_SERD</ownerDesignName>
+<importedID>8A925542-F405-34B0-BBC4-1C877C998D75</importedID>
+<nullsAllowed>true</nullsAllowed>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT024</logicalDatatype>
+<dataTypeSize>512 BYTE</dataTypeSize>
+<ownDataTypeParameters>512 BYTE,,</ownDataTypeParameters>
+<autoIncrementCycle>false</autoIncrementCycle>
+</Column>
+<Column name="COL178" id="9706EAB8-CBA9-34F1-6B1F-5626CBAF3DD6">
+<sourceConnName>MEDS ADMIN</sourceConnName>
+<sourceObjSchema>STG_FILE_ROW</sourceObjSchema>
+<sourceObjName>COL178</sourceObjName>
+<createdBy>d.arboittedossantos</createdBy>
+<createdTime>2024-04-16 15:19:11 UTC</createdTime>
+<ownerDesignName>MEDS_SERD</ownerDesignName>
+<importedID>7F175FCD-89BC-83E7-6FE6-9C706DE70684</importedID>
+<nullsAllowed>true</nullsAllowed>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT024</logicalDatatype>
+<dataTypeSize>512 BYTE</dataTypeSize>
+<ownDataTypeParameters>512 BYTE,,</ownDataTypeParameters>
+<autoIncrementCycle>false</autoIncrementCycle>
+</Column>
+<Column name="COL179" id="AB56FC99-F8D2-006B-EEF4-B64AAC93354B">
+<sourceConnName>MEDS ADMIN</sourceConnName>
+<sourceObjSchema>STG_FILE_ROW</sourceObjSchema>
+<sourceObjName>COL179</sourceObjName>
+<createdBy>d.arboittedossantos</createdBy>
+<createdTime>2024-04-16 15:19:11 UTC</createdTime>
+<ownerDesignName>MEDS_SERD</ownerDesignName>
+<importedID>A2464244-1F42-85BB-94F1-B767EF20DC52</importedID>
+<nullsAllowed>true</nullsAllowed>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT024</logicalDatatype>
+<dataTypeSize>512 BYTE</dataTypeSize>
+<ownDataTypeParameters>512 BYTE,,</ownDataTypeParameters>
+<autoIncrementCycle>false</autoIncrementCycle>
+</Column>
+<Column name="COL180" id="D78DEFB1-70AC-7C34-CC83-123FF48AB54E">
+<sourceConnName>MEDS ADMIN</sourceConnName>
+<sourceObjSchema>STG_FILE_ROW</sourceObjSchema>
+<sourceObjName>COL180</sourceObjName>
+<createdBy>d.arboittedossantos</createdBy>
+<createdTime>2024-04-16 15:19:11 UTC</createdTime>
+<ownerDesignName>MEDS_SERD</ownerDesignName>
+<importedID>20D66855-86E2-1883-7003-BA274F610CE4</importedID>
+<nullsAllowed>true</nullsAllowed>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT024</logicalDatatype>
+<dataTypeSize>512 BYTE</dataTypeSize>
+<ownDataTypeParameters>512 BYTE,,</ownDataTypeParameters>
+<autoIncrementCycle>false</autoIncrementCycle>
+</Column>
+<Column name="COL181" id="F6B41F51-AE4D-8915-51F1-87882CD38840">
+<sourceConnName>MEDS ADMIN</sourceConnName>
+<sourceObjSchema>STG_FILE_ROW</sourceObjSchema>
+<sourceObjName>COL181</sourceObjName>
+<createdBy>d.arboittedossantos</createdBy>
+<createdTime>2024-04-16 15:19:11 UTC</createdTime>
+<ownerDesignName>MEDS_SERD</ownerDesignName>
+<importedID>B6068D02-BD67-5120-6707-2C6C930EBEE0</importedID>
+<nullsAllowed>true</nullsAllowed>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT024</logicalDatatype>
+<dataTypeSize>512 BYTE</dataTypeSize>
+<ownDataTypeParameters>512 BYTE,,</ownDataTypeParameters>
+<autoIncrementCycle>false</autoIncrementCycle>
+</Column>
+<Column name="COL182" id="68463474-E5D1-2712-B2AA-5922243DD2A5">
+<sourceConnName>MEDS ADMIN</sourceConnName>
+<sourceObjSchema>STG_FILE_ROW</sourceObjSchema>
+<sourceObjName>COL182</sourceObjName>
+<createdBy>d.arboittedossantos</createdBy>
+<createdTime>2024-04-16 15:19:11 UTC</createdTime>
+<ownerDesignName>MEDS_SERD</ownerDesignName>
+<importedID>2650579E-087F-1EAE-17E7-F77C5C4CB302</importedID>
+<nullsAllowed>true</nullsAllowed>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT024</logicalDatatype>
+<dataTypeSize>512 BYTE</dataTypeSize>
+<ownDataTypeParameters>512 BYTE,,</ownDataTypeParameters>
+<autoIncrementCycle>false</autoIncrementCycle>
+</Column>
+<Column name="COL183" id="DE5EFBFA-AD2F-8C6C-CA20-4D0E6211B520">
+<sourceConnName>MEDS ADMIN</sourceConnName>
+<sourceObjSchema>STG_FILE_ROW</sourceObjSchema>
+<sourceObjName>COL183</sourceObjName>
+<createdBy>d.arboittedossantos</createdBy>
+<createdTime>2024-04-16 15:19:11 UTC</createdTime>
+<ownerDesignName>MEDS_SERD</ownerDesignName>
+<importedID>0256EF6F-D898-4B73-2ECD-25613B6374B9</importedID>
+<nullsAllowed>true</nullsAllowed>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT024</logicalDatatype>
+<dataTypeSize>512 BYTE</dataTypeSize>
+<ownDataTypeParameters>512 BYTE,,</ownDataTypeParameters>
+<autoIncrementCycle>false</autoIncrementCycle>
+</Column>
+<Column name="COL184" id="53E49008-ADB4-5AC0-A01F-3290C3C8F6B2">
+<sourceConnName>MEDS ADMIN</sourceConnName>
+<sourceObjSchema>STG_FILE_ROW</sourceObjSchema>
+<sourceObjName>COL184</sourceObjName>
+<createdBy>d.arboittedossantos</createdBy>
+<createdTime>2024-04-16 15:19:11 UTC</createdTime>
+<ownerDesignName>MEDS_SERD</ownerDesignName>
+<importedID>FD82ACDB-A5F7-5E8C-950D-10BFE3B4AD8B</importedID>
+<nullsAllowed>true</nullsAllowed>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT024</logicalDatatype>
+<dataTypeSize>512 BYTE</dataTypeSize>
+<ownDataTypeParameters>512 BYTE,,</ownDataTypeParameters>
+<autoIncrementCycle>false</autoIncrementCycle>
+</Column>
+<Column name="COL185" id="1F949F7B-E613-2F4A-2A6E-986A869CB1B6">
+<sourceConnName>MEDS ADMIN</sourceConnName>
+<sourceObjSchema>STG_FILE_ROW</sourceObjSchema>
+<sourceObjName>COL185</sourceObjName>
+<createdBy>d.arboittedossantos</createdBy>
+<createdTime>2024-04-16 15:19:11 UTC</createdTime>
+<ownerDesignName>MEDS_SERD</ownerDesignName>
+<importedID>2C3EEB91-1D81-F6D0-76C8-17C08841974B</importedID>
+<nullsAllowed>true</nullsAllowed>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT024</logicalDatatype>
+<dataTypeSize>512 BYTE</dataTypeSize>
+<ownDataTypeParameters>512 BYTE,,</ownDataTypeParameters>
+<autoIncrementCycle>false</autoIncrementCycle>
+</Column>
+<Column name="COL186" id="BEDC16C8-4B9D-1981-3BD1-1B838D55F8D2">
+<sourceConnName>MEDS ADMIN</sourceConnName>
+<sourceObjSchema>STG_FILE_ROW</sourceObjSchema>
+<sourceObjName>COL186</sourceObjName>
+<createdBy>d.arboittedossantos</createdBy>
+<createdTime>2024-04-16 15:19:11 UTC</createdTime>
+<ownerDesignName>MEDS_SERD</ownerDesignName>
+<importedID>75108584-EA6B-C4DB-A562-8061D330A630</importedID>
+<nullsAllowed>true</nullsAllowed>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT024</logicalDatatype>
+<dataTypeSize>512 BYTE</dataTypeSize>
+<ownDataTypeParameters>512 BYTE,,</ownDataTypeParameters>
+<autoIncrementCycle>false</autoIncrementCycle>
+</Column>
+<Column name="COL187" id="F792E4FE-3A30-A61E-B020-E21EF7068A37">
+<sourceConnName>MEDS ADMIN</sourceConnName>
+<sourceObjSchema>STG_FILE_ROW</sourceObjSchema>
+<sourceObjName>COL187</sourceObjName>
+<createdBy>d.arboittedossantos</createdBy>
+<createdTime>2024-04-16 15:19:11 UTC</createdTime>
+<ownerDesignName>MEDS_SERD</ownerDesignName>
+<importedID>200D02F7-8742-3B03-6EAC-109B91B671AA</importedID>
+<nullsAllowed>true</nullsAllowed>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT024</logicalDatatype>
+<dataTypeSize>512 BYTE</dataTypeSize>
+<ownDataTypeParameters>512 BYTE,,</ownDataTypeParameters>
+<autoIncrementCycle>false</autoIncrementCycle>
+</Column>
+<Column name="COL188" id="9ADAD6C8-659F-5942-AEA0-3D3C442A4861">
+<sourceConnName>MEDS ADMIN</sourceConnName>
+<sourceObjSchema>STG_FILE_ROW</sourceObjSchema>
+<sourceObjName>COL188</sourceObjName>
+<createdBy>d.arboittedossantos</createdBy>
+<createdTime>2024-04-16 15:19:11 UTC</createdTime>
+<ownerDesignName>MEDS_SERD</ownerDesignName>
+<importedID>764562E4-190B-5527-9752-F5363DF6FB77</importedID>
+<nullsAllowed>true</nullsAllowed>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT024</logicalDatatype>
+<dataTypeSize>512 BYTE</dataTypeSize>
+<ownDataTypeParameters>512 BYTE,,</ownDataTypeParameters>
+<autoIncrementCycle>false</autoIncrementCycle>
+</Column>
+<Column name="COL189" id="4C7CE928-42EB-1B99-D8F2-23EB05AED578">
+<sourceConnName>MEDS ADMIN</sourceConnName>
+<sourceObjSchema>STG_FILE_ROW</sourceObjSchema>
+<sourceObjName>COL189</sourceObjName>
+<createdBy>d.arboittedossantos</createdBy>
+<createdTime>2024-04-16 15:19:11 UTC</createdTime>
+<ownerDesignName>MEDS_SERD</ownerDesignName>
+<importedID>DBF9C4D9-5F0D-74DE-0A03-7F77D5C31305</importedID>
+<nullsAllowed>true</nullsAllowed>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT024</logicalDatatype>
+<dataTypeSize>512 BYTE</dataTypeSize>
+<ownDataTypeParameters>512 BYTE,,</ownDataTypeParameters>
+<autoIncrementCycle>false</autoIncrementCycle>
+</Column>
+<Column name="COL190" id="0EE8E7EF-ACDC-3897-FE21-C258F9CC2705">
+<sourceConnName>MEDS ADMIN</sourceConnName>
+<sourceObjSchema>STG_FILE_ROW</sourceObjSchema>
+<sourceObjName>COL190</sourceObjName>
+<createdBy>d.arboittedossantos</createdBy>
+<createdTime>2024-04-16 15:19:11 UTC</createdTime>
+<ownerDesignName>MEDS_SERD</ownerDesignName>
+<importedID>481DABD9-1B26-F35C-241B-63B6966D4CDA</importedID>
+<nullsAllowed>true</nullsAllowed>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT024</logicalDatatype>
+<dataTypeSize>512 BYTE</dataTypeSize>
+<ownDataTypeParameters>512 BYTE,,</ownDataTypeParameters>
+<autoIncrementCycle>false</autoIncrementCycle>
+</Column>
+<Column name="COL191" id="C66C0AE4-C016-1D87-B547-165E95BD2BC2">
+<sourceConnName>MEDS ADMIN</sourceConnName>
+<sourceObjSchema>STG_FILE_ROW</sourceObjSchema>
+<sourceObjName>COL191</sourceObjName>
+<createdBy>d.arboittedossantos</createdBy>
+<createdTime>2024-04-16 15:19:11 UTC</createdTime>
+<ownerDesignName>MEDS_SERD</ownerDesignName>
+<importedID>025A87A0-55B8-F872-DDE6-E71E72A3203B</importedID>
+<nullsAllowed>true</nullsAllowed>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT024</logicalDatatype>
+<dataTypeSize>512 BYTE</dataTypeSize>
+<ownDataTypeParameters>512 BYTE,,</ownDataTypeParameters>
+<autoIncrementCycle>false</autoIncrementCycle>
+</Column>
+<Column name="COL192" id="DDD00C8E-CC8E-B927-7334-018EDF0D3A43">
+<sourceConnName>MEDS ADMIN</sourceConnName>
+<sourceObjSchema>STG_FILE_ROW</sourceObjSchema>
+<sourceObjName>COL192</sourceObjName>
+<createdBy>d.arboittedossantos</createdBy>
+<createdTime>2024-04-16 15:19:11 UTC</createdTime>
+<ownerDesignName>MEDS_SERD</ownerDesignName>
+<importedID>23E85FB9-8301-5288-FD15-04D8D27959FE</importedID>
+<nullsAllowed>true</nullsAllowed>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT024</logicalDatatype>
+<dataTypeSize>512 BYTE</dataTypeSize>
+<ownDataTypeParameters>512 BYTE,,</ownDataTypeParameters>
+<autoIncrementCycle>false</autoIncrementCycle>
+</Column>
+<Column name="COL193" id="5F88AB7D-934B-4E6F-1064-6E9BFCA18993">
+<sourceConnName>MEDS ADMIN</sourceConnName>
+<sourceObjSchema>STG_FILE_ROW</sourceObjSchema>
+<sourceObjName>COL193</sourceObjName>
+<createdBy>d.arboittedossantos</createdBy>
+<createdTime>2024-04-16 15:19:11 UTC</createdTime>
+<ownerDesignName>MEDS_SERD</ownerDesignName>
+<importedID>C6DAB4C8-7222-E953-0DB1-E1B6CAB63BCC</importedID>
+<nullsAllowed>true</nullsAllowed>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT024</logicalDatatype>
+<dataTypeSize>512 BYTE</dataTypeSize>
+<ownDataTypeParameters>512 BYTE,,</ownDataTypeParameters>
+<autoIncrementCycle>false</autoIncrementCycle>
+</Column>
+<Column name="COL194" id="4D0D7EE5-B682-23D1-0F73-80E4F3D3F92C">
+<sourceConnName>MEDS ADMIN</sourceConnName>
+<sourceObjSchema>STG_FILE_ROW</sourceObjSchema>
+<sourceObjName>COL194</sourceObjName>
+<createdBy>d.arboittedossantos</createdBy>
+<createdTime>2024-04-16 15:19:11 UTC</createdTime>
+<ownerDesignName>MEDS_SERD</ownerDesignName>
+<importedID>81416D72-A622-A9FD-4E60-B2434DD30242</importedID>
+<nullsAllowed>true</nullsAllowed>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT024</logicalDatatype>
+<dataTypeSize>512 BYTE</dataTypeSize>
+<ownDataTypeParameters>512 BYTE,,</ownDataTypeParameters>
+<autoIncrementCycle>false</autoIncrementCycle>
+</Column>
+<Column name="COL195" id="BBE18114-6E1B-8F4C-643E-95BA5ADCD9D0">
+<sourceConnName>MEDS ADMIN</sourceConnName>
+<sourceObjSchema>STG_FILE_ROW</sourceObjSchema>
+<sourceObjName>COL195</sourceObjName>
+<createdBy>d.arboittedossantos</createdBy>
+<createdTime>2024-04-16 15:19:11 UTC</createdTime>
+<ownerDesignName>MEDS_SERD</ownerDesignName>
+<importedID>5604F77E-7E75-C6C2-087B-6EB7651A8767</importedID>
+<nullsAllowed>true</nullsAllowed>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT024</logicalDatatype>
+<dataTypeSize>512 BYTE</dataTypeSize>
+<ownDataTypeParameters>512 BYTE,,</ownDataTypeParameters>
+<autoIncrementCycle>false</autoIncrementCycle>
+</Column>
+<Column name="COL196" id="DD386E11-6612-C9BC-A02D-5D5F90F85F1A">
+<sourceConnName>MEDS ADMIN</sourceConnName>
+<sourceObjSchema>STG_FILE_ROW</sourceObjSchema>
+<sourceObjName>COL196</sourceObjName>
+<createdBy>d.arboittedossantos</createdBy>
+<createdTime>2024-04-16 15:19:11 UTC</createdTime>
+<ownerDesignName>MEDS_SERD</ownerDesignName>
+<importedID>CC4E0675-FF40-A202-70BF-A87A7A791CBA</importedID>
+<nullsAllowed>true</nullsAllowed>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT024</logicalDatatype>
+<dataTypeSize>512 BYTE</dataTypeSize>
+<ownDataTypeParameters>512 BYTE,,</ownDataTypeParameters>
+<autoIncrementCycle>false</autoIncrementCycle>
+</Column>
+<Column name="COL197" id="42492C71-28FA-A736-0FF9-405BFE62A438">
+<sourceConnName>MEDS ADMIN</sourceConnName>
+<sourceObjSchema>STG_FILE_ROW</sourceObjSchema>
+<sourceObjName>COL197</sourceObjName>
+<createdBy>d.arboittedossantos</createdBy>
+<createdTime>2024-04-16 15:19:11 UTC</createdTime>
+<ownerDesignName>MEDS_SERD</ownerDesignName>
+<importedID>6A2FB5F8-6509-37DE-FA97-A72EE8CF1C00</importedID>
+<nullsAllowed>true</nullsAllowed>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT024</logicalDatatype>
+<dataTypeSize>512 BYTE</dataTypeSize>
+<ownDataTypeParameters>512 BYTE,,</ownDataTypeParameters>
+<autoIncrementCycle>false</autoIncrementCycle>
+</Column>
+<Column name="COL198" id="879E2905-2B4D-48E5-D117-2C1F694D15CF">
+<sourceConnName>MEDS ADMIN</sourceConnName>
+<sourceObjSchema>STG_FILE_ROW</sourceObjSchema>
+<sourceObjName>COL198</sourceObjName>
+<createdBy>d.arboittedossantos</createdBy>
+<createdTime>2024-04-16 15:19:11 UTC</createdTime>
+<ownerDesignName>MEDS_SERD</ownerDesignName>
+<importedID>44FBC843-A3DE-60E7-5F8D-B92D6DB704EF</importedID>
+<nullsAllowed>true</nullsAllowed>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT024</logicalDatatype>
+<dataTypeSize>512 BYTE</dataTypeSize>
+<ownDataTypeParameters>512 BYTE,,</ownDataTypeParameters>
+<autoIncrementCycle>false</autoIncrementCycle>
+</Column>
+<Column name="COL199" id="0D7223FD-71D1-C945-10D1-A1F10E9E0DD0">
+<sourceConnName>MEDS ADMIN</sourceConnName>
+<sourceObjSchema>STG_FILE_ROW</sourceObjSchema>
+<sourceObjName>COL199</sourceObjName>
+<createdBy>d.arboittedossantos</createdBy>
+<createdTime>2024-04-16 15:19:11 UTC</createdTime>
+<ownerDesignName>MEDS_SERD</ownerDesignName>
+<importedID>CC4A6E63-A5F3-252F-ACCC-7F6A9906D1A3</importedID>
+<nullsAllowed>true</nullsAllowed>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT024</logicalDatatype>
+<dataTypeSize>512 BYTE</dataTypeSize>
+<ownDataTypeParameters>512 BYTE,,</ownDataTypeParameters>
+<autoIncrementCycle>false</autoIncrementCycle>
+</Column>
+<Column name="COL200" id="5C368B68-EDD2-FFD7-A347-E586A3A48427">
+<sourceConnName>MEDS ADMIN</sourceConnName>
+<sourceObjSchema>STG_FILE_ROW</sourceObjSchema>
+<sourceObjName>COL200</sourceObjName>
+<createdBy>d.arboittedossantos</createdBy>
+<createdTime>2024-04-16 15:19:11 UTC</createdTime>
+<ownerDesignName>MEDS_SERD</ownerDesignName>
+<importedID>46EA27CF-81A9-ACCB-69D3-F7395251324E</importedID>
+<nullsAllowed>true</nullsAllowed>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT024</logicalDatatype>
+<dataTypeSize>512 BYTE</dataTypeSize>
+<ownDataTypeParameters>512 BYTE,,</ownDataTypeParameters>
 <autoIncrementCycle>false</autoIncrementCycle>
 </Column>
 </columns>

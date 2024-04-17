@@ -1,0 +1,78 @@
+<?xml version = '1.0' encoding = 'UTF-8'?>
+<TableProxyOraclev12c class="oracle.dbtools.crest.model.design.storage.oracle.v12c.TableProxyOraclev12c" name="STG_FILE_SERD_ROW" directorySegmentName="seg_0" id="E60C6671-890C-10C6-1E8D-F0C50BE4DFB8">
+<createdBy>d.arboittedossantos</createdBy>
+<createdTime>2024-04-17 09:03:12 UTC</createdTime>
+<ownerDesignName>MEDS_SERD</ownerDesignName>
+<schemaObject>20651223-0797-3CAA-7021-8449492EE83B</schemaObject>
+<logging>YES</logging>
+<partitionedRowMovement>DISABLE</partitionedRowMovement>
+<segment>EC84E94D-435E-C591-A747-16FBB40179CF</segment>
+<tableSpace>5A2A1940-E389-372E-95A2-8E2A4C696361</tableSpace>
+<temporaryChanged>false</temporaryChanged>
+<user>34521F75-6140-B967-C5AE-9003F0D59F82</user>
+<accessDriverType>oracle_loader</accessDriverType>
+<rejectLimit></rejectLimit>
+<storeAs>CLOB</storeAs>
+<inMemory>NO</inMemory>
+<columnProxies itemClass="oracle.dbtools.crest.model.design.storage.oracle.v12c.ColumnProxyOraclev12c">
+<ColumnProxy name="STG_FILE_SERD_ROW" id="106A071D-6571-E4FB-ABED-91D84FBF04D7">
+<createdBy>d.arboittedossantos</createdBy>
+<createdTime>2024-04-17 09:03:40 UTC</createdTime>
+<ownerDesignName>MEDS_SERD</ownerDesignName>
+</ColumnProxy>
+<ColumnProxy name="ROW_SEQUENCE" id="A87F0C2A-87A1-E28E-F4FE-7B4DC33CEDA5">
+<createdBy>d.arboittedossantos</createdBy>
+<createdTime>2024-04-17 09:04:35 UTC</createdTime>
+<ownerDesignName>MEDS_SERD</ownerDesignName>
+</ColumnProxy>
+<ColumnProxy name="ROW_CONTENT" id="B2AA4965-F966-41E8-44FB-4E1F54A9020C">
+<createdBy>d.arboittedossantos</createdBy>
+<createdTime>2024-04-17 09:04:35 UTC</createdTime>
+<ownerDesignName>MEDS_SERD</ownerDesignName>
+</ColumnProxy>
+<ColumnProxy name="STG_FILE" id="E39803E4-28CC-3F69-774E-B7F66857D9FF">
+<createdBy>d.arboittedossantos</createdBy>
+<createdTime>2024-04-17 09:04:47 UTC</createdTime>
+<ownerDesignName>MEDS_SERD</ownerDesignName>
+</ColumnProxy>
+</columnProxies>
+<indexProxies>
+<IndexProxy class="oracle.dbtools.crest.model.design.storage.oracle.v10g.IndexProxyOraclev10g" name="STG_FILE_SERD_ROW_P" id="5B289462-D097-F747-030F-9D439866E2F8">
+<createdBy>d.arboittedossantos</createdBy>
+<createdTime>2024-04-17 09:13:07 UTC</createdTime>
+<ownerDesignName>MEDS_SERD</ownerDesignName>
+<schemaObject>20651223-0797-3CAA-7021-8449492EE83B</schemaObject>
+<segment>44209724-9985-5330-25DD-9553E25653CA</segment>
+<tableSpace>5A2A1940-E389-372E-95A2-8E2A4C696361</tableSpace>
+<user>34521F75-6140-B967-C5AE-9003F0D59F82</user>
+</IndexProxy>
+<IndexProxy class="oracle.dbtools.crest.model.design.storage.oracle.v10g.IndexProxyOraclev10g" name="STG_FILE_SERD_ROW_SEQUENCE_IDX" id="8761C0F8-562E-5B9A-4EBF-8285710EEE5B">
+<createdBy>d.arboittedossantos</createdBy>
+<createdTime>2024-04-17 09:09:24 UTC</createdTime>
+<ownerDesignName>MEDS_SERD</ownerDesignName>
+<segment>353D8523-29A4-CF0F-5273-023C2F0523C3</segment>
+<tableSpace>5A2A1940-E389-372E-95A2-8E2A4C696361</tableSpace>
+<user>34521F75-6140-B967-C5AE-9003F0D59F82</user>
+</IndexProxy>
+</indexProxies>
+<foreignKeys>
+<ForeignKey class="oracle.dbtools.crest.model.design.storage.oracle.v10g.FKProxyOraclev10g" name="STG_FILE_SERD_ROW_STG_FILE_F" id="A0AFFF01-08F2-AC63-9AAA-5A75F4F86CA7">
+<createdBy>d.arboittedossantos</createdBy>
+<createdTime>2024-04-17 09:04:47 UTC</createdTime>
+<ownerDesignName>MEDS_SERD</ownerDesignName>
+</ForeignKey>
+</foreignKeys>
+<primaryKeys>
+<PrimaryKey class="oracle.dbtools.crest.model.design.storage.oracle.v10g.PKProxyOraclev10g" name="STG_FILE_SERD_ROW_P" id="59BF7CF2-3B6A-B126-1324-142595A6007F">
+<createdBy>d.arboittedossantos</createdBy>
+<createdTime>2024-04-17 09:03:44 UTC</createdTime>
+<ownerDesignName>MEDS_SERD</ownerDesignName>
+<segment>353D8523-29A4-CF0F-5273-023C2F0523C3</segment>
+<tableSpace>5A2A1940-E389-372E-95A2-8E2A4C696361</tableSpace>
+<existingIndex>5B289462-D097-F747-030F-9D439866E2F8</existingIndex>
+<indexSegment>353D8523-29A4-CF0F-5273-023C2F0523C3</indexSegment>
+<indexSort>SORTED</indexSort>
+<usingIndex>BY INDEX NAME</usingIndex>
+</PrimaryKey>
+</primaryKeys>
+</TableProxyOraclev12c>

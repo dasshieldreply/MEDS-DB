@@ -1,5 +1,7 @@
 <?xml version = '1.0' encoding = 'UTF-8'?>
 <RoleOraclev10g class="oracle.dbtools.crest.model.design.storage.oracle.v10g.RoleOraclev10g" name="CM" directorySegmentName="seg_0" id="53D790C5-CB94-85DB-798B-5FA2A7AD2DF1">
+<sourceConnName>MEDS ADMIN</sourceConnName>
+<sourceObjName>CM</sourceObjName>
 <createdBy>d.arboittedossantos</createdBy>
 <createdTime>2024-04-04 17:18:43 UTC</createdTime>
 <ownerDesignName>MEDS_SERD</ownerDesignName>
@@ -16,6 +18,20 @@
 <ownerDesignName>MEDS_SERD</ownerDesignName>
 <privileges>SELECT</privileges>
 <table>94F843D2-65A5-522A-A843-5FDBFF4E48BC</table>
+</Permission>
+<Permission class="oracle.dbtools.crest.model.design.storage.oracle.v10g.PermissionsOraclev10g" name="Permissions1" id="49E3797D-EFE8-495E-EAE2-B06C8719956F">
+<createdBy>d.arboittedossantos</createdBy>
+<createdTime>2024-04-16 15:19:11 UTC</createdTime>
+<ownerDesignName>MEDS_SERD</ownerDesignName>
+<privileges>SELECT</privileges>
+<table>E6959608-8A42-3C6A-83AC-27964A801390</table>
+</Permission>
+<Permission class="oracle.dbtools.crest.model.design.storage.oracle.v10g.PermissionsOraclev10g" name="Permissions1" id="02AE2092-2ED8-523B-5BDF-01B27FAACABB">
+<createdBy>d.arboittedossantos</createdBy>
+<createdTime>2024-04-17 09:13:07 UTC</createdTime>
+<ownerDesignName>MEDS_SERD</ownerDesignName>
+<privileges>SELECT</privileges>
+<table>E60C6671-890C-10C6-1E8D-F0C50BE4DFB8</table>
 </Permission>
 <Permission class="oracle.dbtools.crest.model.design.storage.oracle.v10g.PermissionsOraclev10g" name="Permissions10" id="A9A56BE4-67FB-A893-4E9A-2CAC4D616413">
 <createdBy>d.arboittedossantos</createdBy>
@@ -70,13 +86,6 @@
 <createdTime>2024-04-04 17:19:08 UTC</createdTime>
 <ownerDesignName>MEDS_SERD</ownerDesignName>
 <privileges>SELECT</privileges>
-</Permission>
-<Permission class="oracle.dbtools.crest.model.design.storage.oracle.v10g.PermissionsOraclev10g" name="Permissions2" id="C316C0C8-E2A6-CA90-4FC2-E22C593B59B3">
-<createdBy>d.arboittedossantos</createdBy>
-<createdTime>2024-04-15 09:47:16 UTC</createdTime>
-<ownerDesignName>MEDS_SERD</ownerDesignName>
-<privileges>SELECT</privileges>
-<table>E6959608-8A42-3C6A-83AC-27964A801390</table>
 </Permission>
 <Permission class="oracle.dbtools.crest.model.design.storage.oracle.v10g.PermissionsOraclev10g" name="Permissions3" id="B2034CC7-88C6-BDA2-5A69-14A2AE9FB4B3">
 <createdBy>d.arboittedossantos</createdBy>
