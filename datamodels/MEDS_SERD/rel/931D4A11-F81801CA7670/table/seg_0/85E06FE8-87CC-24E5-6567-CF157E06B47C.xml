@@ -177,6 +177,7 @@
 <commentInRDBMS><![CDATA[Position Determination, MIAS code for the fixing device used as the prime navigational aid in determining the position of the station.]]></commentInRDBMS>
 <notes><![CDATA[Start position 33]]></notes>
 <ownerDesignName>MEDS_SERD</ownerDesignName>
+<nullsAllowed>true</nullsAllowed>
 <useDomainConstraints>false</useDomainConstraints>
 <use>1</use>
 <logicalDatatype>LOGDT019</logicalDatatype>
@@ -189,6 +190,7 @@
 <commentInRDBMS><![CDATA[Position Accuracy code. The estimated drift in station position or the estimated accuracy in the determination of the position of the station, whichever is the greater.]]></commentInRDBMS>
 <notes><![CDATA[Start position 34]]></notes>
 <ownerDesignName>MEDS_SERD</ownerDesignName>
+<nullsAllowed>true</nullsAllowed>
 <useDomainConstraints>false</useDomainConstraints>
 <use>1</use>
 <logicalDatatype>LOGDT019</logicalDatatype>
@@ -306,18 +308,18 @@ at Taunton.
 <ownDataTypeParameters>8,,</ownDataTypeParameters>
 <autoIncrementCycle>false</autoIncrementCycle>
 </Column>
-<Column name="INSTITUTE_LABEL" id="1F7C08D2-1166-E7C2-699C-1048ECF3DBF5">
+<Column name="STATION_NUMBER" id="1F7C08D2-1166-E7C2-699C-1048ECF3DBF5">
 <createdBy>darbo</createdBy>
 <createdTime>2024-02-14 14:55:56 UTC</createdTime>
-<commentInRDBMS><![CDATA[Institute description.]]></commentInRDBMS>
+<commentInRDBMS><![CDATA[Station number in ascending order for each ship in each country commencing at 000001 in each year for data processed at Taunton.
+]]></commentInRDBMS>
 <notes><![CDATA[Start position 74]]></notes>
 <ownerDesignName>MEDS_SERD</ownerDesignName>
 <nullsAllowed>true</nullsAllowed>
 <useDomainConstraints>false</useDomainConstraints>
 <use>1</use>
-<logicalDatatype>LOGDT024</logicalDatatype>
-<dataTypeSize>6</dataTypeSize>
-<ownDataTypeParameters>6,,</ownDataTypeParameters>
+<logicalDatatype>LOGDT019</logicalDatatype>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
 <autoIncrementCycle>false</autoIncrementCycle>
 </Column>
 <Column name="INSTITUTE_NUMBER" id="5D1426EE-5BAF-A465-5D91-40FD20712DF3">
@@ -479,6 +481,7 @@ If the instrument code is 31(MBT) the format of the field is: ?n.n; integer, ten
 If Units code = 1 the corrections are given in imperial units, however all other data have been converted to metric units.]]></commentInRDBMS>
 <notes><![CDATA[Start position 115]]></notes>
 <ownerDesignName>MEDS_SERD</ownerDesignName>
+<nullsAllowed>true</nullsAllowed>
 <useDomainConstraints>false</useDomainConstraints>
 <use>1</use>
 <logicalDatatype>LOGDT019</logicalDatatype>
@@ -490,6 +493,7 @@ If Units code = 1 the corrections are given in imperial units, however all other
 <createdTime>2024-02-14 10:54:54 UTC</createdTime>
 <notes><![CDATA[Start position 116]]></notes>
 <ownerDesignName>MEDS_SERD</ownerDesignName>
+<nullsAllowed>true</nullsAllowed>
 <useDomainConstraints>false</useDomainConstraints>
 <use>1</use>
 <logicalDatatype>LOGDT019</logicalDatatype>
@@ -503,6 +507,7 @@ If Units code = 1 the corrections are given in imperial units, however all other
 <commentInRDBMS><![CDATA[Data type, MIAS code.]]></commentInRDBMS>
 <notes><![CDATA[Start position 118]]></notes>
 <ownerDesignName>MEDS_SERD</ownerDesignName>
+<nullsAllowed>true</nullsAllowed>
 <useDomainConstraints>false</useDomainConstraints>
 <use>1</use>
 <logicalDatatype>LOGDT019</logicalDatatype>
@@ -515,6 +520,7 @@ If Units code = 1 the corrections are given in imperial units, however all other
 <commentInRDBMS><![CDATA[Data mode.]]></commentInRDBMS>
 <notes><![CDATA[Start position 119]]></notes>
 <ownerDesignName>MEDS_SERD</ownerDesignName>
+<nullsAllowed>true</nullsAllowed>
 <useDomainConstraints>false</useDomainConstraints>
 <use>1</use>
 <logicalDatatype>LOGDT019</logicalDatatype>
@@ -527,6 +533,7 @@ If Units code = 1 the corrections are given in imperial units, however all other
 <commentInRDBMS><![CDATA[Data capture method code.]]></commentInRDBMS>
 <notes><![CDATA[Start position 120]]></notes>
 <ownerDesignName>MEDS_SERD</ownerDesignName>
+<nullsAllowed>true</nullsAllowed>
 <useDomainConstraints>false</useDomainConstraints>
 <use>1</use>
 <logicalDatatype>LOGDT019</logicalDatatype>
@@ -539,6 +546,7 @@ If Units code = 1 the corrections are given in imperial units, however all other
 <commentInRDBMS><![CDATA[Wind direction, WMO code 0877, true direction, in tenths of degrees from which the wind is blowing]]></commentInRDBMS>
 <notes><![CDATA[Start position 121]]></notes>
 <ownerDesignName>MEDS_SERD</ownerDesignName>
+<nullsAllowed>true</nullsAllowed>
 <useDomainConstraints>false</useDomainConstraints>
 <use>1</use>
 <logicalDatatype>LOGDT019</logicalDatatype>
@@ -591,6 +599,7 @@ If Units code = 1 the corrections are given in imperial units, however all other
 <commentInRDBMS><![CDATA[Weather code.]]></commentInRDBMS>
 <notes><![CDATA[Start position 133]]></notes>
 <ownerDesignName>MEDS_SERD</ownerDesignName>
+<nullsAllowed>true</nullsAllowed>
 <useDomainConstraints>false</useDomainConstraints>
 <use>1</use>
 <logicalDatatype>LOGDT019</logicalDatatype>
@@ -603,6 +612,7 @@ If Units code = 1 the corrections are given in imperial units, however all other
 <commentInRDBMS><![CDATA[Cloud coverage, WMO code 2700.]]></commentInRDBMS>
 <notes><![CDATA[Start position 134]]></notes>
 <ownerDesignName>MEDS_SERD</ownerDesignName>
+<nullsAllowed>true</nullsAllowed>
 <useDomainConstraints>false</useDomainConstraints>
 <use>1</use>
 <logicalDatatype>LOGDT019</logicalDatatype>
@@ -614,6 +624,7 @@ If Units code = 1 the corrections are given in imperial units, however all other
 <createdTime>2024-02-14 13:43:30 UTC</createdTime>
 <notes><![CDATA[Start position 135]]></notes>
 <ownerDesignName>MEDS_SERD</ownerDesignName>
+<nullsAllowed>true</nullsAllowed>
 <useDomainConstraints>false</useDomainConstraints>
 <use>1</use>
 <logicalDatatype>LOGDT019</logicalDatatype>
@@ -665,6 +676,7 @@ If Units code = 1 the corrections are given in imperial units, however all other
 <createdTime>2024-02-14 14:23:26 UTC</createdTime>
 <notes><![CDATA[Start position 145]]></notes>
 <ownerDesignName>MEDS_SERD</ownerDesignName>
+<nullsAllowed>true</nullsAllowed>
 <useDomainConstraints>false</useDomainConstraints>
 <use>1</use>
 <logicalDatatype>LOGDT019</logicalDatatype>
@@ -672,7 +684,7 @@ If Units code = 1 the corrections are given in imperial units, however all other
 <previousColumn>false</previousColumn>
 <autoIncrementCycle>false</autoIncrementCycle>
 </Column>
-<Column name="WATER TRANSPARENCY" id="718500FB-69E7-2374-E15F-6A7FE20535E5">
+<Column name="WATER_TRANSPARENCY" id="718500FB-69E7-2374-E15F-6A7FE20535E5">
 <createdBy>darbo</createdBy>
 <createdTime>2024-02-14 14:27:43 UTC</createdTime>
 <commentInRDBMS><![CDATA[Water transparency.]]></commentInRDBMS>
@@ -692,6 +704,7 @@ If Units code = 1 the corrections are given in imperial units, however all other
 <commentInRDBMS><![CDATA[Salinity scale code.]]></commentInRDBMS>
 <notes><![CDATA[Start position 149]]></notes>
 <ownerDesignName>MEDS_SERD</ownerDesignName>
+<nullsAllowed>true</nullsAllowed>
 <useDomainConstraints>false</useDomainConstraints>
 <use>1</use>
 <logicalDatatype>LOGDT019</logicalDatatype>
@@ -737,7 +750,7 @@ If Units code = 1 the corrections are given in imperial units, however all other
 <ownDataTypeParameters>,,</ownDataTypeParameters>
 <autoIncrementCycle>false</autoIncrementCycle>
 </Column>
-<Column name="MBT_TYPE_QUALITTY_CODE" id="D09D8B27-1419-7C25-D87A-D3A39EE1C870">
+<Column name="MBT_TYPE_QUALITY_CODE" id="D09D8B27-1419-7C25-D87A-D3A39EE1C870">
 <createdBy>darbo</createdBy>
 <createdTime>2024-02-14 14:42:30 UTC</createdTime>
 <commentInRDBMS><![CDATA[MBT Type/XBT Quality code.]]></commentInRDBMS>
@@ -751,7 +764,7 @@ If Units code = 1 the corrections are given in imperial units, however all other
 <ownDataTypeParameters>1 BYTE,,</ownDataTypeParameters>
 <autoIncrementCycle>false</autoIncrementCycle>
 </Column>
-<Column name="MBT_GRADE_QUALITTY_CODE" id="8B9469AC-AE47-D78B-607E-FE980A9BB4CC">
+<Column name="MBT_GRADE_QUALITY_CODE" id="8B9469AC-AE47-D78B-607E-FE980A9BB4CC">
 <createdBy>darbo</createdBy>
 <createdTime>2024-02-14 14:42:30 UTC</createdTime>
 <commentInRDBMS><![CDATA[MBT Grade/XBT Quality code.]]></commentInRDBMS>

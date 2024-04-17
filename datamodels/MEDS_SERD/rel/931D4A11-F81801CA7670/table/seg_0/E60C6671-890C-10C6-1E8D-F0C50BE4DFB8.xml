@@ -54,8 +54,8 @@
 <useDomainConstraints>false</useDomainConstraints>
 <use>1</use>
 <logicalDatatype>LOGDT024</logicalDatatype>
-<dataTypeSize>1024</dataTypeSize>
-<ownDataTypeParameters>1024,,</ownDataTypeParameters>
+<dataTypeSize>4096</dataTypeSize>
+<ownDataTypeParameters>4096,,</ownDataTypeParameters>
 <autoIncrementCycle>false</autoIncrementCycle>
 </Column>
 </columns>

@@ -4,7 +4,19 @@ as
 ------------------------------------------------------- P O P _ M E D S U E R
 -- 
 procedure pop_medsuser
-(p_tenant           number
+(p_tenant      number
+);
+-- 
+------------------------------------------------------- PARSE_CSV_FILE
+-- 
+procedure parse_csv_file
+(p_stg_file    number
+);
+-- 
+------------------------------------------------------- PARSE_SERD_FILE
+-- 
+procedure parse_serd_file
+(p_stg_file    number
 );
 -- 
 -------------------------------------------------------

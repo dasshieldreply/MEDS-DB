@@ -1,5 +1,5 @@
 <?xml version = '1.0' encoding = 'UTF-8'?>
-<TriggerOraclev10g class="oracle.dbtools.crest.model.design.storage.oracle.v10g.TriggerOraclev10g" name="BI_STG_FILE_ROW" directorySegmentName="seg_0" id="A3B1FF4D-E320-F27F-7CB8-1E35FB9E0239">
+<TriggerOraclev10g class="oracle.dbtools.crest.model.design.storage.oracle.v10g.TriggerOraclev10g" name="BI_STG_FILE_CSV_ROW" directorySegmentName="seg_0" id="A3B1FF4D-E320-F27F-7CB8-1E35FB9E0239">
 <sourceConnName>MEDS ADMIN</sourceConnName>
 <sourceObjSchema>MEDSADMIN</sourceObjSchema>
 <sourceObjName>BI_STG_FILE_ROW</sourceObjName>
