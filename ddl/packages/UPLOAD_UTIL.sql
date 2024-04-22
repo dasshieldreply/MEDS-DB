@@ -1,5 +1,6 @@
 CREATE OR REPLACE package upload_util
 as
+   --type csv_record is table of stg_file_csv_row%rowtype;
 
    procedure parse_csv_file
    (
@@ -10,12 +11,126 @@ as
    (
       p_job_number    number
    );
+   
+   function get_csv_value1
+   (
+      p_csv_record   in stg_file_csv_row%rowtype,
+      p_field_pos    in number,
+      p_field_type   in number,
+      p_job_number   in number,
+      p_obs_number   in number
+   ) return  varchar2;
+   
+   function get_csv_value2
+   (
+      p_csv_value    in varchar2,
+      p_field_type   in number,
+      p_job_number   in number,
+      p_obs_number   in number
+   ) return  varchar2;
 
 end upload_util;
 /
 
 CREATE OR REPLACE package body upload_util
 as
+
+   function get_csv_value2
+   (
+      p_csv_value    in varchar2,
+      p_field_type   in number,
+      p_job_number   in number,
+      p_obs_number   in number
+   ) return  varchar2
+   as
+      v_ret    varchar2(512);
+   begin
+      if p_field_type = 1 then      -- String Value, Floating Point Value, Integer Value
+         v_ret := p_csv_value;
+      elsif p_field_type = 2 then   -- Floating Point Value 
+         v_ret := p_csv_value;      
+      elsif p_field_type = 3 then   -- Integer Value
+         v_ret := p_csv_value;
+      elsif p_field_type = 6  then 	-- Date/Time (single) Field
+         v_ret := p_csv_value;
+      elsif p_field_type = 7  then 	-- Floating Point Index Value for Repeat Fields
+         v_ret := p_csv_value;
+      elsif p_field_type = 8  then 	-- MEDS Job Number
+         v_ret := p_job_number;
+      elsif p_field_type = 9  then 	-- MEDS Observation Number
+         v_ret := p_obs_number;
+      end if;
+/*      
+      elsif p_field_type = 4  then  -- Latitude/Longitude Degrees and Minutes as consecutive fields
+      elsif p_field_type = 5  then  -- Date and Time as consecutive fields
+      elsif p_field_type = 10 then 	-- Incremental Integer Index for Repeat Fields
+      elsif p_field_type = 11 then 	-- MD_SYS.SDO_GEOMETRY Field - Point
+      elsif p_field_type = 12 then 	-- Latitude/Longitude as Floating Point Value
+      elsif p_field_type = 13 then 	-- Repeat Line Index - String
+      elsif p_field_type = 14 then 	-- Repeat Line Index - Floating Point
+      elsif p_field_type = 15 then 	-- Repeat Line Index - Integer
+      elsif p_field_type = 16 then 	-- MEDS Job/Observation Index Link - String
+      elsif p_field_type = 17 then 	-- Data Use Code as String
+      elsif p_field_type = 18 then 	-- Repeat field Value - String
+      elsif p_field_type = 19 then 	-- Lat/Long as DD MM.MMH (D - Degrees,M-Minutes,H-Hemisphere)
+      elsif p_field_type = 20 then 	-- MEDS Job/Observation Index Link - Float
+      elsif p_field_type = 21 then 	-- MEDS Job/Observation Index Link - Integer
+      elsif p_field_type = 22 then 	-- Date Only Field (no time)
+      elsif p_field_type = 23 then 	-- MEDS Job Number Index Link - String
+      elsif p_field_type = 24 then 	-- Repeat Line Index - Increments MEDS Job Number when it changes
+      elsif p_field_type = 25 then 	-- Lat/Long Degrees and Minutes as Four Consecutive Fields
+      elsif p_field_type = 26 then 	-- MEDS Job Change - only output data for diferent meds job no.
+      elsif p_field_type = 29 then 	-- Lat/Long Degrees and Minutes Followed by hemishere field
+      elsif p_field_type = 27 then 	-- MD_SYS.SDO_GEOMETRY Field - Line
+      elsif p_field_type = 28 then 	-- MD_SYS.SDO_GEOMETRY Field - Polygon
+      elsif p_field_type = 30 then 	-- Link to other table - Integer
+      elsif p_field_type = 31 then 	-- Link to other table - String
+      elsif p_field_type = 32 then 	-- Link to other table - Float
+      elsif p_field_type = 33 then 	-- End of repeat - to check for end of repeat data - Add column to test in repeat value box
+      elsif p_field_type = 34 then 	-- Point Order -  Ordering of Points for Polygons and Lines
+      elsif p_field_type = 35 then 	-- MD_SYS.SDO_GEOMETRY Field - Points binned as lines
+      
+ */     
+      return v_ret;
+   end get_csv_value2;
+
+   function get_csv_value1
+   (
+      p_csv_record   in stg_file_csv_row%rowtype,
+      p_field_pos    in number,
+      p_field_type   in number,
+      p_job_number   in number,
+      p_obs_number   in number
+   ) return varchar2
+   as
+      v_ret    varchar2(512);
+   begin
+      if p_field_pos = 1 then
+         v_ret := nvl(p_csv_record.col001, 'null');
+      elsif p_field_pos = 2 then
+         v_ret := nvl(p_csv_record.col002, 'null');
+      elsif p_field_pos = 3 then
+         v_ret := nvl(p_csv_record.col003, 'null');
+      elsif p_field_pos = 4 then
+         v_ret := nvl(p_csv_record.col004, 'null');
+      elsif p_field_pos = 5 then
+         v_ret := nvl(p_csv_record.col005, 'null'); 
+      elsif p_field_pos = 6 then
+         v_ret := nvl(p_csv_record.col006, 'null');
+      elsif p_field_pos = 7 then
+         v_ret := nvl(p_csv_record.col007, 'null');
+      elsif p_field_pos = 8 then
+         v_ret := nvl(p_csv_record.col008, 'null');
+      elsif p_field_pos = 9 then
+         v_ret := nvl(p_csv_record.col009, 'null'); 
+      elsif p_field_pos = 10 then
+         v_ret := nvl(p_csv_record.col010, 'null'); 
+      elsif p_field_pos = 11 then
+         v_ret := nvl(p_csv_record.col011, 'null'); 
+      end if;
+      
+      return get_csv_value2(v_ret, p_field_type, p_job_number, p_obs_number);   
+   end get_csv_value1;   
 
    procedure parse_csv_file
    (
