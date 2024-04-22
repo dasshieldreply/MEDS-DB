@@ -23,9 +23,15 @@ begin
    dbms_output.put_line('v_index_field: ' || v_index_field);
     
    -- Loop through all the tables involved in the job type 
-   for v_table in (select distinct table_name from field_lookup where data_type_index = v_index_field)
+   for f_table in (select distinct table_name from field_lookup where data_type_index = v_index_field)
    loop
       dbms_output.put_line('v_table: ' || v_table.table_name);
+      
+      -- Loop through all the fields of the selected table
+      for f_field_lookup in (select * from field_lookup where data_type_index = v_index_field and table_name = f_table.table_name order by field_position)
+      loop
+      
+      end  loop;
    end loop;
    
 /*    

@@ -2,15 +2,11 @@
 --  DDL for View V_STG_SERD_ROW_CONTINUATION
 --------------------------------------------------------
 
-  CREATE OR REPLACE FORCE EDITIONABLE VIEW "MEDSADMIN"."V_STG_SERD_ROW_CONTINUATION" ("RECORDNUMBER", "DATAID", "DATAUSECODE", "FILECODE", "MARSDENSQUARE", "DEGREESQUARE", "POSITIONGEO", "QUADRANT", "POSITIONMIASCODE", "POSITIONACCURACY", "POSITIONREFERENCE", "ARCHIVEYEAR", "OBSERVATIONDATE", "OBSERVATIONTIME", "COUNTRY", "SHIPNUMBER", "SHIPNUMBERCODE", "ORIGINATORCRUISE", "STATION", "INSTITUTENUMBER", "INSTITUTENUMBERCODE", "LANDCHECK", "DEPTHLEVELCOUNT", "DEPTHLEVEL", "DEPTHCODE", "TEMPERATURE", "TEMPERATUREQUALITY", "SALINITY", "SALINITYQUALITY", "SOUNDVELOCITY", "SOUNDVELOCITYQUALITY", "SOUNDVELOCITYCODE") DEFAULT COLLATION "USING_NLS_COMP"  AS 
-  with param
-as
-(
-   select /* +materialize */
-          nv('P0_STG_FILE') stg_file
-   from   dual
-)
-select substr(a.row_content,6,2)     recordnumber
+CREATE OR REPLACE FORCE EDITIONABLE VIEW "MEDSADMIN"."V_STG_SERD_ROW_CONTINUATION" ("STG_FILE_SERD_ROW", "STG_FILE", "ROW_SEQUENCE", "RECORDNUMBER", "DATAID", "DATAUSECODE", "FILECODE", "MARSDENSQUARE", "DEGREESQUARE", "POSITIONGEO", "QUADRANT", "POSITIONMIASCODE", "POSITIONACCURACY", "POSITIONREFERENCE", "ARCHIVEYEAR", "OBSERVATIONDATE", "OBSERVATIONTIME", "COUNTRY", "SHIPNUMBER", "SHIPNUMBERCODE", "ORIGINATORCRUISE", "STATION", "INSTITUTENUMBER", "INSTITUTENUMBERCODE", "LANDCHECK", "DEPTHLEVELCOUNT", "DEPTHLEVEL", "DEPTHCODE", "TEMPERATURE", "TEMPERATUREQUALITY", "SALINITY", "SALINITYQUALITY", "SOUNDVELOCITY", "SOUNDVELOCITYQUALITY", "SOUNDVELOCITYCODE") DEFAULT COLLATION "USING_NLS_COMP"  AS 
+select a.stg_file_serd_row
+,      a.stg_file
+,      a.row_sequence
+,      substr(a.row_content,6,2)     recordnumber
 ,      substr(a.row_content,8,1)     dataid
 ,      substr(a.row_content,9,1)     datausecode
 ,      substr(a.row_content,10,1)    filecode 
@@ -42,8 +38,8 @@ select substr(a.row_content,6,2)     recordnumber
 ,      substr(a.row_content,105,5)   soundvelocity 
 ,      substr(a.row_content,110,1)   soundvelocityquality 
 ,      substr(a.row_content,111,1)   soundvelocitycode 
-from   param             p
-,      stg_file_serd_row a
-where  a.stg_file            = p.stg_file 
-and    substr(a.row_content,5,1) = '3'
+from   stg_file_serd_row a
+where  substr(a.row_content,5,1) = '3'
+order by a.stg_file
+,      a.row_sequence
 ;
