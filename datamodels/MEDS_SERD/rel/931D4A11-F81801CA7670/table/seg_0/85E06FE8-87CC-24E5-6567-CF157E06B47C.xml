@@ -177,7 +177,6 @@
 <commentInRDBMS><![CDATA[Position Determination, MIAS code for the fixing device used as the prime navigational aid in determining the position of the station.]]></commentInRDBMS>
 <notes><![CDATA[Start position 33]]></notes>
 <ownerDesignName>MEDS_SERD</ownerDesignName>
-<nullsAllowed>true</nullsAllowed>
 <useDomainConstraints>false</useDomainConstraints>
 <use>1</use>
 <logicalDatatype>LOGDT019</logicalDatatype>
@@ -190,7 +189,6 @@
 <commentInRDBMS><![CDATA[Position Accuracy code. The estimated drift in station position or the estimated accuracy in the determination of the position of the station, whichever is the greater.]]></commentInRDBMS>
 <notes><![CDATA[Start position 34]]></notes>
 <ownerDesignName>MEDS_SERD</ownerDesignName>
-<nullsAllowed>true</nullsAllowed>
 <useDomainConstraints>false</useDomainConstraints>
 <use>1</use>
 <logicalDatatype>LOGDT019</logicalDatatype>
@@ -481,7 +479,6 @@ If the instrument code is 31(MBT) the format of the field is: ?n.n; integer, ten
 If Units code = 1 the corrections are given in imperial units, however all other data have been converted to metric units.]]></commentInRDBMS>
 <notes><![CDATA[Start position 115]]></notes>
 <ownerDesignName>MEDS_SERD</ownerDesignName>
-<nullsAllowed>true</nullsAllowed>
 <useDomainConstraints>false</useDomainConstraints>
 <use>1</use>
 <logicalDatatype>LOGDT019</logicalDatatype>
@@ -493,7 +490,6 @@ If Units code = 1 the corrections are given in imperial units, however all other
 <createdTime>2024-02-14 10:54:54 UTC</createdTime>
 <notes><![CDATA[Start position 116]]></notes>
 <ownerDesignName>MEDS_SERD</ownerDesignName>
-<nullsAllowed>true</nullsAllowed>
 <useDomainConstraints>false</useDomainConstraints>
 <use>1</use>
 <logicalDatatype>LOGDT019</logicalDatatype>
@@ -507,7 +503,6 @@ If Units code = 1 the corrections are given in imperial units, however all other
 <commentInRDBMS><![CDATA[Data type, MIAS code.]]></commentInRDBMS>
 <notes><![CDATA[Start position 118]]></notes>
 <ownerDesignName>MEDS_SERD</ownerDesignName>
-<nullsAllowed>true</nullsAllowed>
 <useDomainConstraints>false</useDomainConstraints>
 <use>1</use>
 <logicalDatatype>LOGDT019</logicalDatatype>
@@ -520,7 +515,6 @@ If Units code = 1 the corrections are given in imperial units, however all other
 <commentInRDBMS><![CDATA[Data mode.]]></commentInRDBMS>
 <notes><![CDATA[Start position 119]]></notes>
 <ownerDesignName>MEDS_SERD</ownerDesignName>
-<nullsAllowed>true</nullsAllowed>
 <useDomainConstraints>false</useDomainConstraints>
 <use>1</use>
 <logicalDatatype>LOGDT019</logicalDatatype>
@@ -533,7 +527,6 @@ If Units code = 1 the corrections are given in imperial units, however all other
 <commentInRDBMS><![CDATA[Data capture method code.]]></commentInRDBMS>
 <notes><![CDATA[Start position 120]]></notes>
 <ownerDesignName>MEDS_SERD</ownerDesignName>
-<nullsAllowed>true</nullsAllowed>
 <useDomainConstraints>false</useDomainConstraints>
 <use>1</use>
 <logicalDatatype>LOGDT019</logicalDatatype>
@@ -546,7 +539,6 @@ If Units code = 1 the corrections are given in imperial units, however all other
 <commentInRDBMS><![CDATA[Wind direction, WMO code 0877, true direction, in tenths of degrees from which the wind is blowing]]></commentInRDBMS>
 <notes><![CDATA[Start position 121]]></notes>
 <ownerDesignName>MEDS_SERD</ownerDesignName>
-<nullsAllowed>true</nullsAllowed>
 <useDomainConstraints>false</useDomainConstraints>
 <use>1</use>
 <logicalDatatype>LOGDT019</logicalDatatype>
@@ -599,7 +591,6 @@ If Units code = 1 the corrections are given in imperial units, however all other
 <commentInRDBMS><![CDATA[Weather code.]]></commentInRDBMS>
 <notes><![CDATA[Start position 133]]></notes>
 <ownerDesignName>MEDS_SERD</ownerDesignName>
-<nullsAllowed>true</nullsAllowed>
 <useDomainConstraints>false</useDomainConstraints>
 <use>1</use>
 <logicalDatatype>LOGDT019</logicalDatatype>
@@ -612,7 +603,6 @@ If Units code = 1 the corrections are given in imperial units, however all other
 <commentInRDBMS><![CDATA[Cloud coverage, WMO code 2700.]]></commentInRDBMS>
 <notes><![CDATA[Start position 134]]></notes>
 <ownerDesignName>MEDS_SERD</ownerDesignName>
-<nullsAllowed>true</nullsAllowed>
 <useDomainConstraints>false</useDomainConstraints>
 <use>1</use>
 <logicalDatatype>LOGDT019</logicalDatatype>
@@ -624,7 +614,6 @@ If Units code = 1 the corrections are given in imperial units, however all other
 <createdTime>2024-02-14 13:43:30 UTC</createdTime>
 <notes><![CDATA[Start position 135]]></notes>
 <ownerDesignName>MEDS_SERD</ownerDesignName>
-<nullsAllowed>true</nullsAllowed>
 <useDomainConstraints>false</useDomainConstraints>
 <use>1</use>
 <logicalDatatype>LOGDT019</logicalDatatype>
@@ -676,7 +665,6 @@ If Units code = 1 the corrections are given in imperial units, however all other
 <createdTime>2024-02-14 14:23:26 UTC</createdTime>
 <notes><![CDATA[Start position 145]]></notes>
 <ownerDesignName>MEDS_SERD</ownerDesignName>
-<nullsAllowed>true</nullsAllowed>
 <useDomainConstraints>false</useDomainConstraints>
 <use>1</use>
 <logicalDatatype>LOGDT019</logicalDatatype>
@@ -704,7 +692,6 @@ If Units code = 1 the corrections are given in imperial units, however all other
 <commentInRDBMS><![CDATA[Salinity scale code.]]></commentInRDBMS>
 <notes><![CDATA[Start position 149]]></notes>
 <ownerDesignName>MEDS_SERD</ownerDesignName>
-<nullsAllowed>true</nullsAllowed>
 <useDomainConstraints>false</useDomainConstraints>
 <use>1</use>
 <logicalDatatype>LOGDT019</logicalDatatype>

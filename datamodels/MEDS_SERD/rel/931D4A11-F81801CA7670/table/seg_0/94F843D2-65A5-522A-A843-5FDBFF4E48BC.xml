@@ -131,6 +131,15 @@
 <colUsage columnID="11800107-DE90-020F-5AC7-001BBA8A861E"/>
 </indexColumnUsage>
 </ind_PK_UK>
+<ind_PK_UK id="AC303894-FB65-19CB-DDEF-0DBC2A251C12" name="STG_FILE_JOB_NUMBER_I">
+<createdBy>d.arboittedossantos</createdBy>
+<createdTime>2024-04-18 14:23:37 UTC</createdTime>
+<ownerDesignName>MEDS_SERD</ownerDesignName>
+<isSurrogateKey>false</isSurrogateKey>
+<indexColumnUsage>
+<colUsage columnID="5218F482-ACAE-DCE5-A542-5F24BF5F195C"/>
+</indexColumnUsage>
+</ind_PK_UK>
 <ind_PK_UK id="6D06ED7A-2034-1FBE-76FF-433712AE4606" name="STG_FILE_MEDS_PROCESSING_JOB_F">
 <createdBy>d.arboittedossantos</createdBy>
 <createdTime>2024-04-15 09:55:59 UTC</createdTime>

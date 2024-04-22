@@ -2870,6 +2870,15 @@
 <colUsage columnID="CEE8413D-3EBA-932B-6C5E-C5D4009D9BD9"/>
 </indexColumnUsage>
 </ind_PK_UK>
+<ind_PK_UK id="B31A3EA3-7684-110C-D76D-2DC1733DDC9B" name="STG_FILE_CSV_ROW_SEQUENCE_I">
+<createdBy>d.arboittedossantos</createdBy>
+<createdTime>2024-04-18 07:39:00 UTC</createdTime>
+<ownerDesignName>MEDS_SERD</ownerDesignName>
+<isSurrogateKey>false</isSurrogateKey>
+<indexColumnUsage>
+<colUsage columnID="53E9DFE4-A30A-F1D5-9617-6D23CE7230DC"/>
+</indexColumnUsage>
+</ind_PK_UK>
 <ind_PK_UK id="C6EBAA81-9BE7-EF2F-F4DD-38C728401673" name="STG_FILE_CSV_ROW_STG_FILE_F">
 <createdBy>d.arboittedossantos</createdBy>
 <createdTime>2024-04-12 14:12:03 UTC</createdTime>

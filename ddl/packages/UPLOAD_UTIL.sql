@@ -8,13 +8,11 @@ as
 
    procedure parse_serd_file
    (
-      p_stg_file    number
+      p_job_number    number
    );
 
 end upload_util;
-
 /
-
 
 CREATE OR REPLACE package body upload_util
 as
@@ -82,66 +80,53 @@ as
 
    procedure parse_serd_file
    (
-      p_stg_file    number
+      p_job_number    number
    )
    is
-      v_count     number   default 0;
       v_clob      clob     default empty_clob();
-      v_line      number   default 0;
-      v_offset    number   default 1;
+      v_line      number;
+      v_offset    number;
       v_len       number;
       v_read      number;
       v_string    varchar2(32000);
    begin
       
-      -- Verify if there are already data for the key, and delete it
-      select count(*)
-      into v_count
-      from stg_file_serd_row
-      where stg_file = p_stg_file;
-      
-      if v_count > 0 then
-         delete from stg_file_serd_row where stg_file = p_stg_file;
-         v_count := 0;
-      end if;
-      
-      select content
-      into v_clob 
-      from stg_file
-      where stg_file = p_stg_file;
-      
-      v_len := dbms_lob.getlength(v_clob);
-      
-      --dbms_output.ENABLE (buffer_size => NULL);
-      --dbms_output.put_line(v_len);
-      
-      while(v_offset <= v_len)
+      for t_stg_file in (select stg_file, content from stg_file where job_number = p_job_number)
       loop
-         v_read := instr(v_clob, CHR(10), v_offset, 1);
+         delete from stg_file_serd_row where stg_file = t_stg_file.stg_file;
+         v_line   := 0;
+         v_offset := 1;
+         v_clob   := to_clob(t_stg_file.content);
+         v_len    := dbms_lob.getlength(v_clob);
          
-         exit when v_read = 0;
+         --dbms_output.ENABLE (buffer_size => NULL);
+         --dbms_output.put_line(v_len);
          
-         v_string := dbms_lob.substr(v_clob, v_read - v_offset, v_offset);  
-         v_line := v_line + 1;
-         v_offset := v_read + 1;
-   
-         insert into stg_file_serd_row
-         (
-            stg_file
-         ,  row_sequence
-         ,  row_content
-         )
-         values
-         (
-            p_stg_file,
-            v_line,
-            v_string
-         );
-         --dbms_output.put_line('Line #' || v_line || ' - ' || substr(v_string,1,1000));
-      end loop;
+         while(v_offset <= v_len)
+         loop
+            v_read := instr(v_clob, CHR(10), v_offset, 1);
+            
+            exit when v_read = 0;
+            
+            v_string := dbms_lob.substr(v_clob, v_read - v_offset, v_offset);  
+            v_line   := v_line + 1;
+            v_offset := v_read + 1;
       
+            insert into stg_file_serd_row
+            (
+               stg_file,
+               row_sequence,
+               row_content
+            )
+            values
+            (
+               t_stg_file.stg_file,
+               v_line,
+               v_string
+            );
+            --dbms_output.put_line('Line #' || v_line || ' - ' || substr(v_string,1,1000));
+         end loop;
+      end loop;
    end parse_serd_file;   
-   
 end upload_util;
-
 /
