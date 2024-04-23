@@ -2,14 +2,19 @@ CREATE OR REPLACE package upload_util
 as
    type a_values  is varray(5) of varchar2(512);
    
+   procedure delete_stg_file_from_job
+   (
+      p_job_number   number
+   );
+   
    procedure parse_csv_file
    (
-      p_stg_file     number
+      p_job_number   number
    );
 
    procedure parse_serd_file
    (
-      p_job_number    number
+      p_job_number   number
    );
    
    procedure parse_csv_data
@@ -40,6 +45,26 @@ end upload_util;
 CREATE OR REPLACE package body upload_util
 as
 
+   procedure delete_stg_file_from_job
+   (
+      p_job_number     number
+   )
+   is
+   begin
+      for f_stg_file in 
+      (
+         select stg_file 
+         from stg_file 
+         where job_number = p_job_number
+      )
+      loop
+         delete from stg_file_serd_row where stg_file = f_stg_file.stg_file;
+         delete from stg_file_csv_row  where stg_file = f_stg_file.stg_file;
+      end loop;
+      
+      delete from stg_file where job_number = p_job_number;
+   end delete_stg_file_from_job;
+
    function get_csv_field_type
    (
       p_csv_values      in a_values
@@ -50,6 +75,8 @@ as
    as
       v_ret    varchar2(512);
    begin
+     -- dbms_output.put_line('inside get_csv_field_type: ' || p_field_type);
+      
       if p_field_type = 1 then      -- String Value, Floating Point Value, Integer Value
          v_ret := p_csv_values(1);
       elsif p_field_type = 2 then   -- Floating Point Value 
@@ -57,7 +84,7 @@ as
       elsif p_field_type = 3 then   -- Integer Value
          v_ret := p_csv_values(1);
       elsif p_field_type = 5 then   -- Date and Time as consecutive fields
-         v_ret := 'TO_DATE(''' || to_char(to_date(p_csv_values(1) || ' ' || p_csv_values(2), 'DD/MM/YYYY HH24:MI:SS'), 'YYYY-MM-DD HH24:MI:SS') || ''',''YYYY-MM-DD HH24:MI:SS'')';
+        v_ret := 'TO_DATE(''' || to_char(to_date(p_csv_values(1) || ' ' || p_csv_values(2), 'DD/MM/YYYY HH24:MI:SS'), 'YYYY-MM-DD HH24:MI:SS') || ''',''YYYY-MM-DD HH24:MI:SS'')';
       elsif p_field_type = 6  then 	-- Date/Time (single) Field
          v_ret := p_csv_values(1);
       elsif p_field_type = 7  then 	-- Floating Point Index Value for Repeat Fields
@@ -113,8 +140,10 @@ as
     , p_obs_number   in number
    ) return varchar2
    as
-      v_val a_values;
+      v_val a_values := a_values();
    begin
+      --dbms_output.put_line('inside get_csv_field_position: ' || p_field_pos);
+      v_val.extend(5);
       if p_field_pos = 1 then
          v_val(1)  := nvl(p_csv_record.col001, 'null');
          v_val(2)  := nvl(p_csv_record.col002, 'null');
@@ -361,6 +390,7 @@ as
    is
       v_data_type       varchar2(50);
       v_usage           varchar2(50);
+      v_username        varchar2(50);
       v_columns         varchar2(4000);
       v_values          varchar2(4000);
       v_stmt            varchar2(4000);
@@ -396,27 +426,47 @@ as
       set transaction name 'csv_parsing';
       
       <<involved_tables>> -- Loop through all the tables involved in the job type 
-      for f_table in (select distinct table_name from field_lookup where data_type_index = v_index_field)
+      for f_table in 
+      (
+         select distinct table_name 
+         from  field_lookup 
+         where data_type_index = v_index_field
+      )
       loop
          --dbms_output.put_line('f_table: ' || f_table.table_name);
-         -- Verify if the job has been already loaded in the destination table
+         --Verify if the job has been already loaded in the destination table
          v_stmt := ' select count(1) from ' || f_table.table_name || ' where meds_job_number = ' || p_job_number;
          execute immediate v_stmt into v_cnt;
          
          if v_cnt > 0 then
-            dbms_output.put_line('Skipping ' || f_table.table_name);
+            --dbms_output.put_line('Skipping ' || f_table.table_name);
             continue;
          end if;
         
          <<csv_data>> -- Loop through the csv content
-         for f_row in (select * from stg_file_csv_row where stg_file = v_stg_file order by row_sequence) 
+         for f_row in 
+         (
+            select * 
+            from  stg_file_csv_row 
+            where stg_file = v_stg_file 
+            order by row_sequence
+         ) 
          loop
+            --dbms_output.put_line('v_row_sequence: ' || f_row.row_sequence);
             v_columns   := '';
             v_values    := '';
             
             <<table_fields>> 
-            for f_field_lookup in (select * from field_lookup where data_type_index = v_index_field and table_name = f_table.table_name order by field_position)
+            for f_field_lookup in 
+            (
+               select * 
+               from  field_lookup 
+               where data_type_index = v_index_field 
+               and   table_name      = f_table.table_name 
+               order by field_position
+            )
             loop
+               --dbms_output.put_line('f_field_lookup.field_name: ' || f_field_lookup.field_name);
                v_columns := v_columns || ', ' || f_field_lookup.field_name; -- Populate insert column names
                v_values  := v_values  || ', ' || upload_util.get_csv_field_position(p_csv_record => f_row,
                                                                                     p_field_pos  => f_field_lookup.field_position,
@@ -444,21 +494,19 @@ as
       
    procedure parse_csv_file
    (
-      p_stg_file    number
+      p_job_number   number
    )
    is
-      v_count  number default 0;
+      v_stg_file     number;
    begin
       
       -- Verify if there are already data for the key, and delete it
-      select count(*)
-      into v_count
-      from stg_file_csv_row
-      where stg_file = p_stg_file;
+      select stg_file
+      into v_stg_file
+      from stg_file
+      where job_number = p_job_number;
       
-      if v_count >0 then
-         delete from stg_file_csv_row where stg_file = p_stg_file;
-      end if;
+      delete from stg_file_csv_row where stg_file = v_stg_file;
       
       insert into stg_file_csv_row
       (
@@ -498,7 +546,7 @@ as
               p_file_name => a.filename      
          ) 
       ) b
-      where a.stg_file = p_stg_file;
+      where a.stg_file = v_stg_file;
       
    end parse_csv_file;
 
