@@ -504,7 +504,7 @@ COMMENT ON COLUMN serd_stg_header.geo_position_desc IS
 ';
 
 COMMENT ON COLUMN serd_stg_header.quadrant_cd IS
-    'Quadrant, ICES code (NE = 0, SE = 2, SW = 3 & NW = 1).';
+    'Quadrant, ICES code (NE = 0, SE = 2, SW = 3, NW = 1).';
 
 COMMENT ON COLUMN serd_stg_header.position_determination_cd IS
     'Position Determination, MIAS code for the fixing device used as the prime navigational aid in determining the position of the station.'
