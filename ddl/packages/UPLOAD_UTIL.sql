@@ -379,7 +379,7 @@ as
          v_val(4)  := nvl(p_csv_record.col042, 'null');
          v_val(5)  := nvl(p_csv_record.col043, 'null');
       elsif p_field_pos = 40 then
-         v_val(1)  := nvl(p_csv_record.col040 'null');
+         v_val(1)  := nvl(p_csv_record.col040, 'null');
          v_val(2)  := nvl(p_csv_record.col041, 'null');
          v_val(3)  := nvl(p_csv_record.col042, 'null');
          v_val(4)  := nvl(p_csv_record.col043, 'null');
@@ -719,13 +719,13 @@ as
             v_values := ltrim(v_values, ', ');
             --dbms_output.put_line('v_values: ' || v_values);         
             v_stmt := 'insert into ' || f_table.table_name || '(' || v_columns || ') ' || chr(10) || 'values(' || v_values || ')';
-            --dbms_output.put_line(v_stmt); 
+            dbms_output.put_line(v_stmt); 
    
-            execute immediate v_stmt;
+            --execute immediate v_stmt;
          end loop csv_data;            
       end loop involved_tables;
    
-      commit ;
+     -- commit ;
       
       exception
          when others then

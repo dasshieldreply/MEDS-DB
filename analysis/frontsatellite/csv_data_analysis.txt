@@ -1,0 +1,118 @@
+Analyze dataset
+File: gs_11_fronts.csv
+Date: 24-Apr-2024 19:14
+CSV Lint: v0.4.6.6
+
+Data records: 12122
+Max.unique values: 15
+
+**Warning: duplicate column names (1) **
+n=2            : 0
+
+----------------------------------------
+1: 0
+DataTypes      : integer (12121 = 100.0%)
+Width range    : 1 ~ 3 characters
+Integer range  : 0 ~ 799
+
+----------------------------------------
+2: SHELF FRONT
+DataTypes      : string (12121 = 100.0%)
+Width range    : 11 ~ 32 characters
+-- Unique values (13) --
+n=1579         : AZORES FRONT
+n=486          : GULF STREAM EXTENSION NORTH WALL
+n=632          : LABRADOR CURRENT
+n=899          : LOOP CURRENT -- SOUTH WALL*
+n=565          : NORTH ATLANTIC DRIFT NORTH WALL
+n=643          : NORTH ATLANTIC DRIFT SOUTH WALL*
+n=1569         : NORTH WALL GULF STREAM
+n=1793         : NORTHWEST AFRICAN UPWELLING
+n=1541         : SARGASSO SEA FRONT
+n=995          : SHELF FRONT
+n=314          : SHELF FRONT -- SECONDARY
+n=110          : SLOPE FRONT
+n=995          : SOUTH WALL GULF STREAM
+
+----------------------------------------
+3: Primary
+DataTypes      : string (12121 = 100.0%)
+Width range    : 7 characters
+-- Unique values (1) --
+n=12121        : Primary
+
+----------------------------------------
+4: Frontal Boundary
+DataTypes      : string (12121 = 100.0%)
+Width range    : 16 characters
+-- Unique values (1) --
+n=12121        : Frontal Boundary
+
+----------------------------------------
+5: 0
+DataTypes      : integer (12121 = 100.0%)
+Width range    : 1 characters
+Integer range  : 0 ~ 0
+-- Unique values (1) --
+n=12121        : 0
+
+----------------------------------------
+6: 02112023
+DataTypes      : integer (6386 = 52.7%), string (5735 = 47.3%)
+Width range    : 8 characters
+Integer range  : 14112023 ~ 30112023
+-- Unique values (12) --
+n=1189         : 02112023
+n=888          : 04112023
+n=778          : 07112023
+n=2880         : 09112023
+n=1832         : 14112023
+n=982          : 16112023
+n=912          : 18112023
+n=654          : 21112023
+n=364          : 23112023
+n=744          : 25112023
+n=464          : 28112023
+n=434          : 30112023
+
+----------------------------------------
+7: 09042024
+DataTypes      : string (12121 = 100.0%)
+Width range    : 8 characters
+-- Unique values (1) --
+n=12121        : 09042024
+
+----------------------------------------
+8: 1
+DataTypes      : integer (12121 = 100.0%)
+Width range    : 1 ~ 3 characters
+Integer range  : 1 ~ 162
+
+----------------------------------------
+9: 39.06
+DataTypes      : decimal (12121 = 100.0%)
+Width range    : 5 characters
+Decimal range  : 19.77 ~ 57.63
+
+----------------------------------------
+10: -72.82
+DataTypes      : decimal (12121 = 100.0%)
+Width range    : 5 ~ 6 characters
+Decimal range  : -88.27 ~ -6.57
+
+----------------------------------------
+11: 1.08
+DataTypes      : decimal (12121 = 100.0%)
+Width range    : 4 characters
+Decimal range  : 1.08 ~ 1.08
+-- Unique values (1) --
+n=12121        : 1.08
+
+----------------------------------------
+12: 100
+DataTypes      : integer (12121 = 100.0%)
+Width range    : 3 characters
+Integer range  : 100 ~ 100
+-- Unique values (1) --
+n=12121        : 100
+

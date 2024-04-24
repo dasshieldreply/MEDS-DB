@@ -2,7 +2,7 @@ select * from meds_processing_job where job_number=102586;
 SELECT * from job_lookups where type='Data Type' and usage = 'BIOMASS';
 
 select * from field_lookup 
-where data_type_index = 16
+where data_type_index = 89
 order by table_name,field_position;
 
 select * from stg_file where stg_file=29637123586303579758142188515056352802;
@@ -44,3 +44,8 @@ observation seems to be at every datetime/longitude/latitude/UPPER_DEPTH/LOWER_D
 select distinct meds_job_number from BIOMASS_OBSERVATION;
 select distinct meds_job_number from BIOMASS_DATA;
 
+select * from meds_processing_job where job_number=68822;
+select * from BIOMASS_OBSERVATION where meds_job_number=68822 order by 1;
+select * from BIOMASS_DATA where meds_job_number=68822 order by meds_observation_number;
+select count(*) from BIOMASS_OBSERVATION where meds_job_number=68822 order by 1;                   --832
+select count(*) from BIOMASS_DATA where meds_job_number=68822 order by meds_observation_number;    --832
