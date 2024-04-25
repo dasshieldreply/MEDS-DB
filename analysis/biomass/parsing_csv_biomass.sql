@@ -49,3 +49,8 @@ select * from BIOMASS_OBSERVATION where meds_job_number=68822 order by 1;
 select * from BIOMASS_DATA where meds_job_number=68822 order by meds_observation_number;
 select count(*) from BIOMASS_OBSERVATION where meds_job_number=68822 order by 1;                   --832
 select count(*) from BIOMASS_DATA where meds_job_number=68822 order by meds_observation_number;    --832
+
+select * from BIOMASS_OBSERVATION where meds_job_number=68822 order by 1;
+select * from BIOMASS_DATA where meds_job_number=68822 order by meds_observation_number;
+--select * from BIOMASS_OBSERVATION where meds_job_number=68822 order by 1;
+--select * from BIOMASS_DATA where meds_job_number=68822 order by meds_observation_number;

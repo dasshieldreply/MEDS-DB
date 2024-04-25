@@ -1,6 +1,5 @@
 CREATE OR REPLACE package upload_util
 as
-   type a_values  is varray(5) of varchar2(512);
    
    procedure delete_stg_file_from_job
    (
@@ -22,607 +21,162 @@ as
       p_job_number   number
    );   
    
-   function get_csv_field_position
+   procedure parse_datatype_89
    (
-      p_csv_record   in stg_file_csv_row%rowtype
-    , p_field_pos    in number
-    , p_field_type   in number
-    , p_job_number   in number
-    , p_obs_number   in number
-   ) return  varchar2;
+      p_job_number   number,
+      p_stg_file     number
+   ); 
    
-   function get_csv_field_type
+   procedure parse_datatype_94
    (
-      p_csv_values      in a_values
-   ,  p_field_type      in number
-   ,  p_job_number      in number
-   ,  p_obs_number      in number
-   ) return  varchar2;
+      p_job_number   number,
+      p_stg_file     number
+   ); 
 
+   
 end upload_util;
 /
-
+-- -----------------------------------------------------------------------------------------------------------------
 CREATE OR REPLACE package body upload_util
 as
 
-   procedure delete_stg_file_from_job
+   procedure parse_datatype_94
    (
-      p_job_number     number
-   )
+      p_job_number   number,
+      p_stg_file     number
+   )   
    is
    begin
-      for f_stg_file in 
+      -- Insert the observations first, grouped by profile_id (date, latitude and longitude added for safety)
+      insert into aquapack_profile_observation 
       (
-         select stg_file 
-         from stg_file 
-         where job_number = p_job_number
+         location
+      ,  meds_job_number
+      ,  meds_observation_number
+      ,  longitude
+      ,  latitude
+      ,  date_recorded
+      ,  seabed_depth      
+      ) 
+      select 
+         null
+      ,  p_job_number
+      ,  col017 -- profile_id
+      ,  col004
+      ,  col003
+      ,  to_date(col001 || ' ' || col002, 'dd/mm/yyyy hh24:mi:ss') 
+      ,  col005
+      from  stg_file_csv_row
+      where stg_file = p_stg_file
+      group by col017
+      ,  col001
+      ,  col002
+      ,  col003
+      ,  col004
+      ,  col005
+      order by 1, 6,4, 5;
+
+      -- Insert all data, using profile_id as the observation
+      insert into aquapack_profile_data (
+         meds_job_number
+      ,  meds_observation_number
+      ,  pressure
+      ,  depth
+      ,  temperature
+      ,  conductivity
+      ,  salinity
+      ,  sound_speed
+      ,  hydrocarbons
+      ,  gelbstoffe
+      ,  chlorophyll
+      ,  bioluminescence
+      ,  turbidity
+      ,  profile_id
       )
-      loop
-         delete from stg_file_serd_row where stg_file = f_stg_file.stg_file;
-         delete from stg_file_csv_row  where stg_file = f_stg_file.stg_file;
-      end loop;
+      select 
+         p_job_number
+      ,  a.col017 -- two uses: profile_id is always med_observation_number (TODO Confirm the assumption)
+      ,  a.col006
+      ,  a.col007
+      ,  a.col008
+      ,  a.col009
+      ,  a.col010
+      ,  a.col011
+      ,  a.col012
+      ,  a.col013
+      ,  a.col014
+      ,  a.col015
+      ,  a.col016
+      ,  a.col017
+      from       stg_file_csv_row    a
+      where a.stg_file=p_stg_file
+      order by b.meds_observation_number;
       
-      delete from stg_file where job_number = p_job_number;
-   end delete_stg_file_from_job;
+   end parse_datatype_94;
 
-   function get_csv_field_type
+   procedure parse_datatype_89
    (
-      p_csv_values      in a_values
-   ,  p_field_type      in number
-   ,  p_job_number      in number
-   ,  p_obs_number      in number
-   ) return  varchar2
-   as
-      v_ret    varchar2(512);
+      p_job_number   number,
+      p_stg_file     number
+   )   
+   is
    begin
-     -- dbms_output.put_line('inside get_csv_field_type: ' || p_field_type);
+      -- Insert the observations first, grouped by date, latitude and longitude
+      insert into biomass_observation 
+      (
+         meds_observation_number
+      ,  meds_job_number
+      ,  location
+      ,  date_recorded
+      ,  latitude
+      ,  longitude
+      ) 
+      select 
+         row_number() over(order by col001,col002,col003,col004)
+      ,  p_job_number
+      ,  null
+      ,  to_date(col001 || ' ' || col002, 'dd/mm/yyyy hh24:mi:ss') 
+      ,  col003
+      ,  col004
+      from  stg_file_csv_row
+      where stg_file = p_stg_file
+      group by col001
+      ,  col002
+      ,  col003
+      ,  col004;
       
-      if p_field_type = 1 then      -- String Value, Floating Point Value, Integer Value
-         v_ret := p_csv_values(1);
-      elsif p_field_type = 2 then   -- Floating Point Value 
-         v_ret := p_csv_values(1);      
-      elsif p_field_type = 3 then   -- Integer Value
-         v_ret := p_csv_values(1);
-      elsif p_field_type = 5 then   -- Date and Time as consecutive fields
-        v_ret := 'TO_DATE(''' || to_char(to_date(p_csv_values(1) || ' ' || p_csv_values(2), 'DD/MM/YYYY HH24:MI:SS'), 'YYYY-MM-DD HH24:MI:SS') || ''',''YYYY-MM-DD HH24:MI:SS'')';
-      elsif p_field_type = 6  then 	-- Date/Time (single) Field
-         v_ret := p_csv_values(1);
-      elsif p_field_type = 7  then 	-- Floating Point Index Value for Repeat Fields
-         v_ret := p_csv_values(1);
-      elsif p_field_type = 8  then 	-- MEDS Job Number
-         v_ret := p_job_number;
-      elsif p_field_type = 9  then 	-- MEDS Observation Number
-         v_ret := p_obs_number;
-      elsif p_field_type = 11 then 	-- MD_SYS.SDO_GEOMETRY Field - Point
-         v_ret := 'NULL';
-      else
-         v_ret := p_csv_values(1);
-      end if;
-/*      
-      elsif p_field_type = 4  then  -- Latitude/Longitude Degrees and Minutes as consecutive fields
-      elsif p_field_type = 5  then  -- Date and Time as consecutive fields
-      elsif p_field_type = 10 then 	-- Incremental Integer Index for Repeat Fields
-      elsif p_field_type = 12 then 	-- Latitude/Longitude as Floating Point Value
-      elsif p_field_type = 13 then 	-- Repeat Line Index - String
-      elsif p_field_type = 14 then 	-- Repeat Line Index - Floating Point
-      elsif p_field_type = 15 then 	-- Repeat Line Index - Integer
-      elsif p_field_type = 16 then 	-- MEDS Job/Observation Index Link - String
-      elsif p_field_type = 17 then 	-- Data Use Code as String
-      elsif p_field_type = 18 then 	-- Repeat field Value - String
-      elsif p_field_type = 19 then 	-- Lat/Long as DD MM.MMH (D - Degrees,M-Minutes,H-Hemisphere)
-      elsif p_field_type = 20 then 	-- MEDS Job/Observation Index Link - Float
-      elsif p_field_type = 21 then 	-- MEDS Job/Observation Index Link - Integer
-      elsif p_field_type = 22 then 	-- Date Only Field (no time)
-      elsif p_field_type = 23 then 	-- MEDS Job Number Index Link - String
-      elsif p_field_type = 24 then 	-- Repeat Line Index - Increments MEDS Job Number when it changes
-      elsif p_field_type = 25 then 	-- Lat/Long Degrees and Minutes as Four Consecutive Fields
-      elsif p_field_type = 26 then 	-- MEDS Job Change - only output data for diferent meds job no.
-      elsif p_field_type = 29 then 	-- Lat/Long Degrees and Minutes Followed by hemishere field
-      elsif p_field_type = 27 then 	-- MD_SYS.SDO_GEOMETRY Field - Line
-      elsif p_field_type = 28 then 	-- MD_SYS.SDO_GEOMETRY Field - Polygon
-      elsif p_field_type = 30 then 	-- Link to other table - Integer
-      elsif p_field_type = 31 then 	-- Link to other table - String
-      elsif p_field_type = 32 then 	-- Link to other table - Float
-      elsif p_field_type = 33 then 	-- End of repeat - to check for end of repeat data - Add column to test in repeat value box
-      elsif p_field_type = 34 then 	-- Point Order -  Ordering of Points for Polygons and Lines
-      elsif p_field_type = 35 then 	-- MD_SYS.SDO_GEOMETRY Field - Points binned as lines
+      -- Insert all data, referencing the observation
+      insert into biomass_data 
+      (
+         upper_depth
+      ,  lower_depth
+      ,  total_displacement_vol
+      ,  total_settled_volume
+      ,  total_wet_mass
+      ,  total_dry_mass
+      ,  meds_job_number
+      ,  meds_observation_number
+      ) 
+      select 
+         a.col005
+      ,  a.col006
+      ,  a.col007
+      ,  a.col008
+      ,  a.col009
+      ,  a.col010
+      ,  p_job_number
+      ,  b.meds_observation_number
+      from       stg_file_csv_row    a
+      inner join biomass_observation b 
+         on  b.meds_job_number = p_job_number 
+         and b.date_recorded   = to_date(a.col001 || ' ' || a.col002, 'dd/mm/yyyy hh24:mi:ss') 
+         and b.latitude        = a.col003 
+         and b.longitude       = a.col004 
+      where a.stg_file=p_stg_file
+      order by b.meds_observation_number;
       
- */     
-      return v_ret;
-   end get_csv_field_type;
+   end parse_datatype_89;
 
-   function get_csv_field_position
-   (
-      p_csv_record   in stg_file_csv_row%rowtype
-    , p_field_pos    in number
-    , p_field_type   in number
-    , p_job_number   in number
-    , p_obs_number   in number
-   ) return varchar2
-   as
-      v_val a_values := a_values();
-   begin
-      --dbms_output.put_line('inside get_csv_field_position: ' || p_field_pos);
-      v_val.extend(5);
-      if p_field_pos = 1 then
-         v_val(1)  := nvl(p_csv_record.col001, 'null');
-         v_val(2)  := nvl(p_csv_record.col002, 'null');
-         v_val(3)  := nvl(p_csv_record.col003, 'null');
-         v_val(4)  := nvl(p_csv_record.col004, 'null');
-         v_val(5)  := nvl(p_csv_record.col005, 'null');
-      elsif p_field_pos = 2 then
-         v_val(1)  := nvl(p_csv_record.col002, 'null');
-         v_val(2)  := nvl(p_csv_record.col003, 'null');
-         v_val(3)  := nvl(p_csv_record.col004, 'null');
-         v_val(4)  := nvl(p_csv_record.col005, 'null');
-         v_val(5)  := nvl(p_csv_record.col006, 'null');
-      elsif p_field_pos = 3 then
-         v_val(1)  := nvl(p_csv_record.col003, 'null');
-         v_val(2)  := nvl(p_csv_record.col004, 'null');
-         v_val(3)  := nvl(p_csv_record.col005, 'null');
-         v_val(4)  := nvl(p_csv_record.col006, 'null');
-         v_val(5)  := nvl(p_csv_record.col007, 'null');
-      elsif p_field_pos = 4 then
-         v_val(1)  := nvl(p_csv_record.col004, 'null');
-         v_val(2)  := nvl(p_csv_record.col005, 'null');
-         v_val(3)  := nvl(p_csv_record.col006, 'null');
-         v_val(4)  := nvl(p_csv_record.col007, 'null');
-         v_val(5)  := nvl(p_csv_record.col008, 'null');
-      elsif p_field_pos = 5 then
-         v_val(1)  := nvl(p_csv_record.col005, 'null');
-         v_val(2)  := nvl(p_csv_record.col006, 'null');
-         v_val(3)  := nvl(p_csv_record.col007, 'null');
-         v_val(4)  := nvl(p_csv_record.col008, 'null');
-         v_val(5)  := nvl(p_csv_record.col009, 'null');
-      elsif p_field_pos = 6 then
-         v_val(1)  := nvl(p_csv_record.col006, 'null');
-         v_val(2)  := nvl(p_csv_record.col007, 'null');
-         v_val(3)  := nvl(p_csv_record.col008, 'null');
-         v_val(4)  := nvl(p_csv_record.col009, 'null');
-         v_val(5)  := nvl(p_csv_record.col010, 'null');
-      elsif p_field_pos = 7 then
-         v_val(1)  := nvl(p_csv_record.col007, 'null');
-         v_val(2)  := nvl(p_csv_record.col008, 'null');
-         v_val(3)  := nvl(p_csv_record.col009, 'null');
-         v_val(4)  := nvl(p_csv_record.col010, 'null');
-         v_val(5)  := nvl(p_csv_record.col011, 'null');
-      elsif p_field_pos = 8 then
-         v_val(1)  := nvl(p_csv_record.col008, 'null');
-         v_val(2)  := nvl(p_csv_record.col009, 'null');
-         v_val(3)  := nvl(p_csv_record.col010, 'null');
-         v_val(4)  := nvl(p_csv_record.col011, 'null');
-         v_val(5)  := nvl(p_csv_record.col012, 'null');
-      elsif p_field_pos = 9 then
-         v_val(1)  := nvl(p_csv_record.col009, 'null');
-         v_val(2)  := nvl(p_csv_record.col010, 'null');
-         v_val(3)  := nvl(p_csv_record.col011, 'null');
-         v_val(4)  := nvl(p_csv_record.col012, 'null');
-         v_val(5)  := nvl(p_csv_record.col013, 'null');
-      elsif p_field_pos = 10 then
-         v_val(1)  := nvl(p_csv_record.col010, 'null');
-         v_val(2)  := nvl(p_csv_record.col011, 'null');
-         v_val(3)  := nvl(p_csv_record.col012, 'null');
-         v_val(4)  := nvl(p_csv_record.col013, 'null');
-         v_val(5)  := nvl(p_csv_record.col014, 'null');
-      elsif p_field_pos = 11 then
-         v_val(1)  := nvl(p_csv_record.col011, 'null');
-         v_val(2)  := nvl(p_csv_record.col012, 'null');
-         v_val(3)  := nvl(p_csv_record.col013, 'null');
-         v_val(4)  := nvl(p_csv_record.col014, 'null');
-         v_val(5)  := nvl(p_csv_record.col015, 'null');
-      elsif p_field_pos = 12 then
-         v_val(1)  := nvl(p_csv_record.col012, 'null');
-         v_val(2)  := nvl(p_csv_record.col013, 'null');
-         v_val(3)  := nvl(p_csv_record.col014, 'null');
-         v_val(4)  := nvl(p_csv_record.col015, 'null');
-         v_val(5)  := nvl(p_csv_record.col016, 'null');
-      elsif p_field_pos = 13 then
-         v_val(1)  := nvl(p_csv_record.col013, 'null');
-         v_val(2)  := nvl(p_csv_record.col014, 'null');
-         v_val(3)  := nvl(p_csv_record.col015, 'null');
-         v_val(4)  := nvl(p_csv_record.col016, 'null');
-         v_val(5)  := nvl(p_csv_record.col017, 'null');
-      elsif p_field_pos = 14 then
-         v_val(1)  := nvl(p_csv_record.col014, 'null');
-         v_val(2)  := nvl(p_csv_record.col015, 'null');
-         v_val(3)  := nvl(p_csv_record.col016, 'null');
-         v_val(4)  := nvl(p_csv_record.col017, 'null');
-         v_val(5)  := nvl(p_csv_record.col018, 'null');
-      elsif p_field_pos = 15 then
-         v_val(1)  := nvl(p_csv_record.col015, 'null');
-         v_val(2)  := nvl(p_csv_record.col016, 'null');
-         v_val(3)  := nvl(p_csv_record.col017, 'null');
-         v_val(4)  := nvl(p_csv_record.col018, 'null');
-         v_val(5)  := nvl(p_csv_record.col019, 'null');
-      elsif p_field_pos = 16 then
-         v_val(1)  := nvl(p_csv_record.col016, 'null');
-         v_val(2)  := nvl(p_csv_record.col017, 'null');
-         v_val(3)  := nvl(p_csv_record.col018, 'null');
-         v_val(4)  := nvl(p_csv_record.col019, 'null');
-         v_val(5)  := nvl(p_csv_record.col020, 'null');
-      elsif p_field_pos = 17 then
-         v_val(1)  := nvl(p_csv_record.col017, 'null');
-         v_val(2)  := nvl(p_csv_record.col018, 'null');
-         v_val(3)  := nvl(p_csv_record.col019, 'null');
-         v_val(4)  := nvl(p_csv_record.col020, 'null');
-         v_val(5)  := nvl(p_csv_record.col021, 'null');
-      elsif p_field_pos = 18 then
-         v_val(1)  := nvl(p_csv_record.col018, 'null');
-         v_val(2)  := nvl(p_csv_record.col019, 'null');
-         v_val(3)  := nvl(p_csv_record.col020, 'null');
-         v_val(4)  := nvl(p_csv_record.col021, 'null');
-         v_val(5)  := nvl(p_csv_record.col022, 'null');
-      elsif p_field_pos = 19 then
-         v_val(1)  := nvl(p_csv_record.col019, 'null');
-         v_val(2)  := nvl(p_csv_record.col020, 'null');
-         v_val(3)  := nvl(p_csv_record.col021, 'null');
-         v_val(4)  := nvl(p_csv_record.col022, 'null');
-         v_val(5)  := nvl(p_csv_record.col023, 'null');
-      elsif p_field_pos = 20 then
-         v_val(1)  := nvl(p_csv_record.col020, 'null');
-         v_val(2)  := nvl(p_csv_record.col021, 'null');
-         v_val(3)  := nvl(p_csv_record.col022, 'null');
-         v_val(4)  := nvl(p_csv_record.col023, 'null');
-         v_val(5)  := nvl(p_csv_record.col024, 'null');
-      elsif p_field_pos = 21 then
-         v_val(1)  := nvl(p_csv_record.col021, 'null');
-         v_val(2)  := nvl(p_csv_record.col022, 'null');
-         v_val(3)  := nvl(p_csv_record.col023, 'null');
-         v_val(4)  := nvl(p_csv_record.col024, 'null');
-         v_val(5)  := nvl(p_csv_record.col025, 'null');
-      elsif p_field_pos = 22 then
-         v_val(1)  := nvl(p_csv_record.col022, 'null');
-         v_val(2)  := nvl(p_csv_record.col023, 'null');
-         v_val(3)  := nvl(p_csv_record.col024, 'null');
-         v_val(4)  := nvl(p_csv_record.col025, 'null');
-         v_val(5)  := nvl(p_csv_record.col026, 'null');
-      elsif p_field_pos = 23 then
-         v_val(1)  := nvl(p_csv_record.col023, 'null');
-         v_val(2)  := nvl(p_csv_record.col024, 'null');
-         v_val(3)  := nvl(p_csv_record.col025, 'null');
-         v_val(4)  := nvl(p_csv_record.col026, 'null');
-         v_val(5)  := nvl(p_csv_record.col027, 'null');
-      elsif p_field_pos = 24 then
-         v_val(1)  := nvl(p_csv_record.col024, 'null');
-         v_val(2)  := nvl(p_csv_record.col025, 'null');
-         v_val(3)  := nvl(p_csv_record.col026, 'null');
-         v_val(4)  := nvl(p_csv_record.col027, 'null');
-         v_val(5)  := nvl(p_csv_record.col028, 'null');
-      elsif p_field_pos = 25 then
-         v_val(1)  := nvl(p_csv_record.col025, 'null');
-         v_val(2)  := nvl(p_csv_record.col026, 'null');
-         v_val(3)  := nvl(p_csv_record.col027, 'null');
-         v_val(4)  := nvl(p_csv_record.col028, 'null');
-         v_val(5)  := nvl(p_csv_record.col029, 'null');
-      elsif p_field_pos = 26 then
-         v_val(1)  := nvl(p_csv_record.col026, 'null');
-         v_val(2)  := nvl(p_csv_record.col027, 'null');
-         v_val(3)  := nvl(p_csv_record.col028, 'null');
-         v_val(4)  := nvl(p_csv_record.col029, 'null');
-         v_val(5)  := nvl(p_csv_record.col030, 'null');
-      elsif p_field_pos = 27 then
-         v_val(1)  := nvl(p_csv_record.col027, 'null');
-         v_val(2)  := nvl(p_csv_record.col028, 'null');
-         v_val(3)  := nvl(p_csv_record.col029, 'null');
-         v_val(4)  := nvl(p_csv_record.col030, 'null');
-         v_val(5)  := nvl(p_csv_record.col031, 'null');
-      elsif p_field_pos = 28 then
-         v_val(1)  := nvl(p_csv_record.col028, 'null');
-         v_val(2)  := nvl(p_csv_record.col029, 'null');
-         v_val(3)  := nvl(p_csv_record.col030, 'null');
-         v_val(4)  := nvl(p_csv_record.col031, 'null');
-         v_val(5)  := nvl(p_csv_record.col032, 'null');
-      elsif p_field_pos = 29 then
-         v_val(1)  := nvl(p_csv_record.col029, 'null');
-         v_val(2)  := nvl(p_csv_record.col030, 'null');
-         v_val(3)  := nvl(p_csv_record.col031, 'null');
-         v_val(4)  := nvl(p_csv_record.col032, 'null');
-         v_val(5)  := nvl(p_csv_record.col033, 'null');
-      elsif p_field_pos = 30 then
-         v_val(1)  := nvl(p_csv_record.col030, 'null');
-         v_val(2)  := nvl(p_csv_record.col031, 'null');
-         v_val(3)  := nvl(p_csv_record.col032, 'null');
-         v_val(4)  := nvl(p_csv_record.col033, 'null');
-         v_val(5)  := nvl(p_csv_record.col034, 'null');
-      elsif p_field_pos = 31 then
-         v_val(1)  := nvl(p_csv_record.col031, 'null');
-         v_val(2)  := nvl(p_csv_record.col032, 'null');
-         v_val(3)  := nvl(p_csv_record.col033, 'null');
-         v_val(4)  := nvl(p_csv_record.col034, 'null');
-         v_val(5)  := nvl(p_csv_record.col035, 'null');
-      elsif p_field_pos = 32 then
-         v_val(1)  := nvl(p_csv_record.col032, 'null');
-         v_val(2)  := nvl(p_csv_record.col033, 'null');
-         v_val(3)  := nvl(p_csv_record.col034, 'null');
-         v_val(4)  := nvl(p_csv_record.col035, 'null');
-         v_val(5)  := nvl(p_csv_record.col036, 'null');
-      elsif p_field_pos = 33 then
-         v_val(1)  := nvl(p_csv_record.col033, 'null');
-         v_val(2)  := nvl(p_csv_record.col034, 'null');
-         v_val(3)  := nvl(p_csv_record.col035, 'null');
-         v_val(4)  := nvl(p_csv_record.col036, 'null');
-         v_val(5)  := nvl(p_csv_record.col037, 'null');
-      elsif p_field_pos = 34 then
-         v_val(1)  := nvl(p_csv_record.col034, 'null');
-         v_val(2)  := nvl(p_csv_record.col035, 'null');
-         v_val(3)  := nvl(p_csv_record.col036, 'null');
-         v_val(4)  := nvl(p_csv_record.col037, 'null');
-         v_val(5)  := nvl(p_csv_record.col038, 'null');
-      elsif p_field_pos = 35 then
-         v_val(1)  := nvl(p_csv_record.col035, 'null');
-         v_val(2)  := nvl(p_csv_record.col036, 'null');
-         v_val(3)  := nvl(p_csv_record.col037, 'null');
-         v_val(4)  := nvl(p_csv_record.col038, 'null');
-         v_val(5)  := nvl(p_csv_record.col039, 'null');
-      elsif p_field_pos = 36 then
-         v_val(1)  := nvl(p_csv_record.col036, 'null');
-         v_val(2)  := nvl(p_csv_record.col037, 'null');
-         v_val(3)  := nvl(p_csv_record.col038, 'null');
-         v_val(4)  := nvl(p_csv_record.col039, 'null');
-         v_val(5)  := nvl(p_csv_record.col040, 'null');
-      elsif p_field_pos = 37 then
-         v_val(1)  := nvl(p_csv_record.col037, 'null');
-         v_val(2)  := nvl(p_csv_record.col038, 'null');
-         v_val(3)  := nvl(p_csv_record.col039, 'null');
-         v_val(4)  := nvl(p_csv_record.col040, 'null');
-         v_val(5)  := nvl(p_csv_record.col041, 'null');
-      elsif p_field_pos = 38 then
-         v_val(1)  := nvl(p_csv_record.col038, 'null');
-         v_val(2)  := nvl(p_csv_record.col039, 'null');
-         v_val(3)  := nvl(p_csv_record.col040, 'null');
-         v_val(4)  := nvl(p_csv_record.col041, 'null');
-         v_val(5)  := nvl(p_csv_record.col042, 'null');
-      elsif p_field_pos = 39 then
-         v_val(1)  := nvl(p_csv_record.col039, 'null');
-         v_val(2)  := nvl(p_csv_record.col040, 'null');
-         v_val(3)  := nvl(p_csv_record.col041, 'null');
-         v_val(4)  := nvl(p_csv_record.col042, 'null');
-         v_val(5)  := nvl(p_csv_record.col043, 'null');
-      elsif p_field_pos = 40 then
-         v_val(1)  := nvl(p_csv_record.col040, 'null');
-         v_val(2)  := nvl(p_csv_record.col041, 'null');
-         v_val(3)  := nvl(p_csv_record.col042, 'null');
-         v_val(4)  := nvl(p_csv_record.col043, 'null');
-         v_val(5)  := nvl(p_csv_record.col044, 'null');
-      elsif p_field_pos = 41 then
-         v_val(1)  := nvl(p_csv_record.col041, 'null');
-         v_val(2)  := nvl(p_csv_record.col042, 'null');
-         v_val(3)  := nvl(p_csv_record.col043, 'null');
-         v_val(4)  := nvl(p_csv_record.col044, 'null');
-         v_val(5)  := nvl(p_csv_record.col045, 'null');
-      elsif p_field_pos = 42 then
-         v_val(1)  := nvl(p_csv_record.col042, 'null');
-         v_val(2)  := nvl(p_csv_record.col043, 'null');
-         v_val(3)  := nvl(p_csv_record.col044, 'null');
-         v_val(4)  := nvl(p_csv_record.col045, 'null');
-         v_val(5)  := nvl(p_csv_record.col046, 'null');
-      elsif p_field_pos = 43 then
-         v_val(1)  := nvl(p_csv_record.col043, 'null');
-         v_val(2)  := nvl(p_csv_record.col044, 'null');
-         v_val(3)  := nvl(p_csv_record.col045, 'null');
-         v_val(4)  := nvl(p_csv_record.col046, 'null');
-         v_val(5)  := nvl(p_csv_record.col047, 'null');
-      elsif p_field_pos = 44 then
-         v_val(1)  := nvl(p_csv_record.col044, 'null');
-         v_val(2)  := nvl(p_csv_record.col045, 'null');
-         v_val(3)  := nvl(p_csv_record.col046, 'null');
-         v_val(4)  := nvl(p_csv_record.col047, 'null');
-         v_val(5)  := nvl(p_csv_record.col048, 'null');
-      elsif p_field_pos = 45 then
-         v_val(1)  := nvl(p_csv_record.col045, 'null');
-         v_val(2)  := nvl(p_csv_record.col046, 'null');
-         v_val(3)  := nvl(p_csv_record.col047, 'null');
-         v_val(4)  := nvl(p_csv_record.col048, 'null');
-         v_val(5)  := nvl(p_csv_record.col049, 'null');
-      elsif p_field_pos = 46 then
-         v_val(1)  := nvl(p_csv_record.col046, 'null');
-         v_val(2)  := nvl(p_csv_record.col047, 'null');
-         v_val(3)  := nvl(p_csv_record.col048, 'null');
-         v_val(4)  := nvl(p_csv_record.col049, 'null');
-         v_val(5)  := nvl(p_csv_record.col050, 'null');
-      elsif p_field_pos = 47 then
-         v_val(1)  := nvl(p_csv_record.col047, 'null');
-         v_val(2)  := nvl(p_csv_record.col048, 'null');
-         v_val(3)  := nvl(p_csv_record.col049, 'null');
-         v_val(4)  := nvl(p_csv_record.col050, 'null');
-         v_val(5)  := nvl(p_csv_record.col051, 'null');
-      elsif p_field_pos = 48 then
-         v_val(1)  := nvl(p_csv_record.col048, 'null');
-         v_val(2)  := nvl(p_csv_record.col049, 'null');
-         v_val(3)  := nvl(p_csv_record.col050, 'null');
-         v_val(4)  := nvl(p_csv_record.col051, 'null');
-         v_val(5)  := nvl(p_csv_record.col052, 'null');
-      elsif p_field_pos =49 then
-         v_val(1)  := nvl(p_csv_record.col049, 'null');
-         v_val(2)  := nvl(p_csv_record.col050, 'null');
-         v_val(3)  := nvl(p_csv_record.col051, 'null');
-         v_val(4)  := nvl(p_csv_record.col052, 'null');
-         v_val(5)  := nvl(p_csv_record.col053, 'null');
-      elsif p_field_pos = 50 then
-         v_val(1)  := nvl(p_csv_record.col050, 'null');
-         v_val(2)  := nvl(p_csv_record.col051, 'null');
-         v_val(3)  := nvl(p_csv_record.col052, 'null');
-         v_val(4)  := nvl(p_csv_record.col053, 'null');
-         v_val(5)  := nvl(p_csv_record.col054, 'null');
-      elsif p_field_pos = 51 then
-         v_val(1)  := nvl(p_csv_record.col051, 'null');
-         v_val(2)  := nvl(p_csv_record.col052, 'null');
-         v_val(3)  := nvl(p_csv_record.col053, 'null');
-         v_val(4)  := nvl(p_csv_record.col054, 'null');
-         v_val(5)  := nvl(p_csv_record.col055, 'null');
-      elsif p_field_pos = 52 then
-         v_val(1)  := nvl(p_csv_record.col052, 'null');
-         v_val(2)  := nvl(p_csv_record.col053, 'null');
-         v_val(3)  := nvl(p_csv_record.col054, 'null');
-         v_val(4)  := nvl(p_csv_record.col055, 'null');
-         v_val(5)  := nvl(p_csv_record.col056, 'null');
-      elsif p_field_pos = 53 then
-         v_val(1)  := nvl(p_csv_record.col053, 'null');
-         v_val(2)  := nvl(p_csv_record.col054, 'null');
-         v_val(3)  := nvl(p_csv_record.col055, 'null');
-         v_val(4)  := nvl(p_csv_record.col056, 'null');
-         v_val(5)  := nvl(p_csv_record.col057, 'null');
-      elsif p_field_pos = 54 then
-         v_val(1)  := nvl(p_csv_record.col054, 'null');
-         v_val(2)  := nvl(p_csv_record.col055, 'null');
-         v_val(3)  := nvl(p_csv_record.col056, 'null');
-         v_val(4)  := nvl(p_csv_record.col057, 'null');
-         v_val(5)  := nvl(p_csv_record.col058, 'null');
-      elsif p_field_pos = 55 then
-         v_val(1)  := nvl(p_csv_record.col055, 'null');
-         v_val(2)  := nvl(p_csv_record.col056, 'null');
-         v_val(3)  := nvl(p_csv_record.col057, 'null');
-         v_val(4)  := nvl(p_csv_record.col058, 'null');
-         v_val(5)  := nvl(p_csv_record.col059, 'null');
-      elsif p_field_pos = 56 then
-         v_val(1)  := nvl(p_csv_record.col056, 'null');
-         v_val(2)  := nvl(p_csv_record.col057, 'null');
-         v_val(3)  := nvl(p_csv_record.col058, 'null');
-         v_val(4)  := nvl(p_csv_record.col059, 'null');
-         v_val(5)  := nvl(p_csv_record.col060, 'null');
-      elsif p_field_pos = 57 then
-         v_val(1)  := nvl(p_csv_record.col057, 'null');
-         v_val(2)  := nvl(p_csv_record.col058, 'null');
-         v_val(3)  := nvl(p_csv_record.col059, 'null');
-         v_val(4)  := nvl(p_csv_record.col060, 'null');
-         v_val(5)  := nvl(p_csv_record.col061, 'null');
-      elsif p_field_pos = 58 then
-         v_val(1)  := nvl(p_csv_record.col058, 'null');
-         v_val(2)  := nvl(p_csv_record.col059, 'null');
-         v_val(3)  := nvl(p_csv_record.col060, 'null');
-         v_val(4)  := nvl(p_csv_record.col061, 'null');
-         v_val(5)  := nvl(p_csv_record.col062, 'null');
-      elsif p_field_pos = 59 then
-         v_val(1)  := nvl(p_csv_record.col059, 'null');
-         v_val(2)  := nvl(p_csv_record.col060, 'null');
-         v_val(3)  := nvl(p_csv_record.col061, 'null');
-         v_val(4)  := nvl(p_csv_record.col062, 'null');
-         v_val(5)  := nvl(p_csv_record.col063, 'null');
-      elsif p_field_pos = 60 then
-         v_val(1)  := nvl(p_csv_record.col060, 'null');
-         v_val(2)  := nvl(p_csv_record.col061, 'null');
-         v_val(3)  := nvl(p_csv_record.col062, 'null');
-         v_val(4)  := nvl(p_csv_record.col063, 'null');
-         v_val(5)  := nvl(p_csv_record.col064, 'null');
-      elsif p_field_pos = 61 then
-         v_val(1)  := nvl(p_csv_record.col061, 'null');
-         v_val(2)  := nvl(p_csv_record.col062, 'null');
-         v_val(3)  := nvl(p_csv_record.col063, 'null');
-         v_val(4)  := nvl(p_csv_record.col064, 'null');
-         v_val(5)  := nvl(p_csv_record.col065, 'null');
-      elsif p_field_pos = 62 then
-         v_val(1)  := nvl(p_csv_record.col062, 'null');
-         v_val(2)  := nvl(p_csv_record.col063, 'null');
-         v_val(3)  := nvl(p_csv_record.col064, 'null');
-         v_val(4)  := nvl(p_csv_record.col065, 'null');
-         v_val(5)  := nvl(p_csv_record.col066, 'null');
-      elsif p_field_pos = 63 then
-         v_val(1)  := nvl(p_csv_record.col063, 'null');
-         v_val(2)  := nvl(p_csv_record.col064, 'null');
-         v_val(3)  := nvl(p_csv_record.col065, 'null');
-         v_val(4)  := nvl(p_csv_record.col066, 'null');
-         v_val(5)  := nvl(p_csv_record.col067, 'null');
-      elsif p_field_pos = 64 then
-         v_val(1)  := nvl(p_csv_record.col064, 'null');
-         v_val(2)  := nvl(p_csv_record.col065, 'null');
-         v_val(3)  := nvl(p_csv_record.col066, 'null');
-         v_val(4)  := nvl(p_csv_record.col067, 'null');
-         v_val(5)  := nvl(p_csv_record.col068, 'null');
-      elsif p_field_pos = 65 then
-         v_val(1)  := nvl(p_csv_record.col065, 'null');
-         v_val(2)  := nvl(p_csv_record.col066, 'null');
-         v_val(3)  := nvl(p_csv_record.col067, 'null');
-         v_val(4)  := nvl(p_csv_record.col068, 'null');
-         v_val(5)  := nvl(p_csv_record.col069, 'null');
-      elsif p_field_pos = 66 then
-         v_val(1)  := nvl(p_csv_record.col066, 'null');
-         v_val(2)  := nvl(p_csv_record.col067, 'null');
-         v_val(3)  := nvl(p_csv_record.col068, 'null');
-         v_val(4)  := nvl(p_csv_record.col069, 'null');
-         v_val(5)  := nvl(p_csv_record.col060, 'null');
-      elsif p_field_pos = 67 then
-         v_val(1)  := nvl(p_csv_record.col067, 'null');
-         v_val(2)  := nvl(p_csv_record.col068, 'null');
-         v_val(3)  := nvl(p_csv_record.col069, 'null');
-         v_val(4)  := nvl(p_csv_record.col070, 'null');
-         v_val(5)  := nvl(p_csv_record.col071, 'null');
-      elsif p_field_pos = 68 then
-         v_val(1)  := nvl(p_csv_record.col068, 'null');
-         v_val(2)  := nvl(p_csv_record.col069, 'null');
-         v_val(3)  := nvl(p_csv_record.col070, 'null');
-         v_val(4)  := nvl(p_csv_record.col071, 'null');
-         v_val(5)  := nvl(p_csv_record.col072, 'null');
-      elsif p_field_pos = 69 then
-         v_val(1)  := nvl(p_csv_record.col069, 'null');
-         v_val(2)  := nvl(p_csv_record.col070, 'null');
-         v_val(3)  := nvl(p_csv_record.col071, 'null');
-         v_val(4)  := nvl(p_csv_record.col072, 'null');
-         v_val(5)  := nvl(p_csv_record.col073, 'null');
-      elsif p_field_pos = 70 then
-         v_val(1)  := nvl(p_csv_record.col070, 'null');
-         v_val(2)  := nvl(p_csv_record.col071, 'null');
-         v_val(3)  := nvl(p_csv_record.col072, 'null');
-         v_val(4)  := nvl(p_csv_record.col073, 'null');
-         v_val(5)  := nvl(p_csv_record.col074, 'null');
-      elsif p_field_pos = 71 then
-         v_val(1)  := nvl(p_csv_record.col071, 'null');
-         v_val(2)  := nvl(p_csv_record.col072, 'null');
-         v_val(3)  := nvl(p_csv_record.col073, 'null');
-         v_val(4)  := nvl(p_csv_record.col074, 'null');
-         v_val(5)  := nvl(p_csv_record.col075, 'null');
-      elsif p_field_pos = 72 then
-         v_val(1)  := nvl(p_csv_record.col072, 'null');
-         v_val(2)  := nvl(p_csv_record.col073, 'null');
-         v_val(3)  := nvl(p_csv_record.col074, 'null');
-         v_val(4)  := nvl(p_csv_record.col075, 'null');
-         v_val(5)  := nvl(p_csv_record.col076, 'null');
-      elsif p_field_pos = 73 then
-         v_val(1)  := nvl(p_csv_record.col073, 'null');
-         v_val(2)  := nvl(p_csv_record.col074, 'null');
-         v_val(3)  := nvl(p_csv_record.col075, 'null');
-         v_val(4)  := nvl(p_csv_record.col076, 'null');
-         v_val(5)  := nvl(p_csv_record.col077, 'null');
-      elsif p_field_pos = 74 then
-         v_val(1)  := nvl(p_csv_record.col074, 'null');
-         v_val(2)  := nvl(p_csv_record.col075, 'null');
-         v_val(3)  := nvl(p_csv_record.col076, 'null');
-         v_val(4)  := nvl(p_csv_record.col077, 'null');
-         v_val(5)  := nvl(p_csv_record.col078, 'null');
-      elsif p_field_pos = 75 then
-         v_val(1)  := nvl(p_csv_record.col075, 'null');
-         v_val(2)  := nvl(p_csv_record.col076, 'null');
-         v_val(3)  := nvl(p_csv_record.col077, 'null');
-         v_val(4)  := nvl(p_csv_record.col078, 'null');
-         v_val(5)  := nvl(p_csv_record.col079, 'null');
-      elsif p_field_pos = 76 then
-         v_val(1)  := nvl(p_csv_record.col076, 'null');
-         v_val(2)  := nvl(p_csv_record.col077, 'null');
-         v_val(3)  := nvl(p_csv_record.col078, 'null');
-         v_val(4)  := nvl(p_csv_record.col079, 'null');
-         v_val(5)  := nvl(p_csv_record.col080, 'null');
-      elsif p_field_pos = 77 then
-         v_val(1)  := nvl(p_csv_record.col077, 'null');
-         v_val(2)  := nvl(p_csv_record.col078, 'null');
-         v_val(3)  := nvl(p_csv_record.col079, 'null');
-         v_val(4)  := nvl(p_csv_record.col080, 'null');
-         v_val(5)  := nvl(p_csv_record.col081, 'null');
-      elsif p_field_pos = 78 then
-         v_val(1)  := nvl(p_csv_record.col078, 'null');
-         v_val(2)  := nvl(p_csv_record.col079, 'null');
-         v_val(3)  := nvl(p_csv_record.col080, 'null');
-         v_val(4)  := nvl(p_csv_record.col081, 'null');
-         v_val(5)  := nvl(p_csv_record.col082, 'null');
-      elsif p_field_pos = 79 then
-         v_val(1)  := nvl(p_csv_record.col079, 'null');
-         v_val(2)  := nvl(p_csv_record.col080, 'null');
-         v_val(3)  := nvl(p_csv_record.col081, 'null');
-         v_val(4)  := nvl(p_csv_record.col082, 'null');
-         v_val(5)  := nvl(p_csv_record.col083, 'null');
-      end if;
-      
-      return get_csv_field_type(v_val, p_field_type, p_job_number, p_obs_number);   
-   end get_csv_field_position;
-   
    procedure parse_csv_data
    (
       p_job_number    number
@@ -645,87 +199,41 @@ as
       into v_data_type
       from meds_processing_job
       where job_number = p_job_number;
-      --dbms_output.put_line('v_data_type: ' || v_data_type);
-      
-      select stg_file
-      into v_stg_file
-      from stg_file
-      where job_number = p_job_number;
-      --dbms_output.put_line('v_stg_file: ' || v_stg_file);
+      dbms_output.put_line('v_data_type: ' || v_data_type);
       
       select usage
-      ,  index_field
+      ,    index_field
       into v_usage
-      ,  v_index_field
+      ,    v_index_field
       from job_lookups 
-      where type='Data Type' 
+      where type = 'Data Type' 
       and usage  = v_data_type;
-      --dbms_output.put_line('v_usage: '       || v_usage);
-      --dbms_output.put_line('v_index_field: ' || v_index_field);
+      dbms_output.put_line('v_index_field: ' || v_index_field);
       
-      set transaction name 'csv_parsing';
+      select stg_file
+      into   v_stg_file
+      from   stg_file
+      where  job_number = p_job_number;
+      dbms_output.put_line('v_stg_file: ' || v_stg_file);
+      /*
+      v_stmt :=   'begin UPLOAD_UTIL.PARSE_DATATYPE_' ||
+                  v_index_field                 ||
+                  '(P_JOB_NUMBER => '           || 
+                  p_job_number                  ||
+                  ',P_STG_FILE => '             ||
+                  v_stg_file                    ||
+                  ') end';
+      dbms_output.put_line('v_stmt: ' || v_stmt);
       
-      <<involved_tables>> -- Loop through all the tables involved in the job type 
-      for f_table in 
-      (
-         select distinct table_name 
-         from  field_lookup 
-         where data_type_index = v_index_field
-      )
-      loop
-         --dbms_output.put_line('f_table: ' || f_table.table_name);
-         --Verify if the job has been already loaded in the destination table
-         v_stmt := ' select count(1) from ' || f_table.table_name || ' where meds_job_number = ' || p_job_number;
-         execute immediate v_stmt into v_cnt;
-         
-         if v_cnt > 0 then
-            --dbms_output.put_line('Skipping ' || f_table.table_name);
-            continue;
-         end if;
-        
-         <<csv_data>> -- Loop through the csv content
-         for f_row in 
-         (
-            select * 
-            from  stg_file_csv_row 
-            where stg_file = v_stg_file 
-            order by row_sequence
-         ) 
-         loop
-            --dbms_output.put_line('v_row_sequence: ' || f_row.row_sequence);
-            v_columns   := '';
-            v_values    := '';
-            
-            <<table_fields>> 
-            for f_field_lookup in 
-            (
-               select * 
-               from  field_lookup 
-               where data_type_index = v_index_field 
-               and   table_name      = f_table.table_name 
-               order by field_position
-            )
-            loop
-               --dbms_output.put_line('f_field_lookup.field_name: ' || f_field_lookup.field_name);
-               v_columns := v_columns || ', ' || f_field_lookup.field_name; -- Populate insert column names
-               v_values  := v_values  || ', ' || upload_util.get_csv_field_position(p_csv_record => f_row,
-                                                                                    p_field_pos  => f_field_lookup.field_position,
-                                                                                    p_field_type => f_field_lookup.field_type,
-                                                                                    p_job_number => p_job_number,
-                                                                                    p_obs_number => f_row.row_sequence);
-            end loop table_fields;     
-            v_columns := ltrim(v_columns, ', ');
-            --dbms_output.put_line('v_columns: ' || v_columns);
-            v_values := ltrim(v_values, ', ');
-            --dbms_output.put_line('v_values: ' || v_values);         
-            v_stmt := 'insert into ' || f_table.table_name || '(' || v_columns || ') ' || chr(10) || 'values(' || v_values || ')';
-            dbms_output.put_line(v_stmt); 
-   
-            --execute immediate v_stmt;
-         end loop csv_data;            
-      end loop involved_tables;
-   
-     -- commit ;
+      execute immediate v_stmt;
+      */
+      if v_index_field = 89 then
+         upload_util.parse_datatype_89
+         ( 
+            p_job_number => p_job_number
+         ,  p_stg_file   => v_stg_file
+         );
+      end if;
       
       exception
          when others then
@@ -840,5 +348,25 @@ as
          end loop;
       end loop;
    end parse_serd_file;   
+   
+   procedure delete_stg_file_from_job
+   (
+      p_job_number     number
+   )
+   is
+   begin
+      for f_stg_file in 
+      (
+         select stg_file 
+         from stg_file 
+         where job_number = p_job_number
+      )
+      loop
+         delete from stg_file_serd_row where stg_file = f_stg_file.stg_file;
+         delete from stg_file_csv_row  where stg_file = f_stg_file.stg_file;
+      end loop;
+      
+      delete from stg_file where job_number = p_job_number;
+   end delete_stg_file_from_job;
 end upload_util;
 /
