@@ -1,0 +1,149 @@
+Analyze dataset
+File: 6692_glider.csv
+Date: 25-Apr-2024 08:46
+CSV Lint: v0.4.6.6
+
+Data records: 22561
+Max.unique values: 15
+
+**Warning: duplicate column names (1) **
+n=7            : 
+
+----------------------------------------
+1: 050.0456
+DataTypes      : decimal (22560 = 100.0%)
+Width range    : 8 characters
+Decimal range  : 050.0317 ~ 050.1134
+
+----------------------------------------
+2: -04.3767
+DataTypes      : decimal (22560 = 100.0%)
+Width range    : 8 characters
+Decimal range  : -04.7921 ~ -04.3734
+
+----------------------------------------
+3: 07042021
+DataTypes      : integer (17964 = 79.6%), string (4596 = 20.4%)
+Width range    : 8 characters
+Integer range  : 11042021 ~ 20042021
+-- Unique values (13) --
+n=1173         : 07042021
+n=2163         : 08042021
+n=1260         : 09042021
+n=1259         : 11042021
+n=2242         : 12042021
+n=2423         : 13042021
+n=2196         : 14042021
+n=1356         : 15042021
+n=582          : 16042021
+n=2441         : 17042021
+n=2315         : 18042021
+n=2411         : 19042021
+n=739          : 20042021
+
+----------------------------------------
+4: 100837
+DataTypes      : integer (13273 = 58.8%), string (9287 = 41.2%)
+Width range    : 6 characters
+Integer range  : 100001 ~ 235957
+
+----------------------------------------
+5: 0000.17
+DataTypes      : decimal (22560 = 100.0%)
+Width range    : 7 characters
+Decimal range  : 0000.05 ~ 0069.34
+
+----------------------------------------
+6: 9.9435
+DataTypes      : decimal (22546 = 99.9%), empty (14 = 0.1%)
+Width range    : 3 ~ 7 characters
+Decimal range  : 9.5564 ~ 11.7089
+
+----------------------------------------
+7: 
+DataTypes      : empty (22560 = 100.0%)
+
+----------------------------------------
+8: 35.2491
+DataTypes      : decimal (22545 = 99.9%), empty (15 = 0.1%)
+Width range    : 4 ~ 7 characters
+Decimal range  : 35.1171 ~ 35.2955
+
+----------------------------------------
+9: 
+DataTypes      : empty (22560 = 100.0%)
+
+----------------------------------------
+10: 1489.9215
+DataTypes      : decimal (22545 = 99.9%), empty (15 = 0.1%)
+Width range    : 9 characters
+Decimal range  : 1488.7417 ~ 1496.1181
+
+----------------------------------------
+11: 1027.1594
+DataTypes      : decimal (22545 = 99.9%), empty (15 = 0.1%)
+Width range    : 9 characters
+Decimal range  : 1026.8344 ~ 1027.4798
+
+----------------------------------------
+12: 1
+DataTypes      : integer (22560 = 100.0%)
+Width range    : 1 characters
+Integer range  : 1 ~ 2
+-- Unique values (2) --
+n=13839        : 1
+n=8721         : 2
+
+----------------------------------------
+13: 00001
+DataTypes      : string (22560 = 100.0%)
+Width range    : 5 characters
+
+----------------------------------------
+14: 0000037
+DataTypes      : string (22560 = 100.0%)
+Width range    : 7 characters
+
+----------------------------------------
+15: 000150
+DataTypes      : string (22560 = 100.0%)
+Width range    : 6 characters
+
+----------------------------------------
+16: 050.0454
+DataTypes      : decimal (22560 = 100.0%)
+Width range    : 8 characters
+Decimal range  : 050.0317 ~ 050.1133
+
+----------------------------------------
+17: -04.3756
+DataTypes      : decimal (22560 = 100.0%)
+Width range    : 8 characters
+Decimal range  : -04.7920 ~ -04.3740
+
+----------------------------------------
+18: 100420
+DataTypes      : integer (13283 = 58.9%), string (9277 = 41.1%)
+Width range    : 6 characters
+Integer range  : 100059 ~ 235920
+
+----------------------------------------
+19: 
+DataTypes      : empty (22560 = 100.0%)
+
+----------------------------------------
+20: 
+DataTypes      : empty (22560 = 100.0%)
+
+----------------------------------------
+21: 
+DataTypes      : empty (22560 = 100.0%)
+
+----------------------------------------
+22: 
+DataTypes      : empty (22560 = 100.0%)
+
+----------------------------------------
+23: 
+DataTypes      : empty (22560 = 100.0%)
+

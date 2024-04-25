@@ -74,6 +74,4 @@ select a.stg_file_serd_row
 ,      substr(a.row_content,871,1)   soundvelocitycode 
 from   stg_file_serd_row a
 where  substr(a.row_content,5,1) = '2'
-order by a.stg_file
-,      a.row_sequence
 ;
