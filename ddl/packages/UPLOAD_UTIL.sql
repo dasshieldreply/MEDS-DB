@@ -110,7 +110,7 @@ as
       ,  a.col017
       from       stg_file_csv_row    a
       where a.stg_file=p_stg_file
-      order by b.meds_observation_number;
+      order by 2, 4;
       
    end parse_datatype_94;
 
@@ -227,12 +227,10 @@ as
       
       execute immediate v_stmt;
       */
-      if v_index_field = 89 then
-         upload_util.parse_datatype_89
-         ( 
-            p_job_number => p_job_number
-         ,  p_stg_file   => v_stg_file
-         );
+      if    v_index_field  = 89 then
+         upload_util.parse_datatype_89(p_job_number => p_job_number, p_stg_file => v_stg_file);
+      elsif v_index_field  = 94 then
+         upload_util.parse_datatype_94(p_job_number => p_job_number, p_stg_file => v_stg_file);
       end if;
       
       exception
