@@ -1,4 +1,4 @@
-select * from meds_processing_job where job_number=101747;
+select * from meds_processing_job where job_number=102587;
 SELECT * from job_lookups where type='Data Type' and usage = 'Front_satellite';
 select * from data_types_table;
 
@@ -19,7 +19,10 @@ ALTER SESSION SET NLS_DATE_FORMAT='DD-MON-YYYY HH24:MI:SS';
 
 select * from FRONT_SATELLITE_OBSERVATION where meds_job_number=101747 order by meds_observation_number;                       
 select * from FRONT_IMAGE_DATA where meds_job_number=101747 order by meds_observation_number;
+select * from FRONT_IMAGE_DATA where meds_job_number=101747 and meds_observation_number <> frontal_line_id order by meds_observation_number;
 select * from FRONT_IMAGE_REPEAT where meds_job_number=101747 order by meds_observation_number, point_order; -- 
+
+
 select count(*) from FRONT_IMAGE_DATA where meds_job_number=101747 ;                                  --414
 select count(*) from FRONT_SATELLITE_OBSERVATION where meds_job_number=101747 ;                       --414
 select count(*) from FRONT_IMAGE_REPEAT where meds_job_number=101747 ;                                --24532

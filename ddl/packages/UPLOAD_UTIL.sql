@@ -21,18 +21,23 @@ as
       p_job_number   number
    );   
    
-   procedure parse_datatype_89
+   procedure parse_datatype_biomass
    (
       p_job_number   number,
       p_stg_file     number
    ); 
    
-   procedure parse_datatype_94
+   procedure parse_datatype_aquapack
    (
       p_job_number   number,
       p_stg_file     number
    ); 
 
+   procedure parse_datatype_glider
+   (
+      p_job_number   number,
+      p_stg_file     number
+   );    
    
 end upload_util;
 /
@@ -40,7 +45,105 @@ end upload_util;
 CREATE OR REPLACE package body upload_util
 as
 
-   procedure parse_datatype_94
+  procedure parse_datatype_glider
+   (
+      p_job_number   number,
+      p_stg_file     number
+   )   
+   is
+   begin
+      -- Insert the observations first, grouped by profile_dir, profile_id, distance_traveled, mid_latitude, mid_longitude, mid_time
+      insert into glider_threaded_observation 
+      (
+         location
+      ,  meds_job_number
+      ,  meds_observation_number
+      ,  profile_dir
+      ,  profile_id
+      ,  distance_traveled
+      ,  mid_latitude
+      ,  mid_longitude
+      ,  mid_time
+      ) 
+      select 
+         null
+      ,  p_job_number  
+      ,  col013 -- profile_id is taken as observation
+      ,  col012
+      ,  col013
+      ,  col015
+      ,  col016
+      ,  col017
+      ,  col018
+      from  stg_file_csv_row
+      where stg_file = p_stg_file
+      group by 
+         col012
+      ,  col013
+      ,  col015
+      ,  col016
+      ,  col017
+      ,  col018
+      order by 3;
+            
+      -- Insert all data, referencing the observation
+      insert into glider_threaded_data (
+         meds_job_number
+      ,  meds_observation_number
+      ,  depth
+      ,  pressure
+      ,  temperature
+      ,  temp_flag
+      ,  salinity
+      ,  sal_flag
+      ,  sound_speed
+      ,  density
+      ,  chlorophyll
+      ,  hydrocarbons
+      ,  gelbstoffe
+      ,  bioluminescence
+      ,  longitude
+      ,  latitude
+      ,  date_recorded
+      ,  point_order
+      ,  bbp700
+      ) 
+      select 
+         p_job_number
+      ,  b.meds_observation_number
+      ,  a.col005
+      ,  null  -- pressure is not in fields_lookup
+      ,  a.col006      
+      ,  a.col007
+      ,  a.col008      
+      ,  a.col009      
+      ,  a.col010      
+      ,  a.col011      
+      ,  a.col022      
+      ,  a.col019      
+      ,  a.col020      
+      ,  a.col021      
+      ,  a.col001      
+      ,  a.col002      
+      ,  to_date(to_char(col003),'DDMMYYYY')    
+      ,  a.col013      
+      ,  a.col023      
+      from       stg_file_csv_row            a
+      inner join glider_threaded_observation b 
+         on  b.meds_job_number   = p_job_number 
+         and b.profile_dir       = a.col012
+         and b.profile_id        = a.col013
+         and b.distance_traveled = a.col015
+         and b.mid_latitude      = a.col016
+         and b.mid_longitude     = a.col017
+         and b.mid_time          = a.col018
+      where a.stg_file=p_stg_file
+      order by b.meds_observation_number
+      , a.col005;
+      
+   end parse_datatype_glider;
+
+   procedure parse_datatype_aquapack
    (
       p_job_number   number,
       p_stg_file     number
@@ -112,9 +215,9 @@ as
       where a.stg_file=p_stg_file
       order by 2, 4;
       
-   end parse_datatype_94;
+   end parse_datatype_aquapack;
 
-   procedure parse_datatype_89
+   procedure parse_datatype_biomass
    (
       p_job_number   number,
       p_stg_file     number
@@ -175,7 +278,7 @@ as
       where a.stg_file=p_stg_file
       order by b.meds_observation_number;
       
-   end parse_datatype_89;
+   end parse_datatype_biomass;
 
    procedure parse_csv_data
    (
@@ -183,54 +286,49 @@ as
    )
    is
       v_data_type       varchar2(50);
-      v_usage           varchar2(50);
-      v_username        varchar2(50);
-      v_columns         varchar2(4000);
-      v_values          varchar2(4000);
-      v_stmt            varchar2(4000);
+      v_tbl             varchar2(100);
       v_stg_file        number;
       v_index_field     number;
       v_cnt             number default 0;
-      p_csv_record      stg_file_csv_row%rowtype;
    begin
-      dbms_output. enable (buffer_size => null); 
-      
+
       select data_type
       into v_data_type
       from meds_processing_job
       where job_number = p_job_number;
-      dbms_output.put_line('v_data_type: ' || v_data_type);
       
-      select usage
-      ,    index_field
-      into v_usage
-      ,    v_index_field
+      select index_field
+      into v_index_field
       from job_lookups 
       where type = 'Data Type' 
-      and usage  = v_data_type;
-      dbms_output.put_line('v_index_field: ' || v_index_field);
+      and usage  = v_data_type;           
+      
+      select table_name
+      into  v_tbl
+      from field_lookup
+      where data_type_index = v_index_field
+      and include_in_input = 1
+      fetch first row only;
+      
+      --Verify if the job has been already loaded in the destination tables. 
+      -- TODO This will be better if we save in OBSERVATION
+      execute immediate 'select count(1) from ' || v_tbl || ' where meds_job_number = ' || p_job_number into v_cnt;
+      
+      if v_cnt > 0 then
+         return;
+      end if;
       
       select stg_file
       into   v_stg_file
       from   stg_file
       where  job_number = p_job_number;
-      dbms_output.put_line('v_stg_file: ' || v_stg_file);
-      /*
-      v_stmt :=   'begin UPLOAD_UTIL.PARSE_DATATYPE_' ||
-                  v_index_field                 ||
-                  '(P_JOB_NUMBER => '           || 
-                  p_job_number                  ||
-                  ',P_STG_FILE => '             ||
-                  v_stg_file                    ||
-                  ') end';
-      dbms_output.put_line('v_stmt: ' || v_stmt);
-      
-      execute immediate v_stmt;
-      */
+
       if    v_index_field  = 89 then
-         upload_util.parse_datatype_89(p_job_number => p_job_number, p_stg_file => v_stg_file);
+         upload_util.parse_datatype_biomass  (p_job_number => p_job_number, p_stg_file => v_stg_file);
       elsif v_index_field  = 94 then
-         upload_util.parse_datatype_94(p_job_number => p_job_number, p_stg_file => v_stg_file);
+         upload_util.parse_datatype_aquapack (p_job_number => p_job_number, p_stg_file => v_stg_file);
+      elsif v_index_field  = 92 then
+         upload_util.parse_datatype_glider   (p_job_number => p_job_number, p_stg_file => v_stg_file);
       end if;
       
       exception
