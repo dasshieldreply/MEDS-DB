@@ -1,0 +1,160 @@
+Analyze dataset
+File: JD027_A_sta.hdr
+Date: 26-Apr-2024 13:45
+CSV Lint: v0.4.6.6
+
+Data records: 657
+Max.unique values: 15
+
+**Warning: duplicate column names (1) **
+n=3            : 
+
+----------------------------------------
+1: JD027_A
+DataTypes      : string (656 = 99.8%)
+Width range    : 7 characters
+-- Unique values (1) --
+n=656          : JD027_A
+
+----------------------------------------
+2: Thu Jul 21 10:02:38 2022
+DataTypes      : string (656 = 99.8%)
+Width range    : 24 characters
+-- Unique values (1) --
+n=656          : Thu Jul 21 10:02:38 2022
+
+----------------------------------------
+3: 27/01/2022 00:04:27
+DataTypes      : datetime (656 = 99.8%)
+Width range    : 19 characters
+DateTime range : 27/01/2022 00:06:27 ~ 27/01/2022 23:55:21
+
+----------------------------------------
+4: 26.0031
+DataTypes      : decimal (656 = 99.8%)
+Width range    : 5 ~ 7 characters
+Decimal range  : 26.0045 ~ 26.9968
+
+----------------------------------------
+5: 57.7715
+DataTypes      : decimal (656 = 99.8%)
+Width range    : 5 ~ 7 characters
+Decimal range  : 57.7055 ~ 57.8432
+
+----------------------------------------
+6: -6.0439
+DataTypes      : decimal (656 = 99.8%)
+Width range    : 5 ~ 7 characters
+Decimal range  : -6.145 ~ -5.9769
+
+----------------------------------------
+7: 
+DataTypes      : empty (656 = 99.8%)
+
+----------------------------------------
+8: 10
+DataTypes      : integer (656 = 99.8%)
+Width range    : 2 characters
+Integer range  : 10 ~ 10
+-- Unique values (1) --
+n=656          : 10
+
+----------------------------------------
+9: 718
+DataTypes      : integer (656 = 99.8%)
+Width range    : 3 characters
+Integer range  : 718 ~ 718
+-- Unique values (1) --
+n=656          : 718
+
+----------------------------------------
+10: 2
+DataTypes      : integer (656 = 99.8%)
+Width range    : 1 ~ 3 characters
+Integer range  : 3 ~ 718
+
+----------------------------------------
+11: 6.2
+DataTypes      : decimal (656 = 99.8%)
+Width range    : 3 characters
+Decimal range  : 6.2 ~ 6.2
+-- Unique values (1) --
+n=656          : 6.2
+
+----------------------------------------
+12: 8
+DataTypes      : integer (656 = 99.8%)
+Width range    : 1 characters
+Integer range  : 8 ~ 8
+-- Unique values (1) --
+n=656          : 8
+
+----------------------------------------
+13: 24.49
+DataTypes      : decimal (656 = 99.8%)
+Width range    : 5 characters
+Decimal range  : 24.49 ~ 24.49
+-- Unique values (1) --
+n=656          : 24.49
+
+----------------------------------------
+14: 75.63
+DataTypes      : decimal (650 = 98.9%), integer (6 = 0.9%)
+Width range    : 3 ~ 6 characters
+Integer range  : 185 ~ 359
+Decimal range  : 0.04 ~ 359.99
+
+----------------------------------------
+15: 3.3052
+DataTypes      : decimal (655 = 99.7%), integer (1 = 0.2%)
+Width range    : 1 ~ 6 characters
+Integer range  : 3 ~ 3
+Decimal range  : 0.0025 ~ 5.2543
+
+----------------------------------------
+16: 75.3389
+DataTypes      : decimal (656 = 99.8%)
+Width range    : 3 ~ 8 characters
+Decimal range  : 0.0098 ~ 359.9874
+
+----------------------------------------
+17: 3.1976
+DataTypes      : decimal (656 = 99.8%)
+Width range    : 5 ~ 7 characters
+Decimal range  : -2.8541 ~ 3.3149
+
+----------------------------------------
+18: 0.8366
+DataTypes      : decimal (656 = 99.8%)
+Width range    : 4 ~ 7 characters
+Decimal range  : -3.4999 ~ 5.1764
+
+----------------------------------------
+19: 
+DataTypes      : empty (656 = 99.8%)
+
+----------------------------------------
+20: 
+DataTypes      : empty (656 = 99.8%)
+
+----------------------------------------
+21: 10.38
+DataTypes      : decimal (656 = 99.8%)
+Width range    : 4 ~ 5 characters
+Decimal range  : 10.37 ~ 10.42
+-- Unique values (6) --
+n=8            : 10.37
+n=30           : 10.38
+n=117          : 10.39
+n=275          : 10.4
+n=206          : 10.41
+n=20           : 10.42
+
+----------------------------------------
+22: 1.0749
+DataTypes      : decimal (656 = 99.8%)
+Width range    : 6 characters
+Decimal range  : 1.0749 ~ 1.0749
+-- Unique values (1) --
+n=656          : 1.0749
+
