@@ -161,8 +161,55 @@ as
          ,	f_csv_row.profile
          ,	f_csv_row.julian_day
          );
-         
       end loop;
+      
+      commit;
+      
+      -- Insert repeat, using profile to get the observation
+      -- Fields ENSEMBLE and DATRA_ID are not present in FIELDS_LOOKUP
+      insert into adcp_repeat 
+      (
+         meds_job_number
+      ,  meds_observation_number
+      ,  bin
+      ,  speed
+      ,  direction
+      ,  u_east_west
+      ,  v_north_south
+      ,  w_vertical
+      ,  error
+      ,  percentage_error
+      ,  echo_int_average
+      ,  depth_bsl
+      ,  quality
+      ,  profile
+      ) 
+      select 
+         a.job_number
+      ,  c.meds_observation_number
+      ,  b.col002
+      ,  b.col004
+      ,  b.col005
+      ,  b.col006
+      ,  b.col007
+      ,  b.col008
+      ,  b.col009
+      ,  b.col010
+      ,  b.col011
+      ,  b.col003
+      ,  b.col012
+      ,  b.col001
+      from       stg_file            a
+      inner join stg_file_csv_row    b 
+         on b.stg_file          = a.stg_file
+      inner join adcp_observation    c 
+         on  c.meds_job_number  = a.job_number 
+         and to_char(c.profile) = b.col001
+      where a.job_number        = p_job_number
+      and   lower(a.filename) like '%.dat'
+      order by 
+         c.meds_observation_number
+      ,  c.profile;
       
    end parse_datatype_adcp;
 
