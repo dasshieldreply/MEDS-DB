@@ -633,7 +633,7 @@ as
       select 
          row_number() over(order by b.col001, b.col002, b.col003, b.col004)
       ,  p_job_number
-      ,  null
+      ,  SDO_GEOMETRY(2001, null, SDO_POINT_TYPE(b.col004, b.col003, NULL), NULL, NULL) -- Longitude, latitude
       ,  to_date(b.col001 || ' ' || b.col002, 'dd/mm/yyyy hh24:mi:ss') 
       ,  b.col003
       ,  b.col004

@@ -5,8 +5,8 @@ select * from field_lookup
 where data_type_index = 89
 order by table_name,field_position;
 
-select * from stg_file where stg_file=29637123586303579758142188515056352802;
-select * from stg_file_csv_row where stg_file=29637123586303579758142188515056352802 order by row_sequence;
+select * from stg_file where job_number=102583;
+select * from stg_file_csv_row where stg_file=30249666142767843558582721545394354234 order by row_sequence;
 /*
 BIOMASS_DATA
 UPPER_DEPTH	            2	5 COL005          2 - Floating Point Value
@@ -54,3 +54,56 @@ select * from BIOMASS_OBSERVATION where meds_job_number=68822 order by 1;
 select * from BIOMASS_DATA where meds_job_number=68822 order by meds_observation_number;
 --select * from BIOMASS_OBSERVATION where meds_job_number=68822 order by 1;
 --select * from BIOMASS_DATA where meds_job_number=68822 order by meds_observation_number;
+
+select * from BIOMASS_OBSERVATION where meds_job_number=102583 order by 1;
+select count(*) from BIOMASS_OBSERVATION where meds_job_number=102583 order by 1;
+select count(*) from BIOMASS_DATA where meds_job_number=102583 order by meds_observation_number;
+
+delete from BIOMASS_OBSERVATION where meds_job_number=102583;
+delete from BIOMASS_DATA where meds_job_number=102583;
+
+/*
+select 
+   row_number() over(order by b.col001, b.col002, b.col003, b.col004)
+,  102583
+,  SDO_GEOMETRY(2001, null, SDO_POINT_TYPE(b.col004, b.col003, NULL), NULL, NULL) -- Longitude, latitude
+,  to_date(b.col001 || ' ' || b.col002, 'dd/mm/yyyy hh24:mi:ss') 
+,  b.col003
+,  b.col004
+from       stg_file         a
+inner join stg_file_csv_row b 
+   on b.stg_file   = a.stg_file
+where a.job_number = 102583
+group by 
+   b.col001
+,  b.col002
+,  b.col003
+,  b.col004;
+ */
+ 
+select 
+   b.col005
+,  b.col006
+,  b.col007
+,  b.col008
+,  b.col009
+,  b.col010
+,  a.job_number
+,  c.meds_observation_number
+,  c.latitude
+,  c.longitude
+,  b.col003
+,  b.col004
+from       stg_file            a
+inner join stg_file_csv_row    b 
+   on b.stg_file         = a.stg_file
+inner join biomass_observation c 
+   on  c.meds_job_number = a.job_number 
+   and to_char(c.date_recorded, 'dd/mm/yyyy hh24:mi:ss') = b.col001 || ' ' || b.col002
+   --and c.latitude        = b.col003
+   --and c.longitude       = b.col004 
+where a.job_number       = 102583
+order by c.meds_observation_number;      
+
+
+      
