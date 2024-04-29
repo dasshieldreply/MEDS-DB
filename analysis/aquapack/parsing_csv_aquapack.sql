@@ -41,21 +41,43 @@ select count(*) from aquapack_profile_observation where meds_job_number=102586;
 select * from aquapack_profile_data where meds_job_number=102586;
 select count(*) from aquapack_profile_data where meds_job_number=102586;
 
+delete from aquapack_profile_observation where meds_job_number=102586;
+delete from aquapack_profile_data where meds_job_number=102586;
 
+   select 
+      SDO_GEOMETRY(2001, null, SDO_POINT_TYPE(b.col004, b.col003, NULL), NULL, NULL) -- Longitude, latitude
+   ,  b.col017 -- profile_id
+   ,  b.col004
+   ,  b.col003
+   ,  to_date(b.col001 || ' ' || b.col002, 'dd/mm/yyyy hh24:mi:ss') 
+   ,  b.col005
+   from       stg_file         a
+   inner join stg_file_csv_row b  on b.stg_file  = a.stg_file
+   where a.job_number = 102586
+   group by 
+      b.col017
+   ,  b.col001
+   ,  b.col002
+   ,  b.col003
+   ,  b.col004
+   ,  b.col005
+   order by  ;
+   
 select 
-   null
-,  102586
-,  col017 -- profile_id
-,  col004
-,  col003
-,  to_date(col001 || ' ' || col002, 'dd/mm/yyyy hh24:mi:ss') 
-,  col005
-from  stg_file_csv_row
-where stg_file = 30274084739756421960812489584837025731
-group by col017
-,  col001
-,  col002
-,  col003
-,  col004
-,  col005
-order by 1, 6,4, 5;
+   SDO_GEOMETRY(2001, null, SDO_POINT_TYPE(b.col004, b.col003, NULL), NULL, NULL) -- Longitude, latitude
+,  b.col017
+,  to_date(b.col001 || ' ' || b.col002, 'dd/mm/yyyy hh24:mi:ss') 
+,  b.col003
+,  b.col004
+,  b.col005
+from       stg_file         a
+inner join stg_file_csv_row b  on b.stg_file  = a.stg_file
+where a.job_number = 102586
+group by 
+   b.col017
+,  b.col001
+,  b.col002
+,  b.col003
+,  b.col004
+,  b.col005;
+

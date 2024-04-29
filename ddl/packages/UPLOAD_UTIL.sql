@@ -45,12 +45,138 @@ as
    (
       p_job_number   number
    );   
+   
+   procedure parse_datatype_front_satellite
+   (
+      p_job_number   number
+   );  
 
 end upload_util;
 /
 -- -----------------------------------------------------------------------------------------------------------------
 CREATE OR REPLACE package body upload_util
 as
+
+   procedure parse_datatype_front_satellite
+   (
+      p_job_number   number
+   )
+   is
+      v_stm          varchar2(4000);
+      v_ins1         varchar2(1000) default 'insert into front_satellite_observation (location, meds_job_number, meds_observation_number, observered_date) values (sdo_geometry(2002, null, null, sdo_elem_info_array(1, 2, 1), sdo_ordinate_array(';
+      v_ins2         varchar2(1000) default 'insert into front_image_data (meds_observation_number, meds_job_number, frontal_depth, frontal_name, frontal_type, frontal_confidence, frontal_line_id, boundary_type) values(';
+      v_point_order  number default 0;
+   begin
+   
+     for f_obs in 
+      (
+         select 
+            row_number() over(order by to_number(b.col006), to_number(b.col001))                 as observation
+         ,  listagg(b.col010 || ', ' || b.col009, ', ') within group(order by to_number(b.col008)) as poligon      -- longitude, latitude
+         ,  b.col006   as observered_date
+         ,  a.stg_file
+         from       stg_file         a
+         inner join stg_file_csv_row b 
+            on b.stg_file   = a.stg_file
+         where a.job_number = p_job_number
+         group by 
+            a.stg_file
+         ,  b.col001
+         ,  b.col002
+         ,  b.col003
+         ,  b.col004
+         ,  b.col005
+         ,  b.col006
+         order by 
+            to_number(b.col006)
+         ,  to_number(b.col001)
+      ) loop
+      
+         v_stm := v_ins1 
+               || f_obs.poligon
+               || ')), '
+               || p_job_number            || ', '
+               || f_obs.observation       || ', ' 
+               || 'to_date('     
+               || chr(39) 
+               || f_obs.observered_date
+               || chr(39) 
+               || ','
+               || chr(39)
+               || 'DDMMYYYY' 
+               || CHR(39) || '))';
+         
+         --dbms_output.put_line(v_stm);
+         execute immediate v_stm;
+      
+    /*
+         
+       select 
+         row_number() over(order by to_number(b.col006), to_number(b.col001))
+      ,  p_job_number
+      ,  null                 as point_type
+      ,  null                 as frontal_gradient
+      ,  b.col005             as frontal_depth   
+      ,  b.col002             as frontal_name
+      ,  b.col003             as frontal_type
+      ,  null                 as frontal_confidence
+      ,  to_number(b.col001)  as frontal_line_id
+      ,  b.col004             as boundary_type
+      from       stg_file         a
+      inner join stg_file_csv_row b 
+         on b.stg_file   = a.stg_file
+      where a.job_number = p_job_number
+      group by 
+         a.stg_file
+      ,  b.col001
+      ,  b.col002
+      ,  b.col003
+      ,  b.col004
+      ,  b.col005
+      ,  b.col006
+      order by 
+         to_number(b.col006)
+      ,  to_number(b.col001);
+      
+      insert into front_image_repeat 
+      (
+         latitude
+      ,  longitude
+      ,  confidence
+      ,  strength
+      ,  meds_job_number
+      ,  meds_observation_number
+      ,  point_order
+      ,  vertex_id
+      ) 
+      select 
+         b.col009 as latitude
+      ,  b.col010 as longitude
+      ,  b.col012 as confidence
+      ,  b.col011 as strengh
+      ,  p_job_number
+      ,  c.meds_observation_number
+      ,  rownum
+      ,  b.col008 as vertexid
+      from       stg_file           a
+      inner join stg_file_csv_row   b 
+         on  b.stg_file   = a.stg_file
+      inner join front_image_data   c
+         on  c.frontal_line_id   = b.col001
+         and c.frontal_name      = b.col002
+         and c.frontal_type      = b.col003
+         and c.boundary_type     = b.col004
+         and c.frontal_depth     = b.col005
+         and observered_date     = to_date(to_char(b.col006),'DDMMYYYY')  
+      where a.job_number = p_job_number
+      order by 
+         to_number(b.col006)
+      ,  to_number(b.col001)
+      ,  to_number(b.col008);
+      */
+      end loop;
+      
+   end parse_datatype_front_satellite;
 
    procedure parse_datatype_adcp
    (
@@ -166,7 +292,7 @@ as
       commit;
       
       -- Insert repeat, using profile to get the observation
-      -- Fields ENSEMBLE and DATRA_ID are not present in FIELDS_LOOKUP
+      -- Fields ENSEMBLE and DATA_ID are not present in FIELDS_LOOKUP
       insert into adcp_repeat 
       (
          meds_job_number
@@ -232,7 +358,7 @@ as
       select 
          b.col006
       ,  b.col005
-      ,  null
+      ,  SDO_GEOMETRY(2001, null, SDO_POINT_TYPE(b.col005, b.col006, NULL), NULL, NULL) -- Longitude, latitude
       ,  to_date(b.col001 || ' ' || b.col002, 'dd/mm/yyyy hh24:mi:ss') 
       ,  row_number() over(order by b.col001, b.col002, b.col005, b.col006)
       ,  p_job_number
@@ -245,193 +371,194 @@ as
       ,  b.col002
       ,  b.col005
       ,  b.col006;
-      
+
       -- Insert all data, referencing the observation
-      insert into omni_ambient_data 
-      (
-         depth 
-      ,	wave_height 
-      ,	wind_speed 
-      ,	ofp_number 
-      ,	wind_direction 
-      ,	wave_direction 
-      ,	sea_state 
-      ,	contact_density 
-      ,	s05_10 
-      ,	s20_50 
-      ,	contact_details 
-      ,	qc 
-      ,	record_number 
-      ,	comments 
-      ,	meds_observation_number 
-      ,	meds_job_number 
-      ,	s00_05 
-      ,	s10_20 
-      ,	ship 
-      ,	country 
-      ,	platform_type 
-      ,	month 
-      ,	precipitation 
-      ,	time 
-      ,	hz_3_15 
-      ,	hz_4 
-      ,	hz_5 
-      ,	hz_6_3 
-      ,	hz_8 
-      ,	hz_10 
-      ,	hz_12_5 
-      ,	hz_16 
-      ,	hz_20 
-      ,	hz_25 
-      ,	hz_31_5 
-      ,	hz_40 
-      ,	hz_50 
-      ,	hz_55 
-      ,	hz_60 
-      ,	hz_63 
-      ,	hz_80 
-      ,	hz_100 
-      ,	hz_115 
-      ,	hz_120 
-      ,	hz_125 
-      ,	hz_135 
-      ,	hz_150 
-      ,	hz_155 
-      ,	hz_160 
-      ,	hz_200 
-      ,	hz_240 
-      ,	hz_248 
-      ,	hz_250 
-      ,	hz_300 
-      ,	hz_305 
-      ,	hz_315 
-      ,	hz_400 
-      ,	hz_440 
-      ,	hz_450 
-      ,	hz_500 
-      ,	hz_600 
-      ,	hz_605 
-      ,	hz_630 
-      ,	hz_660 
-      ,	hz_800 
-      ,	hz_850 
-      ,	hz_1000 
-      ,	hz_1150 
-      ,	hz_1205 
-      ,	hz_1250 
-      ,	hz_1500 
-      ,	hz_1600 
-      ,	hz_1700 
-      ,	hz_2000 
-      ,	hz_2400 
-      ,	hz_2500 
-      ,	hz_3150 
-      ,	hz_4000 
-      ,	hz_5000 
-      ,	hz_6300 
-      ,	hz_8000 
-      ,	hz_75 
-      ,	buoy_type 
-      ,	channel 
-      ,	hz_950
-      ) 
-      select 
-      	b.col106
-      ,	b.col107
-      ,	b.col111
-      ,	b.col120
-      ,	b.col110
-      ,	b.col108
-      ,	b.col109
-      ,	b.col113
-      ,	b.col115
-      ,	b.col117
-      ,	b.col118
-      ,	b.col126
-      ,	b.col125
-      ,	b.col128
-      ,  c.meds_observation_number
-      ,  a.job_number
-      ,	b.col114
-      ,	b.col116
-      ,	b.col122
-      ,	b.col121
-      ,	b.col119
-      ,	b.col004
-      ,	b.col112
-      ,	b.col003
-      ,	b.col007
-      ,	b.col008
-      ,	b.col009
-      ,	b.col010
-      ,	b.col011
-      ,	b.col012
-      ,	b.col013
-      ,	b.col014
-      ,	b.col015
-      ,	b.col016
-      ,	b.col017
-      ,	b.col018
-      ,	b.col019
-      ,	b.col020
-      ,	b.col021
-      ,	b.col022
-      ,	b.col024
-      ,	b.col025
-      ,	b.col026
-      ,	b.col027
-      ,	b.col028
-      ,	b.col029
-      ,	b.col030
-      ,	b.col031
-      ,	b.col032
-      ,	b.col033
-      ,	b.col034
-      ,	b.col035
-      ,	b.col036
-      ,	b.col037
-      ,	b.col038
-      ,	b.col039
-      ,	b.col040
-      ,	b.col041
-      ,	b.col042
-      ,	b.col043
-      ,	b.col044
-      ,	b.col045
-      ,	b.col046
-      ,	b.col047
-      ,	b.col048
-      ,	b.col049
-      ,	b.col051
-      ,	b.col052
-      ,	b.col053
-      ,	b.col054
-      ,	b.col055
-      ,	b.col056
-      ,	b.col057
-      ,	b.col058
-      ,	b.col059
-      ,	b.col060
-      ,	b.col061
-      ,	b.col062
-      ,	b.col063
-      ,	b.col064
-      ,	b.col065
-      ,	b.col023
-      ,	b.col127
-      ,	b.col123
-      ,	b.col050
-      from       stg_file                 a
-      inner join stg_file_csv_row         b
-         on b.stg_file         = a.stg_file
-      inner join omni_ambient_observation c 
-         on  c.meds_job_number = a.job_number 
-         and c.date_recorded   = to_date(b.col001 || ' ' || b.col002, 'dd/mm/yyyy hh24:mi:ss') 
-         and c.longitude       = b.col005 
-         and c.latitude        = b.col006
-      where a.job_number       = p_job_number
-      order by c.meds_observation_number;
-      
+      for f_stg_file in (select stg_file from stg_file where job_number = p_job_number)
+      loop
+         insert into omni_ambient_data 
+         (
+            depth 
+         ,	wave_height 
+         ,	wind_speed 
+         ,	ofp_number 
+         ,	wind_direction 
+         ,	wave_direction 
+         ,	sea_state 
+         ,	contact_density 
+         ,	s05_10 
+         ,	s20_50 
+         ,	contact_details 
+         ,	qc 
+         ,	record_number 
+         ,	comments 
+         ,	meds_observation_number 
+         ,	meds_job_number 
+         ,	s00_05 
+         ,	s10_20 
+         ,	ship 
+         ,	country 
+         ,	platform_type 
+         ,	month 
+         ,	precipitation 
+         ,	time 
+         ,	hz_3_15 
+         ,	hz_4 
+         ,	hz_5 
+         ,	hz_6_3 
+         ,	hz_8 
+         ,	hz_10 
+         ,	hz_12_5 
+         ,	hz_16 
+         ,	hz_20 
+         ,	hz_25 
+         ,	hz_31_5 
+         ,	hz_40 
+         ,	hz_50 
+         ,	hz_55 
+         ,	hz_60 
+         ,	hz_63 
+         ,	hz_80 
+         ,	hz_100 
+         ,	hz_115 
+         ,	hz_120 
+         ,	hz_125 
+         ,	hz_135 
+         ,	hz_150 
+         ,	hz_155 
+         ,	hz_160 
+         ,	hz_200 
+         ,	hz_240 
+         ,	hz_248 
+         ,	hz_250 
+         ,	hz_300 
+         ,	hz_305 
+         ,	hz_315 
+         ,	hz_400 
+         ,	hz_440 
+         ,	hz_450 
+         ,	hz_500 
+         ,	hz_600 
+         ,	hz_605 
+         ,	hz_630 
+         ,	hz_660 
+         ,	hz_800 
+         ,	hz_850 
+         ,	hz_1000 
+         ,	hz_1150 
+         ,	hz_1205 
+         ,	hz_1250 
+         ,	hz_1500 
+         ,	hz_1600 
+         ,	hz_1700 
+         ,	hz_2000 
+         ,	hz_2400 
+         ,	hz_2500 
+         ,	hz_3150 
+         ,	hz_4000 
+         ,	hz_5000 
+         ,	hz_6300 
+         ,	hz_8000 
+         ,	hz_75 
+         ,	buoy_type 
+         ,	channel 
+         ,	hz_950
+         ) 
+         select 
+            a.col106
+         ,	a.col107
+         ,	a.col111
+         ,	a.col120
+         ,	a.col110
+         ,	a.col108
+         ,	a.col109
+         ,	a.col113
+         ,	a.col115
+         ,	a.col117
+         ,	a.col118
+         ,	a.col126
+         ,	a.col125
+         ,	a.col128
+         ,  b.meds_observation_number
+         ,  p_job_number
+         ,	a.col114
+         ,	a.col116
+         ,	a.col122
+         ,	a.col121
+         ,	a.col119
+         ,	a.col004
+         ,	a.col112
+         ,	a.col003
+         ,	a.col007
+         ,	a.col008
+         ,	a.col009
+         ,	a.col010
+         ,	a.col011
+         ,	a.col012
+         ,	a.col013
+         ,	a.col014
+         ,	a.col015
+         ,	a.col016
+         ,	a.col017
+         ,	a.col018
+         ,	a.col019
+         ,	a.col020
+         ,	a.col021
+         ,	a.col022
+         ,	a.col024
+         ,	a.col025
+         ,	a.col026
+         ,	a.col027
+         ,	a.col028
+         ,	a.col029
+         ,	a.col030
+         ,	a.col031
+         ,	a.col032
+         ,	a.col033
+         ,	a.col034
+         ,	a.col035
+         ,	a.col036
+         ,	a.col037
+         ,	a.col038
+         ,	a.col039
+         ,	a.col040
+         ,	a.col041
+         ,	a.col042
+         ,	a.col043
+         ,	a.col044
+         ,	a.col045
+         ,	a.col046
+         ,	a.col047
+         ,	a.col048
+         ,	a.col049
+         ,	a.col051
+         ,	a.col052
+         ,	a.col053
+         ,	a.col054
+         ,	a.col055
+         ,	a.col056
+         ,	a.col057
+         ,	a.col058
+         ,	a.col059
+         ,	a.col060
+         ,	a.col061
+         ,	a.col062
+         ,	a.col063
+         ,	a.col064
+         ,	a.col065
+         ,	a.col023
+         ,	a.col127
+         ,	a.col123
+         ,	a.col050
+         from       stg_file_csv_row         a
+         inner join omni_ambient_observation b 
+            on  b.meds_job_number = p_job_number 
+            and b.date_recorded   = to_date(a.col001 || ' ' || a.col002, 'dd/mm/yyyy hh24:mi:ss') 
+            and b.longitude       = a.col005 
+            and b.latitude        = a.col006
+         where a.stg_file         = f_stg_file.stg_file
+         order by b.meds_observation_number;
+      end loop;
+
    end parse_datatype_omni_ambient;
 
    procedure parse_datatype_glider
@@ -439,100 +566,105 @@ as
       p_job_number   number
    )
    is
+      v_stm          varchar2(4000);
+      v_ins1         varchar2(1000) default 'insert into glider_threaded_observation (location, meds_job_number, meds_observation_number, mid_latitude, mid_longitude, profile_id, profile_dir, distance_traveled, mid_time) values (sdo_geometry(2022, null, null, sdo_elem_info_array(1,2,1), sdo_ordinate_array(';
+      v_ins2         varchar2(1000) default 'insert into glider_threaded_data (meds_job_number, meds_observation_number, depth, temperature, temp_flag, salinity, sal_flag, sound_speed, density, chlorophyll, hydrocarbons, gelbstoffe, bioluminescence, longitude, latitude, date_recorded, point_order, bbp700) values (';
+      v_point_order  number default 0;
    begin
-      -- Insert the observations first, grouped by profile_dir, profile_id, distance_traveled, mid_latitude, mid_longitude, mid_time
-      insert into glider_threaded_observation 
+
+      for f_obs in 
       (
-         location
-      ,  meds_job_number
-      ,  meds_observation_number
-      ,  profile_dir
-      ,  profile_id
-      ,  distance_traveled
-      ,  mid_latitude
-      ,  mid_longitude
-      ,  mid_time
-      ) 
-      select 
-         null
-      ,  p_job_number  
-      ,  b.col013 -- profile_id is taken as observation
-      ,  b.col012
-      ,  b.col013
-      ,  b.col015
-      ,  b.col016
-      ,  b.col017
-      ,  b.col018
-      from       stg_file         a
-      inner join stg_file_csv_row b 
-         on b.stg_file   = a.stg_file
-      where a.job_number = p_job_number
-      group by 
-         b.col012
-      ,  b.col013
-      ,  b.col015
-      ,  b.col016
-      ,  b.col017
-      ,  b.col018
-      order by 3;
-            
-      -- Insert all data, referencing the observation
-      insert into glider_threaded_data (
-         meds_job_number
-      ,  meds_observation_number
-      ,  depth
-      ,  pressure
-      ,  temperature
-      ,  temp_flag
-      ,  salinity
-      ,  sal_flag
-      ,  sound_speed
-      ,  density
-      ,  chlorophyll
-      ,  hydrocarbons
-      ,  gelbstoffe
-      ,  bioluminescence
-      ,  longitude
-      ,  latitude
-      ,  date_recorded
-      ,  point_order
-      ,  bbp700
-      ) 
-      select 
-         a.job_number
-      ,  c.meds_observation_number
-      ,  b.col005
-      ,  null  -- pressure is not in fields_lookup
-      ,  b.col006      
-      ,  b.col007
-      ,  b.col008      
-      ,  b.col009      
-      ,  b.col010      
-      ,  b.col011      
-      ,  b.col022      
-      ,  b.col019      
-      ,  b.col020      
-      ,  b.col021      
-      ,  b.col001      
-      ,  b.col002      
-      ,  to_date(to_char(b.col003),'DDMMYYYY')    
-      ,  b.col013      
-      ,  b.col023      
-      from       stg_file          a
-      inner join stg_file_csv_row  b
-         on  b.stg_file          = a.stg_file
-      inner join glider_threaded_observation c 
-         on  c.meds_job_number   = p_job_number 
-         and c.profile_dir       = b.col012
-         and c.profile_id        = b.col013
-         and c.distance_traveled = b.col015
-         and c.mid_latitude      = b.col016
-         and c.mid_longitude     = b.col017
-         and c.mid_time          = b.col018
-      where a.stg_file           = p_job_number
-      order by 
-         c.meds_observation_number
-      ,  b.col005;
+         select 
+            b.col012 as profile_dir
+         ,  b.col013 as profile_id
+         ,  b.col015 as distance_traveled
+         ,  b.col016 as mid_latitude
+         ,  b.col017 as mid_longitude
+         ,  b.col018 as mid_time
+         ,  listagg(b.col002 || ', ' || b.col001, ',') within group(order by rownum) as poligon
+         ,  a.stg_file 
+         from       stg_file         a
+         inner join stg_file_csv_row b 
+            on b.stg_file   = a.stg_file
+         where a.job_number = p_job_number
+         group by 
+            a.stg_file
+         ,  b.col012
+         ,  b.col013
+         ,  b.col015
+         ,  b.col016
+         ,  b.col017
+         ,  b.col018
+         order by 2
+      ) loop
+         --dbms_output.put_line(f_obs.profile_dir || f_obs.profile_id || f_obs.mid_latitude || f_obs.mid_time);
+         v_stm := v_ins1 
+         || f_obs.poligon
+         || ')),'
+         || p_job_number            || ','
+         || f_obs.profile_id        || ',' -- profile_id is unique, serving as observation
+         || f_obs.mid_latitude      || ','
+         || f_obs.mid_longitude     || ','
+         || f_obs.profile_id        || ','
+         || f_obs.profile_dir       || ','
+         || f_obs.distance_traveled || ','
+         || f_obs.mid_time 
+         || ')';
+         
+         --dbms_output.put_line(v_stm);
+         execute immediate v_stm;
+        
+         for f_dat in 
+         (       
+            select 
+               nvl(a.col005, 'null') as depth
+            ,  nvl(a.col006, 'null') as temperature      
+            ,  nvl(a.col007, 'null') as temp_flag
+            ,  nvl(a.col008, 'null') as salinity    
+            ,  nvl(a.col009, 'null') as sal_flag    
+            ,  nvl(a.col010, 'null') as sound_speed    
+            ,  nvl(a.col011, 'null') as density    
+            ,  nvl(a.col022, 'null') as chlorophyll   
+            ,  nvl(a.col019, 'null') as hydrocarbons    
+            ,  nvl(a.col020, 'null') as gelbstoffe    
+            ,  nvl(a.col021, 'null') as bioluminescence    
+            ,  nvl(a.col001, 'null') as latitude 
+            ,  nvl(a.col002, 'null') as longitude    
+            ,  nvl(a.col023, 'null') as bbp700  
+            ,  'to_date(' || chr(39) || a.col003 || chr(39) || ',' || chr(39) || 'DDMMYYYY' || chr(39) || ')' as date_recorded 
+            from stg_file_csv_row  a
+            where a.stg_file = f_obs.stg_file 
+            and   a.col012   = f_obs.profile_dir 
+            and   a.col013   = f_obs.profile_id
+            order by a.col005
+         ) loop
+               v_point_order := v_point_order + 1;
+               
+               v_stm := v_ins2 
+               || p_job_number          || ','
+               || f_obs.profile_id      || ',' -- unique, server as observation
+               || f_dat.depth           || ','
+               || f_dat.temperature     || ','
+               || f_dat.temp_flag       || ','
+               || f_dat.salinity        || ','
+               || f_dat.sal_flag        || ','
+               || f_dat.sound_speed     || ','
+               || f_dat.density         || ','
+               || f_dat.chlorophyll     || ','
+               || f_dat.hydrocarbons    || ','
+               || f_dat.gelbstoffe      || ','
+               || f_dat.bioluminescence || ','
+               || f_dat.longitude       || ','
+               || f_dat.latitude        || ','
+               || f_dat.date_recorded   || ','
+               || v_point_order         || ',' 
+               || f_dat.bbp700            
+               || ')';
+   
+               execute immediate v_stm;   
+               --dbms_output.put_line(v_stm);           
+         end loop;
+      end loop; 
       
    end parse_datatype_glider;
 
@@ -554,9 +686,9 @@ as
       ,  seabed_depth      
       ) 
       select 
-         null
+         SDO_GEOMETRY(2001, null, SDO_POINT_TYPE(b.col004, b.col003, NULL), NULL, NULL) -- Longitude, latitude
       ,  p_job_number
-      ,  b.col017 -- profile_id
+      ,  b.col017 -- profile_id and observation number
       ,  b.col004
       ,  b.col003
       ,  to_date(b.col001 || ' ' || b.col002, 'dd/mm/yyyy hh24:mi:ss') 
@@ -572,7 +704,7 @@ as
       ,  b.col003
       ,  b.col004
       ,  b.col005
-      order by 1,6 ,4, 5;
+      order by 6 ,4, 5;
 
       -- Insert all data, using profile_id as the observation
       insert into aquapack_profile_data (
@@ -611,7 +743,7 @@ as
          on b.stg_file   = a.stg_file
       where a.job_number = p_job_number
       order by 2, 4;
-      
+
    end parse_datatype_aquapack;
 
    procedure parse_datatype_biomass
@@ -646,19 +778,40 @@ as
       ,  b.col002
       ,  b.col003
       ,  b.col004;
-      
-      -- Insert all data, referencing the observations
-      insert into biomass_data 
-      (
-         upper_depth
-      ,  lower_depth
-      ,  total_displacement_vol
-      ,  total_settled_volume
-      ,  total_wet_mass
-      ,  total_dry_mass
-      ,  meds_job_number
-      ,  meds_observation_number
-      ) 
+
+      -- Insert all data, referencing the observations      
+      for f_stg_file in (select stg_file from stg_file where job_number = p_job_number)
+      loop
+         insert into biomass_data 
+         (
+            upper_depth
+         ,  lower_depth
+         ,  total_displacement_vol
+         ,  total_settled_volume
+         ,  total_wet_mass
+         ,  total_dry_mass
+         ,  meds_job_number
+         ,  meds_observation_number
+         ) 
+         select 
+            a.col005
+         ,  a.col006
+         ,  a.col007
+         ,  a.col008
+         ,  a.col009
+         ,  a.col010
+         ,  p_job_number
+         ,  b.meds_observation_number
+         from       stg_file_csv_row    a
+         inner join biomass_observation b 
+            on  b.meds_job_number = p_job_number 
+            and b.date_recorded   = to_date(a.col001 || ' ' || a.col002, 'dd/mm/yyyy hh24:mi:ss') 
+            and b.latitude        = a.col003 
+            and b.longitude       = a.col004 
+         where a.stg_file         = f_stg_file.stg_file
+         order by b.meds_observation_number;
+      end loop;
+/*
       select 
          b.col005
       ,  b.col006
@@ -678,7 +831,7 @@ as
          and c.longitude       = b.col004 
       where a.job_number       = p_job_number
       order by c.meds_observation_number;
-      
+*/      
    end parse_datatype_biomass;
 
    procedure parse_csv_data
@@ -733,6 +886,8 @@ as
          upload_util.parse_datatype_omni_ambient   (p_job_number => p_job_number);
       elsif v_index_field  = 88 then
          upload_util.parse_datatype_adcp           (p_job_number => p_job_number);
+      elsif v_index_field  = 82 then
+         upload_util.parse_datatype_front_satellite(p_job_number => p_job_number);
       end if;
       
       exception

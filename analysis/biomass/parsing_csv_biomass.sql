@@ -99,11 +99,28 @@ inner join stg_file_csv_row    b
    on b.stg_file         = a.stg_file
 inner join biomass_observation c 
    on  c.meds_job_number = a.job_number 
-   and to_char(c.date_recorded, 'dd/mm/yyyy hh24:mi:ss') = b.col001 || ' ' || b.col002
-   --and c.latitude        = b.col003
-   --and c.longitude       = b.col004 
+   and c.date_recorded   = to_date(b.col001 || ' ' || b.col002, 'dd/mm/yyyy hh24:mi:ss') 
+   and c.latitude        = b.col003 
+   and c.longitude       = b.col004 
 where a.job_number       = 102583
 order by c.meds_observation_number;      
 
+      select 
+         a.col005
+      ,  a.col006
+      ,  a.col007
+      ,  a.col008
+      ,  a.col009
+      ,  a.col010
+      ,  p_job_number
+      ,  b.meds_observation_number
+      from       stg_file_csv_row    a
+      inner join biomass_observation b 
+         on  b.meds_job_number = p_job_number 
+         and b.date_recorded   = to_date(a.col001 || ' ' || a.col002, 'dd/mm/yyyy hh24:mi:ss') 
+         and b.latitude        = a.col003 
+         and b.longitude       = a.col004 
+      where a.stg_file=p_stg_file
+      order by b.meds_observation_number;
 
       

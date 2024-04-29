@@ -18,7 +18,7 @@ ALTER SESSION SET NLS_DATE_FORMAT='DD-MON-YYYY HH24:MI:SS';
 
 select * from glider_threaded_observation where meds_job_number=101607;                        -- ONE OBSERVATION FOR EACH line, unique observation has no date, dates are per data l ine
 select * from glider_threaded_observation where meds_job_number=101607 and meds_observation_number <> profile_id; -- meds_observation is populated from profile_id
-select * from glider_threaded_data where meds_job_number=101607 order by meds_observation_number;
+select * from glider_threaded_data where meds_job_number=101607 order by meds_observation_number, point_order;
 select * from glider_threaded_data where meds_job_number=101607 and pressure <> 0;
 
 select count(*) from glider_threaded_observation where meds_job_number=101607 ;                --1132
@@ -26,12 +26,14 @@ select count(*) from glider_threaded_data where meds_job_number=101607 ;        
 
 select * from glider_threaded_observation where meds_job_number=102588;
 select * from glider_threaded_data where meds_job_number=102588 order by meds_observation_number ;
+
 select count(*) from glider_threaded_observation where meds_job_number=102588 ;                
 select count(*) from glider_threaded_data where meds_job_number=102588 ;
+
 select distinct date_recorded from glider_threaded_data where meds_job_number=102588 ;
 
---delete from glider_threaded_observation where meds_job_number=102588 ;                
---delete from glider_threaded_data where meds_job_number=102588 ;
+delete from glider_threaded_observation where meds_job_number=102588 ;                
+delete from glider_threaded_data where meds_job_number=102588 ;
 
 /*
 GLIDER_THREADED_DATA	MEDS_JOB_NUMBER	      0	8

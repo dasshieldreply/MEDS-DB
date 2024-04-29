@@ -29,11 +29,23 @@ select * from omni_ambient_observation where meds_job_number=102590 order by med
 select * from omni_ambient_data where meds_job_number=102590 order by meds_observation_number;
 
 select count(*) from omni_ambient_observation where meds_job_number=102590 ;                --1246
-select count(*) from omni_ambient_data where meds_job_number=102590 ;
+select count(*) from omni_ambient_data where meds_job_number=102590 ;                       --1228
 --
 delete from OMNI_AMBIENT_OBSERVATION where meds_job_number=102590;
+delete from OMNI_AMBIENT_DATA where meds_job_number=102590;
+
 
 ALTER SESSION SET NLS_DATE_FORMAT = 'DD-MON-YYYY HH24:MI:SS';
+
+DECLARE
+  P_JOB_NUMBER NUMBER;
+BEGIN
+  P_JOB_NUMBER := 102590;
+
+  UPLOAD_UTIL.parse_datatype_omni_ambient(
+    P_JOB_NUMBER => P_JOB_NUMBER
+  );
+END;
 
 select 
    col006
