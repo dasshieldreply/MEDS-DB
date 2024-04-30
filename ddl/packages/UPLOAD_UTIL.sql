@@ -50,12 +50,57 @@ as
    (
       p_job_number   number
    );  
+   
+   function fn_check_job_type_upload 
+   (
+      p_job_number in number,
+      p_data_type  in varchar2
+   ) return number; 
 
 end upload_util;
 /
 -- -----------------------------------------------------------------------------------------------------------------
 CREATE OR REPLACE package body upload_util
 as
+
+   function fn_check_job_type_upload 
+   (
+      p_job_number in number,
+      p_data_type  in varchar2
+   ) return number 
+   as 
+      v_tbl             varchar2(100);
+      v_index_field     number;
+      v_cnt             number default 0;
+   begin
+
+      select index_field
+      into v_index_field
+      from job_lookups 
+      where type = 'Data Type' 
+      and usage  = p_data_type
+      fetch first row only;         
+      dbms_output.put_line('v_index_field: ' || v_index_field);
+
+      select table_name
+      into  v_tbl
+      from field_lookup
+      where data_type_index = v_index_field
+      and lower(table_name) like '%observation%'
+      and include_in_input = 1
+      fetch first row only;
+      dbms_output.put_line('v_tbl: ' || v_tbl);
+      
+      execute immediate 'select count(*) from ' || v_tbl || ' where meds_job_number = ' || p_job_number
+         into v_cnt;  
+   
+      return v_cnt;
+      
+      exception
+         when no_data_found then
+            return 0;
+            
+   end fn_check_job_type_upload;
 
    procedure parse_datatype_front_satellite
    (
