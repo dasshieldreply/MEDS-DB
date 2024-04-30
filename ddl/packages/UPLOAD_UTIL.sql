@@ -62,18 +62,22 @@ as
       p_job_number   number
    )
    is
-      v_stm          varchar2(4000);
-      v_ins1         varchar2(1000) default 'insert into front_satellite_observation (location, meds_job_number, meds_observation_number, observered_date) values (sdo_geometry(2002, null, null, sdo_elem_info_array(1, 2, 1), sdo_ordinate_array(';
-      v_ins2         varchar2(1000) default 'insert into front_image_data (meds_observation_number, meds_job_number, frontal_depth, frontal_name, frontal_type, frontal_confidence, frontal_line_id, boundary_type) values(';
-      v_point_order  number default 0;
+      v_stm    varchar2(4000);
+      v_ins    varchar2(1000) default 'insert into front_satellite_observation (location, meds_job_number, meds_observation_number, observered_date) values (sdo_geometry(2002, null, null, sdo_elem_info_array(1, 2, 1), sdo_ordinate_array(';
    begin
+      dbms_output. enable (buffer_size => null); 
    
-     for f_obs in 
+     for f_row in 
       (
          select 
-            row_number() over(order by to_number(b.col006), to_number(b.col001))                 as observation
-         ,  listagg(b.col010 || ', ' || b.col009, ', ') within group(order by to_number(b.col008)) as poligon      -- longitude, latitude
-         ,  b.col006   as observered_date
+            row_number() over(order by to_number(b.col006), to_number(b.col001))                   as observation
+         ,  listagg(b.col010 || ', ' || b.col009, ', ') within group(order by to_number(b.col008)) as glideline      -- longitude, latitude in sequence of vertex_id
+         ,  b.col006             as observered_date
+         ,  b.col005             as frontal_depth   
+         ,  b.col002             as frontal_name
+         ,  b.col003             as frontal_type   
+         ,  b.col004             as boundary_type
+         ,  to_number(b.col001)  as frontal_line_id
          ,  a.stg_file
          from       stg_file         a
          inner join stg_file_csv_row b 
@@ -92,14 +96,14 @@ as
          ,  to_number(b.col001)
       ) loop
       
-         v_stm := v_ins1 
-               || f_obs.poligon
+         v_stm := v_ins 
+               || f_row.glideline
                || ')), '
-               || p_job_number            || ', '
-               || f_obs.observation       || ', ' 
+               || p_job_number      || ', '
+               || f_row.observation || ', ' 
                || 'to_date('     
                || chr(39) 
-               || f_obs.observered_date
+               || f_row.observered_date
                || chr(39) 
                || ','
                || chr(39)
@@ -108,20 +112,32 @@ as
          
          --dbms_output.put_line(v_stm);
          execute immediate v_stm;
-      
-    /*
-         
+      end loop;
+           
+      insert into front_image_data 
+      (
+         meds_observation_number
+      ,  meds_job_number
+      ,  point_type           
+      ,  frontal_gradient     
+      ,  frontal_depth
+      ,  frontal_name
+      ,  frontal_type
+      ,  frontal_confidence
+      ,  frontal_line_id
+      ,  boundary_type
+      )      
        select 
          row_number() over(order by to_number(b.col006), to_number(b.col001))
       ,  p_job_number
-      ,  null                 as point_type
-      ,  null                 as frontal_gradient
-      ,  b.col005             as frontal_depth   
-      ,  b.col002             as frontal_name
-      ,  b.col003             as frontal_type
-      ,  null                 as frontal_confidence
-      ,  to_number(b.col001)  as frontal_line_id
-      ,  b.col004             as boundary_type
+      ,  null                 -- Not in FIELD_LOOKUP
+      ,  null                 -- Not in FIELD_LOOKUP
+      ,  b.col005               
+      ,  b.col002             
+      ,  b.col003             
+      ,  null                 -- Not in FIELD_LOOKUP
+      ,  to_number(b.col001)  
+      ,  b.col004             
       from       stg_file         a
       inner join stg_file_csv_row b 
          on b.stg_file   = a.stg_file
@@ -137,7 +153,10 @@ as
       order by 
          to_number(b.col006)
       ,  to_number(b.col001);
+           
+      commit; -- front_image_data is used in the next insert, so the previous transaction must end, to avoid error ORA-12838
       
+      -- Table front_image_repeat has the rows fom the csv, one by one, and it contain the line of the satellite immage 
       insert into front_image_repeat 
       (
          latitude
@@ -150,32 +169,53 @@ as
       ,  vertex_id
       ) 
       select 
-         b.col009 as latitude
-      ,  b.col010 as longitude
-      ,  b.col012 as confidence
-      ,  b.col011 as strengh
-      ,  p_job_number
-      ,  c.meds_observation_number
+         latitude
+      ,  longitude
+      ,  confidence
+      ,  strength
+      ,  job_number
+      ,  observation
       ,  rownum
-      ,  b.col008 as vertexid
-      from       stg_file           a
-      inner join stg_file_csv_row   b 
-         on  b.stg_file   = a.stg_file
-      inner join front_image_data   c
-         on  c.frontal_line_id   = b.col001
-         and c.frontal_name      = b.col002
-         and c.frontal_type      = b.col003
-         and c.boundary_type     = b.col004
-         and c.frontal_depth     = b.col005
-         and observered_date     = to_date(to_char(b.col006),'DDMMYYYY')  
-      where a.job_number = p_job_number
-      order by 
-         to_number(b.col006)
-      ,  to_number(b.col001)
-      ,  to_number(b.col008);
-      */
-      end loop;
+      ,  vertex_id 
+      from
+      (
+         select 
+            b.col009       as latitude
+         ,  b.col010       as longitude
+         ,  b.col012       as confidence
+         ,  b.col011       as strength
+         ,  p_job_number   as job_number
+         ,  (
+               select c.meds_observation_number 
+               from front_image_data c 
+               where c.frontal_line_id = b.col001
+               and c.frontal_name      = b.col002
+               and c.frontal_type      = b.col003
+               and c.boundary_type     = b.col004
+               and c.frontal_depth     = b.col005
+            )              as observation
+         ,  b.col008       as vertex_id
+         from       stg_file           a
+         inner join stg_file_csv_row   b 
+            on  b.stg_file  = a.stg_file
+         where a.job_number = p_job_number
+         order by 
+            observation
+         ,  to_number(b.col006)
+         ,  to_number(b.col001)
+         ,  to_number(b.col008)
+      ) d;
       
+      commit;
+   
+   exception
+      when others then
+         delete from front_satellite_observation   where meds_job_number = p_job_number;
+         delete from front_image_data              where meds_job_number = p_job_number;
+         delete from front_image_repeat            where meds_job_number = p_job_number;
+         --TODO  log here
+         commit;
+       
    end parse_datatype_front_satellite;
 
    procedure parse_datatype_adcp
@@ -289,7 +329,7 @@ as
          );
       end loop;
       
-      commit;
+      commit; -- adcp_observation is used in the next insert, so the previous transaction must end, to avoid error ORA-12838
       
       -- Insert repeat, using profile to get the observation
       -- Fields ENSEMBLE and DATA_ID are not present in FIELDS_LOOKUP
@@ -336,6 +376,14 @@ as
       order by 
          c.meds_observation_number
       ,  c.profile;
+      
+   exception
+      when others then
+         delete from adcp_observation where meds_job_number = p_job_number;
+         delete from adcp_data        where meds_job_number = p_job_number;
+         delete from adcp_repeat      where meds_job_number = p_job_number;
+         --TODO  log here
+         commit;
       
    end parse_datatype_adcp;
 
@@ -572,7 +620,7 @@ as
       v_point_order  number default 0;
    begin
 
-      for f_obs in 
+      for f_row in 
       (
          select 
             b.col012 as profile_dir
@@ -597,18 +645,18 @@ as
          ,  b.col018
          order by 2
       ) loop
-         --dbms_output.put_line(f_obs.profile_dir || f_obs.profile_id || f_obs.mid_latitude || f_obs.mid_time);
+         --dbms_output.put_line(f_row.profile_dir || f_row.profile_id || f_row.mid_latitude || f_row.mid_time);
          v_stm := v_ins1 
-         || f_obs.poligon
+         || f_row.poligon
          || ')),'
          || p_job_number            || ','
-         || f_obs.profile_id        || ',' -- profile_id is unique, serving as observation
-         || f_obs.mid_latitude      || ','
-         || f_obs.mid_longitude     || ','
-         || f_obs.profile_id        || ','
-         || f_obs.profile_dir       || ','
-         || f_obs.distance_traveled || ','
-         || f_obs.mid_time 
+         || f_row.profile_id        || ',' -- profile_id is unique, serving as observation
+         || f_row.mid_latitude      || ','
+         || f_row.mid_longitude     || ','
+         || f_row.profile_id        || ','
+         || f_row.profile_dir       || ','
+         || f_row.distance_traveled || ','
+         || f_row.mid_time 
          || ')';
          
          --dbms_output.put_line(v_stm);
@@ -633,16 +681,16 @@ as
             ,  nvl(a.col023, 'null') as bbp700  
             ,  'to_date(' || chr(39) || a.col003 || chr(39) || ',' || chr(39) || 'DDMMYYYY' || chr(39) || ')' as date_recorded 
             from stg_file_csv_row  a
-            where a.stg_file = f_obs.stg_file 
-            and   a.col012   = f_obs.profile_dir 
-            and   a.col013   = f_obs.profile_id
+            where a.stg_file = f_row.stg_file 
+            and   a.col012   = f_row.profile_dir 
+            and   a.col013   = f_row.profile_id
             order by a.col005
          ) loop
                v_point_order := v_point_order + 1;
                
                v_stm := v_ins2 
                || p_job_number          || ','
-               || f_obs.profile_id      || ',' -- unique, server as observation
+               || f_row.profile_id      || ',' -- unique, server as observation
                || f_dat.depth           || ','
                || f_dat.temperature     || ','
                || f_dat.temp_flag       || ','
