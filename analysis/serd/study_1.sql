@@ -22,6 +22,9 @@ declare
    ,	longitude				   number
    ,	meds_ship_number		   number
    ,	month					      number);
+   
+   
+   
    type index_tab is table of index_rec
       index by binary_integer;
    
