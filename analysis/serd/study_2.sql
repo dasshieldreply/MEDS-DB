@@ -8,4 +8,18 @@ select depthtoseabed from v_stg_serd_row_main where stg_file = 30993878339334963
 
 select * from profile_index_sv where meds_job_number = 102589 order by meds_observation_number;
 select * from profile_header_sv where meds_job_number = 102589 order by meds_observation_number;
-select * from profile_data_ts where meds_job_number = 102589 order by meds_observation_number;
+select * from profile_data_sv where meds_job_number = 102589 order by meds_observation_number;
+
+select count(*) from profile_index_sv where meds_job_number = 102589 ;
+select count(*) from profile_header_sv where meds_job_number = 102589 ;
+select count(*) from profile_data_sv where meds_job_number = 102589 ;
+
+delete from profile_index_sv where meds_job_number = 102589 ;
+delete from profile_header_sv where meds_job_number = 102589 ;
+delete from profile_data_sv where meds_job_number = 102589 ;
+
+select meic_number from meds_processing_job where job_number = 102589;
+select supplier from job_tracking where meic_number = 7364;
+select * from ship_details;
+
+

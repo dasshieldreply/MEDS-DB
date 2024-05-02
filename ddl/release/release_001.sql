@@ -28,17 +28,56 @@
 -- ------------------------------------------------------------------------------------------------------------------
 -- Prepare sequences, so they are not dependant of application code anymore
 --
---    Get the latest job_number from meds_processing_job 
---       select max(job_number) from meds_processing_job;
---    Create new sequence for meds_processing_job, using latest job number
-          create sequence job_number_sequence  minvalue 1 maxvalue 999999999999999999999999999 increment by 1 start with 102534 nocache  noorder  nocycle  nokeep  noscale  global 
-          /
+      declare v_nbr number;
+--    ----------------------------------------------------------------------------------------      
+      begin
+         -- Get the latest job_number from meds_processing_job
+         select max(job_number) into v_nbr from meds_processing_job;
+         dbms_output.put_line(v_nbr);
+         --  Create new sequence for meds_processing_job
+         execute immediate
+            'create sequence job_number_sequence minvalue 1 maxvalue 999999999999999999999999999 increment by 1 start with ' ||
+            v_nbr ||
+            ' nocache  noorder  nocycle  nokeep  noscale  global';
+      end;
+      /
 --    Alter meds_processing_job so the key is autoincremented
-         alter table meds_processing_job modify job_number default job_number_sequence.nextval
-         /
---    Alter job_tracking so the key is autoincremented 
-         alter table job_tracking modify meic_number default Meic_Number_Sequence.nextval
-         /
+      alter table meds_processing_job modify job_number default job_number_sequence.nextval
+--    ---------------------------------------------------------------------------------------- 
+      begin
+         -- Get the latest meds_ship_number from ship_detail 
+         select max(meds_ship_number) into v_nbr from ship_details;
+         dbms_output.put_line(v_nbr);
+         -- Create new sequence for meds_ship_number
+         execute immediate
+            'create sequence meds_ship_number_sequence minvalue 1 maxvalue 999999999999999999999999999 increment by 1 start with ' ||
+            v_nbr ||
+            ' nocache  noorder  nocycle  nokeep  noscale  global';
+      end;
+      /
+--    Alter ship_details so the key is autoincremented
+      alter table ship_details modify meds_ship_number default meds_ship_number_sequence.nextval;
+      /
+--    ---------------------------------------------------------------------------------------- 
+      begin
+         -- Get the latest meds_cruise_number from cruise_layer 
+         select max(meds_cruise_number) into v_nbr from cruise_layer;
+         dbms_output.put_line(v_nbr);
+         -- Create new sequence for meds_ship_number
+         execute immediate
+            'create sequence meds_cruise_number_sequence minvalue 1 maxvalue 999999999999999999999999999 increment by 1 start with ' ||
+            v_nbr ||
+            ' nocache  noorder  nocycle  nokeep  noscale  global';
+      end;
+      /
+--    Alter cruise_layer so the key is autoincremented
+      alter table cruise_layer modify meds_cruise_number default meds_cruise_number_sequence.nextval;
+      /
+--    ----------------------------------------------------------------------------------------      
+--    Meic_Number_Sequence already exists in MEDS_ADMIN   
+--    Alter job_tracking so the key is autoincremented. 
+      alter table job_tracking modify meic_number default Meic_Number_Sequence.nextval
+      /
 -- ------------------------------------------------------------------------------------------------------------------
 -- Populate security new tables
 --

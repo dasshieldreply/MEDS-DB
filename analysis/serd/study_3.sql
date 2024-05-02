@@ -8,3 +8,10 @@ select count(*) from profile_data_sv;
 select * from meds_processing_job where job_number in (101901, 100167, 102341); 
 select * from job_tracking where meic_number in (5676, 6830, 7114);
 
+select DISTINCT
+   COLUMN_NAME,
+   DATA_TYPE,
+   DATA_LENGTH
+from all_tab_columns
+where table_name like 'PROFILE_DATA%'
+ORDER BY 1;
