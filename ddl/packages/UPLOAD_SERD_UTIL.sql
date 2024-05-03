@@ -166,9 +166,103 @@ as
    begin
    
       if    p_instr_data_type = 1 then -- Temperature Only
-         null;         
+         insert into profile_index_tonly (
+            comments
+         ,	date_time
+         ,	location
+         ,	meds_job_number
+         ,	meds_cruise_number
+         ,	instrument_code
+         ,	meds_observation_number
+         ,	observed_depth
+         ,	minimum_depth_level
+         ,	maximum_depth_level
+         ,	number_of_depth_levels
+         ,	marsden_square
+         ,	quadrant
+         ,	degree_squre
+         ,	duplicate_flag
+         ,	year
+         ,	no_of_comments
+         ,	hood_archive_year
+         ,	string_location
+         ,	latitude
+         ,	longitude
+         ,	meds_ship_number
+         ,	month) 
+         values (
+            p_index_record.comments
+         ,	p_index_record.date_time
+         ,	SDO_GEOMETRY(2001, NULL, SDO_POINT_TYPE(p_index_record.longitude, p_index_record.latitude, NULL), NULL, NULL)
+         ,	p_index_record.meds_job_number
+         ,	p_index_record.meds_cruise_number
+         ,	p_index_record.instrument_code
+         ,	p_index_record.meds_observation_number
+         ,	p_index_record.observed_depth
+         ,	p_index_record.minimum_depth_level
+         ,	p_index_record.maximum_depth_level
+         ,	p_index_record.number_of_depth_levels
+         ,	p_index_record.marsden_square
+         ,	p_index_record.quadrant
+         ,	p_index_record.degree_square
+         ,	p_index_record.duplicate_flag
+         ,	p_index_record.year
+         ,	p_index_record.no_of_comments
+         ,	p_index_record.hood_archive_year
+         ,	p_index_record.string_location
+         ,	p_index_record.latitude
+         ,	p_index_record.longitude
+         ,	p_index_record.meds_ship_number
+         ,	p_index_record.month);        
       elsif p_instr_data_type = 2 then -- Temperature Salinity
-         null;
+         insert into profile_index_ts (
+            comments
+         ,	date_time
+         ,	location
+         ,	meds_job_number
+         ,	meds_cruise_number
+         ,	instrument_code
+         ,	meds_observation_number
+         ,	observed_depth
+         ,	minimum_depth_level
+         ,	maximum_depth_level
+         ,	number_of_depth_levels
+         ,	marsden_square
+         ,	quadrant
+         ,	degree_squre
+         ,	duplicate_flag
+         ,	year
+         ,	no_of_comments
+         ,	hood_archive_year
+         ,	string_location
+         ,	latitude
+         ,	longitude
+         ,	meds_ship_number
+         ,	month)
+         values (
+            p_index_record.comments
+         ,	p_index_record.date_time
+         ,	SDO_GEOMETRY(2001, NULL, SDO_POINT_TYPE(p_index_record.longitude, p_index_record.latitude, NULL), NULL, NULL)
+         ,	p_index_record.meds_job_number
+         ,	p_index_record.meds_cruise_number
+         ,	p_index_record.instrument_code
+         ,	p_index_record.meds_observation_number
+         ,	p_index_record.observed_depth
+         ,	p_index_record.minimum_depth_level
+         ,	p_index_record.maximum_depth_level
+         ,	p_index_record.number_of_depth_levels
+         ,	p_index_record.marsden_square
+         ,	p_index_record.quadrant
+         ,	p_index_record.degree_square
+         ,	p_index_record.duplicate_flag
+         ,	p_index_record.year
+         ,	p_index_record.no_of_comments
+         ,	p_index_record.hood_archive_year
+         ,	p_index_record.string_location
+         ,	p_index_record.latitude
+         ,	p_index_record.longitude
+         ,	p_index_record.meds_ship_number
+         ,	p_index_record.month);
       elsif p_instr_data_type = 3 then -- Sound Velocity    
          insert into profile_index_sv (
              comments
@@ -230,9 +324,142 @@ as
    begin
    
       if    p_instr_data_type = 1 then -- Temperature Only
-         null;         
+         insert into profile_header_tonly (
+         	additional_posn_ref
+         ,	land_check
+         ,	hood_cruise_id
+         ,	meds_observation_number
+         ,	meds_job_number
+         ,	wind_speed
+         ,	wind_dir
+         ,	wet_air_temp
+         ,	dry_air_temp
+         ,	wave_height
+         ,	wave_period
+         ,	bt_sst_ref
+         ,	d_corr
+         ,	t_corr
+         ,	atmospheric_pressure
+         ,	bt_sst_instrument
+         ,	hood_station_number
+         ,	mbt_surface_t_corr
+         ,	water_trans
+         ,	water_colour
+         ,	mbt_type_quality
+         ,	mbt_grade_quality
+         ,	cloud
+         ,	sea_state
+         ,	weather
+         ,	s_scale_code
+         ,	posn_determination
+         ,	posn_accuracy_code
+         ,	data_method
+         ,	data_mode
+         ,	units
+         ,	data_type
+         ,	data_identifier
+         ,	file_filler) 
+         values (
+            p_header_record.additional_posn_ref
+         ,	p_header_record.land_check
+         ,	p_header_record.hood_cruise_id
+         ,	p_header_record.meds_observation_number
+         ,	p_header_record.meds_job_number
+         ,	p_header_record.wind_speed
+         ,	p_header_record.wind_dir
+         ,	p_header_record.wet_air_temp
+         ,	p_header_record.dry_air_temp
+         ,	p_header_record.wave_height
+         ,	p_header_record.wave_period
+         ,	p_header_record.bt_sst_ref
+         ,	p_header_record.d_corr
+         ,	p_header_record.t_corr
+         ,	p_header_record.atmospheric_pressure
+         ,	p_header_record.bt_sst_instrument
+         ,	p_header_record.hood_station_number
+         ,	p_header_record.mbt_surface_t_corr
+         ,	p_header_record.water_trans
+         ,	p_header_record.water_colour
+         ,	p_header_record.mbt_type_quality
+         ,	p_header_record.mbt_grade_quality
+         ,	p_header_record.cloud
+         ,	p_header_record.sea_state
+         ,	p_header_record.weather
+         ,	p_header_record.s_scale_code
+         ,	p_header_record.posn_determination
+         ,	p_header_record.posn_accuracy_code
+         ,	p_header_record.data_method
+         ,	p_header_record.data_mode
+         ,	p_header_record.units
+         ,	p_header_record.data_type
+         ,	p_header_record.data_identifier
+         ,	p_header_record.file_filler);                 
       elsif p_instr_data_type = 2 then -- Temperature Salinity
-         null;
+         insert into profile_header_ts (
+            additional_posn_ref
+         ,	land_check
+         ,	hood_cruise_id
+         ,	meds_observation_number
+         ,	meds_job_number
+         ,	weather
+         ,	wind_dir
+         ,	wind_speed
+         ,	t_corr
+         ,	s_corr
+         ,	dry_air_temp
+         ,	d_corr
+         ,	hood_station_number
+         ,	wet_air_temp
+         ,	sea_state
+         ,	cloud
+         ,	water_colour
+         ,	water_trans
+         ,	wave_period
+         ,	sv_corr
+         ,	atmospheric_pressure
+         ,	wave_height
+         ,	s_scale_code
+         ,	posn_determination
+         ,	posn_accuracy_code
+         ,	data_method
+         ,	data_mode
+         ,	units
+         ,	data_type
+         ,	data_identifier
+         ,	file_filler
+         ) values (
+            p_header_record.additional_posn_ref
+         ,	p_header_record.land_check
+         ,	p_header_record.hood_cruise_id
+         ,	p_header_record.meds_observation_number
+         ,	p_header_record.meds_job_number
+         ,	p_header_record.weather
+         ,	p_header_record.wind_dir
+         ,	p_header_record.wind_speed
+         ,	p_header_record.t_corr
+         ,	p_header_record.s_corr
+         ,	p_header_record.dry_air_temp
+         ,	p_header_record.d_corr
+         ,	p_header_record.hood_station_number
+         ,	p_header_record.wet_air_temp
+         ,	p_header_record.sea_state
+         ,	p_header_record.cloud
+         ,	p_header_record.water_colour
+         ,	p_header_record.water_trans
+         ,	p_header_record.wave_period
+         ,	p_header_record.sv_corr
+         ,	p_header_record.atmospheric_pressure
+         ,	p_header_record.wave_height
+         ,	p_header_record.s_scale_code
+         ,	p_header_record.posn_determination
+         ,	p_header_record.posn_accuracy_code
+         ,	p_header_record.data_method
+         ,	p_header_record.data_mode
+         ,	p_header_record.units
+         ,	p_header_record.data_type
+         ,	p_header_record.data_identifier
+         ,	p_header_record.file_filler
+         );
       elsif p_instr_data_type = 3 then -- Sound Velocity    
          insert into profile_header_sv (
             additional_posn_ref
@@ -306,8 +533,8 @@ as
       p_instr_data_type          in number
    ,  p_job_number               in number
    ,  p_observation_number       in number
-   ,  p_depht_level_count        in number      -- f_row.depthlevelcount
-   ,  p_depth_row_content        in varchar2    -- f_row.row_depth_content
+   ,  p_depht_level_count        in number      -- f_main_row.depthlevelcount
+   ,  p_depth_row_content        in varchar2    -- f_main_row.row_depth_content
    ) 
    is
       type data_record           is record(
@@ -347,9 +574,47 @@ as
          data_rec.sv_code           := substr(v_part,24,1);
 
          if    p_instr_data_type = 1 then -- Temperature Only
-            null;         
+            insert into profile_data_tonly (
+                depth
+            ,   temperature
+            ,   meds_job_number
+            ,   meds_observation_number
+            ,   t_quality
+            ,   d_quality) 
+            values (
+                data_rec.depth
+            ,   data_rec.temperature
+            ,   p_job_number
+            ,   p_observation_number
+            ,   data_rec.t_quality
+            ,   data_rec.d_quality);         
          elsif p_instr_data_type = 2 then -- Temperature Salinity
-            null;
+            insert into profile_data_ts (
+                depth
+            ,   temperature
+            ,   salinity
+            ,   sv_calculated
+            ,   meds_observation_number
+            ,   meds_job_number
+            ,   depth_indicator
+            ,   t_quality
+            ,   sv_quality
+            ,   s_quality
+            ,   d_quality
+            ,   sv_code) 
+            values (
+                data_rec.depth
+            ,   data_rec.temperature
+            ,   data_rec.salinity
+            ,   data_rec.sv_calculated
+            ,   p_observation_number
+            ,   p_job_number
+            ,   data_rec.depth_indicator
+            ,   data_rec.t_quality
+            ,   data_rec.sv_quality
+            ,   data_rec.s_quality
+            ,   data_rec.d_quality
+            ,   data_rec.sv_code);
          elsif p_instr_data_type = 3 then -- Sound Velocity    
             insert into profile_data_sv (
                 depth
@@ -418,13 +683,12 @@ as
           c.data_type
       into 
          v_instr_data_type
-      from stg_file        a
+      from       stg_file            a
       inner join v_stg_serd_row_main b 
-          on b.stg_file = a.stg_file
-      inner join instrument c 
-          on c.serd = b.instrumentcode
+          on b.stg_file  = a.stg_file
+      inner join instrument          c 
+          on c.serd      = b.instrumentcode
       where a.job_number = p_job_number;
-      dbms_output.put_line('v_instr_data_type: ' || v_instr_data_type); 
       
       -- Verify if the job has already been uploaded in the PROFILE tables
       if    v_instr_data_type = 1 then -- Temperature Only
@@ -434,16 +698,16 @@ as
       elsif v_instr_data_type = 3 then -- Sound Velocity       
          v_tbl := 'PROFILE_INDEX_SV';
       end if;
-      
+ 
       execute immediate 'select count(1) from ' || v_tbl || ' where meds_job_number = ' || p_job_number into v_rows;
-      
+
       if v_rows > 0 then
          dbms_output.put_line('Job already loaded'); 
          return;
       end if;
       
       -- Process the SERD upload
-      for f_row in 
+      for f_main_row in 
       (
          select 
             b.*
@@ -457,77 +721,74 @@ as
          v_obs    := v_obs + 1;
          
          -- PROFILE_INDEX 
-         index_rec.date_time					   := to_date(f_row.observationdate || f_row.observationtime,'YYYYMMDDHH24MI');
-         index_rec.year						      := substr(f_row.observationdate,1,4);
-         index_rec.month						   := substr(f_row.observationdate,5,2);        
-         index_rec.observed_depth			   := nullif(f_row.depthtoseabed, '     ');
-         index_rec.minimum_depth_level		   := f_row.OBSERVATIONDEPTHMIN;
-         index_rec.maximum_depth_level		   := f_row.OBSERVATIONDEPTHMAX;
-         index_rec.number_of_depth_levels	   := f_row.DEPTHLEVELCOUNT;
-         index_rec.marsden_square			   := f_row.MARSDENSQUARE;
-         index_rec.quadrant					   := f_row.quadrant;
-         index_rec.degree_square				   := f_row.degreesquare;
-         index_rec.hood_archive_year		   := nullif(f_row.archiveyear, '  ');
-         index_rec.no_of_comments			   := f_row.commentcount;
-         index_rec.comments					   := f_row.commentcontent;
+         index_rec.date_time					   := to_date(f_main_row.observationdate || f_main_row.observationtime,'YYYYMMDDHH24MI');
+         index_rec.year						      := substr(f_main_row.observationdate,1,4);
+         index_rec.month						   := substr(f_main_row.observationdate,5,2);        
+         index_rec.observed_depth			   := nullif(f_main_row.depthtoseabed, '     ');
+         index_rec.minimum_depth_level		   := f_main_row.OBSERVATIONDEPTHMIN;
+         index_rec.maximum_depth_level		   := f_main_row.OBSERVATIONDEPTHMAX;
+         index_rec.number_of_depth_levels	   := f_main_row.DEPTHLEVELCOUNT;
+         index_rec.marsden_square			   := f_main_row.MARSDENSQUARE;
+         index_rec.quadrant					   := f_main_row.quadrant;
+         index_rec.degree_square				   := f_main_row.degreesquare;
+         index_rec.hood_archive_year		   := nullif(f_main_row.archiveyear, '  ');
+         index_rec.no_of_comments			   := f_main_row.commentcount;
+         index_rec.comments					   := f_main_row.commentcontent;
          index_rec.meds_job_number           := p_job_number;
          index_rec.meds_observation_number   := v_obs;
-         index_rec.string_location           := f_row.positiongeo;
-         index_rec.latitude	               := substr(f_row.positiongeo,1,3) + round(substr(f_row.positiongeo,4,4)/600, 4);
-         index_rec.longitude                 := substr(f_row.positiongeo,8,4) + round(substr(f_row.positiongeo,12,4)/600, 4);
+         index_rec.string_location           := f_main_row.positiongeo;
+         index_rec.latitude	               := substr(f_main_row.positiongeo,1,3) + round(substr(f_main_row.positiongeo,4,4)/600, 4);
+         index_rec.longitude                 := substr(f_main_row.positiongeo,8,4) + round(substr(f_main_row.positiongeo,12,4)/600, 4);
+         --index_rec.meds_cruise_number
          
          select ocean
          into index_rec.instrument_code
          from instrument
-         where serd = f_row.instrumentcode;
+         where serd = f_main_row.instrumentcode;
 
-         upload_serd_util.get_or_insert_ship(p_ices_country_code          => f_row.country,
-                                             p_ship_number                => f_row.shipnumber,
-                                             p_ship_number_code           => f_row.shipnumbercode ,       -- might crash if not 0/1?
-                                             p_mias_institute_code        => f_row.institutenumber,
-                                             p_mias_institute_number_code => f_row.institutenumbercode,   -- might crash if not 0/1?
+         upload_serd_util.get_or_insert_ship(p_ices_country_code          => f_main_row.country,
+                                             p_ship_number                => f_main_row.shipnumber,
+                                             p_ship_number_code           => f_main_row.shipnumbercode ,       -- might crash if not 0/1?
+                                             p_mias_institute_code        => f_main_row.institutenumber,
+                                             p_mias_institute_number_code => f_main_row.institutenumbercode,   -- might crash if not 0/1?
                                              p_supplier                   => v_supplier,
                                              o_meds_ship_number           => index_rec.meds_ship_number);
-    
-        
-         --index_rec.meds_cruise_number
 
-         
          insert_profile_index(p_instr_data_type => v_instr_data_type,
                               p_index_record    => index_rec);
                               
          -- PROFILE_HEADER          
-         header_rec.additional_posn_ref		:= f_row.positionreference;
-         header_rec.atmospheric_pressure		:= f_row.atmosphericpressure;
-         header_rec.cloud					      := f_row.cloud;
-         header_rec.data_identifier			   := f_row.dataid;
-         header_rec.data_method				   := f_row.METHOD;
-         header_rec.data_mode				      := f_row.datamode;
-         header_rec.data_type				      := f_row.datatype;
-         header_rec.dry_air_temp				   := f_row.airtemperaturedry; -- digits
-         header_rec.d_corr					      := f_row.depthcorrection;
-         --header_rec.file_filler				   := f_row. ;
-         --header_rec.hood_cruise_id			   := f_row. ;
-         header_rec.hood_station_number		:= f_row.station;
-         header_rec.land_check				   := f_row.landcheck;
+         header_rec.additional_posn_ref		:= f_main_row.positionreference;
+         header_rec.atmospheric_pressure		:= f_main_row.atmosphericpressure;
+         header_rec.cloud					      := f_main_row.cloud;
+         header_rec.data_identifier			   := f_main_row.dataid;
+         header_rec.data_method				   := f_main_row.METHOD;
+         header_rec.data_mode				      := f_main_row.datamode;
+         header_rec.data_type				      := f_main_row.datatype;
+         header_rec.dry_air_temp				   := f_main_row.airtemperaturedry; -- digits
+         header_rec.d_corr					      := f_main_row.depthcorrection;
+         --header_rec.file_filler				   := f_main_row. ;
+         --header_rec.hood_cruise_id			   := f_main_row. ;
+         header_rec.hood_station_number		:= f_main_row.station;
+         header_rec.land_check				   := f_main_row.landcheck;
          header_rec.meds_job_number			   := p_job_number;
          header_rec.meds_observation_number	:= v_obs;
-         header_rec.posn_accuracy_code		   := f_row.positionaccuracy;
-         header_rec.posn_determination		   := f_row.positionmiascode;
-         header_rec.sea_state				      := f_row.seastate;
-         header_rec.sv_corr					   := f_row.soundvelocitycorrection;
-         header_rec.s_corr					      := f_row.salinitycorrection;
-         header_rec.s_scale_code				   := f_row.salinityscalecode;
-         header_rec.t_corr					      := f_row.temperaturecorrection;
-         header_rec.units					      := f_row.units;
-         header_rec.water_colour				   := f_row.watercolour;
-         header_rec.water_trans				   := f_row.watertransparency;
-         header_rec.wave_height				   := f_row.waveheight;
-         header_rec.wave_period				   := f_row.waveperiod;
-         header_rec.weather					   := f_row.weather;
-         header_rec.wet_air_temp				   := f_row.airtemperaturewet;
-         header_rec.wind_dir					   := f_row.winddirection;
-         header_rec.wind_speed				   := f_row.windspeed;	                              
+         header_rec.posn_accuracy_code		   := f_main_row.positionaccuracy;
+         header_rec.posn_determination		   := f_main_row.positionmiascode;
+         header_rec.sea_state				      := f_main_row.seastate;
+         header_rec.sv_corr					   := f_main_row.soundvelocitycorrection;
+         header_rec.s_corr					      := f_main_row.salinitycorrection;
+         header_rec.s_scale_code				   := f_main_row.salinityscalecode;
+         header_rec.t_corr					      := f_main_row.temperaturecorrection;
+         header_rec.units					      := f_main_row.units;
+         header_rec.water_colour				   := f_main_row.watercolour;
+         header_rec.water_trans				   := f_main_row.watertransparency;
+         header_rec.wave_height				   := f_main_row.waveheight;
+         header_rec.wave_period				   := f_main_row.waveperiod;
+         header_rec.weather					   := f_main_row.weather;
+         header_rec.wet_air_temp				   := f_main_row.airtemperaturewet;
+         header_rec.wind_dir					   := f_main_row.winddirection;
+         header_rec.wind_speed				   := f_main_row.windspeed;	                              
       
          insert_profile_header(p_instr_data_type => v_instr_data_type,
                                p_header_record   => header_rec);
@@ -536,8 +797,24 @@ as
          insert_profile_data (p_instr_data_type    => v_instr_data_type,
                               p_job_number         => p_job_number,
                               p_observation_number => v_obs,
-                              p_depht_level_count  => f_row.depthlevelcount,
-                              p_depth_row_content  => f_row.row_depth_content); 
+                              p_depht_level_count  => f_main_row.depthlevelcount,
+                              p_depth_row_content  => f_main_row.row_depth_content); 
+                              
+         -- Continuation records
+         -- For each main record found, get all the continuation records with the same grouping (which is the geographycal position at the end!)
+         for f_cont_row in 
+         (
+            select *
+            from v_stg_serd_row_continuation
+            where stg_file = f_main_row.stg_file
+            and row_group_content = f_main_row.row_group_content
+         )loop
+            insert_profile_data (p_instr_data_type    => v_instr_data_type,
+                                 p_job_number         => p_job_number,
+                                 p_observation_number => v_obs,
+                                 p_depht_level_count  => f_cont_row.depthlevelcount,
+                                 p_depth_row_content  => f_cont_row.row_depth_content); 
+         end loop;
       
       end loop;      
       dbms_output.put_line(systimestamp); 
