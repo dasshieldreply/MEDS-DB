@@ -14,10 +14,6 @@ as
 end upload_serd_util;
 /
 
--- -----------------------------------------------------------------------------------------------------------------
--- PACKAGE BODY
--- -----------------------------------------------------------------------------------------------------------------
-
 CREATE OR REPLACE package body upload_serd_util
 as
    
@@ -83,6 +79,29 @@ as
    ,	wind_dir				      varchar2(2)
    ,	wind_speed				   varchar2(2));
    
+   function parse_decimal
+   (
+         p_input_string    varchar2
+      ,  p_number_decimals number
+   )
+   return number
+   is
+   begin
+      --dbms_output.put_line('p_input_string length: ' || length(trim(p_input_string)));    
+    
+      if length(trim(p_input_string)) is null then
+         return null;
+      end if;
+      
+      if p_number_decimals > length(p_input_string) then
+            dbms_output.put_line('return 2'); 
+         return null;
+      end if;
+      
+      return to_number(substr(p_input_string,1,length(p_input_string) - p_number_decimals) || '.' || substr(p_input_string,length(p_input_string)-(p_number_decimals-1),p_number_decimals));
+   
+   end parse_decimal;
+   
    procedure get_or_insert_ship (
       p_ICES_country_code           in varchar2 
    ,  p_ship_number                 in varchar2
@@ -111,7 +130,7 @@ as
       fetch first row only; -- Hope there is an index usable by this query, so the whole table does not have to be read!
       
       o_meds_ship_number :=  v_meds_ship_number; 
-      dbms_output.put_line('Ship exists ' || v_meds_ship_number); 
+      --dbms_output.put_line('Ship exists ' || v_meds_ship_number); 
       
    exception
       when no_data_found then 
@@ -135,7 +154,7 @@ as
          returning meds_ship_number into v_meds_ship_number;
          
          o_meds_ship_number :=  v_meds_ship_number;  
-         dbms_output.put_line('Ship created ' || v_meds_ship_number); 
+         --dbms_output.put_line('Ship created ' || v_meds_ship_number); 
          
    end get_or_insert_ship;
    
@@ -178,7 +197,7 @@ as
          values (
              p_index_record.comments
          ,   p_index_record.date_time
-         ,   null -- TODO Geospatial field LOCATION
+         ,   SDO_GEOMETRY(2001, NULL, SDO_POINT_TYPE(p_index_record.longitude, p_index_record.latitude, NULL), NULL, NULL)
          ,   p_index_record.meds_job_number
          ,   p_index_record.meds_cruise_number
          ,   p_index_record.instrument_code
@@ -295,37 +314,38 @@ as
          depth	                  number
       ,  depth_indicator	      varchar2(1)
       ,  d_quality	            varchar2(1)
-      ,  salinity             	number
-      ,  sv_calculated	         number
+      ,  salinity             	number   
+      ,  sv_calculated	         number   
       ,  sv_code	               varchar2(1)
       ,  sv_quality	            varchar2(1)
-      ,  sv_recorded	            number
+      ,  sv_recorded	            number   
       ,  s_quality	            varchar2(1)
-      ,  temperature	            number
+      ,  temperature	            number   
       ,  t_quality	            varchar2(1));
       
       data_rec                   data_record;
-      v_part                     varchar2(100);
+      v_part                     varchar2(1000);
       v_offset                   number default 1;
    begin
-      
+       
       for i in 1..p_depht_level_count 
       loop
          v_part   := substr(p_depth_row_content, v_offset, 24);
          v_offset := v_offset + 24;
-                 
+         --dbms_output.put_line('observation ' || p_observation_number || ' ' || v_part); 
+                
          data_rec.depth_indicator   := substr(v_part,1,1); 
          data_rec.depth             := substr(v_part,2,4);
          data_rec.d_quality         := substr(v_part,6,1);
-         data_rec.temperature       := nullif(substr(v_part,7,2) || '.' || substr(v_part,9,2), '    ');     -- Degrees celsius to hundredths
+         data_rec.temperature       := parse_decimal(substr(v_part,7,4), 2);   -- Degrees celsius to hundredths
          data_rec.t_quality         := substr(v_part,11,1);
-         data_rec.salinity          := nullif(substr(v_part,12,2) || '.' || substr(v_part,14,3), '     ');  -- Parts per thousand to thousandths
+         data_rec.salinity          := parse_decimal(substr(v_part,12,5), 3);  -- Parts per thousand to thousandths
          data_rec.s_quality         := substr(v_part,17,1);
-         data_rec.sv_calculated     := nullif(substr(v_part,18,1) || '.' || substr(19,4), '     ');         -- Metres per second to tenths
+         data_rec.sv_calculated     := parse_decimal(substr(v_part,18,5), 1);  -- Metres per second to tenths
          data_rec.sv_recorded       := data_rec.sv_calculated;
          data_rec.sv_quality        := substr(v_part,23,1);
          data_rec.sv_code           := substr(v_part,24,1);
- 
+
          if    p_instr_data_type = 1 then -- Temperature Only
             null;         
          elsif p_instr_data_type = 2 then -- Temperature Salinity
@@ -356,9 +376,9 @@ as
             ,   data_rec.s_quality
             ,   data_rec.sv_code);
          end if;
-         
+       
       end loop;
-      
+       
    end insert_profile_data;
 
    procedure parse_serd_data
@@ -378,6 +398,7 @@ as
       index_rec         index_record;
       header_rec        header_record;
    begin
+      dbms_output. enable (buffer_size => null); 
       dbms_output.put_line(systimestamp); 
       
       select 
@@ -451,6 +472,9 @@ as
          index_rec.comments					   := f_row.commentcontent;
          index_rec.meds_job_number           := p_job_number;
          index_rec.meds_observation_number   := v_obs;
+         index_rec.string_location           := f_row.positiongeo;
+         index_rec.latitude	               := substr(f_row.positiongeo,1,3) + round(substr(f_row.positiongeo,4,4)/600, 4);
+         index_rec.longitude                 := substr(f_row.positiongeo,8,4) + round(substr(f_row.positiongeo,12,4)/600, 4);
          
          select ocean
          into index_rec.instrument_code
@@ -464,10 +488,10 @@ as
                                              p_mias_institute_number_code => f_row.institutenumbercode,   -- might crash if not 0/1?
                                              p_supplier                   => v_supplier,
                                              o_meds_ship_number           => index_rec.meds_ship_number);
-         --index_rec.meds_cruise_number	    
-         --index_rec.string_location		  
-         --index_rec.latitude					     
-         --index_rec.longitude					 
+    
+        
+         --index_rec.meds_cruise_number
+
          
          insert_profile_index(p_instr_data_type => v_instr_data_type,
                               p_index_record    => index_rec);
@@ -569,7 +593,7 @@ as
             --dbms_output.put_line('Line #' || v_line || ' - ' || substr(v_string,1,1000));
          end loop;
       end loop;
-   end parse_serd_file;   
+   end parse_serd_file;  
    
 end upload_serd_util;
 /

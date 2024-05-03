@@ -15,3 +15,5 @@ select DISTINCT
 from all_tab_columns
 where table_name like 'PROFILE_DATA%'
 ORDER BY 1;
+
+select * from profile_index_tonly order by meds_observation_number;

@@ -12,7 +12,7 @@ select a.stg_file_serd_row
 ,      substr(a.row_content,10,1)    filecode 
 ,      substr(a.row_content,12,3)    marsdensquare
 ,      substr(a.row_content,15,2)    degreesquare
-,      substr(a.row_content,17,14)   positiongeo
+,      substr(a.row_content,17,15)   positiongeo
 ,      substr(a.row_content,32,1)    quadrant
 ,      substr(a.row_content,33,1)    positionmiascode
 ,      substr(a.row_content,34,1)    positionaccuracy
