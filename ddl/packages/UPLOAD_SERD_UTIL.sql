@@ -3,13 +3,22 @@ as
 
    procedure parse_serd_file
    (
-      p_job_number   number
+      p_job_number         in number
    );
 
    procedure parse_serd_data
    (
-      p_job_number   number
+      p_job_number         in  number,
+      o_meds_ship_number   out number,
+      o_instrument_code    out number
    ); 
+
+   procedure update_processing_job
+   (
+      p_job_number         in number,
+      p_meds_ship_number   in number,
+      p_instrument_code    in number
+   );    
    
 end upload_serd_util;
 /
@@ -104,6 +113,21 @@ as
    
    end parse_decimal;
    
+   procedure update_processing_job
+   (
+      p_job_number         in number,
+      p_meds_ship_number   in number,
+      p_instrument_code    in number
+   ) is
+   begin
+      
+      update meds_processing_job
+      set meds_ship_number = p_meds_ship_number,
+          instrument_code  = p_instrument_code
+      where job_number =  p_job_number;    
+      
+   end update_processing_job;
+   
    procedure insert_ship (
       p_ICES_country_code           in varchar2 
    ,  p_ship_number                 in varchar2
@@ -115,9 +139,7 @@ as
    ,  o_meds_ship_number            out number
    )
    is
-      v_meds_ship_number      number;
-      v_vessel_name           varchar2(100);
-      v_cnt                   number;
+      v_meds_ship_number            number;
    begin
       
       insert into ship_details (
@@ -633,7 +655,9 @@ as
 
    procedure parse_serd_data
    (
-      p_job_number      in number
+      p_job_number         in  number,
+      o_meds_ship_number   out number,
+      o_instrument_code    out number
    )
    is
 
@@ -753,7 +777,7 @@ as
                                       p_supplier                   => v_supplier,
                                       p_meds_cruise_number         => v_meds_cruise_number,
                                       o_meds_ship_number           => index_rec.meds_ship_number);
-
+                                        
          insert_profile_index(p_instr_data_type => v_instr_data_type,
                               p_index_record    => index_rec);
                               
@@ -818,6 +842,9 @@ as
       
       end loop;      
 
+      o_meds_ship_number  := index_rec.meds_ship_number; 
+      o_instrument_code   := index_rec.instrument_code;
+      
       --logger.set_level      (p_level => 2 );      
       logger.log_information(p_text  => 'End' 
                             ,p_scope => l_scope);    
