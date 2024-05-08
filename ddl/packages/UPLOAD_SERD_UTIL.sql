@@ -1,6 +1,6 @@
 CREATE OR REPLACE package upload_serd_util
 as
-  
+
    procedure parse_serd_file
    (
       p_job_number   number
@@ -16,6 +16,8 @@ end upload_serd_util;
 
 CREATE OR REPLACE package body upload_serd_util
 as
+
+   g_package constant varchar2(31) := $$plsql_unit || '.';
    
    type index_record          is record (
       date_time				   date
@@ -102,12 +104,13 @@ as
    
    end parse_decimal;
    
-   procedure get_or_insert_ship (
+   procedure insert_ship (
       p_ICES_country_code           in varchar2 
    ,  p_ship_number                 in varchar2
    ,  p_ship_number_code            in number   -- to ensure no blank will arrive here from the SERD file
    ,  p_MIAS_institute_code         in varchar2
    ,  p_MIAS_institute_number_code  in number   -- to ensure no blank will arrive here from the SERD file
+   ,  p_meds_cruise_number          in number   -- should come from JOB_TRACKING
    ,  p_supplier                    in varchar2 -- should come from JOB_TRACKING
    ,  o_meds_ship_number            out number
    )
@@ -117,46 +120,28 @@ as
       v_cnt                   number;
    begin
       
-      select meds_ship_number
-      into v_meds_ship_number
-      from ship_details
-      where country_code      = p_ICES_country_code
-      and ices_ship_code      = p_ship_number
-      and ices_ship_flag      = p_ship_number_code
-      and mias_institute_code = p_MIAS_institute_code
-      and mias_institute_flag = p_MIAS_institute_number_code
-      and upper(vessel_name)  = upper(p_supplier)
-      order by meds_ship_number
-      fetch first row only; -- Hope there is an index usable by this query, so the whole table does not have to be read!
+      insert into ship_details (
+         country_code
+      ,  ices_ship_code
+      ,  mias_institute_code
+      ,  mias_institute_flag
+      ,  ices_ship_flag
+      ,  vessel_name
+      ,  meds_cruise_number) 
+      values (
+         p_ICES_country_code
+      ,  p_ship_number
+      ,  p_MIAS_institute_code
+      ,  p_MIAS_institute_number_code 
+      ,  p_ship_number_code
+      ,  upper(p_supplier)
+      ,  p_meds_cruise_number) 
+      returning meds_ship_number into v_meds_ship_number;
       
-      o_meds_ship_number :=  v_meds_ship_number; 
-      --dbms_output.put_line('Ship exists ' || v_meds_ship_number); 
-      
-   exception
-      when no_data_found then 
-      
-         insert into ship_details (
-            country_code
-         ,  ices_ship_code
-         ,  mias_institute_code
-         ,  mias_institute_flag
-         ,  ices_ship_flag
-         ,  vessel_name
-         ,  meds_cruise_number) 
-         values (
-            p_ICES_country_code
-         ,  p_ship_number
-         ,  p_MIAS_institute_code
-         ,  p_MIAS_institute_number_code 
-         ,  p_ship_number_code
-         ,  upper(p_supplier)
-         ,  null) -- TODO
-         returning meds_ship_number into v_meds_ship_number;
-         
-         o_meds_ship_number :=  v_meds_ship_number;  
+      o_meds_ship_number :=  v_meds_ship_number;  
          --dbms_output.put_line('Ship created ' || v_meds_ship_number); 
          
-   end get_or_insert_ship;
+   end insert_ship;
    
    procedure insert_profile_index (
       p_instr_data_type       in number
@@ -652,25 +637,34 @@ as
    )
    is
 
-      v_tbl             varchar2(100);
-      v_supplier        varchar2(50);
-      v_obs             number default 0; -- this will be MEDS_OBSERVATION_NUMBER, one for each record type 2
+      v_tbl                varchar2(100);
+      v_supplier           varchar2(50);
+      v_obs                number default 0; -- this will be MEDS_OBSERVATION_NUMBER, one for each record type 2
+      v_rows               number;
+      v_instr_data_type    number;
+      v_meds_cruise_number number;
 
-      v_rows            number;
-      v_instr_data_type number;
-      v_cruise_number   number;
-
-      index_rec         index_record;
-      header_rec        header_record;
+      index_rec            index_record;
+      header_rec           header_record;
+      
+      l_params             logger.tab_param; 
+      l_scope              constant varchar2(61) := g_package||'parse_serd_data';
    begin
-      dbms_output. enable (buffer_size => null); 
-      dbms_output.put_line(systimestamp); 
+      --dbms_output. enable (buffer_size => null); 
+      --logger.set_level      (p_level   => 8 );      
+      logger.append_param   (p_params  => l_params
+                           , p_name    => 'parse_serd_data'
+                           , p_val     => p_job_number); 
+      logger.log_information(p_text    => 'Start' 
+                            ,p_scope   => l_scope 
+                            ,p_params  => l_params 
+                            ); 
       
       select 
          a.meds_cruise_number
       ,  b.supplier
       into 
-         v_cruise_number
+         v_meds_cruise_number
       ,  v_supplier
       from        meds_processing_job  a
       inner join  job_tracking         b
@@ -702,7 +696,12 @@ as
       execute immediate 'select count(1) from ' || v_tbl || ' where meds_job_number = ' || p_job_number into v_rows;
 
       if v_rows > 0 then
-         dbms_output.put_line('Job already loaded'); 
+         --dbms_output.put_line('Job already loaded'); 
+         logger.log_information(p_text  => 'Job already loaded' 
+                               ,p_scope => l_scope); 
+         --logger.set_level      (p_level => 2 ); 
+         logger.log_information(p_text  => 'End' 
+                               ,p_scope => l_scope);
          return;
       end if;
       
@@ -739,20 +738,21 @@ as
          index_rec.string_location           := f_main_row.positiongeo;
          index_rec.latitude	               := substr(f_main_row.positiongeo,1,3) + round(substr(f_main_row.positiongeo,4,4)/600, 4);
          index_rec.longitude                 := substr(f_main_row.positiongeo,8,4) + round(substr(f_main_row.positiongeo,12,4)/600, 4);
-         --index_rec.meds_cruise_number
+         index_rec.meds_cruise_number        := v_meds_cruise_number;
          
          select ocean
          into index_rec.instrument_code
          from instrument
          where serd = f_main_row.instrumentcode;
 
-         upload_serd_util.get_or_insert_ship(p_ices_country_code          => f_main_row.country,
-                                             p_ship_number                => f_main_row.shipnumber,
-                                             p_ship_number_code           => f_main_row.shipnumbercode ,       -- might crash if not 0/1?
-                                             p_mias_institute_code        => f_main_row.institutenumber,
-                                             p_mias_institute_number_code => f_main_row.institutenumbercode,   -- might crash if not 0/1?
-                                             p_supplier                   => v_supplier,
-                                             o_meds_ship_number           => index_rec.meds_ship_number);
+         upload_serd_util.insert_ship(p_ices_country_code          => f_main_row.country,
+                                      p_ship_number                => f_main_row.shipnumber,
+                                      p_ship_number_code           => f_main_row.shipnumbercode ,       -- might crash if not 0/1?
+                                      p_mias_institute_code        => f_main_row.institutenumber,
+                                      p_mias_institute_number_code => f_main_row.institutenumbercode,   -- might crash if not 0/1?
+                                      p_supplier                   => v_supplier,
+                                      p_meds_cruise_number         => v_meds_cruise_number,
+                                      o_meds_ship_number           => index_rec.meds_ship_number);
 
          insert_profile_index(p_instr_data_type => v_instr_data_type,
                               p_index_record    => index_rec);
@@ -817,8 +817,16 @@ as
          end loop;
       
       end loop;      
-      dbms_output.put_line(systimestamp); 
+
+      --logger.set_level      (p_level => 2 );      
+      logger.log_information(p_text  => 'End' 
+                            ,p_scope => l_scope);    
       
+      exception 
+         when others then 
+            logger.log_error('Unhandled exception', l_scope, null, l_params); 
+            --logger.set_level(p_level   => 2 ); 
+            
    end parse_serd_data;  
 
    procedure parse_serd_file
@@ -832,7 +840,15 @@ as
       v_len       number;
       v_read      number;
       v_string    varchar2(32000);
+      l_params    logger.tab_param; 
+      l_scope     constant varchar2(61) default 'SERD Utils';
    begin
+   
+      logger.append_param (p_params => l_params, p_name => 'parse_serd_file', p_val => p_job_number); 
+      logger.log_information(p_text    => 'Start' 
+                            ,p_scope   => l_scope 
+                            ,p_params  => l_params 
+                            ); 
       
       for t_stg_file in (select stg_file, content from stg_file where job_number = p_job_number)
       loop
@@ -870,7 +886,15 @@ as
             --dbms_output.put_line('Line #' || v_line || ' - ' || substr(v_string,1,1000));
          end loop;
       end loop;
-   end parse_serd_file;  
+      
+      logger.log_information(p_text  => 'End' 
+                            ,p_scope => l_scope 
+                            );    
+      
+      exception 
+         when others then 
+            logger.log_error('Unhandled exception', l_scope, null, l_params); 
+      end parse_serd_file;  
    
 end upload_serd_util;
 /
