@@ -170,27 +170,43 @@ as
    is
       v_meds_ship_number            number;
    begin
+   
+      select meds_ship_number
+      into v_meds_ship_number
+      from ship_details
+      where country_code      = p_ICES_country_code
+      and ices_ship_code      = p_ship_number
+      and ices_ship_flag      = p_ship_number_code
+      and mias_institute_code = p_MIAS_institute_code
+      and mias_institute_flag = p_MIAS_institute_number_code
+      and upper(vessel_name)  = upper(p_supplier)
+      and meds_cruise_number  = p_meds_cruise_number;
       
-      insert into ship_details (
-         country_code
-      ,  ices_ship_code
-      ,  mias_institute_code
-      ,  mias_institute_flag
-      ,  ices_ship_flag
-      ,  vessel_name
-      ,  meds_cruise_number) 
-      values (
-         p_ICES_country_code
-      ,  p_ship_number
-      ,  p_MIAS_institute_code
-      ,  p_MIAS_institute_number_code 
-      ,  p_ship_number_code
-      ,  upper(p_supplier)
-      ,  p_meds_cruise_number) 
-      returning meds_ship_number into v_meds_ship_number;
+      o_meds_ship_number :=  v_meds_ship_number; 
       
-      o_meds_ship_number :=  v_meds_ship_number;  
-         --dbms_output.put_line('Ship created ' || v_meds_ship_number); 
+   exception
+      when no_data_found then 
+      
+         insert into ship_details (
+            country_code
+         ,  ices_ship_code
+         ,  mias_institute_code
+         ,  mias_institute_flag
+         ,  ices_ship_flag
+         ,  vessel_name
+         ,  meds_cruise_number) 
+         values (
+            p_ICES_country_code
+         ,  p_ship_number
+         ,  p_MIAS_institute_code
+         ,  p_MIAS_institute_number_code 
+         ,  p_ship_number_code
+         ,  upper(p_supplier)
+         ,  p_meds_cruise_number) 
+         returning meds_ship_number into v_meds_ship_number;
+         
+         o_meds_ship_number :=  v_meds_ship_number;  
+            --dbms_output.put_line('Ship created ' || v_meds_ship_number); 
          
    end insert_ship;
    
@@ -785,7 +801,7 @@ as
          index_rec.degree_square				   := f_main_row.degreesquare;
          index_rec.hood_archive_year		   := nullif(f_main_row.archiveyear, '  ');
          index_rec.no_of_comments			   := f_main_row.commentcount;
-         index_rec.comments					   := f_main_row.commentcontent;
+         index_rec.comments					   := trim(f_main_row.commentcontent);
          index_rec.meds_job_number           := p_job_number;
          index_rec.meds_observation_number   := v_obs;
          index_rec.string_location           := f_main_row.positiongeo;
@@ -807,9 +823,6 @@ as
                                       p_meds_cruise_number         => v_meds_cruise_number,
                                       o_meds_ship_number           => index_rec.meds_ship_number);
                                         
-         insert_profile_index(p_instr_data_type => v_instr_data_type,
-                              p_index_record    => index_rec);
-                              
          -- PROFILE_HEADER          
          header_rec.additional_posn_ref		:= f_main_row.positionreference;
          header_rec.atmospheric_pressure		:= f_main_row.atmosphericpressure;
@@ -867,7 +880,13 @@ as
                                  p_observation_number => v_obs,
                                  p_depht_level_count  => f_cont_row.depthlevelcount,
                                  p_depth_row_content  => f_cont_row.row_depth_content); 
+                                 
+            index_rec.number_of_depth_levels := index_rec.number_of_depth_levels + f_cont_row.depthlevelcount;
          end loop;
+         
+         -- Insert PROFILE_INDEX after all the continuation rows depth level were accounted for
+         insert_profile_index(p_instr_data_type => v_instr_data_type,
+                              p_index_record    => index_rec);
       
       end loop;      
 

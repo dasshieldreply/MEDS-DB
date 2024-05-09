@@ -890,6 +890,7 @@ as
       execute immediate 'select count(1) from ' || v_tbl || ' where meds_job_number = ' || p_job_number into v_cnt;
       
       if v_cnt > 0 then
+         dbms_output.put_line('Job already submitted');
          return;
       end if;
       
