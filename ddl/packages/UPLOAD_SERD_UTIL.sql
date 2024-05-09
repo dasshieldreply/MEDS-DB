@@ -20,6 +20,11 @@ as
       p_instrument_code    in number
    );    
    
+   function only_one_instrument
+   (
+      p_job_number           in number
+   ) return boolean;
+   
 end upload_serd_util;
 /
 
@@ -89,6 +94,26 @@ as
    ,	wet_air_temp			   varchar2(4)
    ,	wind_dir				      varchar2(2)
    ,	wind_speed				   varchar2(2));
+   
+   function only_one_instrument
+   (
+         p_job_number           in number
+   )
+   return boolean
+   is
+      v_cnt number default 0;
+   begin
+
+      select count(distinct b.instrumentcode)
+      into v_cnt
+      from stg_file a
+      inner join v_stg_serd_row_main b
+         on b.stg_file = a.stg_file
+      where a.job_number = p_job_number;
+      
+      return (v_cnt = 1);
+   
+   end only_one_instrument;
    
    function parse_decimal
    (
@@ -695,7 +720,7 @@ as
          on b.meic_number  = a.meic_number
       where a.job_number   = p_job_number;
       
-      -- Find which type of SERD is being uploaded getting the data type from the instrument codes in the file (usually there is more than one instrument per SERD file)
+      -- Find which type of SERD is being uploaded getting the data type from the instrument codes in the file (should not have more than one instrument per job upload)
       -- It will crash if mixed data types are in the same file. Refactoring should consider custom exceptions
       select distinct 
           c.data_type
@@ -867,11 +892,14 @@ as
       v_len       number;
       v_read      number;
       v_string    varchar2(32000);
-      l_params    logger.tab_param; 
-      l_scope     constant varchar2(61) default 'SERD Utils';
+      
+      l_params             logger.tab_param; 
+      l_scope              constant varchar2(61) := g_package||'parse_serd_file';
    begin
    
-      logger.append_param (p_params => l_params, p_name => 'parse_serd_file', p_val => p_job_number); 
+      logger.append_param   (p_params  => l_params
+                           , p_name    => 'parse_serd_file'
+                           , p_val     => p_job_number); 
       logger.log_information(p_text    => 'Start' 
                             ,p_scope   => l_scope 
                             ,p_params  => l_params 
@@ -915,8 +943,7 @@ as
       end loop;
       
       logger.log_information(p_text  => 'End' 
-                            ,p_scope => l_scope 
-                            );    
+                            ,p_scope => l_scope);     
       
       exception 
          when others then 
