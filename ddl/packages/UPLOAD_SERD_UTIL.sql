@@ -20,7 +20,7 @@ as
       p_instrument_code    in number
    );    
    
-   function only_one_instrument
+   function only_one_instrument_data_type
    (
       p_job_number           in number
    ) return boolean;
@@ -95,7 +95,7 @@ as
    ,	wind_dir				      varchar2(2)
    ,	wind_speed				   varchar2(2));
    
-   function only_one_instrument
+   function only_one_instrument_data_type
    (
          p_job_number           in number
    )
@@ -104,16 +104,20 @@ as
       v_cnt number default 0;
    begin
 
-      select count(distinct b.instrumentcode)
-      into v_cnt
-      from stg_file a
-      inner join v_stg_serd_row_main b
-         on b.stg_file = a.stg_file
+      select 
+         count(distinct c.data_type)
+      into 
+         v_cnt
+      from        stg_file             a
+      inner join  v_stg_serd_row_main  b
+         on b.stg_file   = a.stg_file
+      inner join  instrument           c
+         on c.serd       = b.instrumentcode      
       where a.job_number = p_job_number;
       
       return (v_cnt = 1);
    
-   end only_one_instrument;
+   end only_one_instrument_data_type;
    
    function parse_decimal
    (

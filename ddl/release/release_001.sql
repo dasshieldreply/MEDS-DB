@@ -37,7 +37,7 @@
          --  Create new sequence for meds_processing_job
          execute immediate
             'create sequence job_number_sequence minvalue 1 maxvalue 999999999999999999999999999 increment by 1 start with ' ||
-            v_nbr ||
+            v_nbr + 1 ||
             ' nocache  noorder  nocycle  nokeep  noscale  global';
       end;
       /
@@ -51,7 +51,7 @@
          -- Create new sequence for meds_ship_number
          execute immediate
             'create sequence meds_ship_number_sequence minvalue 1 maxvalue 999999999999999999999999999 increment by 1 start with ' ||
-            v_nbr ||
+            v_nbr + 1 ||
             ' nocache  noorder  nocycle  nokeep  noscale  global';
       end;
       /
@@ -66,7 +66,7 @@
          -- Create new sequence for meds_ship_number
          execute immediate
             'create sequence meds_cruise_number_sequence minvalue 1 maxvalue 999999999999999999999999999 increment by 1 start with ' ||
-            v_nbr ||
+            v_nbr + 1 ||
             ' nocache  noorder  nocycle  nokeep  noscale  global';
       end;
       /
