@@ -15,11 +15,28 @@ order by table_name,field_position;
 
 ---------------------------------------------------------------------------------------------------------------
 
-select * from bioluminescence_observation where meds_job_number = 102624 ORDER BY 3;
-select * from bioluminescence_data where meds_job_number = 102624;
+select * from bioluminescence_observation where meds_job_number = 102624 order by meds_observation_number;
+select * from bioluminescence_data where meds_job_number = 102624 order by meds_observation_number;
 
 
 delete from bioluminescence_observation where meds_job_number = 102591;
 delete from bioluminescence_data where meds_job_number = 102591;
 
+--42.15188
 
+select latitude,
+   trunc(latitude,0),
+   abs(mod(latitude,1)) * 60,
+   mod(abs(mod(latitude,1)) * 3600, 60),
+   trunc(mod(abs(mod(latitude,1)) * 3600, 60))
+from bioluminescence_observation 
+where meds_job_number = 102624 
+and meds_observation_number = 1;
+/*
+37.24.96N   => 37.426667
+015.55.18E  => 15.921667
+
+D = 42
+M = int(0.15188 x 60)
+S = 0.15188 x 3600 mod 60
+*/
