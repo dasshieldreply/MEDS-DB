@@ -1,19 +1,19 @@
-DECLARE
-   P_DD_COORDINATE    NUMBER;
-   P_COORDINATE_TYPE  VARCHAR2(10);
-   v_Return MEDSADMIN.GEOSPATIAL_UTIL.DMS_COORDINATE_TP;
-BEGIN
-   P_DD_COORDINATE    := 14.1693333333;
-   P_COORDINATE_TYPE  := 'latitude';
+declare
+   p_dd_coordinate    number;
+   p_coordinate_type  varchar2(10);
+   v_return medsadmin.geospatial_util.dms_coordinate_tp;
+begin
+   p_dd_coordinate    := -14.173889;
+   p_coordinate_type  := 'latitude';
    
-   v_Return := GEOSPATIAL_UTIL.DD_TO_DMS(
-      P_DD_COORDINATE   => P_DD_COORDINATE,
-      P_COORDINATE_TYPE => P_COORDINATE_TYPE
+   v_return := geospatial_util.dd_to_dms(
+      p_dd_coordinate   => p_dd_coordinate,
+      p_coordinate_type => p_coordinate_type
    );
 
-   DBMS_OUTPUT.PUT_LINE(v_Return.degrees);
-   DBMS_OUTPUT.PUT_LINE(v_Return.minutes);
-   DBMS_OUTPUT.PUT_LINE(v_Return.seconds);
-   DBMS_OUTPUT.PUT_LINE(v_Return.cardinal);
+   dbms_output.put_line(v_return.degrees);
+   dbms_output.put_line(v_return.minutes);
+   dbms_output.put_line(v_return.seconds);
+   dbms_output.put_line(v_return.cardinal);
    
-END;
+end;

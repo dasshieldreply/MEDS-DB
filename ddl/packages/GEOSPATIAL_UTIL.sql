@@ -131,9 +131,9 @@ as
             end if;
         end if;
 
-        v_dms_coordinate.degrees    := v_d;
-        v_dms_coordinate.minutes    := v_m;
-        v_dms_coordinate.seconds    := v_s;
+        v_dms_coordinate.degrees  := v_d;
+        v_dms_coordinate.minutes  := v_m;
+        v_dms_coordinate.seconds  := v_s;
         v_dms_coordinate.cardinal := v_h;
 
         return v_dms_coordinate;
@@ -154,7 +154,7 @@ as
 
         if upper(p_coordinate_type) member of coordinate_type_const then
             v_d  := trunc(p_dd_coordinate);
-            v_dm := abs(mod(p_dd_coordinate,1)) * 60;
+            v_dm := round(abs(mod(p_dd_coordinate,1)) * 60, 3);
 
             if upper(p_coordinate_type) = 'LATITUDE' then
                 if v_d < 0 then

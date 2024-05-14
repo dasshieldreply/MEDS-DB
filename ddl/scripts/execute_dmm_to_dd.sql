@@ -4,7 +4,7 @@ declare
 begin
    v_dmm_coordinate.degrees         := 27;
    v_dmm_coordinate.decimal_minutes := 20.45;
-   v_dmm_coordinate.hemisphere      := 'e';
+   v_dmm_coordinate.cardinal      := 'e';
    
    v_coordinate := geospatial_util.dmm_to_dd( p_dmm_coordinate => v_dmm_coordinate);
 
