@@ -1,8 +1,8 @@
 CREATE OR REPLACE package geospatial_util
 as
-    subtype hemisphere_sb               is char(1);
-    type    hemisphere_tb               is table of hemisphere_sb;
-    hemisphere_const        constant    hemisphere_tb := hemisphere_tb('N','S','E','W');
+    subtype cardinal_sb               is char(1);
+    type    cardinal_tb               is table of cardinal_sb;
+    cardinal_const        constant    cardinal_tb := cardinal_tb('N','S','E','W');
 
     subtype coordinate_type_sb          is varchar2(10);
     type    coordinate_type_tb          is table of coordinate_type_sb;
@@ -13,37 +13,41 @@ as
         degrees             number
     ,	minutes             number
     ,	seconds             number
-    ,	hemisphere          hemisphere_sb
+    ,	cardinal            cardinal_sb
     ); 
 
     type dmm_coordinate_tp  is record 
     (
         degrees             number
     ,	decimal_minutes     number
-    ,	hemisphere          hemisphere_sb
+    ,	cardinal            cardinal_sb
     ); 
 
    function dms_to_dd
    (
         p_dms_coordinate    in dms_coordinate_tp
-   ) return number;
+   ) 
+   return number;
 
     function dmm_to_dd
    (
         p_dmm_coordinate    in dmm_coordinate_tp
-   ) return number;
+   ) 
+        return number;
 
    function dd_to_dms
    (
         p_dd_coordinate     in number
     ,   p_coordinate_type   in coordinate_type_sb   
-   ) return dms_coordinate_tp;
+   ) 
+        return dms_coordinate_tp;
 
    function dd_to_dmm
    (
         p_dd_coordinate     in number
     ,   p_coordinate_type   in coordinate_type_sb    
-   ) return dmm_coordinate_tp;
+   ) 
+        return dmm_coordinate_tp;
 
 end geospatial_util;
 /
@@ -63,10 +67,10 @@ as
         v_coordinate    number default 0;
     begin
 
-        if upper(p_dms_coordinate.hemisphere) member of hemisphere_const then
+        if upper(p_dms_coordinate.cardinal) member of cardinal_const then
             v_coordinate := p_dms_coordinate.degrees + round(p_dms_coordinate.minutes / 60, 6) + round(p_dms_coordinate.seconds / 3600, 6);
 
-            if upper(p_dms_coordinate.hemisphere) in ('S','W') then
+            if upper(p_dms_coordinate.cardinal) in ('S','W') then
                 v_coordinate := v_coordinate * -1;
             end if;
         end if;
@@ -82,10 +86,10 @@ as
     is
         v_coordinate    number default 0;    
     begin
-        if upper(p_dmm_coordinate.hemisphere) member of hemisphere_const then
+        if upper(p_dmm_coordinate.cardinal) member of cardinal_const then
             v_coordinate := p_dmm_coordinate.degrees + round(p_dmm_coordinate.decimal_minutes / 60, 6);
 
-            if upper(p_dmm_coordinate.hemisphere) in ('S','W') then
+            if upper(p_dmm_coordinate.cardinal) in ('S','W') then
                 v_coordinate := v_coordinate * -1;
             end if;
         end if;
@@ -103,7 +107,7 @@ as
         v_d                 number default 0;
         v_m                 number default 0;
         v_s                 number default 0;
-        v_h                 hemisphere_sb;
+        v_h                 cardinal_sb;
     begin
         if upper(p_coordinate_type) member of coordinate_type_const then
             v_d := trunc(p_dd_coordinate);
@@ -130,7 +134,7 @@ as
         v_dms_coordinate.degrees    := v_d;
         v_dms_coordinate.minutes    := v_m;
         v_dms_coordinate.seconds    := v_s;
-        v_dms_coordinate.hemisphere := v_h;
+        v_dms_coordinate.cardinal := v_h;
 
         return v_dms_coordinate;
 
@@ -142,8 +146,38 @@ as
     ,   p_coordinate_type   in coordinate_type_sb 
     ) return dmm_coordinate_tp
     is
+        v_dmm_coordinate    dmm_coordinate_tp;
+        v_d                 number default 0;
+        v_dm                number default 0;
+        v_h                 cardinal_sb;
     begin
-        return null;
+
+        if upper(p_coordinate_type) member of coordinate_type_const then
+            v_d  := trunc(p_dd_coordinate);
+            v_dm := abs(mod(p_dd_coordinate,1)) * 60;
+
+            if upper(p_coordinate_type) = 'LATITUDE' then
+                if v_d < 0 then
+                    v_d := v_d * -1;
+                    v_h := 'S';
+                else
+                    v_h := 'N';
+                end if;
+            else
+                if v_d < 0 then
+                    v_d := v_d * -1;
+                    v_h := 'W';
+                else
+                    v_h := 'E';
+                end if;            
+            end if;
+        end if;
+
+        v_dmm_coordinate.degrees            := v_d;
+        v_dmm_coordinate.decimal_minutes    := v_dm;
+        v_dmm_coordinate.cardinal           := v_h;
+
+        return v_dmm_coordinate;
     end dd_to_dmm;
 
 end geospatial_util;
