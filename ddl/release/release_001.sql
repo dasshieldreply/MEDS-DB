@@ -25,6 +25,15 @@
 --    Update content new field
 --       All job_tracking records with job types 1 (SV Probes), 2 (CTD)and 8(XBT) are SERD (job_data_type = 'S') (confirm other codes)
 --       All ot
+-- -------------------------------------------------------------------------------------------
+		alter table job_tracking 
+		modify(
+			assigned 			varchar2(64)
+		,	databased_name		varchar2(64)
+		,	qa_processing_name	varchar2(64)
+		,	validated_name		varchar2(64)
+		);
+		/
 -- ------------------------------------------------------------------------------------------------------------------
 -- Prepare sequences, so they are not dependant of application code anymore
 --
