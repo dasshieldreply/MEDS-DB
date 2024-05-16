@@ -66,16 +66,22 @@ as
 
     function dms_to_dd
     (
-          p_degrees     in number
-      ,   p_minutes     in number
-      ,	 p_seconds     in number
-      ,	 p_cardinal    in varchar2
+        p_degrees       in number
+    ,   p_minutes       in number
+    ,	p_seconds       in number
+    ,	p_cardinal      in varchar2
     ) return number
     is
         v_coordinate    number default 999;
     begin
 
-        if upper(p_cardinal) member of cardinal_const then
+        if (upper(p_cardinal) member of cardinal_const) 
+        and ((upper(p_cardinal) in ('S','N') and (p_degrees between 0 and 90)) 
+            or 
+             (upper(p_cardinal) in ('E','W') and (p_degrees between 0 and 180))) 
+        and (p_minutes between 0 and 60) 
+        and (p_seconds between 0 and 60) 
+        then
             v_coordinate := p_degrees + round(p_minutes / 60, 6) + round(p_seconds / 3600, 6);
 
             if upper(p_cardinal) in ('S','W') then
@@ -84,19 +90,23 @@ as
         end if;
 
         return v_coordinate;
-
     end dms_to_dd;
 
     function dmm_to_dd
     (
          p_degrees            in number
-      ,	p_decimal_minutes    in number
+      ,	 p_decimal_minutes    in number
       ,  p_cardinal           in varchar2
     ) return number
     is
         v_coordinate          number default 999;    
     begin
-        if upper(p_cardinal) member of cardinal_const then
+        if (upper(p_cardinal) member of cardinal_const) 
+        and ((upper(p_cardinal) in ('S','N') and (p_degrees between 0 and 90)) 
+            or 
+            (upper(p_cardinal) in ('E','W') and (p_degrees between 0 and 180))) 
+        and (p_decimal_minutes between 0 and 60) 
+        then
             v_coordinate := p_degrees + round(p_decimal_minutes / 60, 6);
 
             if upper(p_cardinal) in ('S','W') then

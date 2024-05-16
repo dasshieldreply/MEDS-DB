@@ -5,7 +5,7 @@ begin
    ( 
       p_degrees  => 14,
       p_minutes  => 27,
-      p_seconds  => 1,
+      p_seconds  => 100,
       p_cardinal => 's'
    );
 
