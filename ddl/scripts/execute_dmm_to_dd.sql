@@ -1,13 +1,11 @@
 declare
-  v_dmm_coordinate geospatial_util.dmm_coordinate_tp;
   v_coordinate number;
-begin
-   v_dmm_coordinate.degrees         := 27;
-   v_dmm_coordinate.decimal_minutes := 20.45;
-   v_dmm_coordinate.cardinal      := 'e';
-   
-   v_coordinate := geospatial_util.dmm_to_dd( p_dmm_coordinate => v_dmm_coordinate);
-
+begin   
+   v_coordinate := geospatial_util.dmm_to_dd
+   ( 
+      p_degrees  => 14,
+      p_decimal_minutes  => 27.45,
+      p_cardinal => 's'
+   );
    DBMS_OUTPUT.PUT_LINE('Coordinate = ' || v_coordinate);
-
 end;
