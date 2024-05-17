@@ -3,17 +3,22 @@ as
 
    procedure delete_stg_file_from_job
    (
-      p_job_number   number
+      p_job_number   in number
+   );
+
+   procedure delete_stg_file
+   (
+      p_stg_file   in number
    );
    
    procedure parse_csv_file
    (
-      p_job_number   number
+      p_job_number   in number
    );
 
    procedure parse_csv_data
    (
-      p_job_number   number
+      p_job_number   in number
    );   
        
 end upload_csv_util;
@@ -28,7 +33,7 @@ as
 
    procedure parse_datatype_front_satellite
    (
-      p_job_number   number
+      p_job_number   in number
    )
    is
       v_stm    varchar2(4000);
@@ -189,7 +194,7 @@ as
 
    procedure parse_datatype_adcp
    (
-      p_job_number   number
+      p_job_number   in number
    )
    is
       v_obs number default 0;
@@ -358,7 +363,7 @@ as
 
    procedure parse_datatype_omni_ambient
    (
-      p_job_number   number
+      p_job_number   in number
    )   
    is
    begin
@@ -580,7 +585,7 @@ as
 
    procedure parse_datatype_glider
    (
-      p_job_number   number
+      p_job_number   in number
    )
    is
       v_stm          varchar2(4000);
@@ -687,7 +692,7 @@ as
 
    procedure parse_datatype_aquapack
    (
-      p_job_number   number
+      p_job_number   in number
    )   
    is
    begin
@@ -765,7 +770,7 @@ as
 
    procedure parse_datatype_biomass
    (
-      p_job_number   number
+      p_job_number   in number
    )   
    is
    begin
@@ -853,7 +858,7 @@ as
 
    procedure parse_csv_data
    (
-      p_job_number    number
+      p_job_number      in number
    )
    is
       v_data_type       varchar2(50);
@@ -915,7 +920,7 @@ as
       
    procedure parse_csv_file
    (
-      p_job_number   number
+      p_job_number   in number
    )
    is
       v_stg_file     number;
@@ -974,7 +979,7 @@ as
 
    procedure delete_stg_file_from_job
    (
-      p_job_number     number
+      p_job_number     in number
    )
    is
    begin
@@ -991,6 +996,17 @@ as
       
       delete from stg_file where job_number = p_job_number;
    end delete_stg_file_from_job;
+
+   procedure delete_stg_file
+   (
+      p_stg_file     in number
+   )
+   is
+   begin
+      delete from stg_file_serd_row where stg_file = p_stg_file;
+      delete from stg_file_csv_row  where stg_file = p_stg_file;
+      delete from stg_file          where stg_file = p_stg_file;
+   end delete_stg_file;
 
 end upload_csv_util;
 /
