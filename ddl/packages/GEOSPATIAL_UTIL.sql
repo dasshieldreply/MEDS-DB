@@ -1,11 +1,6 @@
 CREATE OR REPLACE package geospatial_util
 as
-   subtype cardinal_sb              is char(1);
-   type    cardinal_tb              is table of cardinal_sb;
-   cardinal_const          constant cardinal_tb := cardinal_tb('N','S','E','W');
-   
-   subtype coordinate_type_sb       is varchar2(10);
-   type    coordinate_type_tb       is table of coordinate_type_sb;
+   type    coordinate_type_tb       is table of varchar2(10);
    coordinate_type_const   constant coordinate_type_tb := coordinate_type_tb('LATITUDE','LONGITUDE');
    
    type dms_coordinate_tp  is record 
@@ -13,16 +8,16 @@ as
       degrees              number
    ,  minutes              number
    ,	seconds              number
-   ,	cardinal             cardinal_sb
+   ,	cardinal             char(1)
    ); 
    
    type dmm_coordinate_tp  is record 
    (
       degrees              number
    ,	decimal_minutes      number
-   ,  cardinal             cardinal_sb
+   ,  cardinal             char(1)
    ); 
-
+    -- -- Converts DMS coordinates (degrees, minutes, seconds, cardinal) to DD (decimals), returning 999 if parameters are not valid coordinates
    function dms_to_dd
    (
        p_degrees           in number
@@ -31,7 +26,7 @@ as
    ,	 p_cardinal          in varchar2
    ) 
    return number;
-   
+     -- -- Converts DMM coordinates (degrees, decimal minutes, cardinal) to DD (decimals), returning 999 if parameters are not valid coordinates  
    function dmm_to_dd
    (
        p_degrees           in number
@@ -39,18 +34,18 @@ as
    ,   p_cardinal          in varchar2
    ) 
    return number;
-   
+    -- -- Converts DD (decimals, lat/long) coordinates to DMS (degrees, minutes, seconds, cardinal), returning 999 if parameters are not valid latitude or longitude   
    function dd_to_dms
    (
        p_dd_coordinate     in number
-    ,  p_coordinate_type   in coordinate_type_sb   
+    ,  p_coordinate_type   in varchar2 
    ) 
    return dms_coordinate_tp;
-   
+    -- -- Converts DD (decimals, lat/long) coordinates to DMM (degrees, decimal minutes, cardinal), returning 999 if parameters are not valid latitude or longitude 
    function dd_to_dmm
    (
        p_dd_coordinate     in number
-    ,  p_coordinate_type   in coordinate_type_sb    
+    ,  p_coordinate_type   in varchar2
    ) 
    return dmm_coordinate_tp;
 
@@ -63,6 +58,9 @@ end geospatial_util;
 
 CREATE OR REPLACE package body geospatial_util
 as
+
+   type    cardinal_tb              is table of char(1);
+   cardinal_const          constant cardinal_tb := cardinal_tb('N','S','E','W');
 
     function dms_to_dd
     (
@@ -120,14 +118,14 @@ as
     function dd_to_dms
     (
         p_dd_coordinate     in number
-    ,   p_coordinate_type   in coordinate_type_sb  
+    ,   p_coordinate_type   in varchar2
     ) return dms_coordinate_tp   
     is
         v_dms_coordinate    dms_coordinate_tp;
         v_d                 number default 0;
         v_m                 number default 0;
         v_s                 number default 0;
-        v_h                 cardinal_sb;
+        v_h                 char(1);
     begin
         if upper(p_coordinate_type) member of coordinate_type_const then
             v_d := trunc(p_dd_coordinate);
@@ -163,13 +161,13 @@ as
     function dd_to_dmm
     (
         p_dd_coordinate     in number
-    ,   p_coordinate_type   in coordinate_type_sb 
+    ,   p_coordinate_type   in varchar2
     ) return dmm_coordinate_tp
     is
         v_dmm_coordinate    dmm_coordinate_tp;
         v_d                 number default 0;
         v_dm                number default 0;
-        v_h                 cardinal_sb;
+        v_h                 char(1);
     begin
 
         if upper(p_coordinate_type) member of coordinate_type_const then
