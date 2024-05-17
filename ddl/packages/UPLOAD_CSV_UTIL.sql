@@ -205,7 +205,7 @@ as
        for f_csv_row in 
       (
          select 
-            SDO_GEOMETRY(2001, null, SDO_POINT_TYPE(b.col006, b.col005, NULL), NULL, NULL) as location -- Longitude, latitude
+            SDO_GEOMETRY(2001, 4326, SDO_POINT_TYPE(b.col006, b.col005, NULL), NULL, NULL) as location -- Longitude, latitude
          ,  b.col006	as longitude
          ,  b.col005	as latitude
          ,  to_date(b.col003, 'dd/mm/yyyy hh24:mi:ss')   as date_recorded
@@ -380,7 +380,7 @@ as
       select 
          b.col006
       ,  b.col005
-      ,  SDO_GEOMETRY(2001, null, SDO_POINT_TYPE(b.col005, b.col006, NULL), NULL, NULL) -- Longitude, latitude
+      ,  SDO_GEOMETRY(2001, 4326, SDO_POINT_TYPE(b.col005, b.col006, NULL), NULL, NULL) -- Longitude, latitude
       ,  to_date(b.col001 || ' ' || b.col002, 'dd/mm/yyyy hh24:mi:ss') 
       ,  row_number() over(order by b.col001, b.col002, b.col005, b.col006)
       ,  p_job_number
@@ -787,7 +787,7 @@ as
       select 
          row_number() over(order by b.col001, b.col002, b.col003, b.col004)
       ,  p_job_number
-      ,  SDO_GEOMETRY(2001, null, SDO_POINT_TYPE(b.col004, b.col003, NULL), NULL, NULL) -- Longitude, latitude
+      ,  SDO_GEOMETRY(2001, 4326, SDO_POINT_TYPE(b.col004, b.col003, NULL), NULL, NULL) -- Longitude, latitude
       ,  to_date(b.col001 || ' ' || b.col002, 'dd/mm/yyyy hh24:mi:ss') 
       ,  b.col003
       ,  b.col004

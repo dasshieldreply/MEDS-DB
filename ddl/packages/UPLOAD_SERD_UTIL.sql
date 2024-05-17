@@ -245,7 +245,7 @@ as
          values (
             p_index_record.comments
          ,	p_index_record.date_time
-         ,	SDO_GEOMETRY(2001, NULL, SDO_POINT_TYPE(p_index_record.longitude, p_index_record.latitude, NULL), NULL, NULL)
+         ,	SDO_GEOMETRY(2001, 4326, SDO_POINT_TYPE(p_index_record.longitude, p_index_record.latitude, NULL), NULL, NULL)
          ,	p_index_record.meds_job_number
          ,	p_index_record.meds_cruise_number
          ,	p_index_record.instrument_code
@@ -294,7 +294,7 @@ as
          values (
             p_index_record.comments
          ,	p_index_record.date_time
-         ,	SDO_GEOMETRY(2001, NULL, SDO_POINT_TYPE(p_index_record.longitude, p_index_record.latitude, NULL), NULL, NULL)
+         ,	SDO_GEOMETRY(2001, 4326, SDO_POINT_TYPE(p_index_record.longitude, p_index_record.latitude, NULL), NULL, NULL)
          ,	p_index_record.meds_job_number
          ,	p_index_record.meds_cruise_number
          ,	p_index_record.instrument_code
@@ -343,7 +343,7 @@ as
          values (
              p_index_record.comments
          ,   p_index_record.date_time
-         ,   SDO_GEOMETRY(2001, NULL, SDO_POINT_TYPE(p_index_record.longitude, p_index_record.latitude, NULL), NULL, NULL)
+         ,   SDO_GEOMETRY(2001, 4326, SDO_POINT_TYPE(p_index_record.longitude, p_index_record.latitude, NULL), NULL, NULL)
          ,   p_index_record.meds_job_number
          ,   p_index_record.meds_cruise_number
          ,   p_index_record.instrument_code
