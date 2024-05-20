@@ -1,0 +1,86 @@
+<?xml version = '1.0' encoding = 'UTF-8'?>
+<Table class="oracle.dbtools.crest.model.design.relational.Table" directorySegmentName="seg_0" id="63D54851-D276-E014-78FD-5AEBEBB8C5FF" schemaObject="B281DE3A-4641-09D7-8316-71A277DA9E9B" name="MEDSROLE">
+<sourceConnName>MEDS ADMIN</sourceConnName>
+<sourceObjSchema>MEDSADMIN</sourceObjSchema>
+<sourceObjName>MEDSROLE</sourceObjName>
+<createdBy>d.arboittedossantos</createdBy>
+<createdTime>2024-05-20 10:18:46 UTC</createdTime>
+<ownerDesignName>MEDS_SECURITY</ownerDesignName>
+<allowColumnReorder>false</allowColumnReorder>
+<existDependencyGenerateInDDl>true</existDependencyGenerateInDDl>
+<parsed>true</parsed>
+<columns itemClass="oracle.dbtools.crest.model.design.relational.Column">
+<Column name="MEDSROLE" id="053A9B2C-FF54-38CD-7EB4-AB9258C8E841">
+<sourceConnName>MEDS ADMIN</sourceConnName>
+<sourceObjSchema>MEDSROLE</sourceObjSchema>
+<sourceObjName>MEDSROLE</sourceObjName>
+<createdBy>d.arboittedossantos</createdBy>
+<createdTime>2024-05-20 10:18:46 UTC</createdTime>
+<ownerDesignName>MEDS_SECURITY</ownerDesignName>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT019</logicalDatatype>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
+<autoIncrementCycle>false</autoIncrementCycle>
+</Column>
+<Column name="LABEL" id="477997AC-ADA1-C4E0-6664-5C1E30F34E3F">
+<sourceConnName>MEDS ADMIN</sourceConnName>
+<sourceObjSchema>MEDSROLE</sourceObjSchema>
+<sourceObjName>LABEL</sourceObjName>
+<createdBy>d.arboittedossantos</createdBy>
+<createdTime>2024-05-20 10:18:46 UTC</createdTime>
+<ownerDesignName>MEDS_SECURITY</ownerDesignName>
+<nullsAllowed>true</nullsAllowed>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT024</logicalDatatype>
+<dataTypeSize>30 BYTE</dataTypeSize>
+<ownDataTypeParameters>30 BYTE,,</ownDataTypeParameters>
+<autoIncrementCycle>false</autoIncrementCycle>
+</Column>
+<Column name="LABEL_INTERNAL" id="51861B13-B861-B775-B50E-0884D2EBE3A5">
+<sourceConnName>MEDS ADMIN</sourceConnName>
+<sourceObjSchema>MEDSROLE</sourceObjSchema>
+<sourceObjName>LABEL_INTERNAL</sourceObjName>
+<createdBy>d.arboittedossantos</createdBy>
+<createdTime>2024-05-20 10:18:46 UTC</createdTime>
+<ownerDesignName>MEDS_SECURITY</ownerDesignName>
+<nullsAllowed>true</nullsAllowed>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT024</logicalDatatype>
+<dataTypeSize>30 BYTE</dataTypeSize>
+<ownDataTypeParameters>30 BYTE,,</ownDataTypeParameters>
+<autoIncrementCycle>false</autoIncrementCycle>
+</Column>
+</columns>
+<indexes itemClass="oracle.dbtools.crest.model.design.relational.Index">
+<ind_PK_UK id="B93DC24D-F4C3-D27B-1C1D-0674F95C8424" name="MEDSROLE_P">
+<sourceConnName>MEDS ADMIN</sourceConnName>
+<sourceObjSchema>MEDSADMIN</sourceObjSchema>
+<sourceObjName>MEDSROLE_P</sourceObjName>
+<createdBy>d.arboittedossantos</createdBy>
+<createdTime>2024-05-20 10:18:49 UTC</createdTime>
+<ownerDesignName>MEDS_SECURITY</ownerDesignName>
+<pk>true</pk>
+<indexState>Primary Constraint</indexState>
+<isSurrogateKey>false</isSurrogateKey>
+<indexColumnUsage>
+<colUsage columnID="053A9B2C-FF54-38CD-7EB4-AB9258C8E841"/>
+</indexColumnUsage>
+</ind_PK_UK>
+<ind_PK_UK id="9DD826C6-352F-DD57-DB6F-97C0B570F52E" schemaObject="B281DE3A-4641-09D7-8316-71A277DA9E9B" name="MEDSROLE_P">
+<sourceConnName>MEDS ADMIN</sourceConnName>
+<sourceObjSchema>MEDSADMIN</sourceObjSchema>
+<sourceObjName>MEDSROLE_P</sourceObjName>
+<createdBy>d.arboittedossantos</createdBy>
+<createdTime>2024-05-20 10:18:47 UTC</createdTime>
+<ownerDesignName>MEDS_SECURITY</ownerDesignName>
+<indexState>Unique Plain Index</indexState>
+<isSurrogateKey>false</isSurrogateKey>
+<indexColumnUsage>
+<colUsage columnID="053A9B2C-FF54-38CD-7EB4-AB9258C8E841"/>
+</indexColumnUsage>
+</ind_PK_UK>
+</indexes>
+</Table>

@@ -1,0 +1,16 @@
+<?xml version = '1.0' encoding = 'UTF-8'?>
+<FKIndexAssociation class="oracle.dbtools.crest.model.design.relational.FKIndexAssociation" directorySegmentName="seg_0" id="2F894370-3B1E-31B7-5FFB-64016BA13AF2" containerWithKeyObject="537BD7BF-9E4F-1F17-F465-56C0BF571194" localFKIndex="D0AFFB67-E54E-CC62-5C27-E95B672E8AE2" name="MEDSFILTER_CMUSER_F">
+<sourceConnName>MEDS ADMIN</sourceConnName>
+<sourceObjSchema>MEDSADMIN</sourceObjSchema>
+<sourceObjName>MEDSFILTER_CMUSER_F</sourceObjName>
+<createdBy>d.arboittedossantos</createdBy>
+<createdTime>2024-05-20 10:18:52 UTC</createdTime>
+<ownerDesignName>MEDS_SECURITY</ownerDesignName>
+<referredTableLongName>CM.CMUSER</referredTableLongName>
+<deleteRule>NO ACTION</deleteRule>
+<mandatory>true</mandatory>
+<refColNames>CMUSER</refColNames>
+<transferable>true</transferable>
+<rely>false</rely>
+<columnDependencyConstraintGenerateInDDL>true</columnDependencyConstraintGenerateInDDL>
+</FKIndexAssociation>

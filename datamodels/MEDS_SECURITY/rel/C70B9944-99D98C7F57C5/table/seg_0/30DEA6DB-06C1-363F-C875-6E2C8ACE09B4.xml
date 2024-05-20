@@ -1,0 +1,100 @@
+<?xml version = '1.0' encoding = 'UTF-8'?>
+<Table class="oracle.dbtools.crest.model.design.relational.Table" directorySegmentName="seg_0" id="30DEA6DB-06C1-363F-C875-6E2C8ACE09B4" schemaObject="B281DE3A-4641-09D7-8316-71A277DA9E9B" name="MEDSLAYER">
+<sourceConnName>MEDS ADMIN</sourceConnName>
+<sourceObjSchema>MEDSADMIN</sourceObjSchema>
+<sourceObjName>MEDSLAYER</sourceObjName>
+<createdBy>d.arboittedossantos</createdBy>
+<createdTime>2024-05-20 10:18:46 UTC</createdTime>
+<ownerDesignName>MEDS_SECURITY</ownerDesignName>
+<allowColumnReorder>false</allowColumnReorder>
+<existDependencyGenerateInDDl>true</existDependencyGenerateInDDl>
+<parsed>true</parsed>
+<columns itemClass="oracle.dbtools.crest.model.design.relational.Column">
+<Column name="MEDSLAYER" id="F5218791-8364-36D9-1B12-521055163AB6">
+<sourceConnName>MEDS ADMIN</sourceConnName>
+<sourceObjSchema>MEDSLAYER</sourceObjSchema>
+<sourceObjName>MEDSLAYER</sourceObjName>
+<createdBy>d.arboittedossantos</createdBy>
+<createdTime>2024-05-20 10:18:46 UTC</createdTime>
+<ownerDesignName>MEDS_SECURITY</ownerDesignName>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT019</logicalDatatype>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
+<autoIncrementCycle>false</autoIncrementCycle>
+</Column>
+<Column name="LABEL" id="1CC68B87-E8BE-3CBD-E8E8-AE61A7BAEDED">
+<sourceConnName>MEDS ADMIN</sourceConnName>
+<sourceObjSchema>MEDSLAYER</sourceObjSchema>
+<sourceObjName>LABEL</sourceObjName>
+<createdBy>d.arboittedossantos</createdBy>
+<createdTime>2024-05-20 10:18:46 UTC</createdTime>
+<ownerDesignName>MEDS_SECURITY</ownerDesignName>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT024</logicalDatatype>
+<dataTypeSize>30 BYTE</dataTypeSize>
+<ownDataTypeParameters>30 BYTE,,</ownDataTypeParameters>
+<autoIncrementCycle>false</autoIncrementCycle>
+</Column>
+<Column name="ICON" id="B7BE7AAF-8527-5F26-407E-D8D0591CAC47">
+<sourceConnName>MEDS ADMIN</sourceConnName>
+<sourceObjSchema>MEDSLAYER</sourceObjSchema>
+<sourceObjName>ICON</sourceObjName>
+<createdBy>d.arboittedossantos</createdBy>
+<createdTime>2024-05-20 10:18:46 UTC</createdTime>
+<ownerDesignName>MEDS_SECURITY</ownerDesignName>
+<nullsAllowed>true</nullsAllowed>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT024</logicalDatatype>
+<dataTypeSize>30 BYTE</dataTypeSize>
+<ownDataTypeParameters>30 BYTE,,</ownDataTypeParameters>
+<autoIncrementCycle>false</autoIncrementCycle>
+</Column>
+<Column name="COLOR" id="F6041324-93EC-C75F-65B9-EE82BC41A308">
+<sourceConnName>MEDS ADMIN</sourceConnName>
+<sourceObjSchema>MEDSLAYER</sourceObjSchema>
+<sourceObjName>COLOR</sourceObjName>
+<createdBy>d.arboittedossantos</createdBy>
+<createdTime>2024-05-20 10:18:46 UTC</createdTime>
+<ownerDesignName>MEDS_SECURITY</ownerDesignName>
+<nullsAllowed>true</nullsAllowed>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT024</logicalDatatype>
+<dataTypeSize>30 BYTE</dataTypeSize>
+<ownDataTypeParameters>30 BYTE,,</ownDataTypeParameters>
+<autoIncrementCycle>false</autoIncrementCycle>
+</Column>
+</columns>
+<indexes itemClass="oracle.dbtools.crest.model.design.relational.Index">
+<ind_PK_UK id="461200A7-BD1E-289D-3E99-8868630F7ABA" name="MEDSLAYER_P">
+<sourceConnName>MEDS ADMIN</sourceConnName>
+<sourceObjSchema>MEDSADMIN</sourceObjSchema>
+<sourceObjName>MEDSLAYER_P</sourceObjName>
+<createdBy>d.arboittedossantos</createdBy>
+<createdTime>2024-05-20 10:18:49 UTC</createdTime>
+<ownerDesignName>MEDS_SECURITY</ownerDesignName>
+<pk>true</pk>
+<indexState>Primary Constraint</indexState>
+<isSurrogateKey>false</isSurrogateKey>
+<indexColumnUsage>
+<colUsage columnID="F5218791-8364-36D9-1B12-521055163AB6"/>
+</indexColumnUsage>
+</ind_PK_UK>
+<ind_PK_UK id="229660AC-C946-B1B3-5AAD-A9A2707F65AC" schemaObject="B281DE3A-4641-09D7-8316-71A277DA9E9B" name="MEDSLAYER_P">
+<sourceConnName>MEDS ADMIN</sourceConnName>
+<sourceObjSchema>MEDSADMIN</sourceObjSchema>
+<sourceObjName>MEDSLAYER_P</sourceObjName>
+<createdBy>d.arboittedossantos</createdBy>
+<createdTime>2024-05-20 10:18:47 UTC</createdTime>
+<ownerDesignName>MEDS_SECURITY</ownerDesignName>
+<indexState>Unique Plain Index</indexState>
+<isSurrogateKey>false</isSurrogateKey>
+<indexColumnUsage>
+<colUsage columnID="F5218791-8364-36D9-1B12-521055163AB6"/>
+</indexColumnUsage>
+</ind_PK_UK>
+</indexes>
+</Table>

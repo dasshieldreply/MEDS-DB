@@ -1,0 +1,55 @@
+<?xml version = '1.0' encoding = 'UTF-8'?>
+<TableProxyOraclev12c class="oracle.dbtools.crest.model.design.storage.oracle.v12c.TableProxyOraclev12c" name="MEDSROLE" directorySegmentName="seg_0" id="63D54851-D276-E014-78FD-5AEBEBB8C5FF">
+<createdBy>d.arboittedossantos</createdBy>
+<createdTime>2024-05-20 10:18:46 UTC</createdTime>
+<ownerDesignName>MEDS_SECURITY</ownerDesignName>
+<schemaObject>B281DE3A-4641-09D7-8316-71A277DA9E9B</schemaObject>
+<logging>YES</logging>
+<partitionedRowMovement>DISABLE</partitionedRowMovement>
+<segment>13167EEB-FFD5-A063-923B-FBB6A5819EB9</segment>
+<tableSpace>871BE895-10A2-C3E7-1FD6-1321AA3CE067</tableSpace>
+<temporaryChanged>false</temporaryChanged>
+<accessDriverType>oracle_loader</accessDriverType>
+<rejectLimit></rejectLimit>
+<inMemory>NO</inMemory>
+<columnProxies itemClass="oracle.dbtools.crest.model.design.storage.oracle.v12c.ColumnProxyOraclev12c">
+<ColumnProxy name="MEDSROLE" id="053A9B2C-FF54-38CD-7EB4-AB9258C8E841">
+<createdBy>d.arboittedossantos</createdBy>
+<createdTime>2024-05-20 10:18:46 UTC</createdTime>
+<ownerDesignName>MEDS_SECURITY</ownerDesignName>
+</ColumnProxy>
+<ColumnProxy name="LABEL" id="477997AC-ADA1-C4E0-6664-5C1E30F34E3F">
+<createdBy>d.arboittedossantos</createdBy>
+<createdTime>2024-05-20 10:18:46 UTC</createdTime>
+<ownerDesignName>MEDS_SECURITY</ownerDesignName>
+</ColumnProxy>
+<ColumnProxy name="LABEL_INTERNAL" id="51861B13-B861-B775-B50E-0884D2EBE3A5">
+<createdBy>d.arboittedossantos</createdBy>
+<createdTime>2024-05-20 10:18:46 UTC</createdTime>
+<ownerDesignName>MEDS_SECURITY</ownerDesignName>
+</ColumnProxy>
+</columnProxies>
+<indexProxies>
+<IndexProxy class="oracle.dbtools.crest.model.design.storage.oracle.v10g.IndexProxyOraclev10g" name="MEDSROLE_P" id="9DD826C6-352F-DD57-DB6F-97C0B570F52E">
+<createdBy>d.arboittedossantos</createdBy>
+<createdTime>2024-05-20 10:18:47 UTC</createdTime>
+<ownerDesignName>MEDS_SECURITY</ownerDesignName>
+<schemaObject>B281DE3A-4641-09D7-8316-71A277DA9E9B</schemaObject>
+<segment>F050A440-3B12-FA84-3450-241D392390FC</segment>
+<tableSpace>871BE895-10A2-C3E7-1FD6-1321AA3CE067</tableSpace>
+</IndexProxy>
+</indexProxies>
+<primaryKeys>
+<PrimaryKey class="oracle.dbtools.crest.model.design.storage.oracle.v10g.PKProxyOraclev10g" name="MEDSROLE_P" id="B93DC24D-F4C3-D27B-1C1D-0674F95C8424">
+<createdBy>d.arboittedossantos</createdBy>
+<createdTime>2024-05-20 10:18:49 UTC</createdTime>
+<ownerDesignName>MEDS_SECURITY</ownerDesignName>
+<segment>F050A440-3B12-FA84-3450-241D392390FC</segment>
+<tableSpace>871BE895-10A2-C3E7-1FD6-1321AA3CE067</tableSpace>
+<existingIndex>9DD826C6-352F-DD57-DB6F-97C0B570F52E</existingIndex>
+<indexSegment>F050A440-3B12-FA84-3450-241D392390FC</indexSegment>
+<indexSort>SORTED</indexSort>
+<usingIndex>BY INDEX NAME</usingIndex>
+</PrimaryKey>
+</primaryKeys>
+</TableProxyOraclev12c>

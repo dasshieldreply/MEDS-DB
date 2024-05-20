@@ -1,0 +1,38 @@
+<?xml version = '1.0' encoding = 'UTF-8'?>
+<TriggerOraclev10g class="oracle.dbtools.crest.model.design.storage.oracle.v10g.TriggerOraclev10g" name="B_MEDSLAYER" directorySegmentName="seg_0" id="8C3666A3-147D-84F8-530D-3C39C4070DB9">
+<sourceConnName>MEDS ADMIN</sourceConnName>
+<sourceObjSchema>MEDSADMIN</sourceObjSchema>
+<sourceObjName>B_MEDSLAYER</sourceObjName>
+<createdBy>d.arboittedossantos</createdBy>
+<createdTime>2024-05-20 10:18:51 UTC</createdTime>
+<ownerDesignName>MEDS_SECURITY</ownerDesignName>
+<actions>INSERT, UPDATE, DELETE</actions>
+<body><![CDATA[declare 
+   l_table    varchar2(30) := 'MEDSLAYER';
+   l_action   varchar2(1);
+   l_seq      number; 
+begin 
+   if inserting then 
+      if :new.MEDSLAYER is null then 
+         :new.MEDSLAYER := to_number(sys_guid(),'xxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxx');
+      end if; 
+      l_seq := :new.MEDSLAYER;
+      l_action := 'I';
+   elsif updating then 
+      l_seq := :new.MEDSLAYER;
+      l_action := 'U';
+   elsif deleting then 
+      l_seq := :old.MEDSLAYER;
+   end if; 
+   if deleting then
+      cm.audit_tool.audit_delete('MEDSLAYER',l_seq);
+   else
+      cm.audit_tool.audit_column(l_action,'MEDSLAYER','LABEL',l_seq,:old.LABEL,:new.LABEL);
+      cm.audit_tool.audit_column(l_action,'MEDSLAYER','ICON',l_seq,:old.ICON,:new.ICON);
+      cm.audit_tool.audit_column(l_action,'MEDSLAYER','COLOR',l_seq,:old.COLOR,:new.COLOR);
+   end if;
+end b_medslayer;]]></body>
+<triggerTime>BEFORE</triggerTime>
+<owner>B15F0303-3CED-CB50-E924-20E511968097</owner>
+<table>30DEA6DB-06C1-363F-C875-6E2C8ACE09B4</table>
+</TriggerOraclev10g>

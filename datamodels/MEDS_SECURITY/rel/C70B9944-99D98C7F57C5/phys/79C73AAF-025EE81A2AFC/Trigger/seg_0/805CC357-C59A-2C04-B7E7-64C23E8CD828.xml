@@ -1,0 +1,37 @@
+<?xml version = '1.0' encoding = 'UTF-8'?>
+<TriggerOraclev10g class="oracle.dbtools.crest.model.design.storage.oracle.v10g.TriggerOraclev10g" name="B_MEDSPLAYER" directorySegmentName="seg_0" id="805CC357-C59A-2C04-B7E7-64C23E8CD828">
+<sourceConnName>MEDS ADMIN</sourceConnName>
+<sourceObjSchema>MEDSADMIN</sourceObjSchema>
+<sourceObjName>B_MEDSPLAYER</sourceObjName>
+<createdBy>d.arboittedossantos</createdBy>
+<createdTime>2024-05-20 10:18:51 UTC</createdTime>
+<ownerDesignName>MEDS_SECURITY</ownerDesignName>
+<actions>INSERT, UPDATE, DELETE</actions>
+<body><![CDATA[declare 
+   l_table    varchar2(30) := 'MEDSPLAYER';
+   l_action   varchar2(1);
+   l_seq      number; 
+begin 
+   if inserting then 
+      if :new.MEDSPLAYER is null then 
+         :new.MEDSPLAYER := to_number(sys_guid(),'xxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxx');
+      end if; 
+      l_seq := :new.MEDSPLAYER;
+      l_action := 'I';
+   elsif updating then 
+      l_seq := :new.MEDSPLAYER;
+      l_action := 'U';
+   elsif deleting then 
+      l_seq := :old.MEDSPLAYER;
+   end if; 
+   if deleting then
+      cm.audit_tool.audit_delete('MEDSPLAYER',l_seq);
+   else
+      cm.audit_tool.audit_column(l_action,'MEDSPLAYER','MEDSROLE',l_seq,:old.MEDSROLE,:new.MEDSROLE);
+      cm.audit_tool.audit_column(l_action,'MEDSPLAYER','MEDSUSER',l_seq,:old.MEDSUSER,:new.MEDSUSER);
+   end if;
+end b_medsplayer;]]></body>
+<triggerTime>BEFORE</triggerTime>
+<owner>B15F0303-3CED-CB50-E924-20E511968097</owner>
+<table>32EB1BAA-FCF6-A9E5-071F-D02E47AACDE6</table>
+</TriggerOraclev10g>

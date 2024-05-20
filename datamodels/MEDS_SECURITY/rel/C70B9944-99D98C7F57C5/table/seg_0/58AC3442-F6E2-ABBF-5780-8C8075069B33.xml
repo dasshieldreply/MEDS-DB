@@ -1,0 +1,107 @@
+<?xml version = '1.0' encoding = 'UTF-8'?>
+<Table class="oracle.dbtools.crest.model.design.relational.Table" directorySegmentName="seg_0" id="58AC3442-F6E2-ABBF-5780-8C8075069B33" schemaObject="B281DE3A-4641-09D7-8316-71A277DA9E9B" name="MEDSUSER">
+<sourceConnName>MEDS ADMIN</sourceConnName>
+<sourceObjSchema>MEDSADMIN</sourceObjSchema>
+<sourceObjName>MEDSUSER</sourceObjName>
+<createdBy>d.arboittedossantos</createdBy>
+<createdTime>2024-05-20 10:18:46 UTC</createdTime>
+<commentInRDBMS><![CDATA[A MEDUSER may represent either a platform cmuser_tenant or a legacy Processor identified by their name]]></commentInRDBMS>
+<ownerDesignName>MEDS_SECURITY</ownerDesignName>
+<allowColumnReorder>false</allowColumnReorder>
+<existDependencyGenerateInDDl>true</existDependencyGenerateInDDl>
+<parsed>true</parsed>
+<columns itemClass="oracle.dbtools.crest.model.design.relational.Column">
+<Column name="MEDSUSER" id="8B76697D-EE99-B918-0269-2F7049CB83C2">
+<sourceConnName>MEDS ADMIN</sourceConnName>
+<sourceObjSchema>MEDSUSER</sourceObjSchema>
+<sourceObjName>MEDSUSER</sourceObjName>
+<createdBy>d.arboittedossantos</createdBy>
+<createdTime>2024-05-20 10:18:46 UTC</createdTime>
+<ownerDesignName>MEDS_SECURITY</ownerDesignName>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT019</logicalDatatype>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
+<autoIncrementCycle>false</autoIncrementCycle>
+</Column>
+<Column name="CMUSER_TENANT" id="23D768CC-CE7A-D3FD-36D0-0929AC41BAFD">
+<sourceConnName>MEDS ADMIN</sourceConnName>
+<sourceObjSchema>MEDSUSER</sourceObjSchema>
+<sourceObjName>CMUSER_TENANT</sourceObjName>
+<createdBy>d.arboittedossantos</createdBy>
+<createdTime>2024-05-20 10:18:46 UTC</createdTime>
+<ownerDesignName>MEDS_SECURITY</ownerDesignName>
+<nullsAllowed>true</nullsAllowed>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT019</logicalDatatype>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
+<autoIncrementCycle>false</autoIncrementCycle>
+</Column>
+<Column name="FULL_NAME" id="C8851784-5997-B6D3-9577-4DDD14F0DD4A">
+<sourceConnName>MEDS ADMIN</sourceConnName>
+<sourceObjSchema>MEDSUSER</sourceObjSchema>
+<sourceObjName>FULL_NAME</sourceObjName>
+<createdBy>d.arboittedossantos</createdBy>
+<createdTime>2024-05-20 10:18:46 UTC</createdTime>
+<ownerDesignName>MEDS_SECURITY</ownerDesignName>
+<nullsAllowed>true</nullsAllowed>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT024</logicalDatatype>
+<dataTypeSize>30 BYTE</dataTypeSize>
+<ownDataTypeParameters>30 BYTE,,</ownDataTypeParameters>
+<autoIncrementCycle>false</autoIncrementCycle>
+</Column>
+</columns>
+<indexes itemClass="oracle.dbtools.crest.model.design.relational.Index">
+<ind_PK_UK id="D648A521-C3D7-A34C-3F40-45BA979A084F" name="MEDSUSER_P">
+<sourceConnName>MEDS ADMIN</sourceConnName>
+<sourceObjSchema>MEDSADMIN</sourceObjSchema>
+<sourceObjName>MEDSUSER_P</sourceObjName>
+<createdBy>d.arboittedossantos</createdBy>
+<createdTime>2024-05-20 10:18:49 UTC</createdTime>
+<ownerDesignName>MEDS_SECURITY</ownerDesignName>
+<pk>true</pk>
+<indexState>Primary Constraint</indexState>
+<isSurrogateKey>false</isSurrogateKey>
+<indexColumnUsage>
+<colUsage columnID="8B76697D-EE99-B918-0269-2F7049CB83C2"/>
+</indexColumnUsage>
+</ind_PK_UK>
+<ind_PK_UK id="9C4E666F-DBB9-29E5-7004-54FFDA9B5369" schemaObject="B281DE3A-4641-09D7-8316-71A277DA9E9B" name="MEDSUSER_P">
+<sourceConnName>MEDS ADMIN</sourceConnName>
+<sourceObjSchema>MEDSADMIN</sourceObjSchema>
+<sourceObjName>MEDSUSER_P</sourceObjName>
+<createdBy>d.arboittedossantos</createdBy>
+<createdTime>2024-05-20 10:18:47 UTC</createdTime>
+<ownerDesignName>MEDS_SECURITY</ownerDesignName>
+<indexState>Unique Plain Index</indexState>
+<isSurrogateKey>false</isSurrogateKey>
+<indexColumnUsage>
+<colUsage columnID="8B76697D-EE99-B918-0269-2F7049CB83C2"/>
+</indexColumnUsage>
+</ind_PK_UK>
+<ind_PK_UK id="AFFDD8BB-F27A-97B8-3ADD-2835B8260C72" name="MEDSUSER_CMUSER_TENANT_F">
+<createdBy>d.arboittedossantos</createdBy>
+<createdTime>2024-05-20 10:18:52 UTC</createdTime>
+<ownerDesignName>MEDS_SECURITY</ownerDesignName>
+<indexState>Foreign Key</indexState>
+<isSurrogateKey>false</isSurrogateKey>
+<indexColumnUsage>
+<colUsage columnID="23D768CC-CE7A-D3FD-36D0-0929AC41BAFD"/>
+</indexColumnUsage>
+</ind_PK_UK>
+</indexes>
+<tableCheckConstraints itemClass="oracle.dbtools.crest.model.design.constraint.TableLevelConstraint">
+<tableCheckConstraint name="MEDSUSER_C" directorySegmentName="seg_0" id="8A1F6E26-E2F5-2E20-D060-1CA2EB2B9021">
+<sourceConnName>MEDS ADMIN</sourceConnName>
+<sourceObjSchema>MEDSADMIN</sourceObjSchema>
+<sourceObjName>MEDSUSER_C</sourceObjName>
+<createdBy>d.arboittedossantos</createdBy>
+<createdTime>2024-05-20 10:18:51 UTC</createdTime>
+<ownerDesignName>MEDS_SECURITY</ownerDesignName>
+<rule><![CDATA[(cmuser_tenant is not null and full_name is null) or (cmuser_tenant is null and full_name is not null)]]></rule>
+</tableCheckConstraint>
+</tableCheckConstraints>
+</Table>

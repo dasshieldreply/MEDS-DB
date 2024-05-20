@@ -1,0 +1,110 @@
+<?xml version = '1.0' encoding = 'UTF-8'?>
+<Table class="oracle.dbtools.crest.model.design.relational.Table" directorySegmentName="seg_0" id="32EB1BAA-FCF6-A9E5-071F-D02E47AACDE6" schemaObject="B281DE3A-4641-09D7-8316-71A277DA9E9B" name="MEDSPLAYER">
+<sourceConnName>MEDS ADMIN</sourceConnName>
+<sourceObjSchema>MEDSADMIN</sourceObjSchema>
+<sourceObjName>MEDSPLAYER</sourceObjName>
+<createdBy>d.arboittedossantos</createdBy>
+<createdTime>2024-05-20 10:18:46 UTC</createdTime>
+<ownerDesignName>MEDS_SECURITY</ownerDesignName>
+<allowColumnReorder>false</allowColumnReorder>
+<existDependencyGenerateInDDl>true</existDependencyGenerateInDDl>
+<parsed>true</parsed>
+<columns itemClass="oracle.dbtools.crest.model.design.relational.Column">
+<Column name="MEDSPLAYER" id="0C6495A0-225B-A14C-2C33-66C747D231E5">
+<sourceConnName>MEDS ADMIN</sourceConnName>
+<sourceObjSchema>MEDSPLAYER</sourceObjSchema>
+<sourceObjName>MEDSPLAYER</sourceObjName>
+<createdBy>d.arboittedossantos</createdBy>
+<createdTime>2024-05-20 10:18:46 UTC</createdTime>
+<ownerDesignName>MEDS_SECURITY</ownerDesignName>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT019</logicalDatatype>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
+<autoIncrementCycle>false</autoIncrementCycle>
+</Column>
+<Column name="MEDSROLE" id="75E9CAC0-C8DA-5B3A-6F6B-52B2080E6226">
+<sourceConnName>MEDS ADMIN</sourceConnName>
+<sourceObjSchema>MEDSPLAYER</sourceObjSchema>
+<sourceObjName>MEDSROLE</sourceObjName>
+<createdBy>d.arboittedossantos</createdBy>
+<createdTime>2024-05-20 10:18:46 UTC</createdTime>
+<ownerDesignName>MEDS_SECURITY</ownerDesignName>
+<nullsAllowed>true</nullsAllowed>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT019</logicalDatatype>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
+<autoIncrementCycle>false</autoIncrementCycle>
+<associations>
+<colAssociation fkAssociation="74201FB5-3043-66B5-0E5B-46A53114BD61" referredColumn="053A9B2C-FF54-38CD-7EB4-AB9258C8E841"/>
+</associations>
+</Column>
+<Column name="MEDSUSER" id="A9888FAD-E7E9-9A8F-B364-F8A4084EA6A2">
+<sourceConnName>MEDS ADMIN</sourceConnName>
+<sourceObjSchema>MEDSPLAYER</sourceObjSchema>
+<sourceObjName>MEDSUSER</sourceObjName>
+<createdBy>d.arboittedossantos</createdBy>
+<createdTime>2024-05-20 10:18:46 UTC</createdTime>
+<ownerDesignName>MEDS_SECURITY</ownerDesignName>
+<nullsAllowed>true</nullsAllowed>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT019</logicalDatatype>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
+<autoIncrementCycle>false</autoIncrementCycle>
+<associations>
+<colAssociation fkAssociation="1721A008-29CC-0319-BFF5-553D4DACB6CF" referredColumn="8B76697D-EE99-B918-0269-2F7049CB83C2"/>
+</associations>
+</Column>
+</columns>
+<indexes itemClass="oracle.dbtools.crest.model.design.relational.Index">
+<ind_PK_UK id="0A367A5A-802F-888A-0C00-74F352043973" name="MEDSPLAYER_P">
+<sourceConnName>MEDS ADMIN</sourceConnName>
+<sourceObjSchema>MEDSADMIN</sourceObjSchema>
+<sourceObjName>MEDSPLAYER_P</sourceObjName>
+<createdBy>d.arboittedossantos</createdBy>
+<createdTime>2024-05-20 10:18:49 UTC</createdTime>
+<ownerDesignName>MEDS_SECURITY</ownerDesignName>
+<pk>true</pk>
+<indexState>Primary Constraint</indexState>
+<isSurrogateKey>false</isSurrogateKey>
+<indexColumnUsage>
+<colUsage columnID="0C6495A0-225B-A14C-2C33-66C747D231E5"/>
+</indexColumnUsage>
+</ind_PK_UK>
+<ind_PK_UK id="11E7BF31-3E56-C562-0ED2-348C7AE93644" schemaObject="B281DE3A-4641-09D7-8316-71A277DA9E9B" name="MEDSPLAYER_P">
+<sourceConnName>MEDS ADMIN</sourceConnName>
+<sourceObjSchema>MEDSADMIN</sourceObjSchema>
+<sourceObjName>MEDSPLAYER_P</sourceObjName>
+<createdBy>d.arboittedossantos</createdBy>
+<createdTime>2024-05-20 10:18:47 UTC</createdTime>
+<ownerDesignName>MEDS_SECURITY</ownerDesignName>
+<indexState>Unique Plain Index</indexState>
+<isSurrogateKey>false</isSurrogateKey>
+<indexColumnUsage>
+<colUsage columnID="0C6495A0-225B-A14C-2C33-66C747D231E5"/>
+</indexColumnUsage>
+</ind_PK_UK>
+<ind_PK_UK id="FFCBA0C1-9E95-0BD2-DCA0-B8E5D8594DBD" name="MEDSPLAYER_MEDSROLE_F">
+<createdBy>d.arboittedossantos</createdBy>
+<createdTime>2024-05-20 10:18:52 UTC</createdTime>
+<ownerDesignName>MEDS_SECURITY</ownerDesignName>
+<indexState>Foreign Key</indexState>
+<isSurrogateKey>false</isSurrogateKey>
+<indexColumnUsage>
+<colUsage columnID="75E9CAC0-C8DA-5B3A-6F6B-52B2080E6226"/>
+</indexColumnUsage>
+</ind_PK_UK>
+<ind_PK_UK id="B4FAB5C9-740C-D2A8-771A-90BB25D03B3F" name="MEDSPLAYER_MEDSUSER_F">
+<createdBy>d.arboittedossantos</createdBy>
+<createdTime>2024-05-20 10:18:52 UTC</createdTime>
+<ownerDesignName>MEDS_SECURITY</ownerDesignName>
+<indexState>Foreign Key</indexState>
+<isSurrogateKey>false</isSurrogateKey>
+<indexColumnUsage>
+<colUsage columnID="A9888FAD-E7E9-9A8F-B364-F8A4084EA6A2"/>
+</indexColumnUsage>
+</ind_PK_UK>
+</indexes>
+</Table>

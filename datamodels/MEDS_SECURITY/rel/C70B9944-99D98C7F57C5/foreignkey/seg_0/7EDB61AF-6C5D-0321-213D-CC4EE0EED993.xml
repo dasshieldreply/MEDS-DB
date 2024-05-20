@@ -1,0 +1,19 @@
+<?xml version = '1.0' encoding = 'UTF-8'?>
+<FKIndexAssociation class="oracle.dbtools.crest.model.design.relational.FKIndexAssociation" directorySegmentName="seg_0" id="7EDB61AF-6C5D-0321-213D-CC4EE0EED993" containerWithKeyObject="F30E9087-EEB2-F559-4711-7DEFBF4AB271" localFKIndex="7CE59526-2A91-C332-C6BF-2CD56375976B" name="MEDSUSER_MEDSDOMAIN_MEDSUSER_F">
+<sourceConnName>MEDS ADMIN</sourceConnName>
+<sourceObjSchema>MEDSADMIN</sourceObjSchema>
+<sourceObjName>MEDSUSER_MEDSDOMAIN_MEDSUSER_F</sourceObjName>
+<createdBy>d.arboittedossantos</createdBy>
+<createdTime>2024-05-20 10:18:52 UTC</createdTime>
+<ownerDesignName>MEDS_SECURITY</ownerDesignName>
+<referredTableLongName>MEDSADMIN.MEDSUSER</referredTableLongName>
+<deleteRule>CASCADE</deleteRule>
+<referredTableID>58AC3442-F6E2-ABBF-5780-8C8075069B33</referredTableID>
+<keyObject>D648A521-C3D7-A34C-3F40-45BA979A084F</keyObject>
+<referredKeyID>D648A521-C3D7-A34C-3F40-45BA979A084F</referredKeyID>
+<mandatory>false</mandatory>
+<refColNames>MEDSUSER</refColNames>
+<transferable>true</transferable>
+<rely>false</rely>
+<columnDependencyConstraintGenerateInDDL>true</columnDependencyConstraintGenerateInDDL>
+</FKIndexAssociation>

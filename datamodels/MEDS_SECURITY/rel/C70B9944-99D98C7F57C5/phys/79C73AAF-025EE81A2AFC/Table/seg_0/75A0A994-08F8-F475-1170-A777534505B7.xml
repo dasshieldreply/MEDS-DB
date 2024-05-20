@@ -1,0 +1,50 @@
+<?xml version = '1.0' encoding = 'UTF-8'?>
+<TableProxyOraclev12c class="oracle.dbtools.crest.model.design.storage.oracle.v12c.TableProxyOraclev12c" name="MEDSUSER_MEDSLAYER" directorySegmentName="seg_0" id="75A0A994-08F8-F475-1170-A777534505B7">
+<createdBy>d.arboittedossantos</createdBy>
+<createdTime>2024-05-20 10:20:04 UTC</createdTime>
+<ownerDesignName>MEDS_SECURITY</ownerDesignName>
+<schemaObject>B281DE3A-4641-09D7-8316-71A277DA9E9B</schemaObject>
+<logging>YES</logging>
+<partitionedRowMovement>DISABLE</partitionedRowMovement>
+<temporaryChanged>false</temporaryChanged>
+<accessDriverType>oracle_loader</accessDriverType>
+<rejectLimit></rejectLimit>
+<storeAs>CLOB</storeAs>
+<columnProxies itemClass="oracle.dbtools.crest.model.design.storage.oracle.v12c.ColumnProxyOraclev12c">
+<ColumnProxy name="MEDSLAYER" id="1309B2F6-9E88-CFB1-53DB-6A4E7B802686">
+<createdBy>d.arboittedossantos</createdBy>
+<createdTime>2024-05-20 10:22:21 UTC</createdTime>
+<ownerDesignName>MEDS_SECURITY</ownerDesignName>
+</ColumnProxy>
+<ColumnProxy name="MEDSUSER_MEDSLAYER" id="28A9C59A-92AA-9CCB-12BC-8AFD28FDCFD0">
+<createdBy>d.arboittedossantos</createdBy>
+<createdTime>2024-05-20 10:21:29 UTC</createdTime>
+<ownerDesignName>MEDS_SECURITY</ownerDesignName>
+</ColumnProxy>
+<ColumnProxy name="MEDSUSER" id="76A39646-AD72-A81B-11BA-90D91AE52184">
+<createdBy>d.arboittedossantos</createdBy>
+<createdTime>2024-05-20 10:21:40 UTC</createdTime>
+<ownerDesignName>MEDS_SECURITY</ownerDesignName>
+</ColumnProxy>
+</columnProxies>
+<foreignKeys>
+<ForeignKey class="oracle.dbtools.crest.model.design.storage.oracle.v10g.FKProxyOraclev10g" name="MEDSUSER_MEDSLAYER_MEDSUSER_F" id="E1F00D0D-5646-23C1-784C-E2CEDC278883">
+<createdBy>d.arboittedossantos</createdBy>
+<createdTime>2024-05-20 10:21:40 UTC</createdTime>
+<ownerDesignName>MEDS_SECURITY</ownerDesignName>
+</ForeignKey>
+<ForeignKey class="oracle.dbtools.crest.model.design.storage.oracle.v10g.FKProxyOraclev10g" name="MEDSUSER_MEDSLAYER_MEDSLAYER_F" id="F7F9B612-D12D-0AC5-8E80-69EE9C1B0775">
+<createdBy>d.arboittedossantos</createdBy>
+<createdTime>2024-05-20 10:22:21 UTC</createdTime>
+<ownerDesignName>MEDS_SECURITY</ownerDesignName>
+</ForeignKey>
+</foreignKeys>
+<primaryKeys>
+<PrimaryKey class="oracle.dbtools.crest.model.design.storage.oracle.v10g.PKProxyOraclev10g" name="MEDSUSER_MEDSLAYER_P" id="40EAD302-16B4-A7A8-F5D7-AEB1C872A8B3">
+<createdBy>d.arboittedossantos</createdBy>
+<createdTime>2024-05-20 10:21:29 UTC</createdTime>
+<ownerDesignName>MEDS_SECURITY</ownerDesignName>
+<indexSort>SORTED</indexSort>
+</PrimaryKey>
+</primaryKeys>
+</TableProxyOraclev12c>

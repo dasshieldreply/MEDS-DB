@@ -1,0 +1,37 @@
+<?xml version = '1.0' encoding = 'UTF-8'?>
+<TriggerOraclev10g class="oracle.dbtools.crest.model.design.storage.oracle.v10g.TriggerOraclev10g" name="B_MEDSROLE" directorySegmentName="seg_0" id="0EC94902-B5C3-D8F4-0BF5-6CBEF8E65591">
+<sourceConnName>MEDS ADMIN</sourceConnName>
+<sourceObjSchema>MEDSADMIN</sourceObjSchema>
+<sourceObjName>B_MEDSROLE</sourceObjName>
+<createdBy>d.arboittedossantos</createdBy>
+<createdTime>2024-05-20 10:18:51 UTC</createdTime>
+<ownerDesignName>MEDS_SECURITY</ownerDesignName>
+<actions>INSERT, UPDATE, DELETE</actions>
+<body><![CDATA[declare 
+   l_table    varchar2(30) := 'MEDSROLE';
+   l_action   varchar2(1);
+   l_seq      number; 
+begin 
+   if inserting then 
+      if :new.MEDSROLE is null then 
+         :new.MEDSROLE := to_number(sys_guid(),'xxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxx');
+      end if; 
+      l_seq := :new.MEDSROLE;
+      l_action := 'I';
+   elsif updating then 
+      l_seq := :new.MEDSROLE;
+      l_action := 'U';
+   elsif deleting then 
+      l_seq := :old.MEDSROLE;
+   end if; 
+   if deleting then
+      cm.audit_tool.audit_delete('MEDSROLE',l_seq);
+   else
+      cm.audit_tool.audit_column(l_action,'MEDSROLE','LABEL',l_seq,:old.LABEL,:new.LABEL);
+      cm.audit_tool.audit_column(l_action,'MEDSROLE','LABEL_INTERNAL',l_seq,:old.LABEL_INTERNAL,:new.LABEL_INTERNAL);
+   end if;
+end b_medsrole;]]></body>
+<triggerTime>BEFORE</triggerTime>
+<owner>B15F0303-3CED-CB50-E924-20E511968097</owner>
+<table>63D54851-D276-E014-78FD-5AEBEBB8C5FF</table>
+</TriggerOraclev10g>

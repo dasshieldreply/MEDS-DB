@@ -1,0 +1,18 @@
+<?xml version = '1.0' encoding = 'UTF-8'?>
+<UserOraclev10g class="oracle.dbtools.crest.model.design.storage.oracle.v10g.UserOraclev10g" name="CM" directorySegmentName="seg_0" id="F6CA6249-09FD-B659-6E9C-949A5019FFE9">
+<sourceConnName>MEDS ADMIN</sourceConnName>
+<sourceObjName>CM</sourceObjName>
+<createdBy>d.arboittedossantos</createdBy>
+<createdTime>2024-05-20 10:24:50 UTC</createdTime>
+<ownerDesignName>MEDS_SECURITY</ownerDesignName>
+<schemaObject>B86F57FB-9A1F-5BFF-8FDB-3ADEC2B87BCD</schemaObject>
+<permissions>
+<Permission class="oracle.dbtools.crest.model.design.storage.oracle.v10g.PermissionsOraclev10g" name="Permissions8" id="3A1D714E-1022-A467-8D7A-147D2833C36C">
+<createdBy>d.arboittedossantos</createdBy>
+<createdTime>2024-05-20 10:25:20 UTC</createdTime>
+<ownerDesignName>MEDS_SECURITY</ownerDesignName>
+<privileges>SELECT</privileges>
+<table>75A0A994-08F8-F475-1170-A777534505B7</table>
+</Permission>
+</permissions>
+</UserOraclev10g>
