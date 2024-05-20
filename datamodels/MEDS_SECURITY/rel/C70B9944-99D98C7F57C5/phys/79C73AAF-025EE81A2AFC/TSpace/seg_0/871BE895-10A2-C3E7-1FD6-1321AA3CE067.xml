@@ -6,6 +6,13 @@
 <createdBy>d.arboittedossantos</createdBy>
 <createdTime>2024-05-20 10:18:46 UTC</createdTime>
 <ownerDesignName>MEDS_SECURITY</ownerDesignName>
+<dsInitialExtent>65536</dsInitialExtent>
+<dsMaxExtents>2147483645</dsMaxExtents>
 <emUniformSize>0</emUniformSize>
 <extentManagement>LOCAL</extentManagement>
+<minExtLen>65536</minExtLen>
+<dsCompression>NOCOMPRESS</dsCompression>
+<encrypt>YES</encrypt>
+<fileType>BIGFILE</fileType>
+<inMemory>NO</inMemory>
 </TableSpaceOraclev10g>
