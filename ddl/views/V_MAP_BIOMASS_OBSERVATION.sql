@@ -7,7 +7,7 @@
    ,  "LOCATION"
    ,  "LATITUDE"
    ,  "LONGITUDE"
-   ,  "DATE_RECORDED"
+   ,  "LABEL_DATE"
    ,  "UPPER_DEPTH"
    ,  "LOWER_DEPTH"
    ,  "TOTAL_DISPLACEMENT_VOLUME"

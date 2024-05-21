@@ -1,4 +1,22 @@
-  CREATE OR REPLACE FORCE EDITIONABLE VIEW "MEDSADMIN"."V_MAP_MLO_FISH_OBSERVATION" ("ICON", "COLOR", "MEDS_JOB_NUMBER", "MEDS_OBSERVATION_NUMBER", "LOCATION", "LATITUDE", "LONGITUDE", "LABEL_DATE", "SPECIES", "COUNT", "SHIP", "SIZE_", "BEARING") DEFAULT COLLATION "USING_NLS_COMP"  AS 
+  CREATE OR REPLACE FORCE EDITIONABLE VIEW "MEDSADMIN"."V_MAP_MLO_FISH_OBSERVATION" 
+  (
+     "ICON"
+   , "COLOR"
+   , "MEDS_JOB_NUMBER"
+   , "MEDS_OBSERVATION_NUMBER"
+   , "LOCATION"
+   , "LATITUDE"
+   , "LONGITUDE"
+   , "LABEL_DATE"
+   , "SPECIES"
+   , "COUNT"
+   , "SHIP"
+   , "SIZE_"
+   , "BEARING"
+   , "RANGE"
+   , "COMMENTS"
+   , "REFERENCE"
+   ) DEFAULT COLLATION "USING_NLS_COMP"  AS 
   with param as
 (
    select 
@@ -37,12 +55,15 @@ select p.icon
 ,      b.location
 ,      b.latitude
 ,      b.longitude
-,      to_char(b.date_recorded,'dd Mon yyyy') label_date
+,      to_char(b.date_recorded,'dd Mon yyyy') 
 ,      c.species
 ,      c.count
 ,      c.ship
 ,      c.size_ 
 ,      c.bearing
+,      c.range
+,      c.comments
+,      c.reference
 from   param                  p
 ,      mpjs                   a
 ,      mlo_fish_observation   b

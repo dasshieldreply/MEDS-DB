@@ -1,4 +1,4 @@
-CREATE OR REPLACE FORCE EDITIONABLE VIEW "MEDSADMIN"."V_MAP_MLO_JELLYFISH_OBSERVATION" (
+CREATE OR REPLACE FORCE EDITIONABLE VIEW "MEDSADMIN"."V_MAP_MLO_PINNIPEDS_OBSERVATION" (
     "ICON"
   , "COLOR"
   , "MEDS_JOB_NUMBER"
@@ -33,7 +33,7 @@ CREATE OR REPLACE FORCE EDITIONABLE VIEW "MEDSADMIN"."V_MAP_MLO_JELLYFISH_OBSERV
    from   medsfilter a
    ,      medslayer  b
    where  a.medsfilter = nv('P200_MEDSFILTER')
-   and    b.label      = 'JELLYFISH'
+   and    b.label      = 'PINNIPEDS'
    and    ':' || a.layerstring || ':' like '%:' || b.label || ':%'
 )
 , mpjs
@@ -65,8 +65,8 @@ select p.icon
 ,      c.reference
 from   param                  p
 ,      mpjs                   a
-,      mlo_jellyfish_observation   b
-,      mlo_Jellyfish_data          c
+,      mlo_pinnipeds_observation   b
+,      mlo_pinnipeds_data          c
 where  b.meds_job_number         = a.meds_job_number   
 and    b.date_recorded between p.date_start and p.date_end
 and    c.meds_job_number         = b.meds_job_number
