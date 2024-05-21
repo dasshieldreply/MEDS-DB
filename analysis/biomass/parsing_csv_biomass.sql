@@ -57,7 +57,7 @@ select * from BIOMASS_DATA where meds_job_number=68822 order by meds_observation
 
 select * from BIOMASS_OBSERVATION where meds_job_number=102583 order by 1;
 select count(*) from BIOMASS_OBSERVATION where meds_job_number=102583 order by 1;
-select count(*) from BIOMASS_DATA where meds_job_number=102583 order by meds_observation_number;
+select count(*) from BIOMASS_DATA where meds_job_number=102583 ;
 
 delete from BIOMASS_OBSERVATION where meds_job_number=102583;
 delete from BIOMASS_DATA where meds_job_number=102583;
