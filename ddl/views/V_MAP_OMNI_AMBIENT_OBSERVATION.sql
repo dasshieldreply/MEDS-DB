@@ -1,4 +1,4 @@
-CREATE OR REPLACE FORCE EDITIONABLE VIEW "MEDSADMIN"."V_MAP_MLO_SHIP_OBSERVATION" (
+CREATE OR REPLACE FORCE EDITIONABLE VIEW "MEDSADMIN"."V_MAP_OMNI_AMBIENT_OBSERVATION" (
       "ICON"
    ,  "COLOR"
    ,  "MEDS_JOB_NUMBER"
@@ -8,13 +8,9 @@ CREATE OR REPLACE FORCE EDITIONABLE VIEW "MEDSADMIN"."V_MAP_MLO_SHIP_OBSERVATION
    ,  "LONGITUDE"
    ,  "LABEL_DATE"
    ,  "SHIP"
-   ,  "COUNT"
-	,	"LENGTH"
-	,	"SPEED"
-	,	"HEADING"
-	,	"ACTIVITY"
-	,	"COMMENTS"
-	,	"REFERENCE"
+   ,  "DEPTH"
+	,	"PLATFORM_TYPE"
+   ,  "COMMENTS"
   ) DEFAULT COLLATION "USING_NLS_COMP"  AS 
   with param as
 (
@@ -33,7 +29,7 @@ CREATE OR REPLACE FORCE EDITIONABLE VIEW "MEDSADMIN"."V_MAP_MLO_SHIP_OBSERVATION
    from   medsfilter a
    ,      medslayer  b
    where  a.medsfilter = nv('P200_MEDSFILTER')
-   and    b.label      = 'SHIP'
+   and    b.label      = 'OMNI AMBIENT'
    and    ':' || a.layerstring || ':' like '%:' || b.label || ':%'
 )
 , mpjs
@@ -56,17 +52,13 @@ select p.icon
 ,      b.longitude
 ,      to_char(b.date_recorded,'dd Mon yyyy') 
 ,		 c.ship
-,		 c.count
-,		 c.size_
-,		 c.speed
-,		 c.heading
-,		 c.activity
+,		 c.depth
+,		 c.platform_type
 ,		 c.comments
-,		 c.reference
 from   param                  p
 ,      mpjs                   a
-,      mlo_ship_observation   b
-,      mlo_ship_data          c
+,      omni_ambient_observation   b
+,      omni_ambient_data          c
 where  b.meds_job_number         = a.meds_job_number   
 and    b.date_recorded between p.date_start and p.date_end
 and    c.meds_job_number         = b.meds_job_number

@@ -6,16 +6,16 @@ where data_type_index = 16
 AND INCLUDE_IN_INPUT=1
 order by table_name,field_position;
 
-select * from stg_file where job_number=102590;
-select * from stg_file_csv_row where stg_file=30447970874638867972461094227036245014 order by row_sequence;
-select count(*) from stg_file_csv_row where stg_file=30447970874638867972461094227036245014;
+select * from stg_file where job_number=102642;
+select * from stg_file_csv_row where stg_file=33198522144910489603484754396553292906 order by row_sequence;
+select count(*) from stg_file_csv_row where stg_file=33198522144910489603484754396553292906;
 
 ALTER SESSION SET NLS_DATE_FORMAT='DD-MON-YYYY HH24:MI:SS';
 
 select * from omni_ambient_observation where meds_job_number=102460 order by meds_observation_number;           -- ONE OBSERVATION FOR EACH line, unique observation date, longitutde, latitude
 select * from omni_ambient_data where meds_job_number=102460 order by meds_observation_number;
 select count(*) from omni_ambient_observation where meds_job_number=102460 ;                --708
-select count(*) from omni_ambient_data where meds_job_number=102460 ;                       --399
+select count(*) from omni_ambient_data where meds_job_number=102460 ;                       --708
 
 select a.* 
 from omni_ambient_observation a 
@@ -25,11 +25,11 @@ and not exists (select 'x'
                 where b.meds_job_number = a.meds_job_number 
                 and   b.meds_observation_number = a.meds_observation_number);
 
-select * from omni_ambient_observation where meds_job_number=102590 order by meds_observation_number;      
-select * from omni_ambient_data where meds_job_number=102590 order by meds_observation_number;
+select * from omni_ambient_observation where meds_job_number=102642 order by meds_observation_number;      
+select * from omni_ambient_data where meds_job_number=102642 order by meds_observation_number;
 
-select count(*) from omni_ambient_observation where meds_job_number=102590 ;                --1246
-select count(*) from omni_ambient_data where meds_job_number=102590 ;                       --1228
+select count(*) from omni_ambient_observation where meds_job_number=102642 ;                --1246
+select count(*) from omni_ambient_data where meds_job_number=102642 ;                       --1228
 --
 delete from OMNI_AMBIENT_OBSERVATION where meds_job_number=102590;
 delete from OMNI_AMBIENT_DATA where meds_job_number=102590;
