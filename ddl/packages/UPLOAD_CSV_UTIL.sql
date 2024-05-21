@@ -367,7 +367,7 @@ as
    )   
    is
    begin
-      -- Insert the observations first, grouped by date, latitude and longitude
+      -- Insert the observations first, an observation per csv row
       insert into omni_ambient_observation 
       (
           latitude
@@ -382,204 +382,193 @@ as
       ,  b.col005
       ,  SDO_GEOMETRY(2001, 4326, SDO_POINT_TYPE(b.col005, b.col006, NULL), NULL, NULL) -- Longitude, latitude
       ,  to_date(b.col001 || ' ' || b.col002, 'dd/mm/yyyy hh24:mi:ss') 
-      ,  row_number() over(order by b.col001, b.col002, b.col005, b.col006)
+      ,  row_sequence
       ,  p_job_number
       from       stg_file         a
       inner join stg_file_csv_row b
          on b.stg_file   = a.stg_file
       where a.job_number = p_job_number
-      group by 
-         b.col001
-      ,  b.col002
-      ,  b.col005
-      ,  b.col006;
+      order by row_sequence;
 
-      -- Insert all data, referencing the observation
-      for f_stg_file in (select stg_file from stg_file where job_number = p_job_number)
-      loop
-         insert into omni_ambient_data 
-         (
-            depth 
-         ,	wave_height 
-         ,	wind_speed 
-         ,	ofp_number 
-         ,	wind_direction 
-         ,	wave_direction 
-         ,	sea_state 
-         ,	contact_density 
-         ,	s05_10 
-         ,	s20_50 
-         ,	contact_details 
-         ,	qc 
-         ,	record_number 
-         ,	comments 
-         ,	meds_observation_number 
-         ,	meds_job_number 
-         ,	s00_05 
-         ,	s10_20 
-         ,	ship 
-         ,	country 
-         ,	platform_type 
-         ,	month 
-         ,	precipitation 
-         ,	time 
-         ,	hz_3_15 
-         ,	hz_4 
-         ,	hz_5 
-         ,	hz_6_3 
-         ,	hz_8 
-         ,	hz_10 
-         ,	hz_12_5 
-         ,	hz_16 
-         ,	hz_20 
-         ,	hz_25 
-         ,	hz_31_5 
-         ,	hz_40 
-         ,	hz_50 
-         ,	hz_55 
-         ,	hz_60 
-         ,	hz_63 
-         ,	hz_80 
-         ,	hz_100 
-         ,	hz_115 
-         ,	hz_120 
-         ,	hz_125 
-         ,	hz_135 
-         ,	hz_150 
-         ,	hz_155 
-         ,	hz_160 
-         ,	hz_200 
-         ,	hz_240 
-         ,	hz_248 
-         ,	hz_250 
-         ,	hz_300 
-         ,	hz_305 
-         ,	hz_315 
-         ,	hz_400 
-         ,	hz_440 
-         ,	hz_450 
-         ,	hz_500 
-         ,	hz_600 
-         ,	hz_605 
-         ,	hz_630 
-         ,	hz_660 
-         ,	hz_800 
-         ,	hz_850 
-         ,	hz_1000 
-         ,	hz_1150 
-         ,	hz_1205 
-         ,	hz_1250 
-         ,	hz_1500 
-         ,	hz_1600 
-         ,	hz_1700 
-         ,	hz_2000 
-         ,	hz_2400 
-         ,	hz_2500 
-         ,	hz_3150 
-         ,	hz_4000 
-         ,	hz_5000 
-         ,	hz_6300 
-         ,	hz_8000 
-         ,	hz_75 
-         ,	buoy_type 
-         ,	channel 
-         ,	hz_950
-         ) 
-         select 
-            a.col106
-         ,	a.col107
-         ,	a.col111
-         ,	a.col120
-         ,	a.col110
-         ,	a.col108
-         ,	a.col109
-         ,	a.col113
-         ,	a.col115
-         ,	a.col117
-         ,	a.col118
-         ,	a.col126
-         ,	a.col125
-         ,	a.col128
-         ,  b.meds_observation_number
-         ,  p_job_number
-         ,	a.col114
-         ,	a.col116
-         ,	a.col122
-         ,	a.col121
-         ,	a.col119
-         ,	a.col004
-         ,	a.col112
-         ,	a.col003
-         ,	a.col007
-         ,	a.col008
-         ,	a.col009
-         ,	a.col010
-         ,	a.col011
-         ,	a.col012
-         ,	a.col013
-         ,	a.col014
-         ,	a.col015
-         ,	a.col016
-         ,	a.col017
-         ,	a.col018
-         ,	a.col019
-         ,	a.col020
-         ,	a.col021
-         ,	a.col022
-         ,	a.col024
-         ,	a.col025
-         ,	a.col026
-         ,	a.col027
-         ,	a.col028
-         ,	a.col029
-         ,	a.col030
-         ,	a.col031
-         ,	a.col032
-         ,	a.col033
-         ,	a.col034
-         ,	a.col035
-         ,	a.col036
-         ,	a.col037
-         ,	a.col038
-         ,	a.col039
-         ,	a.col040
-         ,	a.col041
-         ,	a.col042
-         ,	a.col043
-         ,	a.col044
-         ,	a.col045
-         ,	a.col046
-         ,	a.col047
-         ,	a.col048
-         ,	a.col049
-         ,	a.col051
-         ,	a.col052
-         ,	a.col053
-         ,	a.col054
-         ,	a.col055
-         ,	a.col056
-         ,	a.col057
-         ,	a.col058
-         ,	a.col059
-         ,	a.col060
-         ,	a.col061
-         ,	a.col062
-         ,	a.col063
-         ,	a.col064
-         ,	a.col065
-         ,	a.col023
-         ,	a.col127
-         ,	a.col123
-         ,	a.col050
-         from       stg_file_csv_row         a
-         inner join omni_ambient_observation b 
-            on  b.meds_job_number = p_job_number 
-            and b.date_recorded   = to_date(a.col001 || ' ' || a.col002, 'dd/mm/yyyy hh24:mi:ss') 
-            and b.longitude       = a.col005 
-            and b.latitude        = a.col006
-         where a.stg_file         = f_stg_file.stg_file
-         order by b.meds_observation_number;
-      end loop;
+      insert into omni_ambient_data 
+      (
+         depth 
+      ,	wave_height 
+      ,	wind_speed 
+      ,	ofp_number 
+      ,	wind_direction 
+      ,	wave_direction 
+      ,	sea_state 
+      ,	contact_density 
+      ,	s05_10 
+      ,	s20_50 
+      ,	contact_details 
+      ,	qc 
+      ,	record_number 
+      ,	comments 
+      ,	meds_observation_number 
+      ,	meds_job_number 
+      ,	s00_05 
+      ,	s10_20 
+      ,	ship 
+      ,	country 
+      ,	platform_type 
+      ,	month 
+      ,	precipitation 
+      ,	time 
+      ,	hz_3_15 
+      ,	hz_4 
+      ,	hz_5 
+      ,	hz_6_3 
+      ,	hz_8 
+      ,	hz_10 
+      ,	hz_12_5 
+      ,	hz_16 
+      ,	hz_20 
+      ,	hz_25 
+      ,	hz_31_5 
+      ,	hz_40 
+      ,	hz_50 
+      ,	hz_55 
+      ,	hz_60 
+      ,	hz_63 
+      ,	hz_80 
+      ,	hz_100 
+      ,	hz_115 
+      ,	hz_120 
+      ,	hz_125 
+      ,	hz_135 
+      ,	hz_150 
+      ,	hz_155 
+      ,	hz_160 
+      ,	hz_200 
+      ,	hz_240 
+      ,	hz_248 
+      ,	hz_250 
+      ,	hz_300 
+      ,	hz_305 
+      ,	hz_315 
+      ,	hz_400 
+      ,	hz_440 
+      ,	hz_450 
+      ,	hz_500 
+      ,	hz_600 
+      ,	hz_605 
+      ,	hz_630 
+      ,	hz_660 
+      ,	hz_800 
+      ,	hz_850 
+      ,	hz_1000 
+      ,	hz_1150 
+      ,	hz_1205 
+      ,	hz_1250 
+      ,	hz_1500 
+      ,	hz_1600 
+      ,	hz_1700 
+      ,	hz_2000 
+      ,	hz_2400 
+      ,	hz_2500 
+      ,	hz_3150 
+      ,	hz_4000 
+      ,	hz_5000 
+      ,	hz_6300 
+      ,	hz_8000 
+      ,	hz_75 
+      ,	buoy_type 
+      ,	channel 
+      ,	hz_950
+      ) 
+      select 
+         b.col106
+      ,	b.col107
+      ,	b.col111
+      ,	b.col120
+      ,	b.col110
+      ,	b.col108
+      ,	b.col109
+      ,	b.col113
+      ,	b.col115
+      ,	b.col117
+      ,	b.col118
+      ,	b.col126
+      ,	b.col125
+      ,	b.col128
+      ,  b.row_sequence
+      ,  p_job_number
+      ,	b.col114
+      ,	b.col116
+      ,	b.col122
+      ,	b.col121
+      ,	b.col119
+      ,	b.col004
+      ,	b.col112
+      ,	b.col003
+      ,	b.col007
+      ,	b.col008
+      ,	b.col009
+      ,	b.col010
+      ,	b.col011
+      ,	b.col012
+      ,	b.col013
+      ,	b.col014
+      ,	b.col015
+      ,	b.col016
+      ,	b.col017
+      ,	b.col018
+      ,	b.col019
+      ,	b.col020
+      ,	b.col021
+      ,	b.col022
+      ,	b.col024
+      ,	b.col025
+      ,	b.col026
+      ,	b.col027
+      ,	b.col028
+      ,	b.col029
+      ,	b.col030
+      ,	b.col031
+      ,	b.col032
+      ,	b.col033
+      ,	b.col034
+      ,	b.col035
+      ,	b.col036
+      ,	b.col037
+      ,	b.col038
+      ,	b.col039
+      ,	b.col040
+      ,	b.col041
+      ,	b.col042
+      ,	b.col043
+      ,	b.col044
+      ,	b.col045
+      ,	b.col046
+      ,	b.col047
+      ,	b.col048
+      ,	b.col049
+      ,	b.col051
+      ,	b.col052
+      ,	b.col053
+      ,	b.col054
+      ,	b.col055
+      ,	b.col056
+      ,	b.col057
+      ,	b.col058
+      ,	b.col059
+      ,	b.col060
+      ,	b.col061
+      ,	b.col062
+      ,	b.col063
+      ,	b.col064
+      ,	b.col065
+      ,	b.col023
+      ,	b.col127
+      ,	b.col123
+      ,	b.col050
+      from       stg_file         a
+      inner join stg_file_csv_row b
+         on b.stg_file   = a.stg_file
+      where a.job_number = p_job_number
+      order by row_sequence;
 
    end parse_datatype_omni_ambient;
 
