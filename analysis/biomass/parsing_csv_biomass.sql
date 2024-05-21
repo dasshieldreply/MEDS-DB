@@ -56,11 +56,11 @@ select * from BIOMASS_DATA where meds_job_number=68822 order by meds_observation
 --select * from BIOMASS_DATA where meds_job_number=68822 order by meds_observation_number;
 
 select * from BIOMASS_OBSERVATION where meds_job_number=102583 order by 1;
-select count(*) from BIOMASS_OBSERVATION where meds_job_number=102583 order by 1;
+select count(*) from BIOMASS_OBSERVATION where meds_job_number=102583;
 select count(*) from BIOMASS_DATA where meds_job_number=102583 ;
 
-delete from BIOMASS_OBSERVATION where meds_job_number=102583;
-delete from BIOMASS_DATA where meds_job_number=102583;
+delete from BIOMASS_OBSERVATION where meds_job_number=102640;
+delete from BIOMASS_DATA where meds_job_number=102640;
 
 /*
 select 
@@ -105,22 +105,16 @@ inner join biomass_observation c
 where a.job_number       = 102583
 order by c.meds_observation_number;      
 
-      select 
-         a.col005
-      ,  a.col006
-      ,  a.col007
-      ,  a.col008
-      ,  a.col009
-      ,  a.col010
-      ,  p_job_number
-      ,  b.meds_observation_number
-      from       stg_file_csv_row    a
-      inner join biomass_observation b 
-         on  b.meds_job_number = p_job_number 
-         and b.date_recorded   = to_date(a.col001 || ' ' || a.col002, 'dd/mm/yyyy hh24:mi:ss') 
-         and b.latitude        = a.col003 
-         and b.longitude       = a.col004 
-      where a.stg_file=p_stg_file
-      order by b.meds_observation_number;
 
-      
+select 
+   row_sequence
+,  SDO_GEOMETRY(2001, 4326, SDO_POINT_TYPE(b.col004, b.col003, NULL), NULL, NULL) -- Longitude, latitude
+,  to_date(b.col001 || ' ' || b.col002, 'dd/mm/yyyy hh24:mi:ss') 
+,  b.col003
+,  b.col004
+from       stg_file         a
+inner join stg_file_csv_row b 
+   on b.stg_file   = a.stg_file
+where a.job_number = 102640
+order by row_sequence;
+

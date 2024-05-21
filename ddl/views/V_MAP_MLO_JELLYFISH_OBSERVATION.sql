@@ -1,4 +1,4 @@
-  CREATE OR REPLACE FORCE EDITIONABLE VIEW "MEDSADMIN"."V_MAP_MLO_FISH_OBSERVATION" ("ICON", "COLOR", "MEDS_JOB_NUMBER", "MEDS_OBSERVATION_NUMBER", "LOCATION", "LATITUDE", "LONGITUDE", "LABEL_DATE", "SPECIES", "COUNT", "SHIP", "SIZE_", "BEARING") DEFAULT COLLATION "USING_NLS_COMP"  AS 
+  CREATE OR REPLACE FORCE EDITIONABLE VIEW "MEDSADMIN"."V_MAP_MLO_JELLYFISH_OBSERVATION" ("ICON", "COLOR", "MEDS_JOB_NUMBER", "MEDS_OBSERVATION_NUMBER", "LOCATION", "LATITUDE", "LONGITUDE", "LABEL_DATE", "SPECIES", "COUNT", "SHIP", "SIZE_", "BEARING") DEFAULT COLLATION "USING_NLS_COMP"  AS 
   with param as
 (
    select 
@@ -16,7 +16,7 @@
    from   medsfilter a
    ,      medslayer  b
    where  a.medsfilter = nv('P200_MEDSFILTER')
-   and    b.label      = 'FISH'
+   and    b.label      = 'JELLYFISH'
    and    ':' || a.layerstring || ':' like '%:' || b.label || ':%'
 )
 , mpjs
@@ -45,8 +45,8 @@ select p.icon
 ,      c.bearing
 from   param                  p
 ,      mpjs                   a
-,      mlo_fish_observation   b
-,      mlo_fish_data          c
+,      mlo_JELLYFISH_observation   b
+,      mlo_JELLYFISH_data          c
 where  b.meds_job_number         = a.meds_job_number   
 and    b.date_recorded between p.date_start and p.date_end
 and    c.meds_job_number         = b.meds_job_number
