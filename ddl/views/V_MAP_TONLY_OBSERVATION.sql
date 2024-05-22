@@ -1,4 +1,4 @@
- CREATE OR REPLACE FORCE EDITIONABLE VIEW "MEDSADMIN"."V_MAP_TS_OBSERVATION" 
+ CREATE OR REPLACE FORCE EDITIONABLE VIEW "MEDSADMIN"."V_MAP_TONLY_OBSERVATION" 
 (
       "ICON"
    ,  "COLOR"
@@ -32,7 +32,7 @@ as
    from   medsfilter a
    ,      medslayer  b
    where  a.medsfilter = nv('P200_MEDSFILTER')
-   and    b.label      = 'TEMPERATURE AND SALINITY'
+   and    b.label      = 'TEMPERATURE'
    and    ':'||a.layerstring||':' like '%:'||b.label||':%'
 )
 , mpjs
@@ -56,14 +56,14 @@ select p.icon
 ,      b.latitude
 ,      b.longitude
 ,      to_char(b.date_time,'dd Mon yyyy') label_date
-,      c.description label_instrument 
+,      c.description                      label_instrument 
 ,      b.number_of_depth_levels            
 ,      b.minimum_depth_level
 ,      b.maximum_depth_level
-from   param            p
-,      mpjs             a
-,      profile_index_ts b
-,      instrument       c
+from   param               p
+,      mpjs                a
+,      profile_index_tonly b
+,      instrument          c
 where  b.meds_job_number = a.meds_job_number
 and    b.date_time       between p.date_start and p.date_end
 and    c.ocean           = b.instrument_code;
