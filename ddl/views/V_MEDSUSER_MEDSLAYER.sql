@@ -5,6 +5,7 @@ CREATE OR REPLACE FORCE EDITIONABLE VIEW "V_MEDSUSER_MEDSLAYER"
 ,  MEDSLAYER
 ,  LABEL
 ,  USAGE
+,  JOB_TYPE_NUMBER
 ,  CMUSER
 ) DEFAULT COLLATION "USING_NLS_COMP"  AS 
 select a.medsuser_medslayer
@@ -12,6 +13,7 @@ select a.medsuser_medslayer
 ,      a.medslayer
 ,      b.label
 ,      b.usage
+,      b.job_type_number
 ,      c.cmuser
 from   medsuser_medslayer  a
 ,      medslayer           b
