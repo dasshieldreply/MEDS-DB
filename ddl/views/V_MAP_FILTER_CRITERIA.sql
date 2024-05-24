@@ -11,7 +11,7 @@ create or replace force editionable view "MEDSADMIN"."V_MAP_FILTER_CRITERIA" (
 ,  "ORIGINATOR" 
 ,  "SUPPLIER"
 ,  "ICON" 
-,  "COLOUR"
+,  "COLOR"
 ,  "LOCATION_RECTANGLE" 
 ) Default Collation "USING_NLS_COMP"  
 as 
