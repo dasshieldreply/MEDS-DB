@@ -59,7 +59,7 @@ from   fltr                  a
 ,      job_tracking          d
 where  b.type = 'Data Type'
 and    b.usage = a.usage
-and   (c.data_type        = b.usage or c.data_type          = b.description)               -- will select jobs that have the data type of the layer. The data_type field can have usage or description as value
+and   (c.data_type        = b.usage or c.data_type          = b.description)   -- will select jobs that have the data type of the layer. The data_type field can have usage or description as value
 and   (a.meic_number        is null or c.meic_number        = a.meic_number)
 and   (a.meds_job_number    is null or c.job_number         = a.meds_job_number)
 and   (a.meds_cruise_number is null or c.meds_cruise_number = a.meds_cruise_number)
