@@ -57,10 +57,10 @@ from   fltr                  a
 ,      job_lookups           b
 ,      meds_processing_job   c
 ,      job_tracking          d
-where  b.type = 'Data Type'
+where  b.type  = 'Data Type'
 and    b.usage = a.usage
 and    b.generic != 8                              -- to avoid cetaceans envelope and track data types
-and   (c.data_type           = b.usage or c.data_type          = b.description)   -- will select jobs that have the data type of the layer. The data_type field can have usage or description as value
+and   (c.data_type           = b.usage or c.data_type        = b.description)   -- will select jobs that have the data type of the layer. The data_type field can have usage or description as value
 and   (a.meic_number         is null or c.meic_number        = a.meic_number)
 and   (a.meds_job_number     is null or c.job_number         = a.meds_job_number)
 and   (a.meds_cruise_number  is null or c.meds_cruise_number = a.meds_cruise_number)

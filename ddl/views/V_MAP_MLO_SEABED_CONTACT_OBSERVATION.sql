@@ -1,102 +1,78 @@
 CREATE OR REPLACE FORCE EDITIONABLE VIEW "MEDSADMIN"."V_MAP_MLO_SEABED_CONTACT_OBSERVATION" (
-      "ICON"
-   ,  "COLOR"
-   ,  "MEDS_JOB_NUMBER"
-   ,  "MEDS_OBSERVATION_NUMBER"
-   ,  "LOCATION"
-   ,  "LATITUDE"
-   ,  "LONGITUDE"
-   ,  "LABEL_DATE"
-	,	"BOTTOM_MATERIAL"
-	,	"BOTTOM_MATERIAL_NO"
-	,	"BOTTOM_TYPE"
-	,	"CONTACT_REFERENCE"
-	,	"DEPTH"
-	,	"DESCRIPTION"
-	,	"DIMENSIONS_HEIGHT"
-	,	"DIMENSIONS_LENGTH"
-	,	"DIMENSIONS_MEASURED"
-	,	"DIMENSIONS_WIDTH"
-	,	"GENERAL_LOCATION"
-	,	"MARINE_GROWTH"
-	,	"MARINE_LIFE"
-	,	"PREVAILING_WEATHER"
-	,	"REPORT_NO"
-	,	"SHIP"
-	,	"SLOPE"
-	,	"SOFTNESS_HS_P1"
-	,	"SOFTNESS_S_P2"
-	,	"VISIBILITY_AT_SEABED"
-	,	"VISIBILITY_AT_SEABED_DEPTH"
-	,	"WRECKAGE_AND_DEBRIS"
-  ) DEFAULT COLLATION "USING_NLS_COMP"  AS 
-  with param as
-(
-   select 
-          a.medsfilter
-   ,      a.date_start date_start
-   ,      nvl(a.date_end,sysdate) date_end
-   ,      a.location_rectangle
-   ,      a.meic_number
+   "ICON"
+,  "COLOR"
+,  "MEDS_JOB_NUMBER"
+,  "MEDS_OBSERVATION_NUMBER"
+,  "LOCATION"
+,  "LATITUDE"
+,  "LONGITUDE"
+,  "LABEL_DATE"
+,	"BOTTOM_MATERIAL"
+,	"BOTTOM_MATERIAL_NO"
+,	"BOTTOM_TYPE"
+,	"CONTACT_REFERENCE"
+,	"DEPTH"
+,	"DESCRIPTION"
+,	"DIMENSIONS_HEIGHT"
+,	"DIMENSIONS_LENGTH"
+,	"DIMENSIONS_MEASURED"
+,	"DIMENSIONS_WIDTH"
+,	"GENERAL_LOCATION"
+,	"MARINE_GROWTH"
+,	"MARINE_LIFE"
+,	"PREVAILING_WEATHER"
+,	"REPORT_NO"
+,	"SHIP"
+,	"SLOPE"
+,	"SOFTNESS_HS_P1"
+,	"SOFTNESS_S_P2"
+,	"VISIBILITY_AT_SEABED"
+,	"VISIBILITY_AT_SEABED_DEPTH"
+,	"WRECKAGE_AND_DEBRIS"
+) DEFAULT COLLATION "USING_NLS_COMP"  
+AS 
+   with param as
+   (
+      select a.*
+      from   v_map_filter_criteria a
+      where  a.medsfilter = nv('P200_MEDSFILTER')
+   )
+   select p.icon
+   ,      p.color
    ,      a.meds_job_number
-   ,      a.meds_cruise_number
-   ,      a.meds_ship_number
-   ,      a.originator
-   ,      'fa ' || nvl(b.icon, 'fa-map_marker') icon
-   ,      nvl(b.color, '#000000') color
-   from   medsfilter a
-   ,      medslayer  b
-   where  a.medsfilter = nv('P200_MEDSFILTER')
-   and    b.label      = 'SEABED CONTACT'
-   and    ':' || a.layerstring || ':' like '%:' || b.label || ':%'
-)
-, mpjs
-as
-(
-   select a.job_number meds_job_number
-   from   param               p
-   ,      meds_processing_job a
-   where  (p.meic_number        is null or a.meic_number = p.meic_number)
-   and    (p.meds_job_number    is null or a.job_number = p.meds_job_number)
-   and    (p.meds_cruise_number is null or a.meds_cruise_number = p.meds_cruise_number)
-   and    (p.originator         is null or a.originator = p.originator)
-)
-select p.icon
-,      p.color
-,      b.meds_job_number
-,      b.meds_observation_number
-,      b.location
-,      b.latitude
-,      b.longitude
-,      to_char(b.date_recorded,'dd Mon yyyy') 
-,		 c.bottom_material
-,		 c.bottom_material_no
-,		 c.bottom_type
-,		 c.contact_reference
-,		 c.depth
-,		 c.description
-,		 c.dimensions_height
-,		 c.dimensions_length
-,		 c.dimensions_measured
-,		 c.dimensions_width
-,		 c.general_location
-,		 c.marine_growth
-,		 c.marine_life
-,		 c.prevailing_weather
-,		 c.report_no
-,		 c.ship
-,		 c.slope
-,		 c.softness_hs_p1
-,		 c.softness_s_p2
-,		 c.visibility_at_seabed
-,		 c.visibility_at_seabed_depth
-,		 c.wreckage_and_debris
-from   param                            p
-,      mpjs                             a
-,      mlo_seabed_contact_observation   b
-,      mlo_seabed_contact_data          c
-where  b.meds_job_number         = a.meds_job_number   
-and    b.date_recorded between p.date_start and p.date_end
-and    c.meds_job_number         = b.meds_job_number
-and    c.meds_observation_number = b.meds_observation_number
-and    sdo_anyinteract(b.location, p.location_rectangle) = 'TRUE';
+   ,      a.meds_observation_number
+   ,      a.location
+   ,      a.latitude
+   ,      a.longitude
+   ,      to_char(a.date_recorded,'dd Mon yyyy') 
+   ,		 b.bottom_material
+   ,		 b.bottom_material_no
+   ,		 b.bottom_type
+   ,		 b.contact_reference
+   ,		 b.depth
+   ,		 b.description
+   ,		 b.dimensions_height
+   ,		 b.dimensions_length
+   ,		 b.dimensions_measured
+   ,		 b.dimensions_width
+   ,		 b.general_location
+   ,		 b.marine_growth
+   ,		 b.marine_life
+   ,		 b.prevailing_weather
+   ,		 b.report_no
+   ,		 b.ship
+   ,		 b.slope
+   ,		 b.softness_hs_p1
+   ,		 b.softness_s_p2
+   ,		 b.visibility_at_seabed
+   ,		 b.visibility_at_seabed_depth
+   ,		 b.wreckage_and_debris
+   from   param                            p
+   ,      mlo_seabed_contact_observation   a
+   ,      mlo_seabed_contact_data          b
+   where  a.meds_job_number         = p.meds_job_number   
+   and    a.date_recorded between p.date_start and p.date_end
+   and    b.meds_job_number         = a.meds_job_number
+   and    b.meds_observation_number = a.meds_observation_number
+   and    sdo_anyinteract(a.location, p.location_rectangle) = 'TRUE'
+;
