@@ -1,21 +1,4 @@
-CREATE OR REPLACE FORCE EDITIONABLE VIEW "MEDSADMIN"."V_MAP_MLO_PINNIPEDS_OBSERVATION" (
-    "ICON"
-  , "COLOR"
-  , "MEDS_JOB_NUMBER"
-  , "MEDS_OBSERVATION_NUMBER"
-  , "LOCATION"
-  , "LATITUDE"
-  , "LONGITUDE"
-  , "LABEL_DATE"
-  , "SPECIES"
-  , "COUNT"
-  , "SHIP"
-  , "SIZE_"
-  , "BEARING"
-  , "RANGE"
-   , "COMMENTS"
-   , "REFERENCE"
-  ) DEFAULT COLLATION "USING_NLS_COMP"  AS 
+CREATE OR REPLACE FORCE EDITIONABLE VIEW "MEDSADMIN"."V_MAP_MLO_PINNIPEDS_OBSERVATION" AS 
    with param as
    (
       select a.*
@@ -29,7 +12,7 @@ CREATE OR REPLACE FORCE EDITIONABLE VIEW "MEDSADMIN"."V_MAP_MLO_PINNIPEDS_OBSERV
    ,      a.location
    ,      a.latitude
    ,      a.longitude
-   ,      to_char(a.date_recorded,'dd Mon yyyy') 
+   ,      to_char(a.date_recorded,'dd Mon yyyy') label_date
    ,      b.species
    ,      b.count
    ,      b.ship

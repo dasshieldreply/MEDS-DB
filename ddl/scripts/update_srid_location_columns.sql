@@ -12,8 +12,8 @@ CREATE INDEX "MEDSADMIN"."SI_UNIFIEDSECCHI" ON "MEDSADMIN"."UNIFIED_SECCHI_OBSER
 delete from DIVE_SITE_OBSERVATION where latitude is null
 /
 */
-update EDDY_SATELLITE_OBSERVATION a
-set location = MDSYS.sdo_geometry(2003, 4326);
+update PROFILE_INDEX_TONLY a
+set a.location = MDSYS.sdo_geometry(2001, 4326, MDSYS.SDO_POINT_TYPE(a.LONGITUDE, a.LATITUDE, null), null, null);
 /
 commit;
 /
@@ -39,7 +39,7 @@ select t.location.sdo_srid,
    t.location.SDO_POINT.z,
    t.location.sdo_elem_info,
    t.location.sdo_ordinates
-from EDDY_SATELLITE_OBSERVATION t;
+from profile_index_sv t;
 
 
 select sdo_geom.validate_geometry_with_context(MDSYS.SDO_GEOMETRY(2002, NULL, NULL, 

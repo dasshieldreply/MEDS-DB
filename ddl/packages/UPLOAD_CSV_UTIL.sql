@@ -578,7 +578,7 @@ as
    )
    is
       v_stm          varchar2(4000);
-      v_ins1         varchar2(1000) default 'insert into glider_threaded_observation (location, meds_job_number, meds_observation_number, mid_latitude, mid_longitude, profile_id, profile_dir, distance_traveled, mid_time) values (sdo_geometry(2022, null, null, sdo_elem_info_array(1,2,1), sdo_ordinate_array(';
+      v_ins1         varchar2(1000) default 'insert into glider_threaded_observation (location, meds_job_number, meds_observation_number, mid_latitude, mid_longitude, profile_id, profile_dir, distance_traveled, mid_time) values (sdo_geometry(2002, 4326, null, sdo_elem_info_array(1,2,1), sdo_ordinate_array(';
       v_ins2         varchar2(1000) default 'insert into glider_threaded_data (meds_job_number, meds_observation_number, depth, temperature, temp_flag, salinity, sal_flag, sound_speed, density, chlorophyll, hydrocarbons, gelbstoffe, bioluminescence, longitude, latitude, date_recorded, point_order, bbp700) values (';
       v_point_order  number default 0;
    begin
@@ -697,7 +697,7 @@ as
       ,  seabed_depth      
       ) 
       select 
-         SDO_GEOMETRY(2001, null, SDO_POINT_TYPE(b.col004, b.col003, NULL), NULL, NULL) -- Longitude, latitude
+         SDO_GEOMETRY(2001, 4326, SDO_POINT_TYPE(b.col004, b.col003, NULL), NULL, NULL) -- Longitude, latitude
       ,  p_job_number
       ,  b.col017 -- profile_id and observation number
       ,  b.col004

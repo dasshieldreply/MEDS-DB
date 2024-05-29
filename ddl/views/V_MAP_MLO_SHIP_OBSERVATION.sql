@@ -1,26 +1,9 @@
-CREATE OR REPLACE FORCE EDITIONABLE VIEW "MEDSADMIN"."V_MAP_MLO_SHIP_OBSERVATION" (
-   "ICON"
-,  "COLOR"
-,  "MEDS_JOB_NUMBER"
-,  "MEDS_OBSERVATION_NUMBER"
-,  "LOCATION"
-,  "LATITUDE"
-,  "LONGITUDE"
-,  "LABEL_DATE"
-,  "SHIP"
-,  "COUNT"
-,	"LENGTH"
-,	"SPEED"
-,	"HEADING"
-,	"ACTIVITY"
-,	"COMMENTS"
-,	"REFERENCE"
-) DEFAULT COLLATION "USING_NLS_COMP"  
+CREATE OR REPLACE FORCE EDITIONABLE VIEW "MEDSADMIN"."V_MAP_MLO_SHIP_OBSERVATION" 
 AS 
    with param as
    (
       select a.*
-      from   v_map_filter_criteria a
+      from   v_filter_meds_job_number a
       where  a.medsfilter = nv('P200_MEDSFILTER')
    )
    select p.icon
@@ -30,7 +13,7 @@ AS
    ,      a.location
    ,      a.latitude
    ,      a.longitude
-   ,      to_char(a.date_recorded,'dd Mon yyyy') 
+   ,      to_char(a.date_recorded,'dd Mon yyyy') label_date
    ,		 b.ship
    ,		 b.count
    ,		 b.size_

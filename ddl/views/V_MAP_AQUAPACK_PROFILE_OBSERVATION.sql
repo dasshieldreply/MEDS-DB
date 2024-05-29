@@ -1,22 +1,9 @@
 CREATE OR REPLACE FORCE EDITIONABLE VIEW "MEDSADMIN"."V_MAP_AQUAPACK_PROFILE_OBSERVATION" 
-(
-     "ICON"
-   ,  "COLOR"
-   ,  "MEDS_JOB_NUMBER"
-   ,  "MEDS_OBSERVATION_NUMBER"
-   ,  "LOCATION"
-   ,  "LATITUDE"
-   ,  "LONGITUDE"
-   ,  "LABEL_DATE"
-   ,  "SUPPLIER"
-   ,  "NO_MEASUREMENTS"
-   ,  "MIN_DEPTH"
-   ,  "MAX_DEPTH"
-   ) DEFAULT COLLATION "USING_NLS_COMP"  AS 
+as
    with param as
    (
       select a.*
-      from   v_map_filter_criteria a
+      from   v_filter_meds_job_number a
       where  a.medsfilter = nv('P200_MEDSFILTER')
    ), 
    adta as
@@ -44,16 +31,18 @@ CREATE OR REPLACE FORCE EDITIONABLE VIEW "MEDSADMIN"."V_MAP_AQUAPACK_PROFILE_OBS
    ,      b.location
    ,      b.latitude
    ,      b.longitude
-   ,      to_char(b.date_recorded,'dd Mon yyyy') 
-   ,      p.supplier
+   ,      to_char(b.date_recorded,'dd Mon yyyy') label_date
+   ,      c.supplier
    ,      a.no_measurements
    ,      a.min_depth
    ,      a.max_depth
    from   param                        p
    ,      adta                         a
    ,      aquapack_profile_observation b
-   where  a.meds_job_number         = p.meds_job_number 
-   and    b.meds_job_number         = a.meds_job_number
-   and    b.meds_observation_number = a.meds_observation_number
+   ,      job_tracking                 c
+   where  a.meds_job_number            = p.meds_job_number 
    and    sdo_anyinteract(b.location, p.location_rectangle) = 'TRUE'
+   and    b.meds_job_number            = a.meds_job_number
+   and    b.meds_observation_number    = a.meds_observation_number
+   and    c.meic_number                = p.meic_number
 ;

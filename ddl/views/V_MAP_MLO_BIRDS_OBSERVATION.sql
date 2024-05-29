@@ -1,25 +1,9 @@
-create or replace force editionable view "MEDSADMIN"."V_MAP_MLO_BIRDS_OBSERVATION" (
-    "ICON"
-  , "COLOR"
-  , "MEDS_JOB_NUMBER"
-  , "MEDS_OBSERVATION_NUMBER"
-  , "LOCATION"
-  , "LATITUDE"
-  , "LONGITUDE"
-  , "LABEL_DATE"
-  , "SPECIES"
-  , "COUNT"
-  , "SHIP"
-  , "WIND_DIRECTION"
-  , "WIND_SPEED"
-  , "COMMENTS"
-  , "REFERENCE"
-  ) DEFAULT COLLATION "USING_NLS_COMP"  
+create or replace force editionable view "MEDSADMIN"."V_MAP_MLO_BIRDS_OBSERVATION" 
 as 
    with param as
    (
       select a.*
-      from   v_map_filter_criteria a
+      from   v_filter_meds_job_number a
       where  a.medsfilter = nv('P200_MEDSFILTER')
    )
    select p.icon
@@ -29,7 +13,7 @@ as
    ,      a.location
    ,      a.latitude
    ,      a.longitude
-   ,      to_char(a.date_recorded,'dd Mon yyyy') 
+   ,      to_char(a.date_recorded,'dd Mon yyyy') label_date
    ,      b.species
    ,      b.count
    ,      b.ship
