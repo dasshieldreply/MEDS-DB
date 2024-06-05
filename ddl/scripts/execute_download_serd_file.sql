@@ -2,7 +2,8 @@ declare
    p_medsfilter   number;
    v_return medsadmin.download_serd_util.serd_table;
 begin
-   p_medsfilter   := 33291604255346497974307817588378984392;
+   dbms_output. enable (buffer_size => null); 
+   p_medsfilter   := 34734195941609100775898109151233599034;
    
    for ret in 
    (

@@ -2,7 +2,7 @@ declare
    v_meic_number  number;
    v_job_number   number;
 begin
-   v_meic_number := 7363;
+   v_meic_number := 7424;
    
    select job_number into v_job_number from  meds_processing_job where meic_number = v_meic_number;
    
@@ -17,3 +17,8 @@ begin
    
    delete from job_tracking where meic_number = v_meic_number;
 end;
+/*
+delete from profile_index_ts where meds_job_number=102649;
+delete from profile_header_ts where meds_job_number=102649;
+delete from profile_data_ts where meds_job_number=102649;
+*/
