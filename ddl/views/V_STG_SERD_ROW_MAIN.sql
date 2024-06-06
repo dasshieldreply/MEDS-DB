@@ -24,7 +24,7 @@
 ,      substr(a.row_content,74,6)    station
 ,      substr(a.row_content,80,3)    institutenumber
 ,      substr(a.row_content,83,1)    institutenumbercode
-,      substr(a.row_content,81,1)    landcheck 
+,      substr(a.row_content,84,1)    landcheck 
 ,      substr(a.row_content,86,2)    depthlevelcount
 ,      substr(a.row_content,88,5)    depthtoseabed 
 ,      substr(a.row_content,93,4)    observationdepthmin 

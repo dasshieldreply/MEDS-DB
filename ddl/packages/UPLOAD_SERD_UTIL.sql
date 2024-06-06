@@ -157,7 +157,7 @@ as
       
    end update_processing_job;
    
-   procedure insert_ship (
+   procedure get_insert_ship (
       p_ICES_country_code           in varchar2 
    ,  p_ship_number                 in varchar2
    ,  p_ship_number_code            in number   -- to ensure no blank will arrive here from the SERD file
@@ -168,7 +168,7 @@ as
    ,  o_meds_ship_number            out number
    )
    is
-      v_meds_ship_number            number;
+      v_meds_ship_number   number;
    begin
    
       select meds_ship_number
@@ -180,7 +180,7 @@ as
       and mias_institute_code = p_MIAS_institute_code
       and mias_institute_flag = p_MIAS_institute_number_code
       and upper(vessel_name)  = upper(p_supplier)
-      and meds_cruise_number  = p_meds_cruise_number;
+      and (p_meds_cruise_number is null or meds_cruise_number  = p_meds_cruise_number);
       
       o_meds_ship_number :=  v_meds_ship_number; 
       
@@ -208,7 +208,7 @@ as
          o_meds_ship_number :=  v_meds_ship_number;  
             --dbms_output.put_line('Ship created ' || v_meds_ship_number); 
          
-   end insert_ship;
+   end get_insert_ship;
    
    procedure insert_profile_index (
       p_instr_data_type       in number
@@ -705,17 +705,14 @@ as
       o_instrument_code    out number
    )
    is
-
+      v_meds_cruise_number number;
       v_tbl                varchar2(100);
-      v_supplier           varchar2(50);
+      v_supplier           varchar2(64);
       v_obs                number default 0; -- this will be MEDS_OBSERVATION_NUMBER, one for each record type 2
       v_rows               number;
       v_instr_data_type    number;
-      v_meds_cruise_number number;
-
       index_rec            index_record;
       header_rec           header_record;
-      
       l_params             logger.tab_param; 
       l_scope              constant varchar2(61) := g_package||'parse_serd_data';
    begin
@@ -728,15 +725,13 @@ as
                             ,p_scope   => l_scope 
                             ,p_params  => l_params 
                             ); 
-      
-      select 
-         a.meds_cruise_number
-      ,  b.supplier
-      into 
-         v_meds_cruise_number
-      ,  v_supplier
-      from        meds_processing_job  a
-      inner join  job_tracking         b
+      -- Get the ship name that was informed by the processor in the job tracking, and the cruise in job processing
+      select  b.supplier
+      ,       a.meds_cruise_number   
+      into    v_supplier
+      ,       v_meds_cruise_number
+      from    meds_processing_job  a
+      inner join job_tracking      b
          on b.meic_number  = a.meic_number
       where a.job_number   = p_job_number;
       
@@ -786,7 +781,8 @@ as
          order by b.row_sequence
       )
       loop -- Each record is an observation
-         v_obs    := v_obs + 1;
+         v_obs       := v_obs + 1;
+         index_rec   := null;
          
          -- PROFILE_INDEX 
          index_rec.date_time					   := to_date(f_main_row.observationdate || f_main_row.observationtime,'YYYYMMDDHH24MI');
@@ -807,21 +803,25 @@ as
          index_rec.string_location           := f_main_row.positiongeo;
          index_rec.latitude	               := substr(f_main_row.positiongeo,1,3) + round(substr(f_main_row.positiongeo,4,4)/600, 4);
          index_rec.longitude                 := substr(f_main_row.positiongeo,8,4) + round(substr(f_main_row.positiongeo,12,4)/600, 4);
-         index_rec.meds_cruise_number        := v_meds_cruise_number;
-         
+         index_rec.meds_cruise_number        := v_meds_cruise_number; 
+        
          select ocean
          into index_rec.instrument_code
          from instrument
          where serd = f_main_row.instrumentcode;
 
-         upload_serd_util.insert_ship(p_ices_country_code          => f_main_row.country,
-                                      p_ship_number                => f_main_row.shipnumber,
-                                      p_ship_number_code           => f_main_row.shipnumbercode ,       -- might crash if not 0/1?
-                                      p_mias_institute_code        => f_main_row.institutenumber,
-                                      p_mias_institute_number_code => f_main_row.institutenumbercode,   -- might crash if not 0/1?
-                                      p_supplier                   => v_supplier,
-                                      p_meds_cruise_number         => v_meds_cruise_number,
-                                      o_meds_ship_number           => index_rec.meds_ship_number);
+         if v_supplier is null then 
+            index_rec.meds_ship_number := null;
+         else
+            upload_serd_util.get_insert_ship(p_ices_country_code      => f_main_row.country,
+                                         p_ship_number                => f_main_row.shipnumber,
+                                         p_ship_number_code           => f_main_row.shipnumbercode ,       -- might crash if not 0/1?
+                                         p_mias_institute_code        => f_main_row.institutenumber,
+                                         p_mias_institute_number_code => f_main_row.institutenumbercode,   -- might crash if not 0/1?
+                                         p_meds_cruise_number         => index_rec.meds_cruise_number,
+                                         p_supplier                   => v_supplier,
+                                         o_meds_ship_number           => index_rec.meds_ship_number);
+         end if;
                                         
          -- PROFILE_HEADER          
          header_rec.additional_posn_ref		:= f_main_row.positionreference;
@@ -854,7 +854,12 @@ as
          header_rec.weather					   := f_main_row.weather;
          header_rec.wet_air_temp				   := f_main_row.airtemperaturewet;
          header_rec.wind_dir					   := f_main_row.winddirection;
-         header_rec.wind_speed				   := f_main_row.windspeed;	                              
+         header_rec.wind_speed				   := f_main_row.windspeed;
+         header_rec.bt_sst_instrument        := btseasurfaceinstrument;
+         header_rec.bt_sst_ref               := f_main_row.btseasurfacetemperature;
+         header_rec.mbt_surface_t_corr       := f_main_row.mbttemperaturecorrection;
+         header_rec.mbt_type_quality         := f_main_row.mbttype;
+         header_rec.mbt_grade_quality        := f_main_row.mbtgrade;
       
          insert_profile_header(p_instr_data_type => v_instr_data_type,
                                p_header_record   => header_rec);
