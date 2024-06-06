@@ -47,7 +47,7 @@ as
    ,	degree_square			   number
    ,	duplicate_flag			   number
    ,	hood_archive_year		   number
-   ,	string_location			varchar2(15)
+   ,	string_location			char(15)
    ,	latitude				      number 
    ,	longitude				   number
    ,	meds_ship_number		   number
@@ -55,45 +55,45 @@ as
    ,  meds_observation_number number
    ,  meds_job_number         number
    ,	no_of_comments			   number
-   ,	comments				      varchar2(640));
+   ,	comments				      char(640));
    
    type header_record         is record (
-      additional_posn_ref		varchar2(12)
-   ,	atmospheric_pressure	   varchar2(5)
-   ,	bt_sst_instrument		   varchar2(1)
-   ,	bt_sst_ref				   varchar2(4)
-   ,	cloud					      varchar2(1)
-   ,	data_identifier			varchar2(1)
-   ,	data_method				   varchar2(1)
-   ,	data_mode				   varchar2(1)
-   ,	data_type				   varchar2(1)
-   ,	dry_air_temp			   varchar2(4)
-   ,	d_corr					   varchar2(3)
-   ,	file_filler				   varchar2(4)
-   ,	hood_cruise_id			   varchar2(8)
-   ,	hood_station_number		varchar2(6)
-   ,	land_check				   varchar2(1)
-   ,	mbt_grade_quality		   varchar2(1)
-   ,	mbt_surface_t_corr		varchar2(3)
-   ,	mbt_type_quality		   varchar2(1)
+      additional_posn_ref		char(12)
+   ,	atmospheric_pressure	   char(5)
+   ,	bt_sst_instrument		   char(1)
+   ,	bt_sst_ref				   char(4)
+   ,	cloud					      char(1)
+   ,	data_identifier			char(1)
+   ,	data_method				   char(1)
+   ,	data_mode				   char(1)
+   ,	data_type				   char(1)
+   ,	dry_air_temp			   char(4)
+   ,	d_corr					   char(3)
+   ,	file_filler				   char(4)
+   ,	hood_cruise_id			   char(8)
+   ,	hood_station_number		char(6)
+   ,	land_check				   char(1)
+   ,	mbt_grade_quality		   char(1)
+   ,	mbt_surface_t_corr		char(3)
+   ,	mbt_type_quality		   char(1)
    ,	meds_job_number			number
    ,	meds_observation_number	number
-   ,	posn_accuracy_code		varchar2(1)
-   ,	posn_determination		varchar2(1)
-   ,	sea_state				   varchar2(1)
-   ,	sv_corr					   varchar2(3)
-   ,	s_corr					   varchar2(4)
-   ,	s_scale_code			   varchar2(1)
-   ,	t_corr					   varchar2(3)
-   ,	units					      varchar2(1)
-   ,	water_colour			   varchar2(2)
-   ,	water_trans				   varchar2(2)
-   ,	wave_height				   varchar2(2)
-   ,	wave_period				   varchar2(2)
-   ,	weather					   varchar2(1)
-   ,	wet_air_temp			   varchar2(4)
-   ,	wind_dir				      varchar2(2)
-   ,	wind_speed				   varchar2(2));
+   ,	posn_accuracy_code		char(1)
+   ,	posn_determination		char(1)
+   ,	sea_state				   char(1)
+   ,	sv_corr					   char(3)
+   ,	s_corr					   char(4)
+   ,	s_scale_code			   char(1)
+   ,	t_corr					   char(3)
+   ,	units					      char(1)
+   ,	water_colour			   char(2)
+   ,	water_trans				   char(2)
+   ,	wave_height				   char(2)
+   ,	wave_period				   char(2)
+   ,	weather					   char(1)
+   ,	wet_air_temp			   char(4)
+   ,	wind_dir				      char(2)
+   ,	wind_speed				   char(2));
    
    function only_one_instrument_data_type
    (
@@ -855,7 +855,7 @@ as
          header_rec.wet_air_temp				   := f_main_row.airtemperaturewet;
          header_rec.wind_dir					   := f_main_row.winddirection;
          header_rec.wind_speed				   := f_main_row.windspeed;
-         header_rec.bt_sst_instrument        := btseasurfaceinstrument;
+         header_rec.bt_sst_instrument        := f_main_row.btseasurfaceinstrument;
          header_rec.bt_sst_ref               := f_main_row.btseasurfacetemperature;
          header_rec.mbt_surface_t_corr       := f_main_row.mbttemperaturecorrection;
          header_rec.mbt_type_quality         := f_main_row.mbttype;
