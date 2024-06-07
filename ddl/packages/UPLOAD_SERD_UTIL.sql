@@ -797,7 +797,7 @@ as
          index_rec.degree_square				   := f_main_row.degreesquare;
          index_rec.hood_archive_year		   := nullif(f_main_row.archiveyear, '  ');
          index_rec.no_of_comments			   := f_main_row.commentcount;
-         index_rec.comments					   := trim(f_main_row.commentcontent);
+         index_rec.comments					   := f_main_row.commentcontent;
          index_rec.meds_job_number           := p_job_number;
          index_rec.meds_observation_number   := v_obs;
          index_rec.string_location           := f_main_row.positiongeo;
