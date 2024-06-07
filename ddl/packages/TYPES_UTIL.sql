@@ -24,8 +24,8 @@ as
    );
    
    type all_levels_record is record(
-      level_rec                  level_record
-   ,  level_no                   number
+      string_all_levels          all_levels_string
+   ,  no_of_levels               number
    );
    
    type header_record is record(

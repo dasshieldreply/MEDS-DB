@@ -120,17 +120,17 @@ as
    ,  p_depth_start              number
    ,  p_depth_end                number
    )
-   return all_levels_record
+   return types_util.all_levels_record
    is
       l_all_levels_string  types_util.all_levels_string;
       l_level_record       types_util.level_record;
       l_all_levels_record  types_util.all_levels_record;
+      l_level_no           number default 0;
    begin
-      --dbms_output.put_line('start observation :' || p_meds_observation_number);
       for l_level_record in 
       (
          select 
-            '0'
+            '0' -- SV does not have depth indicator, so constant 0
          ,  depth
          ,  d_quality
          ,  temperature
@@ -147,15 +147,14 @@ as
          order by depth
       )
       loop
-      
-         if l_all_levels_string is null then 
-            l_all_levels_string := create_one_level_string(l_level_record);
-         else
-            l_all_levels_string := l_all_levels_string || create_one_level_string(l_level_record);
-         end if;
+         l_level_no := l_level_no + 1;
+         l_all_levels_string := l_all_levels_string || create_one_level_string(l_level_record);
       end loop;
-      --dbms_output.put_line('end observation :' || p_meds_observation_number);
-      return l_all_levels_string;
+      
+      l_all_levels_record.string_all_levels  := l_all_levels_string;
+      l_all_levels_record.no_of_levels       := l_level_no;
+      
+      return l_all_levels_record;
    end create_all_levels_string;
 
    function download_sv_serd_file
@@ -167,6 +166,7 @@ as
    is
       l_serd_record        types_util.serd_record; 
       l_header_record      types_util.header_record;
+      l_all_levels_record  types_util.all_levels_record;
       l_header_string      types_util.header_string; 
       l_all_levels_string  types_util.all_levels_string;
       l_record_tp          char(1);
@@ -249,13 +249,21 @@ as
          l_levels_no    := l_header_record.number_of_depth_levels;
          l_depth_start  := 0;
          l_depth_end    := 49;
-         
-         if l_levels_no <= 49 then
-            l_serd_record.record_data  := create_header_string(l_header_record,l_record_no,2,l_levels_no) ||
-                                          create_all_levels_string(l_header_record.meds_job_number,l_header_record.meds_observation_number,l_depth_start,l_depth_end);
+         l_all_levels_record  := create_all_levels_string(l_header_record.meds_job_number,
+                                                          l_header_record.meds_observation_number,
+                                                          l_depth_start,
+                                                          l_depth_end);
+         l_header_string      := create_header_string    (l_header_record,
+                                                          l_record_no,
+                                                          l_record_tp,
+                                                          l_all_levels_record.no_of_levels);
+         l_serd_record.record_data := l_header_string || l_all_levels_record.string_all_levels;
+         pipe row (l_serd_record); 
+         l_levels_no := l_levels_no - 49;
+         if l_levels_no > 0 then
+         -- loop here
+            null;                                 
          end if;
-         
-         pipe row (l_serd_record);     
       end loop;
       return;      
    end download_sv_serd_file;     
