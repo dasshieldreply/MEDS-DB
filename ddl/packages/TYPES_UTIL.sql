@@ -23,6 +23,11 @@ as
    ,  sv_code                    char(1)
    );
    
+   type all_levels_record is record(
+      level_rec                  level_record
+   ,  level_no                   number
+   );
+   
    type header_record is record(
    	data_identifier			   char(1)
    ,	marsden_square				   number(3,0)

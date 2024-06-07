@@ -120,10 +120,11 @@ as
    ,  p_depth_start              number
    ,  p_depth_end                number
    )
-   return varchar2
+   return all_levels_record
    is
       l_all_levels_string  types_util.all_levels_string;
       l_level_record       types_util.level_record;
+      l_all_levels_record  types_util.all_levels_record;
    begin
       --dbms_output.put_line('start observation :' || p_meds_observation_number);
       for l_level_record in 
@@ -168,6 +169,7 @@ as
       l_header_record      types_util.header_record;
       l_header_string      types_util.header_string; 
       l_all_levels_string  types_util.all_levels_string;
+      l_record_tp          char(1);
       l_record_no          number default 0;
       l_levels_no          number default 0;
       l_counter            number default 0;
@@ -242,30 +244,18 @@ as
          ,        b.meds_observation_number
       )
       loop
-         --dbms_output.put_line('read observation ' || l_header_record.meds_observation_number);
          l_record_no    := 1;
+         l_record_tp    := '2';
          l_levels_no    := l_header_record.number_of_depth_levels;
          l_depth_start  := 0;
          l_depth_end    := 49;
-         l_counter      := l_header_record.number_of_depth_levels;
          
-         while l_counter > 0
-         loop
-            l_all_leves_string   := create_all_levels_string(l_header_record.meds_job_number,l_header_record.meds_observation_number,0,49); 
-            l_header_string      := create_header_string(l_header_record, l_record_no,2,l_levels_no);
-            
-                  l_serd_record.record_data  := create_header_string(l_header_record, l_record_no,2,l_levels_no) ||
-                                        
-         l_counter   := l_header_record.number_of_depth_levels - 49;
+         if l_levels_no <= 49 then
+            l_serd_record.record_data  := create_header_string(l_header_record,l_record_no,2,l_levels_no) ||
+                                          create_all_levels_string(l_header_record.meds_job_number,l_header_record.meds_observation_number,l_depth_start,l_depth_end);
+         end if;
          
-         
-            l_record_no                := l_record_no + 1;
-            l_serd_record.record_data  := create_header_string(l_header_record, l_record_no,2,l_levels_no) ||
-                                          create_all_levels_string(l_header_record.meds_job_number,l_header_record.meds_observation_number,50,100);          
-         end loop;
-         --dbms_output.put_line('finished observation ' || l_header_record.meds_observation_number);
          pipe row (l_serd_record);     
-         --dbms_output.put_line('piped the row');
       end loop;
       return;      
    end download_sv_serd_file;     
