@@ -157,7 +157,7 @@ as
       
    end update_processing_job;
    
-   procedure get_insert_ship (
+   procedure insert_ship (
       p_ICES_country_code           in varchar2 
    ,  p_ship_number                 in varchar2
    ,  p_ship_number_code            in number   -- to ensure no blank will arrive here from the SERD file
@@ -170,45 +170,26 @@ as
    is
       v_meds_ship_number   number;
    begin
-   
-      select meds_ship_number
-      into v_meds_ship_number
-      from ship_details
-      where country_code      = p_ICES_country_code
-      and ices_ship_code      = p_ship_number
-      and ices_ship_flag      = p_ship_number_code
-      and mias_institute_code = p_MIAS_institute_code
-      and mias_institute_flag = p_MIAS_institute_number_code
-      and upper(vessel_name)  = upper(p_supplier)
-      and (p_meds_cruise_number is null or meds_cruise_number  = p_meds_cruise_number);
+      insert into ship_details (
+         country_code
+      ,  ices_ship_code
+      ,  mias_institute_code
+      ,  mias_institute_flag
+      ,  ices_ship_flag
+      ,  vessel_name
+      ,  meds_cruise_number) 
+      values (
+         p_ICES_country_code
+      ,  p_ship_number
+      ,  p_MIAS_institute_code
+      ,  p_MIAS_institute_number_code 
+      ,  p_ship_number_code
+      ,  upper(p_supplier)
+      ,  p_meds_cruise_number) 
+      returning meds_ship_number into v_meds_ship_number;
       
-      o_meds_ship_number :=  v_meds_ship_number; 
-      
-   exception
-      when no_data_found then 
-      
-         insert into ship_details (
-            country_code
-         ,  ices_ship_code
-         ,  mias_institute_code
-         ,  mias_institute_flag
-         ,  ices_ship_flag
-         ,  vessel_name
-         ,  meds_cruise_number) 
-         values (
-            p_ICES_country_code
-         ,  p_ship_number
-         ,  p_MIAS_institute_code
-         ,  p_MIAS_institute_number_code 
-         ,  p_ship_number_code
-         ,  upper(p_supplier)
-         ,  p_meds_cruise_number) 
-         returning meds_ship_number into v_meds_ship_number;
-         
-         o_meds_ship_number :=  v_meds_ship_number;  
-            --dbms_output.put_line('Ship created ' || v_meds_ship_number); 
-         
-   end get_insert_ship;
+      o_meds_ship_number :=  v_meds_ship_number;  
+   end insert_ship;
    
    procedure insert_profile_index (
       p_instr_data_type       in number
@@ -715,6 +696,7 @@ as
       header_rec           header_record;
       l_params             logger.tab_param; 
       l_scope              constant varchar2(61) := g_package||'parse_serd_data';
+      l_meds_ship_number   number;
    begin
       --dbms_output. enable (buffer_size => null); 
       --logger.set_level      (p_level   => 8 );      
@@ -747,7 +729,6 @@ as
       inner join instrument          c 
           on c.serd      = b.instrumentcode
       where a.job_number = p_job_number;
-      
       -- Verify if the job has already been uploaded in the PROFILE tables
       if    v_instr_data_type = 1 then -- Temperature Only
          v_tbl := 'PROFILE_INDEX_TONLY';
@@ -756,9 +737,7 @@ as
       elsif v_instr_data_type = 3 then -- Sound Velocity       
          v_tbl := 'PROFILE_INDEX_SV';
       end if;
- 
       execute immediate 'select count(1) from ' || v_tbl || ' where meds_job_number = ' || p_job_number into v_rows;
-
       if v_rows > 0 then
          --dbms_output.put_line('Job already loaded'); 
          logger.log_information(p_text  => 'Job already loaded' 
@@ -767,8 +746,7 @@ as
          logger.log_information(p_text  => 'End' 
                                ,p_scope => l_scope);
          return;
-      end if;
-      
+      end if;   
       -- Process the SERD upload
       for f_main_row in 
       (
@@ -782,8 +760,7 @@ as
       )
       loop -- Each record is an observation
          v_obs       := v_obs + 1;
-         index_rec   := null;
-         
+         index_rec   := null;         
          -- PROFILE_INDEX 
          index_rec.date_time					   := to_date(f_main_row.observationdate || f_main_row.observationtime,'YYYYMMDDHH24MI');
          index_rec.year						      := substr(f_main_row.observationdate,1,4);
@@ -804,25 +781,21 @@ as
          index_rec.latitude	               := substr(f_main_row.positiongeo,1,3) + round(substr(f_main_row.positiongeo,4,4)/600, 4);
          index_rec.longitude                 := substr(f_main_row.positiongeo,8,4) + round(substr(f_main_row.positiongeo,12,4)/600, 4);
          index_rec.meds_cruise_number        := v_meds_cruise_number; 
-        
          select ocean
          into index_rec.instrument_code
          from instrument
          where serd = f_main_row.instrumentcode;
-
-         if v_supplier is null then 
-            index_rec.meds_ship_number := null;
-         else
-            upload_serd_util.get_insert_ship(p_ices_country_code      => f_main_row.country,
-                                         p_ship_number                => f_main_row.shipnumber,
-                                         p_ship_number_code           => f_main_row.shipnumbercode ,       -- might crash if not 0/1?
-                                         p_mias_institute_code        => f_main_row.institutenumber,
-                                         p_mias_institute_number_code => f_main_row.institutenumbercode,   -- might crash if not 0/1?
-                                         p_meds_cruise_number         => index_rec.meds_cruise_number,
-                                         p_supplier                   => v_supplier,
-                                         o_meds_ship_number           => index_rec.meds_ship_number);
+         if l_meds_ship_number is null then 
+            insert_ship(p_ices_country_code          => f_main_row.country,
+                        p_ship_number                => f_main_row.shipnumber,
+                        p_ship_number_code           => f_main_row.shipnumbercode ,       -- might crash if not 0/1?
+                        p_mias_institute_code        => f_main_row.institutenumber,
+                        p_mias_institute_number_code => f_main_row.institutenumbercode,   -- might crash if not 0/1?
+                        p_meds_cruise_number         => index_rec.meds_cruise_number,
+                        p_supplier                   => v_supplier,
+                        o_meds_ship_number           => l_meds_ship_number);
          end if;
-                                        
+         index_rec.meds_ship_number := l_meds_ship_number;
          -- PROFILE_HEADER          
          header_rec.additional_posn_ref		:= f_main_row.positionreference;
          header_rec.atmospheric_pressure		:= f_main_row.atmosphericpressure;
@@ -860,17 +833,14 @@ as
          header_rec.mbt_surface_t_corr       := f_main_row.mbttemperaturecorrection;
          header_rec.mbt_type_quality         := f_main_row.mbttype;
          header_rec.mbt_grade_quality        := f_main_row.mbtgrade;
-      
          insert_profile_header(p_instr_data_type => v_instr_data_type,
                                p_header_record   => header_rec);
-                              
          -- PROFILE_DATA  
          insert_profile_data (p_instr_data_type    => v_instr_data_type,
                               p_job_number         => p_job_number,
                               p_observation_number => v_obs,
                               p_depht_level_count  => f_main_row.depthlevelcount,
-                              p_depth_row_content  => f_main_row.row_depth_content); 
-                              
+                              p_depth_row_content  => f_main_row.row_depth_content);                               
          -- Continuation records
          -- For each main record found, get all the continuation records with the same grouping (which is the geographycal position at the end!)
          for f_cont_row in 
@@ -887,26 +857,20 @@ as
                                  p_depth_row_content  => f_cont_row.row_depth_content); 
                                  
             index_rec.number_of_depth_levels := index_rec.number_of_depth_levels + f_cont_row.depthlevelcount;
-         end loop;
-         
+         end loop;         
          -- Insert PROFILE_INDEX after all the continuation rows depth level were accounted for
          insert_profile_index(p_instr_data_type => v_instr_data_type,
-                              p_index_record    => index_rec);
-      
+                              p_index_record    => index_rec);      
       end loop;      
-
       o_meds_ship_number  := index_rec.meds_ship_number; 
       o_instrument_code   := index_rec.instrument_code;
-      
       --logger.set_level      (p_level => 2 );      
       logger.log_information(p_text  => 'End' 
                             ,p_scope => l_scope);    
-      
       exception 
          when others then 
             logger.log_error('Unhandled exception', l_scope, null, l_params); 
             --logger.set_level(p_level   => 2 ); 
-            
    end parse_serd_data;  
 
    procedure parse_serd_file

@@ -1,11 +1,29 @@
 CREATE OR REPLACE package download_serd_util
 as
+   type serd_record  is record (
+      record_data    varchar2(4000));
+      
+   type serd_table   is table of serd_record;
+
+   function download_ts_serd_file
+   (
+      p_medsfilter   number
+   ) 
+   return serd_table
+   pipelined;
 
    function download_sv_serd_file
    (
       p_medsfilter   number
    ) 
-   return types_util.serd_table
+   return serd_table
+   pipelined;
+   
+   function download_tonly_serd_file
+   (
+      p_medsfilter   number
+   ) 
+   return serd_table
    pipelined;
    
 end download_serd_util;
@@ -13,260 +31,171 @@ end download_serd_util;
 
 CREATE OR REPLACE package body download_serd_util
 as
-   
-   function create_header_string
+
+   function download_tonly_serd_file
    (
-      p_header_record   types_util.header_record
-   ,  p_record_no       number -- the main record is always #1
-   ,  p_record_tp       number -- 2 for main records, 3 for continuation records
-   ,  p_levels_no       number
+      p_medsfilter   number
    )
-   return types_util.header_string
+   return serd_table
+   pipelined
    is
-      l_header_string   types_util.header_string;
+      l_serd_record  serd_record; 
+      l_record_no    number default 0;
    begin
    
-      l_header_string := '000A'  
-            || p_record_tp
-            || to_char(p_record_no,'fm00')
-            || p_header_record.data_identifier
-            || ' '
-            || '  '
-            || p_header_record.marsden_square
-            || p_header_record.degree_squre
-            || p_header_record.string_location
-            || p_header_record.quadrant
-            || p_header_record.posn_determination
-            || p_header_record.posn_accuracy_code
-            || p_header_record.additional_posn_ref 
-            || nvl(to_char(p_header_record.hood_archive_year), '  ')
-            || to_char(p_header_record.date_time, 'YYYYMMDD')
-            || to_char(p_header_record.date_time, 'HH24MI')
-            || p_header_record.country_code
-            || p_header_record.ices_ship_code
-            || p_header_record.ices_ship_flag
-            || p_header_record.cruise_name
-            || p_header_record.hood_station_number
-            || p_header_record.mias_institute_code
-            || p_header_record.mias_institute_flag
-            || p_header_record.land_check
-            || '0'
-            || to_char(p_levels_no,'fm00')
-            || nvl(to_char(p_header_record.observed_depth),'     ')
-            || to_char(p_header_record.minimum_depth_level,'fm0000')
-            || to_char(p_header_record.maximum_depth_level,'fm0000')
-            || p_header_record.d_corr
-            || ' '
-            || p_header_record.t_corr
-            || p_header_record.s_corr
-            || p_header_record.sv_corr
-            || p_header_record.units
-            || p_header_record.serd
-            || p_header_record.data_type
-            || p_header_record.data_mode
-            || p_header_record.data_method
-            || p_header_record.wind_dir
-            || p_header_record.wind_speed
-            || p_header_record.dry_air_temp
-            || p_header_record.wet_air_temp 
-            || p_header_record.weather
-            || p_header_record.cloud
-            || p_header_record.sea_state
-            || p_header_record.wave_period
-            || p_header_record.wave_height
-            || p_header_record.atmospheric_pressure
-            || p_header_record.water_colour
-            || p_header_record.water_trans
-            || p_header_record.s_scale_code
-            --|| p_header_record.bt_sst_instrument
-            --|| p_header_record.bt_sst_ref
-            --|| p_header_record.mbt_surface_t_corr
-            --|| p_header_record.mbt_type_quality
-            --|| p_header_record.mbt_grade_quality 
-            || '                                                                 ' -- 65
-            || to_char(p_header_record.no_of_comments,'fm00')
-            || rpad(substr(nvl(p_header_record.comments,' '),1,530),530)
-         ;   
-      return l_header_string;
-   end create_header_string;
-   
-   function create_one_level_string
-   (
-      p_level_record    types_util.level_record
-   )
-   return types_util.level_string
-   is
-      l_level_string    types_util.level_string;
-   begin
-      --dbms_output.put_line('start depth :' ||p_level_record.depth);
-      l_level_string := p_level_record.depth_indicator
-                     || to_char(p_level_record.depth,'fm0000') 
-                     || p_level_record.d_quality
-                     || nvl(replace(to_char(p_level_record.temperature,'fm00.00'),'.',''),'    ') 
-                     || p_level_record.t_quality 
-                     || nvl(replace(to_char(p_level_record.salinity,'fm00.000'),'.',''),'     ') 
-                     || p_level_record.s_quality
-                     || nvl(replace(to_char(p_level_record.sound_velocity,'fm0000.0'),'.',''),'     ')
-                     || p_level_record.sv_quality
-                     || p_level_record.sv_code;
-      --dbms_output.put_line('end depth :' ||p_level_record.depth);
-      return l_level_string;
-   end create_one_level_string;
-   
-   function create_all_levels_string
-   (
-      p_meds_job_number          number
-   ,  p_meds_observation_number  number
-   ,  p_depth_start              number
-   ,  p_depth_end                number
-   )
-   return types_util.all_levels_record
-   is
-      l_all_levels_string  types_util.all_levels_string;
-      l_level_record       types_util.level_record;
-      l_all_levels_record  types_util.all_levels_record;
-      l_level_no           number default 0;
-   begin
-      for l_level_record in 
+      for f_obs in 
       (
-         select 
-            '0' -- SV does not have depth indicator, so constant 0
-         ,  depth
-         ,  d_quality
-         ,  temperature
-         ,  t_quality
-         ,  salinity
-         ,  s_quality
-         ,  sv_recorded
-         ,  sv_quality
-         ,  sv_code
-         from profile_data_sv
-         where meds_job_number       = p_meds_job_number
-         and meds_observation_number = p_meds_observation_number
-         and depth between p_depth_start and p_depth_end
-         order by depth
+         select medsfilter
+         ,      meds_job_number
+         ,      meds_observation_number
+         from v_download_serd_main_tonly
+         where medsfilter = p_medsfilter
+         order by meds_job_number
+         ,        meds_observation_number
       )
       loop
-         l_level_no := l_level_no + 1;
-         l_all_levels_string := l_all_levels_string || create_one_level_string(l_level_record);
+         l_record_no := 1;
+  
+         for f_rec in 
+         (
+            select a.*
+            ,  b.row_no       as data_row_no
+            ,  b.row_depth_no as data_row_no_depths
+            ,  b.row_vl       as data_row_vl
+            from        v_download_serd_main_tonly   a
+            inner join  v_download_serd_data_tonly   b 
+               on b.medsfilter               = a.medsfilter
+               and b.meds_job_number         = a.meds_job_number
+               and b.meds_observation_number = a.meds_observation_number
+            where a.medsfilter               = f_obs.medsfilter
+            and   a.meds_job_number          = f_obs.meds_job_number
+            and   a.meds_observation_number  = f_obs.meds_observation_number
+            order by b.row_no
+         )
+         loop
+            
+            if l_record_no = 1 then 
+               l_serd_record.record_data := '000A2' || to_char(l_record_no,'fm00') || substr(f_rec.row_vl,1,78) || to_char(f_rec.data_row_no_depths,'fm00') || substr(f_rec.row_vl,81) || f_rec.data_row_vl;
+            else
+               l_serd_record.record_data := '000A2' || to_char(l_record_no,'fm00') || substr(f_rec.row_vl,1,78) || to_char(f_rec.data_row_no_depths,'fm00') || f_rec.data_row_vl;               
+            end if;
+            l_record_no := l_record_no + 1;
+            pipe row (l_serd_record);        
+         end loop;
       end loop;
       
-      l_all_levels_record.string_all_levels  := l_all_levels_string;
-      l_all_levels_record.no_of_levels       := l_level_no;
-      
-      return l_all_levels_record;
-   end create_all_levels_string;
-
+      return;      
+   end download_tonly_serd_file;   
+   
    function download_sv_serd_file
    (
       p_medsfilter   number
    )
-   return types_util.serd_table
+   return serd_table
    pipelined
    is
-      l_serd_record        types_util.serd_record; 
-      l_header_record      types_util.header_record;
-      l_all_levels_record  types_util.all_levels_record;
-      l_header_string      types_util.header_string; 
-      l_all_levels_string  types_util.all_levels_string;
-      l_record_tp          char(1);
-      l_record_no          number default 0;
-      l_levels_no          number default 0;
-      l_counter            number default 0;
-      l_depth_start        number default 0;
-      l_depth_end          number default 0;
+      l_serd_record  serd_record; 
+      l_record_no    number default 0;
    begin
    
-      for l_header_record in 
+      for f_obs in 
       (
-         select c.data_identifier
-         ,  b.marsden_square
-         ,  b.degree_squre                   
-         ,  b.string_location 
-         ,  b.quadrant
-         ,  c.posn_determination
-         ,  c.posn_accuracy_code
-         ,  c.additional_posn_ref
-         ,  b.hood_archive_year    
-         ,  b.date_time
-         ,  d.country_code
-         ,  d.ices_ship_code
-         ,  d.ices_ship_flag
-         ,  e.cruise_name    
-         ,  c.hood_station_number
-         ,  d.mias_institute_code
-         ,  d.mias_institute_flag
-         ,  c.land_check 
-         ,  b.number_of_depth_levels
-         ,  b.observed_depth
-         ,  b.minimum_depth_level
-         ,  b.maximum_depth_level
-         ,  c.d_corr
-         ,  c.t_corr
-         ,  c.s_corr
-         ,  c.sv_corr              
-         ,  c.units 
-         ,  f.serd                           
-         ,  c.data_type 
-         ,  c.data_mode
-         ,  c.data_method
-         ,  c.wind_dir
-         ,  c.wind_speed
-         ,  c.dry_air_temp
-         ,  c.wet_air_temp
-         ,  c.weather
-         ,  c.cloud 
-         ,  c.sea_state 
-         ,  c.wave_period
-         ,  c.wave_height 
-         ,  c.atmospheric_pressure 
-         ,  c.water_colour
-         ,  c.water_trans
-         ,  c.s_scale_code 
-         ,  ' '                              bt_sst_instrument
-         ,  ' '                              bt_sst_ref
-         ,  ' '                              mbt_surface_t_corr
-         ,  ' '                              mbt_type_quality
-         ,  ' '                              mbt_grade_quality 
-         ,  b.no_of_comments
-         ,  b.comments
-         ,  b.meds_job_number
-         ,  b.meds_observation_number
-         from       v_filter_meds_job_number a
-         inner join profile_index_sv         b on b.meds_job_number    = a.meds_job_number
-         inner join profile_header_sv        c on c.meds_job_number    = b.meds_job_number and c.meds_observation_number = b.meds_observation_number
-         left join ship_details              d on d.meds_ship_number   = b.meds_ship_number
-         left join cruise_layer              e on e.meds_cruise_number = b.meds_cruise_number
-         left join instrument                f on f.ocean              = b.instrument_code
-         where  a.medsfilter  = p_medsfilter
-         and    a.label_layer = 'SOUND VELOCITY'
-         order by b.meds_job_number
-         ,        b.meds_observation_number
+         select medsfilter
+         ,      meds_job_number
+         ,      meds_observation_number
+         from v_download_serd_main_sv
+         where medsfilter = p_medsfilter
+         order by meds_job_number
+         ,        meds_observation_number
       )
       loop
-         l_record_no    := 1;
-         l_record_tp    := '2';
-         l_levels_no    := l_header_record.number_of_depth_levels;
-         l_depth_start  := 0;
-         l_depth_end    := 49;
-         l_all_levels_record  := create_all_levels_string(l_header_record.meds_job_number,
-                                                          l_header_record.meds_observation_number,
-                                                          l_depth_start,
-                                                          l_depth_end);
-         l_header_string      := create_header_string    (l_header_record,
-                                                          l_record_no,
-                                                          l_record_tp,
-                                                          l_all_levels_record.no_of_levels);
-         l_serd_record.record_data := l_header_string || l_all_levels_record.string_all_levels;
-         pipe row (l_serd_record); 
-         l_levels_no := l_levels_no - 49;
-         if l_levels_no > 0 then
-         -- loop here
-            null;                                 
-         end if;
+         l_record_no := 1;
+  
+         for f_rec in 
+         (
+            select a.*
+            ,  b.row_no       as data_row_no
+            ,  b.row_depth_no as data_row_no_depths
+            ,  b.row_vl       as data_row_vl
+            from        v_download_serd_main_sv   a
+            inner join  v_download_serd_data_sv   b 
+               on b.medsfilter               = a.medsfilter
+               and b.meds_job_number         = a.meds_job_number
+               and b.meds_observation_number = a.meds_observation_number
+            where a.medsfilter               = f_obs.medsfilter
+            and   a.meds_job_number          = f_obs.meds_job_number
+            and   a.meds_observation_number  = f_obs.meds_observation_number
+            order by b.row_no
+         )
+         loop
+            
+            if l_record_no = 1 then 
+               l_serd_record.record_data := '000A2' || to_char(l_record_no,'fm00') || substr(f_rec.row_vl,1,78) || to_char(f_rec.data_row_no_depths,'fm00') || substr(f_rec.row_vl,81) || f_rec.data_row_vl;
+            else
+               l_serd_record.record_data := '000A2' || to_char(l_record_no,'fm00') || substr(f_rec.row_vl,1,78) || to_char(f_rec.data_row_no_depths,'fm00') || f_rec.data_row_vl;               
+            end if;
+            l_record_no := l_record_no + 1;
+            pipe row (l_serd_record);        
+         end loop;
       end loop;
+      
       return;      
    end download_sv_serd_file;     
+
+   function download_ts_serd_file
+   (
+      p_medsfilter   number
+   )
+   return serd_table
+   pipelined
+   is
+      l_serd_record  serd_record; 
+      l_record_no    number default 0;
+   begin
+   
+      for f_obs in 
+      (
+         select medsfilter
+         ,      meds_job_number
+         ,      meds_observation_number
+         from v_download_serd_main_ts
+         where medsfilter = p_medsfilter
+         order by meds_job_number
+         ,        meds_observation_number
+      )
+      loop
+         l_record_no := 1;
+  
+         for f_rec in 
+         (
+            select a.*
+            ,  b.row_no       as data_row_no
+            ,  b.row_depth_no as data_row_no_depths
+            ,  b.row_vl       as data_row_vl
+            from        v_download_serd_main_ts   a
+            inner join  v_download_serd_data_ts   b 
+               on b.medsfilter               = a.medsfilter
+               and b.meds_job_number         = a.meds_job_number
+               and b.meds_observation_number = a.meds_observation_number
+            where a.medsfilter               = f_obs.medsfilter
+            and   a.meds_job_number          = f_obs.meds_job_number
+            and   a.meds_observation_number  = f_obs.meds_observation_number
+            order by b.row_no
+         )
+         loop
+            
+            if l_record_no = 1 then 
+               l_serd_record.record_data := '000A2' || to_char(l_record_no,'fm00') || substr(f_rec.row_vl,1,78) || to_char(f_rec.data_row_no_depths,'fm00') || substr(f_rec.row_vl,81) || f_rec.data_row_vl;
+            else
+               l_serd_record.record_data := '000A2' || to_char(l_record_no,'fm00') || substr(f_rec.row_vl,1,78) || to_char(f_rec.data_row_no_depths,'fm00') || f_rec.data_row_vl;               
+            end if;
+            l_record_no := l_record_no + 1;
+            pipe row (l_serd_record);        
+         end loop;
+      end loop;
+      
+      return;      
+   end download_ts_serd_file;  
 
 end download_serd_util;
 /
