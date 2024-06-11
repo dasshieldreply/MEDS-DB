@@ -1,9 +1,9 @@
-create or replace editionable view "V_DOWNLOAD_SERD_MAIN_TONLY" as
+create or replace editionable view "V_D_SERD_MAIN_SV" as
 with param as
 (
    select *
-   from   v_filter_meds_job_number 
-   where  label_layer = 'TEMPERATURE'
+   from   v_filter_meds_job_number
+   where  label_layer = 'SOUND VELOCITY'
 )
 select 
       c.data_identifier
@@ -11,7 +11,7 @@ select
    || '  '
    || to_char(b.marsden_square,'fm000')
    || to_char(b.degree_squre,'fm00')
-   || b.string_location
+   || rpad(b.string_location,15)
    || b.quadrant
    || c.posn_determination
    || c.posn_accuracy_code
@@ -35,8 +35,8 @@ select
    || c.d_corr
    || ' '
    || c.t_corr
-   || '    ' --s_corr
-   || '   '  --sv_corr
+   || c.s_corr
+   || c.sv_corr
    || c.units
    || f.serd
    || c.data_type
@@ -55,12 +55,7 @@ select
    || c.water_colour
    || c.water_trans
    || c.s_scale_code
-   || c.bt_sst_instrument
-   || c.bt_sst_ref
-   || c.mbt_surface_t_corr
-   || c.mbt_type_quality
-   || c.mbt_grade_quality 
-   || '                                                       ' -- 55
+   || '                                                                 ' -- 65
    || to_char(b.no_of_comments,'fm00')
    || rpad(substr(nvl(b.comments,' '),1,630),630) 
    || ' ' as row_vl
@@ -68,11 +63,11 @@ select
 ,  b.meds_observation_number
 ,  a.medsfilter
 from param                   a      
-inner join profile_index_tonly  b on b.meds_job_number    = a.meds_job_number
-inner join profile_header_tonly c on c.meds_job_number    = b.meds_job_number and c.meds_observation_number = b.meds_observation_number
-left join ship_details          d on d.meds_ship_number   = b.meds_ship_number
-left join cruise_layer          e on e.meds_cruise_number = b.meds_cruise_number
-left join instrument            f on f.ocean              = b.instrument_code
+inner join profile_index_sv  b on b.meds_job_number    = a.meds_job_number
+inner join profile_header_sv c on c.meds_job_number    = b.meds_job_number and c.meds_observation_number = b.meds_observation_number
+left join ship_details       d on d.meds_ship_number   = b.meds_ship_number
+left join cruise_layer       e on e.meds_cruise_number = b.meds_cruise_number
+left join instrument         f on f.ocean              = b.instrument_code
 order by a.medsfilter
 ,        b.meds_job_number
 ,        b.meds_observation_number;

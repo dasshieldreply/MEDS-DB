@@ -25,13 +25,20 @@ as
    ) 
    return serd_table
    pipelined;
+
+   function get_serd_file
+   (
+      p_medsfilter   number,
+      p_serd_type    varchar2
+   )
+   return clob;
    
 end download_serd_util;
 /
-
 CREATE OR REPLACE package body download_serd_util
 as
-
+   g_package constant varchar2(31) := $$plsql_unit || '.';
+   
    function download_tonly_serd_file
    (
       p_medsfilter   number
@@ -48,7 +55,7 @@ as
          select medsfilter
          ,      meds_job_number
          ,      meds_observation_number
-         from v_download_serd_main_tonly
+         from v_d_serd_main_tonly
          where medsfilter = p_medsfilter
          order by meds_job_number
          ,        meds_observation_number
@@ -62,8 +69,8 @@ as
             ,  b.row_no       as data_row_no
             ,  b.row_depth_no as data_row_no_depths
             ,  b.row_vl       as data_row_vl
-            from        v_download_serd_main_tonly   a
-            inner join  v_download_serd_data_tonly   b 
+            from        v_d_serd_main_tonly   a
+            inner join  v_d_serd_data_tonly   b 
                on b.medsfilter               = a.medsfilter
                and b.meds_job_number         = a.meds_job_number
                and b.meds_observation_number = a.meds_observation_number
@@ -103,7 +110,7 @@ as
          select medsfilter
          ,      meds_job_number
          ,      meds_observation_number
-         from v_download_serd_main_sv
+         from v_d_serd_main_sv
          where medsfilter = p_medsfilter
          order by meds_job_number
          ,        meds_observation_number
@@ -117,8 +124,8 @@ as
             ,  b.row_no       as data_row_no
             ,  b.row_depth_no as data_row_no_depths
             ,  b.row_vl       as data_row_vl
-            from        v_download_serd_main_sv   a
-            inner join  v_download_serd_data_sv   b 
+            from        v_d_serd_main_sv   a
+            inner join  v_d_serd_data_sv   b 
                on b.medsfilter               = a.medsfilter
                and b.meds_job_number         = a.meds_job_number
                and b.meds_observation_number = a.meds_observation_number
@@ -158,7 +165,7 @@ as
          select medsfilter
          ,      meds_job_number
          ,      meds_observation_number
-         from v_download_serd_main_ts
+         from v_d_serd_main_ts
          where medsfilter = p_medsfilter
          order by meds_job_number
          ,        meds_observation_number
@@ -172,8 +179,8 @@ as
             ,  b.row_no       as data_row_no
             ,  b.row_depth_no as data_row_no_depths
             ,  b.row_vl       as data_row_vl
-            from        v_download_serd_main_ts   a
-            inner join  v_download_serd_data_ts   b 
+            from        v_d_serd_main_ts   a
+            inner join  v_d_serd_data_ts   b 
                on b.medsfilter               = a.medsfilter
                and b.meds_job_number         = a.meds_job_number
                and b.meds_observation_number = a.meds_observation_number
@@ -196,6 +203,82 @@ as
       
       return;      
    end download_ts_serd_file;  
+
+   function get_serd_file
+   (
+      p_medsfilter   number,
+      p_serd_type    varchar2
+   )
+   return clob
+   is
+      l_serd_table   serd_table;
+      l_serd_clob    clob;
+      l_params       logger.tab_param; 
+      l_scope        constant varchar2(61) := g_package||'get_serd_file';
+   begin
+      logger.append_param   (p_params  => l_params
+                            ,p_name    => 'p_medsfilter'
+                            ,p_val     => p_medsfilter); 
+      logger.append_param   (p_params  => l_params
+                            ,p_name    => 'p_serd_type'
+                            ,p_val     => p_serd_type); 
+      logger.log_information(p_text    => 'Start' 
+                            ,p_scope   => l_scope 
+                            ,p_params  => l_params 
+                            ); 
+      
+      dbms_lob.createtemporary(l_serd_clob, TRUE, DBMS_LOB.SESSION);
+      
+      if upper(p_serd_type) = 'SV' then  
+      
+         for rec in 
+         (
+            select * 
+            bulk collect into l_serd_table
+            from table(download_sv_serd_file(p_medsfilter))
+         ) 
+         loop
+            dbms_lob.writeappend(l_serd_clob, length(rec.record_data) + 1, rec.record_data || chr(10));
+         end loop;
+         
+      elsif upper(p_serd_type) = 'TONLY' then
+      
+         for rec in 
+         (
+            select * 
+            bulk collect into l_serd_table
+            from table(download_tonly_serd_file(p_medsfilter))   
+         ) 
+         loop
+            dbms_lob.writeappend(l_serd_clob, length(rec.record_data) + 1, rec.record_data || chr(10));
+         end loop;
+         
+      elsif upper(p_serd_type) = 'TS' then
+      
+         for rec in 
+         (
+            select * 
+            bulk collect into l_serd_table
+            from table(download_ts_serd_file(p_medsfilter))   
+         ) 
+         loop
+            dbms_lob.writeappend(l_serd_clob, length(rec.record_data) + 1, rec.record_data || chr(10));
+         end loop;
+         
+      else
+         return null;
+      end if;
+      
+      logger.log_information(p_text  => 'End' 
+                            ,p_scope => l_scope);    
+
+      return l_serd_clob; 
+      
+      exception 
+         when others then 
+            logger.log_error('Unhandled exception', l_scope, null, l_params); 
+            --logger.set_level(p_level   => 2 ); 
+   end get_serd_file;   
 
 end download_serd_util;
 /

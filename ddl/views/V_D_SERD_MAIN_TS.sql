@@ -1,4 +1,4 @@
-create or replace editionable view "V_DOWNLOAD_SERD_MAIN_TS" as
+create or replace editionable view "V_D_SERD_MAIN_TS" as
 with param as
 (
    select *
@@ -11,7 +11,7 @@ select
    || '  '
    || to_char(b.marsden_square,'fm000')
    || to_char(b.degree_squre,'fm00')
-   || b.string_location
+   || rpad(b.string_location,15)
    || b.quadrant
    || c.posn_determination
    || c.posn_accuracy_code

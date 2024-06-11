@@ -1,4 +1,4 @@
-create or replace force editionable view "V_DOWNLOAD_SERD_DATA_SV" as
+create or replace force editionable view "V_D_SERD_DATA_SV" as
 with dta as
 (
    select
