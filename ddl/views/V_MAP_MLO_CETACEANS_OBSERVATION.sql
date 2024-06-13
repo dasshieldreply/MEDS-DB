@@ -10,6 +10,7 @@ AS
    ,      p.color
    ,      a.meds_job_number
    ,      a.meds_observation_number
+   ,      a.meds_track_number
    ,      a.location
    ,      a.latitude
    ,      a.longitude
