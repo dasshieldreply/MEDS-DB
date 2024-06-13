@@ -391,118 +391,141 @@ as
       order by row_sequence;
 
       insert into omni_ambient_data 
-      (
-         depth 
-      ,	wave_height 
-      ,	wind_speed 
-      ,	ofp_number 
-      ,	wind_direction 
-      ,	wave_direction 
-      ,	sea_state 
-      ,	contact_density 
-      ,	s05_10 
-      ,	s20_50 
-      ,	contact_details 
-      ,	qc 
-      ,	record_number 
-      ,	comments 
-      ,	meds_observation_number 
-      ,	meds_job_number 
-      ,	s00_05 
-      ,	s10_20 
-      ,	ship 
-      ,	country 
-      ,	platform_type 
-      ,	month 
-      ,	precipitation 
-      ,	time 
-      ,	hz_3_15 
-      ,	hz_4 
-      ,	hz_5 
-      ,	hz_6_3 
-      ,	hz_8 
-      ,	hz_10 
-      ,	hz_12_5 
-      ,	hz_16 
-      ,	hz_20 
-      ,	hz_25 
-      ,	hz_31_5 
-      ,	hz_40 
-      ,	hz_50 
-      ,	hz_55 
-      ,	hz_60 
-      ,	hz_63 
-      ,	hz_80 
-      ,	hz_100 
-      ,	hz_115 
-      ,	hz_120 
-      ,	hz_125 
-      ,	hz_135 
-      ,	hz_150 
-      ,	hz_155 
-      ,	hz_160 
-      ,	hz_200 
-      ,	hz_240 
-      ,	hz_248 
-      ,	hz_250 
-      ,	hz_300 
-      ,	hz_305 
-      ,	hz_315 
-      ,	hz_400 
-      ,	hz_440 
-      ,	hz_450 
-      ,	hz_500 
-      ,	hz_600 
-      ,	hz_605 
-      ,	hz_630 
-      ,	hz_660 
-      ,	hz_800 
-      ,	hz_850 
-      ,	hz_1000 
-      ,	hz_1150 
-      ,	hz_1205 
-      ,	hz_1250 
-      ,	hz_1500 
-      ,	hz_1600 
-      ,	hz_1700 
-      ,	hz_2000 
-      ,	hz_2400 
-      ,	hz_2500 
-      ,	hz_3150 
-      ,	hz_4000 
-      ,	hz_5000 
-      ,	hz_6300 
-      ,	hz_8000 
-      ,	hz_75 
-      ,	buoy_type 
-      ,	channel 
+      (	
+         meds_job_number
+      ,	meds_observation_number
+      ,	time
+      ,	month
+      ,	hz_3_15
+      ,	hz_4
+      ,	hz_5
+      ,	hz_6_3
+      ,	hz_8
+      ,	hz_10
+      ,	hz_12_5
+      ,	hz_16
+      ,	hz_20
+      ,	hz_25
+      ,	hz_31_5
+      ,	hz_40
+      ,	hz_50
+      ,	hz_55
+      ,	hz_60
+      ,	hz_63
+      ,	hz_75
+      ,	hz_80
+      ,	hz_100
+      ,	hz_115
+      ,	hz_120
+      ,	hz_125
+      ,	hz_135
+      ,	hz_150
+      ,	hz_155
+      ,	hz_160
+      ,	hz_200
+      ,	hz_240
+      ,	hz_248
+      ,	hz_250
+      ,	hz_300
+      ,	hz_305
+      ,	hz_315
+      ,	hz_400
+      ,	hz_440
+      ,	hz_450
+      ,	hz_500
+      ,	hz_600
+      ,	hz_605
+      ,	hz_630
+      ,	hz_660
+      ,	hz_800
+      ,	hz_850
       ,	hz_950
+      ,	hz_1000
+      ,	hz_1150
+      ,	hz_1205
+      ,	hz_1250
+      ,	hz_1500
+      ,	hz_1600
+      ,	hz_1700
+      ,	hz_2000
+      ,	hz_2400
+      ,	hz_2500
+      ,	hz_3150
+      ,	hz_4000
+      ,	hz_5000
+      ,	hz_6300
+      ,	hz_8000
+      ,	hz_174
+      ,	hz_720
+      ,	hz_900
+      ,	hz_333
+      ,	hz_650
+      ,	hz_1800
+      ,	hz_30
+      ,	hz_750
+      ,	hz_170
+      ,	hz_172
+      ,	hz_298
+      ,	hz_360
+      ,	hz_480
+      ,	hz_540
+      ,	hz_49
+      ,	hz_131
+      ,	hz_295
+      ,	hz_460
+      ,	hz_640
+      ,	hz_645
+      ,	hz_330
+      ,	hz_90
+      ,	hz_110
+      ,	hz_140
+      ,	hz_310
+      ,	hz_1050
+      ,	hz_29
+      ,	hz_180
+      ,	hz_105
+      ,	hz_290
+      ,	hz_420
+      ,	hz_71
+      ,	hz_368
+      ,	hz_77
+      ,	hz_145
+      ,	hz_286
+      ,	hz_173
+      ,	hz_246
+      ,	hz_585
+      ,	hz_793
+      ,	hz_340
+      ,	hz_446
+      ,	hz_808
+      ,	depth
+      ,	wave_height
+      ,	wave_direction
+      ,	sea_state
+      ,	wind_direction
+      ,	wind_speed
+      ,	precipitation
+      ,	contact_density
+      ,	s00_05
+      ,	s05_10
+      ,	s10_20
+      ,	s20_50
+      ,	contact_details
+      ,	platform_type
+      ,	ofp_number
+      ,	country
+      ,	ship
+      ,	channel
+      ,	record_number
+      ,	qc
+      ,	buoy_type
+      ,	comments
       ) 
-      select 
-         b.col106
-      ,	b.col107
-      ,	b.col111
-      ,	b.col120
-      ,	b.col110
-      ,	b.col108
-      ,	b.col109
-      ,	b.col113
-      ,	b.col115
-      ,	b.col117
-      ,	b.col118
-      ,	b.col126
-      ,	b.col125
-      ,	b.col128
-      ,  b.row_sequence
-      ,  p_job_number
-      ,	b.col114
-      ,	b.col116
-      ,	b.col122
-      ,	b.col121
-      ,	b.col119
-      ,	b.col004
-      ,	b.col112
+      select
+         p_job_number
+      ,	b.row_sequence
       ,	b.col003
+      ,	b.col004
       ,	b.col007
       ,	b.col008
       ,	b.col009
@@ -519,6 +542,7 @@ as
       ,	b.col020
       ,	b.col021
       ,	b.col022
+      ,	b.col023
       ,	b.col024
       ,	b.col025
       ,	b.col026
@@ -545,6 +569,7 @@ as
       ,	b.col047
       ,	b.col048
       ,	b.col049
+      ,	b.col050
       ,	b.col051
       ,	b.col052
       ,	b.col053
@@ -560,10 +585,71 @@ as
       ,	b.col063
       ,	b.col064
       ,	b.col065
-      ,	b.col023
-      ,	b.col127
+      ,	b.col066
+      ,	b.col067
+      ,	b.col068
+      ,	b.col069
+      ,	b.col070
+      ,	b.col071
+      ,	b.col072
+      ,	b.col073
+      ,	b.col074
+      ,	b.col075
+      ,	b.col076
+      ,	b.col077
+      ,	b.col078
+      ,	b.col079
+      ,	b.col080
+      ,	b.col081
+      ,	b.col082
+      ,	b.col083
+      ,	b.col084
+      ,	b.col085
+      ,	b.col086
+      ,	b.col087
+      ,	b.col088
+      ,	b.col089
+      ,	b.col090
+      ,	b.col091
+      ,	b.col092
+      ,	b.col093
+      ,	b.col094
+      ,	b.col095
+      ,	b.col096
+      ,	b.col097
+      ,	b.col098
+      ,	b.col099
+      ,	b.col100
+      ,	b.col101
+      ,	b.col102
+      ,	b.col103
+      ,	b.col104
+      ,	b.col105
+      ,	b.col106
+      ,	b.col107
+      ,	b.col108
+      ,	b.col109
+      ,	b.col110
+      ,	b.col111
+      ,	b.col112
+      ,	b.col113
+      ,	b.col114
+      ,	b.col115
+      ,	b.col116
+      ,	b.col117
+      ,	b.col118
+      ,	b.col119
+      ,	b.col120
+      ,	b.col121
+      ,	b.col122
       ,	b.col123
-      ,	b.col050
+      ,	b.col124
+      ,	b.col125
+      ,	b.col126
+      ,	b.col128
+      ,	b.col129
+      ,	b.col130
+      ,	b.col131
       from       stg_file         a
       inner join stg_file_csv_row b
          on b.stg_file   = a.stg_file
