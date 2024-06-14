@@ -6,7 +6,7 @@
 ,      substr(a.row_content,6,2)     recordnumber
 ,      substr(a.row_content,8,1)     dataid
 ,      substr(a.row_content,9,1)     datausecode
-,      substr(a.row_content,10,1)    filecode 
+,      substr(a.row_content,10,2)    filecode 
 ,      substr(a.row_content,12,3)    marsdensquare
 ,      substr(a.row_content,15,2)    degreesquare
 ,      substr(a.row_content,17,15)   positiongeo
