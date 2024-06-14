@@ -157,13 +157,14 @@ as
       p_data_use_code      in number,
       p_file_code          in varchar2
    ) is
-   begin
-      
+   begin   
       update meds_processing_job
-      set meds_ship_number = p_meds_ship_number,
-          instrument_code  = p_instrument_code
+      set meds_ship_number    = p_meds_ship_number,
+          instrument_code     = p_instrument_code,
+          data_use_code       = p_data_use_code,
+          originator          = p_file_code,
+          meds_cruise_number  = p_meds_cruise_number  
       where job_number =  p_job_number;    
-      
    end update_processing_job;
    
    procedure insert_ship (
@@ -891,9 +892,14 @@ as
          -- Insert PROFILE_INDEX after all the continuation rows depth level were accounted for
          insert_profile_index(p_instr_data_type => v_instr_data_type,
                               p_index_record    => index_rec);      
+      
+         -- Last values will be sent to update the processing job
+         o_meds_ship_number   := index_rec.meds_ship_number; 
+         o_meds_cruise_number := index_rec.meds_cruise_number;
+         o_instrument_code    := index_rec.instrument_code;
+         o_data_use_code      := f_main_row.datausecode;
+         o_file_code          := f_main_row.filecode;
       end loop;      
-      o_meds_ship_number  := index_rec.meds_ship_number; 
-      o_instrument_code   := index_rec.instrument_code;
       --logger.set_level      (p_level => 2 );      
       logger.log_information(p_text  => 'End' 
                             ,p_scope => l_scope);    
