@@ -7,8 +7,8 @@ with param as
 )
 select 
       c.data_identifier
-   || substr(g.data_use_code,1,1)
-   || substr(g.originator,1,2)
+   || substr(nvl(g.data_use_code, ' '),1,1)
+   || substr(nvl(g.originator, '  '),1,2)
    || to_char(b.marsden_square,'fm000')
    || to_char(b.degree_squre,'fm00')
    || rpad(b.string_location,15)
