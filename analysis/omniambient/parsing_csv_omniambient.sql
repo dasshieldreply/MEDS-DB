@@ -4,7 +4,7 @@ SELECT * from job_lookups where type='Data Type' and usage = 'OMNI_AMBIENT';
 select * from field_lookup 
 where data_type_index = 16
 AND INCLUDE_IN_INPUT=1
-order by table_name,field_position;
+order by field_position;
 
 select * from stg_file where job_number=102642;
 select * from stg_file_csv_row where stg_file=33198522144910489603484754396553292906 order by row_sequence;
