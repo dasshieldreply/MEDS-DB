@@ -7,8 +7,8 @@ with param as
 )
 select 
       c.data_identifier
-   || ' '
-   || '  '
+   || substr(g.data_use_code,1,1)
+   || substr(g.originator,1,2)
    || to_char(b.marsden_square,'fm000')
    || to_char(b.degree_squre,'fm00')
    || rpad(b.string_location,15)
@@ -62,12 +62,13 @@ select
 ,  b.meds_job_number
 ,  b.meds_observation_number
 ,  a.medsfilter
-from param                   a      
-inner join profile_index_sv  b on b.meds_job_number    = a.meds_job_number
-inner join profile_header_sv c on c.meds_job_number    = b.meds_job_number and c.meds_observation_number = b.meds_observation_number
-left join ship_details       d on d.meds_ship_number   = b.meds_ship_number
-left join cruise_layer       e on e.meds_cruise_number = b.meds_cruise_number
-left join instrument         f on f.ocean              = b.instrument_code
+from param                       a      
+inner join meds_processing_job   g on g.job_number         = a.meds_job_number
+inner join profile_index_sv      b on b.meds_job_number    = a.meds_job_number
+inner join profile_header_sv     c on c.meds_job_number    = b.meds_job_number and c.meds_observation_number = b.meds_observation_number
+left join ship_details           d on d.meds_ship_number   = b.meds_ship_number
+left join cruise_layer           e on e.meds_cruise_number = b.meds_cruise_number
+left join instrument             f on f.ocean              = b.instrument_code
 order by a.medsfilter
 ,        b.meds_job_number
 ,        b.meds_observation_number;
