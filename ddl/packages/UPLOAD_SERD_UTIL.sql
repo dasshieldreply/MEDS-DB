@@ -10,14 +10,20 @@ as
    (
       p_job_number         in  number,
       o_meds_ship_number   out number,
-      o_instrument_code    out number
+      o_meds_cruise_number out number,
+      o_instrument_code    out number,
+      o_data_use_code      out number,
+      o_file_code          out varchar2
    ); 
 
    procedure update_processing_job
    (
       p_job_number         in number,
       p_meds_ship_number   in number,
-      p_instrument_code    in number
+      p_meds_cruise_number in number,
+      p_instrument_code    in number,
+      p_data_use_code      in number,
+      p_file_code          in varchar2
    );    
    
    function only_one_instrument_data_type
@@ -146,7 +152,10 @@ as
    (
       p_job_number         in number,
       p_meds_ship_number   in number,
-      p_instrument_code    in number
+      p_meds_cruise_number in number,
+      p_instrument_code    in number,
+      p_data_use_code      in number,
+      p_file_code          in varchar2
    ) is
    begin
       
@@ -190,6 +199,20 @@ as
       
       o_meds_ship_number :=  v_meds_ship_number;  
    end insert_ship;
+   
+   procedure insert_cruise (
+      p_cruise_number      in varchar2 
+   ,  o_meds_cruise_number out number
+   )
+   is
+      v_meds_cruise_number   number;
+   begin
+      insert into cruise_layer (cruise_name) 
+      values (p_cruise_number) 
+      returning meds_cruise_number into v_meds_cruise_number;
+      
+      o_meds_cruise_number :=  v_meds_cruise_number;  
+   end insert_cruise;
    
    procedure insert_profile_index (
       p_instr_data_type       in number
@@ -683,12 +706,13 @@ as
    (
       p_job_number         in  number,
       o_meds_ship_number   out number,
-      o_instrument_code    out number
+      o_meds_cruise_number out number,
+      o_instrument_code    out number,
+      o_data_use_code      out number,
+      o_file_code          out varchar2
    )
    is
-      v_meds_cruise_number number;
       v_tbl                varchar2(100);
-      v_supplier           varchar2(64);
       v_obs                number default 0; -- this will be MEDS_OBSERVATION_NUMBER, one for each record type 2
       v_rows               number;
       v_instr_data_type    number;
@@ -696,12 +720,14 @@ as
       header_rec           header_record;
       l_params             logger.tab_param; 
       l_scope              constant varchar2(61) := g_package||'parse_serd_data';
+      l_supplier           varchar2(64);
       l_meds_ship_number   number;
+      l_meds_cruise_number number;
    begin
       --dbms_output. enable (buffer_size => null); 
       --logger.set_level      (p_level   => 8 );      
       logger.append_param   (p_params  => l_params
-                           , p_name    => 'parse_serd_data'
+                           , p_name    => 'p_job_number'
                            , p_val     => p_job_number); 
       logger.log_information(p_text    => 'Start' 
                             ,p_scope   => l_scope 
@@ -710,8 +736,8 @@ as
       -- Get the ship name that was informed by the processor in the job tracking, and the cruise in job processing
       select  b.supplier
       ,       a.meds_cruise_number   
-      into    v_supplier
-      ,       v_meds_cruise_number
+      into    l_supplier
+      ,       l_meds_cruise_number
       from    meds_processing_job  a
       inner join job_tracking      b
          on b.meic_number  = a.meic_number
@@ -780,19 +806,23 @@ as
          index_rec.string_location           := f_main_row.positiongeo;
          index_rec.latitude	               := substr(f_main_row.positiongeo,1,3) + round(substr(f_main_row.positiongeo,4,4)/600, 4);
          index_rec.longitude                 := substr(f_main_row.positiongeo,8,4) + round(substr(f_main_row.positiongeo,12,4)/600, 4);
-         index_rec.meds_cruise_number        := v_meds_cruise_number; 
+         if l_meds_cruise_number is null and trim(f_main_row.originatorcruise) is not null then
+            insert_cruise(p_cruise_number      => f_main_row.originatorcruise,
+                          o_meds_cruise_number => l_meds_cruise_number);         
+         end if;         
+         index_rec.meds_cruise_number := l_meds_cruise_number; 
          select ocean
          into index_rec.instrument_code
          from instrument
          where serd = f_main_row.instrumentcode;
-         if l_meds_ship_number is null then 
+         if l_meds_ship_number is null and trim(f_main_row.shipnumber) is not null then 
             insert_ship(p_ices_country_code          => f_main_row.country,
                         p_ship_number                => f_main_row.shipnumber,
                         p_ship_number_code           => f_main_row.shipnumbercode ,       -- might crash if not 0/1?
                         p_mias_institute_code        => f_main_row.institutenumber,
                         p_mias_institute_number_code => f_main_row.institutenumbercode,   -- might crash if not 0/1?
                         p_meds_cruise_number         => index_rec.meds_cruise_number,
-                        p_supplier                   => v_supplier,
+                        p_supplier                   => l_supplier,
                         o_meds_ship_number           => l_meds_ship_number);
          end if;
          index_rec.meds_ship_number := l_meds_ship_number;
