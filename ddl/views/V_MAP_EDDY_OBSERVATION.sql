@@ -26,6 +26,5 @@ AS
    from   param               p
    ,      eddy_observation    a
    where  a.meds_job_number   = p.meds_job_number   
-   and    a.data_available between p.date_start and p.date_end
    and    sdo_anyinteract(a.location, p.location_rectangle) = 'TRUE'
 ;

@@ -29,7 +29,6 @@ AS
    ,      dive_site_observation     a
    ,      dive_site_data            b
    where  a.meds_job_number         = p.meds_job_number   
-   --and    b.date_recorded between p.date_start and p.date_end
    and    sdo_anyinteract(a.location, p.location_rectangle) = 'TRUE'
    and    b.meds_job_number         = a.meds_job_number
    and    b.meds_observation_number = a.meds_observation_number
