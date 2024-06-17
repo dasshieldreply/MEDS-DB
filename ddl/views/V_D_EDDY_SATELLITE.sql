@@ -12,7 +12,7 @@ as
    ,      b.eddy_observed_date
    ,      c.centre_latitude
    ,      c.centre_longitude
-   ,      c.eddy_boundary_type
+   ,      replace(c.eddy_boundary_type,'"','') eddy_boundary_type
    ,      c.eddy_confidence
    ,      c.eddy_frontal_depth
    ,      c.eddy_front_type
@@ -25,7 +25,7 @@ as
    ,      c.major_axis_length
    ,      c.major_axis_orientation
    ,      c.minor_axis_length
-   ,      c.parent_feature
+   ,      replace(c.parent_feature,'"','') parent_feature
    ,      c.swirl_velocity
    ,      d.latitude
    ,      d.longitude

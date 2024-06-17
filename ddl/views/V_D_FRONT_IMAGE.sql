@@ -10,13 +10,13 @@ as
    select b.meds_job_number
    ,	    b.meds_observation_number
    ,      b.observered_date
-   ,      c.boundary_type
+   ,      replace(c.boundary_type,'"','') boundary_type
    ,      c.frontal_confidence
    ,      c.frontal_depth
    ,      c.frontal_gradient
    ,      c.frontal_line_id
-   ,      c.frontal_name
-   ,      c.frontal_type
+   ,      replace(c.frontal_name,'"','')  frontal_name
+   ,      replace(c.frontal_type,'"','')  frontal_type
    ,      c.point_type
    ,      d.confidence
    ,      d.latitude

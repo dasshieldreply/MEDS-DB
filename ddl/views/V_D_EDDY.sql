@@ -9,20 +9,20 @@ as
    )
    select b.meds_job_number
    ,	    b.meds_observation_number
-   ,      b.comment_s
-   ,      b.cruise_information
+   ,      replace(b.comment_s,'"','')                 comment_s
+   ,      replace(b.cruise_information,'"','')        cruise_information
    ,      b.database_reference
-   ,      b.data_available
+   ,      replace(b.data_available,'"','')            data_available
    ,      b.duration_of_observation
    ,      b.eddy_name
-   ,      b.instrument
+   ,      replace(b.instrument,'"','')                instrument
    ,      b.latitude
    ,      b.lifetime
    ,      b.longitude
    ,      b.observation_month
    ,      b.observation_year
-   ,      c.authors
-   ,      c.comment_ap
+   ,      replace(c.authors,'"','')                   authors
+   ,      replace(c.comment_ap,'"','')                comment_ap
    ,      c.comment_ay
    ,      c.comment_h
    ,      c.comment_z
@@ -41,7 +41,7 @@ as
    ,      c.journal_report
    ,      c.major_axis
    ,      c.major_axis_orientation
-   ,      c.max_u_theta_characteristics
+   ,      replace(c.max_u_theta_characteristics,'"','')  max_u_theta_characteristics
    ,      c.max_u__theta_
    ,      c.minor_axis
    ,      c.origin
