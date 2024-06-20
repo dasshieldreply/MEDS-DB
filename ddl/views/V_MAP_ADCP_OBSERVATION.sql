@@ -8,6 +8,7 @@ AS
    )
    select p.icon
    ,      p.color
+   ,      p.cruise_name
    ,      a.meds_job_number
    ,      a.meds_observation_number
    ,      a.location
