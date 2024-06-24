@@ -35,6 +35,7 @@ as
                when 'COMMENTS' then b.COMMENTS
                when 'FILE_REFERENCE' then b.FILE_REFERENCE
                when 'CRUISE_NAME' then p.CRUISE_NAME
+               when 'SPECIES' then b.species
                else to_char(a.MEDS_JOB_NUMBER)
           end as data_point_label
    from   param                        p
