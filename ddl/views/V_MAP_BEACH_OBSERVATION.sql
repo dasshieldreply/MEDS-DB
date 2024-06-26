@@ -1,5 +1,5 @@
 CREATE OR REPLACE FORCE EDITIONABLE VIEW "MEDSADMIN"."V_MAP_BEACH_OBSERVATION" 
-as
+as 
    with param as
    (
       select a.*
