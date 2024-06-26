@@ -2,7 +2,7 @@ CREATE OR REPLACE FORCE EDITIONABLE VIEW "MEDSADMIN"."V_MAP_MLO_PINNIPEDS_OBSERV
    with param as
    (
       select a.*
-      from   v_map_filter_criteria a
+      from   v_filter_meds_job_number a
       where  a.medsfilter = nv('P200_MEDSFILTER')
    )
    select p.icon
