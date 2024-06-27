@@ -27,7 +27,7 @@ CREATE OR REPLACE FORCE EDITIONABLE VIEW "MEDSADMIN"."V_MAP_SV_OBSERVATION" as
                when 'DATE_TIME' then to_char(a.date_time,'dd Mon yyyy hh24:mi:ss')
                when 'VESSEL_NAME' then p.vessel_name
                when 'CRUISE_NAME' then p.cruise_name
-               when 'INSTRUMENT' then b.description
+               when 'INSTRUMENT_NAME' then b.description
                when 'NUMBER_OF_DEPTH_LEVELS' then to_char(a.number_of_depth_levels)
                when 'MINIMUM_DEPTH_LEVEL' then to_char(a.minimum_depth_level)
                when 'MAXIMUM_DEPTH_LEVEL' then to_char(a.maximum_depth_level)
