@@ -36,6 +36,7 @@ select a.medsfilter
 ,      b.meds_cruise_number
 ,      b.meds_ship_number
 ,      c.cruise_name
+,      d.vessel_name
 from   param                 a
 ,      meds_processing_job   b
 ,      cruise_layer          c
