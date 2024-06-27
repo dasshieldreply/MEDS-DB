@@ -26,6 +26,7 @@ as
    ) 
    select p.icon
    ,      p.color
+   ,      p.cruise_name
    ,      b.meds_job_number
    ,      b.meds_observation_number
    ,      b.location
@@ -36,13 +37,31 @@ as
    ,      a.no_measurements
    ,      a.min_depth
    ,      a.max_depth
+   ,      case e.column_name
+               when 'MEDS_JOB_NUMBER' then to_char(a.MEDS_JOB_NUMBER)
+               when 'MEDS_OBSERVATION_NUMBER' then to_char(a.MEDS_OBSERVATION_NUMBER)
+               when 'LATITUDE' then to_char(b.LATITUDE)
+               when 'LONGITUDE' then to_char(b.LONGITUDE)
+               when 'DATE_RECORDED' then to_char(b.date_recorded,'fmDD/MM/YYYY HH24:MI:SS')
+               when 'SUPPLIER' then c.SUPPLIER   
+               when 'NO_MEASUREMENTS' then to_char(a.no_measurements)
+               when 'MIN_DEPTH' then to_char(a.min_depth)
+               when 'MAX_DEPTH' then to_char(a.max_depth)
+               when 'CRUISE_NAME' then p.CRUISE_NAME
+               else to_char(a.MEDS_JOB_NUMBER)
+          end as data_point_label
    from   param                        p
    ,      adta                         a
-   ,      seasoar_profile_observation b
+   ,      seasoar_profile_observation  b
    ,      job_tracking                 c
+   ,      medsfilter_medslayer_label   d 
+   ,      medslayer_label              e
    where  a.meds_job_number            = p.meds_job_number 
    and    sdo_anyinteract(b.location, p.location_rectangle) = 'TRUE'
    and    b.meds_job_number            = a.meds_job_number
    and    b.meds_observation_number    = a.meds_observation_number
    and    c.meic_number                = p.meic_number
+   and    d.medsfilter             (+) = p.medsfilter
+   and    d.medslayer              (+) = p.medslayer
+   and    e.medslayer_label        (+) = d.medslayer_label
 ;
