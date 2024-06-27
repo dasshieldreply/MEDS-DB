@@ -39,7 +39,7 @@ as
    and    a.date_recorded between p.date_start and p.date_end
    and    sdo_anyinteract(a.location, p.location_rectangle) = 'TRUE'
    and    b.meds_job_number         = a.meds_job_number
-   and    b.meds_observation_number =  a.meds_observation_number
+   and    b.meds_observation_number = a.meds_observation_number
    and    c.medsfilter          (+) = p.medsfilter
    and    c.medslayer           (+) = p.medslayer
    and    d.medslayer_label     (+) = c.medslayer_label
