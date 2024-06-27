@@ -33,13 +33,29 @@ AS
    ,      a.mid_longitude
    ,      a.distance_traveled
    ,      b.supplier
+   ,      case e.column_name
+               when 'MEDS_JOB_NUMBER' then to_char(a.MEDS_JOB_NUMBER)
+               when 'MEDS_OBSERVATION_NUMBER' then to_char(a.MEDS_OBSERVATION_NUMBER)
+               when 'MID_LATITUDE' then to_char(a.mid_latitude)
+               when 'MID_LONGITUDE' then to_char(a.mid_longitude)
+               when 'MIN_DATE' then o.label_min_date
+               when 'MAX_DATE' then o.label_max_date
+               when 'DISTANCE_TRAVELED' then to_char(a.distance_traveled)
+               when 'SUPPLIER' then B.SUPPLIER               
+               else to_char(a.MEDS_JOB_NUMBER)
+          end as data_point_label
    from   obsrv                        o
    ,      param                        p
    ,      glider_threaded_observation  a
    ,      job_tracking                 b
+   ,      medsfilter_medslayer_label   d 
+   ,      medslayer_label              e
    where  p.meds_job_number            = o.meds_job_number
    and    a.meds_job_number            = o.meds_job_number   
    and    a.meds_observation_number    = o.meds_observation_number
    and    sdo_anyinteract(a.location, p.location_rectangle) = 'TRUE'
    and    b.meic_number                = p.meic_number
+   and    d.medsfilter             (+) = p.medsfilter
+   and    d.medslayer              (+) = p.medslayer
+   and    e.medslayer_label        (+) = d.medslayer_label
 ;

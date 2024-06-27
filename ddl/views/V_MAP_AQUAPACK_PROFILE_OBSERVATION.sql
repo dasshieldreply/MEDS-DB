@@ -61,7 +61,7 @@ as
    and    b.meds_job_number            = a.meds_job_number
    and    b.meds_observation_number    = a.meds_observation_number
    and    c.meic_number                = p.meic_number
-   and    d.medsfilter         (+)  = p.medsfilter
-   and    d.medslayer          (+)  = p.medslayer
-   and    e.medslayer_label    (+)  = d.medslayer_label
+   and    d.medsfilter             (+) = p.medsfilter
+   and    d.medslayer              (+) = p.medslayer
+   and    e.medslayer_label        (+) = d.medslayer_label
 ;
