@@ -38,8 +38,8 @@ AS
                when 'MEDS_OBSERVATION_NUMBER' then to_char(a.MEDS_OBSERVATION_NUMBER)
                when 'MID_LATITUDE' then to_char(a.mid_latitude)
                when 'MID_LONGITUDE' then to_char(a.mid_longitude)
-               when 'MIN_DATE' then o.label_min_date
-               when 'MAX_DATE' then o.label_max_date
+               when 'MIN_DATE' then to_char(o.label_min_date,'fmDD/MM/YYYY HH24:MI:SS')
+               when 'MAX_DATE' then to_char(o.label_max_date,'fmDD/MM/YYYY HH24:MI:SS')
                when 'DISTANCE_TRAVELED' then to_char(a.distance_traveled)
                when 'SUPPLIER' then B.SUPPLIER               
                else to_char(a.MEDS_JOB_NUMBER)
