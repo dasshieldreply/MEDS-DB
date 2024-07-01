@@ -47,7 +47,7 @@
 ,      substr(a.row_content,135,1)   seastate 
 ,      substr(a.row_content,136,2)   waveperiod 
 ,      substr(a.row_content,138,2)   waveheight 
-,      substr(a.row_content,140,4)   atmosphericpressure 
+,      substr(a.row_content,140,5)   atmosphericpressure 
 ,      substr(a.row_content,145,2)   watercolour
 ,      substr(a.row_content,147,2)   watertransparency
 ,      substr(a.row_content,149,1)   salinityscalecode 
