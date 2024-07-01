@@ -1,0 +1,37 @@
+DECLARE
+  P_JOB_NUMBER NUMBER;
+  O_MEDS_SHIP_NUMBER NUMBER;
+  O_MEDS_CRUISE_NUMBER NUMBER;
+  O_INSTRUMENT_CODE NUMBER;
+  O_DATA_USE_CODE NUMBER;
+  O_FILE_CODE VARCHAR2(200);
+BEGIN
+  P_JOB_NUMBER := 102676;
+
+  UPLOAD_SERD_UTIL.PARSE_SERD_DATA(
+    P_JOB_NUMBER => P_JOB_NUMBER,
+    O_MEDS_SHIP_NUMBER => O_MEDS_SHIP_NUMBER,
+    O_MEDS_CRUISE_NUMBER => O_MEDS_CRUISE_NUMBER,
+    O_INSTRUMENT_CODE => O_INSTRUMENT_CODE,
+    O_DATA_USE_CODE => O_DATA_USE_CODE,
+    O_FILE_CODE => O_FILE_CODE
+  );
+
+DBMS_OUTPUT.PUT_LINE('O_MEDS_SHIP_NUMBER = ' || O_MEDS_SHIP_NUMBER);
+DBMS_OUTPUT.PUT_LINE('O_MEDS_CRUISE_NUMBER = ' || O_MEDS_CRUISE_NUMBER);
+DBMS_OUTPUT.PUT_LINE('O_INSTRUMENT_CODE = ' || O_INSTRUMENT_CODE);
+DBMS_OUTPUT.PUT_LINE('O_DATA_USE_CODE = ' || O_DATA_USE_CODE);
+DBMS_OUTPUT.PUT_LINE('O_FILE_CODE = ' || O_FILE_CODE);
+
+END;
+
+/*
+select * from medsfilter order by label;
+
+select * from stg_file where job_number=102675;
+select * from stg_file_serd_row where stg_file=37454723298244419475033593236050063821;
+
+select count(*) from profile_index_ts where meds_job_number=102676;
+select count(*) from profile_header_ts where meds_job_number=102676;
+select count(*) from profile_data_ts where meds_job_number=102676;
+*/

@@ -140,7 +140,7 @@ as
       end if;
       
       if p_number_decimals > length(p_input_string) then
-            dbms_output.put_line('return 2'); 
+         --dbms_output.put_line('return 2'); 
          return null;
       end if;
       
@@ -787,24 +787,25 @@ as
       )
       loop -- Each record is an observation
          v_obs       := v_obs + 1;
-         index_rec   := null;         
+         --dbms_output.put_line('observation ' || v_obs);
+         index_rec   := null;  
          -- PROFILE_INDEX 
          index_rec.date_time					   := to_date(f_main_row.observationdate || f_main_row.observationtime,'YYYYMMDDHH24MI');
          index_rec.year						      := substr(f_main_row.observationdate,1,4);
-         index_rec.month						   := substr(f_main_row.observationdate,5,2);        
+         index_rec.month						   := substr(f_main_row.observationdate,5,2);      
          index_rec.observed_depth			   := nullif(f_main_row.depthtoseabed, '     ');
          index_rec.minimum_depth_level		   := f_main_row.OBSERVATIONDEPTHMIN;
          index_rec.maximum_depth_level		   := f_main_row.OBSERVATIONDEPTHMAX;
          index_rec.number_of_depth_levels	   := f_main_row.DEPTHLEVELCOUNT;
          index_rec.marsden_square			   := f_main_row.MARSDENSQUARE;
-         index_rec.quadrant					   := f_main_row.quadrant;
+         index_rec.quadrant					   := f_main_row.quadrant; 
          index_rec.degree_square				   := f_main_row.degreesquare;
          index_rec.hood_archive_year		   := nullif(f_main_row.archiveyear, '  ');
          index_rec.no_of_comments			   := f_main_row.commentcount;
          index_rec.comments					   := f_main_row.commentcontent;
          index_rec.meds_job_number           := p_job_number;
          index_rec.meds_observation_number   := v_obs;
-         index_rec.string_location           := f_main_row.positiongeo;
+         index_rec.string_location           := f_main_row.positiongeo; 
          index_rec.latitude	               := substr(f_main_row.positiongeo,1,3) + round(substr(f_main_row.positiongeo,4,4)/600, 4);
          index_rec.longitude                 := substr(f_main_row.positiongeo,8,4) + round(substr(f_main_row.positiongeo,12,4)/600, 4);
          if l_meds_cruise_number is null and trim(f_main_row.originatorcruise) is not null then
