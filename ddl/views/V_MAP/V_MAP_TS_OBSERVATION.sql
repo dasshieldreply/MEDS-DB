@@ -9,7 +9,7 @@ AS
    select p.icon
    ,      p.color
    ,      p.cruise_name
-   ,      p.vessel_name
+   ,      case when p.vessel_name is null then to_char(p.meds_ship_number) else p.vessel_name end vessel_name
    ,      a.meds_job_number
    ,      a.meds_observation_number
    ,      a.location

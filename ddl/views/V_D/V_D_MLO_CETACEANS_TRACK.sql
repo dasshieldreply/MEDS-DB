@@ -22,7 +22,7 @@ as
    ,      b.ship
    ,      b.sound_source
    ,      b.wind_speed
-   ,      b.offset_staft
+   ,      b.offset_start
    ,      b.offset_end
    from   param                     p
    ,      v_filter_meds_job_number  a
