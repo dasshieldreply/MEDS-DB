@@ -29,7 +29,7 @@ select
    || c.land_check
    || '0'
    || '00' --to_char(p_levels_no,'fm00')
-   || nvl(to_char(b.observed_depth),'     ')
+   || nvl(to_char(b.observed_depth,'fm00000'),'     ')
    || to_char(b.minimum_depth_level,'fm0000')
    || to_char(b.maximum_depth_level,'fm0000')
    || c.d_corr
