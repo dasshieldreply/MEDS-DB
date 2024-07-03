@@ -1,5 +1,5 @@
 create or replace force editionable view "MEDSADMIN"."V_FILTER_MEDS_JOB_NUMBER" as 
-   with param as
+with param as
    (
    select a.medsfilter
    ,      a.label label_filter
@@ -22,15 +22,15 @@ create or replace force editionable view "MEDSADMIN"."V_FILTER_MEDS_JOB_NUMBER" 
    ,      medslayer  b
    where  ':' || a.layerstring || ':' like '%:' || b.label || ':%'
    )
-   , job_numbers
-   as
-   (
-   select b.medsfilter
-   ,      b.job_number
-   from   param a
-   ,      medsfilter_job_number b
-   where  b.medsfilter = a.medsfilter
-   )
+  -- , job_numbers
+  -- as
+  -- (
+  -- select b.medsfilter
+  -- ,      b.job_number
+  -- from   param a
+  -- ,      medsfilter_job_number b
+  -- where  b.medsfilter = a.medsfilter
+  -- )
    select a.medsfilter
    ,      a.label_filter
    ,      a.date_start
@@ -40,7 +40,8 @@ create or replace force editionable view "MEDSADMIN"."V_FILTER_MEDS_JOB_NUMBER" 
    ,      'fa ' || nvl(a.icon, 'fa-map_marker') icon
    ,      a.color
    ,      a.location_rectangle
-   ,      nvl(b.job_number,e.job_number)                          meds_job_number
+--   ,      nvl(b.job_number,e.job_number)      meds_job_number
+   ,      b.job_number                          meds_job_number   
    ,      b.meic_number
    ,      b.meds_cruise_number
    ,      b.meds_ship_number
@@ -50,12 +51,12 @@ create or replace force editionable view "MEDSADMIN"."V_FILTER_MEDS_JOB_NUMBER" 
    ,      meds_processing_job   b
    ,      cruise_layer          c
    ,      ship_details          d
-   ,      job_numbers           e
+   --,      job_numbers           e
    where  c.meds_cruise_number (+) = b.meds_cruise_number
    and    d.meds_ship_number   (+) = b.meds_ship_number
-   and    e.medsfilter         (+) = a.medsfilter
-   and    e.medsfilter         (+) = a.medsfilter
-   and    b.job_number         (+) = e.job_number
+   --and    e.medsfilter         (+) = a.medsfilter
+   --and    e.medsfilter         (+) = a.medsfilter
+   --and    b.job_number         (+) = e.job_number
    and
    (
    -- specific selection...
@@ -73,14 +74,14 @@ create or replace force editionable view "MEDSADMIN"."V_FILTER_MEDS_JOB_NUMBER" 
          and 
          b.job_number = a.meds_job_number
       )
-      or 
-      (
-         a.meic_number is null
-         and
-         a.meds_job_number is null 
-         and 
-         e.job_number is not null
-      )
+      --or 
+      --(
+      --   a.meic_number is null
+      --   and
+      --   a.meds_job_number is null 
+      --   and 
+      --   e.job_number is not null
+      --)
    )   
    or
    -- wider criteria...
