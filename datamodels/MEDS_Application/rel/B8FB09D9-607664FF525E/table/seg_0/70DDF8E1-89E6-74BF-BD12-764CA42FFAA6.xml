@@ -55,7 +55,7 @@
 </Column>
 </columns>
 <indexes itemClass="oracle.dbtools.crest.model.design.relational.Index">
-<ind_PK_UK id="8C416617-4BB5-6BE9-1A85-3747B986F9D5" name="MEDSLAYER_LABEL_PK">
+<ind_PK_UK id="8C416617-4BB5-6BE9-1A85-3747B986F9D5" name="MEDSLAYER_LABEL_P">
 <sourceConnName>MEDS ADMIN</sourceConnName>
 <sourceObjSchema>MEDSADMIN</sourceObjSchema>
 <sourceObjName>MEDSLAYER_LABEL_PK</sourceObjName>

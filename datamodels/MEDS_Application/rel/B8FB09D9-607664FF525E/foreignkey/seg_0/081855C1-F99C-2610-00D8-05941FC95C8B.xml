@@ -4,7 +4,7 @@
 <createdTime>2024-07-03 11:22:36 UTC</createdTime>
 <ownerDesignName>MEDS_Application</ownerDesignName>
 <referredTableLongName>MEDSADMIN.MEDSFILTER</referredTableLongName>
-<deleteRule>NO ACTION</deleteRule>
+<deleteRule>CASCADE</deleteRule>
 <referredTableID>54E496D6-783F-98C2-4F61-66634DCA91F0</referredTableID>
 <keyObject>2396F0CB-38F0-2844-E314-5D5963BC0925</keyObject>
 <referredKeyID>2396F0CB-38F0-2844-E314-5D5963BC0925</referredKeyID>

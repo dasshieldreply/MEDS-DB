@@ -4,7 +4,7 @@
 <createdTime>2024-07-03 11:24:52 UTC</createdTime>
 <ownerDesignName>MEDS_Application</ownerDesignName>
 <referredTableLongName>MEDSADMIN.MEDSLAYER_LABEL</referredTableLongName>
-<deleteRule>NO ACTION</deleteRule>
+<deleteRule>CASCADE</deleteRule>
 <referredTableID>70DDF8E1-89E6-74BF-BD12-764CA42FFAA6</referredTableID>
 <keyObject>8C416617-4BB5-6BE9-1A85-3747B986F9D5</keyObject>
 <referredKeyID>8C416617-4BB5-6BE9-1A85-3747B986F9D5</referredKeyID>
