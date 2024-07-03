@@ -22,7 +22,7 @@ select
    || d.country_code
    || d.ices_ship_code
    || d.ices_ship_flag
-   || rpad(nvl(e.cruise_name,' '),8)
+   || c.hood_cruise_id
    || c.hood_station_number
    || d.mias_institute_code
    || d.mias_institute_flag
@@ -72,7 +72,6 @@ inner join meds_processing_job  g on g.job_number         = a.meds_job_number
 inner join profile_index_tonly  b on b.meds_job_number    = a.meds_job_number
 inner join profile_header_tonly c on c.meds_job_number    = b.meds_job_number and c.meds_observation_number = b.meds_observation_number
 left join ship_details          d on d.meds_ship_number   = b.meds_ship_number
-left join cruise_layer          e on e.meds_cruise_number = b.meds_cruise_number
 left join instrument            f on f.ocean              = b.instrument_code
 order by a.medsfilter
 ,        b.meds_job_number

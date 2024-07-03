@@ -20,7 +20,6 @@ as
    (
       p_job_number         in number,
       p_meds_ship_number   in number,
-      p_meds_cruise_number in number,
       p_instrument_code    in number,
       p_data_use_code      in number,
       p_file_code          in varchar2
@@ -152,7 +151,6 @@ as
    (
       p_job_number         in number,
       p_meds_ship_number   in number,
-      p_meds_cruise_number in number,
       p_instrument_code    in number,
       p_data_use_code      in number,
       p_file_code          in varchar2
@@ -162,8 +160,7 @@ as
       set meds_ship_number    = p_meds_ship_number,
           instrument_code     = p_instrument_code,
           data_use_code       = p_data_use_code,
-          originator          = p_file_code,
-          meds_cruise_number  = p_meds_cruise_number  
+          originator          = p_file_code
       where job_number =  p_job_number;    
    end update_processing_job;
    
@@ -808,15 +805,13 @@ as
          index_rec.string_location           := f_main_row.positiongeo; 
          index_rec.latitude	               := substr(f_main_row.positiongeo,1,3) + round(substr(f_main_row.positiongeo,4,4)/600, 4);
          index_rec.longitude                 := substr(f_main_row.positiongeo,8,4) + round(substr(f_main_row.positiongeo,12,4)/600, 4);
-         if l_meds_cruise_number is null and trim(f_main_row.originatorcruise) is not null then
-            insert_cruise(p_cruise_number      => f_main_row.originatorcruise,
-                          o_meds_cruise_number => l_meds_cruise_number);         
-         end if;         
-         index_rec.meds_cruise_number := l_meds_cruise_number; 
+         index_rec.meds_cruise_number        := l_meds_cruise_number; 
+         
          select ocean
          into index_rec.instrument_code
          from instrument
          where serd = f_main_row.instrumentcode;
+         
          if l_meds_ship_number is null and trim(f_main_row.shipnumber) is not null then 
             insert_ship(p_ices_country_code          => f_main_row.country,
                         p_ship_number                => f_main_row.shipnumber,
@@ -839,7 +834,7 @@ as
          header_rec.dry_air_temp				   := f_main_row.airtemperaturedry; -- digits
          header_rec.d_corr					      := f_main_row.depthcorrection;
          --header_rec.file_filler				   := f_main_row. ;
-         --header_rec.hood_cruise_id			   := f_main_row. ;
+         header_rec.hood_cruise_id			   := f_main_row.originatorcruise;
          header_rec.hood_station_number		:= f_main_row.station;
          header_rec.land_check				   := f_main_row.landcheck;
          header_rec.meds_job_number			   := p_job_number;

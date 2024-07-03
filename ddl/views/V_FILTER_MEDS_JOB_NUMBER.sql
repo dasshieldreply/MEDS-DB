@@ -1,6 +1,6 @@
-CREATE OR REPLACE FORCE EDITIONABLE VIEW "MEDSADMIN"."V_FILTER_MEDS_JOB_NUMBER" as 
-  with param as
-(
+create or replace force editionable view "MEDSADMIN"."V_FILTER_MEDS_JOB_NUMBER" as 
+   with param as
+   (
    select a.medsfilter
    ,      a.label label_filter
    ,      a.date_start                          
@@ -21,65 +21,80 @@ CREATE OR REPLACE FORCE EDITIONABLE VIEW "MEDSADMIN"."V_FILTER_MEDS_JOB_NUMBER" 
    from   medsfilter a
    ,      medslayer  b
    where  ':' || a.layerstring || ':' like '%:' || b.label || ':%'
-)
-select a.medsfilter
-,      a.label_filter
-,      a.date_start
-,      nvl(a.date_end,sysdate)               date_end
-,      a.medslayer
-,      a.label_layer
-,      'fa ' || nvl(a.icon, 'fa-map_marker') icon
-,      a.color
-,      a.location_rectangle
-,      b.job_number                          meds_job_number
-,      b.meic_number
-,      b.meds_cruise_number
-,      b.meds_ship_number
-,      c.cruise_name
-,      d.vessel_name
-from   param                 a
-,      meds_processing_job   b
-,      cruise_layer          c
-,      ship_details          d
-where  c.meds_cruise_number (+) = b.meds_cruise_number
-and    d.meds_ship_number   (+) = b.meds_ship_number
-and
-(
-   -- specific selection...
---   (  
---      a.meic_number is not null 
---      and 
---      b.meic_number = a.meic_number
---   )
---   or
-   (  
-      a.meds_job_number is not null 
-      and 
-      b.job_number = a.meds_job_number
    )
---   or
---   -- meds_job_number list...
---   (  
---      b.job_number in 
---      (
---         select job_number
---         from   medsfilter_job_number 
---         where  medsfilter = a.medsfilter
---      )
---   )
+   , job_numbers
+   as
+   (
+   select b.medsfilter
+   ,      b.job_number
+   from   param a
+   ,      medsfilter_job_number b
+   where  b.medsfilter = a.medsfilter
+   )
+   select a.medsfilter
+   ,      a.label_filter
+   ,      a.date_start
+   ,      nvl(a.date_end,sysdate)               date_end
+   ,      a.medslayer
+   ,      a.label_layer
+   ,      'fa ' || nvl(a.icon, 'fa-map_marker') icon
+   ,      a.color
+   ,      a.location_rectangle
+   ,      nvl(b.job_number,e.job_number)                          meds_job_number
+   ,      b.meic_number
+   ,      b.meds_cruise_number
+   ,      b.meds_ship_number
+   ,      c.cruise_name
+   ,      d.vessel_name
+   from   param                 a
+   ,      meds_processing_job   b
+   ,      cruise_layer          c
+   ,      ship_details          d
+   ,      job_numbers           e
+   where  c.meds_cruise_number (+) = b.meds_cruise_number
+   and    d.meds_ship_number   (+) = b.meds_ship_number
+   and    e.medsfilter         (+) = a.medsfilter
+   and    e.medsfilter         (+) = a.medsfilter
+   and    b.job_number         (+) = e.job_number
+   and
+   (
+   -- specific selection...
+   (  
+      a.meic_number is not null 
+      and 
+      b.meic_number = a.meic_number
+   )
+   or
+   (  
+      (
+         a.meic_number is null
+         and
+         a.meds_job_number is not null 
+         and 
+         b.job_number = a.meds_job_number
+      )
+      or 
+      (
+         a.meic_number is null
+         and
+         a.meds_job_number is null 
+         and 
+         e.job_number is not null
+      )
+   )   
    or
    -- wider criteria...
    (  
       a.meic_number is null 
       and
       a.meds_job_number is null 
---      and 
---      not exists
---      (
---         select 1
---         from   medsfilter_job_number
---         where  medsfilter = a.medsfilter
---      )
+      and 
+      not exists
+      (
+         select 1
+         from   medsfilter_job_number
+         where  medsfilter = a.medsfilter
+      )
       and
       (
          (
@@ -121,4 +136,5 @@ and
          )
       )
    )
-);
+   )
+;
