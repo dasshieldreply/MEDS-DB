@@ -1,0 +1,355 @@
+<?xml version = '1.0' encoding = 'UTF-8'?>
+<Table class="oracle.dbtools.crest.model.design.relational.Table" directorySegmentName="seg_0" id="142C8B04-E87E-EEFE-0444-506F277161B8" schemaObject="21605DB5-8DF2-746E-5820-5D35D6CFFDFC" name="MEDSGEOTIFF">
+<sourceConnName>MEDS ADMIN</sourceConnName>
+<sourceObjSchema>MEDSADMIN</sourceObjSchema>
+<sourceObjName>MEDSGEOTIFF</sourceObjName>
+<createdBy>d.arboittedossantos</createdBy>
+<createdTime>2024-07-03 11:17:15 UTC</createdTime>
+<ownerDesignName>MEDS_Application</ownerDesignName>
+<allowColumnReorder>false</allowColumnReorder>
+<existDependencyGenerateInDDl>true</existDependencyGenerateInDDl>
+<parsed>true</parsed>
+<columns itemClass="oracle.dbtools.crest.model.design.relational.Column">
+<Column name="MEDSGEOTIFF" id="BAF47764-399F-F683-BD2A-50672F211388">
+<sourceConnName>MEDS ADMIN</sourceConnName>
+<sourceObjSchema>MEDSGEOTIFF</sourceObjSchema>
+<sourceObjName>MEDSGEOTIFF</sourceObjName>
+<createdBy>d.arboittedossantos</createdBy>
+<createdTime>2024-07-03 11:17:16 UTC</createdTime>
+<ownerDesignName>MEDS_Application</ownerDesignName>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT019</logicalDatatype>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
+<autoIncrementCycle>false</autoIncrementCycle>
+</Column>
+<Column name="FILENAME" id="49AB3BC3-CC42-7E51-0271-F0471B9F3FB0">
+<sourceConnName>MEDS ADMIN</sourceConnName>
+<sourceObjSchema>MEDSGEOTIFF</sourceObjSchema>
+<sourceObjName>FILENAME</sourceObjName>
+<createdBy>d.arboittedossantos</createdBy>
+<createdTime>2024-07-03 11:17:16 UTC</createdTime>
+<ownerDesignName>MEDS_Application</ownerDesignName>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT024</logicalDatatype>
+<dataTypeSize>4000 CHAR</dataTypeSize>
+<ownDataTypeParameters>4000 CHAR,,</ownDataTypeParameters>
+<autoIncrementCycle>false</autoIncrementCycle>
+</Column>
+<Column name="MIME_TYPE" id="3B23B868-7E15-C5AD-A70F-3EE64DB82607">
+<sourceConnName>MEDS ADMIN</sourceConnName>
+<sourceObjSchema>MEDSGEOTIFF</sourceObjSchema>
+<sourceObjName>MIME_TYPE</sourceObjName>
+<createdBy>d.arboittedossantos</createdBy>
+<createdTime>2024-07-03 11:17:16 UTC</createdTime>
+<ownerDesignName>MEDS_Application</ownerDesignName>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT024</logicalDatatype>
+<dataTypeSize>200 CHAR</dataTypeSize>
+<ownDataTypeParameters>200 CHAR,,</ownDataTypeParameters>
+<autoIncrementCycle>false</autoIncrementCycle>
+</Column>
+<Column name="BLOB_CONTENT" id="238A40BB-44DB-6510-9E5B-FA2EA6884D6C">
+<sourceConnName>MEDS ADMIN</sourceConnName>
+<sourceObjSchema>MEDSGEOTIFF</sourceObjSchema>
+<sourceObjName>BLOB_CONTENT</sourceObjName>
+<createdBy>d.arboittedossantos</createdBy>
+<createdTime>2024-07-03 11:17:16 UTC</createdTime>
+<ownerDesignName>MEDS_Application</ownerDesignName>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT029</logicalDatatype>
+<dataTypeSize>4000</dataTypeSize>
+<ownDataTypeParameters>4000,,</ownDataTypeParameters>
+<autoIncrementCycle>false</autoIncrementCycle>
+</Column>
+<Column name="WIDTH" id="53560164-9275-0D34-DEAF-728B6DACE4C0">
+<sourceConnName>MEDS ADMIN</sourceConnName>
+<sourceObjSchema>MEDSGEOTIFF</sourceObjSchema>
+<sourceObjName>WIDTH</sourceObjName>
+<createdBy>d.arboittedossantos</createdBy>
+<createdTime>2024-07-03 11:17:16 UTC</createdTime>
+<ownerDesignName>MEDS_Application</ownerDesignName>
+<nullsAllowed>true</nullsAllowed>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT019</logicalDatatype>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
+<autoIncrementCycle>false</autoIncrementCycle>
+</Column>
+<Column name="HEIGHT" id="D65318A0-DB4E-6D49-19FC-74256871F402">
+<sourceConnName>MEDS ADMIN</sourceConnName>
+<sourceObjSchema>MEDSGEOTIFF</sourceObjSchema>
+<sourceObjName>HEIGHT</sourceObjName>
+<createdBy>d.arboittedossantos</createdBy>
+<createdTime>2024-07-03 11:17:16 UTC</createdTime>
+<ownerDesignName>MEDS_Application</ownerDesignName>
+<nullsAllowed>true</nullsAllowed>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT019</logicalDatatype>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
+<autoIncrementCycle>false</autoIncrementCycle>
+</Column>
+<Column name="TILEWIDTH" id="2AAAB683-C500-2760-8EE1-44739B3682B6">
+<sourceConnName>MEDS ADMIN</sourceConnName>
+<sourceObjSchema>MEDSGEOTIFF</sourceObjSchema>
+<sourceObjName>TILEWIDTH</sourceObjName>
+<createdBy>d.arboittedossantos</createdBy>
+<createdTime>2024-07-03 11:17:16 UTC</createdTime>
+<ownerDesignName>MEDS_Application</ownerDesignName>
+<nullsAllowed>true</nullsAllowed>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT019</logicalDatatype>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
+<autoIncrementCycle>false</autoIncrementCycle>
+</Column>
+<Column name="TILEHEIGHT" id="9DC3A185-5426-93A1-4625-FFAF18BDCE17">
+<sourceConnName>MEDS ADMIN</sourceConnName>
+<sourceObjSchema>MEDSGEOTIFF</sourceObjSchema>
+<sourceObjName>TILEHEIGHT</sourceObjName>
+<createdBy>d.arboittedossantos</createdBy>
+<createdTime>2024-07-03 11:17:16 UTC</createdTime>
+<ownerDesignName>MEDS_Application</ownerDesignName>
+<nullsAllowed>true</nullsAllowed>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT019</logicalDatatype>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
+<autoIncrementCycle>false</autoIncrementCycle>
+</Column>
+<Column name="SAMPLESPERPIXEL" id="B5C519B5-E598-B145-0591-034EA919646D">
+<sourceConnName>MEDS ADMIN</sourceConnName>
+<sourceObjSchema>MEDSGEOTIFF</sourceObjSchema>
+<sourceObjName>SAMPLESPERPIXEL</sourceObjName>
+<createdBy>d.arboittedossantos</createdBy>
+<createdTime>2024-07-03 11:17:16 UTC</createdTime>
+<ownerDesignName>MEDS_Application</ownerDesignName>
+<nullsAllowed>true</nullsAllowed>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT019</logicalDatatype>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
+<autoIncrementCycle>false</autoIncrementCycle>
+</Column>
+<Column name="ORIGIN" id="94D3EBAB-6260-65FD-B15D-56B8567BD0B5">
+<sourceConnName>MEDS ADMIN</sourceConnName>
+<sourceObjSchema>MEDSGEOTIFF</sourceObjSchema>
+<sourceObjName>ORIGIN</sourceObjName>
+<createdBy>d.arboittedossantos</createdBy>
+<createdTime>2024-07-03 11:17:16 UTC</createdTime>
+<ownerDesignName>MEDS_Application</ownerDesignName>
+<nullsAllowed>true</nullsAllowed>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT024</logicalDatatype>
+<dataTypeSize>2000 BYTE</dataTypeSize>
+<ownDataTypeParameters>2000 BYTE,,</ownDataTypeParameters>
+<autoIncrementCycle>false</autoIncrementCycle>
+</Column>
+<Column name="RESOLUTION" id="6A037925-7F92-058F-FBC9-DF4CDF8D646D">
+<sourceConnName>MEDS ADMIN</sourceConnName>
+<sourceObjSchema>MEDSGEOTIFF</sourceObjSchema>
+<sourceObjName>RESOLUTION</sourceObjName>
+<createdBy>d.arboittedossantos</createdBy>
+<createdTime>2024-07-03 11:17:16 UTC</createdTime>
+<ownerDesignName>MEDS_Application</ownerDesignName>
+<nullsAllowed>true</nullsAllowed>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT024</logicalDatatype>
+<dataTypeSize>2000 BYTE</dataTypeSize>
+<ownDataTypeParameters>2000 BYTE,,</ownDataTypeParameters>
+<autoIncrementCycle>false</autoIncrementCycle>
+</Column>
+<Column name="BBOX" id="A8D2669E-3EAD-536D-3F14-497F0141624A">
+<sourceConnName>MEDS ADMIN</sourceConnName>
+<sourceObjSchema>MEDSGEOTIFF</sourceObjSchema>
+<sourceObjName>BBOX</sourceObjName>
+<createdBy>d.arboittedossantos</createdBy>
+<createdTime>2024-07-03 11:17:16 UTC</createdTime>
+<ownerDesignName>MEDS_Application</ownerDesignName>
+<nullsAllowed>true</nullsAllowed>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT024</logicalDatatype>
+<dataTypeSize>2000 BYTE</dataTypeSize>
+<ownDataTypeParameters>2000 BYTE,,</ownDataTypeParameters>
+<autoIncrementCycle>false</autoIncrementCycle>
+</Column>
+<Column name="GEOKEYS" id="ED31DB59-0701-3DE5-CDAB-3E442C57C094">
+<sourceConnName>MEDS ADMIN</sourceConnName>
+<sourceObjSchema>MEDSGEOTIFF</sourceObjSchema>
+<sourceObjName>GEOKEYS</sourceObjName>
+<createdBy>d.arboittedossantos</createdBy>
+<createdTime>2024-07-03 11:17:16 UTC</createdTime>
+<ownerDesignName>MEDS_Application</ownerDesignName>
+<nullsAllowed>true</nullsAllowed>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT024</logicalDatatype>
+<dataTypeSize>2000 BYTE</dataTypeSize>
+<ownDataTypeParameters>2000 BYTE,,</ownDataTypeParameters>
+<autoIncrementCycle>false</autoIncrementCycle>
+</Column>
+<Column name="MINXY" id="3EB4098B-7BF7-EF78-8508-B76952CA5006">
+<sourceConnName>MEDS ADMIN</sourceConnName>
+<sourceObjSchema>MEDSGEOTIFF</sourceObjSchema>
+<sourceObjName>MINXY</sourceObjName>
+<createdBy>d.arboittedossantos</createdBy>
+<createdTime>2024-07-03 11:17:16 UTC</createdTime>
+<ownerDesignName>MEDS_Application</ownerDesignName>
+<nullsAllowed>true</nullsAllowed>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT024</logicalDatatype>
+<dataTypeSize>2000 BYTE</dataTypeSize>
+<ownDataTypeParameters>2000 BYTE,,</ownDataTypeParameters>
+<autoIncrementCycle>false</autoIncrementCycle>
+</Column>
+<Column name="MAXXY" id="8D5A8291-D94A-8DD1-48BE-3F693C5616AC">
+<sourceConnName>MEDS ADMIN</sourceConnName>
+<sourceObjSchema>MEDSGEOTIFF</sourceObjSchema>
+<sourceObjName>MAXXY</sourceObjName>
+<createdBy>d.arboittedossantos</createdBy>
+<createdTime>2024-07-03 11:17:16 UTC</createdTime>
+<ownerDesignName>MEDS_Application</ownerDesignName>
+<nullsAllowed>true</nullsAllowed>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT024</logicalDatatype>
+<dataTypeSize>2000 BYTE</dataTypeSize>
+<ownDataTypeParameters>2000 BYTE,,</ownDataTypeParameters>
+<autoIncrementCycle>false</autoIncrementCycle>
+</Column>
+<Column name="BASE64" id="773DE796-6FF1-FD9F-3A7E-37758741EFDC">
+<sourceConnName>MEDS ADMIN</sourceConnName>
+<sourceObjSchema>MEDSGEOTIFF</sourceObjSchema>
+<sourceObjName>BASE64</sourceObjName>
+<createdBy>d.arboittedossantos</createdBy>
+<createdTime>2024-07-03 11:17:16 UTC</createdTime>
+<ownerDesignName>MEDS_Application</ownerDesignName>
+<nullsAllowed>true</nullsAllowed>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT028</logicalDatatype>
+<dataTypeSize>4000</dataTypeSize>
+<ownDataTypeParameters>4000,,</ownDataTypeParameters>
+<autoIncrementCycle>false</autoIncrementCycle>
+</Column>
+<Column name="BASE64_BLOB" id="AB64EC4B-82E7-1382-0EA7-61AC5A05F467">
+<sourceConnName>MEDS ADMIN</sourceConnName>
+<sourceObjSchema>MEDSGEOTIFF</sourceObjSchema>
+<sourceObjName>BASE64_BLOB</sourceObjName>
+<createdBy>d.arboittedossantos</createdBy>
+<createdTime>2024-07-03 11:17:16 UTC</createdTime>
+<ownerDesignName>MEDS_Application</ownerDesignName>
+<nullsAllowed>true</nullsAllowed>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT029</logicalDatatype>
+<dataTypeSize>4000</dataTypeSize>
+<ownDataTypeParameters>4000,,</ownDataTypeParameters>
+<autoIncrementCycle>false</autoIncrementCycle>
+</Column>
+<Column name="LABEL" id="D058FC60-6640-4FD1-4BAE-DF6011A5E3CE">
+<sourceConnName>MEDS ADMIN</sourceConnName>
+<sourceObjSchema>MEDSGEOTIFF</sourceObjSchema>
+<sourceObjName>LABEL</sourceObjName>
+<createdBy>d.arboittedossantos</createdBy>
+<createdTime>2024-07-03 11:17:16 UTC</createdTime>
+<ownerDesignName>MEDS_Application</ownerDesignName>
+<nullsAllowed>true</nullsAllowed>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT024</logicalDatatype>
+<dataTypeSize>100 BYTE</dataTypeSize>
+<ownDataTypeParameters>100 BYTE,,</ownDataTypeParameters>
+<autoIncrementCycle>false</autoIncrementCycle>
+</Column>
+</columns>
+<indexes itemClass="oracle.dbtools.crest.model.design.relational.Index">
+<ind_PK_UK id="29386839-369F-0BE4-E666-3B55666A56B9" name="MEDSGEOTIFF_P">
+<sourceConnName>MEDS ADMIN</sourceConnName>
+<sourceObjSchema>MEDSADMIN</sourceObjSchema>
+<sourceObjName>MEDSGEOTIFF_P</sourceObjName>
+<createdBy>d.arboittedossantos</createdBy>
+<createdTime>2024-07-03 11:17:20 UTC</createdTime>
+<ownerDesignName>MEDS_Application</ownerDesignName>
+<pk>true</pk>
+<indexState>Primary Constraint</indexState>
+<isSurrogateKey>false</isSurrogateKey>
+<indexColumnUsage>
+<colUsage columnID="BAF47764-399F-F683-BD2A-50672F211388"/>
+</indexColumnUsage>
+</ind_PK_UK>
+<ind_PK_UK id="47A33434-633B-4BF0-3495-487A0320FCFF" name="MEDSGEOTIFF_U1">
+<sourceConnName>MEDS ADMIN</sourceConnName>
+<sourceObjSchema>MEDSADMIN</sourceObjSchema>
+<sourceObjName>MEDSGEOTIFF_U1</sourceObjName>
+<createdBy>d.arboittedossantos</createdBy>
+<createdTime>2024-07-03 11:17:20 UTC</createdTime>
+<ownerDesignName>MEDS_Application</ownerDesignName>
+<indexState>Unique Constraint</indexState>
+<isSurrogateKey>false</isSurrogateKey>
+<indexColumnUsage>
+<colUsage columnID="49AB3BC3-CC42-7E51-0271-F0471B9F3FB0"/>
+</indexColumnUsage>
+</ind_PK_UK>
+<ind_PK_UK id="35F12CDC-0D70-BA59-8C53-DC689D6B4EC9" name="MEDSGEOTIFF_U2">
+<sourceConnName>MEDS ADMIN</sourceConnName>
+<sourceObjSchema>MEDSADMIN</sourceObjSchema>
+<sourceObjName>MEDSGEOTIFF_U2</sourceObjName>
+<createdBy>d.arboittedossantos</createdBy>
+<createdTime>2024-07-03 11:17:20 UTC</createdTime>
+<ownerDesignName>MEDS_Application</ownerDesignName>
+<indexState>Unique Constraint</indexState>
+<isSurrogateKey>false</isSurrogateKey>
+<indexColumnUsage>
+<colUsage columnID="D058FC60-6640-4FD1-4BAE-DF6011A5E3CE"/>
+</indexColumnUsage>
+</ind_PK_UK>
+<ind_PK_UK id="ECA9480D-E907-054B-08B6-15F890D833C7" schemaObject="21605DB5-8DF2-746E-5820-5D35D6CFFDFC" name="MEDSGEOTIFF_P">
+<sourceConnName>MEDS ADMIN</sourceConnName>
+<sourceObjSchema>MEDSADMIN</sourceObjSchema>
+<sourceObjName>MEDSGEOTIFF_P</sourceObjName>
+<createdBy>d.arboittedossantos</createdBy>
+<createdTime>2024-07-03 11:17:17 UTC</createdTime>
+<ownerDesignName>MEDS_Application</ownerDesignName>
+<indexState>Unique Plain Index</indexState>
+<isSurrogateKey>false</isSurrogateKey>
+<indexColumnUsage>
+<colUsage columnID="BAF47764-399F-F683-BD2A-50672F211388"/>
+</indexColumnUsage>
+</ind_PK_UK>
+<ind_PK_UK id="BAB7C830-B95D-C609-BBE5-9DA4D1874F5B" schemaObject="21605DB5-8DF2-746E-5820-5D35D6CFFDFC" name="MEDSGEOTIFF_U1">
+<sourceConnName>MEDS ADMIN</sourceConnName>
+<sourceObjSchema>MEDSADMIN</sourceObjSchema>
+<sourceObjName>MEDSGEOTIFF_U1</sourceObjName>
+<createdBy>d.arboittedossantos</createdBy>
+<createdTime>2024-07-03 11:17:17 UTC</createdTime>
+<ownerDesignName>MEDS_Application</ownerDesignName>
+<indexState>Unique Plain Index</indexState>
+<isSurrogateKey>false</isSurrogateKey>
+<indexColumnUsage>
+<colUsage columnID="49AB3BC3-CC42-7E51-0271-F0471B9F3FB0"/>
+</indexColumnUsage>
+</ind_PK_UK>
+<ind_PK_UK id="6285AA13-4A0E-456E-9F0B-6DE1E61B69C2" schemaObject="21605DB5-8DF2-746E-5820-5D35D6CFFDFC" name="MEDSGEOTIFF_U2">
+<sourceConnName>MEDS ADMIN</sourceConnName>
+<sourceObjSchema>MEDSADMIN</sourceObjSchema>
+<sourceObjName>MEDSGEOTIFF_U2</sourceObjName>
+<createdBy>d.arboittedossantos</createdBy>
+<createdTime>2024-07-03 11:17:17 UTC</createdTime>
+<ownerDesignName>MEDS_Application</ownerDesignName>
+<indexState>Unique Plain Index</indexState>
+<isSurrogateKey>false</isSurrogateKey>
+<indexColumnUsage>
+<colUsage columnID="D058FC60-6640-4FD1-4BAE-DF6011A5E3CE"/>
+</indexColumnUsage>
+</ind_PK_UK>
+</indexes>
+</Table>

@@ -1,0 +1,16 @@
+<?xml version = '1.0' encoding = 'UTF-8'?>
+<FKIndexAssociation class="oracle.dbtools.crest.model.design.relational.FKIndexAssociation" directorySegmentName="seg_0" id="09141236-6E54-C66D-F430-04BF54C4F15D" containerWithKeyObject="D830D966-AC14-8F98-B2BC-C9FF24B97559" localFKIndex="139C3E4D-0316-704C-A5FA-8E0B644B6CC7" name="MEDS_PROCESSING_JOB_JOB_LOOKUPS_F">
+<createdBy>d.arboittedossantos</createdBy>
+<createdTime>2024-07-03 11:27:28 UTC</createdTime>
+<ownerDesignName>MEDS_Application</ownerDesignName>
+<referredTableLongName>MEDSADMIN.JOB_LOOKUPS</referredTableLongName>
+<deleteRule>NO ACTION</deleteRule>
+<referredTableID>51569DB1-CAFF-C1C5-C798-B88425E3459B</referredTableID>
+<keyObject>E08A5705-708C-C8FD-97F1-D5C7AA3DA488</keyObject>
+<referredKeyID>E08A5705-708C-C8FD-97F1-D5C7AA3DA488</referredKeyID>
+<mandatory>true</mandatory>
+<refColNames>USAGE</refColNames>
+<transferable>true</transferable>
+<rely>false</rely>
+<columnDependencyConstraintGenerateInDDL>true</columnDependencyConstraintGenerateInDDL>
+</FKIndexAssociation>

@@ -1,0 +1,123 @@
+<?xml version = '1.0' encoding = 'UTF-8'?>
+<Table class="oracle.dbtools.crest.model.design.relational.Table" directorySegmentName="seg_0" id="61F199CE-6C56-600A-6DC6-3FD12AF1E5C9" schemaObject="21605DB5-8DF2-746E-5820-5D35D6CFFDFC" name="MEDSFILTER_MEIC">
+<sourceConnName>MEDS ADMIN</sourceConnName>
+<sourceObjSchema>MEDSADMIN</sourceObjSchema>
+<sourceObjName>MEDSFILTER_MEIC</sourceObjName>
+<createdBy>d.arboittedossantos</createdBy>
+<createdTime>2024-07-03 11:17:15 UTC</createdTime>
+<ownerDesignName>MEDS_Application</ownerDesignName>
+<allowColumnReorder>false</allowColumnReorder>
+<existDependencyGenerateInDDl>true</existDependencyGenerateInDDl>
+<parsed>true</parsed>
+<columns itemClass="oracle.dbtools.crest.model.design.relational.Column">
+<Column name="MEDSFILTER_MEIC" id="5C708C5C-659A-1016-E3E8-872D7EC036C1">
+<sourceConnName>MEDS ADMIN</sourceConnName>
+<sourceObjSchema>MEDSFILTER_MEIC</sourceObjSchema>
+<sourceObjName>MEDSFILTER_MEIC</sourceObjName>
+<createdBy>d.arboittedossantos</createdBy>
+<createdTime>2024-07-03 11:17:16 UTC</createdTime>
+<ownerDesignName>MEDS_Application</ownerDesignName>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT019</logicalDatatype>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
+<autoIncrementCycle>false</autoIncrementCycle>
+</Column>
+<Column name="MEDSFILTER" id="E09C960C-17BA-9F05-9D60-D76CA0D70659">
+<sourceConnName>MEDS ADMIN</sourceConnName>
+<sourceObjSchema>MEDSFILTER_MEIC</sourceObjSchema>
+<sourceObjName>MEDSFILTER</sourceObjName>
+<createdBy>d.arboittedossantos</createdBy>
+<createdTime>2024-07-03 11:17:16 UTC</createdTime>
+<ownerDesignName>MEDS_Application</ownerDesignName>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT019</logicalDatatype>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
+<autoIncrementCycle>false</autoIncrementCycle>
+<associations>
+<colAssociation fkAssociation="A1A5BB07-EE73-1A66-60D6-BE5F63C5B057" referredColumn="D602B55A-A23B-51F3-E0F1-14D5A8BDDB0B"/>
+</associations>
+</Column>
+<Column name="MEIC" id="297A082B-6B9D-69A5-8611-1B0D971C2229">
+<sourceConnName>MEDS ADMIN</sourceConnName>
+<sourceObjSchema>MEDSFILTER_MEIC</sourceObjSchema>
+<sourceObjName>MEIC</sourceObjName>
+<createdBy>d.arboittedossantos</createdBy>
+<createdTime>2024-07-03 11:17:16 UTC</createdTime>
+<ownerDesignName>MEDS_Application</ownerDesignName>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT019</logicalDatatype>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
+<autoIncrementCycle>false</autoIncrementCycle>
+</Column>
+</columns>
+<indexes itemClass="oracle.dbtools.crest.model.design.relational.Index">
+<ind_PK_UK id="EE0F1186-09A0-F020-2611-D4BBFC262FE2" name="MEDSFILTER_MEIC_P">
+<sourceConnName>MEDS ADMIN</sourceConnName>
+<sourceObjSchema>MEDSADMIN</sourceObjSchema>
+<sourceObjName>MEDSFILTER_MEIC_P</sourceObjName>
+<createdBy>d.arboittedossantos</createdBy>
+<createdTime>2024-07-03 11:17:20 UTC</createdTime>
+<ownerDesignName>MEDS_Application</ownerDesignName>
+<pk>true</pk>
+<indexState>Primary Constraint</indexState>
+<isSurrogateKey>false</isSurrogateKey>
+<indexColumnUsage>
+<colUsage columnID="5C708C5C-659A-1016-E3E8-872D7EC036C1"/>
+</indexColumnUsage>
+</ind_PK_UK>
+<ind_PK_UK id="B67DB974-27F5-6751-48DF-8E7BCC898879" name="MEDSFILTER_MEIC_U">
+<sourceConnName>MEDS ADMIN</sourceConnName>
+<sourceObjSchema>MEDSADMIN</sourceObjSchema>
+<sourceObjName>MEDSFILTER_MEIC_U</sourceObjName>
+<createdBy>d.arboittedossantos</createdBy>
+<createdTime>2024-07-03 11:17:20 UTC</createdTime>
+<ownerDesignName>MEDS_Application</ownerDesignName>
+<indexState>Unique Constraint</indexState>
+<isSurrogateKey>false</isSurrogateKey>
+<indexColumnUsage>
+<colUsage columnID="E09C960C-17BA-9F05-9D60-D76CA0D70659"/>
+<colUsage columnID="297A082B-6B9D-69A5-8611-1B0D971C2229"/>
+</indexColumnUsage>
+</ind_PK_UK>
+<ind_PK_UK id="CA8EC926-8BAF-3254-B5A1-6E68AD2C483E" schemaObject="21605DB5-8DF2-746E-5820-5D35D6CFFDFC" name="MEDSFILTER_MEIC_P">
+<sourceConnName>MEDS ADMIN</sourceConnName>
+<sourceObjSchema>MEDSADMIN</sourceObjSchema>
+<sourceObjName>MEDSFILTER_MEIC_P</sourceObjName>
+<createdBy>d.arboittedossantos</createdBy>
+<createdTime>2024-07-03 11:17:17 UTC</createdTime>
+<ownerDesignName>MEDS_Application</ownerDesignName>
+<indexState>Unique Plain Index</indexState>
+<isSurrogateKey>false</isSurrogateKey>
+<indexColumnUsage>
+<colUsage columnID="5C708C5C-659A-1016-E3E8-872D7EC036C1"/>
+</indexColumnUsage>
+</ind_PK_UK>
+<ind_PK_UK id="BD3E4DAC-A957-F8D4-6673-5F2621CFCCB0" schemaObject="21605DB5-8DF2-746E-5820-5D35D6CFFDFC" name="MEDSFILTER_MEIC_U">
+<sourceConnName>MEDS ADMIN</sourceConnName>
+<sourceObjSchema>MEDSADMIN</sourceObjSchema>
+<sourceObjName>MEDSFILTER_MEIC_U</sourceObjName>
+<createdBy>d.arboittedossantos</createdBy>
+<createdTime>2024-07-03 11:17:17 UTC</createdTime>
+<ownerDesignName>MEDS_Application</ownerDesignName>
+<indexState>Unique Plain Index</indexState>
+<isSurrogateKey>false</isSurrogateKey>
+<indexColumnUsage>
+<colUsage columnID="E09C960C-17BA-9F05-9D60-D76CA0D70659"/>
+<colUsage columnID="297A082B-6B9D-69A5-8611-1B0D971C2229"/>
+</indexColumnUsage>
+</ind_PK_UK>
+<ind_PK_UK id="107C7FAE-1E31-E24F-CF52-4A618769AA95" name="MEDSFILTER_MEIC_MEDSFILTER_F">
+<createdBy>d.arboittedossantos</createdBy>
+<createdTime>2024-07-03 11:17:23 UTC</createdTime>
+<ownerDesignName>MEDS_Application</ownerDesignName>
+<indexState>Foreign Key</indexState>
+<isSurrogateKey>false</isSurrogateKey>
+<indexColumnUsage>
+<colUsage columnID="E09C960C-17BA-9F05-9D60-D76CA0D70659"/>
+</indexColumnUsage>
+</ind_PK_UK>
+</indexes>
+</Table>

@@ -1,0 +1,36 @@
+<?xml version = '1.0' encoding = 'UTF-8'?>
+<TriggerOraclev10g class="oracle.dbtools.crest.model.design.storage.oracle.v10g.TriggerOraclev10g" name="B_MEDSDOMAIN" directorySegmentName="seg_0" id="B5494339-146D-C9F3-92ED-7DAFD30F49A8">
+<sourceConnName>MEDS ADMIN</sourceConnName>
+<sourceObjSchema>MEDSADMIN</sourceObjSchema>
+<sourceObjName>B_MEDSDOMAIN</sourceObjName>
+<createdBy>d.arboittedossantos</createdBy>
+<createdTime>2024-07-03 11:17:23 UTC</createdTime>
+<ownerDesignName>MEDS_Application</ownerDesignName>
+<actions>INSERT, UPDATE, DELETE</actions>
+<body><![CDATA[declare 
+   l_table    varchar2(30) := 'MEDSDOMAIN';
+   l_action   varchar2(1);
+   l_seq      number; 
+begin 
+   if inserting then 
+      if :new.MEDSDOMAIN is null then 
+         :new.MEDSDOMAIN := to_number(sys_guid(),'xxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxx');
+      end if; 
+      l_seq := :new.MEDSDOMAIN;
+      l_action := 'I';
+   elsif updating then 
+      l_seq := :new.MEDSDOMAIN;
+      l_action := 'U';
+   elsif deleting then 
+      l_seq := :old.MEDSDOMAIN;
+   end if; 
+   if deleting then
+      cm.audit_tool.audit_delete('MEDSDOMAIN',l_seq);
+   else
+      cm.audit_tool.audit_column(l_action,'MEDSDOMAIN','LABEL',l_seq,:old.LABEL,:new.LABEL);
+   end if;
+end b_medsdomain;]]></body>
+<triggerTime>BEFORE</triggerTime>
+<owner>3AC69096-DF56-CE56-D1E2-F2BC5F023F01</owner>
+<table>2FB42234-0A0E-DFE4-B76B-BDB1990F3136</table>
+</TriggerOraclev10g>

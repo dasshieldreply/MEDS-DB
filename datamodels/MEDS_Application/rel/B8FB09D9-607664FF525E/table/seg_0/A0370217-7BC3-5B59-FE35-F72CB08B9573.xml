@@ -1,0 +1,108 @@
+<?xml version = '1.0' encoding = 'UTF-8'?>
+<Table class="oracle.dbtools.crest.model.design.relational.Table" directorySegmentName="seg_0" id="A0370217-7BC3-5B59-FE35-F72CB08B9573" schemaObject="21605DB5-8DF2-746E-5820-5D35D6CFFDFC" name="MEDSLAYER_USAGE">
+<createdBy>d.arboittedossantos</createdBy>
+<createdTime>2024-07-03 11:30:19 UTC</createdTime>
+<ownerDesignName>MEDS_Application</ownerDesignName>
+<ordsAlias>table_18</ordsAlias>
+<allowColumnReorder>false</allowColumnReorder>
+<existDependencyGenerateInDDl>true</existDependencyGenerateInDDl>
+<parsed>true</parsed>
+<columns itemClass="oracle.dbtools.crest.model.design.relational.Column">
+<Column name="MEDSLAYER_USAGE" id="85853D55-AE59-0EEE-269F-3F396D1B2A08">
+<createdBy>d.arboittedossantos</createdBy>
+<createdTime>2024-07-03 11:31:08 UTC</createdTime>
+<ownerDesignName>MEDS_Application</ownerDesignName>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT011</logicalDatatype>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
+<autoIncrementCycle>false</autoIncrementCycle>
+</Column>
+<Column name="MEDSLAYER" id="4B5694AC-286B-6269-EA22-28926FAB3AE8">
+<createdBy>d.arboittedossantos</createdBy>
+<createdTime>2024-07-03 11:31:17 UTC</createdTime>
+<ownerDesignName>MEDS_Application</ownerDesignName>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT019</logicalDatatype>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
+<previousColumn>false</previousColumn>
+<autoIncrementCycle>false</autoIncrementCycle>
+<associations>
+<colAssociation fkAssociation="ED4A9C2C-6750-77FC-A059-E1A8EEA43DDF" referredColumn="1F0A71C0-FF47-CC0C-B226-FB92D4FEABF2"/>
+</associations>
+</Column>
+<Column name="JOB_TYPE_NUMBER" id="64C95A4B-809F-1D92-13F3-22A74D0C89AE">
+<createdBy>d.arboittedossantos</createdBy>
+<createdTime>2024-07-03 11:31:34 UTC</createdTime>
+<ownerDesignName>MEDS_Application</ownerDesignName>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT019</logicalDatatype>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
+<previousColumn>false</previousColumn>
+<autoIncrementCycle>false</autoIncrementCycle>
+<associations>
+<colAssociation fkAssociation="B4F142C7-D315-1412-49FD-9F125CD42EB9" referredColumn="57C1AA34-AD47-7DB9-F8D7-F414C448923D"/>
+</associations>
+</Column>
+<Column name="USAGE" id="BCB56C55-8E2B-E678-2BE0-5807426254B2">
+<createdBy>d.arboittedossantos</createdBy>
+<createdTime>2024-07-03 11:31:57 UTC</createdTime>
+<ownerDesignName>MEDS_Application</ownerDesignName>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT024</logicalDatatype>
+<dataTypeSize>50 BYTE</dataTypeSize>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
+<previousColumn>false</previousColumn>
+<autoIncrementCycle>false</autoIncrementCycle>
+<associations>
+<colAssociation fkAssociation="501EE038-4C2A-9B30-930C-FD6274D75A9C" referredColumn="DD209456-73E0-EB1C-A186-BC06C58959BF"/>
+</associations>
+</Column>
+</columns>
+<indexes itemClass="oracle.dbtools.crest.model.design.relational.Index">
+<ind_PK_UK id="8541CD44-41BA-06F7-70DF-24B86C55D5B9" name="MEDSLAYER_USAGE_P">
+<createdBy>d.arboittedossantos</createdBy>
+<createdTime>2024-07-03 11:31:08 UTC</createdTime>
+<ownerDesignName>MEDS_Application</ownerDesignName>
+<pk>true</pk>
+<indexState>Primary Constraint</indexState>
+<isSurrogateKey>false</isSurrogateKey>
+<indexColumnUsage>
+<colUsage columnID="85853D55-AE59-0EEE-269F-3F396D1B2A08"/>
+</indexColumnUsage>
+</ind_PK_UK>
+<ind_PK_UK id="C33A1B3D-895F-C198-ACB1-8074570A6219" name="MEDSLAYER_USAGE_MEDSLAYER_F">
+<createdBy>d.arboittedossantos</createdBy>
+<createdTime>2024-07-03 11:31:17 UTC</createdTime>
+<ownerDesignName>MEDS_Application</ownerDesignName>
+<indexState>Foreign Key</indexState>
+<isSurrogateKey>false</isSurrogateKey>
+<indexColumnUsage>
+<colUsage columnID="4B5694AC-286B-6269-EA22-28926FAB3AE8"/>
+</indexColumnUsage>
+</ind_PK_UK>
+<ind_PK_UK id="AFA7D780-5C0E-38F8-CEDB-1AB109AA965A" name="MEDSLAYER_USAGE_MEDS_JOB_TYPE_F">
+<createdBy>d.arboittedossantos</createdBy>
+<createdTime>2024-07-03 11:31:34 UTC</createdTime>
+<ownerDesignName>MEDS_Application</ownerDesignName>
+<indexState>Foreign Key</indexState>
+<isSurrogateKey>false</isSurrogateKey>
+<indexColumnUsage>
+<colUsage columnID="64C95A4B-809F-1D92-13F3-22A74D0C89AE"/>
+</indexColumnUsage>
+</ind_PK_UK>
+<ind_PK_UK id="961DBD6A-2BD6-E5C6-28FD-03AA0BE7599C" name="MEDSLAYER_USAGE_JOB_LOOKUPS_F">
+<createdBy>d.arboittedossantos</createdBy>
+<createdTime>2024-07-03 11:31:57 UTC</createdTime>
+<ownerDesignName>MEDS_Application</ownerDesignName>
+<indexState>Foreign Key</indexState>
+<isSurrogateKey>false</isSurrogateKey>
+<indexColumnUsage>
+<colUsage columnID="BCB56C55-8E2B-E678-2BE0-5807426254B2"/>
+</indexColumnUsage>
+</ind_PK_UK>
+</indexes>
+</Table>

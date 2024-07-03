@@ -1,0 +1,134 @@
+<?xml version = '1.0' encoding = 'UTF-8'?>
+<Table class="oracle.dbtools.crest.model.design.relational.Table" directorySegmentName="seg_0" id="D55D2943-F1AE-7B9A-094F-EABADFF32013" schemaObject="21605DB5-8DF2-746E-5820-5D35D6CFFDFC" name="MEDSFILTER_MEDSLAYER_LABEL">
+<sourceConnName>MEDS ADMIN</sourceConnName>
+<sourceObjSchema>MEDSADMIN</sourceObjSchema>
+<sourceObjName>MEDSFILTER_MEDSLAYER_LABEL</sourceObjName>
+<createdBy>d.arboittedossantos</createdBy>
+<createdTime>2024-07-03 11:17:15 UTC</createdTime>
+<ownerDesignName>MEDS_Application</ownerDesignName>
+<allowColumnReorder>false</allowColumnReorder>
+<existDependencyGenerateInDDl>true</existDependencyGenerateInDDl>
+<parsed>true</parsed>
+<columns itemClass="oracle.dbtools.crest.model.design.relational.Column">
+<Column name="MEDSFILTER_MEDSLAYER_LABEL" id="F0B97FB1-54ED-A872-B002-A0AFCF104283">
+<sourceConnName>MEDS ADMIN</sourceConnName>
+<sourceObjSchema>MEDSFILTER_MEDSLAYER_LABEL</sourceObjSchema>
+<sourceObjName>MEDSFILTER_MEDSLAYER_LABEL</sourceObjName>
+<createdBy>d.arboittedossantos</createdBy>
+<createdTime>2024-07-03 11:17:16 UTC</createdTime>
+<ownerDesignName>MEDS_Application</ownerDesignName>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT019</logicalDatatype>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
+<autoIncrementCycle>false</autoIncrementCycle>
+</Column>
+<Column name="MEDSFILTER" id="562E1994-FF5D-9DEC-948E-1CCCFA944879">
+<sourceConnName>MEDS ADMIN</sourceConnName>
+<sourceObjSchema>MEDSFILTER_MEDSLAYER_LABEL</sourceObjSchema>
+<sourceObjName>MEDSFILTER</sourceObjName>
+<createdBy>d.arboittedossantos</createdBy>
+<createdTime>2024-07-03 11:17:16 UTC</createdTime>
+<ownerDesignName>MEDS_Application</ownerDesignName>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT019</logicalDatatype>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
+<autoIncrementCycle>false</autoIncrementCycle>
+<associations>
+<colAssociation fkAssociation="081855C1-F99C-2610-00D8-05941FC95C8B" referredColumn="D602B55A-A23B-51F3-E0F1-14D5A8BDDB0B"/>
+</associations>
+</Column>
+<Column name="MEDSLAYER" id="76D3CD8A-4AFF-3733-455C-EC419ABD3266">
+<sourceConnName>MEDS ADMIN</sourceConnName>
+<sourceObjSchema>MEDSFILTER_MEDSLAYER_LABEL</sourceObjSchema>
+<sourceObjName>MEDSLAYER</sourceObjName>
+<createdBy>d.arboittedossantos</createdBy>
+<createdTime>2024-07-03 11:17:16 UTC</createdTime>
+<ownerDesignName>MEDS_Application</ownerDesignName>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT019</logicalDatatype>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
+<autoIncrementCycle>false</autoIncrementCycle>
+<associations>
+<colAssociation fkAssociation="AA023878-10A8-A1E2-5A9A-389CCB249F4F" referredColumn="1F0A71C0-FF47-CC0C-B226-FB92D4FEABF2"/>
+</associations>
+</Column>
+<Column name="MEDSLAYER_LABEL" id="BE90C358-FDBF-C6A8-B2E4-34E2180C34EA">
+<sourceConnName>MEDS ADMIN</sourceConnName>
+<sourceObjSchema>MEDSFILTER_MEDSLAYER_LABEL</sourceObjSchema>
+<sourceObjName>MEDSLAYER_LABEL</sourceObjName>
+<createdBy>d.arboittedossantos</createdBy>
+<createdTime>2024-07-03 11:17:16 UTC</createdTime>
+<ownerDesignName>MEDS_Application</ownerDesignName>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT019</logicalDatatype>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
+<autoIncrementCycle>false</autoIncrementCycle>
+<associations>
+<colAssociation fkAssociation="F525232A-5047-B4A3-9957-3AB2FAB0A711" referredColumn="124387DA-ACB4-CAF3-4F2B-06784BCF9228"/>
+</associations>
+</Column>
+</columns>
+<indexes itemClass="oracle.dbtools.crest.model.design.relational.Index">
+<ind_PK_UK id="5CDFA991-32B1-0CF0-B2A3-FE03697BF738" name="MEDSFILTER_MEDSLAYER_LABEL_PK">
+<sourceConnName>MEDS ADMIN</sourceConnName>
+<sourceObjSchema>MEDSADMIN</sourceObjSchema>
+<sourceObjName>MEDSFILTER_MEDSLAYER_LABEL_PK</sourceObjName>
+<createdBy>d.arboittedossantos</createdBy>
+<createdTime>2024-07-03 11:17:20 UTC</createdTime>
+<ownerDesignName>MEDS_Application</ownerDesignName>
+<pk>true</pk>
+<indexState>Primary Constraint</indexState>
+<isSurrogateKey>false</isSurrogateKey>
+<indexColumnUsage>
+<colUsage columnID="F0B97FB1-54ED-A872-B002-A0AFCF104283"/>
+</indexColumnUsage>
+</ind_PK_UK>
+<ind_PK_UK id="9FB12683-4EE4-1536-B7AA-10BDC924DBF6" schemaObject="21605DB5-8DF2-746E-5820-5D35D6CFFDFC" name="MEDSFILTER_MEDSLAYER_LABEL_P">
+<sourceConnName>MEDS ADMIN</sourceConnName>
+<sourceObjSchema>MEDSADMIN</sourceObjSchema>
+<sourceObjName>MEDSFILTER_MEDSLAYER_LABEL_P</sourceObjName>
+<createdBy>d.arboittedossantos</createdBy>
+<createdTime>2024-07-03 11:17:17 UTC</createdTime>
+<ownerDesignName>MEDS_Application</ownerDesignName>
+<indexState>Unique Plain Index</indexState>
+<isSurrogateKey>false</isSurrogateKey>
+<indexColumnUsage>
+<colUsage columnID="F0B97FB1-54ED-A872-B002-A0AFCF104283"/>
+</indexColumnUsage>
+</ind_PK_UK>
+<ind_PK_UK id="2A26FB81-E0BF-98DF-CD78-2B2DB88306EF" name="MEDSFILTER_MEDSLAYER_LABEL_MEDSFILTER_F">
+<createdBy>d.arboittedossantos</createdBy>
+<createdTime>2024-07-03 11:22:36 UTC</createdTime>
+<ownerDesignName>MEDS_Application</ownerDesignName>
+<indexState>Foreign Key</indexState>
+<isSurrogateKey>false</isSurrogateKey>
+<indexColumnUsage>
+<colUsage columnID="562E1994-FF5D-9DEC-948E-1CCCFA944879"/>
+</indexColumnUsage>
+</ind_PK_UK>
+<ind_PK_UK id="2DFDBA6E-90B9-0449-5390-F91841E0C16F" name="MEDSFILTER_MEDSLAYER_LABEL_MEDSLAYER_LABEL_F">
+<createdBy>d.arboittedossantos</createdBy>
+<createdTime>2024-07-03 11:24:52 UTC</createdTime>
+<ownerDesignName>MEDS_Application</ownerDesignName>
+<indexState>Foreign Key</indexState>
+<isSurrogateKey>false</isSurrogateKey>
+<indexColumnUsage>
+<colUsage columnID="BE90C358-FDBF-C6A8-B2E4-34E2180C34EA"/>
+</indexColumnUsage>
+</ind_PK_UK>
+<ind_PK_UK id="17F2F905-7C72-D34E-6F5D-CCB79F9D978A" name="MEDSFILTER_MEDSLAYER_LABEL_MEDSLAYER_F">
+<createdBy>d.arboittedossantos</createdBy>
+<createdTime>2024-07-03 12:26:14 UTC</createdTime>
+<ownerDesignName>MEDS_Application</ownerDesignName>
+<indexState>Foreign Key</indexState>
+<isSurrogateKey>false</isSurrogateKey>
+<indexColumnUsage>
+<colUsage columnID="76D3CD8A-4AFF-3733-455C-EC419ABD3266"/>
+</indexColumnUsage>
+</ind_PK_UK>
+</indexes>
+</Table>

@@ -1,0 +1,16 @@
+<?xml version = '1.0' encoding = 'UTF-8'?>
+<FKIndexAssociation class="oracle.dbtools.crest.model.design.relational.FKIndexAssociation" directorySegmentName="seg_0" id="AA023878-10A8-A1E2-5A9A-389CCB249F4F" containerWithKeyObject="D55D2943-F1AE-7B9A-094F-EABADFF32013" localFKIndex="17F2F905-7C72-D34E-6F5D-CCB79F9D978A" name="MEDSFILTER_MEDSLAYER_LABEL_MEDSLAYER_F">
+<createdBy>d.arboittedossantos</createdBy>
+<createdTime>2024-07-03 12:26:14 UTC</createdTime>
+<ownerDesignName>MEDS_Application</ownerDesignName>
+<referredTableLongName>MEDSADMIN.MEDSLAYER</referredTableLongName>
+<deleteRule>NO ACTION</deleteRule>
+<referredTableID>B5C46FFE-371E-D80B-9A8F-7EC6AFBC97CD</referredTableID>
+<keyObject>C51DF2B4-5133-383E-9956-823E11449987</keyObject>
+<referredKeyID>C51DF2B4-5133-383E-9956-823E11449987</referredKeyID>
+<mandatory>true</mandatory>
+<refColNames>MEDSLAYER</refColNames>
+<transferable>true</transferable>
+<rely>false</rely>
+<columnDependencyConstraintGenerateInDDL>true</columnDependencyConstraintGenerateInDDL>
+</FKIndexAssociation>

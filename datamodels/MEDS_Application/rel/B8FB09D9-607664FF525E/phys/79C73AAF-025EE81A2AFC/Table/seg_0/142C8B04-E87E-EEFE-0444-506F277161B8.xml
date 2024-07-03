@@ -1,0 +1,223 @@
+<?xml version = '1.0' encoding = 'UTF-8'?>
+<TableProxyOraclev12c class="oracle.dbtools.crest.model.design.storage.oracle.v12c.TableProxyOraclev12c" name="MEDSGEOTIFF" directorySegmentName="seg_0" id="142C8B04-E87E-EEFE-0444-506F277161B8">
+<createdBy>d.arboittedossantos</createdBy>
+<createdTime>2024-07-03 11:17:15 UTC</createdTime>
+<ownerDesignName>MEDS_Application</ownerDesignName>
+<schemaObject>21605DB5-8DF2-746E-5820-5D35D6CFFDFC</schemaObject>
+<logging>YES</logging>
+<partitionedRowMovement>DISABLE</partitionedRowMovement>
+<segment>75D8D5C3-8C19-9AE5-3EA2-40F8257C51B7</segment>
+<tableSpace>F1EB587F-6E06-1D3E-C7EC-1CF6412490DE</tableSpace>
+<temporaryChanged>false</temporaryChanged>
+<accessDriverType>oracle_loader</accessDriverType>
+<rejectLimit></rejectLimit>
+<inMemory>NO</inMemory>
+<columnProxies itemClass="oracle.dbtools.crest.model.design.storage.oracle.v12c.ColumnProxyOraclev12c">
+<ColumnProxy name="BLOB_CONTENT" id="238A40BB-44DB-6510-9E5B-FA2EA6884D6C">
+<createdBy>d.arboittedossantos</createdBy>
+<createdTime>2024-07-03 11:17:16 UTC</createdTime>
+<ownerDesignName>MEDS_Application</ownerDesignName>
+</ColumnProxy>
+<ColumnProxy name="TILEWIDTH" id="2AAAB683-C500-2760-8EE1-44739B3682B6">
+<createdBy>d.arboittedossantos</createdBy>
+<createdTime>2024-07-03 11:17:16 UTC</createdTime>
+<ownerDesignName>MEDS_Application</ownerDesignName>
+</ColumnProxy>
+<ColumnProxy name="MIME_TYPE" id="3B23B868-7E15-C5AD-A70F-3EE64DB82607">
+<createdBy>d.arboittedossantos</createdBy>
+<createdTime>2024-07-03 11:17:16 UTC</createdTime>
+<ownerDesignName>MEDS_Application</ownerDesignName>
+</ColumnProxy>
+<ColumnProxy name="MINXY" id="3EB4098B-7BF7-EF78-8508-B76952CA5006">
+<createdBy>d.arboittedossantos</createdBy>
+<createdTime>2024-07-03 11:17:16 UTC</createdTime>
+<ownerDesignName>MEDS_Application</ownerDesignName>
+</ColumnProxy>
+<ColumnProxy name="FILENAME" id="49AB3BC3-CC42-7E51-0271-F0471B9F3FB0">
+<createdBy>d.arboittedossantos</createdBy>
+<createdTime>2024-07-03 11:17:16 UTC</createdTime>
+<ownerDesignName>MEDS_Application</ownerDesignName>
+</ColumnProxy>
+<ColumnProxy name="WIDTH" id="53560164-9275-0D34-DEAF-728B6DACE4C0">
+<createdBy>d.arboittedossantos</createdBy>
+<createdTime>2024-07-03 11:17:16 UTC</createdTime>
+<ownerDesignName>MEDS_Application</ownerDesignName>
+</ColumnProxy>
+<ColumnProxy name="RESOLUTION" id="6A037925-7F92-058F-FBC9-DF4CDF8D646D">
+<createdBy>d.arboittedossantos</createdBy>
+<createdTime>2024-07-03 11:17:16 UTC</createdTime>
+<ownerDesignName>MEDS_Application</ownerDesignName>
+</ColumnProxy>
+<ColumnProxy name="BASE64" id="773DE796-6FF1-FD9F-3A7E-37758741EFDC">
+<createdBy>d.arboittedossantos</createdBy>
+<createdTime>2024-07-03 11:17:16 UTC</createdTime>
+<ownerDesignName>MEDS_Application</ownerDesignName>
+</ColumnProxy>
+<ColumnProxy name="MAXXY" id="8D5A8291-D94A-8DD1-48BE-3F693C5616AC">
+<createdBy>d.arboittedossantos</createdBy>
+<createdTime>2024-07-03 11:17:16 UTC</createdTime>
+<ownerDesignName>MEDS_Application</ownerDesignName>
+</ColumnProxy>
+<ColumnProxy name="ORIGIN" id="94D3EBAB-6260-65FD-B15D-56B8567BD0B5">
+<createdBy>d.arboittedossantos</createdBy>
+<createdTime>2024-07-03 11:17:16 UTC</createdTime>
+<ownerDesignName>MEDS_Application</ownerDesignName>
+</ColumnProxy>
+<ColumnProxy name="TILEHEIGHT" id="9DC3A185-5426-93A1-4625-FFAF18BDCE17">
+<createdBy>d.arboittedossantos</createdBy>
+<createdTime>2024-07-03 11:17:16 UTC</createdTime>
+<ownerDesignName>MEDS_Application</ownerDesignName>
+</ColumnProxy>
+<ColumnProxy name="BBOX" id="A8D2669E-3EAD-536D-3F14-497F0141624A">
+<createdBy>d.arboittedossantos</createdBy>
+<createdTime>2024-07-03 11:17:16 UTC</createdTime>
+<ownerDesignName>MEDS_Application</ownerDesignName>
+</ColumnProxy>
+<ColumnProxy name="BASE64_BLOB" id="AB64EC4B-82E7-1382-0EA7-61AC5A05F467">
+<createdBy>d.arboittedossantos</createdBy>
+<createdTime>2024-07-03 11:17:16 UTC</createdTime>
+<ownerDesignName>MEDS_Application</ownerDesignName>
+</ColumnProxy>
+<ColumnProxy name="SAMPLESPERPIXEL" id="B5C519B5-E598-B145-0591-034EA919646D">
+<createdBy>d.arboittedossantos</createdBy>
+<createdTime>2024-07-03 11:17:16 UTC</createdTime>
+<ownerDesignName>MEDS_Application</ownerDesignName>
+</ColumnProxy>
+<ColumnProxy name="MEDSGEOTIFF" id="BAF47764-399F-F683-BD2A-50672F211388">
+<createdBy>d.arboittedossantos</createdBy>
+<createdTime>2024-07-03 11:17:16 UTC</createdTime>
+<ownerDesignName>MEDS_Application</ownerDesignName>
+</ColumnProxy>
+<ColumnProxy name="LABEL" id="D058FC60-6640-4FD1-4BAE-DF6011A5E3CE">
+<createdBy>d.arboittedossantos</createdBy>
+<createdTime>2024-07-03 11:17:16 UTC</createdTime>
+<ownerDesignName>MEDS_Application</ownerDesignName>
+</ColumnProxy>
+<ColumnProxy name="HEIGHT" id="D65318A0-DB4E-6D49-19FC-74256871F402">
+<createdBy>d.arboittedossantos</createdBy>
+<createdTime>2024-07-03 11:17:16 UTC</createdTime>
+<ownerDesignName>MEDS_Application</ownerDesignName>
+</ColumnProxy>
+<ColumnProxy name="GEOKEYS" id="ED31DB59-0701-3DE5-CDAB-3E442C57C094">
+<createdBy>d.arboittedossantos</createdBy>
+<createdTime>2024-07-03 11:17:16 UTC</createdTime>
+<ownerDesignName>MEDS_Application</ownerDesignName>
+</ColumnProxy>
+</columnProxies>
+<indexProxies>
+<IndexProxy class="oracle.dbtools.crest.model.design.storage.oracle.v10g.IndexProxyOraclev10g" name="MEDSGEOTIFF_U2" id="6285AA13-4A0E-456E-9F0B-6DE1E61B69C2">
+<createdBy>d.arboittedossantos</createdBy>
+<createdTime>2024-07-03 11:17:17 UTC</createdTime>
+<ownerDesignName>MEDS_Application</ownerDesignName>
+<schemaObject>21605DB5-8DF2-746E-5820-5D35D6CFFDFC</schemaObject>
+<segment>B5B71C6E-B103-54D2-4D0E-E86230B77E04</segment>
+<tableSpace>F1EB587F-6E06-1D3E-C7EC-1CF6412490DE</tableSpace>
+</IndexProxy>
+<IndexProxy class="oracle.dbtools.crest.model.design.storage.oracle.v10g.IndexProxyOraclev10g" name="MEDSGEOTIFF_U1" id="BAB7C830-B95D-C609-BBE5-9DA4D1874F5B">
+<createdBy>d.arboittedossantos</createdBy>
+<createdTime>2024-07-03 11:17:17 UTC</createdTime>
+<ownerDesignName>MEDS_Application</ownerDesignName>
+<schemaObject>21605DB5-8DF2-746E-5820-5D35D6CFFDFC</schemaObject>
+<segment>AA1BDFD9-D029-7F41-8619-5ECBC6C7C455</segment>
+<tableSpace>F1EB587F-6E06-1D3E-C7EC-1CF6412490DE</tableSpace>
+</IndexProxy>
+<IndexProxy class="oracle.dbtools.crest.model.design.storage.oracle.v10g.IndexProxyOraclev10g" name="MEDSGEOTIFF_P" id="ECA9480D-E907-054B-08B6-15F890D833C7">
+<createdBy>d.arboittedossantos</createdBy>
+<createdTime>2024-07-03 11:17:17 UTC</createdTime>
+<ownerDesignName>MEDS_Application</ownerDesignName>
+<schemaObject>21605DB5-8DF2-746E-5820-5D35D6CFFDFC</schemaObject>
+<segment>B5B71C6E-B103-54D2-4D0E-E86230B77E04</segment>
+<tableSpace>F1EB587F-6E06-1D3E-C7EC-1CF6412490DE</tableSpace>
+</IndexProxy>
+</indexProxies>
+<lobStorages>
+<LobStorage class="oracle.dbtools.crest.model.design.storage.oracle.v11g.LobStorageOraclev11g" name="SYS_LOB0000549236C00002$$" id="CA68F99D-1855-AB0A-6395-75C2478A857F">
+<createdBy>d.arboittedossantos</createdBy>
+<createdTime>2024-07-03 11:17:24 UTC</createdTime>
+<ownerDesignName>MEDS_Application</ownerDesignName>
+<chunk>8192</chunk>
+<column>FILENAME</column>
+<compression>NO</compression>
+<duplication>KEEP_DUPLICATES</duplication>
+<logging>YES</logging>
+<tableSpace>F1EB587F-6E06-1D3E-C7EC-1CF6412490DE</tableSpace>
+<lobStorageType>SECUREFILE</lobStorageType>
+</LobStorage>
+<LobStorage class="oracle.dbtools.crest.model.design.storage.oracle.v11g.LobStorageOraclev11g" name="SYS_LOB0000549236C00004$$" id="5D1F9BD6-050C-B348-B2EC-4CEB58E75C1E">
+<createdBy>d.arboittedossantos</createdBy>
+<createdTime>2024-07-03 11:17:24 UTC</createdTime>
+<ownerDesignName>MEDS_Application</ownerDesignName>
+<cache>NOCACHE</cache>
+<chunk>8192</chunk>
+<column>BLOB_CONTENT</column>
+<compression>NO</compression>
+<duplication>KEEP_DUPLICATES</duplication>
+<logging>YES</logging>
+<tableSpace>F1EB587F-6E06-1D3E-C7EC-1CF6412490DE</tableSpace>
+<lobStorageType>SECUREFILE</lobStorageType>
+</LobStorage>
+<LobStorage class="oracle.dbtools.crest.model.design.storage.oracle.v11g.LobStorageOraclev11g" name="SYS_LOB0000549236C00016$$" id="E81E8CCB-71D5-D8B2-B0C0-61DCB8D065DE">
+<createdBy>d.arboittedossantos</createdBy>
+<createdTime>2024-07-03 11:17:24 UTC</createdTime>
+<ownerDesignName>MEDS_Application</ownerDesignName>
+<cache>NOCACHE</cache>
+<chunk>8192</chunk>
+<column>BASE64</column>
+<compression>NO</compression>
+<duplication>KEEP_DUPLICATES</duplication>
+<logging>YES</logging>
+<tableSpace>F1EB587F-6E06-1D3E-C7EC-1CF6412490DE</tableSpace>
+<lobStorageType>SECUREFILE</lobStorageType>
+</LobStorage>
+<LobStorage class="oracle.dbtools.crest.model.design.storage.oracle.v11g.LobStorageOraclev11g" name="SYS_LOB0000549236C00017$$" id="E2BBE1E3-1588-62AB-1C98-1A0165546095">
+<createdBy>d.arboittedossantos</createdBy>
+<createdTime>2024-07-03 11:17:24 UTC</createdTime>
+<ownerDesignName>MEDS_Application</ownerDesignName>
+<cache>NOCACHE</cache>
+<chunk>8192</chunk>
+<column>BASE64_BLOB</column>
+<compression>NO</compression>
+<duplication>KEEP_DUPLICATES</duplication>
+<logging>YES</logging>
+<tableSpace>F1EB587F-6E06-1D3E-C7EC-1CF6412490DE</tableSpace>
+<lobStorageType>SECUREFILE</lobStorageType>
+</LobStorage>
+</lobStorages>
+<primaryKeys>
+<PrimaryKey class="oracle.dbtools.crest.model.design.storage.oracle.v10g.PKProxyOraclev10g" name="MEDSGEOTIFF_P" id="29386839-369F-0BE4-E666-3B55666A56B9">
+<createdBy>d.arboittedossantos</createdBy>
+<createdTime>2024-07-03 11:17:20 UTC</createdTime>
+<ownerDesignName>MEDS_Application</ownerDesignName>
+<segment>B5B71C6E-B103-54D2-4D0E-E86230B77E04</segment>
+<tableSpace>F1EB587F-6E06-1D3E-C7EC-1CF6412490DE</tableSpace>
+<existingIndex>ECA9480D-E907-054B-08B6-15F890D833C7</existingIndex>
+<indexSegment>B5B71C6E-B103-54D2-4D0E-E86230B77E04</indexSegment>
+<indexSort>SORTED</indexSort>
+<usingIndex>BY INDEX NAME</usingIndex>
+</PrimaryKey>
+</primaryKeys>
+<uniqueKeys>
+<UniqueKey class="oracle.dbtools.crest.model.design.storage.oracle.v10g.UniqueOraclev10g" name="MEDSGEOTIFF_U2" id="35F12CDC-0D70-BA59-8C53-DC689D6B4EC9">
+<createdBy>d.arboittedossantos</createdBy>
+<createdTime>2024-07-03 11:17:20 UTC</createdTime>
+<ownerDesignName>MEDS_Application</ownerDesignName>
+<segment>B5B71C6E-B103-54D2-4D0E-E86230B77E04</segment>
+<tableSpace>F1EB587F-6E06-1D3E-C7EC-1CF6412490DE</tableSpace>
+<existingIndex>6285AA13-4A0E-456E-9F0B-6DE1E61B69C2</existingIndex>
+<indexSegment>B5B71C6E-B103-54D2-4D0E-E86230B77E04</indexSegment>
+<indexSort>SORTED</indexSort>
+<usingIndex>BY INDEX NAME</usingIndex>
+</UniqueKey>
+<UniqueKey class="oracle.dbtools.crest.model.design.storage.oracle.v10g.UniqueOraclev10g" name="MEDSGEOTIFF_U1" id="47A33434-633B-4BF0-3495-487A0320FCFF">
+<createdBy>d.arboittedossantos</createdBy>
+<createdTime>2024-07-03 11:17:20 UTC</createdTime>
+<ownerDesignName>MEDS_Application</ownerDesignName>
+<segment>AA1BDFD9-D029-7F41-8619-5ECBC6C7C455</segment>
+<tableSpace>F1EB587F-6E06-1D3E-C7EC-1CF6412490DE</tableSpace>
+<existingIndex>BAB7C830-B95D-C609-BBE5-9DA4D1874F5B</existingIndex>
+<indexSegment>AA1BDFD9-D029-7F41-8619-5ECBC6C7C455</indexSegment>
+<indexSort>SORTED</indexSort>
+<usingIndex>BY INDEX NAME</usingIndex>
+</UniqueKey>
+</uniqueKeys>
+</TableProxyOraclev12c>

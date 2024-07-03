@@ -1,0 +1,19 @@
+<?xml version = '1.0' encoding = 'UTF-8'?>
+<FKIndexAssociation class="oracle.dbtools.crest.model.design.relational.FKIndexAssociation" directorySegmentName="seg_0" id="A1A5BB07-EE73-1A66-60D6-BE5F63C5B057" containerWithKeyObject="61F199CE-6C56-600A-6DC6-3FD12AF1E5C9" localFKIndex="107C7FAE-1E31-E24F-CF52-4A618769AA95" name="MEDSFILTER_MEIC_MEDSFILTER_F">
+<sourceConnName>MEDS ADMIN</sourceConnName>
+<sourceObjSchema>MEDSADMIN</sourceObjSchema>
+<sourceObjName>MEDSFILTER_MEIC_MEDSFILTER_F</sourceObjName>
+<createdBy>d.arboittedossantos</createdBy>
+<createdTime>2024-07-03 11:17:23 UTC</createdTime>
+<ownerDesignName>MEDS_Application</ownerDesignName>
+<referredTableLongName>MEDSADMIN.MEDSFILTER</referredTableLongName>
+<deleteRule>CASCADE</deleteRule>
+<referredTableID>54E496D6-783F-98C2-4F61-66634DCA91F0</referredTableID>
+<keyObject>2396F0CB-38F0-2844-E314-5D5963BC0925</keyObject>
+<referredKeyID>2396F0CB-38F0-2844-E314-5D5963BC0925</referredKeyID>
+<mandatory>true</mandatory>
+<refColNames>MEDSFILTER</refColNames>
+<transferable>true</transferable>
+<rely>false</rely>
+<columnDependencyConstraintGenerateInDDL>true</columnDependencyConstraintGenerateInDDL>
+</FKIndexAssociation>

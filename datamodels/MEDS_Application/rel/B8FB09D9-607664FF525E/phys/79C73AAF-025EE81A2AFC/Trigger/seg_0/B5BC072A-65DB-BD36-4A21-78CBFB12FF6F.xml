@@ -1,0 +1,18 @@
+<?xml version = '1.0' encoding = 'UTF-8'?>
+<TriggerOraclev10g class="oracle.dbtools.crest.model.design.storage.oracle.v10g.TriggerOraclev10g" name="BI_MEDSFILTER" directorySegmentName="seg_0" id="B5BC072A-65DB-BD36-4A21-78CBFB12FF6F">
+<sourceConnName>MEDS ADMIN</sourceConnName>
+<sourceObjSchema>MEDSADMIN</sourceObjSchema>
+<sourceObjName>BI_MEDSFILTER</sourceObjName>
+<createdBy>d.arboittedossantos</createdBy>
+<createdTime>2024-07-03 11:17:23 UTC</createdTime>
+<ownerDesignName>MEDS_Application</ownerDesignName>
+<actions>INSERT</actions>
+<body><![CDATA[begin
+   if :new.MEDSFILTER is null then
+      :new.MEDSFILTER := to_number(sys_guid(),'xxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxx');
+   end if;
+end bi_medsfilter;]]></body>
+<triggerTime>BEFORE</triggerTime>
+<owner>3AC69096-DF56-CE56-D1E2-F2BC5F023F01</owner>
+<table>54E496D6-783F-98C2-4F61-66634DCA91F0</table>
+</TriggerOraclev10g>

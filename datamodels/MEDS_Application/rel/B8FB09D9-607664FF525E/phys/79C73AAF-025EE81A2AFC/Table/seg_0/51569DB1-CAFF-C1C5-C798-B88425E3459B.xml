@@ -1,0 +1,75 @@
+<?xml version = '1.0' encoding = 'UTF-8'?>
+<TableProxyOraclev12c class="oracle.dbtools.crest.model.design.storage.oracle.v12c.TableProxyOraclev12c" name="JOB_LOOKUPS" directorySegmentName="seg_0" id="51569DB1-CAFF-C1C5-C798-B88425E3459B">
+<createdBy>d.arboittedossantos</createdBy>
+<createdTime>2024-07-03 11:17:15 UTC</createdTime>
+<ownerDesignName>MEDS_Application</ownerDesignName>
+<schemaObject>21605DB5-8DF2-746E-5820-5D35D6CFFDFC</schemaObject>
+<logging>YES</logging>
+<partitionedRowMovement>DISABLE</partitionedRowMovement>
+<segment>75D8D5C3-8C19-9AE5-3EA2-40F8257C51B7</segment>
+<tableSpace>F1EB587F-6E06-1D3E-C7EC-1CF6412490DE</tableSpace>
+<temporaryChanged>false</temporaryChanged>
+<accessDriverType>oracle_loader</accessDriverType>
+<rejectLimit></rejectLimit>
+<inMemory>NO</inMemory>
+<columnProxies itemClass="oracle.dbtools.crest.model.design.storage.oracle.v12c.ColumnProxyOraclev12c">
+<ColumnProxy name="INDEX_FIELD" id="0D212590-F6C7-CB6B-874D-B009F7E1E0DA">
+<createdBy>d.arboittedossantos</createdBy>
+<createdTime>2024-07-03 11:17:16 UTC</createdTime>
+<ownerDesignName>MEDS_Application</ownerDesignName>
+</ColumnProxy>
+<ColumnProxy name="DUC_POSITION" id="0E468E03-570F-DB53-FB9A-D09F1623F1B4">
+<createdBy>d.arboittedossantos</createdBy>
+<createdTime>2024-07-03 11:17:16 UTC</createdTime>
+<ownerDesignName>MEDS_Application</ownerDesignName>
+</ColumnProxy>
+<ColumnProxy name="DESCRIPTION" id="22F92B01-C53C-E9B3-960C-E399B5B96786">
+<createdBy>d.arboittedossantos</createdBy>
+<createdTime>2024-07-03 11:17:16 UTC</createdTime>
+<ownerDesignName>MEDS_Application</ownerDesignName>
+</ColumnProxy>
+<ColumnProxy name="TEXT_FILE_TYPE" id="4667BE12-278C-ECF5-123A-97E1D4863955">
+<createdBy>d.arboittedossantos</createdBy>
+<createdTime>2024-07-03 11:17:16 UTC</createdTime>
+<ownerDesignName>MEDS_Application</ownerDesignName>
+</ColumnProxy>
+<ColumnProxy name="FILE_EXTENSION" id="4794D566-9282-5668-B16E-28B7EBA4FA8D">
+<createdBy>d.arboittedossantos</createdBy>
+<createdTime>2024-07-03 11:17:16 UTC</createdTime>
+<ownerDesignName>MEDS_Application</ownerDesignName>
+</ColumnProxy>
+<ColumnProxy name="GENERIC" id="4CC9AC43-C70D-FA38-F48F-2653DAAE5FAE">
+<createdBy>d.arboittedossantos</createdBy>
+<createdTime>2024-07-03 11:17:16 UTC</createdTime>
+<ownerDesignName>MEDS_Application</ownerDesignName>
+</ColumnProxy>
+<ColumnProxy name="TYPE" id="BB2F21D9-3E87-CF8A-BDA4-32BC08C805DB">
+<createdBy>d.arboittedossantos</createdBy>
+<createdTime>2024-07-03 11:17:16 UTC</createdTime>
+<ownerDesignName>MEDS_Application</ownerDesignName>
+</ColumnProxy>
+<ColumnProxy name="USAGE" id="DD209456-73E0-EB1C-A186-BC06C58959BF">
+<createdBy>d.arboittedossantos</createdBy>
+<createdTime>2024-07-03 11:17:16 UTC</createdTime>
+<ownerDesignName>MEDS_Application</ownerDesignName>
+</ColumnProxy>
+</columnProxies>
+<indexProxies>
+<IndexProxy class="oracle.dbtools.crest.model.design.storage.oracle.v10g.IndexProxyOraclev10g" name="IDX_JOBLOOK_TYPE" id="5F42DB12-EFA8-2BEE-3850-DD4C2EF96B21">
+<createdBy>d.arboittedossantos</createdBy>
+<createdTime>2024-07-03 11:17:17 UTC</createdTime>
+<ownerDesignName>MEDS_Application</ownerDesignName>
+<schemaObject>21605DB5-8DF2-746E-5820-5D35D6CFFDFC</schemaObject>
+<segment>B5B71C6E-B103-54D2-4D0E-E86230B77E04</segment>
+<tableSpace>F1EB587F-6E06-1D3E-C7EC-1CF6412490DE</tableSpace>
+</IndexProxy>
+</indexProxies>
+<primaryKeys>
+<PrimaryKey class="oracle.dbtools.crest.model.design.storage.oracle.v10g.PKProxyOraclev10g" name="JOB_LOOKUPS_P" id="E08A5705-708C-C8FD-97F1-D5C7AA3DA488">
+<createdBy>d.arboittedossantos</createdBy>
+<createdTime>2024-07-03 11:27:16 UTC</createdTime>
+<ownerDesignName>MEDS_Application</ownerDesignName>
+<indexSort>SORTED</indexSort>
+</PrimaryKey>
+</primaryKeys>
+</TableProxyOraclev12c>

@@ -1,0 +1,18 @@
+<?xml version = '1.0' encoding = 'UTF-8'?>
+<TriggerOraclev10g class="oracle.dbtools.crest.model.design.storage.oracle.v10g.TriggerOraclev10g" name="BI_MEDSLAYER_LABEL" directorySegmentName="seg_0" id="A5805A66-8954-5878-36F3-6B8A8EDCBA2A">
+<sourceConnName>MEDS ADMIN</sourceConnName>
+<sourceObjSchema>MEDSADMIN</sourceObjSchema>
+<sourceObjName>BI_MEDSLAYER_LABEL</sourceObjName>
+<createdBy>d.arboittedossantos</createdBy>
+<createdTime>2024-07-03 11:17:23 UTC</createdTime>
+<ownerDesignName>MEDS_Application</ownerDesignName>
+<actions>INSERT</actions>
+<body><![CDATA[begin
+   if :new.MEDSLAYER_LABEL is null then
+      :new.MEDSLAYER_LABEL := to_number(sys_guid(),'xxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxx');
+   end if;
+end bi_medslayer_label;]]></body>
+<triggerTime>BEFORE</triggerTime>
+<owner>3AC69096-DF56-CE56-D1E2-F2BC5F023F01</owner>
+<table>70DDF8E1-89E6-74BF-BD12-764CA42FFAA6</table>
+</TriggerOraclev10g>
