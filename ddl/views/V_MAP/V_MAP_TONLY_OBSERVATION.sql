@@ -41,6 +41,7 @@ AS
    ,      medslayer_label            d   
    where  a.meds_job_number = p.meds_job_number
    and    a.date_time       between p.date_start and p.date_end
+   and    sdo_anyinteract(a.location,  p.location_rectangle) = 'TRUE'
    and    b.ocean           = a.instrument_code
    and    c.medsfilter      (+) = p.medsfilter
    and    c.medslayer       (+) = p.medslayer
