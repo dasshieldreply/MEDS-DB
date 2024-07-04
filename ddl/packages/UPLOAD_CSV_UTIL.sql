@@ -18,7 +18,8 @@ as
 
    procedure parse_csv_data
    (
-      p_job_number   in number
+      p_job_number      in number,
+      p_rc              out number
    );   
        
 end upload_csv_util;
@@ -30,6 +31,8 @@ end upload_csv_util;
 
 CREATE OR REPLACE package body upload_csv_util
 as
+   
+   g_package constant varchar2(31) := $$plsql_unit || '.';
 
    procedure parse_datatype_front_satellite
    (
@@ -39,7 +42,7 @@ as
       v_stm    varchar2(4000);
       v_ins    varchar2(1000) default 'insert into front_satellite_observation (location, meds_job_number, meds_observation_number, observered_date) values (sdo_geometry(2002, null, null, sdo_elem_info_array(1, 2, 1), sdo_ordinate_array(';
    begin
-      dbms_output. enable (buffer_size => null); 
+      --dbms_output. enable (buffer_size => null); 
    
      for f_row in 
       (
@@ -903,7 +906,8 @@ as
 
    procedure parse_csv_data
    (
-      p_job_number      in number
+      p_job_number      in number,
+      p_rc              out number
    )
    is
       v_data_type       varchar2(50);
@@ -911,36 +915,54 @@ as
       v_stg_file        number;
       v_index_field     number;
       v_cnt             number default 0;
+      l_params          logger.tab_param; 
+      l_scope           constant varchar2(61) := g_package||'parse_csv_data';
+      l_sqlcode         number;
+      l_sqlerrm         varchar2(150);
    begin
-      dbms_output. enable (buffer_size => null); 
+      --dbms_output. enable (buffer_size => null);      
+      logger.append_param   (p_params  => l_params
+                           , p_name    => 'p_job_number'
+                           , p_val     =>  p_job_number); 
+      logger.log_information(p_text    => 'Start' 
+                            ,p_scope   => l_scope 
+                            ,p_params  => l_params 
+                            );  
+      p_rc := 0;
       
       select data_type
       into v_data_type
       from meds_processing_job
       where job_number = p_job_number;
-      dbms_output.put_line('v_data_type: ' || v_data_type);
-      
+      --dbms_output.put_line('v_data_type: ' || v_data_type);
       select index_field
       into v_index_field
       from job_lookups 
       where type = 'Data Type' 
       and usage  = v_data_type;           
-      dbms_output.put_line('v_index_field: ' || v_index_field);
-      
+      --dbms_output.put_line('v_index_field: ' || v_index_field);
+      logger.log_information(p_text   => 'Data Type' 
+                            ,p_scope  => l_scope
+                            ,p_params => l_params 
+                            );
       select table_name
       into  v_tbl
       from field_lookup
       where data_type_index = v_index_field
       and include_in_input = 1
       fetch first row only;
-      dbms_output.put_line('v_tbl: ' || v_tbl);
+      --dbms_output.put_line('v_tbl: ' || v_tbl);
       
       --Verify if the job has been already loaded in the destination tables. 
       --TODO This will be better if we save in OBSERVATION
       execute immediate 'select count(1) from ' || v_tbl || ' where meds_job_number = ' || p_job_number into v_cnt;
       
       if v_cnt > 0 then
-         dbms_output.put_line('Job already submitted');
+         --dbms_output.put_line('Job already submitted');
+         logger.log_information(p_text  => 'Job already submitted once' 
+                               ,p_scope => l_scope);
+         logger.log_information(p_text  => 'End' 
+                               ,p_scope => l_scope);
          return;
       end if;
       
@@ -957,10 +979,22 @@ as
       elsif v_index_field  = 82 then
          parse_datatype_front_satellite(p_job_number => p_job_number);
       end if;
-      
+
+      logger.log_information(p_text  => 'End' 
+                            ,p_scope => l_scope);
       exception
          when others then
+            l_sqlcode := SQLCODE;
+            l_sqlerrm := SUBSTR(SQLERRM, 1 , 150);
+            
+            logger.log_information(p_text  => 'SQL Error ' || l_sqlcode || ' ' || l_sqlerrm
+                                  ,p_scope => l_scope);         
+            logger.log_information(p_text  => 'End' 
+                         ,p_scope => l_scope);
+            p_rc := l_sqlcode;
+            
             rollback;
+            
    end parse_csv_data;
       
    procedure parse_csv_file

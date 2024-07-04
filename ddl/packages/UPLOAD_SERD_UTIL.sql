@@ -922,7 +922,7 @@ as
    begin
    
       logger.append_param   (p_params  => l_params
-                           , p_name    => 'parse_serd_file'
+                           , p_name    => 'p_job_number'
                            , p_val     => p_job_number); 
       logger.log_information(p_text    => 'Start' 
                             ,p_scope   => l_scope 
